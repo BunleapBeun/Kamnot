@@ -1,2 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap");
 
+[data-theme="light"] {
+  --main-text: #000;
+  --sub-title: #767676;
+  --main-color: #fff;
+  --gray-color: #818181;
+  --hover-color: #d4e0ff;
+  --bg-grandient: linear-gradient(135deg, #488495 0%, #3c4d78 100%);
+  --link-text: #498797;
+  --card-color: #fff;
+}
+
+[data-theme="dark"] {
+  --main-text: #fff;
+  --sub-title: #767676;
+  --main-color: #fff;
+  --gray-color: #818181;
+  --hover-color: #d4e0ff;
+  --bg-grandient: linear-gradient(135deg, #488495 0%, #3c4d78 100%);
+  --link-text: #498797;
+  --card-color: #fff;
+}
