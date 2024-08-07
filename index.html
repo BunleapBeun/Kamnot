@@ -12,6 +12,10 @@
     />
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.css" />
     <link rel="stylesheet" href="assets/plugins/aos/css/aos.css" />
+    <link
+      rel="stylesheet"
+      href="assets/plugins/swiper js/css/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <!-- ! begin of header -->
@@ -29,7 +33,9 @@
             data-bs-target="#offcanvasWithBothOptions"
             aria-controls="offcanvasWithBothOptions"
           >
-            <span class="nav-toggler-icon all-center"><i class="fa-solid fa-bars"></i></span>
+            <span class="nav-toggler-icon all-center"
+              ><i class="fa-solid fa-bars"></i
+            ></span>
           </button>
           <!-- ! begin of offcanvas -->
           <div
@@ -50,7 +56,9 @@
                 class="x-close all-center"
                 data-bs-dismiss="offcanvas"
                 aria-label="Close"
-              ><i class="fa-solid fa-xmark"></i></button>
+              >
+                <i class="fa-solid fa-xmark"></i>
+              </button>
             </div>
             <div class="offcanvas-body">
               <div class="canvas-header d-flex justify-content-between">
@@ -589,21 +597,306 @@
                   <div class="bar-journal-reshow all-center">
                     <h3>កំណត់ហេតុប្រចាំថ្ងៃ</h3>
                   </div>
-                  <div class="journal-reshow-content">
-
-                  </div>
+                  <div class="journal-reshow-content"></div>
                 </div>
                 <div class="col-lg-4 col-12 todo-reshow">
                   <div class="bar-reshow-todo all-center">
                     <h3>កិច្ចការប្រចាំថ្ងៃ</h3>
                   </div>
-                  <div class="reshow-todo-content"></div>
-                </div>
-                <div class="p-2 m-2 me-0 ms-0">
-                  <div class="col-12 qoute-show">
-                  
+                  <div class="reshow-todo-content">
+                    <form>
+                      <ul class="list-todo">
+                        <li>
+                          <input id="item-0" type="checkbox" />
+                          <label for="item-0">Create this list</label>
+                        </li>
+                        <li>
+                          <input id="item-1" type="checkbox" />
+                          <label for="item-1">Style it pretty</label>
+                        </li>
+                        <li>
+                          <input id="item-2" type="checkbox" />
+                          <label for="item-2">Check all the circles</label>
+                        </li>
+                        <li>
+                          <input id="item-3" type="checkbox" />
+                          <label for="item-3">Time for a drink</label>
+                        </li>
+                      </ul>
+                    </form>
                   </div>
                 </div>
+                <div class="col-12 p-2 m-2 me-0 ms-0">
+                  <div class="col-12 qoute-show">
+                    <div class="swiper mySwiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">Slide 1</div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+                        <div class="swiper-slide">Slide 4</div>
+                        <div class="swiper-slide">Slide 5</div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                  </div>
+                </div>
+                <section class="reading-book p-2 m-2 me-0 ms-0">
+                  <div class="row">
+                    <div class="col-12 p-2 m-0">
+                      <div
+                        class="d-flex justify-content-between align-content-center mb-2"
+                      >
+                        <h3 class="book-reading-title">សៀវភៅដែលអ្នកកំពុងអាន</h3>
+                        <a
+                          href="book_store.html"
+                          class="text-decoration-none align-self-center book-see-more"
+                          >មើលបន្ថែម</a
+                        >
+                      </div>
+                      <div class="row g-3">
+                        <div class="col-lg-2 col-4">
+                          <a href="#">
+                            <div class="book-cover">
+                              <img
+                                src="assets/img/book/the_healing_of_trauma.jpg"
+                                alt=""
+                              />
+                            </div>
+                          </a>
+                          <button class="conti-read mt-2">អានបន្ថែម</button>
+                        </div>
+                        <div class="col-lg-2 col-4">
+                          <a href="#">
+                            <div class="book-cover">
+                              <img
+                                src="assets/img/book/the_healing_of_trauma.jpg"
+                                alt=""
+                              />
+                            </div>
+                          </a>
+                          <button class="conti-read mt-2">អានបន្ថែម</button>
+                        </div>
+                        <div class="col-lg-2 col-4">
+                          <a href="#">
+                            <div class="book-cover">
+                              <img
+                                src="assets/img/book/the_healing_of_trauma.jpg"
+                                alt=""
+                              />
+                            </div>
+                          </a>
+                          <button class="conti-read mt-2">អានបន្ថែម</button>
+                        </div>
+                        <div class="col-lg-2 col-4">
+                          <a href="#">
+                            <div class="book-cover">
+                              <img
+                                src="assets/img/book/the_healing_of_trauma.jpg"
+                                alt=""
+                              />
+                            </div>
+                          </a>
+                          <button class="conti-read mt-2">អានបន្ថែម</button>
+                        </div>
+                        <div class="col-lg-2 col-4">
+                          <a href="#">
+                            <div class="book-cover">
+                              <img
+                                src="assets/img/book/the_healing_of_trauma.jpg"
+                                alt=""
+                              />
+                            </div>
+                          </a>
+                          <button class="conti-read mt-2">អានបន្ថែម</button>
+                        </div>
+                        <div class="col-lg-2 col-4">
+                          <a href="#" class="text-decoration-none">
+                            <div class="add-book-cover all-center">
+                              <div class="add-plus all-center">
+                                <i class="fa-solid fa-plus"></i>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section class="popular-book m-0">
+                  <div class="row">
+                    <div class="col-12 p-2 m-0">
+                      <div
+                        class="d-flex justify-content-between align-content-center mb-2"
+                      >
+                        <h3 class="book-reading-title">សៀវភៅពេញនិយម</h3>
+                        <a
+                          href="book_store.html"
+                          class="text-decoration-none align-self-center book-see-more"
+                          >មើលបន្ថែម</a
+                        >
+                      </div>
+                      <div class="row g-3">
+                        <div class="col-lg-2 col-4">
+                          <a href="#" class="text-decoration-none">
+                            <div class="book-cover">
+                              <img
+                                src="assets/img/book/the_healing_of_trauma.jpg"
+                                alt=""
+                              />
+                              <h5 class="book-title pt-2 m-0">
+                                The Law of Power
+                              </h5>
+                              <span class="artist-name">ដោយ៖ Robert Greene</span>
+                              <div class="star-rate d-flex">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star-half-stroke"></i>
+                              </div>
+                              <span class="book-price">$12.99</span>
+                              <span class="book-discount-price"><del>$14.55</del></span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-lg-2 col-4">
+                          <a href="#" class="text-decoration-none">
+                            <div class="book-cover">
+                              <img
+                                src="assets/img/book/the_healing_of_trauma.jpg"
+                                alt=""
+                              />
+                              <h5 class="book-title pt-2 m-0">
+                                The Law of Power
+                              </h5>
+                              <span class="artist-name">ដោយ៖ Robert Greene</span>
+                              <div class="star-rate d-flex">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star-half-stroke"></i>
+                              </div>
+                              <span class="book-price">$12.99</span>
+                              <span class="book-discount-price"><del>$14.55</del></span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-lg-2 col-4">
+                          <a href="#" class="text-decoration-none">
+                            <div class="book-cover">
+                              <img
+                                src="assets/img/book/the_healing_of_trauma.jpg"
+                                alt=""
+                              />
+                              <h5 class="book-title pt-2 m-0">
+                                The Law of Power
+                              </h5>
+                              <span class="artist-name">ដោយ៖ Robert Greene</span>
+                              <div class="star-rate d-flex">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star-half-stroke"></i>
+                              </div>
+                              <span class="book-price">$12.99</span>
+                              <span class="book-discount-price"><del>$14.55</del></span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-lg-2 col-4">
+                          <a href="#" class="text-decoration-none">
+                            <div class="book-cover">
+                              <img
+                                src="assets/img/book/the_healing_of_trauma.jpg"
+                                alt=""
+                              />
+                              <h5 class="book-title pt-2 m-0">
+                                The Law of Power
+                              </h5>
+                              <span class="artist-name">ដោយ៖ Robert Greene</span>
+                              <div class="star-rate d-flex">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star-half-stroke"></i>
+                              </div>
+                              <span class="book-price">$12.99</span>
+                              <span class="book-discount-price"><del>$14.55</del></span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-lg-2 col-4">
+                          <a href="#" class="text-decoration-none">
+                            <div class="book-cover">
+                              <img
+                                src="assets/img/book/the_healing_of_trauma.jpg"
+                                alt=""
+                              />
+                              <h5 class="book-title pt-2 m-0">
+                                The Law of Power
+                              </h5>
+                              <span class="artist-name">ដោយ៖ Robert Greene</span>
+                              <div class="star-rate d-flex">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star-half-stroke"></i>
+                              </div>
+                              <span class="book-price">$12.99</span>
+                              <span class="book-discount-price"><del>$14.55</del></span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-lg-2 col-4">
+                          <a href="#" class="text-decoration-none">
+                            <div class="book-cover">
+                              <img
+                                src="assets/img/book/the_healing_of_trauma.jpg"
+                                alt=""
+                              />
+                              <h5 class="book-title pt-2 m-0">
+                                The Law of Power
+                              </h5>
+                              <span class="artist-name">ដោយ៖ Robert Greene</span>
+                              <div class="star-rate d-flex">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star-half-stroke"></i>
+                              </div>
+                              <span class="book-price">$12.99</span>
+                              <span class="book-discount-price"><del>$14.55</del></span>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section class="popular-article">
+                  <div class="col-12">
+                    <div
+                        class="d-flex justify-content-between align-content-center mb-2"
+                      >
+                        <h3 class="pop-article-title">អត្ថបទពេញនិយម</h3>
+                        <a
+                          href="book_store.html"
+                          class="text-decoration-none align-self-center article-see-more"
+                          >មើលបន្ថែម</a
+                        >
+                      </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-6">
+
+                    </div>
+                  </div>
+                </section>
               </div>
 
               <!-- ? end of write your content here -->
@@ -798,5 +1091,19 @@
     <script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/plugins/aos/js/aos.js"></script>
     <script src="assets/js/dark-mode.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/plugins/swiper js/js/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+      });
+    </script>
   </body>
 </html>

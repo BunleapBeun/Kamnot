@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap");
+/* @import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300); */
 
 body {
   background-color: var(--main-color) !important;
@@ -19,7 +20,6 @@ main {
   border: none !important;
   padding: 0 !important;
 }
-
 
 .nav-toggler-icon {
   width: 50px;
@@ -67,6 +67,10 @@ main {
 }
 
 /* ! end of globle selector */
+
+:root {
+  --swiper-theme-color: #498797 !important;
+}
 
 [data-theme="light"] {
   --main-text: #000;
@@ -716,13 +720,151 @@ nav {
   border: 1px solid var(--ddd-color);
 }
 
+.todo-reshow .reshow-todo-content .list-todo {
+  list-style: none;
+  padding: 10px;
+}
+
+.todo-reshow .reshow-todo-content .list-todo li {
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  border-radius: 10px;
+  bottom: var(--card-color);
+  box-shadow: var(--main-shadow);
+}
+
 .qoute-show {
   width: 100%;
   height: 200px;
   border-radius: 10px;
   background-color: var(--card-color);
   border: 1px solid var(--ddd-color);
+  position: relative;
+  background-color: var(--card-color);
 }
+
+.qoute-show .swiper {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.qoute-show .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--main-text);
+}
+
+.qoute-show .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.reading-book .book-reading-title,
+.popular-book .book-reading-title,
+.popular-article .pop-article-title {
+  color: var(--main-text);
+}
+
+.reading-book .book-see-more,
+.popular-book .book-see-more,
+.popular-article .article-see-more {
+  font-size: 16px;
+  color: var(--main-text);
+}
+
+.reading-book .book-see-more:hover,
+.popular-book .book-see-more:hover,
+.popular-article .article-see-more:hover {
+  color: var(--link-text);
+}
+
+.reading-book .book-cover,
+.popular-book .book-cover {
+  width: 100%;
+  height: auto;
+}
+
+.reading-book .add-book-cover,
+.popular-book .add-book-cover {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: 2px dotted var(--ddd-color);
+}
+
+.reading-book .add-book-cover .add-plus {
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  background-color: transparent;
+  border: 2px dotted var(--ddd-color);
+}
+
+.reading-book .add-book-cover .add-plus i {
+  font-size: 25px;
+  color: var(--ddd-color);
+}
+
+.reading-book .book-cover img,
+.popular-book .book-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.reading-book .conti-read {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--ddd-color);
+  font-weight: 500;
+  color: var(--main-text);
+}
+
+.reading-book .conti-read:hover {
+  background: var(--bg-grandient);
+  color: #fff;
+}
+
+.book-title {
+  color: var(--main-text);
+}
+
+.artist-name {
+  font-size: 15px;
+  color: var(--main-text);
+}
+
+.star-rate i {
+  font-size: 13px;
+  padding: 5px 5px 5px 0;
+  color: gold;
+}
+
+.book-price {
+  font-size: 18px;
+  color: red;
+}
+
+.book-discount-price {
+  font-size: 15px;
+  color: var(--ddd-color);
+  padding-left: 10px;
+}
+
 /* ? begin of footer */
 
 .footer {
@@ -801,7 +943,7 @@ nav {
 }
 
 .footer-title {
-  background: var(--bg-grandient);
+  background: var(--link-text);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
