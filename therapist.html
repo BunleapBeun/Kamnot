@@ -10,14 +10,777 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
-    <link rel="stylesheet" href="assets/css/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.css" />
     <link rel="stylesheet" href="assets/plugins/aos/css/aos.css" />
   </head>
   <body>
+    <!-- ! begin of header -->
+    <header class="position-fixed top-0 w-100">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"
+            ><img src="assets/img/navbar/Kn-logo.png" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            aria-expanded="false"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasWithBothOptions"
+            aria-controls="offcanvasWithBothOptions"
+          >
+            <span class="nav-toggler-icon all-center"><i class="fa-solid fa-bars"></i></span>
+          </button>
+          <!-- ! begin of offcanvas -->
+          <div
+            class="offcanvas offcanvas-start d-lg-none"
+            data-bs-scroll="true"
+            tabindex="-1"
+            id="offcanvasWithBothOptions"
+            aria-labelledby="offcanvasWithBothOptionsLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                <a class="navbar-brand" href="index.html"
+                  ><img src="assets/img/navbar/Kn-logo.png" alt=""
+                /></a>
+              </h5>
+              <button
+                type="button"
+                class="x-close all-center"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="offcanvas-body">
+              <div class="canvas-header d-flex justify-content-between">
+                <a
+                  href="profile_info.html"
+                  class="convas-pf rounded-circle overflow-hidden text-decoration-none"
+                >
+                  <img src="assets/img/navbar/profile-img.png" alt="" />
+                </a>
+                <div class="d-flex align-items-center">
+                  <a
+                    href="cart.html"
+                    class="btn-add-cart all-center text-decoration-none"
+                    ><i class="fa-solid fa-cart-shopping"></i>
+                    <div class="cart-status all-center"><span>2 </span></div></a
+                  >
+                  <button
+                    type="button"
+                    data-theme-toggle
+                    id="theme-toggle-1"
+                    class="dark-light-mode all-center rounded-circle ms-3"
+                  ></button>
+                </div>
+              </div>
 
-    <main></main>
+              <!-- ! begin navbar offcanvas -->
+              <ul class="nav-convas">
+                <li class="convas-item">
+                  <a class="convas-link convas-bar-bg" href="index.html"
+                    ><i class="fa fa-house"></i> ទំព័រដើម</a
+                  >
+                </li>
+                <li class="convas-item">
+                  <input type="checkbox" id="showDropHabit" />
+                  <label
+                    for="showDropHabit"
+                    class="sub-convas-dropdown d-flex align-items-center justify-content-between"
+                    ><div>
+                      <i class="fa-solid fa-calendar-check"></i>
+                      ទម្លាប់ប្រចាំថ្ងៃ
+                    </div>
+                    <i class="fa-solid fa-caret-down"></i
+                  ></label>
+                  <ul class="drop-menu">
+                    <li class="convas-item">
+                      <a class="convas-link bbt-pf" href="journaling.html"
+                        >កំណត់ត្រាប្រចាំថ្ងៃ</a
+                      >
+                    </li>
+                    <li class="convas-item">
+                      <a class="convas-link bbt-pf" href="money_spending.html"
+                        >តាមដានការចំណាយ</a
+                      >
+                    </li>
+                    <li class="convas-item">
+                      <a class="convas-link bbt-pf" href="mood_tracking.html"
+                        >តាមដានផ្លូវចិត្ត</a
+                      >
+                    </li>
+                    <li class="convas-item">
+                      <a class="convas-link" href="exercise.html"
+                        >លំហាត់ប្រាណ</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="convas-item mt-10">
+                  <input type="checkbox" id="showDropMentalhealth" />
+                  <label
+                    for="showDropMentalhealth"
+                    class="sub-convas-dropdown d-flex align-items-center justify-content-between"
+                    ><div>
+                      <i class="fa-solid fa-brain"></i> ស្ថានភាពផ្លូវចិត្ត
+                    </div>
+                    <i class="fa-solid fa-caret-down"></i
+                  ></label>
+                  <ul class="drop-menu">
+                    <li class="convas-item">
+                      <a class="convas-link bbt-pf" href="therapist.html"
+                        >អ្នកជំនាញផ្លូវចិត្ត</a
+                      >
+                    </li>
+                    <li class="convas-item">
+                      <a class="convas-link" href="mediation.html">សមាធិ</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="convas-item mt-10">
+                  <input type="checkbox" id="showDropEdu" />
+                  <label
+                    for="showDropEdu"
+                    class="sub-convas-dropdown d-flex align-items-center justify-content-between"
+                    ><div>
+                      <i class="fa-solid fa-book-open-reader"></i> ចំណេះដឹង
+                    </div>
+                    <i class="fa-solid fa-caret-down"></i
+                  ></label>
+                  <ul class="drop-menu">
+                    <li class="convas-item">
+                      <a class="convas-link bbt-pf" href="book_store.html"
+                        >សៀវភៅ</a
+                      >
+                    </li>
+                    <li class="convas-item">
+                      <a class="convas-link bbt-pf" href="event.html"
+                        >ព្រឹត្តិការណ៍</a
+                      >
+                    </li>
+                    <li class="convas-item">
+                      <a class="convas-link" href="video_recommendation.html"
+                        >វីឌីអូអភិវឌ្ឍខ្លួន</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="convas-item">
+                  <a class="convas-link convas-bar-bg mb-0" href="article.html"
+                    ><i class="fa-solid fa-newspaper"></i> អត្ថបទ</a
+                  >
+                </li>
+                <li class="convas-item">
+                  <a class="convas-link convas-bar-bg mb-0" href="article.html"
+                    ><i class="fa-solid fa-money-check-dollar"></i> តម្លៃ</a
+                  >
+                </li>
+                <li class="convas-item mt-10">
+                  <input type="checkbox" id="showDropMoreInfo" />
+                  <label
+                    for="showDropMoreInfo"
+                    class="sub-convas-dropdown d-flex align-items-center justify-content-between"
+                    ><div>
+                      <i class="fa-solid fa-circle-info"></i> ព័ត៌មានបន្ថែម
+                    </div>
+                    <i class="fa-solid fa-caret-down"></i
+                  ></label>
+                  <ul class="drop-menu">
+                    <li class="convas-item">
+                      <a class="convas-link bbt-pf" href="about_us.html"
+                        >អំពីយើង</a
+                      >
+                    </li>
+                    <li class="convas-item">
+                      <a class="convas-link" href="contact_us.html">ទាក់ទង</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <!-- ! end navbar offcanvas -->
+            </div>
+          </div>
+          <!-- ! end of offcanvas -->
+          <div
+            class="collapse navbar-collapse d-flex justify-content-end d-lg-block d-none"
+            id="navbarSupportedContent"
+          >
+            <form class="search-bar d-flex" role="search">
+              <input
+                class="search-nav form-control me-3 position-relative"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <i class="fa-solid fa-magnifying-glass position-absolute"></i>
+            </form>
+            <div class="profile d-flex flex-row align-items-center">
+              <div class="pf-arrow-down rounded-circle me-2 ms-2 all-center">
+                <i class="fa-solid fa-caret-down"></i>
+              </div>
+              <div class="pf-status d-flex flex-column align-items-end">
+                <a href="profile_info.html" class="pf-name text-decoration-none"
+                  >Wade Warren</a
+                >
+              </div>
+              <div class="pf-image rounded-circle ms-2">
+                <img src="assets/img/navbar/profile-img.png" alt="" />
+              </div>
+              <div class="pf-drowpdown">
+                <div class="hide-upf"></div>
+                <div class="box-rotate"></div>
+                <ul class="pf-list">
+                  <li class="pf-item bbt-pf">
+                    <a href="profile_info.html" class="pf-link d-flex">
+                      <div class="dropdown-pf">
+                        <img
+                          src="assets/img/navbar/profile-img.png"
+                          class="rounded-circle"
+                          alt=""
+                        />
+                      </div>
+                      <p class="m-0">Wade Warren</p>
+                    </a>
+                  </li>
+                  <li class="pf-item">
+                    <a href="landing_page.html" class="pf-link d-flex">
+                      <div class="leave-icon all-center">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                      </div>
+                      <p class="m-0">ចាកចេញ</p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="notification rounded-circle all-center position-relative ms-3"
+            >
+              <i class="fa-solid fa-bell"></i>
+              <span
+                class="notification-count bg-danger all-center text-white position-absolute"
+                >9</span
+              >
+              <div class="noti-controll">
+                <div class="box-rotate"></div>
+                <div class="noti-content">
+                  <div class="hide-upf"></div>
+                  <div class="bar-noti d-flex justify-content-between">
+                    <div class="d-flex align-items-center">
+                      <i class="fa-solid fa-bell"></i>
+                      <p class="m-0">ដំណឹង</p>
+                    </div>
+                    <div class="noti-status all-center">
+                      <span>9</span>
+                    </div>
+                  </div>
+                  <ul class="noti-list">
+                    <li class="noti-item bbt-pf">
+                      <a href="#" class="noti-link text-decoration-none">
+                        <div class="noti-image">
+                          <img src="assets/img/navbar/profile-img.png" alt="" />
+                        </div>
+                        <div class="d-flex flex-column justify-content-between">
+                          <p class="noti-title m-0">
+                            ១៦ វិធីសាមញ្ញដើម្បីបំបាត់ភាពតានតឹង។
+                          </p>
+                          <p class="noti-author m-0">ដោយ៖ Wide Warren</p>
+                          <span class="noti-date">12:30 PM</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="noti-item bbt-pf">
+                      <a href="#" class="noti-link text-decoration-none">
+                        <div class="noti-image">
+                          <img src="assets/img/navbar/profile-img.png" alt="" />
+                        </div>
+                        <div class="d-flex flex-column justify-content-between">
+                          <p class="noti-title m-0">
+                            ១៦ វិធីសាមញ្ញដើម្បីបំបាត់ភាពតានតឹង។
+                          </p>
+                          <p class="noti-author m-0">ដោយ៖ Wide Warren</p>
+                          <span class="noti-date">12:30 PM</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="noti-item bbt-pf">
+                      <a href="#" class="noti-link text-decoration-none">
+                        <div class="noti-image">
+                          <img src="assets/img/navbar/profile-img.png" alt="" />
+                        </div>
+                        <div class="d-flex flex-column justify-content-between">
+                          <p class="noti-title m-0">
+                            ១៦ វិធីសាមញ្ញដើម្បីបំបាត់ភាពតានតឹង។
+                          </p>
+                          <p class="noti-author m-0">ដោយ៖ Wide Warren</p>
+                          <span class="noti-date">12:30 PM</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="noti-item bbt-pf">
+                      <a href="#" class="noti-link text-decoration-none">
+                        <div class="noti-image">
+                          <img src="assets/img/navbar/profile-img.png" alt="" />
+                        </div>
+                        <div class="d-flex flex-column justify-content-between">
+                          <p class="noti-title m-0">
+                            ១៦ វិធីសាមញ្ញដើម្បីបំបាត់ភាពតានតឹង។
+                          </p>
+                          <p class="noti-author m-0">ដោយ៖ Wide Warren</p>
+                          <span class="noti-date">12:30 PM</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="noti-item bbt-pf">
+                      <a href="#" class="noti-link text-decoration-none">
+                        <div class="noti-image">
+                          <img src="assets/img/navbar/profile-img.png" alt="" />
+                        </div>
+                        <div class="d-flex flex-column justify-content-between">
+                          <p class="noti-title m-0">
+                            ១៦ វិធីសាមញ្ញដើម្បីបំបាត់ភាពតានតឹង។
+                          </p>
+                          <p class="noti-author m-0">ដោយ៖ Wide Warren</p>
+                          <span class="noti-date">12:30 PM</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="noti-item">
+                      <a href="#" class="noti-link text-decoration-none">
+                        <div class="noti-image">
+                          <img src="assets/img/navbar/profile-img.png" alt="" />
+                        </div>
+                        <div class="d-flex flex-column justify-content-between">
+                          <p class="noti-title m-0">
+                            ១៦ វិធីសាមញ្ញដើម្បីបំបាត់ភាពតានតឹង។
+                          </p>
+                          <p class="noti-author m-0">ដោយ៖ Wide Warren</p>
+                          <span class="noti-date">12:30 PM</span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <a
+                    type="button"
+                    href="notification.html"
+                    role="button"
+                    class="bar-noti text-decoration-none w-100"
+                    >មើលទាំងអស់</a
+                  >
+                </div>
+              </div>
+            </div>
+            <button
+              type="button"
+              data-theme-toggle
+              id="theme-toggle-2"
+              class="dark-light-mode all-center rounded-circle ms-3"
+            ></button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- ! end of header -->
 
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <main>
+      <div class="container">
+        <div class="row g-lg-4">
+          <!-- ! begin of side bar -->
+          <div class="col-lg-1 col-sm-2 d-lg-block d-none">
+            <div class="side-menu">
+              <ul class="menu">
+                <li class="menu-item all-center">
+                  <a
+                    role="button"
+                    type="button"
+                    href="index.html"
+                    class="menu-btn active text-decoration-none all-center"
+                    ><i class="fa fa-house"></i
+                  ></a>
+                  <ul class="nav-menu">
+                    <li class="menu-item">
+                      <div class="menu-content">
+                        <div class="bar-title d-flex align-items-center">
+                          <i class="fa fa-house"></i>
+                          <h4>ទំព័រដើម</h4>
+                        </div>
+                      </div>
+                    </li>
+                    <div class="hide"></div>
+                  </ul>
+                </li>
+                <li class="menu-item all-center">
+                  <button type="button" class="menu-btn">
+                    <i class="fa-solid fa-calendar-check"></i>
+                  </button>
+                  <ul class="nav-menu">
+                    <li class="menu-item">
+                      <div class="menu-content">
+                        <div class="bar-title d-flex align-items-center">
+                          <i class="fa-solid fa-calendar-check"></i>
+                          <h4>ទម្លាប់ប្រចាំថ្ងៃ</h4>
+                        </div>
+                        <ul class="content-list">
+                          <li class="content-item">
+                            <a href="journaling.html" class="content-link"
+                              >កំណត់ត្រាប្រចាំថ្ងៃ</a
+                            >
+                          </li>
+                          <li class="content-item">
+                            <a href="journaling.html" class="content-link"
+                              >តាមដានការចំណាយ</a
+                            >
+                          </li>
+                          <li class="content-item">
+                            <a href="journaling.html" class="content-link"
+                              >តាមដានផ្លូវចិត្ត</a
+                            >
+                          </li>
+                          <li class="content-item">
+                            <a href="journaling.html" class="content-link"
+                              >លំហាត់ប្រាណ</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <div class="hide"></div>
+                  </ul>
+                </li>
+                <li class="menu-item all-center">
+                  <button type="button" class="menu-btn all-center">
+                    <i class="fa-solid fa-brain"></i>
+                  </button>
+                  <ul class="nav-menu">
+                    <li class="menu-item">
+                      <div class="menu-content">
+                        <div class="bar-title d-flex align-items-center">
+                          <i class="fa-solid fa-brain"></i>
+                          <h4>ស្ថានភាពផ្លូវចិត្ត</h4>
+                        </div>
+                        <ul class="content-list">
+                          <li class="content-item">
+                            <a href="therapist.html" class="content-link"
+                              >អ្នកជំនាញផ្លូវចិត្ត</a
+                            >
+                          </li>
+                          <li class="content-item">
+                            <a href="mediation.html" class="content-link"
+                              >សមាធិ</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <div class="hide"></div>
+                  </ul>
+                </li>
+                <li class="menu-item all-center">
+                  <button type="button" class="menu-btn all-center">
+                    <i class="fa-solid fa-book-open-reader"></i>
+                  </button>
+                  <ul class="nav-menu">
+                    <li class="menu-item">
+                      <div class="menu-content">
+                        <div class="bar-title d-flex align-items-center">
+                          <i class="fa-solid fa-book-open-reader"></i>
+                          <h4>ចំណេះដឹង</h4>
+                        </div>
+                        <ul class="content-list">
+                          <li class="content-item">
+                            <a href="therapist.html" class="content-link"
+                              >សៀវភៅ</a
+                            >
+                          </li>
+                          <li class="content-item">
+                            <a href="mediation.html" class="content-link"
+                              >ព្រឹត្តិការណ៍</a
+                            >
+                          </li>
+                          <li class="content-item">
+                            <a href="mediation.html" class="content-link"
+                              >វីឌីអូអភិវឌ្ឍខ្លួន</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <div class="hide"></div>
+                  </ul>
+                </li>
+                <li class="menu-item all-center">
+                  <a
+                    href="pricing.html"
+                    type="button"
+                    class="menu-btn all-center text-decoration-none"
+                    ><i class="fa-solid fa-money-check-dollar"></i
+                  ></a>
+                  <ul class="nav-menu">
+                    <li class="menu-item">
+                      <div class="menu-content">
+                        <div class="bar-title d-flex align-items-center">
+                          <i class="fa-solid fa-money-check-dollar"></i>
+                          <h4>តម្លៃ</h4>
+                        </div>
+                      </div>
+                    </li>
+                    <div class="hide"></div>
+                  </ul>
+                </li>
+                <li class="menu-item all-center">
+                  <a
+                    role="button"
+                    href="article.html"
+                    type="button"
+                    class="menu-btn all-center text-decoration-none"
+                    ><i class="fa-solid fa-newspaper"></i
+                  ></a>
+                  <ul class="nav-menu">
+                    <li class="menu-item">
+                      <div class="menu-content">
+                        <div class="bar-title d-flex align-items-center">
+                          <i class="fa-solid fa-newspaper"></i>
+                          <h4>អត្ថបទ</h4>
+                        </div>
+                      </div>
+                    </li>
+                    <div class="hide"></div>
+                  </ul>
+                </li>
+                <li class="menu-item all-center">
+                  <button type="button" class="menu-btn mb-0 all-center">
+                    <i class="fa-solid fa-circle-info"></i>
+                  </button>
+                  <ul class="nav-menu">
+                    <li class="menu-item">
+                      <div class="menu-content">
+                        <div class="bar-title d-flex align-items-center">
+                          <i class="fa-solid fa-circle-info"></i>
+                          <h4>ព័ត៌មានបន្ថែម</h4>
+                        </div>
+                        <ul class="content-list">
+                          <li class="content-item">
+                            <a href="about_us.html" class="content-link"
+                              >អំពីយើង</a
+                            >
+                          </li>
+                          <li class="content-item">
+                            <a href="contact_us.html" class="content-link"
+                              >ទាក់ទង</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <div class="hide"></div>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- ! end of side bar -->
+          <!-- ! begin of main content -->
+          <div class="col-lg-11 col-12">
+            <div class="pt-112 px-4 px-md-0">
+              <!-- ? write your content here -->
+              <div class="box"></div>
+              <div class="box mt-3"></div>
+              <div class="box mt-3"></div>
+              <div class="box mt-3"></div>
+              <div class="box mt-3"></div>
+              <div class="box mt-3"></div>
+              <!-- ? end of write your content here -->
+            </div>
+          </div>
+          <!-- ! end of main content -->
+        </div>
+      </div>
+    </main>
+
+    <!-- ! begin of footer -->
+    <footer class="footer">
+      <div class="line-footer"></div>
+      <div class="container py-3">
+        <div class="row px-4 px-lg-0">
+          <div class="col-lg-3 col-12">
+            <div
+              class="footer-logo w-100 d-lg-block d-flex justify-content-center"
+            >
+              <a href="index.html" class="text-decoration-none"
+                ><img src="assets/img/navbar/Kn-logo.png" alt="Kn-logo"
+              /></a>
+            </div>
+            <div class="comp-discript">
+              <p>
+                Kamnot - កំណត់ បង្កើតឡើងក្នុងគោល
+                ដៅដើម្បីជួយអោយអ្នកប្រើប្រាស់អាចអភិ វឌ្ឍន៍
+                ខ្លួនបានកាន់តែប្រសើឡើងជាមួយ និងមុខងារ​ពិសេសៗ ដែលទាក់ទងនិងការ
+                អភិវឌ្ឍខ្លួន គឺ​ ប្រមូលផ្ដុំនៅក្នុង Kamnot។
+              </p>
+            </div>
+            <ul class="comp-social-media d-flex pb-3 pb-lg-0">
+              <li class="comp-item">
+                <a href="#" class="social-media-icon"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+              <li class="comp-item">
+                <a href="#" class="social-media-icon"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li class="comp-item">
+                <a href="#" class="social-media-icon"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+              <li class="comp-item">
+                <a href="#" class="social-media-icon"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+              </li>
+              <li class="comp-item">
+                <a href="#" class="social-media-icon"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-12 ps-lg-5">
+            <h4 class="footer-title">ដំណរភ្ជាប់រហ័ស</h4>
+            <div class="row">
+              <div class="col-6 p-0">
+                <ul class="footer-list">
+                  <li class="footer-item">
+                    <a class="footer-link" href="journaling.html"
+                      >កំណត់ត្រាប្រចាំថ្ងៃ</a
+                    >
+                  </li>
+                  <li class="footer-item">
+                    <a class="footer-link" href="money_spending.html"
+                      >តាមដានការចំណាយ</a
+                    >
+                  </li>
+                  <li class="footer-item">
+                    <a class="footer-link" href="mood_tracking.html"
+                      >តាមដានផ្លូវចិត្ត</a
+                    >
+                  </li>
+                  <li class="footer-item">
+                    <a class="footer-link" href="exercise.html">លំហាត់ប្រាណ</a>
+                  </li>
+                  <li class="footer-item">
+                    <a class="footer-link" href="therapist.html"
+                      >អ្នកជំនាញផ្លូវចិត្ត</a
+                    >
+                  </li>
+                  <li class="footer-item">
+                    <a class="footer-link" href="mediation.html">សមាធិ</a>
+                  </li>
+                  <li class="footer-item">
+                    <a class="footer-link" href="book_store.html">សៀវភៅ</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-6 p-0 ps-4">
+                <ul class="footer-list">
+                  <li class="footer-item">
+                    <a class="footer-link" href="event.html">ព្រឹត្តិការណ៍</a>
+                  </li>
+                  <li class="footer-item">
+                    <a class="footer-link" href="pricing.html">តម្លៃ</a>
+                  </li>
+                  <li class="footer-item">
+                    <a class="footer-link" href="article.html">អត្ថបទ</a>
+                  </li>
+                  <li class="footer-item">
+                    <a class="footer-link" href="video_recommendation.html"
+                      >វីឌីអូអភិវឌ្ឍខ្លួន</a
+                    >
+                  </li>
+                  <li class="footer-item">
+                    <a class="footer-link" href="about_us.html">អំពីយើង</a>
+                  </li>
+                  <li class="footer-item">
+                    <a class="footer-link" href="contact_us.html">ទាក់ទង</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-12 ps-lg-4 ps-3">
+            <h4 class="footer-title">បណ្ដាញសង្គម</h4>
+            <div class="row">
+              <div class="col-12 p-0">
+                <ul class="footer-list">
+                  <li class="footer-item">
+                    <a href="#" class="footer-link">Facebook</a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="#" class="footer-link">Instagram</a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="#" class="footer-link">Twitter</a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="#" class="footer-link">YouTube</a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="#" class="footer-link">Linkedin</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-12">
+            <h4 class="footer-title">តាមដានការវិវត្ត</h4>
+            <div class="col-12 p-0">
+              <p class="sub-footer-text">
+                បញ្ចូលអុីមែលរបស់អ្នកដើម្បីទទួលបានសារពីការអភិវឌ្ឍ មុខងារថ្មីៗ​
+                នៃវេបសាយ។
+              </p>
+            </div>
+            <div class="col-12">
+              <div class="mb-3">
+                <div class="input-group mb-3">
+                  <input
+                    type="text"
+                    class="footer-input"
+                    placeholder="user@gmail.com"
+                    aria-label="user@gmail.com"
+                    aria-describedby="button-addon2"
+                  />
+                  <button class="btn-footer" type="button" id="button-addon2">
+                    <i class="fa-solid fa-paper-plane"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row copyright">
+            <div class="col-lg-6 col-12 p-0 text-lg-start text-center">
+              <p class="copyright-info m-0">
+                &copy; ២០២៤ រក្សាសិទ្ធគ្រប់យ៉ាងដោយ Kamnot - កំណត់
+              </p>
+            </div>
+            <div class="col-lg-6 col-12 p-0 text-lg-end text-center">
+              <p class="term-poli m-0">
+                <a href="#">លក្ខខណ្ឌ​នៃ​សេវាកម្ម</a>
+                &#x2022;
+                <a href="#">គោលការណ៍​ ភាព​ឯកជន</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ! end of footer -->
+
+    <script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/plugins/aos/js/aos.js"></script>
+    <script src="assets/js/dark-mode.js"></script>
   </body>
 </html>

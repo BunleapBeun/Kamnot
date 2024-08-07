@@ -2,10 +2,12 @@
 
 :root{
   --main-text: #000;
+  --stick-color: #fff;
   --sub-title: #767676;
-  --main-color: #fff;
+  --main-color: #f5f4fe;
   --gray-color: #818181;
   --hover-color: #d4e0ff;
+  --ddd-color: #ddd;
   --bg-grandient: linear-gradient(135deg, #488495 0%, #3c4d78 100%);
   --link-text: #498797;
   --card-color: #fff;
