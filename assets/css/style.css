@@ -312,6 +312,7 @@ section{
 }
 .testimonail .swiper {
   width: 100%;
+  padding-bottom: 90px;
   height: 100%;
 }
 .swiper .swiper-wrapper .swiper-slide {
@@ -359,8 +360,8 @@ section{
 .swiper .swiper-wrapper .swiper-slide .card .card-body .card-text{
   font-size: 18px;
 }
-.swiper .swiper-button-next, .swiper-button-prev{
-  color: var(--link-text) !important;
+.swiper .swiper-pagination .swiper-pagination-bullet{
+  background: var(--bg-grandient) !important;
   font-size: 20px !important;
 }
 .faq .card{
@@ -405,15 +406,6 @@ section{
   }
 }
 @media (max-width: 760px) {
-  .swiper-button-next {
-    right: 20px;
-    transform: rotate(90deg);
-  }
-
-  .swiper-button-prev {
-    left: 20px;
-    transform: rotate(90deg);
-  }
   .landing-herobanner .landing-title {
     padding: 100px 0;
   }

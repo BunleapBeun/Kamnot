@@ -175,7 +175,6 @@
                 <div class="des-deco blur" style="width: 220px; height: 220px; top: 110px; left: 220px;"></div>
                 
               </div>
-              
             </div>
             <div class="col-md-12 col-lg-6" data-aos="fade-right" data-aos-offset="100"
             data-aos-easing="ease-in-sine">
@@ -349,8 +348,7 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
         
@@ -445,25 +443,29 @@
     <script src="assets/plugins/swiper js/js/swiper-bundle.min.js"></script>
     <script>
       var swiper = new Swiper('.swiper', {
-          slidesPerView: 2,
-          direction: getDirection(),
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          },
-          on: {
-            resize: function () {
-              swiper.changeDirection(getDirection());
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+          breakpoints: {
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 4,
+              spaceBetween: 40,
+            },
+            1024: {
+              slidesPerView: 2,
+              spaceBetween: 50,
             },
           },
-        });
+      });
   
-        function getDirection() {
-          var windowWidth = window.innerWidth;
-          var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
-    
-          return direction;
-        }
+        
     </script>
     <script>
       AOS.init();
