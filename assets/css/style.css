@@ -2417,6 +2417,7 @@ nav {
 }
 
 .journaling-reshow .journal-reshow-content .bar-journal .journal-written h5 {
+  color: var(--main-text);
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
@@ -2426,6 +2427,7 @@ nav {
 }
 
 .journaling-reshow .journal-reshow-content .bar-journal .journal-written p {
+  color: var(--gray-color);
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
@@ -2502,6 +2504,11 @@ nav {
   font-size: 18px;
   color: var(--main-text);
   font-weight: 500;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  overflow: hidden;
 }
 
 .todo-reshow .reshow-todo-content .list-todo .todo-item .todotext-checked {
