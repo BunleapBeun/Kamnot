@@ -1,145 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kamnot</title>
     <link rel="stylesheet" href="assets/css/bootstrap.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.css" />
     <link rel="stylesheet" href="assets/plugins/aos/css/aos.css" />
-    <link
-      rel="stylesheet"
-      href="assets/plugins/swiper js/css/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="assets/plugins/swiper js/css/swiper-bundle.min.css" />
   </head>
+
   <body>
     <!-- ! begin of header -->
     <header class="position-fixed top-0 w-100">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand" href="index.html"
-            ><img src="assets/img/navbar/Kn-logo.png" alt=""
-          /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            aria-expanded="false"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasWithBothOptions"
-            aria-controls="offcanvasWithBothOptions"
-          >
-            <span class="nav-toggler-icon all-center"
-              ><i class="fa-solid fa-bars"></i
-            ></span>
+          <a class="navbar-brand" href="index.html"><img src="assets/img/navbar/Kn-logo.png" alt="" /></a>
+          <button class="navbar-toggler" type="button" aria-expanded="false" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+            <span class="nav-toggler-icon all-center"><i class="fa-solid fa-bars"></i></span>
           </button>
           <!-- ! begin of offcanvas -->
-          <div
-            class="offcanvas offcanvas-start d-lg-none"
-            data-bs-scroll="true"
-            tabindex="-1"
-            id="offcanvasWithBothOptions"
-            aria-labelledby="offcanvasWithBothOptionsLabel"
-          >
+          <div class="offcanvas offcanvas-start d-lg-none" data-bs-scroll="true" tabindex="-1"
+            id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
             <div class="offcanvas-header">
               <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
-                <a class="navbar-brand" href="index.html"
-                  ><img src="assets/img/navbar/Kn-logo.png" alt=""
-                /></a>
+                <a class="navbar-brand" href="index.html"><img src="assets/img/navbar/Kn-logo.png" alt="" /></a>
               </h5>
-              <button
-                type="button"
-                class="x-close all-center"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              >
+              <button type="button" class="x-close all-center" data-bs-dismiss="offcanvas" aria-label="Close">
                 <i class="fa-solid fa-xmark"></i>
               </button>
             </div>
             <div class="offcanvas-body">
               <div class="canvas-header d-flex justify-content-between">
-                <a
-                  href="profile_info.html"
-                  class="convas-pf rounded-circle overflow-hidden text-decoration-none"
-                >
+                <a href="profile_info.html" class="convas-pf rounded-circle overflow-hidden text-decoration-none">
                   <img src="assets/img/navbar/profile-img.png" alt="" />
                 </a>
                 <div class="d-flex align-items-center">
-                  <a
-                    href="cart.html"
-                    class="btn-add-cart all-center text-decoration-none"
-                    ><i class="fa-solid fa-cart-shopping"></i>
-                    <div class="cart-status all-center"><span>2 </span></div></a
-                  >
-                  <button
-                    type="button"
-                    data-theme-toggle
-                    id="theme-toggle-1"
-                    class="dark-light-mode all-center rounded-circle ms-3"
-                  ></button>
+                  <a href="cart.html" class="btn-add-cart all-center text-decoration-none"><i
+                      class="fa-solid fa-cart-shopping"></i>
+                    <div class="cart-status all-center"><span>2 </span></div>
+                  </a>
+                  <button type="button" data-theme-toggle id="theme-toggle-1"
+                    class="dark-light-mode all-center rounded-circle ms-3"></button>
                 </div>
               </div>
 
               <!-- ! begin navbar offcanvas -->
               <ul class="nav-convas">
                 <li class="convas-item">
-                  <a class="convas-link convas-bar-bg" href="index.html"
-                    ><i class="fa fa-house"></i> ទំព័រដើម</a
-                  >
+                  <a class="convas-link convas-bar-bg" href="index.html"><i class="fa fa-house"></i> ទំព័រដើម</a>
                 </li>
                 <li class="convas-item">
                   <input type="checkbox" id="showDropHabit" />
-                  <label
-                    for="showDropHabit"
-                    class="sub-convas-dropdown d-flex align-items-center justify-content-between"
-                    ><div>
+                  <label for="showDropHabit"
+                    class="sub-convas-dropdown d-flex align-items-center justify-content-between">
+                    <div>
                       <i class="fa-solid fa-calendar-check"></i>
                       ទម្លាប់ប្រចាំថ្ងៃ
                     </div>
-                    <i class="fa-solid fa-caret-down"></i
-                  ></label>
+                    <i class="fa-solid fa-caret-down"></i>
+                  </label>
                   <ul class="drop-menu">
                     <li class="convas-item">
-                      <a class="convas-link bbt-pf" href="journaling.html"
-                        >កំណត់ត្រាប្រចាំថ្ងៃ</a
-                      >
+                      <a class="convas-link bbt-pf" href="journaling.html">កំណត់ត្រាប្រចាំថ្ងៃ</a>
                     </li>
                     <li class="convas-item">
-                      <a class="convas-link bbt-pf" href="money_spending.html"
-                        >តាមដានការចំណាយ</a
-                      >
+                      <a class="convas-link bbt-pf" href="money_spending.html">តាមដានការចំណាយ</a>
                     </li>
                     <li class="convas-item">
-                      <a class="convas-link bbt-pf" href="mood_tracking.html"
-                        >តាមដានផ្លូវចិត្ត</a
-                      >
+                      <a class="convas-link bbt-pf" href="mood_tracking.html">តាមដានផ្លូវចិត្ត</a>
                     </li>
                     <li class="convas-item">
-                      <a class="convas-link" href="exercise.html"
-                        >លំហាត់ប្រាណ</a
-                      >
+                      <a class="convas-link" href="exercise.html">លំហាត់ប្រាណ</a>
                     </li>
                   </ul>
                 </li>
                 <li class="convas-item mt-10">
                   <input type="checkbox" id="showDropMentalhealth" />
-                  <label
-                    for="showDropMentalhealth"
-                    class="sub-convas-dropdown d-flex align-items-center justify-content-between"
-                    ><div>
+                  <label for="showDropMentalhealth"
+                    class="sub-convas-dropdown d-flex align-items-center justify-content-between">
+                    <div>
                       <i class="fa-solid fa-brain"></i> ស្ថានភាពផ្លូវចិត្ត
                     </div>
-                    <i class="fa-solid fa-caret-down"></i
-                  ></label>
+                    <i class="fa-solid fa-caret-down"></i>
+                  </label>
                   <ul class="drop-menu">
                     <li class="convas-item">
-                      <a class="convas-link bbt-pf" href="therapist.html"
-                        >អ្នកជំនាញផ្លូវចិត្ត</a
-                      >
+                      <a class="convas-link bbt-pf" href="therapist.html">អ្នកជំនាញផ្លូវចិត្ត</a>
                     </li>
                     <li class="convas-item">
                       <a class="convas-link" href="mediation.html">សមាធិ</a>
@@ -148,57 +99,45 @@
                 </li>
                 <li class="convas-item mt-10">
                   <input type="checkbox" id="showDropEdu" />
-                  <label
-                    for="showDropEdu"
-                    class="sub-convas-dropdown d-flex align-items-center justify-content-between"
-                    ><div>
+                  <label for="showDropEdu"
+                    class="sub-convas-dropdown d-flex align-items-center justify-content-between">
+                    <div>
                       <i class="fa-solid fa-book-open-reader"></i> ចំណេះដឹង
                     </div>
-                    <i class="fa-solid fa-caret-down"></i
-                  ></label>
+                    <i class="fa-solid fa-caret-down"></i>
+                  </label>
                   <ul class="drop-menu">
                     <li class="convas-item">
-                      <a class="convas-link bbt-pf" href="book_store.html"
-                        >សៀវភៅ</a
-                      >
+                      <a class="convas-link bbt-pf" href="book_store.html">សៀវភៅ</a>
                     </li>
                     <li class="convas-item">
-                      <a class="convas-link bbt-pf" href="event.html"
-                        >ព្រឹត្តិការណ៍</a
-                      >
+                      <a class="convas-link bbt-pf" href="event.html">ព្រឹត្តិការណ៍</a>
                     </li>
                     <li class="convas-item">
-                      <a class="convas-link" href="video_recommendation.html"
-                        >វីឌីអូអភិវឌ្ឍខ្លួន</a
-                      >
+                      <a class="convas-link" href="video_recommendation.html">វីឌីអូអភិវឌ្ឍខ្លួន</a>
                     </li>
                   </ul>
                 </li>
                 <li class="convas-item">
-                  <a class="convas-link convas-bar-bg mb-0" href="article.html"
-                    ><i class="fa-solid fa-newspaper"></i> អត្ថបទ</a
-                  >
+                  <a class="convas-link convas-bar-bg mb-0" href="article.html"><i class="fa-solid fa-newspaper"></i>
+                    អត្ថបទ</a>
                 </li>
                 <li class="convas-item">
-                  <a class="convas-link convas-bar-bg mb-0" href="article.html"
-                    ><i class="fa-solid fa-money-check-dollar"></i> តម្លៃ</a
-                  >
+                  <a class="convas-link convas-bar-bg mb-0" href="article.html"><i
+                      class="fa-solid fa-money-check-dollar"></i> តម្លៃ</a>
                 </li>
                 <li class="convas-item mt-10">
                   <input type="checkbox" id="showDropMoreInfo" />
-                  <label
-                    for="showDropMoreInfo"
-                    class="sub-convas-dropdown d-flex align-items-center justify-content-between"
-                    ><div>
+                  <label for="showDropMoreInfo"
+                    class="sub-convas-dropdown d-flex align-items-center justify-content-between">
+                    <div>
                       <i class="fa-solid fa-circle-info"></i> ព័ត៌មានបន្ថែម
                     </div>
-                    <i class="fa-solid fa-caret-down"></i
-                  ></label>
+                    <i class="fa-solid fa-caret-down"></i>
+                  </label>
                   <ul class="drop-menu">
                     <li class="convas-item">
-                      <a class="convas-link bbt-pf" href="about_us.html"
-                        >អំពីយើង</a
-                      >
+                      <a class="convas-link bbt-pf" href="about_us.html">អំពីយើង</a>
                     </li>
                     <li class="convas-item">
                       <a class="convas-link" href="contact_us.html">ទាក់ទង</a>
@@ -210,17 +149,11 @@
             </div>
           </div>
           <!-- ! end of offcanvas -->
-          <div
-            class="collapse navbar-collapse d-flex justify-content-end d-lg-block d-none"
-            id="navbarSupportedContent"
-          >
+          <div class="collapse navbar-collapse d-flex justify-content-end d-lg-block d-none"
+            id="navbarSupportedContent">
             <form class="search-bar d-flex" role="search">
-              <input
-                class="search-nav form-control me-3 position-relative"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
+              <input class="search-nav form-control me-3 position-relative" type="search" placeholder="Search"
+                aria-label="Search" />
               <i class="fa-solid fa-magnifying-glass position-absolute"></i>
             </form>
             <div class="profile d-flex flex-row align-items-center">
@@ -228,9 +161,7 @@
                 <i class="fa-solid fa-caret-down"></i>
               </div>
               <div class="pf-status d-flex flex-column align-items-end">
-                <a href="profile_info.html" class="pf-name text-decoration-none"
-                  >Wade Warren</a
-                >
+                <a href="profile_info.html" class="pf-name text-decoration-none">Wade Warren</a>
               </div>
               <div class="pf-image rounded-circle ms-2">
                 <img src="assets/img/navbar/profile-img.png" alt="" />
@@ -242,11 +173,7 @@
                   <li class="pf-item bbt-pf">
                     <a href="profile_info.html" class="pf-link d-flex">
                       <div class="dropdown-pf">
-                        <img
-                          src="assets/img/navbar/profile-img.png"
-                          class="rounded-circle"
-                          alt=""
-                        />
+                        <img src="assets/img/navbar/profile-img.png" class="rounded-circle" alt="" />
                       </div>
                       <p class="m-0">Wade Warren</p>
                     </a>
@@ -262,14 +189,9 @@
                 </ul>
               </div>
             </div>
-            <div
-              class="notification rounded-circle all-center position-relative ms-3"
-            >
+            <div class="notification rounded-circle all-center position-relative ms-3">
               <i class="fa-solid fa-bell"></i>
-              <span
-                class="notification-count bg-danger all-center text-white position-absolute"
-                >9</span
-              >
+              <span class="notification-count bg-danger all-center text-white position-absolute">9</span>
               <div class="noti-controll">
                 <div class="box-rotate"></div>
                 <div class="noti-content">
@@ -369,22 +291,13 @@
                       </a>
                     </li>
                   </ul>
-                  <a
-                    type="button"
-                    href="notification.html"
-                    role="button"
-                    class="bar-noti text-decoration-none w-100"
-                    >មើលទាំងអស់</a
-                  >
+                  <a type="button" href="notification.html" role="button"
+                    class="bar-noti text-decoration-none w-100">មើលទាំងអស់</a>
                 </div>
               </div>
             </div>
-            <button
-              type="button"
-              data-theme-toggle
-              id="theme-toggle-2"
-              class="dark-light-mode all-center rounded-circle ms-3"
-            ></button>
+            <button type="button" data-theme-toggle id="theme-toggle-2"
+              class="dark-light-mode all-center rounded-circle ms-3"></button>
           </div>
         </div>
       </nav>
@@ -399,13 +312,8 @@
             <div class="side-menu">
               <ul class="menu">
                 <li class="menu-item all-center">
-                  <a
-                    role="button"
-                    type="button"
-                    href="index.html"
-                    class="menu-btn active text-decoration-none all-center"
-                    ><i class="fa fa-house"></i
-                  ></a>
+                  <a role="button" type="button" href="index.html"
+                    class="menu-btn active text-decoration-none all-center"><i class="fa fa-house"></i></a>
                   <ul class="nav-menu">
                     <li class="menu-item">
                       <div class="menu-content">
@@ -431,24 +339,16 @@
                         </div>
                         <ul class="content-list">
                           <li class="content-item">
-                            <a href="journaling.html" class="content-link"
-                              >កំណត់ត្រាប្រចាំថ្ងៃ</a
-                            >
+                            <a href="journaling.html" class="content-link">កំណត់ត្រាប្រចាំថ្ងៃ</a>
                           </li>
                           <li class="content-item">
-                            <a href="journaling.html" class="content-link"
-                              >តាមដានការចំណាយ</a
-                            >
+                            <a href="journaling.html" class="content-link">តាមដានការចំណាយ</a>
                           </li>
                           <li class="content-item">
-                            <a href="journaling.html" class="content-link"
-                              >តាមដានផ្លូវចិត្ត</a
-                            >
+                            <a href="journaling.html" class="content-link">តាមដានផ្លូវចិត្ត</a>
                           </li>
                           <li class="content-item">
-                            <a href="journaling.html" class="content-link"
-                              >លំហាត់ប្រាណ</a
-                            >
+                            <a href="journaling.html" class="content-link">លំហាត់ប្រាណ</a>
                           </li>
                         </ul>
                       </div>
@@ -469,14 +369,10 @@
                         </div>
                         <ul class="content-list">
                           <li class="content-item">
-                            <a href="therapist.html" class="content-link"
-                              >អ្នកជំនាញផ្លូវចិត្ត</a
-                            >
+                            <a href="therapist.html" class="content-link">អ្នកជំនាញផ្លូវចិត្ត</a>
                           </li>
                           <li class="content-item">
-                            <a href="mediation.html" class="content-link"
-                              >សមាធិ</a
-                            >
+                            <a href="mediation.html" class="content-link">សមាធិ</a>
                           </li>
                         </ul>
                       </div>
@@ -497,19 +393,13 @@
                         </div>
                         <ul class="content-list">
                           <li class="content-item">
-                            <a href="therapist.html" class="content-link"
-                              >សៀវភៅ</a
-                            >
+                            <a href="book_store.html" class="content-link">សៀវភៅ</a>
                           </li>
                           <li class="content-item">
-                            <a href="mediation.html" class="content-link"
-                              >ព្រឹត្តិការណ៍</a
-                            >
+                            <a href="mediation.html" class="content-link">ព្រឹត្តិការណ៍</a>
                           </li>
                           <li class="content-item">
-                            <a href="mediation.html" class="content-link"
-                              >វីឌីអូអភិវឌ្ឍខ្លួន</a
-                            >
+                            <a href="mediation.html" class="content-link">វីឌីអូអភិវឌ្ឍខ្លួន</a>
                           </li>
                         </ul>
                       </div>
@@ -518,12 +408,8 @@
                   </ul>
                 </li>
                 <li class="menu-item all-center">
-                  <a
-                    href="pricing.html"
-                    type="button"
-                    class="menu-btn all-center text-decoration-none"
-                    ><i class="fa-solid fa-money-check-dollar"></i
-                  ></a>
+                  <a href="pricing.html" type="button" class="menu-btn all-center text-decoration-none"><i
+                      class="fa-solid fa-money-check-dollar"></i></a>
                   <ul class="nav-menu">
                     <li class="menu-item">
                       <div class="menu-content">
@@ -537,13 +423,8 @@
                   </ul>
                 </li>
                 <li class="menu-item all-center">
-                  <a
-                    role="button"
-                    href="article.html"
-                    type="button"
-                    class="menu-btn all-center text-decoration-none"
-                    ><i class="fa-solid fa-newspaper"></i
-                  ></a>
+                  <a role="button" href="article.html" type="button" class="menu-btn all-center text-decoration-none"><i
+                      class="fa-solid fa-newspaper"></i></a>
                   <ul class="nav-menu">
                     <li class="menu-item">
                       <div class="menu-content">
@@ -569,14 +450,10 @@
                         </div>
                         <ul class="content-list">
                           <li class="content-item">
-                            <a href="about_us.html" class="content-link"
-                              >អំពីយើង</a
-                            >
+                            <a href="about_us.html" class="content-link">អំពីយើង</a>
                           </li>
                           <li class="content-item">
-                            <a href="contact_us.html" class="content-link"
-                              >ទាក់ទង</a
-                            >
+                            <a href="contact_us.html" class="content-link">ទាក់ទង</a>
                           </li>
                         </ul>
                       </div>
@@ -587,7 +464,7 @@
               </ul>
             </div>
           </div>
-          <!-- ! end of side bar -->
+          <!-- ! end of side bar --
           <!-- ! begin of main content -->
           <div class="col-lg-11 col-12">
             <div class="pt-112 px-4 px-md-0">
@@ -597,44 +474,227 @@
                   <div class="bar-journal-reshow all-center">
                     <h3>កំណត់ហេតុប្រចាំថ្ងៃ</h3>
                   </div>
-                  <div class="journal-reshow-content"></div>
+                  <div class="journal-reshow-content">
+                    <div class="bar-journal d-flex flex-row">
+                      <div class="col-lg-1 col-2 journal-date d-flex flex-column all-center">
+                        <p class="fw-bold">23</p>
+                        <p>សុក្រ</p>
+                      </div>
+                      <div class="journal-written col-lg-9 col-6">
+                        <h5>ថ្ងៃនេះជាថ្ងៃស្រស់ស្រាយ!</h5>
+                        <p class="m-0">ខ្ញុំចាប់ផ្តើមជាមួយនឹងការដើរយ៉ាងលឿននៅក្នុងឧទ្យាន
+                          រីករាយជាមួយខ្យល់អាកាសដ៏ត្រជាក់នៅពេលព្រឹក និងសំឡេងសត្វបក្សីបន្លឺឡើង។ នៅកន្លែងធ្វើការ
+                          ទីបំផុតខ្ញុំបានបញ្ចប់គម្រោងមួយដែលខ្ញុំកំពុងជួបការលំបាក
+                          ដែលមានអារម្មណ៍ថាដូចជាទម្ងន់ដ៏ធំមួយបានលើកស្មារបស់ខ្ញុំ។</p>
+                      </div>
+                      <div class="col-lg-2 col-4 journal-edit">
+                        <div class="edit-control">
+                          <div class="d-flex flex-row align-items-center justify-content-end">
+                            <a href="#" type="button" class="btn-journal d-flex all-center"><i
+                                class="fa-solid fa-bookmark"></i></a>
+                            <a href="#" type="button" class="btn-journal d-flex all-center"><i
+                                class="fa-solid fa-pencil"></i></a>
+                            <a href="#" type="button" class="btn-journal d-flex all-center"><i
+                                class="fa-regular fa-trash-can"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bar-journal d-flex flex-row">
+                      <div class="col-lg-1 col-2 journal-date d-flex flex-column all-center">
+                        <p class="fw-bold">23</p>
+                        <p>សុក្រ</p>
+                      </div>
+                      <div class="journal-written col-lg-9 col-6">
+                        <h5>ថ្ងៃនេះជាថ្ងៃស្រស់ស្រាយ!</h5>
+                        <p class="m-0">ខ្ញុំចាប់ផ្តើមជាមួយនឹងការដើរយ៉ាងលឿននៅក្នុងឧទ្យាន
+                          រីករាយជាមួយខ្យល់អាកាសដ៏ត្រជាក់នៅពេលព្រឹក និងសំឡេងសត្វបក្សីបន្លឺឡើង។ នៅកន្លែងធ្វើការ
+                          ទីបំផុតខ្ញុំបានបញ្ចប់គម្រោងមួយដែលខ្ញុំកំពុងជួបការលំបាក
+                          ដែលមានអារម្មណ៍ថាដូចជាទម្ងន់ដ៏ធំមួយបានលើកស្មារបស់ខ្ញុំ។</p>
+                      </div>
+                      <div class="col-lg-2 col-4 journal-edit">
+                        <div class="edit-control">
+                          <div class="d-flex flex-row align-items-center justify-content-end">
+                            <a href="#" type="button" class="btn-journal d-flex all-center"><i
+                                class="fa-solid fa-bookmark"></i></a>
+                            <a href="#" type="button" class="btn-journal d-flex all-center"><i
+                                class="fa-solid fa-pencil"></i></a>
+                            <a href="#" type="button" class="btn-journal d-flex all-center"><i
+                                class="fa-regular fa-trash-can"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bar-journal d-flex flex-row">
+                      <div class="col-lg-1 col-2 journal-date d-flex flex-column all-center">
+                        <p class="fw-bold">23</p>
+                        <p>សុក្រ</p>
+                      </div>
+                      <div class="journal-written col-lg-9 col-6">
+                        <h5>ថ្ងៃនេះជាថ្ងៃស្រស់ស្រាយ!</h5>
+                        <p class="m-0">ខ្ញុំចាប់ផ្តើមជាមួយនឹងការដើរយ៉ាងលឿននៅក្នុងឧទ្យាន
+                          រីករាយជាមួយខ្យល់អាកាសដ៏ត្រជាក់នៅពេលព្រឹក និងសំឡេងសត្វបក្សីបន្លឺឡើង។ នៅកន្លែងធ្វើការ
+                          ទីបំផុតខ្ញុំបានបញ្ចប់គម្រោងមួយដែលខ្ញុំកំពុងជួបការលំបាក
+                          ដែលមានអារម្មណ៍ថាដូចជាទម្ងន់ដ៏ធំមួយបានលើកស្មារបស់ខ្ញុំ។</p>
+                      </div>
+                      <div class="col-lg-2 col-4 journal-edit">
+                        <div class="edit-control">
+                          <div class="d-flex flex-row align-items-center justify-content-end">
+                            <a href="#" type="button" class="btn-journal d-flex all-center"><i
+                                class="fa-solid fa-bookmark"></i></a>
+                            <a href="#" type="button" class="btn-journal d-flex all-center"><i
+                                class="fa-solid fa-pencil"></i></a>
+                            <a href="#" type="button" class="btn-journal d-flex all-center"><i
+                                class="fa-regular fa-trash-can"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bar-journal d-flex flex-row">
+                      <div class="col-lg-1 col-2 journal-date d-flex flex-column all-center">
+                        <p class="fw-bold">23</p>
+                        <p>សុក្រ</p>
+                      </div>
+                      <div class="journal-written col-lg-9 col-6">
+                        <h5>ថ្ងៃនេះជាថ្ងៃស្រស់ស្រាយ!</h5>
+                        <p class="m-0">ខ្ញុំចាប់ផ្តើមជាមួយនឹងការដើរយ៉ាងលឿននៅក្នុងឧទ្យាន
+                          រីករាយជាមួយខ្យល់អាកាសដ៏ត្រជាក់នៅពេលព្រឹក និងសំឡេងសត្វបក្សីបន្លឺឡើង។ នៅកន្លែងធ្វើការ
+                          ទីបំផុតខ្ញុំបានបញ្ចប់គម្រោងមួយដែលខ្ញុំកំពុងជួបការលំបាក
+                          ដែលមានអារម្មណ៍ថាដូចជាទម្ងន់ដ៏ធំមួយបានលើកស្មារបស់ខ្ញុំ។</p>
+                      </div>
+                      <div class="col-lg-2 col-4 journal-edit">
+                        <div class="edit-control">
+                          <div class="d-flex flex-row align-items-center justify-content-end">
+                            <a href="#" type="button" class="btn-journal d-flex all-center"><i
+                                class="fa-solid fa-bookmark"></i></a>
+                            <a href="#" type="button" class="btn-journal d-flex all-center"><i
+                                class="fa-solid fa-pencil"></i></a>
+                            <a href="#" type="button" class="btn-journal d-flex all-center"><i
+                                class="fa-regular fa-trash-can"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bar-journal d-flex flex-row">
+                      <div class="col-lg-1 col-2 journal-date d-flex flex-column all-center">
+                        <p class="fw-bold">23</p>
+                        <p>សុក្រ</p>
+                      </div>
+                      <div class="journal-written col-lg-9 col-6">
+                        <h5>ថ្ងៃនេះជាថ្ងៃស្រស់ស្រាយ!</h5>
+                        <p class="m-0">ខ្ញុំចាប់ផ្តើមជាមួយនឹងការដើរយ៉ាងលឿននៅក្នុងឧទ្យាន
+                          រីករាយជាមួយខ្យល់អាកាសដ៏ត្រជាក់នៅពេលព្រឹក និងសំឡេងសត្វបក្សីបន្លឺឡើង។ នៅកន្លែងធ្វើការ
+                          ទីបំផុតខ្ញុំបានបញ្ចប់គម្រោងមួយដែលខ្ញុំកំពុងជួបការលំបាក
+                          ដែលមានអារម្មណ៍ថាដូចជាទម្ងន់ដ៏ធំមួយបានលើកស្មារបស់ខ្ញុំ។</p>
+                      </div>
+                      <div class="col-lg-2 col-4 journal-edit">
+                        <div class="edit-control">
+                          <div class="d-flex flex-row align-items-center justify-content-end">
+                            <a href="#" type="button" class="btn-journal d-flex all-center"><i
+                                class="fa-solid fa-bookmark"></i></a>
+                            <a href="#" type="button" class="btn-journal d-flex all-center"><i
+                                class="fa-solid fa-pencil"></i></a>
+                            <a href="#" type="button" class="btn-journal d-flex all-center"><i
+                                class="fa-regular fa-trash-can"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bar-journal d-flex flex-row">
+                      <div class="col-lg-1 col-2 journal-date d-flex flex-column all-center">
+                        <p class="fw-bold">23</p>
+                        <p>សុក្រ</p>
+                      </div>
+                      <div class="journal-written col-lg-9 col-6">
+                        <h5>ថ្ងៃនេះជាថ្ងៃស្រស់ស្រាយ!</h5>
+                        <p class="m-0">ខ្ញុំចាប់ផ្តើមជាមួយនឹងការដើរយ៉ាងលឿននៅក្នុងឧទ្យាន
+                          រីករាយជាមួយខ្យល់អាកាសដ៏ត្រជាក់នៅពេលព្រឹក និងសំឡេងសត្វបក្សីបន្លឺឡើង។ នៅកន្លែងធ្វើការ
+                          ទីបំផុតខ្ញុំបានបញ្ចប់គម្រោងមួយដែលខ្ញុំកំពុងជួបការលំបាក
+                          ដែលមានអារម្មណ៍ថាដូចជាទម្ងន់ដ៏ធំមួយបានលើកស្មារបស់ខ្ញុំ។</p>
+                      </div>
+                      <div class="col-lg-2 col-4 journal-edit">
+                        <div class="edit-control">
+                          <div class="d-flex flex-row align-items-center justify-content-end">
+                            <a href="#" type="button" class="btn-journal d-flex all-center"><i
+                                class="fa-solid fa-bookmark"></i></a>
+                            <a href="#" type="button" class="btn-journal d-flex all-center"><i
+                                class="fa-solid fa-pencil"></i></a>
+                            <a href="#" type="button" class="btn-journal d-flex all-center"><i
+                                class="fa-regular fa-trash-can"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bar-journal d-flex flex-row">
+                      <div class="col-lg-1 col-2 journal-date d-flex flex-column all-center">
+                        <p class="fw-bold">23</p>
+                        <p>សុក្រ</p>
+                      </div>
+                      <div class="journal-written col-lg-9 col-6">
+                        <h5>ថ្ងៃនេះជាថ្ងៃស្រស់ស្រាយ!</h5>
+                        <p class="m-0">ខ្ញុំចាប់ផ្តើមជាមួយនឹងការដើរយ៉ាងលឿននៅក្នុងឧទ្យាន
+                          រីករាយជាមួយខ្យល់អាកាសដ៏ត្រជាក់នៅពេលព្រឹក និងសំឡេងសត្វបក្សីបន្លឺឡើង។ នៅកន្លែងធ្វើការ
+                          ទីបំផុតខ្ញុំបានបញ្ចប់គម្រោងមួយដែលខ្ញុំកំពុងជួបការលំបាក
+                          ដែលមានអារម្មណ៍ថាដូចជាទម្ងន់ដ៏ធំមួយបានលើកស្មារបស់ខ្ញុំ។</p>
+                      </div>
+                      <div class="col-lg-2 col-4 journal-edit">
+                        <div class="edit-control">
+                          <div class="d-flex flex-row align-items-center justify-content-end">
+                            <a href="#" type="button" class="btn-journal d-flex all-center"><i
+                                class="fa-solid fa-bookmark"></i></a>
+                            <a href="#" type="button" class="btn-journal d-flex all-center"><i
+                                class="fa-solid fa-pencil"></i></a>
+                            <a href="#" type="button" class="btn-journal d-flex all-center"><i
+                                class="fa-regular fa-trash-can"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bar-btm-journal-reshow">
+                  </div>
                 </div>
                 <div class="col-lg-4 col-12 todo-reshow">
                   <div class="bar-reshow-todo all-center">
                     <h3>កិច្ចការប្រចាំថ្ងៃ</h3>
                   </div>
                   <div class="reshow-todo-content">
-                    <form>
-                      <ul class="list-todo">
-                        <li>
-                          <input id="item-0" type="checkbox" />
-                          <label for="item-0">Create this list</label>
-                        </li>
-                        <li>
-                          <input id="item-1" type="checkbox" />
-                          <label for="item-1">Style it pretty</label>
-                        </li>
-                        <li>
-                          <input id="item-2" type="checkbox" />
-                          <label for="item-2">Check all the circles</label>
-                        </li>
-                        <li>
-                          <input id="item-3" type="checkbox" />
-                          <label for="item-3">Time for a drink</label>
-                        </li>
-                      </ul>
-                    </form>
+                    <ul class="list-todo">
+                      <li class="todo-item d-flex align-items-center justify-content-between">
+                        <span>អានសៀវភៅ ៣០ នាទី</span>
+                        <div class="check-todo all-center">
+                        </div>
+                      </li>
+                      <li class="todo-item d-flex align-items-center justify-content-between">
+                        <span>អានសៀវភៅ ៣០ នាទី</span>
+                        <div class="check-todo bg-success bg-opacity-25 all-center">
+                          <i class="fa-solid fa-check"></i>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="bar-btm-journal-reshow">
                   </div>
                 </div>
                 <div class="col-12 p-2 m-2 me-0 ms-0">
                   <div class="col-12 qoute-show">
                     <div class="swiper mySwiper">
                       <div class="swiper-wrapper">
-                        <div class="swiper-slide">Slide 1</div>
-                        <div class="swiper-slide">Slide 2</div>
-                        <div class="swiper-slide">Slide 3</div>
-                        <div class="swiper-slide">Slide 4</div>
-                        <div class="swiper-slide">Slide 5</div>
+                        <div class="swiper-slide">
+                          <img src="assets/img/book/banner-picture/banner-sample-book.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="assets/img/book/banner-picture/banner-sample-book.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="assets/img/book/banner-picture/banner-sample-book.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="assets/img/book/banner-picture/banner-sample-book.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="assets/img/book/banner-picture/banner-sample-book.jpg" alt="" />
+                        </div>
                       </div>
                       <div class="swiper-pagination"></div>
                     </div>
@@ -642,25 +702,17 @@
                 </div>
                 <section class="reading-book p-2 m-2 me-0 ms-0">
                   <div class="row">
-                    <div class="col-12 p-2 m-0">
-                      <div
-                        class="d-flex justify-content-between align-content-center mb-2"
-                      >
-                        <h3 class="book-reading-title">សៀវភៅដែលអ្នកកំពុងអាន</h3>
-                        <a
-                          href="book_store.html"
-                          class="text-decoration-none align-self-center book-see-more"
-                          >មើលបន្ថែម</a
-                        >
+                    <div class="col-12">
+                      <div class="d-flex justify-content-between align-content-center mb-2">
+                        <h3 class="book-reading-title">សៀវភៅកំពុងអាន</h3>
+                        <a href="book_store.html"
+                          class="text-decoration-none align-self-center book-see-more">មើលបន្ថែម</a>
                       </div>
                       <div class="row g-3">
                         <div class="col-lg-2 col-4">
                           <a href="#">
                             <div class="book-cover">
-                              <img
-                                src="assets/img/book/the_healing_of_trauma.jpg"
-                                alt=""
-                              />
+                              <img src="assets/img/book/the_healing_of_trauma.jpg" alt="" />
                             </div>
                           </a>
                           <button class="conti-read mt-2">អានបន្ថែម</button>
@@ -668,10 +720,7 @@
                         <div class="col-lg-2 col-4">
                           <a href="#">
                             <div class="book-cover">
-                              <img
-                                src="assets/img/book/the_healing_of_trauma.jpg"
-                                alt=""
-                              />
+                              <img src="assets/img/book/the_healing_of_trauma.jpg" alt="" />
                             </div>
                           </a>
                           <button class="conti-read mt-2">អានបន្ថែម</button>
@@ -679,10 +728,7 @@
                         <div class="col-lg-2 col-4">
                           <a href="#">
                             <div class="book-cover">
-                              <img
-                                src="assets/img/book/the_healing_of_trauma.jpg"
-                                alt=""
-                              />
+                              <img src="assets/img/book/the_healing_of_trauma.jpg" alt="" />
                             </div>
                           </a>
                           <button class="conti-read mt-2">អានបន្ថែម</button>
@@ -690,10 +736,7 @@
                         <div class="col-lg-2 col-4">
                           <a href="#">
                             <div class="book-cover">
-                              <img
-                                src="assets/img/book/the_healing_of_trauma.jpg"
-                                alt=""
-                              />
+                              <img src="assets/img/book/the_healing_of_trauma.jpg" alt="" />
                             </div>
                           </a>
                           <button class="conti-read mt-2">អានបន្ថែម</button>
@@ -701,10 +744,7 @@
                         <div class="col-lg-2 col-4">
                           <a href="#">
                             <div class="book-cover">
-                              <img
-                                src="assets/img/book/the_healing_of_trauma.jpg"
-                                alt=""
-                              />
+                              <img src="assets/img/book/the_healing_of_trauma.jpg" alt="" />
                             </div>
                           </a>
                           <button class="conti-read mt-2">អានបន្ថែម</button>
@@ -722,27 +762,19 @@
                     </div>
                   </div>
                 </section>
-                <section class="popular-book m-0">
+                <section class="popular-book p-2 m-2 me-0 ms-0">
                   <div class="row">
-                    <div class="col-12 p-2 m-0">
-                      <div
-                        class="d-flex justify-content-between align-content-center mb-2"
-                      >
+                    <div class="col-12">
+                      <div class="d-flex justify-content-between align-content-center mb-2">
                         <h3 class="book-reading-title">សៀវភៅពេញនិយម</h3>
-                        <a
-                          href="book_store.html"
-                          class="text-decoration-none align-self-center book-see-more"
-                          >មើលបន្ថែម</a
-                        >
+                        <a href="book_store.html"
+                          class="text-decoration-none align-self-center book-see-more">មើលបន្ថែម</a>
                       </div>
                       <div class="row g-3">
                         <div class="col-lg-2 col-4">
                           <a href="#" class="text-decoration-none">
                             <div class="book-cover">
-                              <img
-                                src="assets/img/book/the_healing_of_trauma.jpg"
-                                alt=""
-                              />
+                              <img src="assets/img/book/the_healing_of_trauma.jpg" alt="" />
                               <h5 class="book-title pt-2 m-0">
                                 The Law of Power
                               </h5>
@@ -762,10 +794,7 @@
                         <div class="col-lg-2 col-4">
                           <a href="#" class="text-decoration-none">
                             <div class="book-cover">
-                              <img
-                                src="assets/img/book/the_healing_of_trauma.jpg"
-                                alt=""
-                              />
+                              <img src="assets/img/book/the_healing_of_trauma.jpg" alt="" />
                               <h5 class="book-title pt-2 m-0">
                                 The Law of Power
                               </h5>
@@ -785,10 +814,7 @@
                         <div class="col-lg-2 col-4">
                           <a href="#" class="text-decoration-none">
                             <div class="book-cover">
-                              <img
-                                src="assets/img/book/the_healing_of_trauma.jpg"
-                                alt=""
-                              />
+                              <img src="assets/img/book/the_healing_of_trauma.jpg" alt="" />
                               <h5 class="book-title pt-2 m-0">
                                 The Law of Power
                               </h5>
@@ -808,10 +834,7 @@
                         <div class="col-lg-2 col-4">
                           <a href="#" class="text-decoration-none">
                             <div class="book-cover">
-                              <img
-                                src="assets/img/book/the_healing_of_trauma.jpg"
-                                alt=""
-                              />
+                              <img src="assets/img/book/the_healing_of_trauma.jpg" alt="" />
                               <h5 class="book-title pt-2 m-0">
                                 The Law of Power
                               </h5>
@@ -831,10 +854,7 @@
                         <div class="col-lg-2 col-4">
                           <a href="#" class="text-decoration-none">
                             <div class="book-cover">
-                              <img
-                                src="assets/img/book/the_healing_of_trauma.jpg"
-                                alt=""
-                              />
+                              <img src="assets/img/book/the_healing_of_trauma.jpg" alt="" />
                               <h5 class="book-title pt-2 m-0">
                                 The Law of Power
                               </h5>
@@ -854,10 +874,7 @@
                         <div class="col-lg-2 col-4">
                           <a href="#" class="text-decoration-none">
                             <div class="book-cover">
-                              <img
-                                src="assets/img/book/the_healing_of_trauma.jpg"
-                                alt=""
-                              />
+                              <img src="assets/img/book/the_healing_of_trauma.jpg" alt="" />
                               <h5 class="book-title pt-2 m-0">
                                 The Law of Power
                               </h5>
@@ -878,28 +895,432 @@
                     </div>
                   </div>
                 </section>
-                <section class="popular-article">
+                <section class="popular-article p-2 m-2 me-0 ms-0">
                   <div class="col-12">
-                    <div
-                        class="d-flex justify-content-between align-content-center mb-2"
-                      >
-                        <h3 class="pop-article-title">អត្ថបទពេញនិយម</h3>
-                        <a
-                          href="book_store.html"
-                          class="text-decoration-none align-self-center article-see-more"
-                          >មើលបន្ថែម</a
-                        >
-                      </div>
+                    <div class="d-flex justify-content-between align-content-center mb-2">
+                      <h3 class="pop-article-title">អត្ថបទពេញនិយម</h3>
+                      <a href="book_store.html"
+                        class="text-decoration-none align-self-center article-see-more">មើលបន្ថែម</a>
+                    </div>
                   </div>
-                  <div class="row">
-                    <div class="col-6">
-
+                  <div class="row g-3">
+                    <div class="col-md-6 col-12">
+                      <div class="card card-article d-flex flex-row">
+                        <div class="row">
+                          <div class="col-lg-4 col-12 image-article">
+                            <img src="assets/img/article/mediation-girl-image.jpg" alt="" />
+                          </div>
+                          <div class="col-lg-8 ps-lg-0 col-12 mt-lg-0 mt-2 article-info d-flex flex-column">
+                            <h4 class="article-title">
+                              ១៦ សាមញ្ញដើម្បីបំបាតភាពតានតាំង
+                            </h4>
+                            <p class="article-discript">
+                              ការចូលរួមក្នុងសកម្មភាពដែលគាំទ្រការថែទាំខ្លួនឯងអាចជួយកាត់បន្ថយភាពតានតឹង
+                              និងការថប់បារម្ភ។
+                              ទាំងនេះ​អាច​រួម​បញ្ចូល​ទាំង​ការ​ហាត់​ប្រាណ
+                              និង​ការ​អនុវត្ត​សតិអារម្មណ៍​​...
+                            </p>
+                            <div class="d-flex flex-row justify-content-between align-items-center">
+                              <div class="art-artist-pf d-flex flex-row align-items-center">
+                                <img src="assets/img/article/girl-profile.jpg" alt="" />
+                                <div>
+                                  <p class="art-artist-name p-0 m-0">
+                                    ដោយ៖
+                                    <a href="#" class="text-decoration-none">Jullia Luna</a>
+                                  </p>
+                                  <p class="article-date p-0 m-0">
+                                    ២៤ តុលា ២០២៤
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="d-flex">
+                                <a href="article.html" type="button"
+                                  class="btn-share text-decoration-none all-center me-2">
+                                  <i class="fa-solid fa-share-alt"></i>
+                                </a>
+                                <a href="article.html" type="button" class="btn-next text-decoration-none all-center">
+                                  <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                      <div class="card card-article d-flex flex-row">
+                        <div class="row">
+                          <div class="col-lg-4 col-12 image-article">
+                            <img src="assets/img/article/mediation-girl-image.jpg" alt="" />
+                          </div>
+                          <div class="col-lg-8 ps-lg-0 col-12 mt-lg-0 mt-2 article-info d-flex flex-column">
+                            <h4 class="article-title">
+                              ១៦ សាមញ្ញដើម្បីបំបាតភាពតានតាំង
+                            </h4>
+                            <p class="article-discript">
+                              ការចូលរួមក្នុងសកម្មភាពដែលគាំទ្រការថែទាំខ្លួនឯងអាចជួយកាត់បន្ថយភាពតានតឹង
+                              និងការថប់បារម្ភ។
+                              ទាំងនេះ​អាច​រួម​បញ្ចូល​ទាំង​ការ​ហាត់​ប្រាណ
+                              និង​ការ​អនុវត្ត​សតិអារម្មណ៍​​...
+                            </p>
+                            <div class="d-flex flex-row justify-content-between align-items-center">
+                              <div class="art-artist-pf d-flex flex-row align-items-center">
+                                <img src="assets/img/article/girl-profile.jpg" alt="" />
+                                <div>
+                                  <p class="art-artist-name p-0 m-0">
+                                    ដោយ៖
+                                    <a href="#" class="text-decoration-none">Jullia Luna</a>
+                                  </p>
+                                  <p class="article-date p-0 m-0">
+                                    ២៤ តុលា ២០២៤
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="d-flex">
+                                <a href="article.html" type="button"
+                                  class="btn-share text-decoration-none all-center me-2">
+                                  <i class="fa-solid fa-share-alt"></i>
+                                </a>
+                                <a href="article.html" type="button" class="btn-next text-decoration-none all-center">
+                                  <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                      <div class="card card-article d-flex flex-row">
+                        <div class="row">
+                          <div class="col-lg-4 col-12 image-article">
+                            <img src="assets/img/article/mediation-girl-image.jpg" alt="" />
+                          </div>
+                          <div class="col-lg-8 ps-lg-0 col-12 mt-lg-0 mt-2 article-info d-flex flex-column">
+                            <h4 class="article-title">
+                              ១៦ សាមញ្ញដើម្បីបំបាតភាពតានតាំង
+                            </h4>
+                            <p class="article-discript">
+                              ការចូលរួមក្នុងសកម្មភាពដែលគាំទ្រការថែទាំខ្លួនឯងអាចជួយកាត់បន្ថយភាពតានតឹង
+                              និងការថប់បារម្ភ។
+                              ទាំងនេះ​អាច​រួម​បញ្ចូល​ទាំង​ការ​ហាត់​ប្រាណ
+                              និង​ការ​អនុវត្ត​សតិអារម្មណ៍​​...
+                            </p>
+                            <div class="d-flex flex-row justify-content-between align-items-center">
+                              <div class="art-artist-pf d-flex flex-row align-items-center">
+                                <img src="assets/img/article/girl-profile.jpg" alt="" />
+                                <div>
+                                  <p class="art-artist-name p-0 m-0">
+                                    ដោយ៖
+                                    <a href="#" class="text-decoration-none">Jullia Luna</a>
+                                  </p>
+                                  <p class="article-date p-0 m-0">
+                                    ២៤ តុលា ២០២៤
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="d-flex">
+                                <a href="article.html" type="button"
+                                  class="btn-share text-decoration-none all-center me-2">
+                                  <i class="fa-solid fa-share-alt"></i>
+                                </a>
+                                <a href="article.html" type="button" class="btn-next text-decoration-none all-center">
+                                  <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                      <div class="card card-article d-flex flex-row">
+                        <div class="row">
+                          <div class="col-lg-4 col-12 image-article">
+                            <img src="assets/img/article/mediation-girl-image.jpg" alt="" />
+                          </div>
+                          <div class="col-lg-8 ps-lg-0 col-12 mt-lg-0 mt-2 article-info d-flex flex-column">
+                            <h4 class="article-title">
+                              ១៦ សាមញ្ញដើម្បីបំបាតភាពតានតាំង
+                            </h4>
+                            <p class="article-discript">
+                              ការចូលរួមក្នុងសកម្មភាពដែលគាំទ្រការថែទាំខ្លួនឯងអាចជួយកាត់បន្ថយភាពតានតឹង
+                              និងការថប់បារម្ភ។
+                              ទាំងនេះ​អាច​រួម​បញ្ចូល​ទាំង​ការ​ហាត់​ប្រាណ
+                              និង​ការ​អនុវត្ត​សតិអារម្មណ៍​​...
+                            </p>
+                            <div class="d-flex flex-row justify-content-between align-items-center">
+                              <div class="art-artist-pf d-flex flex-row align-items-center">
+                                <img src="assets/img/article/girl-profile.jpg" alt="" />
+                                <div>
+                                  <p class="art-artist-name p-0 m-0">
+                                    ដោយ៖
+                                    <a href="#" class="text-decoration-none">Jullia Luna</a>
+                                  </p>
+                                  <p class="article-date p-0 m-0">
+                                    ២៤ តុលា ២០២៤
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="d-flex">
+                                <a href="article.html" type="button"
+                                  class="btn-share text-decoration-none all-center me-2">
+                                  <i class="fa-solid fa-share-alt"></i>
+                                </a>
+                                <a href="article.html" type="button" class="btn-next text-decoration-none all-center">
+                                  <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section class="social-event p-2 m-2 me-0 ms-0">
+                  <div class="col-12">
+                    <div class="d-flex justify-content-between align-content-center mb-2">
+                      <h3 class="social-even-title">សកម្មភាពសង្គមថ្មីៗ</h3>
+                      <a href="event.html" class="text-decoration-none align-self-center event-see-more">មើលបន្ថែម</a>
+                    </div>
+                  </div>
+                  <div class="row g-3">
+                    <div class="col-lg-4 col-12">
+                      <div class="card card-event">
+                        <div class="event-image">
+                          <img src="assets/img/events/event-image-01.jpg" alt="" />
+                        </div>
+                        <span class="badge rounded-pill text-bg-danger mt-3 fw-normal"><i
+                            class="fa-solid fa-calendar-days"></i> ផុតកំណត់៖
+                          ០១ កញ្ញា ២០២៤</span>
+                        <h4 class="event-title pt-3 m-0 text-cut">
+                          ឱកាសក្លាយជាអ្នកស្ម័គ្រចិត្តបានត្រឡប់មកវិញហើយសំរាប់កម្មវិធី Cambodia Robotics Olympiad 2024!
+                        </h4>
+                        <div class="event-discript">
+                          <p>
+                            ដូចដែលអ្នកទាំងអស់គ្នាបានដឹងថាកម្មវិធី Cambodia
+                            Robotics Olympiad 2024
+                            របស់យើងចាប់ផ្តើមទទួលពាក្យចួលរួមប្រលងប្រកួតហើយ
+                            ដូច្នេះពួកយើងត្រូវការជំនួយពីអ្នកស្ម័គ្រចិត្តទាំងអស់គ្នា។
+                          </p>
+                          <p>
+                            លើសពីនេះ ប្រសិនបើអ្នកជានិស្សិត ឬសិស្ស
+                            ហើយចាប់អារម្មណ៍ជាមួយរ៉ូបូត គឺកាន់តែល្អ។
+                          </p>
+                          <p>
+                            ចង់ចូលរួមដើម្បីទទួលបានបទពិសោធន៍នេះជាមួយពួកយើងអត់?
+                          </p>
+                        </div>
+                        <div class="d-flex w-100 justify-content-center">
+                          <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_zuB-fX3b1KXqjbNml63ih3MZ1UDCdXE9txlmmPdgAPyQ0Q/viewform"
+                            type="button" target="_blank" class="btn-event">
+                            ចុះឈ្មោះ
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-12">
+                      <div class="card card-event">
+                        <div class="event-image">
+                          <img src="assets/img/events/event-image-01.jpg" alt="" />
+                        </div>
+                        <span class="badge rounded-pill text-bg-danger mt-3 fw-normal"><i
+                            class="fa-solid fa-calendar-days"></i> ផុតកំណត់៖
+                          ០១ កញ្ញា ២០២៤</span>
+                        <h4 class="event-title pt-3 m-0 text-cut">
+                          ឱកាសក្លាយជាអ្នកស្ម័គ្រចិត្តបានត្រឡប់មកវិញហើយសំរាប់កម្មវិធី Cambodia Robotics Olympiad 2024!
+                        </h4>
+                        <div class="event-discript">
+                          <p>
+                            ដូចដែលអ្នកទាំងអស់គ្នាបានដឹងថាកម្មវិធី Cambodia
+                            Robotics Olympiad 2024
+                            របស់យើងចាប់ផ្តើមទទួលពាក្យចួលរួមប្រលងប្រកួតហើយ
+                            ដូច្នេះពួកយើងត្រូវការជំនួយពីអ្នកស្ម័គ្រចិត្តទាំងអស់គ្នា។
+                          </p>
+                          <p>
+                            លើសពីនេះ ប្រសិនបើអ្នកជានិស្សិត ឬសិស្ស
+                            ហើយចាប់អារម្មណ៍ជាមួយរ៉ូបូត គឺកាន់តែល្អ។
+                          </p>
+                          <p>
+                            ចង់ចូលរួមដើម្បីទទួលបានបទពិសោធន៍នេះជាមួយពួកយើងអត់?
+                          </p>
+                        </div>
+                        <div class="d-flex w-100 justify-content-center">
+                          <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_zuB-fX3b1KXqjbNml63ih3MZ1UDCdXE9txlmmPdgAPyQ0Q/viewform"
+                            type="button" target="_blank" class="btn-event">
+                            ចុះឈ្មោះ
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-12">
+                      <div class="card card-event">
+                        <div class="event-image">
+                          <img src="assets/img/events/event-image-01.jpg" alt="" />
+                        </div>
+                        <span class="badge rounded-pill text-bg-danger mt-3 fw-normal"><i
+                            class="fa-solid fa-calendar-days"></i> ផុតកំណត់៖
+                          ០១ កញ្ញា ២០២៤</span>
+                        <h4 class="event-title pt-3 m-0 text-cut">
+                          ឱកាសក្លាយជាអ្នកស្ម័គ្រចិត្តបានត្រឡប់មកវិញហើយសំរាប់កម្មវិធី Cambodia Robotics Olympiad 2024!
+                        </h4>
+                        <div class="event-discript">
+                          <p>
+                            ដូចដែលអ្នកទាំងអស់គ្នាបានដឹងថាកម្មវិធី Cambodia
+                            Robotics Olympiad 2024
+                            របស់យើងចាប់ផ្តើមទទួលពាក្យចួលរួមប្រលងប្រកួតហើយ
+                            ដូច្នេះពួកយើងត្រូវការជំនួយពីអ្នកស្ម័គ្រចិត្តទាំងអស់គ្នា។
+                          </p>
+                          <p>
+                            លើសពីនេះ ប្រសិនបើអ្នកជានិស្សិត ឬសិស្ស
+                            ហើយចាប់អារម្មណ៍ជាមួយរ៉ូបូត គឺកាន់តែល្អ។
+                          </p>
+                          <p>
+                            ចង់ចូលរួមដើម្បីទទួលបានបទពិសោធន៍នេះជាមួយពួកយើងអត់?
+                          </p>
+                        </div>
+                        <div class="d-flex w-100 justify-content-center">
+                          <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_zuB-fX3b1KXqjbNml63ih3MZ1UDCdXE9txlmmPdgAPyQ0Q/viewform"
+                            type="button" target="_blank" class="btn-event">
+                            ចុះឈ្មោះ
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section class="video-selfdev p-2 m-2 me-0 ms-0">
+                  <div class="col-12">
+                    <div class="d-flex justify-content-between align-content-center mb-2">
+                      <h3 class="video-selfdev-title">វីឌីអូអភិវឌ្ឍខ្លួនពេញនិយម</h3>
+                      <a href="event.html" class="text-decoration-none align-self-center selfdev-see-more">មើលបន្ថែម</a>
+                    </div>
+                  </div>
+                  <div class="row g-3">
+                    <div class="col-lg-3 col-md-6 col-12">
+                      <div class="card card-selfdev">
+                        <div class="self-dev-image">
+                          <img src="assets/img/video-sefdev/thumnail-selfdev-video-01.jpg" alt="">
+                          <span class="badge rounded-pill text-bg-dark opacity-75">5:16 វិនាទី</span>
+                        </div>
+                        <div class="video-discript">
+                          <h5>វិធីបង្កើនតេស្តូស្តេរ៉ូនតាមធម្មជាតិ - វិធី ៧ យ៉ាង</h5>
+                          <p class="m-0">ស្វែងយល់ពីវិធីធម្មជាតិចំនួន 7 ដើម្បីបង្កើនអ័រម៉ូនតេស្តូស្តេរ៉ូន ពីការលើកទម្ងន់
+                            និងការគេងឱ្យបានល្អ ដល់ការផ្លាស់ប្តូររបបអាហារ និងការកាត់បន្ថយភាពតានតឹង។
+                            បង្កើនសុខភាពអរម៉ូនរបស់អ្នកថ្ងៃនេះ!</p>
+                        </div>
+                        <div class="video-info d-flex justify-content-between align-items-center">
+                          <div class="pf-video d-flex align-items-center">
+                            <div class="pf-vdo-image rounded-circle">
+                              <img src="assets/img/video-sefdev/improvement_pill_profile.jpg"
+                                class="wh-100 rounded-circle object-fit-cover" alt="">
+                            </div>
+                            <div class="ps-2">
+                              <p>Improvement Pill</p>
+                              <span>១.៣ លាន អ្នកតាមដាន</span>
+                            </div>
+                          </div>
+                          <a href="#" type="button"
+                            class="btn-video-play rounded-circle all-center text-decoration-none">
+                            <i class="fa-solid fa-play"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                      <div class="card card-selfdev">
+                        <div class="self-dev-image">
+                          <img src="assets/img/video-sefdev/thumnail-selfdev-video-01.jpg" alt="">
+                          <span class="badge rounded-pill text-bg-dark opacity-75">5:16 វិនាទី</span>
+                        </div>
+                        <div class="video-discript">
+                          <h5>វិធីបង្កើនតេស្តូស្តេរ៉ូនតាមធម្មជាតិ - វិធី ៧ យ៉ាង</h5>
+                          <p class="m-0">ស្វែងយល់ពីវិធីធម្មជាតិចំនួន 7 ដើម្បីបង្កើនអ័រម៉ូនតេស្តូស្តេរ៉ូន ពីការលើកទម្ងន់
+                            និងការគេងឱ្យបានល្អ ដល់ការផ្លាស់ប្តូររបបអាហារ និងការកាត់បន្ថយភាពតានតឹង។
+                            បង្កើនសុខភាពអរម៉ូនរបស់អ្នកថ្ងៃនេះ!</p>
+                        </div>
+                        <div class="video-info d-flex justify-content-between align-items-center">
+                          <div class="pf-video d-flex align-items-center">
+                            <div class="pf-vdo-image rounded-circle">
+                              <img src="assets/img/video-sefdev/improvement_pill_profile.jpg"
+                                class="wh-100 rounded-circle object-fit-cover" alt="">
+                            </div>
+                            <div class="ps-2">
+                              <p>Improvement Pill</p>
+                              <span>១.៣ លាន អ្នកតាមដាន</span>
+                            </div>
+                          </div>
+                          <a href="#" type="button"
+                            class="btn-video-play rounded-circle all-center text-decoration-none">
+                            <i class="fa-solid fa-play"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                      <div class="card card-selfdev">
+                        <div class="self-dev-image">
+                          <img src="assets/img/video-sefdev/thumnail-selfdev-video-01.jpg" alt="">
+                          <span class="badge rounded-pill text-bg-dark opacity-75">5:16 វិនាទី</span>
+                        </div>
+                        <div class="video-discript">
+                          <h5>វិធីបង្កើនតេស្តូស្តេរ៉ូនតាមធម្មជាតិ - វិធី ៧ យ៉ាង</h5>
+                          <p class="m-0">ស្វែងយល់ពីវិធីធម្មជាតិចំនួន 7 ដើម្បីបង្កើនអ័រម៉ូនតេស្តូស្តេរ៉ូន ពីការលើកទម្ងន់
+                            និងការគេងឱ្យបានល្អ ដល់ការផ្លាស់ប្តូររបបអាហារ និងការកាត់បន្ថយភាពតានតឹង។
+                            បង្កើនសុខភាពអរម៉ូនរបស់អ្នកថ្ងៃនេះ!</p>
+                        </div>
+                        <div class="video-info d-flex justify-content-between align-items-center">
+                          <div class="pf-video d-flex align-items-center">
+                            <div class="pf-vdo-image rounded-circle">
+                              <img src="assets/img/video-sefdev/improvement_pill_profile.jpg"
+                                class="wh-100 rounded-circle object-fit-cover" alt="">
+                            </div>
+                            <div class="ps-2">
+                              <p>Improvement Pill</p>
+                              <span>១.៣ លាន អ្នកតាមដាន</span>
+                            </div>
+                          </div>
+                          <a href="#" type="button"
+                            class="btn-video-play rounded-circle all-center text-decoration-none">
+                            <i class="fa-solid fa-play"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                      <div class="card card-selfdev">
+                        <div class="self-dev-image">
+                          <img src="assets/img/video-sefdev/thumnail-selfdev-video-01.jpg" alt="">
+                          <span class="badge rounded-pill text-bg-dark opacity-75">5:16 វិនាទី</span>
+                        </div>
+                        <div class="video-discript">
+                          <h5>វិធីបង្កើនតេស្តូស្តេរ៉ូនតាមធម្មជាតិ - វិធី ៧ យ៉ាង</h5>
+                          <p class="m-0">ស្វែងយល់ពីវិធីធម្មជាតិចំនួន 7 ដើម្បីបង្កើនអ័រម៉ូនតេស្តូស្តេរ៉ូន ពីការលើកទម្ងន់
+                            និងការគេងឱ្យបានល្អ ដល់ការផ្លាស់ប្តូររបបអាហារ និងការកាត់បន្ថយភាពតានតឹង។
+                            បង្កើនសុខភាពអរម៉ូនរបស់អ្នកថ្ងៃនេះ!</p>
+                        </div>
+                        <div class="video-info d-flex justify-content-between align-items-center">
+                          <div class="pf-video d-flex align-items-center">
+                            <div class="pf-vdo-image rounded-circle">
+                              <img src="assets/img/video-sefdev/improvement_pill_profile.jpg"
+                                class="wh-100 rounded-circle object-fit-cover" alt="">
+                            </div>
+                            <div class="ps-2">
+                              <p>Improvement Pill</p>
+                              <span>១.៣ លាន អ្នកតាមដាន</span>
+                            </div>
+                          </div>
+                          <a href="#" type="button"
+                            class="btn-video-play rounded-circle all-center text-decoration-none">
+                            <i class="fa-solid fa-play"></i>
+                          </a>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </section>
               </div>
-
-              <!-- ? end of write your content here -->
             </div>
           </div>
           <!-- ! end of main content -->
@@ -913,12 +1334,9 @@
       <div class="container py-3">
         <div class="row px-4 px-lg-0">
           <div class="col-lg-3 col-12">
-            <div
-              class="footer-logo w-100 d-lg-block d-flex justify-content-center"
-            >
-              <a href="index.html" class="text-decoration-none"
-                ><img src="assets/img/navbar/Kn-logo.png" alt="Kn-logo"
-              /></a>
+            <div class="footer-logo w-100 d-lg-block d-flex justify-content-center">
+              <a href="index.html" class="text-decoration-none"><img src="assets/img/navbar/Kn-logo.png"
+                  alt="Kn-logo" /></a>
             </div>
             <div class="comp-discript">
               <p>
@@ -930,29 +1348,19 @@
             </div>
             <ul class="comp-social-media d-flex pb-3 pb-lg-0">
               <li class="comp-item">
-                <a href="#" class="social-media-icon"
-                  ><i class="fab fa-facebook-f"></i
-                ></a>
+                <a href="#" class="social-media-icon"><i class="fab fa-facebook-f"></i></a>
               </li>
               <li class="comp-item">
-                <a href="#" class="social-media-icon"
-                  ><i class="fab fa-twitter"></i
-                ></a>
+                <a href="#" class="social-media-icon"><i class="fab fa-twitter"></i></a>
               </li>
               <li class="comp-item">
-                <a href="#" class="social-media-icon"
-                  ><i class="fab fa-instagram"></i
-                ></a>
+                <a href="#" class="social-media-icon"><i class="fab fa-instagram"></i></a>
               </li>
               <li class="comp-item">
-                <a href="#" class="social-media-icon"
-                  ><i class="fab fa-youtube"></i
-                ></a>
+                <a href="#" class="social-media-icon"><i class="fab fa-youtube"></i></a>
               </li>
               <li class="comp-item">
-                <a href="#" class="social-media-icon"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
+                <a href="#" class="social-media-icon"><i class="fab fa-linkedin-in"></i></a>
               </li>
             </ul>
           </div>
@@ -962,27 +1370,19 @@
               <div class="col-6 p-0">
                 <ul class="footer-list">
                   <li class="footer-item">
-                    <a class="footer-link" href="journaling.html"
-                      >កំណត់ត្រាប្រចាំថ្ងៃ</a
-                    >
+                    <a class="footer-link" href="journaling.html">កំណត់ត្រាប្រចាំថ្ងៃ</a>
                   </li>
                   <li class="footer-item">
-                    <a class="footer-link" href="money_spending.html"
-                      >តាមដានការចំណាយ</a
-                    >
+                    <a class="footer-link" href="money_spending.html">តាមដានការចំណាយ</a>
                   </li>
                   <li class="footer-item">
-                    <a class="footer-link" href="mood_tracking.html"
-                      >តាមដានផ្លូវចិត្ត</a
-                    >
+                    <a class="footer-link" href="mood_tracking.html">តាមដានផ្លូវចិត្ត</a>
                   </li>
                   <li class="footer-item">
                     <a class="footer-link" href="exercise.html">លំហាត់ប្រាណ</a>
                   </li>
                   <li class="footer-item">
-                    <a class="footer-link" href="therapist.html"
-                      >អ្នកជំនាញផ្លូវចិត្ត</a
-                    >
+                    <a class="footer-link" href="therapist.html">អ្នកជំនាញផ្លូវចិត្ត</a>
                   </li>
                   <li class="footer-item">
                     <a class="footer-link" href="mediation.html">សមាធិ</a>
@@ -1004,9 +1404,7 @@
                     <a class="footer-link" href="article.html">អត្ថបទ</a>
                   </li>
                   <li class="footer-item">
-                    <a class="footer-link" href="video_recommendation.html"
-                      >វីឌីអូអភិវឌ្ឍខ្លួន</a
-                    >
+                    <a class="footer-link" href="video_recommendation.html">វីឌីអូអភិវឌ្ឍខ្លួន</a>
                   </li>
                   <li class="footer-item">
                     <a class="footer-link" href="about_us.html">អំពីយើង</a>
@@ -1053,13 +1451,8 @@
             <div class="col-12">
               <div class="mb-3">
                 <div class="input-group mb-3">
-                  <input
-                    type="text"
-                    class="footer-input"
-                    placeholder="user@gmail.com"
-                    aria-label="user@gmail.com"
-                    aria-describedby="button-addon2"
-                  />
+                  <input type="text" class="footer-input" placeholder="user@gmail.com" aria-label="user@gmail.com"
+                    aria-describedby="button-addon2" />
                   <button class="btn-footer" type="button" id="button-addon2">
                     <i class="fa-solid fa-paper-plane"></i>
                   </button>
@@ -1106,4 +1499,5 @@
       });
     </script>
   </body>
+
 </html>
