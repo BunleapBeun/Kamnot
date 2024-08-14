@@ -1460,7 +1460,6 @@ input.add-event-edit:-ms-input-placeholder {
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
-  /* background-color: #04b6e2; */
 }
 .has-events::after{
   border-radius:100%;
@@ -1603,9 +1602,6 @@ input.add-event-edit:-ms-input-placeholder {
   position: absolute;
   clip-path:polygon(0% 0%, 100% 100%, 0% 100%);
 }
-/* .pie-wrap .entry .percent-feeling{
-  padding-bottom: 10px;
-} */
 .pie-wrap .purple p{
   position: absolute;
   top: 140px;
@@ -1698,7 +1694,7 @@ input.add-event-edit:-ms-input-placeholder {
   border-top: 5px solid ;
 }
 .key-wrap label:active{
-  opacity: .5;
+  opacity: 0.5;
 }
 .rice-key:checked ~ .rice-text, .beans-key:checked ~ .beans-text, .plantain-key:checked ~ .plantain-text,  .potato-key:checked ~ .potato-text, .yam-key:checked ~ .yam-text, .pasta-key:checked ~ .pasta-text{
   display: block;
@@ -1777,6 +1773,10 @@ input.add-event-edit:-ms-input-placeholder {
   color: white;
   border-radius: 5px;
 }
+.card-text-mood h2{
+  color: var(--text-color-gradient);
+}
+
 /* ===== forgot-passwrod : thavy */
 .forgot-password{
   width: 100%;
@@ -1925,14 +1925,646 @@ input.add-event-edit:-ms-input-placeholder {
   justify-content: center;
   align-items: center;
 }
-.card-login h1{
-  color:var(--text-color-gradient);
+.login-profile{
+  display: flex;
+  box-shadow: 0px 0px 10px 0px var(--gray-color);
+  border-radius: 8px;
+  padding: 0;
+}
+.card-form-login{
+  margin-top: 70px;
+}
+.card-form-login img{
+ margin-top: -30px!important;
+}
+.login-password .card-login{
+  box-shadow: 0px 2px 5px 0px var(--link-text);
+  padding: 15px 40px!important;
+}
+.card-form-login .email {
+  position: absolute;
+  padding: 5px;
+}
+.card-form-login .passowrd {
+  position: absolute;
+  padding: 5px;
+}
+.card-login .icon-back{
+  color: var(--main-color);
+  background: var(--bg-grandient);
+  padding: 10px;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer!important;
+  position: absolute;
+  z-index: 2;
+  top: 10px;
+  left: 10px;
+}
+.group-input input {
+  padding: 10px 42px;
+  box-shadow: 0px 0px 2px 1px var(--link-text);
+  font-size:20px;
+  color: #000!important;
+}
+.group-input input :focus{
+  box-shadow: 0px 0px 4px 1px var(--bg-grandient);
+}
+.group-input input::placeholder {
+  color: var(--sub-title)!important;
+  font-size: 19px;
+}
+.group-input .icon-pw-login{
+  position: absolute;
+  z-index: 9;
+  right: 25%;
+  top: 46%;
+  font-size: 20px;
+  color: var(--gray-color);
+}
+.group-input .icon-before-input{
+  padding: 10px;
+  font-size: 18px;
+  color: var(--gray-color);
+}
+.form-check-label {
+  font-family: "Kantumruy Pro", sans-serif;
+  font-style: normal;
+  color: var(--sub-title);
+  padding-left: 5px;
+}
+.goto-forgot-pw {
+  color: var(--sub-title);
+  font-size: 20px;
+}
+.goto-forgot-pw:hover {
+  background-image: linear-gradient(90deg, #488495, #3C4D78);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+  transition: 0.6s;
+}
+.field-icon {
+  float: right;
+  margin-left: -25px;
+  margin-top: -25px;
+  position: relative;
+  z-index: 2;
+}
+.card-form-login .group-info-login .text-color{
+  font-family: "Kantumruy Pro", sans-serif; 
+  color: var(--gray-color);
+  padding-left: 20px;
+}
+.card-form-login .group-info-login .text-color:hover{
+  color: var(--link-text);
+  text-decoration: underline;
+
+}
+.login-password .login-profile .card-image-login .group-info-login a:hover span{
+  text-decoration: underline;
+}
+.login-password .login-profile .card-image-login .group-info-login a:active span{
+  color:var(--main-text);
+}
+.btn-login{
+  font-size: 20px;
+  border-radius: 20px;
+  border: none;
+  padding: 5px 18px;
+  box-shadow: 0px 0px 7px 0px var(--gray-color);
+  background: var(--bg-grandient);
+  opacity: 0.7;
+  color: var(--main-color);
+  transition: 0.8s;
+}
+.login-password .card-form-login .btn-login:hover{
+  background: var(--bg-grandient);
+  color: var(--main-color);
+  opacity: 1;
+  transition: 0.6s;
+}
+.text-user-color{
+  color: var(--main-text);
+  font-size: 20px;
+}
+.group-info-login{
+  padding-top: 10px;
+}
+.group-info-login a .text-color{
+  font-size: 20px;
+}
+.group-info-login a:hover .text-color{
+  background-image: linear-gradient(90deg, #488495, #3C4D78)!important;
+  background-clip: text!important;
+  -webkit-background-clip: text!important;
+  color: transparent!important;
+  transition: 0.6s;
+  font-weight: bold;
+}
+.group-line .line{
+  width:130px;
+  height: 2px;
+  background-color: var(--gray-color)!important;
+  opacity: 0.3;
+}
+.group-line .text-link{
+  color:var(--sub-title);
+  font-size: 20px;
+  margin-top: -14px;
+  margin-inline:  10px;
+}
+.card-form-login .group-social .contact-with {
+  width: 100%;
+ display: flex;
+ justify-content: space-between;
+ margin-top: -20px;
+}
+.contact-with a{
+  padding: 7px 10px;
+  box-shadow: 0px 0px 2px 0px var(--gray-color);
+  border-radius: 7px;
+}
+.contact-with .wh-image{
+  width: 25px;
+  height: 25px;
+  margin-top: 0px!important;
+ }
+.contact-with a img{
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+}
+.contact-with a span{
+  font-family: "Kantumruy Pro", sans-serif;
+  font-size: 19px;
+  color:var(--sub-title);
+}
+.contact-with a:hover{
+  box-shadow: 2px 2px 10px 1px var(--link-text);
+  border: none;
+  background:var(--bg-grandient);
+}
+.contact-with a span:hover{
+  color: var(--main-color);
+}
+.check-info-login{
+  accent-color: var(--link-text);
+  width: 15px;
+  height: 15px;
+}
+.check-info-login[type=checkbox] {
+  border-radius: 100%!important;
+}
+.checkbox-container {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: "Kantumruy Pro", sans-serif;
+  font-size: 20px;
+  color: var(--gray-color);
+}
+
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 22px;
+  width: 22px;
+  border: 1px #0073aa dashed;
+  transition: all 0.5s ease-in-out;
+  margin-left: 10px;
+}
+
+.checkbox-container:hover input ~ .checkmark {
+  background-color: #ccc;
+  
+}
+.checkbox-container input:checked ~ .checkmark {
+  background:var(--bg-grandient);
+  transition: all 0.5s ease-in-out;
+  border-radius: 50%;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+.checkbox-container .checkmark:after {
+  left: 8px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.card-login .ribbon {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+}
+.card-login .ribbon {
+  --r: .4em; 
+  position: absolute;
+  top: -5px;
+  inset-inline: calc(-1*var(--r));
+  text-align: center;
+  line-height: 1.8; 
+  padding: 0 .5em calc(2*var(--r));
+  border-radius: var(--r);
+  --_g:100%/var(--r) calc(2*var(--r)) no-repeat;
+  background: 
+    radial-gradient(100% 50% at right,#0005 98%,#0000 101%) 0    var(--_g),
+    radial-gradient(100% 50% at left ,#0005 98%,#0000 101%) 100% var(--_g),
+    conic-gradient(from 90deg at var(--r) calc(100% - 2*var(--r)),#0000 25%,#3FB8AF 0)
+     0 0/calc(100% - var(--r)) 100%;
+}
+@media (max-width:1400px) {
+  .card-form-login .group-input .icon-pw-login{
+    position: absolute;
+    z-index: 9;
+    right: 20%;
+    top: 42%;
+  }
+}
+@media (max-width:1200px) {
+  .card-form-login .group-input .icon-pw-login{
+    position: absolute;
+    z-index: 9;
+    right: 13%;
+    top: 38%;
+  }
+}
+@media (max-width:992px) {
+  
+  .card-form-login .group-input .icon-pw-login{
+    position: absolute;
+    z-index: 9;
+    right: 18%;
+    top: 41%;
+  }
+}
+@media (max-width:768px) {
+  .group-input input {
+    padding: 5px 42px;
+  }
+  .card-form-login .group-input .icon-pw-login{
+    position: absolute;
+    z-index: 9;
+    right: 5%;
+    top: 33%;
+  }
+}
+@media (max-width:523px) {
+  .group-input input {
+    padding: 5px 42px;
+  }
+  .card-form-login .group-input .icon-pw-login{
+    position: absolute;
+    z-index: 9;
+    right: 3%;
+    top: 31%;
+  }
+}
+/* @media (min-width:430px) {
+  .card-login .icon-back{
+    position: absolute;
+    z-index: 2;
+    top: 1px!important;
+    left: 10px;
+  }
+  .group-input input {
+    padding: 2px 42px;
+  }
+  .card-form-login .group-input .icon-pw-login{
+    position: absolute;
+    z-index: 9;
+    right: 3%;
+    top: 28%;
+  }
+  .group-input .icon-before-input{
+    padding: 2px;
+  }
+  .checkbox-container{
+    font-size: 14px;
+  }
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    border: 1px #0073aa dashed;
+    transition: all 0.5s ease-in-out;
+    margin-left: 5px;
+  }
+  .checkbox-container .checkmark:after {
+    left: 5px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+  }
+  .goto-forgot-pw {
+    font-size: 12px;
+  }
+  .group-info-login span{
+    font-size: 15px!important;
+  }
+  .group-line span{
+    font-size: 15px!important;
+  }
+  .group-line .line{
+    display: none;
+  }
+
+  .contact-with span{
+    font-size: 10px!important;
+  }
+
+} */
+/* ===== Forgot-password ======= */ 
+.main-forgot-password{
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-forgot-password{
+  max-width: 1200px;
+  box-shadow: 0px 0px 6px 0px var(--gray-color);
+  position: absolute;
+  z-index: 19!important;
+}
+.card-forgot-password .text-forgot-pw{
+  background-image: linear-gradient(90deg, #488495, #3C4D78);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: "Kantumruy Pro", sans-serif;
+  font-weight: 500;
   text-align: center;
 }
-.email-login .form-control{
-  font-weight: 400;
+.card-forgot-password .text-noted-forgot-pw{
+  font-family: "Kantumruy Pro", sans-serif;
+  font-size: 15px!important;
+  color: var(--gray-color);
 }
-.email-login .form-label{
-  font-size: 18px;
+.card-forgot-password .icon-back{
+  color: var(--main-color);
+  padding: 10px;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer!important;
+}
+.card-forgot-password .icon-back .fa-arrow-left{
+  cursor: pointer;
+}
+.card-forgot-password .text-noted-forgot-pw{
+  font-size: 20px!important;
+  text-align: center;
+  color: var(--main-text)!important;
+  font-weight: normal!important;
+  letter-spacing: 0.5px;
+}
+.card-forgot-password .fa-envelope{
   color: var(--sub-title);
+  padding-top: 13px;
+}
+.centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.forgot-password .card-forgot-password .email-icon-forgot{
+  padding-left: 10px;
+}
+.forgot-password .card-forgot-password .input-fg{
+  padding-left: 30px;
+  box-shadow: 0px 0px 0px 1px var(--gray-color);
+}
+.forgot-password .card-forgot-password .form-control:focus{
+  color: var(--main-text);
+  background-color: var(--bg-grandient);
+  outline: 0;
+  box-shadow: 0 0 0px 3px var(--main-color);
+}
+.glow-on-hover {
+  width: 150px;
+  height: 40px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--bg-grandient);
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+  color: black;
+}
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+.forgot-password .card-forgot-password .btn-forgot:hover{
+  background: var(--link-text)!important;
+}
+.forgot-password .card-forgot-password .back-to{
+  font-family: "Kantumruy Pro", sans-serif;
+}
+.forgot-password .card-forgot-password .back-to a{
+  color: var(--link-text);
+}
+
+@property --bg-angle {
+  inherits: false;
+  initial-value: 0deg;
+  syntax: "<angle>";
+}
+@keyframes spin {
+  to {
+    --bg-angle: 360deg;
+  }
+}
+/* ========= Register ============== */
+.register{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.register .d-flex{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.register .d-flex .card-register{
+  background-color: transparent;
+  box-shadow: 0px 0px 2px 1px var(--gray-color);
+  padding: 20px;
+}
+.register .d-flex .card-register .content-register  h1{
+  background-image: linear-gradient(90deg, #488495, #3C4D78);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: "Kantumruy Pro", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  text-align: center;
+}
+.register .d-flex .card-register  form{
+  margin-top: 30px;
+}
+.register .d-flex .card-register  .name-register,
+.register .d-flex .card-register  .email-register,
+.register .d-flex .card-register  .label-password-register,
+.register .d-flex .card-register  .label-comfirm-register
+{
+  color: var(--gray-color);
+}
+.register .d-flex .card-register input{
+  padding-left: 25px!important;
+}
+.register .d-flex .card-register .group-dob-gender,
+.register .d-flex .card-register .email-register,
+.register .d-flex .card-register .password-register,
+.register .d-flex .card-register .comfirm-pw-register,
+.register .d-flex .card-register .check-info
+{
+  margin-top: 10px;
+}
+.register .d-flex .card-register .form-select{
+  font-family: "Kantumruy Pro", sans-serif;
+  color: var(--gray-color);
+}
+.register .d-flex .card-register .gender{
+  font-family: "Kantumruy Pro", sans-serif;
+  color: var(--gray-color);
+}
+.register .d-flex .card-register .font-family-gender{
+  color: var(--main-text);
+  font-family: "Kantumruy Pro", sans-serif;
+}
+.register .card-register .check-info{
+  display: flex;
+  flex-direction: column;
+}
+.register .card-register .check-info .input-check-info,
+.register .card-register .check-info .input-info{
+  display: flex;
+  justify-content: start;
+}
+.register .d-flex .card-register .check-info .label-checkInfo{
+  color: var(--main-text);
+  font-family: "Kantumruy Pro", sans-serif;
+  font-size: 18px;
+  padding-left: 10px;
+}
+.register .d-flex .card-register .check-info .form-check-info{
+  width: 16px;
+  height: 16px;
+  margin-top: 8px;
+}
+.card-register .password-register .icon-input-pw{
+  position: absolute;
+  left: 45%;
+  bottom: 27%;
+}
+.btn-register, .btn-login{
+  font-size: 20px;
+  border-radius: 20px;
+  border: none;
+  padding: 5px 18px;
+  box-shadow: 0px 0px 7px 0px var(--gray-color);
+  background: var(--bg-grandient);
+  opacity: 0.7;
+  color: var(--main-color);
+  transition: 0.8s;
+  margin-left: 20px;
+}
+.register .card-register .btn-register:hover,
+.register .card-register .btn-login:hover{
+  background: var(--bg-grandient)!important;
+  color: var(--main-color);
+  opacity: 1!important;
+  transition: 0.6s;
+}
+.create-account .text-center{
+  font-size: 20px;
+  color: var(--main-text);
+}
+.card-register .icon-back{
+  color: var(--main-color);
+  background: var(--bg-grandient);
+  padding: 10px;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer!important;
+  position: absolute;
+  z-index: 2;
+  top: 10px;
+  left: 10px;
 }

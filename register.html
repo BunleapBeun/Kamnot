@@ -10,14 +10,167 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
-    <link rel="stylesheet" href="assets/css/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.css" />
     <link rel="stylesheet" href="assets/plugins/aos/css/aos.css" />
+    <link rel="stylesheet" href="assets/plugins/flatpickr/css/flatpickr.min.css">
+    <link rel="stylesheet" href="assets/plugins/tom-select/css/tom-select.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+
   </head>
   <body>
+    <main>
+      <div class="register">
+      <div class="container position-absolute">
 
-    <main></main>
+          <div class="row ">
+            <div class="col-12">
+              <div class="d-flex">
+                <div class="col-12 col-md-12 col-lg-8">
+                  
+                  <div class="card card-register border-0">
+                    <a href="landing_page.html" class="icon-back d-flex justify-content-center align-items-center text-decoration-none ">
+                      <i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                    <div class="content-register">  
+                      <h1>បង្កើតគណនី</h1>
+                  </div>
+                  <form action="" method="">
+                    <div class="row name">
+                      <div class="col">
+                        <label for="firstname" class="form-label position-absolute ps-2 pt-2 name-register"><i class="fa-solid fa-user"></i></label>
+                        <input type="text" id="firstname" class="form-control" placeholder="នាមត្រកូល" aria-label="First name" required>
+                      </div>
+                      <div class="col">
+                        <label for="lastname" class="form-label position-absolute ps-2 pt-2 name-register"><i class="fa-solid fa-user"></i></label>
+                        <input type="text" id="lastname" class="form-control" placeholder="នាមខ្លួន" aria-label="Last name" required>
+                      </div>
+                    </div>
+                    <div class="row group-dob-gender">
+                      <div class="col">
+                        <input class="form-control" type="datetime-locaal" placeholder="ថ្ងៃខែឆ្នាំ កំណើត" data-flatpickr required>
+                      </div>
+                      <div class="col">
+                        <select class="form-select" aria-label="Default select example" required>
+                          <option selected class="gender">ភេទ</option>
+                          <option value="male" class="text-dark font-family-gender">ប្រុស</option>
+                          <option value="female" class="text-dark font-family-gender">ស្រី</option>
+                        </select>
+                      </div>
+                    </div>  
+                    <div class="row email-register">
+                      <div class="col">
+                        <label for="email" class="form-label position-absolute position-absolute ps-2 pt-2">
+                          <span><i class="fa-solid fa-envelope"></i></span>
+                        </label>
+                        <input type="email" id="email" class="form-control" placeholder="អុីម៉ែល" required>
+                      </div>
+                    </div> 
+                    <div class="row password-register">
+                      <div class="col">
+                          <label for="password" class="form-label label-password-register position-absolute position-absolute ps-2 pt-2">
+                              <span class="icon-password"><i class="fa-solid fa-lock"></i></span>
+                          </label>
+                          <input type="password" class="form-control input-pw-new" name="password" id="password" placeholder="លេខសម្ងាត់" required/>
+                          <!-- <i class="bi bi-eye-slash icon-input-pw" id="togglePassword"></i>    -->
+                      </div>
+                      <div class="col">
+                        <label for="comfirm-password" class="form-label label-comfirm-register position-absolute position-absolute ps-2 pt-2">
+                            <span class="icon-password"><i class="fa-solid fa-lock "></i></span>
+                        </label>
+                        <input type="password" class="form-control input-comfirm-pw" name="password" id="comfirm-password" placeholder="ផ្ទៀងផ្ទាត់លេខសម្ងាត់" required/>
+                    </div>
+                    </div>
+                    <div class="row check-info">
+                      <div class="col d-flex input-check-info">
+                        <input type="checkbox" class="form-check-info" name="checkbox-info" required>
+                        <label for="" class="form-label label-checkInfo">ត្រូវច្បាស់ថាព័ត៌មានដែលបានបំពេញត្រឺមត្រូវនិងពិតប្រាកដ</label>
+                      </div>
+                      <div class="col d-flex input-info">
+                        <input type="checkbox" class="form-check-info" name="checkbox-info" required>
+                        <label for="" class="form-label label-checkInfo">បានអាននិងគោរពតាម <a href="#">គោការណ៍ឯកជន</a></label>
+                      </div>
+                    </div>
+                    <div class="mt-4 d-flex justify-content-center align-items-center">
+                      <button type="button" class="btn-login">ចូលប្រើប្រាស់</button>
+                      <button type="button" class="btn-register">បង្កើតគណនី</button>
+                    </div>
+                  </form>
+                  <div class="mt-4 create-account">
+                    <div class="card border-0">
+                      <div class="card-header border-0">
+                        <p class="text-center">លោកអ្នកក៏អាចចូលបង្កើតគណនីដោយភ្ជាប់ជាមួយ</p>
+                      </div>
+                      <div class="card-body border-0">
+                        <div class="group-social d-flex justify-content-center align-items-center">
+                          <div class="contact-with d-flex justify-content-evenly align-items-center">
+                            <a href="#google" class="text-decoration-none">
+                              <img src="assets/img/login/google_icon-icons.com_62736.svg" class="img-fluid wh-image" alt="">
+                              <span class="social">Google</span> 
+                            </a>
+                            <a href="#facebook" class="text-decoration-none">
+                              <img src="assets/img/login/facebook_logo_icon_147291.svg" class="img-fluid wh-image" alt="">
+                              <span class="social">Facebook</span> </a>
+                            <a href="#instagram" class="text-decoration-none">
+                              <img src="assets/img/login/3721672-instagram_108066.svg" class="img-fluid wh-image" alt="">
+                              <span class="social">Instagram</span> </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
 
+                </div>
+                
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+     
+    
+  
+    
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/plugins/aos/js/aos.js"></script>
+    <script src="assets/plugins/flatpickr/js/flatpickr.js"></script>
+    <script src="assets/plugins/tom-select/js/tom-select.complete.min.js"></script>
+    <script src="assets/js/dark-mode.js"></script>
+    <script>
+      flatpickr("input[type=datetime-locaal]", {});
+    </script>
+    <script>
+      new TomSelect("#select-beast",{
+        create: true,
+        sortField: {
+          field: "text",
+          direction: "asc"
+        }
+      });
+    </script>
+     <script>
+      const togglePassword = document.querySelector("#togglePassword");
+      const password = document.querySelector("#password");
+  
+      togglePassword.addEventListener("click", function () {
+          // toggle the type attribute
+          const type = password.getAttribute("type") === "password" ? "text" : "password";
+          password.setAttribute("type", type);
+          
+          // toggle the icon
+          this.classList.toggle("bi-eye");
+      });
+  
+      // prevent form submit
+      const form = document.querySelector("form");
+      form.addEventListener('submit', function (e) {
+          e.preventDefault();
+      });
+  </script>
+    
+      
+    
   </body>
 </html>
