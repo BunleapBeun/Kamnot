@@ -2646,12 +2646,23 @@ nav {
 }
 
 .book-title {
+  font-size: 20px;
   color: var(--main-text);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
 }
 
 .artist-name {
   font-size: 15px;
   color: var(--main-text);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
 }
 
 .star-rate i {
@@ -2670,6 +2681,46 @@ nav {
   color: var(--ddd-color);
   padding-left: 10px;
 }
+
+@media (max-width: 576px) {
+  .book-title {
+    color: var(--main-text);
+    font-size: 13px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
+  }
+
+  .artist-name {
+    font-size: 10px;
+    color: var(--main-text);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
+  }
+
+  .star-rate i {
+    font-size: 8px;
+    padding: 5px 5px 5px 0;
+    color: gold;
+  }
+
+  .book-price {
+    font-size: 12px;
+    color: red;
+  }
+
+  .book-discount-price {
+    font-size: 8px;
+    color: var(--ddd-color);
+    padding-left: 10px;
+  }
+}
+
 
 /* ! begin of article */
 
