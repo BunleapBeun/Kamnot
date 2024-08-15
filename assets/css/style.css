@@ -1773,10 +1773,12 @@ input.add-event-edit:-ms-input-placeholder {
   color: white;
   border-radius: 5px;
 }
-.card-text-mood h2{
-  color: var(--text-color-gradient);
+.card-text-mood .color-happy .green-happy{
+  width: 120px;
+  height: 40px;
+  background-color: green ;
+  border-radius: 3px;
 }
-
 /* ===== forgot-passwrod : thavy */
 .forgot-password{
   width: 100%;
@@ -2567,4 +2569,114 @@ input.add-event-edit:-ms-input-placeholder {
   z-index: 2;
   top: 10px;
   left: 10px;
+}
+/* ========= Pin-Password ================= */
+.pin-password{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pin-password .card-pin-pw{
+  box-shadow: 0px 0px 3px 1px var(--gray-color);
+}
+.card-pin-pw  img{
+  width: 40%;
+  height: 40%;
+
+}
+.card-pin-pw .ribbon {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+}
+.card-pin-pw .ribbon {
+  --r: .4em;
+  position: absolute;
+  top: -5px;
+  inset-inline: calc(-1*var(--r));
+  text-align: center;
+  line-height: 1.8; 
+  padding: 0 .5em calc(2*var(--r));
+  border-radius: var(--r);
+  --_g:100%/var(--r) calc(2*var(--r)) no-repeat;
+  background: 
+    radial-gradient(100% 50% at right,#0005 98%,#0000 101%) 0    var(--_g),
+    radial-gradient(100% 50% at left ,#0005 98%,#0000 101%) 100% var(--_g),
+    conic-gradient(from 90deg at var(--r) calc(100% - 2*var(--r)),#0000 25%,#5A8BC2 0)
+     0 0/calc(100% - var(--r)) 100%;
+}
+.card-pin-pw .text-send-email{
+  font-size: 18px;
+  color: var(--main-text);
+
+}
+#otp-input {
+  display: flex;
+  column-gap: 8px;
+  font-size: 25px;
+  font-weight: bold;
+}
+#otp-input input {
+  text-align: center;
+  padding: 10px 8px 10px 8px;
+  border: 1px solid #adadad;
+  border-radius: 4px;
+  outline: none;
+  height: 64px;
+  width: 50px;
+}
+#otp-input input:focus {
+  border: 1px solid #497e76;
+}
+#otp-input input:focus::placeholder {
+  color: transparent;
+}
+#otp-input input::-webkit-outer-spin-button,
+#otp-input input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#otp-input input[type="number"] {
+  -moz-appearance: textfield; 
+}
+.main-content-container .send-again{
+  color: red;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 10px;
+  text-decoration: none;
+}
+.main-content-container .send-again:hover{
+  color: #0073aa;
+}
+.main-content-container .send-again:active{
+  color: var(--bg-grandient);
+}
+.btn-submit{
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 5px 20px;
+  background: var(--bg-grandient);
+  border: none;
+  color: var(--main-color);
+  opacity: 0.7;
+}
+.btn-submit a{
+  color: var(--main-color);
+}
+.btn-submit:hover{
+  background: var(--bg-grandient);
+  opacity: 1;
+}
+@media (min-width:360px) and (max-width:740px) {
+  #otp-input input {
+    text-align: center;
+    padding: 10px 8px 10px 8px;
+    border: 1px solid #adadad;
+    border-radius: 4px;
+    outline: none;
+    height: 64px;
+    width: 45px;
+  }
 }
