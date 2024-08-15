@@ -584,12 +584,239 @@
           <div class="col-lg-11 col-12">
             <div class="pt-112 px-4 px-md-0">
               <!-- ? write your content here -->
-              <div class="box"></div>
-              <div class="box mt-3"></div>
-              <div class="box mt-3"></div>
-              <div class="box mt-3"></div>
-              <div class="box mt-3"></div>
-              <div class="box mt-3"></div>
+              <div class="mood-tracking">
+                <section class="section-profile d-flex justify-content-between">
+                  <div class="title-pf d-flex">
+                    <h2>សួស្ដី , <span>Wade Warren</span></h2>
+                    <img src="assets/img/mood-tracking/anime.gif"
+                      class="img-fluid sticker-git-pf" alt>
+                  </div>
+                  <div class="date-daily">
+                    <img src="assets/img/mood-tracking/kalender-calendar.gif"
+                      class="img-fluid calendar-pf" alt>
+                    <span>ថ្ងៃចន្ទ ១២ កក្កដា​ ២០២៤</span>
+                  </div>
+                </section>
+                <section class="detail-date mt-4">
+                  <div class="row">
+                    <div class="col-12">
+                      <marquee behavior direction>
+                        <span>តើអ្នកមានអារម្មណ៍យ៉ាងណាដែរថ្ងៃនេះ?</span>
+                        <i class="em em-blush pe-5" aria-role="presentation"
+                          aria-label="SMILING FACE WITH SMILING EYES"></i>
+                        <i class="em em-face_with_hand_over_mouth pe-5"
+                          aria-role="presentation"
+                          aria-label="SMILING FACE WITH SMILING EYES AND HAND COVERING MOUTH"></i>
+                        <i class="em em-disappointed pe-5"
+                          aria-role="presentation"
+                          aria-label="DISAPPOINTED FACE"></i>
+                        <i class="em em-cry pe-5" aria-role="presentation"
+                          aria-label="CRYING FACE"></i>
+                        <i class="em em-drooling_face pe-5"
+                          aria-role="presentation"
+                          aria-label="DROOLING FACE"></i>
+                        <i class="em em-face_with_thermometer pe-5"
+                          aria-role="presentation"
+                          aria-label="FACE WITH THERMOMETER"></i>
+                        <i class="em em-fearful pe-5" aria-role="presentation"
+                          aria-label="FEARFUL FACE"></i>
+                        <i class="em em-angry pe-5" aria-role="presentation"
+                          aria-label="ANGRY FACE"></i>
+                        <i class="em em-couple pe-5" aria-role="presentation"
+                          aria-label="MAN AND WOMAN HOLDING HANDS"></i>
+                        <i class="em em-broken_heart pe-5"
+                          aria-role="presentation"
+                          aria-label="BROKEN HEART"></i>
+                        <i class="em em-airplane_departure pe-5"
+                          aria-role="presentation"
+                          aria-label="AIRPLANE DEPARTURE"></i>
+                        <i class="em em-dollar pe-5" aria-role="presentation"
+                          aria-label="BANKNOTE WITH DOLLAR SIGN"></i>
+                        <i class="em em-female-technologist pe-5 "
+                          aria-role="presentation" aria-label></i>
+                        <i class="em em-camera pe-5" aria-role="presentation"
+                          aria-label="CAMERA"></i>
+                      </marquee>
+                    </div>
+                    <div class="col-12">
+                      <div class="daily-him">
+                        <div class="calendar" id="calendar-app">
+                          <div class="calendar--day-view" id="day-view">
+                            <span class="day-view-exit"
+                              id="day-view-exit">&times;</span>
+                            <!-- <span class="day-view-date" id="day-view-date">MAY 29 2016</span> -->
+                            <div class="day-view-content">
+                              <div class="day-highlight">
+                                You <span class="day-events" id="day-events">had
+                                  no events for today</span>. &nbsp; <span
+                                  tabindex="0"
+                                  onkeyup="if(event.keyCode != 13) return; this.click();"
+                                  class="day-events-link" id="add-event"
+                                  data-date>Add a new event?</span>
+                              </div>
+                              <div class="day-add-event" id="add-day-event-box"
+                                data-active="false">
+                                <div class="row-days">
+                                  <div class="half">
+                                    <label class="add-event-label">
+                                      Name of event
+                                      <input type="text"
+                                        class="add-event-edit add-event-edit--long"
+                                        placeholder="New event"
+                                        id="input-add-event-name">
+
+                                    </label>
+                                  </div>
+                                  <div class="qtr">
+                                    <label class="add-event-label">
+                                      Start Time
+                                      <input type="text" class="add-event-edit"
+                                        placeholder="8:15"
+                                        id="input-add-event-start-time"
+                                        data-options="1,2,3,4,5,6,7,8,9,10,11,12"
+                                        data-format="datetime">
+                                      <input type="text" class="add-event-edit"
+                                        placeholder="am"
+                                        id="input-add-event-start-ampm"
+                                        data-options="a,p,am,pm">
+                                    </label>
+                                  </div>
+                                  <div class="qtr">
+                                    <label class="add-event-label">
+                                      End Time
+                                      <input type="text" class="add-event-edit"
+                                        placeholder="9"
+                                        id="input-add-event-end-time"
+                                        data-options="1,2,3,4,5,6,7,8,9,10,11,12"
+                                        data-format="datetime">
+                                      <input type="text" class="add-event-edit"
+                                        placeholder="am"
+                                        id="input-add-event-end-ampm"
+                                        data-options="a,p,am,pm">
+                                    </label>
+                                  </div>
+                                  <div class="half">
+                                    <a
+                                      onkeyup="if(event.keyCode != 13) return; this.click();"
+                                      tabindex="0" id="add-event-save"
+                                      class="event-btn--save event-btn">save</a>
+                                    <a tabindex="0" id="add-event-cancel"
+                                      class="event-btn--cancel event-btn">cancel</a>
+                                  </div>
+                                </div>
+
+                              </div>
+                              <div id="day-events-list" class="day-events-list">
+
+                              </div>
+                              <div class="day-inspiration-quote"
+                                id="inspirational-quote">
+                                Every child is an artist. The problem is how to
+                                remain an artist once he grows up. –Pablo
+                                Picasso
+                              </div>
+                            </div>
+                          </div>
+                          <div class="calendar--view" id="calendar-view">
+                            <div class="cview__month">
+                              <span class="cview__month-last"
+                                id="calendar-month-last">Apr</span>
+                              <span class="cview__month-current"
+                                id="calendar-month">May</span>
+                              <span class="cview__month-next"
+                                id="calendar-month-next">Jun</span>
+                            </div>
+                            <div class="cview__header">Sun</div>
+                            <div class="cview__header">Mon</div>
+                            <div class="cview__header">Tue</div>
+                            <div class="cview__header">Wed</div>
+                            <div class="cview__header">Thu</div>
+                            <div class="cview__header">Fri</div>
+                            <div class="cview__header">Sat</div>
+                            <div class="calendar--view" id="dates">
+                            </div>
+                          </div>
+                          <div class="today-date">
+                            <span><span id="this-today-date"
+                                class="this_today__link">Today is May
+                                30</span></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+                <section class="feeling-weekend">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="card border-0">
+                        <span
+                          class="text-weekend">អារម្មណ៍ប្រចាំសប្ដាហ៍របស់អ្នក</span>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="row d-flex">
+                        <div class="col-6">
+                          <div class="card chart border-0">
+                            <div class="wrapper">
+
+                              <div class="pie-wrap">
+
+                                <div class="happy-green entry">
+                                  <p class="percent-feeling">25%</p>
+                                  <p class="entry-value">សប្បាយចិត្ត
+                                    <i class="em em-blush pe-5" aria-role="presentation"
+                          aria-label="SMILING FACE WITH SMILING EYES"></i>
+                                  </p>
+                                </div>
+
+                                <div class="sky-blue entry">
+                                  <p>25%</p>
+                                  <p class="entry-value">ក្រៀមក្រំ</p>
+                                </div>
+
+                                <div class="pink entry">
+                                  <p>12.5%</p>
+                                  <p class="entry-value">ភ្ញាក់ផ្អើល</p>
+                                </div>
+
+                                <div class="purple entry">
+                                  <p> 12.5%</p>
+                                  <p class="entry-value">អារម្មណ៍ភ័យខ្លាច</p>
+                                </div>
+
+                                <div class="green entry">
+                                  <p> 12.5%</p>
+                                  <p class="entry-value">ខឹង</p>
+                                </div>
+
+                                <div class="wheat entry">
+                                  <p> 12.5%</p>
+                                  <p class="entry-value">ក្តីស្រឡាញ់</p>
+                                </div>
+
+                              </div>                              
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6 ">
+                          <div class="card card-text-mood">
+                            
+                          </div>
+                        </div>
+                        
+                      </div>
+
+                    </div>
+                  </div>
+
+                </section>
+                <div class="box mt-3"></div>
+                <div class="box mt-3"></div>
+                <div class="box mt-3"></div>
+                <div class="box mt-3"></div>
+              </div>
               <!-- ? end of write your content here -->
             </div>
           </div>
