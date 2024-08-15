@@ -10,8 +10,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
+    <link href="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.snow.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.css" />
     <link rel="stylesheet" href="assets/plugins/aos/css/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   </head>
   <body>
     <!-- ! begin of header -->
@@ -584,10 +586,721 @@
           <div class="col-lg-11 col-12">
             <div class="pt-112 px-4 px-md-0">
               <!-- ? write your content here -->
-              <div class="box"></div>
-              <div class="box mt-3"></div>
-              <div class="box mt-3"></div>
-              <div class="box mt-3"></div>
+              <div class="journal-header" style="height: 70px;">
+                <h1 class="landing-title-color mb-0" id="welcome-text"> សួស្ដី Warren ! </h1>
+              </div>
+              <div class="journal-nav d-none d-md-block w-100 mt-3 bg-red" style="padding-inline: 12px;">
+                <div class="row justify-content-between">
+                  <div class="col-2 d-flex justify-content-end px-0">
+                    <button type="button" class="btn btn-journaling w-100 p-2">
+                      <a href="journaling.html" class="nav-link fs-4 w-100 d-flex justify-content-center align-items-center">កំណត់ត្រា</a>
+                    </button>
+                  </div>
+                  <div class="col-8 d-flex align-items-center px-0">
+                    <div class="journal-nav-line w-100"></div>
+                  </div>
+                  <div class="col-2 d-flex justify-content-start px-0">
+                    <button type="button" class="btn btn-todo w-100 p-2">
+                      <a href="todo-list.html" class="nav-link fs-4 w-100 d-flex justify-content-center align-items-center">បញ្ជីសកម្មភាព</a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="journal-nav-sm mt-4 d-sm-block d-md-none w-100">
+                <button type="button" class="btn btn-journaling p-2 d-block mx-auto">
+                  <a href="journaling.html" class="nav-link fs-4 w-100 d-flex justify-content-center align-items-center">កំណត់ត្រា</a>
+                </button>
+                <button type="button" class="btn btn-todo p-2 my-3 mx-auto">
+                  <a href="todo-list.html" class="nav-link text-white fs-4 w-100 d-flex justify-content-center align-items-center">បញ្ជីសកម្មភាពដែលត្រូវធ្វើ</a>
+                </button>
+              </div>
+              <section class="journal-book pt-5">
+                <div class="calender">
+                  <div class="display-date d-flex justify-content-between align-items-center">
+                    <div class="date d-flex align-items-center">
+                      <p class="fs-1 fw-bold landing-title-color">2024</p>
+                      <p class="landing-title-color fs-4 ps-5 fw-bold">កក្កដា</p>
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="journal-page w-100">
+                  <div id="editor">
+                    <p class="text-black">Hello World!</p>
+                    <p class="text-black">Some initial <strong>bold</strong> text</p>
+                    <p><br /></p>
+                  </div>
+                </div>
+                <div class="journal-history w-100 pt-5">
+                  <div class="jh-title d-flex align-items-center">
+                    <div class="jh-box px-2 py-3 " >
+                      <p class="text-white text-center fs-5 mb-0">កំណត់ត្រា​របស់ Warren</p>
+                    </div>
+                    <div class="deco-line w-100 ms-3"></div>
+                  </div>
+                  <div class="history-box py-2">
+                    <div class="date-history w-100 " style="padding: 0 12px;">
+                      <div class="row px-3">
+                        <div class="col-sm-12 col-lg-8">
+                          <div data-bs-spy="scroll" data-bs-target="#simple-list-example" data-bs-offset="0" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+                            <div id="list-item-1" class="landing-title-color px-2 daily-list-item">
+                              <p class="fs-1 fw-bold">សប្ដាហ៌នេះ</p>
+                              <ul class="list-group border-0">
+                                <div class="history-modal">
+                                  <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#historyModal">
+                                    <div class="item-date w-100 d-flex"> 
+                                      <div class="daily-date">
+                                        <h2 class="mb-0 fs-2 text-center text">20</h2>
+                                        <p class="mb-0 text-center landing-title-color fw-bold">ចន្ទ</p>
+                                      </div>
+                                      <div class="daily-note w-100 ps-3 pt-2">
+                                        <p>ថ្ងៃនេះខ្ញុំអារម្មណ៌មិនសូវល្អនោះទេ</p>
+                                        <p>មានរឿងមួយចំនួនកើតឡើងដែលធ្វើឱ្យខ្ញុំមានអារម្មណ៌ធុញថប់ ជាពិសេសគឺការងារគរដូចភ្នំសុមេរុចឹង...</p>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <div class="modal fade" id="historyModal" tabindex="-1" aria-labelledby="historyModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-fullscreen">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h1 class="modal-title text-black fs-2" id="historyModalLabel">កំណត់ត្រាប្រចាំថ្ងៃ</h1>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                          <div id="editorHistory" class="editHistory">
+                                            <p>ថ្ងៃច័ន្ទ ទី​ ២០ ឆ្នាំ ២០២៤ ...</p>
+                                            <p class="text-black">ថ្ងៃនេះខ្ញុំមានអារម្មណ៌មិនល្អនោះទេ ;((</p>
+                                            <p><br /></p>
+                                            <p>មានរឿងមួយចំនួនកើតឡើងដែលធ្វើឱ្យខ្ញុំមានអារម្មណ៌ធុញថប់ ជាពិសេសគឺការងារគរដូចភ្នំសុមេរុចឹង...</p>
+                                            <p>
+                                              Today was tough. From the moment I woke up, the sheer amount of work I had to do felt overwhelming. My to-do list kept growing, and no matter how hard I tried, I couldn't keep up. By midday, 
+                                              I was exhausted and frustrated, struggling to stay motivated. 
+                                              It’s one of those days where everything feels heavy, and I just need to remind myself that it's okay not to be perfect. I’ll tackle it all tomorrow, but for now, I need to rest.
+                                            </p>
+                                          </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">បិទ</button>
+                                          <button type="button" class="btn btn-danger"  data-bs-toggle="modal" data-bs-target="#deleteModal">លុបចោល</button>
+                                          <button type="button" class="btn btn-savechange">រក្សាទុកការកែប្រែ</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-md modal-dialog-centered">
+                                      <div class="modal-content">
+                                        <div class="modal-body">
+                                          <div class="warning-img w-100 d-flex justify-content-center">
+                                            <img src="assets/img/contact-us/warning.png" width="70px" alt="">
+                                          </div>
+                                          <p class="fs-4 pt-5 text-black text-center">តើអ្នកពិតជាចង់លុប កំណត់ត្រានេះពិតមែនទេ?</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">បិទ</button>
+                                          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">លុប</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                                <div class="history-modal">
+                                  <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#historyModal">
+                                    <div class="item-date w-100 d-flex"> 
+                                      <div class="daily-date">
+                                        <h2 class="mb-0 fs-2 text-center text">20</h2>
+                                        <p class="mb-0 text-center landing-title-color fw-bold">ចន្ទ</p>
+                                      </div>
+                                      <div class="daily-note w-100 ps-3 pt-2">
+                                        <p>ថ្ងៃនេះខ្ញុំអារម្មណ៌មិនសូវល្អនោះទេ</p>
+                                        <p>មានរឿងមួយចំនួនកើតឡើងដែលធ្វើឱ្យខ្ញុំមានអារម្មណ៌ធុញថប់ ជាពិសេសគឺការងារគរដូចភ្នំសុមេរុចឹង...</p>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <div class="modal fade" id="historyModal1" tabindex="-1" aria-labelledby="historyModalLabel1" aria-hidden="true">
+                                    <div class="modal-dialog modal-fullscreen">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h1 class="modal-title text-black fs-2" id="historyModalLabel1">កំណត់ត្រាប្រចាំថ្ងៃ</h1>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                          <div id="editorHistory1" class="editHistory">
+                                            <p>ថ្ងៃច័ន្ទ ទី​ ២០ ឆ្នាំ ២០២៤ ...</p>
+                                            <p class="text-black">ថ្ងៃនេះខ្ញុំមានអារម្មណ៌មិនល្អនោះទេ ;((</p>
+                                            <p><br /></p>
+                                            <p>មានរឿងមួយចំនួនកើតឡើងដែលធ្វើឱ្យខ្ញុំមានអារម្មណ៌ធុញថប់ ជាពិសេសគឺការងារគរដូចភ្នំសុមេរុចឹង...</p>
+                                            <p>
+                                              Today was tough. From the moment I woke up, the sheer amount of work I had to do felt overwhelming. My to-do list kept growing, and no matter how hard I tried, I couldn't keep up. By midday, 
+                                              I was exhausted and frustrated, struggling to stay motivated. 
+                                              It’s one of those days where everything feels heavy, and I just need to remind myself that it's okay not to be perfect. I’ll tackle it all tomorrow, but for now, I need to rest.
+                                            </p>
+                                          </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">បិទ</button>
+                                          <button type="button" class="btn btn-danger"  data-bs-toggle="modal" data-bs-target="#deleteModal">លុបចោល</button>
+                                          <button type="button" class="btn btn-savechange">រក្សាទុកការកែប្រែ</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="modal fade" id="deleteModal1" tabindex="-1" aria-labelledby="deleteModalLabel1" aria-hidden="true">
+                                    <div class="modal-dialog modal-md modal-dialog-centered">
+                                      <div class="modal-content">
+                                        <div class="modal-body">
+                                          <div class="warning-img w-100 d-flex justify-content-center">
+                                            <img src="assets/img/contact-us/warning.png" width="70px" alt="">
+                                          </div>
+                                          <p class="fs-4 pt-5 text-black text-center">តើអ្នកពិតជាចង់លុប កំណត់ត្រានេះពិតមែនទេ?</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">បិទ</button>
+                                          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">លុប</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <li class="list-group-item">
+                                  <div class="item-date w-100 d-flex"> 
+                                    <div class="daily-date">
+                                      <h2 class="mb-0 fs-2 text-center">20</h2>
+                                      <p class="mb-0 text-center fw-bold">ចន្ទ</p>
+                                    </div>
+                                    <div class="daily-note w-100 ps-3 pt-2">
+                                      <p>ថ្ងៃនេះខ្ញុំអារម្មណ៌មិនសូវល្អនោះទេ</p>
+                                      <p>មានរឿងមួយចំនួនកើតឡើងដែលធ្វើឱ្យខ្ញុំមានអារម្មណ៌ធុញថប់ ជាពិសេសគឺការងារគរដូចភ្នំសុមេរុចឹង...</p>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="list-group-item">
+                                  <div class="item-date w-100 d-flex"> 
+                                    <div class="daily-date">
+                                      <h2 class="mb-0 fs-2 text-center text">20</h2>
+                                      <p class="mb-0 text-center landing-title-color fw-bold">ចន្ទ</p>
+                                    </div>
+                                    <div class="daily-note w-100 ps-3 pt-2">
+                                      <p>ថ្ងៃនេះខ្ញុំអារម្មណ៌មិនសូវល្អនោះទេ</p>
+                                      <p>មានរឿងមួយចំនួនកើតឡើងដែលធ្វើឱ្យខ្ញុំមានអារម្មណ៌ធុញថប់ ជាពិសេសគឺការងារគរដូចភ្នំសុមេរុចឹង...</p>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="list-group-item">
+                                  <div class="item-date w-100 d-flex"> 
+                                    <div class="daily-date">
+                                      <h2 class="mb-0 fs-2 text-center text">20</h2>
+                                      <p class="mb-0 text-center landing-title-color fw-bold">ចន្ទ</p>
+                                    </div>
+                                    <div class="daily-note w-100 ps-3 pt-2">
+                                      <p>ថ្ងៃនេះខ្ញុំអារម្មណ៌មិនសូវល្អនោះទេ</p>
+                                      <p>មានរឿងមួយចំនួនកើតឡើងដែលធ្វើឱ្យខ្ញុំមានអារម្មណ៌ធុញថប់ ជាពិសេសគឺការងារគរដូចភ្នំសុមេរុចឹង...</p>
+                                    </div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                            
+                            <div id="list-item-2" class="landing-title-color pt-5 px-2 ">
+                              <p class="fs-1 fw-bold">សប្ដាហ៌នេះ</p>
+                              <ul class="list-group border-0 scrollable">
+                                <div class="history-modal">
+                                  <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#historyModal">
+                                    <div class="item-date w-100 d-flex"> 
+                                      <div class="daily-date">
+                                        <h2 class="mb-0 fs-2 text-center text">20</h2>
+                                        <p class="mb-0 text-center landing-title-color fw-bold">ចន្ទ</p>
+                                      </div>
+                                      <div class="daily-note w-100 ps-3 pt-2">
+                                        <p>ថ្ងៃនេះខ្ញុំអារម្មណ៌មិនសូវល្អនោះទេ</p>
+                                        <p>មានរឿងមួយចំនួនកើតឡើងដែលធ្វើឱ្យខ្ញុំមានអារម្មណ៌ធុញថប់ ជាពិសេសគឺការងារគរដូចភ្នំសុមេរុចឹង...</p>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <div class="modal fade" id="historyModal2" tabindex="-1" aria-labelledby="historyModalLabel2" aria-hidden="true">
+                                    <div class="modal-dialog modal-fullscreen">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h1 class="modal-title text-black fs-2" id="historyModalLabel2">កំណត់ត្រាប្រចាំថ្ងៃ</h1>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                          <div id="editorHistory2" class="editHistory">
+                                            <p>ថ្ងៃច័ន្ទ ទី​ ២០ ឆ្នាំ ២០២៤ ...</p>
+                                            <p class="text-black">ថ្ងៃនេះខ្ញុំមានអារម្មណ៌មិនល្អនោះទេ ;((</p>
+                                            <p><br /></p>
+                                            <p>មានរឿងមួយចំនួនកើតឡើងដែលធ្វើឱ្យខ្ញុំមានអារម្មណ៌ធុញថប់ ជាពិសេសគឺការងារគរដូចភ្នំសុមេរុចឹង...</p>
+                                            <p>
+                                              Today was tough. From the moment I woke up, the sheer amount of work I had to do felt overwhelming. My to-do list kept growing, and no matter how hard I tried, I couldn't keep up. By midday, 
+                                              I was exhausted and frustrated, struggling to stay motivated. 
+                                              It’s one of those days where everything feels heavy, and I just need to remind myself that it's okay not to be perfect. I’ll tackle it all tomorrow, but for now, I need to rest.
+                                            </p>
+                                          </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">បិទ</button>
+                                          <button type="button" class="btn btn-danger"  data-bs-toggle="modal" data-bs-target="#deleteModal1">លុបចោល</button>
+                                          <button type="button" class="btn btn-savechange">រក្សាទុកការកែប្រែ</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="modal fade" id="deleteModal2" tabindex="-1" aria-labelledby="deleteModalLabel2" aria-hidden="true">
+                                    <div class="modal-dialog modal-md modal-dialog-centered">
+                                      <div class="modal-content">
+                                        <div class="modal-body">
+                                          <div class="warning-img w-100 d-flex justify-content-center">
+                                            <img src="assets/img/contact-us/warning.png" width="70px" alt="">
+                                          </div>
+                                          <p class="fs-4 pt-5 text-black text-center">តើអ្នកពិតជាចង់លុប កំណត់ត្រានេះពិតមែនទេ?</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">បិទ</button>
+                                          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">លុប</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                                <li class="list-group-item">
+                                  <div class="item-date w-100 d-flex"> 
+                                    <div class="daily-date">
+                                      <h2 class="mb-0 fs-2 text-center text">20</h2>
+                                      <p class="mb-0 text-center landing-title-color fw-bold">ចន្ទ</p>
+                                    </div>
+                                    <div class="daily-note w-100 ps-3 pt-2">
+                                      <p>ថ្ងៃនេះខ្ញុំអារម្មណ៌មិនសូវល្អនោះទេ</p>
+                                      <p>មានរឿងមួយចំនួនកើតឡើងដែលធ្វើឱ្យខ្ញុំមានអារម្មណ៌ធុញថប់ ជាពិសេសគឺការងារគរដូចភ្នំសុមេរុចឹង...</p>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="list-group-item">
+                                  <div class="item-date w-100 d-flex"> 
+                                    <div class="daily-date">
+                                      <h2 class="mb-0 fs-2 text-center">20</h2>
+                                      <p class="mb-0 text-center fw-bold">ចន្ទ</p>
+                                    </div>
+                                    <div class="daily-note w-100 ps-3 pt-2">
+                                      <p>ថ្ងៃនេះខ្ញុំអារម្មណ៌មិនសូវល្អនោះទេ</p>
+                                      <p>មានរឿងមួយចំនួនកើតឡើងដែលធ្វើឱ្យខ្ញុំមានអារម្មណ៌ធុញថប់ ជាពិសេសគឺការងារគរដូចភ្នំសុមេរុចឹង...</p>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="list-group-item">
+                                  <div class="item-date w-100 d-flex"> 
+                                    <div class="daily-date">
+                                      <h2 class="mb-0 fs-2 text-center text">20</h2>
+                                      <p class="mb-0 text-center landing-title-color fw-bold">ចន្ទ</p>
+                                    </div>
+                                    <div class="daily-note w-100 ps-3 pt-2">
+                                      <p>ថ្ងៃនេះខ្ញុំអារម្មណ៌មិនសូវល្អនោះទេ</p>
+                                      <p>មានរឿងមួយចំនួនកើតឡើងដែលធ្វើឱ្យខ្ញុំមានអារម្មណ៌ធុញថប់ ជាពិសេសគឺការងារគរដូចភ្នំសុមេរុចឹង...</p>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="list-group-item">
+                                  <div class="item-date w-100 d-flex"> 
+                                    <div class="daily-date">
+                                      <h2 class="mb-0 fs-2 text-center text">20</h2>
+                                      <p class="mb-0 text-center landing-title-color fw-bold">ចន្ទ</p>
+                                    </div>
+                                    <div class="daily-note w-100 ps-3 pt-2">
+                                      <p>ថ្ងៃនេះខ្ញុំអារម្មណ៌មិនសូវល្អនោះទេ</p>
+                                      <p>មានរឿងមួយចំនួនកើតឡើងដែលធ្វើឱ្យខ្ញុំមានអារម្មណ៌ធុញថប់ ជាពិសេសគឺការងារគរដូចភ្នំសុមេរុចឹង...</p>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="list-group-item">
+                                  <div class="item-date w-100 d-flex"> 
+                                    <div class="daily-date">
+                                      <h2 class="mb-0 fs-2 text-center text">20</h2>
+                                      <p class="mb-0 text-center landing-title-color fw-bold">ចន្ទ</p>
+                                    </div>
+                                    <div class="daily-note w-100 ps-3 pt-2">
+                                      <p>ថ្ងៃនេះខ្ញុំអារម្មណ៌មិនសូវល្អនោះទេ</p>
+                                      <p>មានរឿងមួយចំនួនកើតឡើងដែលធ្វើឱ្យខ្ញុំមានអារម្មណ៌ធុញថប់ ជាពិសេសគឺការងារគរដូចភ្នំសុមេរុចឹង...</p>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="list-group-item">
+                                  <div class="item-date w-100 d-flex"> 
+                                    <div class="daily-date">
+                                      <h2 class="mb-0 fs-2 text-center text">20</h2>
+                                      <p class="mb-0 text-center landing-title-color fw-bold">ចន្ទ</p>
+                                    </div>
+                                    <div class="daily-note w-100 ps-3 pt-2">
+                                      <p>ថ្ងៃនេះខ្ញុំអារម្មណ៌មិនសូវល្អនោះទេ</p>
+                                      <p>មានរឿងមួយចំនួនកើតឡើងដែលធ្វើឱ្យខ្ញុំមានអារម្មណ៌ធុញថប់ ជាពិសេសគឺការងារគរដូចភ្នំសុមេរុចឹង...</p>
+                                    </div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+
+                            <div id="list-item-3" class="landing-title-color py-5 px-2">
+                              <p class="fs-1 fw-bold">សប្ដាហ៌នេះ</p>
+                              <ul class="list-group border-0 scrollable">
+                                <div class="history-modal">
+                                  <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#historyModal">
+                                    <div class="item-date w-100 d-flex"> 
+                                      <div class="daily-date">
+                                        <h2 class="mb-0 fs-2 text-center text">20</h2>
+                                        <p class="mb-0 text-center landing-title-color fw-bold">ចន្ទ</p>
+                                      </div>
+                                      <div class="daily-note w-100 ps-3 pt-2">
+                                        <p>ថ្ងៃនេះខ្ញុំអារម្មណ៌មិនសូវល្អនោះទេ</p>
+                                        <p>មានរឿងមួយចំនួនកើតឡើងដែលធ្វើឱ្យខ្ញុំមានអារម្មណ៌ធុញថប់ ជាពិសេសគឺការងារគរដូចភ្នំសុមេរុចឹង...</p>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <div class="modal fade" id="historyModal3" tabindex="-1" aria-labelledby="historyModalLabel3" aria-hidden="true">
+                                    <div class="modal-dialog modal-fullscreen">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h1 class="modal-title text-black fs-2" id="historyModalLabel3">កំណត់ត្រាប្រចាំថ្ងៃ</h1>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                          <div id="editorHistory3" class="editHistory">
+                                            <p>ថ្ងៃច័ន្ទ ទី​ ២០ ឆ្នាំ ២០២៤ ...</p>
+                                            <p class="text-black">ថ្ងៃនេះខ្ញុំមានអារម្មណ៌មិនល្អនោះទេ ;((</p>
+                                            <p><br /></p>
+                                            <p>មានរឿងមួយចំនួនកើតឡើងដែលធ្វើឱ្យខ្ញុំមានអារម្មណ៌ធុញថប់ ជាពិសេសគឺការងារគរដូចភ្នំសុមេរុចឹង...</p>
+                                            <p>
+                                              Today was tough. From the moment I woke up, the sheer amount of work I had to do felt overwhelming. My to-do list kept growing, and no matter how hard I tried, I couldn't keep up. By midday, 
+                                              I was exhausted and frustrated, struggling to stay motivated. 
+                                              It’s one of those days where everything feels heavy, and I just need to remind myself that it's okay not to be perfect. I’ll tackle it all tomorrow, but for now, I need to rest.
+                                            </p>
+                                          </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">បិទ</button>
+                                          <button type="button" class="btn btn-danger"  data-bs-toggle="modal" data-bs-target="#deleteModal">លុបចោល</button>
+                                          <button type="button" class="btn btn-savechange">រក្សាទុកការកែប្រែ</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="modal fade" id="deleteModal3" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-md modal-dialog-centered">
+                                      <div class="modal-content">
+                                        <div class="modal-body">
+                                          <div class="warning-img w-100 d-flex justify-content-center">
+                                            <img src="assets/img/contact-us/warning.png" width="70px" alt="">
+                                          </div>
+                                          <p class="fs-4 pt-5 text-black text-center">តើអ្នកពិតជាចង់លុប កំណត់ត្រានេះពិតមែនទេ?</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">បិទ</button>
+                                          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">លុប</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                                <li class="list-group-item">
+                                  <div class="item-date w-100 d-flex"> 
+                                    <div class="daily-date">
+                                      <h2 class="mb-0 fs-2 text-center text">20</h2>
+                                      <p class="mb-0 text-center landing-title-color fw-bold">ចន្ទ</p>
+                                    </div>
+                                    <div class="daily-note w-100 ps-3 pt-2">
+                                      <p>ថ្ងៃនេះខ្ញុំអារម្មណ៌មិនសូវល្អនោះទេ</p>
+                                      <p>មានរឿងមួយចំនួនកើតឡើងដែលធ្វើឱ្យខ្ញុំមានអារម្មណ៌ធុញថប់ ជាពិសេសគឺការងារគរដូចភ្នំសុមេរុចឹង...</p>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="list-group-item">
+                                  <div class="item-date w-100 d-flex"> 
+                                    <div class="daily-date">
+                                      <h2 class="mb-0 fs-2 text-center">20</h2>
+                                      <p class="mb-0 text-center fw-bold">ចន្ទ</p>
+                                    </div>
+                                    <div class="daily-note w-100 ps-3 pt-2">
+                                      <p>ថ្ងៃនេះខ្ញុំអារម្មណ៌មិនសូវល្អនោះទេ</p>
+                                      <p>មានរឿងមួយចំនួនកើតឡើងដែលធ្វើឱ្យខ្ញុំមានអារម្មណ៌ធុញថប់ ជាពិសេសគឺការងារគរដូចភ្នំសុមេរុចឹង...</p>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="list-group-item">
+                                  <div class="item-date w-100 d-flex"> 
+                                    <div class="daily-date">
+                                      <h2 class="mb-0 fs-2 text-center text">20</h2>
+                                      <p class="mb-0 text-center landing-title-color fw-bold">ចន្ទ</p>
+                                    </div>
+                                    <div class="daily-note w-100 ps-3 pt-2">
+                                      <p>ថ្ងៃនេះខ្ញុំអារម្មណ៌មិនសូវល្អនោះទេ</p>
+                                      <p>មានរឿងមួយចំនួនកើតឡើងដែលធ្វើឱ្យខ្ញុំមានអារម្មណ៌ធុញថប់ ជាពិសេសគឺការងារគរដូចភ្នំសុមេរុចឹង...</p>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="list-group-item">
+                                  <div class="item-date w-100 d-flex"> 
+                                    <div class="daily-date">
+                                      <h2 class="mb-0 fs-2 text-center text">20</h2>
+                                      <p class="mb-0 text-center landing-title-color fw-bold">ចន្ទ</p>
+                                    </div>
+                                    <div class="daily-note w-100 ps-3 pt-2">
+                                      <p>ថ្ងៃនេះខ្ញុំអារម្មណ៌មិនសូវល្អនោះទេ</p>
+                                      <p>មានរឿងមួយចំនួនកើតឡើងដែលធ្វើឱ្យខ្ញុំមានអារម្មណ៌ធុញថប់ ជាពិសេសគឺការងារគរដូចភ្នំសុមេរុចឹង...</p>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="list-group-item">
+                                  <div class="item-date w-100 d-flex"> 
+                                    <div class="daily-date">
+                                      <h2 class="mb-0 fs-2 text-center text">20</h2>
+                                      <p class="mb-0 text-center landing-title-color fw-bold">ចន្ទ</p>
+                                    </div>
+                                    <div class="daily-note w-100 ps-3 pt-2">
+                                      <p>ថ្ងៃនេះខ្ញុំអារម្មណ៌មិនសូវល្អនោះទេ</p>
+                                      <p>មានរឿងមួយចំនួនកើតឡើងដែលធ្វើឱ្យខ្ញុំមានអារម្មណ៌ធុញថប់ ជាពិសេសគឺការងារគរដូចភ្នំសុមេរុចឹង...</p>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="list-group-item">
+                                  <div class="item-date w-100 d-flex"> 
+                                    <div class="daily-date">
+                                      <h2 class="mb-0 fs-2 text-center text">20</h2>
+                                      <p class="mb-0 text-center landing-title-color fw-bold">ចន្ទ</p>
+                                    </div>
+                                    <div class="daily-note w-100 ps-3 pt-2">
+                                      <p>ថ្ងៃនេះខ្ញុំអារម្មណ៌មិនសូវល្អនោះទេ</p>
+                                      <p>មានរឿងមួយចំនួនកើតឡើងដែលធ្វើឱ្យខ្ញុំមានអារម្មណ៌ធុញថប់ ជាពិសេសគឺការងារគរដូចភ្នំសុមេរុចឹង...</p>
+                                    </div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+
+                            
+                            
+                          </div>
+                          
+                        </div>
+                        <div class="d-none d-lg-block col-lg-4">
+                          <div id="simple-list-example" class="d-flex flex-column gap-3 simple-list-scrollspy text-center">
+                            <a class="p-1 py-2 active" href="#list-item-1">សប្ដាហ៌នេះ</a>
+                            <a class="p-1 py-2" href="#list-item-2">ខែនេះ</a>
+                            <a class="p-1 py-2" href="#list-item-3">ឆ្នាំនេះ</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section class="photo-book">
+                <div class="photobook-header w-100 d-flex justify-content-between">
+                  <div class="photo-book-title d-flex">
+                    <h3 class="mb-0">អនុស្សាវរីយ៌</h3>
+                    <div class="icon-photo ps-3">
+                      <img src="assets/img/Journaling-Todolist/icon-photo.png" width="30px" alt="photo-book">
+                    </div>
+                  </div>
+                  <div class="add-photo d-none d-lg-block">
+                    <button type="button" class="btn btn-add mx-auto" data-bs-toggle="modal" data-bs-target="#addPhotoModal">
+                      <p class="mb-0"> អនុស្សាវរីយ៌ថ្មី </p>
+                      <span><i class="fa-solid fa-camera-retro"></i></span>
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="addPhotoModal" tabindex="-1" aria-labelledby="addPhotoModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-2 landing-title-color" id="exampleModalLabel">អនុស្សាវរីយ៌ថ្មី</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body py-5">
+                            <form class="form mx-auto">
+                              <span class="form-title text-center">បន្ថែមរូបភាពថ្មី</span>
+                              <p class="form-paragraph">
+                                បន្ថែមម្ដងបានមួយរូបភាព
+                              </p>
+                              <label for="file-input" class="drop-container">
+                              <span class="drop-title pb-2">ចុចបន្ថែមរូបភាពនៅទីនេះ</span>
+                              <input type="file" accept="image/*" required="" id="file-input">
+                            </label>
+                            </form>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">បិទ</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">បន្ថែមថ្មី</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+  
+                  </div>
+                </div>
+                <div class="row justify-content-between py-5">
+                  <div class="col-sm-12 col-lg-6 col-xl-4">
+                    <div class="photo-book-body">
+                       <!-- Swiper -->
+
+                      <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <img src="assets/img/Journaling-Todolist/angkor-wat.jpg" alt="angkorwat">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="assets/img/Journaling-Todolist/angkorwat-2.jpg" alt="angkorwat">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="assets/img/Journaling-Todolist/angkorwat-3.jpg" alt="angkorwat">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="assets/img/Journaling-Todolist/angkorwat-2.jpg" alt="">
+                          </div>
+                        </div>
+                        <div class="photo-book-info pt-3">
+                          <div class="place-info w-100 d-flex justify-content-between">
+                            <p class="landing-title-color">ប្រាសាទអង្គវត្ត</p>
+                            <p class="landing-title-color">១២ កក្កដា ២០២៤</p>
+                          </div>
+                          <p class="text-center light-black">វិស្សមកាលរដូវក្ដៅនៅខេត្តសៀមរាប។That was an incredible vocation i ever had.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-lg-6 col-xl-4">
+                    <div class="photo-book-body">
+                      <!-- Swiper -->
+
+                     <div class="swiper mySwiper">
+                       <div class="swiper-wrapper">
+                         <div class="swiper-slide">
+                           <img src="assets/img/Journaling-Todolist/bali.jpg" alt="angkorwat">
+                         </div>
+                         <div class="swiper-slide">
+                           <img src="assets/img/Journaling-Todolist/bali-2.jpg" alt="angkorwat">
+                         </div>
+                         <div class="swiper-slide">
+                           <img src="assets/img/Journaling-Todolist/vietnam-2.jpg" alt="angkorwat">
+                         </div>
+                         <div class="swiper-slide">
+                           <img src="assets/img/Journaling-Todolist/vietnam-1.jpg" alt="">
+                         </div>
+                       </div>
+                       <div class="photo-book-info pt-3">
+                         <div class="place-info w-100 d-flex justify-content-between">
+                           <p class="landing-title-color">កោះបាលី</p>
+                           <p class="landing-title-color">២១ មីនា ២០២៤</p>
+                         </div>
+                         <p class="text-center light-black">កាដូដំណើរកម្សាន្តពីខាងក្រុមហ៊ុននៅកោះបាលី​ វ៉ល់ៗតែសប្បាយម្យ៉ាង</p>
+                       </div>
+                     </div>
+                   </div>
+                  </div>
+                  <div class="col-sm-12 col-lg-6 col-xl-4">
+                    <div class="photo-book-body">
+                      <!-- Swiper -->
+
+                     <div class="swiper mySwiper">
+                       <div class="swiper-wrapper">
+                         <div class="swiper-slide">
+                           <img src="assets/img/Journaling-Todolist/tokyo-1.jpg" alt="angkorwat">
+                         </div>
+                         <div class="swiper-slide">
+                           <img src="assets/img/Journaling-Todolist/tokyo-2.jpg" alt="angkorwat">
+                         </div>
+                         <div class="swiper-slide">
+                           <img src="assets/img/Journaling-Todolist/bali.jpg" alt="angkorwat">
+                         </div>
+                         <div class="swiper-slide">
+                           <img src="assets/img/Journaling-Todolist/bali-2.jpg" alt="">
+                         </div>
+                       </div>
+                       <div class="photo-book-info pt-3">
+                         <div class="place-info w-100 d-flex justify-content-between">
+                           <p class="landing-title-color">តុកត្យូ</p>
+                           <p class="landing-title-color">១២ មករា ២០២៤</p>
+                         </div>
+                         <p class="text-center light-black">លើកទី ១ ដើរលេងនៅជប៉ុន សប្បាយខ្លាំងណាស់!!</p>
+                       </div>
+                     </div>
+                   </div>
+                  </div>
+                  <div class="col-sm-12 col-lg-6 col-xl-4">
+                    <div class="photo-book-body">
+                      <!-- Swiper -->
+
+                     <div class="swiper mySwiper">
+                       <div class="swiper-wrapper">
+                         <div class="swiper-slide">
+                           <img src="assets/img/Journaling-Todolist/vietnam-1.jpg" alt="angkorwat">
+                         </div>
+                         <div class="swiper-slide">
+                           <img src="assets/img/Journaling-Todolist/vietnam-3.webp" alt="angkorwat">
+                         </div>
+                         <div class="swiper-slide">
+                           <img src="assets/img/Journaling-Todolist/vietnam-4.webp" alt="angkorwat">
+                         </div>
+                         <div class="swiper-slide">
+                           <img src="assets/img/Journaling-Todolist/vietnam-2.jpg" alt="">
+                         </div>
+                       </div>
+                       <div class="photo-book-info pt-3">
+                         <div class="place-info w-100 d-flex justify-content-between">
+                           <p class="landing-title-color">វៀតណាម</p>
+                           <p class="landing-title-color">២៩ ធ្នូ ២០២៣</p>
+                         </div>
+                         <p class="text-center light-black">ឆ្លងឆ្នាំនៅវៀតណាម ហើយថែមទាំងបានជិះម៉ូតូកាត់ភ្លៀងស្រឹមៗ Fresh ខ្លាំង។ Vietnam was our best choice to celebrate New Years together!</p>
+                       </div>
+                     </div>
+                   </div>
+                  </div>
+                </div>
+
+                <div class="add-photo d-block">
+                  <button type="button" class="btn btn-add mx-auto" data-bs-toggle="modal" data-bs-target="#addPhotoModal">
+                    <p class="mb-0"> អនុស្សាវរីយ៌ថ្មី </p>
+                    <span><i class="fa-solid fa-camera-retro"></i></span>
+                  </button>
+                  <!-- Modal -->
+                  <div class="modal fade" id="addPhotoBookModal" tabindex="-1" aria-labelledby="addPhotoBookModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-2 landing-title-color" id="addPhotoBookModalLabel">អនុស្សាវរីយ៌ថ្មី</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body py-5">
+                          <form class="form mx-auto">
+                            <span class="form-title text-center">បន្ថែមរូបភាពថ្មី</span>
+                            <p class="form-paragraph">
+                              បន្ថែមម្ដងបានមួយរូបភាព
+                            </p>
+                            <label for="file-input" class="drop-container">
+                              <span class="drop-title pb-2">ចុចបន្ថែមរូបភាពនៅទីនេះ</span>
+                              <input type="file" accept="image/*" required="" id="fileimage-input">
+                            </label>
+                            <div class="mb-3">
+                              <label for="photoDate" class="form-label">ប្រតិទិន</label>
+                              <input type="date" class="form-control" id="photoDate">
+                            </div>
+                            <div class="mb-3">
+                              <label for="bio" class="form-label">ពាក្យពេចន្ទ</label>
+                              <textarea class="form-control" id="bio" rows="3" aria-label=""></textarea>
+                            </div>
+                          </form>
+
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">បិទ</button>
+                          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">បន្ថែមថ្មី</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </section>
+              
               <div class="box mt-3"></div>
               <div class="box mt-3"></div>
               <!-- ? end of write your content here -->
@@ -782,5 +1495,88 @@
     <script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/plugins/aos/js/aos.js"></script>
     <script src="assets/js/dark-mode.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "cards",
+        grabCursor: true,
+      });
+    </script>
+    <script>
+      var currentText = 0;
+      var headerText = ["សួស្ដី Warren !", "ថ្ងៃនេះមានអារម្មណ៌យ៉ាងណាដែរ?", "មានអ្វីចង់កត់ត្រានៅក្នុងកំណត់ដែរឬទេ?", "Have a good day, Warren ^^"];
+      var divText = document.getElementById("welcome-text");
+      var cycleComplete = false; 
+
+      document.onload = setTimeout(function(){changeHeaderText();}, 500);
+
+      function changeHeaderText()
+      {    
+        if (cycleComplete) {
+          divText.innerHTML = headerText[0];
+          return;
+        }
+        if (currentText === headerText.length - 1){
+          cycleComplete = true;
+          currentText = 0;
+        } else {
+          currentText += 1;
+        }    
+        deleteHeaderText();
+      }
+
+      function deleteHeaderText()
+      {    
+        if (divText.innerHTML.length === 0){
+          if (cycleComplete && currentText === 0){
+            divText.innerHTML = headerText[0];
+            return;
+          }
+          setTimeout(function(){typeHeaderText();}, 100);
+        } 
+        else
+        {
+            divText.innerHTML = divText.innerHTML.substring(0, divText.innerHTML.length - 1);
+            setTimeout(function(){deleteHeaderText();}, 100);
+        }
+      }
+      function typeHeaderText()
+      {
+        if (divText.innerHTML.length === headerText[currentText].length) {
+            if (cycleComplete && currentText === headerText.length - 1){
+              divText.innerHTML = headerText[0];
+              return;
+            } 
+            setTimeout(function(){changeHeaderText();}, 2000);
+        } 
+        else
+        {
+          divText.innerHTML = headerText[currentText].substring(0, divText.innerHTML.length + 1);
+          setTimeout(function(){typeHeaderText();}, 100);
+        } 
+      }
+
+    </script>
+    <script>
+      const quill1 = new Quill('#editor', {
+        theme: 'snow'
+      });
+      const quill2 = new Quill('#editorHistory', {
+        theme: 'snow'
+      });
+      const quill3 = new Quill('#editorHistory1', {
+        theme: 'snow'
+      });
+      const quill4 = new Quill('#editorHistory2', {
+        theme: 'snow'
+      });
+      const quill5 = new Quill('#editorHistory3', {
+        theme: 'snow'
+      });
+    </script>
+    
+    
   </body>
 </html>
