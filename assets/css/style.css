@@ -14,6 +14,7 @@ main {
 }
 
 /* ! begin of globle selector */
+
 .light-black {
   color: var(--main-text) !important;
 }
@@ -3266,8 +3267,12 @@ nav {
   bottom: -70px;
   left: 0;
   z-index: 199;
-  background: rgb(0,0,0);
-  background: linear-gradient(360deg, rgba(0,0,0,1) 25%, rgba(0,0,0,0) 100%);
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    360deg,
+    rgba(0, 0, 0, 1) 25%,
+    rgba(0, 0, 0, 0) 100%
+  );
   width: 100%;
   height: 100%;
   padding: 150px 10px 0 10px;
@@ -3313,449 +3318,210 @@ nav {
   color: var(--main-text);
 }
 
-.login-profile {
+/* ! begin of login */
+
+.control-form {
+  width: 100vw;
+  height: 100vh;
   display: flex;
-  box-shadow: 0px 0px 10px 0px var(--gray-color);
-  border-radius: 8px;
-  padding: 0;
+  align-items: center;
+  justify-content: center;
 }
 
-.card-form-login {
-  margin-top: 70px;
+.control-form .row {
+  --bs-gutter-x: 0 !important;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1* var(--bs-gutter-y));
+  margin-right: calc(-0.5* var(--bs-gutter-x));
+  margin-left: calc(-0.5* var(--bs-gutter-x));
 }
 
-.card-form-login img {
-  margin-top: -30px !important;
+.login-form {
+  width: 1000px;
+  height: auto;
+  border-radius: 30px;
+  background-color: #fff;
+  overflow: hidden;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
-
-.login-password .card-login {
-  box-shadow: 0px 2px 5px 0px var(--link-text);
-  padding: 15px 40px !important;
+.login-form .input-form {
+  font-size: 18px;
+  color: #000;
 }
-
-.card-form-login .email {
-  position: absolute;
-  padding: 5px;
-}
-
-.card-form-login .passowrd {
-  position: absolute;
-  padding: 5px;
-}
-
-.card-login .icon-back {
-  color: var(--main-color);
-  background: var(--bg-grandient);
-  padding: 10px;
-  border-radius: 100%;
-  width: 30px;
-  height: 30px;
-  cursor: pointer !important;
-  position: absolute;
-  z-index: 2;
-  top: 10px;
-  left: 10px;
-}
-
-.group-input input {
-  padding: 10px 42px;
-  box-shadow: 0px 0px 2px 1px var(--link-text);
-  font-size: 20px;
-  color: #000 !important;
-}
-
-.group-input input :focus {
-  box-shadow: 0px 0px 4px 1px var(--bg-grandient);
-}
-
-.group-input input::placeholder {
-  color: var(--sub-title) !important;
-  font-size: 19px;
-}
-
-.group-input .icon-pw-login {
-  position: absolute;
-  z-index: 9;
-  right: 25%;
-  top: 46%;
-  font-size: 20px;
-  color: var(--gray-color);
-}
-
-.group-input .icon-before-input {
-  padding: 10px;
+.login-form .input-form::placeholder {
   font-size: 18px;
   color: var(--gray-color);
 }
 
-.form-check-label {
-  font-family: "Kantumruy Pro", sans-serif;
-  font-style: normal;
-  color: var(--sub-title);
+.login-form .side-input-login {
+  width: 100%;
+  height: auto;
+  border-radius: 30px 0 0 30px;
+  padding: 20px 40px;
+}
+
+.login-form .side-input-login h1 {
+  background: var(--bg-grandient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 1000;
+}
+
+.login-form .side-input-login .form-input-gp {
+  position: relative;
+}
+
+.login-form .side-input-login .form-input-gp .input-form {
+  width: 100%;
+  padding: 8px 35px;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid var(--ddd-color);
+}
+
+
+.login-form .side-input-login .form-input-gp .icon-inform {
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  color: var(--gray-color);
+  font-size: 18px;
+}
+
+.login-form .form-label-login,
+.login-form .login-link-form {
+  font-size: 16px;
+  color: var(--gray-color);
+}
+
+.login-form .login-link-form {
+  text-decoration: none;
+}
+
+.login-form .login-link-form:hover {
+  color: var(--link-text);
+}
+
+.btn-form {
+  padding: 7px 15px;
+  background: var(--bg-grandient);
+  border-radius: 10px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.login-form .form-text {
+  font-size: 18px;
+  color: #000;
+}
+
+.login-form .form-text-link {
+  font-size: 18px;
+  color: var(--gray-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.login-form .form-text-link:hover {
+  color: var(--link-text);
+}
+
+.or-control {
+  position: relative;
+  width: 100%;
+}
+
+.login-form .line-form {
+  width: 100%;
+  height: 0.5px;
+  background-color: var(--ddd-color);
+}
+
+.login-form .or-con-text {
+  position: absolute;
+  top: -18px;
+  padding: 0 10px;
+  background-color: #fff;
+  left: 41%;
+}
+
+.login-form .border-form {
+  border: 1px solid var(--ddd-color);
+  border-radius: 10px;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.login-form .social-control svg {
+  width: 30px;
+  height: 30px;
+}
+
+.login-form .social-control span {
+  font-size: 16px;
+  color: var(--gray-color);
   padding-left: 5px;
 }
 
-.goto-forgot-pw {
-  color: var(--sub-title);
-  font-size: 20px;
-}
 
-.goto-forgot-pw:hover {
-  background-image: linear-gradient(90deg, #488495, #3c4d78);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  font-weight: bold;
-  transition: 0.6s;
-}
-
-.field-icon {
-  float: right;
-  margin-left: -25px;
-  margin-top: -25px;
+.login-form .image-side-login {
+  width: 100%;
+  height: 100%;
+  background-color: green;
+  border-radius: 0 30px 30px 0;
   position: relative;
-  z-index: 2;
 }
 
-.card-form-login .group-info-login .text-color {
-  font-family: "Kantumruy Pro", sans-serif;
-  color: var(--gray-color);
-  padding-left: 20px;
-}
-
-.card-form-login .group-info-login .text-color:hover {
-  color: var(--link-text);
-  text-decoration: underline;
-}
-
-.login-password
-  .login-profile
-  .card-image-login
-  .group-info-login
-  a:hover
-  span {
-  text-decoration: underline;
-}
-
-.login-password
-  .login-profile
-  .card-image-login
-  .group-info-login
-  a:active
-  span {
-  color: var(--main-text);
-}
-
-/* .card-register .btn-login{
-  font-size: 20px;
-  border-radius: 10px;
-  border: none;
-  padding: 7px 18px;
-  box-shadow: 0px 0px 7px 0px var(--gray-color);
-  background: var(--bg-grandient);
-  color: var(--main-color);
-  transition: 0.8s;
-  margin-right: 20px;
-} */
-
-.login-password .card-form-login .btn-login:hover {
-  background: var(--bg-grandient);
-  color: var(--main-color);
-  opacity: 1;
-  transition: 0.6s;
-}
-
-.text-user-color {
-  color: var(--main-text);
-  font-size: 20px;
-}
-
-.group-info-login {
-  padding-top: 10px;
-}
-
-.group-info-login a .text-color {
-  font-size: 20px;
-}
-
-.group-info-login a:hover .text-color {
-  background-image: linear-gradient(90deg, #488495, #3c4d78) !important;
-  background-clip: text !important;
-  -webkit-background-clip: text !important;
-  color: transparent !important;
-  transition: 0.6s;
-  font-weight: bold;
-}
-
-.group-line .line {
-  width: 130px;
-  height: 2px;
-  background-color: var(--gray-color) !important;
-  opacity: 0.3;
-}
-
-.group-line .text-link {
-  color: var(--sub-title);
-  font-size: 20px;
-  margin-top: -14px;
-  margin-inline: 10px;
-}
-
-.card-form-login .group-social .contact-with {
+.login-form .image-side-login img {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  margin-top: -20px;
-}
-
-.contact-with a {
-  padding: 7px 10px;
-  box-shadow: 0px 0px 2px 0px var(--gray-color);
-  border-radius: 7px;
-}
-
-.contact-with .wh-image {
-  width: 25px;
-  height: 25px;
-  margin-top: 0px !important;
-}
-
-.contact-with a img {
-  width: 100%;
+  border-radius: 0 30px 30px 0;
   height: 100%;
   object-fit: cover;
 }
-
-.contact-with a span {
-  font-family: "Kantumruy Pro", sans-serif;
-  font-size: 19px;
-  color: var(--sub-title);
+.login-form .image-side-login .logo,
+.login-form .image-side-login .logo-left {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.login-form .image-side-login .logo-left {
+  left: 10px;
 }
 
-.contact-with a:hover {
-  box-shadow: 2px 2px 10px 1px var(--link-text);
-  border: none;
-  background: var(--bg-grandient);
+.login-form .image-side-login .logo img {
+  width: 100px;
+  border-radius: 0;
 }
 
-.contact-with a span:hover {
-  color: var(--main-color);
-}
-
-.check-info-login {
-  accent-color: var(--link-text);
-  width: 15px;
-  height: 15px;
-}
-
-.check-info-login[type="checkbox"] {
-  border-radius: 100% !important;
-}
-
-.checkbox-container {
+.login-form .ts-control {
+  border: 0 !important;
+  padding: 2.5px 0 !important;
+  width: 100%;
+  overflow: hidden;
   position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-size: 22px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  font-family: "Kantumruy Pro", sans-serif;
-  font-size: 20px;
-  color: var(--gray-color);
+  z-index: 1;
+  box-sizing: border-box;
+  box-shadow: none;
+  border-radius: 3px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.checkbox-container input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
+.login-form .ts-dropdown, .ts-control, .ts-control input {
+  color: #303030;
+  padding: 2.5px 0 !important;
+  font-size: 18px !important;
 }
 
-.checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 22px;
-  width: 22px;
-  border: 1px #0073aa dashed;
-  transition: all 0.5s ease-in-out;
-  margin-left: 10px;
-}
+/* ! end of login */
 
-.checkbox-container:hover input ~ .checkmark {
-  background-color: #ccc;
-}
-
-.checkbox-container input:checked ~ .checkmark {
-  background: var(--bg-grandient);
-  transition: all 0.5s ease-in-out;
-  border-radius: 50%;
-}
-
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-.checkbox-container input:checked ~ .checkmark:after {
-  display: block;
-}
-
-.checkbox-container .checkmark:after {
-  left: 8px;
-  top: 5px;
-  width: 5px;
-  height: 10px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-.card-login .ribbon {
-  font-size: 28px;
-  font-weight: bold;
-  color: #fff;
-}
-
-.card-login .ribbon {
-  --r: 0.4em;
-  position: absolute;
-  top: -5px;
-  inset-inline: calc(-1 * var(--r));
-  text-align: center;
-  line-height: 1.8;
-  padding: 0 0.5em calc(2 * var(--r));
-  border-radius: var(--r);
-  --_g: 100% / var(--r) calc(2 * var(--r)) no-repeat;
-  background: radial-gradient(100% 50% at right, #0005 98%, #0000 101%) 0
-      var(--_g),
-    radial-gradient(100% 50% at left, #0005 98%, #0000 101%) 100% var(--_g),
-    conic-gradient(
-        from 90deg at var(--r) calc(100% - 2 * var(--r)),
-        #0000 25%,
-        #3fb8af 0
-      )
-      0 0 / calc(100% - var(--r)) 100%;
-}
-
-@media (max-width: 1400px) {
-  .card-form-login .group-input .icon-pw-login {
-    position: absolute;
-    z-index: 9;
-    right: 20%;
-    top: 42%;
-  }
-}
-
-@media (max-width: 1200px) {
-  .card-form-login .group-input .icon-pw-login {
-    position: absolute;
-    z-index: 9;
-    right: 13%;
-    top: 38%;
-  }
-}
-
-@media (max-width: 992px) {
-  .card-form-login .group-input .icon-pw-login {
-    position: absolute;
-    z-index: 9;
-    right: 18%;
-    top: 41%;
-  }
-}
-
-@media (max-width: 768px) {
-  .group-input input {
-    padding: 5px 42px;
-  }
-
-  .card-form-login .group-input .icon-pw-login {
-    position: absolute;
-    z-index: 9;
-    right: 5%;
-    top: 33%;
-  }
-}
-
-@media (max-width: 523px) {
-  .group-input input {
-    padding: 5px 42px;
-  }
-
-  .card-form-login .group-input .icon-pw-login {
-    position: absolute;
-    z-index: 9;
-    right: 3%;
-    top: 31%;
-  }
-}
-
-/* @media (min-width:430px) {
-  .card-login .icon-back{
-    position: absolute;
-    z-index: 2;
-    top: 1px!important;
-    left: 10px;
-  }
-  .group-input input {
-    padding: 2px 42px;
-  }
-  .card-form-login .group-input .icon-pw-login{
-    position: absolute;
-    z-index: 9;
-    right: 3%;
-    top: 28%;
-  }
-  .group-input .icon-before-input{
-    padding: 2px;
-  }
-  .checkbox-container{
-    font-size: 14px;
-  }
-  .checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 15px;
-    width: 15px;
-    border: 1px #0073aa dashed;
-    transition: all 0.5s ease-in-out;
-    margin-left: 5px;
-  }
-  .checkbox-container .checkmark:after {
-    left: 5px;
-    top: 1px;
-    width: 5px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 2px 2px 0;
-  }
-  .goto-forgot-pw {
-    font-size: 12px;
-  }
-  .group-info-login span{
-    font-size: 15px!important;
-  }
-  .group-line span{
-    font-size: 15px!important;
-  }
-  .group-line .line{
-    display: none;
-  }
-
-  .contact-with span{
-    font-size: 10px!important;
-  }
-
-} */
 /* ===== Forgot-password ======= */
 .main-forgot-password {
   height: 100vh;
@@ -4470,13 +4236,14 @@ nav {
 .exercise-banner .swiper {
   width: 100%;
   height: 100%;
+  border-radius: 20px;
 }
 
 .exercise-banner .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
-  height: 250px;
+  height: 400px;
   border-radius: 30px;
   display: flex;
   justify-content: center;
@@ -4492,9 +4259,95 @@ nav {
 
 .exer-vdo-watching .exer-preview {
   width: 100%;
-  height: 250px;
-  background-color: red;
+  height: 400px;
   border-radius: 20px;
+}
+
+.exer-control .exer-list {
+  list-style-type: none;
+  padding: 0;
+  border: 10px solid var(--main-color);
+  border-radius: 10px;
+  height: 600px;
+  overflow: scroll;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  outline: 1px solid var(--ddd-color);
+}
+
+.exer-control .exer-list .erxer-item {
+  width: 100%;
+  /* margin-bottom: 10px; */
+  padding: 10px;
+  border-top: 1px solid var(--ddd-color);
+}
+
+.exer-control .exer-list .erxer-item .exer-thum {
+  width: 25%;
+  height: 100%;
+}
+
+.exer-control .exer-list .erxer-item .list-vdo-detail {
+  padding-left: 10px;
+  width: 85%;
+}
+
+.exer-control .exer-list .erxer-item h6 {
+  font-size: 18px;
+  margin: 0;
+  color: var(--main-text);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  overflow: hidden;
+}
+
+.exer-control .exer-list .erxer-item p {
+  font-size: 15px;
+  margin: 0;
+  color: var(--main-text);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
+}
+
+.exer-control .exer-list .erxer-item .exer-thum img {
+  width: 100%;
+  height: 100%;
+}
+
+.exer-control .exer-list .erxer-item:hover {
+  background-color: var(--ddd-color);
+  cursor: pointer;
+  transition: 0.2 ease;
+}
+
+.exer-preview iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.exer-vdo-watching .plyr__poster {
+  background-color: #000;
+  background-color: var(
+    --plyr-video-background,
+    var(--plyr-video-background, #000)
+  );
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transition: opacity 0.2s ease;
+  width: 100%;
+  z-index: 1;
 }
 
 /* ! end of exercise */
