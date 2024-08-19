@@ -2787,8 +2787,8 @@ nav {
   color: var(--gray-color);
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
-  line-clamp: 1;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
   overflow: hidden;
 }
 
@@ -3115,13 +3115,21 @@ nav {
   border-radius: 100%;
 }
 
+.popular-book .swiper-button-next,
+.popular-book .swiper-button-prev {
+  width: 50px;
+  height: 50px;
+  background: var(--bg-grandient);
+  border-radius: 100%;
+}
+
 .profile-author .overbg {
   width: 200px;
   height: 100%;
   background-color: red;
 }
 
-.profile-author .swiper-button-next:after,
+.swiper-button-next:after,
 .swiper-button-prev:after {
   font-family: swiper-icons;
   font-size: 20px !important;
@@ -3170,11 +3178,21 @@ nav {
 
 .card-article .article-info .article-title {
   color: var(--main-text);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  overflow: hidden;
 }
 
 .card-article .article-info .article-discript {
   font-size: 14px;
   color: var(--gray-color);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  overflow: hidden;
 }
 
 .art-artist-pf img {
@@ -3298,13 +3316,14 @@ nav {
 }
 .latest-content {
   position: absolute;
-  bottom: -70px;
+  bottom: -86px;
   left: 0;
   z-index: 199;
   background: rgb(0, 0, 0);
   background: linear-gradient(
     360deg,
-    rgba(0, 0, 0, 1) 25%,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 20%,
     rgba(0, 0, 0, 0) 100%
   );
   width: 100%;
@@ -3314,13 +3333,23 @@ nav {
 }
 
 .card-latest-article:hover .latest-content {
-  bottom: -20px;
+  margin-bottom: 70px;
 }
 
 .latest-content h4,
 .latest-content p {
   color: #fff;
   padding: 0;
+}
+
+.latest-content h4,
+.latest-content p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
+  /* margin-bottom: 20px; */
 }
 
 /* ! end of article */
@@ -3367,9 +3396,9 @@ nav {
   --bs-gutter-y: 0;
   display: flex;
   flex-wrap: wrap;
-  margin-top: calc(-1* var(--bs-gutter-y));
-  margin-right: calc(-0.5* var(--bs-gutter-x));
-  margin-left: calc(-0.5* var(--bs-gutter-x));
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
 }
 
 .login-form {
@@ -3415,7 +3444,6 @@ nav {
   outline: none;
   border: 1px solid var(--ddd-color);
 }
-
 
 .login-form .side-input-login .form-input-gp .icon-inform {
   position: absolute;
@@ -3504,7 +3532,6 @@ nav {
   padding-left: 5px;
 }
 
-
 .login-form .image-side-login {
   width: 100%;
   height: 100%;
@@ -3548,7 +3575,9 @@ nav {
   flex-wrap: wrap;
 }
 
-.login-form .ts-dropdown, .ts-control, .ts-control input {
+.login-form .ts-dropdown,
+.ts-control,
+.ts-control input {
   color: #303030;
   padding: 2.5px 0 !important;
   font-size: 18px !important;
@@ -4190,9 +4219,6 @@ nav {
   padding-top: 14px;
 }
 
-
-
-
 /* ! end of book store */
 
 /* !​ begin of event */
@@ -4225,10 +4251,18 @@ nav {
   color: #fff;
 }
 
-.social-event .card-event .event-image img,
+.social-event .card-event .event-image img{
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
 .video-selfdev .card-selfdev .self-dev-image img {
   width: 100%;
+  height: auto;
   border-radius: 10px;
+  object-fit: cover;
 }
 
 .social-event .card-event .event-discript {
@@ -4241,6 +4275,12 @@ nav {
   margin-bottom: 0;
   font-size: 15px;
   color: var(--main-text);
+  display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4;
+        line-clamp: 4;
+        overflow: hidden;
+
 }
 
 .social-event .card-event .btn-event {
@@ -4290,7 +4330,7 @@ nav {
 .video-selfdev .card-selfdev .video-info .pf-video .pf-vdo-image {
   width: 40px;
   height: 40px;
-  background-color: red;
+  border-radius: 40px;
 }
 
 .video-selfdev .card-selfdev .video-info {
