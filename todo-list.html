@@ -397,7 +397,7 @@
                     role="button"
                     type="button"
                     href="index.html"
-                    class="menu-btn active text-decoration-none all-center"
+                    class="menu-btn text-decoration-none all-center"
                     ><i class="fa fa-house"></i
                   ></a>
                   <ul class="nav-menu">
@@ -413,7 +413,7 @@
                   </ul>
                 </li>
                 <li class="menu-item all-center">
-                  <button type="button" class="menu-btn">
+                  <button type="button" class="menu-btn active ">
                     <i class="fa-solid fa-calendar-check"></i>
                   </button>
                   <ul class="nav-menu">
@@ -585,7 +585,10 @@
           <!-- ! begin of main content -->
           <div class="col-lg-11 col-12">
             <div class="pt-112 px-4 px-md-0">
-              <!-- ? write your content here -->
+              <!-- ? write your content here -->  
+              <div class="journal-header" style="height: 70px;">
+                <h1 class="mb-0" id="welcome-text"> សួស្ដី Warren ! </h1>
+              </div>
               <div class="journal-nav d-none d-md-block w-100 mt-3 bg-red" style="padding-inline: 12px;">
                 <div class="row justify-content-between">
                   <div class="col-2 d-flex justify-content-end px-0">
@@ -597,7 +600,7 @@
                     <div class="journal-nav-line w-100"></div>
                   </div>
                   <div class="col-2 d-flex justify-content-start px-0">
-                    <button type="button" class="btn btn-todo w-100 p-2">
+                    <button type="button" class="btn btn-todo w-100 p-2 active">
                       <a href="todo-list.html" class="nav-link fs-4 w-100 d-flex justify-content-center align-items-center">បញ្ជីសកម្មភាព</a>
                     </button>
                   </div>
@@ -607,11 +610,522 @@
                 <button type="button" class="btn btn-journaling p-2 d-block mx-auto">
                   <a href="journaling.html" class="nav-link fs-4 w-100 d-flex justify-content-center align-items-center">កំណត់ត្រា</a>
                 </button>
-                <button type="button" class="btn btn-todo p-2 my-3 mx-auto">
+                <button type="button" class="btn btn-todo p-2 my-3 mx-auto active">
                   <a href="todo-list.html" class="nav-link text-white fs-4 w-100 d-flex justify-content-center align-items-center">បញ្ជីសកម្មភាពដែលត្រូវធ្វើ</a>
                 </button>
               </div>
-             
+              <section class="overview pt-5">
+                <h3 class="pb-3">ស្ងានភាពការងារបច្ចុប្បន្ន</h3>
+                <div class="row pb-5">
+                    <div class="col-sm-6 col-lg-3">
+                        <button class="btn btn-work bg-primary-subtle" type="button" data-bs-toggle="modal" data-bs-target="#todolistModal">
+                            <div class="btn-body h-100 d-flex align-items-center">
+                                <div class="btn-overview-icon">
+                                    <img src="assets/img/Journaling-Todolist/process.png" width="50px" alt="process-icon">
+                                </div>
+                                <div class="ps-2 card-overview-content">
+                                    <p class="fs-5 pt-3 fw-semibold landing-title-color mb-0">ការងារដែលកំពុងធ្វើ</p>
+                                    <p> 3 ការងារ </p>
+                                </div>
+                            </div>
+                        </button>
+                        
+                        <!-- Modal -->
+                        <div class="modal fade" id="todolistModal" tabindex="-1" aria-labelledby="todolistModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable modal-lg modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <div class="header-wrapper">
+                                            <h1 class="modal-title fs-4 text-center" id="exampleModalLabel">ស្ថានភាពការងារ</h1>
+                                        </div>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                          <button class="nav-link active" id="pills-continue-tab" data-bs-toggle="pill" data-bs-target="#pills-continue" type="button" role="tab" aria-controls="pills-continue" aria-selected="true">ការងារដែលកំពុងធ្វើ</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                          <button class="nav-link" id="pills-pause-tab" data-bs-toggle="pill" data-bs-target="#pills-pause" type="button" role="tab" aria-controls="pills-pause" aria-selected="false">ការងារដែលបានផ្អាក</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                          <button class="nav-link" id="pills-done-tab" data-bs-toggle="pill" data-bs-target="#pills-done" type="button" role="tab" aria-controls="pills-done" aria-selected="false">ការងារដែលបានធ្វើរួច</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                          <button class="nav-link" id="pills-stop-tab" data-bs-toggle="pill" data-bs-target="#pills-stop" type="button" role="tab" aria-controls="pills-stop" aria-selected="false">ការងារដែលបានឈប់ធ្វើ</button>
+                                        </li>
+                                      </ul>
+                                      <div class="tab-content py-5" id="pills-tabContent">
+                                        <div class="tab-pane fade show active" id="pills-continue" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                                          <div class="card bg-primary-subtle mb-4 p-3">
+                                            <div class="work-title d-flex justify-content-between">
+                                              <p class="text-dark-emphasis fw-bolder fs-5 mb-0">Creating Website for Webo</p>
+                                              <div class="work-logo">
+                                                <img src="assets/img/Journaling-Todolist/process.png" width="30px" alt="process-icon">
+                                              </div>
+                                            </div>
+                                            <p>Digital product</p>
+                                            <div class="tick-icon">
+                                              <span><i class="fa-regular fa-circle-check"></i></span>
+                                              <span>3 ការងារ</span>
+                                            </div>
+                                          </div>
+                                          <div class="card bg-primary-subtle mb-4 p-3">
+                                            <div class="work-title d-flex justify-content-between">
+                                              <p class="text-dark-emphasis fw-bolder fs-5 mb-0">Creating Website for Webo</p>
+                                              <div class="work-logo">
+                                                <img src="assets/img/Journaling-Todolist/process.png" width="30px" alt="process-icon">
+                                              </div>
+                                            </div>
+                                            <p>Digital product</p>
+                                            <div class="tick-icon">
+                                              <span><i class="fa-regular fa-circle-check"></i></span>
+                                              <span>3 ការងារ</span>
+                                            </div>
+                                          </div>
+                                          <div class="card bg-primary-subtle mb-4 p-3">
+                                            <div class="work-title d-flex justify-content-between">
+                                              <p class="text-dark-emphasis fw-bolder fs-5 mb-0">Creating Website for Webo</p>
+                                              <div class="work-logo">
+                                                <img src="assets/img/Journaling-Todolist/process.png" width="30px" alt="process-icon">
+                                              </div>
+                                            </div>
+                                            <p>Digital product</p>
+                                            <div class="tick-icon">
+                                              <span><i class="fa-regular fa-circle-check"></i></span>
+                                              <span>3 ការងារ</span>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="pills-pause" role="tabpanel" aria-labelledby="pills-pause-tab" tabindex="0">
+                                          <div class="card bg-warning-subtle mb-4 p-3">
+                                            <div class="work-title d-flex justify-content-between">
+                                              <p class="text-dark-emphasis fw-bolder fs-5 mb-0">Creating Website for Webo</p>
+                                              <div class="work-logo">
+                                                <img src="assets/img/Journaling-Todolist/back-in-time.png" width="30px" alt="process-icon">
+                                              </div>
+                                            </div>
+                                            <p>Digital product</p>
+                                            <div class="tick-icon">
+                                              <span><i class="fa-regular fa-circle-check"></i></span>
+                                              <span>3 ការងារ</span>
+                                            </div>
+                                          </div>
+                                          
+                                        </div>
+                                        <div class="tab-pane fade" id="pills-done" role="tabpanel" aria-labelledby="pills-done-tab" tabindex="0">
+                                          <div class="card bg-success-subtle mb-4 p-3">
+                                            <div class="work-title d-flex justify-content-between">
+                                              <p class="text-dark-emphasis fw-bolder fs-5 mb-0">Creating Website for Webo</p>
+                                              <div class="work-logo">
+                                                <img src="assets/img/Journaling-Todolist/done.png" width="30px" alt="process-icon">
+                                              </div>
+                                            </div>
+                                            <p>Digital product</p>
+                                            <div class="tick-icon">
+                                              <span><i class="fa-regular fa-circle-check"></i></span>
+                                              <span>3 ការងារ</span>
+                                            </div>
+                                          </div>
+                                          <div class="card bg-success-subtle mb-4 p-3">
+                                            <div class="work-title d-flex justify-content-between">
+                                              <p class="text-dark-emphasis fw-bolder fs-5 mb-0">Creating Website for Webo</p>
+                                              <div class="work-logo">
+                                                <img src="assets/img/Journaling-Todolist/done.png" width="30px" alt="process-icon">
+                                              </div>
+                                            </div>
+                                            <p>Digital product</p>
+                                            <div class="tick-icon">
+                                              <span><i class="fa-regular fa-circle-check"></i></span>
+                                              <span>3 ការងារ</span>
+                                            </div>
+                                          </div>
+                                          <div class="card bg-success-subtle mb-4 p-3">
+                                            <div class="work-title d-flex justify-content-between">
+                                              <p class="text-dark-emphasis fw-bolder fs-5 mb-0">Creating Website for Webo</p>
+                                              <div class="work-logo">
+                                                <img src="assets/img/Journaling-Todolist/done.png" width="30px" alt="process-icon">
+                                              </div>
+                                            </div>
+                                            <p>Digital product</p>
+                                            <div class="tick-icon">
+                                              <span><i class="fa-regular fa-circle-check"></i></span>
+                                              <span>3 ការងារ</span>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="pills-stop" role="tabpanel" aria-labelledby="pills-stop-tab" tabindex="0">
+                                          <div class="card bg-danger-subtle mb-4 p-3">
+                                            <div class="work-title d-flex justify-content-between">
+                                              <p class="text-dark-emphasis fw-bolder fs-5 mb-0">Creating Website for Webo</p>
+                                              <div class="work-logo">
+                                                <img src="assets/img/Journaling-Todolist/close.png" width="30px" alt="process-icon">
+                                              </div>
+                                            </div>
+                                            <p>Digital product</p>
+                                            <div class="tick-icon">
+                                              <span><i class="fa-regular fa-circle-check"></i></span>
+                                              <span>3 ការងារ</span>
+                                            </div>
+                                          </div>
+                                          <div class="card bg-danger-subtle mb-4 p-3">
+                                            <div class="work-title d-flex justify-content-between">
+                                              <p class="text-dark-emphasis fw-bolder fs-5 mb-0">Creating Website for Webo</p>
+                                              <div class="work-logo">
+                                                <img src="assets/img/Journaling-Todolist/close.png" width="30px" alt="process-icon">
+                                              </div>
+                                            </div>
+                                            <p>Digital product</p>
+                                            <div class="tick-icon">
+                                              <span><i class="fa-regular fa-circle-check"></i></span>
+                                              <span>3 ការងារ</span>
+                                            </div>
+                                          </div>
+                                          
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">បិទ</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <button class="btn btn-work bg-warning-subtle" type="button">
+                            <div class="btn-body h-100 d-flex align-items-center">
+                                <div class="btn-overview-icon">
+                                    <img src="assets/img/Journaling-Todolist/back-in-time.png" width="50px" alt="icon">
+                                </div>
+                                <div class="ps-3 card-overview-content">
+                                    <p class="fs-5 pt-3 fw-semibold landing-title-color mb-0">ការងារដែលបានផ្អាក</p>
+                                    <p> 1 ការងារ </p>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="col-sm-6 pt-3 pt-lg-0 col-lg-3">
+                        <button class="btn btn-work bg-success-subtle">
+                            <div class="btn-body h-100 d-flex align-items-center">
+                                <div class="btn-overview-icon">
+                                    <img src="assets/img/Journaling-Todolist/done.png" width="50px" alt="icon">
+                                </div>
+                                <div class="ps-3 card-overview-content">
+                                    <p class="fs-5 pt-3 fw-semibold landing-title-color mb-0">ការងារដែលបានធ្វើរួច</p>
+                                    <p> 4 ការងារ </p>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="col-sm-6 pt-3 pt-lg-0 col-lg-3">
+                        <button class="btn btn-work bg-danger-subtle">
+                            <div class="btn-body h-100 d-flex align-items-center">
+                                <div class="btn-overview-icon">
+                                    <img src="assets/img/Journaling-Todolist/close.png" width="50px" alt="icon">
+                                </div>
+                                <div class="ps-3 card-overview-content">
+                                    <p class="fs-5 pt-3 fw-semibold landing-title-color mb-0">ការងារដែលបានឈប់ធ្វើ</p>
+                                    <p> 2 ការងារ </p>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <hr>
+                <div class="display d-flex justify-content-between">
+                  <div class="left-display">
+                    <p class="mb-0">រៀបចំការងារ</p>
+                  </div>
+                  <div class="right-display d-flex align-items-center">
+                    <div class="prev me-3">
+                      <span><i class="fa-solid fa-angle-left"></i></span>
+                    </div>
+                    <div class="next me-3">
+                      <span><i class="fa-solid fa-angle-right"></i></span>
+                    </div>
+                    <button type="button" class="btn ">
+                      <span>សប្ដាហ៌នេះ</span>
+                      <span>2024</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="organize-work my-5 px-5 py-5">
+                  <div class="work-wrapper d-flex p-3" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapse1" aria-expanded="false" aria-controls="multiCollapse1">
+                    <span class="pt-1"><i class="fa-solid fa-play"></i></span>
+                    <p class="ms-4 fs-5 px-3 mb-0">សរសេរ Website</p>
+                  </div>
+                  <div class="work-collapse px-5">
+                    <div class="collapse multi-collapse show" id="multiCollapse1">
+                      <div class="card card-body card-wrapper">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="Check1">
+                          <label class="form-check-label ps-2" for="Check1">
+                            Design Figma Landing Page
+                          </label>
+                        </div>
+                        <div class="form-check pt-2">
+                          <input class="form-check-input" type="checkbox" value="" id="Check2">
+                          <label class="form-check-label ps-2" for="Check2">
+                            Design Figma Home Page
+                          </label>
+                        </div> 
+                        <div class="add-new-activity py-2">
+                          <div class="card card-body py-3">
+                            <input class="form-control" id="" type="text" placeholder="បន្ថែមសកម្មភាពថ្មី" aria-label="">
+                            <div class="card-btn-footer pt-3 w-100 d-flex justify-content-between">
+                              <button type="button" class="btn btn-do-add px-lg-4 py-0"> បន្ថែម </button>
+                              <div class="right-btn d-none d-lg-block">
+                                <button type="button" class="btn btn-secondary">ចាប់ផ្ដើម 13 កក្កដា</button>
+                                <button type="button" class="btn btn-secondary">បញ្ចប់ 18 កក្កដា</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="work-wrapper d-flex p-3" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapse2" aria-expanded="false" aria-controls="multiCollapse2">
+                    <span class="pt-1"><i class="fa-solid fa-play"></i></span>
+                    <p class="ms-4 fs-5 px-3 mb-0">សរសេរ Website</p>
+                  </div>
+                  <div class="work-collapse px-5">
+                    <div class="collapse multi-collapse show" id="multiCollapse2">
+                      <div class="card card-body card-wrapper">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="Check3">
+                          <label class="form-check-label ps-2" for="Check1">
+                            Design Figma Landing Page
+                          </label>
+                        </div>
+                        <div class="form-check pt-2">
+                          <input class="form-check-input" type="checkbox" value="" id="Check4">
+                          <label class="form-check-label ps-2" for="Check2">
+                            Design Figma Home Page
+                          </label>
+                        </div> 
+                        <div class="add-new-activity py-2">
+                          <div class="card card-body py-3">
+                            <input class="form-control" id="" type="text" placeholder="បន្ថែមសកម្មភាពថ្មី" aria-label="">
+                            <div class="card-btn-footer pt-3 w-100 d-flex justify-content-between">
+                              <button type="button" class="btn btn-do-add px-lg-4 py-0"> បន្ថែម </button>
+                              <div class="right-btn d-none d-lg-block">
+                                <button type="button" class="btn btn-secondary">ចាប់ផ្ដើម 13 កក្កដា</button>
+                                <button type="button" class="btn btn-secondary">បញ្ចប់ 18 កក្កដា</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="work-wrapper d-flex p-3" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapse3" aria-expanded="false" aria-controls="multiCollapse2">
+                    <span class="pt-1"><i class="fa-solid fa-play"></i></span>
+                    <p class="ms-4 fs-5 px-3 mb-0">សរសេរ Website</p>
+                  </div>
+                  <div class="work-collapse px-5">
+                    <div class="collapse multi-collapse show" id="multiCollapse3">
+                      <div class="card card-body card-wrapper">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="Check5">
+                          <label class="form-check-label ps-2" for="Check1">
+                            Design Figma Landing Page
+                          </label>
+                        </div>
+                        <div class="form-check pt-2">
+                          <input class="form-check-input" type="checkbox" value="" id="Check6">
+                          <label class="form-check-label ps-2" for="Check2">
+                            Design Figma Home Page
+                          </label>
+                        </div> 
+                        <div class="add-new-activity py-2">
+                          <div class="card card-body py-3">
+                            <input class="form-control" id="" type="text" placeholder="បន្ថែមសកម្មភាពថ្មី" aria-label="">
+                            <div class="card-btn-footer pt-3 w-100 d-flex justify-content-between">
+                              <button type="button" class="btn btn-do-add px-lg-4 py-0"> បន្ថែម </button>
+                              <div class="right-btn d-none d-lg-block">
+                                <button type="button" class="btn btn-secondary">ចាប់ផ្ដើម 13 កក្កដា</button>
+                                <button type="button" class="btn btn-secondary">បញ្ចប់ 18 កក្កដា</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+
+                <div class="display d-flex justify-content-between">
+                  <div class="left-display">
+                    <p class="mb-0">បង្ហាញការងារ</p>
+                  </div>
+                  <div class="right-display d-flex align-items-center">
+                    <div class="prev me-3">
+                      <span><i class="fa-solid fa-angle-left"></i></span>
+                    </div>
+                    <div class="next me-3">
+                      <span><i class="fa-solid fa-angle-right"></i></span>
+                    </div>
+                    <button type="button" class="btn ">
+                      <span>សប្ដាហ៌នេះ</span>
+                      <span>2024</span>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="organize-work my-5 px-5 py-5">
+                  <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab2" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="pills-continue-tab2" data-bs-toggle="pill" data-bs-target="#pills-continue2" type="button" role="tab" aria-controls="pills-continue2" aria-selected="true">ការងារដែលកំពុងធ្វើ</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-pause-tab2" data-bs-toggle="pill" data-bs-target="#pills-pause2" type="button" role="tab" aria-controls="pills-pause2" aria-selected="false">ការងារដែលបានផ្អាក</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-done-tab2" data-bs-toggle="pill" data-bs-target="#pills-done2" type="button" role="tab" aria-controls="pills-done2" aria-selected="false">ការងារដែលបានធ្វើរួច</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-stop-tab2" data-bs-toggle="pill" data-bs-target="#pills-stop2" type="button" role="tab" aria-controls="pills-stop2" aria-selected="false">ការងារដែលបានឈប់ធ្វើ</button>
+                    </li>
+                  </ul>
+                  <div class="tab-content py-5" id="pills-tabContent2">
+                    <div class="tab-pane fade show active" id="pills-continue2" role="tabpanel" aria-labelledby="pills-continue-tab" tabindex="0">
+                      <div class="card bg-primary-subtle mb-4 p-3">
+                        <div class="work-title d-flex justify-content-between">
+                          <p class="text-dark-emphasis fw-bolder fs-5 mb-0">Creating Website for Webo</p>
+                          <div class="work-logo">
+                            <img src="assets/img/Journaling-Todolist/process.png" width="30px" alt="process-icon">
+                          </div>
+                        </div>
+                        <p>Digital product</p>
+                        <div class="tick-icon">
+                          <span><i class="fa-regular fa-circle-check"></i></span>
+                          <span>3 ការងារ</span>
+                        </div>
+                      </div>
+                      <div class="card bg-primary-subtle mb-4 p-3">
+                        <div class="work-title d-flex justify-content-between">
+                          <p class="text-dark-emphasis fw-bolder fs-5 mb-0">Creating Website for Webo</p>
+                          <div class="work-detail">
+                            <div class="work-logo">
+                              <img src="assets/img/Journaling-Todolist/process.png" width="30px" alt="process-icon">
+                            </div>
+                          </div>
+                        </div>
+                        <p>Digital product</p>
+                        <div class="tick-icon">
+                          <span><i class="fa-regular fa-circle-check"></i></span>
+                          <span>3 ការងារ</span>
+                        </div>
+                      </div>
+                      <div class="card bg-primary-subtle mb-4 p-3">
+                        <div class="work-title d-flex justify-content-between">
+                          <p class="text-dark-emphasis fw-bolder fs-5 mb-0">Creating Website for Webo</p>
+                          <div class="work-logo">
+                            <img src="assets/img/Journaling-Todolist/process.png" width="30px" alt="process-icon">
+                          </div>
+                        </div>
+                        <p>Digital product</p>
+                        <div class="tick-icon">
+                          <span><i class="fa-regular fa-circle-check"></i></span>
+                          <span>3 ការងារ</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-pause2" role="tabpanel" aria-labelledby="pills-pause-tab2" tabindex="0">
+                      <div class="card bg-warning-subtle mb-4 p-3">
+                        <div class="work-title d-flex justify-content-between">
+                          <p class="text-dark-emphasis fw-bolder fs-5 mb-0">Creating Website for Webo</p>
+                          <div class="work-logo">
+                            <img src="assets/img/Journaling-Todolist/back-in-time.png" width="30px" alt="process-icon">
+                          </div>
+                        </div>
+                        <p>Digital product</p>
+                        <div class="tick-icon">
+                          <span><i class="fa-regular fa-circle-check"></i></span>
+                          <span>3 ការងារ</span>
+                        </div>
+                      </div>
+                      
+                    </div>
+                    <div class="tab-pane fade" id="pills-done2" role="tabpanel" aria-labelledby="pills-done-tab2" tabindex="0">
+                      <div class="card bg-success-subtle mb-4 p-3">
+                        <div class="work-title d-flex justify-content-between">
+                          <p class="text-dark-emphasis fw-bolder fs-5 mb-0">Creating Website for Webo</p>
+                          <div class="work-logo">
+                            <img src="assets/img/Journaling-Todolist/done.png" width="30px" alt="process-icon">
+                          </div>
+                        </div>
+                        <p>Digital product</p>
+                        <div class="tick-icon">
+                          <span><i class="fa-regular fa-circle-check"></i></span>
+                          <span>3 ការងារ</span>
+                        </div>
+                      </div>
+                      <div class="card bg-success-subtle mb-4 p-3">
+                        <div class="work-title d-flex justify-content-between">
+                          <p class="text-dark-emphasis fw-bolder fs-5 mb-0">Creating Website for Webo</p>
+                          <div class="work-logo">
+                            <img src="assets/img/Journaling-Todolist/done.png" width="30px" alt="process-icon">
+                          </div>
+                        </div>
+                        <p>Digital product</p>
+                        <div class="tick-icon">
+                          <span><i class="fa-regular fa-circle-check"></i></span>
+                          <span>3 ការងារ</span>
+                        </div>
+                      </div>
+                      <div class="card bg-success-subtle mb-4 p-3">
+                        <div class="work-title d-flex justify-content-between">
+                          <p class="text-dark-emphasis fw-bolder fs-5 mb-0">Creating Website for Webo</p>
+                          <div class="work-logo">
+                            <img src="assets/img/Journaling-Todolist/done.png" width="30px" alt="process-icon">
+                          </div>
+                        </div>
+                        <p>Digital product</p>
+                        <div class="tick-icon">
+                          <span><i class="fa-regular fa-circle-check"></i></span>
+                          <span>3 ការងារ</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-stop2" role="tabpanel" aria-labelledby="pills-stop-tab2" tabindex="0">
+                      <div class="card bg-danger-subtle mb-4 p-3">
+                        <div class="work-title d-flex justify-content-between">
+                          <p class="text-dark-emphasis fw-bolder fs-5 mb-0">Creating Website for Webo</p>
+                          <div class="work-logo">
+                            <img src="assets/img/Journaling-Todolist/close.png" width="30px" alt="process-icon">
+                          </div>
+                        </div>
+                        <p>Digital product</p>
+                        <div class="tick-icon">
+                          <span><i class="fa-regular fa-circle-check"></i></span>
+                          <span>3 ការងារ</span>
+                        </div>
+                      </div>
+                      <div class="card bg-danger-subtle mb-4 p-3">
+                        <div class="work-title d-flex justify-content-between">
+                          <p class="text-dark-emphasis fw-bolder fs-5 mb-0">Creating Website for Webo</p>
+                          <div class="work-logo">
+                            <img src="assets/img/Journaling-Todolist/close.png" width="30px" alt="process-icon">
+                          </div>
+                        </div>
+                        <p>Digital product</p>
+                        <div class="tick-icon">
+                          <span><i class="fa-regular fa-circle-check"></i></span>
+                          <span>3 ការងារ</span>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  
+                </div>
+
+              </section>
               
               <!-- ? end of write your content here -->
             </div>
@@ -806,7 +1320,61 @@
     <script src="assets/plugins/aos/js/aos.js"></script>
     <script src="assets/js/dark-mode.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.js"></script>
-
+    <script>
+        var currentText = 0;
+        var headerText = ["សួស្ដី Warren !", "Have a good day, Warren ^^"];
+        var divText = document.getElementById("welcome-text");
+        var cycleComplete = false; 
+  
+        document.onload = setTimeout(function(){changeHeaderText();}, 500);
+  
+        function changeHeaderText()
+        {    
+          if (cycleComplete) {
+            divText.innerHTML = headerText[0];
+            return;
+          }
+          if (currentText === headerText.length - 1){
+            cycleComplete = true;
+            currentText = 0;
+          } else {
+            currentText += 1;
+          }    
+          deleteHeaderText();
+        }
+  
+        function deleteHeaderText()
+        {    
+          if (divText.innerHTML.length === 0){
+            if (cycleComplete && currentText === 0){
+              divText.innerHTML = headerText[0];
+              return;
+            }
+            setTimeout(function(){typeHeaderText();}, 100);
+          } 
+          else
+          {
+              divText.innerHTML = divText.innerHTML.substring(0, divText.innerHTML.length - 1);
+              setTimeout(function(){deleteHeaderText();}, 100);
+          }
+        }
+        function typeHeaderText()
+        {
+          if (divText.innerHTML.length === headerText[currentText].length) {
+              if (cycleComplete && currentText === headerText.length - 1){
+                divText.innerHTML = headerText[0];
+                return;
+              } 
+              setTimeout(function(){changeHeaderText();}, 2000);
+          } 
+          else
+          {
+            divText.innerHTML = headerText[currentText].substring(0, divText.innerHTML.length + 1);
+            setTimeout(function(){typeHeaderText();}, 100);
+          } 
+        }
+  
+      </script>
 
     
     
