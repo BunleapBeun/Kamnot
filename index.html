@@ -16,7 +16,7 @@
   <body>
     <!-- ! begin of header -->
     <header class="position-fixed top-0 w-100">
-      <nav class="navbar navbar-expand-lg">
+      <nav class="navbar navbar-expand-lg nav-py30">
         <div class="container">
           <a class="navbar-brand" href="index.html"><img src="assets/img/navbar/Kn-logo.png" alt="" /></a>
           <button class="navbar-toggler" type="button" aria-expanded="false" data-bs-toggle="offcanvas"
@@ -342,13 +342,13 @@
                             <a href="journaling.html" class="content-link">កំណត់ត្រាប្រចាំថ្ងៃ</a>
                           </li>
                           <li class="content-item">
-                            <a href="journaling.html" class="content-link">តាមដានការចំណាយ</a>
+                            <a href="money_spending.html" class="content-link">តាមដានការចំណាយ</a>
                           </li>
                           <li class="content-item">
-                            <a href="journaling.html" class="content-link">តាមដានផ្លូវចិត្ត</a>
+                            <a href="mood_tracking.html" class="content-link">តាមដានផ្លូវចិត្ត</a>
                           </li>
                           <li class="content-item">
-                            <a href="journaling.html" class="content-link">លំហាត់ប្រាណ</a>
+                            <a href="exercise.html" class="content-link">លំហាត់ប្រាណ</a>
                           </li>
                         </ul>
                       </div>
@@ -470,10 +470,10 @@
             <div class="pt-112 px-4 px-md-0">
               <!-- ? write your content here -->
               <div class="row g-3">
-                <div class="col-lg-8 col-12 journaling-reshow">
-                  <div class="bar-journal-reshow all-center">
+                <div class="col-lg-8 col-12 journaling-reshow" data-aos="fade-up">
+                  <a type="button" href="journaling.html" class="bar-journal-reshow all-center text-decoration-none">
                     <h3>កំណត់ហេតុប្រចាំថ្ងៃ</h3>
-                  </div>
+                  </a>
                   <div class="journal-reshow-content">
                     <div class="bar-journal d-flex flex-row">
                       <div class="col-lg-1 col-2 journal-date d-flex flex-column all-center">
@@ -481,11 +481,13 @@
                         <p>សុក្រ</p>
                       </div>
                       <div class="journal-written col-lg-9 col-6">
-                        <h5>ថ្ងៃនេះជាថ្ងៃស្រស់ស្រាយ!</h5>
-                        <p class="m-0">ខ្ញុំចាប់ផ្តើមជាមួយនឹងការដើរយ៉ាងលឿននៅក្នុងឧទ្យាន
-                          រីករាយជាមួយខ្យល់អាកាសដ៏ត្រជាក់នៅពេលព្រឹក និងសំឡេងសត្វបក្សីបន្លឺឡើង។ នៅកន្លែងធ្វើការ
+                        <p class="m-0">
+                          ខ្ញុំចាប់ផ្តើមជាមួយនឹងការដើរយ៉ាងលឿននៅក្នុងឧទ្យាន
+                          រីករាយជាមួយខ្យល់អាកាសដ៏ត្រជាក់នៅពេលព្រឹក
+                          និងសំឡេងសត្វបក្សីបន្លឺឡើង។ នៅកន្លែងធ្វើការ
                           ទីបំផុតខ្ញុំបានបញ្ចប់គម្រោងមួយដែលខ្ញុំកំពុងជួបការលំបាក
-                          ដែលមានអារម្មណ៍ថាដូចជាទម្ងន់ដ៏ធំមួយបានលើកស្មារបស់ខ្ញុំ។</p>
+                          ដែលមានអារម្មណ៍ថាដូចជាទម្ងន់ដ៏ធំមួយបានលើកស្មារបស់ខ្ញុំ។
+                        </p>
                       </div>
                       <div class="col-lg-2 col-4 journal-edit">
                         <div class="edit-control">
@@ -502,15 +504,17 @@
                     </div>
                     <div class="bar-journal d-flex flex-row">
                       <div class="col-lg-1 col-2 journal-date d-flex flex-column all-center">
-                        <p class="fw-bold">23</p>
-                        <p>សុក្រ</p>
+                        <p class="fw-bold">22</p>
+                        <p>ព្រ.ហ</p>
                       </div>
                       <div class="journal-written col-lg-9 col-6">
-                        <h5>ថ្ងៃនេះជាថ្ងៃស្រស់ស្រាយ!</h5>
-                        <p class="m-0">ខ្ញុំចាប់ផ្តើមជាមួយនឹងការដើរយ៉ាងលឿននៅក្នុងឧទ្យាន
-                          រីករាយជាមួយខ្យល់អាកាសដ៏ត្រជាក់នៅពេលព្រឹក និងសំឡេងសត្វបក្សីបន្លឺឡើង។ នៅកន្លែងធ្វើការ
-                          ទីបំផុតខ្ញុំបានបញ្ចប់គម្រោងមួយដែលខ្ញុំកំពុងជួបការលំបាក
-                          ដែលមានអារម្មណ៍ថាដូចជាទម្ងន់ដ៏ធំមួយបានលើកស្មារបស់ខ្ញុំ។</p>
+                        <p class="m-0">
+                          ថ្ងៃនេះរវល់បន្តិច ប៉ុន្តែខ្ញុំធ្វើបានច្រើន។ ការងាររវល់
+                          ប៉ុន្តែខ្ញុំមានអារម្មណ៍ថាបានសម្រេច។ នៅពេលល្ងាច
+                          ខ្ញុំបានណាត់មិត្តភ័ក្តិម្នាក់ពេលអាហារពេលល្ងាច
+                          ដែលជាការសម្រាកដ៏ល្អពីទម្លាប់ធម្មតា។
+                          ខ្ញុំ​សូម​អរគុណ​ចំពោះ​ការ​គាំទ្រ​របស់​មិត្តភ័ក្តិ​របស់​ខ្ញុំ។
+                        </p>
                       </div>
                       <div class="col-lg-2 col-4 journal-edit">
                         <div class="edit-control">
@@ -527,15 +531,21 @@
                     </div>
                     <div class="bar-journal d-flex flex-row">
                       <div class="col-lg-1 col-2 journal-date d-flex flex-column all-center">
-                        <p class="fw-bold">23</p>
-                        <p>សុក្រ</p>
+                        <p class="fw-bold">22</p>
+                        <p>ពុធ</p>
                       </div>
                       <div class="journal-written col-lg-9 col-6">
-                        <h5>ថ្ងៃនេះជាថ្ងៃស្រស់ស្រាយ!</h5>
-                        <p class="m-0">ខ្ញុំចាប់ផ្តើមជាមួយនឹងការដើរយ៉ាងលឿននៅក្នុងឧទ្យាន
-                          រីករាយជាមួយខ្យល់អាកាសដ៏ត្រជាក់នៅពេលព្រឹក និងសំឡេងសត្វបក្សីបន្លឺឡើង។ នៅកន្លែងធ្វើការ
-                          ទីបំផុតខ្ញុំបានបញ្ចប់គម្រោងមួយដែលខ្ញុំកំពុងជួបការលំបាក
-                          ដែលមានអារម្មណ៍ថាដូចជាទម្ងន់ដ៏ធំមួយបានលើកស្មារបស់ខ្ញុំ។</p>
+                        <p class="m-0">
+                          ភ្ញាក់ពីគេង មានអារម្មណ៍ស្រស់ស្រាយ និងថាមពល
+                          បង្កើតជាសម្លេងវិជ្ជមានសម្រាប់ថ្ងៃ។
+                          ពេលព្រឹកបានដំណើរការយ៉ាងរលូន ហើយខ្ញុំមានថ្ងៃធ្វើការ។
+                          ពេល​រសៀល
+                          ខ្ញុំ​រីករាយ​នឹង​ការ​ដើរ​ដ៏​យូរ​ហើយ​ត្រាំ​ក្នុង​អាកាសធាតុ​ដ៏​ស្រស់​ស្អាត។
+                          នៅពេលល្ងាច ខ្ញុំបានចម្អិនអាហារដែលមានសុខភាពល្អ
+                          ហើយអានសៀវភៅពីរបីជំពូកមុនពេលចូលគេង។
+                          វាមានអារម្មណ៍ល្អក្នុងការចិញ្ចឹមរាងកាយ
+                          និងចិត្តរបស់ខ្ញុំ។
+                        </p>
                       </div>
                       <div class="col-lg-2 col-4 journal-edit">
                         <div class="edit-control">
@@ -552,15 +562,16 @@
                     </div>
                     <div class="bar-journal d-flex flex-row">
                       <div class="col-lg-1 col-2 journal-date d-flex flex-column all-center">
-                        <p class="fw-bold">23</p>
-                        <p>សុក្រ</p>
+                        <p class="fw-bold">21</p>
+                        <p>អង្គា</p>
                       </div>
                       <div class="journal-written col-lg-9 col-6">
-                        <h5>ថ្ងៃនេះជាថ្ងៃស្រស់ស្រាយ!</h5>
-                        <p class="m-0">ខ្ញុំចាប់ផ្តើមជាមួយនឹងការដើរយ៉ាងលឿននៅក្នុងឧទ្យាន
-                          រីករាយជាមួយខ្យល់អាកាសដ៏ត្រជាក់នៅពេលព្រឹក និងសំឡេងសត្វបក្សីបន្លឺឡើង។ នៅកន្លែងធ្វើការ
-                          ទីបំផុតខ្ញុំបានបញ្ចប់គម្រោងមួយដែលខ្ញុំកំពុងជួបការលំបាក
-                          ដែលមានអារម្មណ៍ថាដូចជាទម្ងន់ដ៏ធំមួយបានលើកស្មារបស់ខ្ញុំ។</p>
+                        <p class="m-0">
+                          ការចាប់ផ្តើមថ្ងៃជាមួយនឹងវគ្គយូហ្គាពិតជាជួយខ្ញុំផ្តោតអារម្មណ៍។ ការងារមានការលំបាក
+                          ប៉ុន្តែខ្ញុំនៅតែមានប្រសិទ្ធភាព។ នៅពេលល្ងាច
+                          ខ្ញុំបានចូលរួមសិក្ខាសាលានិម្មិតលើប្រធានបទដែលខ្ញុំចាប់អារម្មណ៍ ដែលមានទាំងព័ត៌មាន និងការចូលរួម។
+                          ការរៀនអ្វីដែលថ្មីតែងតែធ្វើឱ្យខ្ញុំរំភើប!
+                        </p>
                       </div>
                       <div class="col-lg-2 col-4 journal-edit">
                         <div class="edit-control">
@@ -577,15 +588,16 @@
                     </div>
                     <div class="bar-journal d-flex flex-row">
                       <div class="col-lg-1 col-2 journal-date d-flex flex-column all-center">
-                        <p class="fw-bold">23</p>
-                        <p>សុក្រ</p>
+                        <p class="fw-bold">20</p>
+                        <p>ចន្ទ</p>
                       </div>
                       <div class="journal-written col-lg-9 col-6">
-                        <h5>ថ្ងៃនេះជាថ្ងៃស្រស់ស្រាយ!</h5>
-                        <p class="m-0">ខ្ញុំចាប់ផ្តើមជាមួយនឹងការដើរយ៉ាងលឿននៅក្នុងឧទ្យាន
-                          រីករាយជាមួយខ្យល់អាកាសដ៏ត្រជាក់នៅពេលព្រឹក និងសំឡេងសត្វបក្សីបន្លឺឡើង។ នៅកន្លែងធ្វើការ
-                          ទីបំផុតខ្ញុំបានបញ្ចប់គម្រោងមួយដែលខ្ញុំកំពុងជួបការលំបាក
-                          ដែលមានអារម្មណ៍ថាដូចជាទម្ងន់ដ៏ធំមួយបានលើកស្មារបស់ខ្ញុំ។</p>
+                        <p class="m-0">
+                          ថ្ងៃនេះជាថង់ចម្រុះ។ ការងារមានភាពតានតឹង ហើយពេលខ្លះខ្ញុំមានអារម្មណ៍ធុញថប់។ ទោះយ៉ាងណាក៏ដោយ
+                          ខ្ញុំបានសម្រាកនៅពេលរសៀលដើម្បីធ្វើសួនច្បារ ដែលជួយឱ្យខ្ញុំសម្រាក និងបញ្ចូលថាមពលឡើងវិញ។ ក្រោយ​មក
+                          ខ្ញុំ​មាន​ការ​ហៅ​ជា​វីដេអូ​ជាមួយ​ក្រុម​គ្រួសារ​របស់​ខ្ញុំ ដែល​បាន​លើក​ទឹកចិត្ត​ខ្ញុំ។
+                          ទំនាក់ទំនងគ្រួសារមានសារៈសំខាន់ណាស់!
+                        </p>
                       </div>
                       <div class="col-lg-2 col-4 journal-edit">
                         <div class="edit-control">
@@ -602,15 +614,15 @@
                     </div>
                     <div class="bar-journal d-flex flex-row">
                       <div class="col-lg-1 col-2 journal-date d-flex flex-column all-center">
-                        <p class="fw-bold">23</p>
-                        <p>សុក្រ</p>
+                        <p class="fw-bold">18</p>
+                        <p>សៅរ៍</p>
                       </div>
                       <div class="journal-written col-lg-9 col-6">
-                        <h5>ថ្ងៃនេះជាថ្ងៃស្រស់ស្រាយ!</h5>
-                        <p class="m-0">ខ្ញុំចាប់ផ្តើមជាមួយនឹងការដើរយ៉ាងលឿននៅក្នុងឧទ្យាន
-                          រីករាយជាមួយខ្យល់អាកាសដ៏ត្រជាក់នៅពេលព្រឹក និងសំឡេងសត្វបក្សីបន្លឺឡើង។ នៅកន្លែងធ្វើការ
-                          ទីបំផុតខ្ញុំបានបញ្ចប់គម្រោងមួយដែលខ្ញុំកំពុងជួបការលំបាក
-                          ដែលមានអារម្មណ៍ថាដូចជាទម្ងន់ដ៏ធំមួយបានលើកស្មារបស់ខ្ញុំ។</p>
+                        <p class="m-0">
+                          ខ្ញុំចាប់ផ្តើមថ្ងៃជាមួយនឹងអាហារពេលព្រឹកដ៏ឈ្ងុយឆ្ងាញ់ និងកាហ្វេមួយពែង។ ការងារគឺស្រាលជាងមុន
+                          ដែលអនុញ្ញាតឱ្យខ្ញុំចាកចេញមុនម៉ោង។ នៅពេលល្ងាច ខ្ញុំបានជួបជុំមិត្តភ័ក្តិសម្រាប់ដើរលេងមួយយប់
+                          ដែលជាការសម្រាកដែលត្រូវការច្រើនពីទម្លាប់ធម្មតា។ សំណើច និងក្រុមហ៊ុនល្អ ​​គឺជាឱសថដ៏ល្អបំផុត។
+                        </p>
                       </div>
                       <div class="col-lg-2 col-4 journal-edit">
                         <div class="edit-control">
@@ -627,15 +639,16 @@
                     </div>
                     <div class="bar-journal d-flex flex-row">
                       <div class="col-lg-1 col-2 journal-date d-flex flex-column all-center">
-                        <p class="fw-bold">23</p>
+                        <p class="fw-bold">17</p>
                         <p>សុក្រ</p>
                       </div>
                       <div class="journal-written col-lg-9 col-6">
-                        <h5>ថ្ងៃនេះជាថ្ងៃស្រស់ស្រាយ!</h5>
-                        <p class="m-0">ខ្ញុំចាប់ផ្តើមជាមួយនឹងការដើរយ៉ាងលឿននៅក្នុងឧទ្យាន
-                          រីករាយជាមួយខ្យល់អាកាសដ៏ត្រជាក់នៅពេលព្រឹក និងសំឡេងសត្វបក្សីបន្លឺឡើង។ នៅកន្លែងធ្វើការ
-                          ទីបំផុតខ្ញុំបានបញ្ចប់គម្រោងមួយដែលខ្ញុំកំពុងជួបការលំបាក
-                          ដែលមានអារម្មណ៍ថាដូចជាទម្ងន់ដ៏ធំមួយបានលើកស្មារបស់ខ្ញុំ។</p>
+                        <p class="m-0">
+                          ការ​ចូល​គេង​និង​រីករាយ​ពេល​ព្រឹក​គឺ​ជា​ការ​ព្យាបាល។ នៅពេលរសៀល
+                          ខ្ញុំបានទៅដើរលេងជាមួយដៃគូរបស់ខ្ញុំ
+                          ដែលជាវិធីដ៏ល្អមួយក្នុងការចំណាយពេលវេលាប្រកបដោយគុណភាពជាមួយគ្នា និងហាត់ប្រាណខ្លះ។
+                          ពេល​ល្ងាច​ពួក​យើង​ធ្វើ​ម្ហូប​ឆ្ងាញ់ៗ​មើល​កុន​ជាមួយ​គ្នា។ ធម្មជាតិតែងតែធ្វើឱ្យខ្ញុំស្រស់ស្រាយ។
+                        </p>
                       </div>
                       <div class="col-lg-2 col-4 journal-edit">
                         <div class="edit-control">
@@ -651,89 +664,74 @@
                       </div>
                     </div>
                   </div>
-                  <div class="bar-btm-journal-reshow">
-                  </div>
+                  <div class="bar-btm-journal-reshow"></div>
                 </div>
-                <div class="col-lg-4 col-12 todo-reshow">
-                  <div class="bar-reshow-todo all-center">
+                <div class="col-lg-4 col-12 todo-reshow" data-aos="fade-up">
+                  <a type="button" href="todo-list.html" class="bar-reshow-todo all-center text-decoration-none">
                     <h3>កិច្ចការប្រចាំថ្ងៃ</h3>
-                  </div>
+                  </a>
                   <div class="reshow-todo-content">
                     <ul class="list-todo m-0">
                       <li class="todo-item d-flex align-items-center justify-content-between">
-                        <span>អានសៀវភៅ ៣០ នាទី</span>
-                        <div class="check-todo all-center">
-                        </div>
+                        <span>ធ្វើសមាធិរយៈពេល 10 នាទី។</span>
+                        <div class="check-todo all-center"></div>
                       </li>
                       <li class="todo-item d-flex align-items-center justify-content-between">
-                        <span>អានសៀវភៅ ៣០ នាទី</span>
-                        <div class="check-todo all-center">
-                        </div>
+                        <span>ផឹកទឹកមួយកែវ</span>
+                        <div class="check-todo all-center"></div>
                       </li>
                       <li class="todo-item d-flex align-items-center justify-content-between">
-                        <span>អានសៀវភៅ ៣០ នាទី</span>
-                        <div class="check-todo all-center">
-                        </div>
+                        <span>ទិញផ្លែឈើនិងបន្លែស្រស់</span>
+                        <div class="check-todo all-center"></div>
                       </li>
                       <li class="todo-item d-flex align-items-center justify-content-between">
-                        <span>អានសៀវភៅ ៣០ នាទី</span>
-                        <div class="check-todo all-center">
-                        </div>
+                        <span>រៀបចំបទបង្ហាញសម្រាប់កិច្ចប្រជុំក្រុម</span>
+                        <div class="check-todo all-center"></div>
                       </li>
                       <li class="todo-item d-flex align-items-center justify-content-between">
-                        <span class="todotext-checked">រៀបចំការជួបជាមួយមិត្តភក្តិសម្រាប់ថ្ងៃសុក្រ</span>
+                        <span class="todotext-checked">រត់ 30 នាទី។</span>
                         <div class="check-todo bg-success bg-opacity-25 all-center">
                           <i class="fa-solid fa-check"></i>
                         </div>
                       </li>
                       <li class="todo-item d-flex align-items-center justify-content-between">
-                        <span class="todotext-checked">រៀបចំការជួបជាមួយមិត្តភក្តិសម្រាប់ថ្ងៃសុក្រ</span>
+                        <span class="todotext-checked">ទិនានុប្បវត្តិ 10 នាទីរៀងរាល់ព្រឹក</span>
                         <div class="check-todo bg-success bg-opacity-25 all-center">
                           <i class="fa-solid fa-check"></i>
                         </div>
                       </li>
                       <li class="todo-item d-flex align-items-center justify-content-between">
-                        <span class="todotext-checked">រៀបចំការជួបជាមួយមិត្តភក្តិសម្រាប់ថ្ងៃសុក្រ</span>
+                        <span class="todotext-checked">ទៅដើរលេងនៅថ្ងៃសៅរ៍</span>
                         <div class="check-todo bg-success bg-opacity-25 all-center">
                           <i class="fa-solid fa-check"></i>
                         </div>
                       </li>
                       <li class="todo-item d-flex align-items-center justify-content-between">
-                        <span class="todotext-checked">រៀបចំការជួបជាមួយមិត្តភក្តិសម្រាប់ថ្ងៃសុក្រ</span>
+                        <span class="todotext-checked">ស្រាវជ្រាវថ្នាក់ហាត់ប្រាណក្នុងតំបន់ដើម្បីចូលរួម</span>
                         <div class="check-todo bg-success bg-opacity-25 all-center">
                           <i class="fa-solid fa-check"></i>
                         </div>
                       </li>
                     </ul>
                   </div>
-                  <div class="bar-btm-journal-reshow">
-                  </div>
+                  <div class="bar-btm-journal-reshow"></div>
                 </div>
-                <div class="col-12 p-2 m-2 me-0 ms-0">
+                <div class="col-12 p-2 m-2 me-0 ms-0" data-aos="fade-up">
                   <div class="col-12 qoute-show">
                     <div class="swiper mySwiper">
                       <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                          <img src="assets/img/book/banner-picture/banner-sample-book.jpg" alt="" />
+                          <img src="assets/img/qoute-image/qoute-01.jpg" alt="" />
                         </div>
                         <div class="swiper-slide">
-                          <img src="assets/img/book/banner-picture/banner-sample-book.jpg" alt="" />
-                        </div>
-                        <div class="swiper-slide">
-                          <img src="assets/img/book/banner-picture/banner-sample-book.jpg" alt="" />
-                        </div>
-                        <div class="swiper-slide">
-                          <img src="assets/img/book/banner-picture/banner-sample-book.jpg" alt="" />
-                        </div>
-                        <div class="swiper-slide">
-                          <img src="assets/img/book/banner-picture/banner-sample-book.jpg" alt="" />
+                          <img src="assets/img/qoute-image/qoute-02.jpg" alt="" />
                         </div>
                       </div>
                       <div class="swiper-pagination"></div>
                     </div>
                   </div>
                 </div>
-                <section class="reading-book p-2 m-2 me-0 ms-0">
+                <section class="reading-book p-2 m-2 me-0 ms-0" data-aos="fade-up">
                   <div class="row">
                     <div class="col-12">
                       <div class="d-flex justify-content-between align-content-center mb-2">
@@ -743,47 +741,75 @@
                       </div>
                       <div class="row g-3">
                         <div class="col-lg-2 col-4">
-                          <a href="#">
+                          <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <div class="book-cover">
-                              <img src="assets/img/book/the_healing_of_trauma.jpg" alt="" />
+                              <img src="assets/img/book/The_Psychology_of_Money.jpg" alt="" />
                             </div>
                           </a>
-                          <button class="conti-read mt-2">អានបន្ថែម</button>
+                          <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            class="conti-read mt-2 text-decoration-none text-center">អានបន្ថែម</a>
                         </div>
                         <div class="col-lg-2 col-4">
-                          <a href="#">
+                          <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <div class="book-cover">
-                              <img src="assets/img/book/the_healing_of_trauma.jpg" alt="" />
+                              <img src="assets/img/book/The_33_Strategies_of_War.jpg" alt="" />
                             </div>
                           </a>
-                          <button class="conti-read mt-2">អានបន្ថែម</button>
+                          <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            class="conti-read mt-2 text-decoration-none text-center">អានបន្ថែម</a>
                         </div>
                         <div class="col-lg-2 col-4">
-                          <a href="#">
+                          <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <div class="book-cover">
-                              <img src="assets/img/book/the_healing_of_trauma.jpg" alt="" />
+                              <img src="assets/img/book/The_5Am_Club.jpg" alt="" />
                             </div>
                           </a>
-                          <button class="conti-read mt-2">អានបន្ថែម</button>
+                          <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            class="conti-read mt-2 text-decoration-none text-center">អានបន្ថែម</a>
                         </div>
                         <div class="col-lg-2 col-4">
-                          <a href="#">
+                          <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <div class="book-cover">
-                              <img src="assets/img/book/the_healing_of_trauma.jpg" alt="" />
+                              <img src="assets/img/book/Think_and_Grow_Rich.jpg" alt="" />
                             </div>
                           </a>
-                          <button class="conti-read mt-2">អានបន្ថែម</button>
+                          <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            class="conti-read mt-2 text-decoration-none text-center">អានបន្ថែម</a>
                         </div>
                         <div class="col-lg-2 col-4">
-                          <a href="#">
+                          <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <div class="book-cover">
-                              <img src="assets/img/book/the_healing_of_trauma.jpg" alt="" />
+                              <img src="assets/img/book/The_Undoing_Project.jpg" alt="" />
                             </div>
                           </a>
-                          <button class="conti-read mt-2">អានបន្ថែម</button>
+                          <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            class="conti-read mt-2 text-decoration-none text-center">អានបន្ថែម</a>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                          aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content modal-reading-content">
+                              <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">
+                                  The Physical of Money
+                                </h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                  aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body modal-reading-body">
+                                <iframe src="assets/pdf/The_Psychology_of_Money.pdf" frameborder="0"></iframe>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+                                  បិទ
+                                </button>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                         <div class="col-lg-2 col-4">
-                          <a href="#" class="text-decoration-none">
+                          <a href="book_store.html" class="text-decoration-none">
                             <div class="add-book-cover all-center">
                               <div class="add-plus all-center">
                                 <i class="fa-solid fa-plus"></i>
@@ -795,23 +821,21 @@
                     </div>
                   </div>
                 </section>
-                <section class="popular-book p-2 m-2 me-0 ms-0">
+                <section class="popular-book p-2 m-2 me-0 ms-0 border-0" data-aos="fade-up">
                   <div class="row">
                     <div class="col-12">
                       <div class="d-flex justify-content-between align-content-center mb-2">
                         <h3 class="book-reading-title">សៀវភៅពេញនិយម</h3>
-                        <a href="book_store.html"
-                          class="text-decoration-none align-self-center book-see-more">មើលបន្ថែម</a>
                       </div>
                       <div class="row g-3">
                         <div class="col-lg-2 col-4">
-                          <a href="#" class="text-decoration-none">
+                          <a href="book_show.html" class="text-decoration-none">
                             <div class="book-cover">
-                              <img src="assets/img/book/the_healing_of_trauma.jpg" alt="" />
+                              <img src="assets/img/book/The_48_Laws_of_Power.jpg" alt="" />
                               <h5 class="book-title pt-2 m-0">
                                 The Law of Power
                               </h5>
-                              <span class="artist-name">ដោយ៖ Robert Greene</span>
+                              <p class="artist-name m-0">ដោយ៖ Robert Greene</p>
                               <div class="star-rate d-flex">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -819,59 +843,56 @@
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-regular fa-star-half-stroke"></i>
                               </div>
-                              <span class="book-price">$12.99</span>
-                              <span class="book-discount-price"><del>$14.55</del></span>
+                              <span class="book-price">$14.55</span>
                             </div>
                           </a>
                         </div>
                         <div class="col-lg-2 col-4">
-                          <a href="#" class="text-decoration-none">
+                          <a href="book_show.html" class="text-decoration-none">
                             <div class="book-cover">
-                              <img src="assets/img/book/the_healing_of_trauma.jpg" alt="" />
-                              <h5 class="book-title pt-2 m-0">
-                                The Law of Power
-                              </h5>
-                              <span class="artist-name">ដោយ៖ Robert Greene</span>
+                              <img src="assets/img/book/Atomic_Habits.jpg" alt="" />
+                              <h5 class="book-title pt-2 m-0">Atomic Habits</h5>
+                              <p class="artist-name m-0">ដោយ៖ James Clear</p>
                               <div class="star-rate d-flex">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
-                                <i class="fa-regular fa-star-half-stroke"></i>
+                                <i class="fa-solid fa-star"></i>
                               </div>
-                              <span class="book-price">$12.99</span>
-                              <span class="book-discount-price"><del>$14.55</del></span>
+                              <span class="book-price">$13.79</span>
                             </div>
                           </a>
                         </div>
                         <div class="col-lg-2 col-4">
-                          <a href="#" class="text-decoration-none">
+                          <a href="book_show.html" class="text-decoration-none">
                             <div class="book-cover">
-                              <img src="assets/img/book/the_healing_of_trauma.jpg" alt="" />
+                              <img src="assets/img/book/Think_and_Grow_Rich.jpg" alt="" />
                               <h5 class="book-title pt-2 m-0">
-                                The Law of Power
+                                Think and Grow Rich
                               </h5>
-                              <span class="artist-name">ដោយ៖ Robert Greene</span>
+                              <p class="artist-name m-0">ដោយ៖ Napoleon Hill</p>
                               <div class="star-rate d-flex">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
-                                <i class="fa-regular fa-star-half-stroke"></i>
+                                <i class="fa-solid fa-star"></i>
                               </div>
-                              <span class="book-price">$12.99</span>
-                              <span class="book-discount-price"><del>$14.55</del></span>
+                              <span class="book-price">$8.59</span>
                             </div>
                           </a>
                         </div>
                         <div class="col-lg-2 col-4">
-                          <a href="#" class="text-decoration-none">
+                          <a href="book_show.html" class="text-decoration-none">
                             <div class="book-cover">
-                              <img src="assets/img/book/the_healing_of_trauma.jpg" alt="" />
+                              <img src="assets/img/book/Rich_Dad_Poor_Dad.jpg" alt="" />
                               <h5 class="book-title pt-2 m-0">
-                                The Law of Power
+                                Rich Dad Poor Dad
                               </h5>
-                              <span class="artist-name">ដោយ៖ Robert Greene</span>
+                              <p class="artist-name m-0">
+                                ដោយ៖ Robert T. Kiyosaki
+                              </p>
                               <div class="star-rate d-flex">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -879,19 +900,18 @@
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-regular fa-star-half-stroke"></i>
                               </div>
-                              <span class="book-price">$12.99</span>
-                              <span class="book-discount-price"><del>$14.55</del></span>
+                              <span class="book-price">$7.34</span>
                             </div>
                           </a>
                         </div>
                         <div class="col-lg-2 col-4">
-                          <a href="#" class="text-decoration-none">
+                          <a href="book_show.html" class="text-decoration-none">
                             <div class="book-cover">
-                              <img src="assets/img/book/the_healing_of_trauma.jpg" alt="" />
+                              <img src="assets/img/book/The_33_Strategies_of_War.jpg" alt="" />
                               <h5 class="book-title pt-2 m-0">
-                                The Law of Power
+                                The 33 Strategies of War
                               </h5>
-                              <span class="artist-name">ដោយ៖ Robert Greene</span>
+                              <p class="artist-name m-0">ដោយ៖ Robert Greene</p>
                               <div class="star-rate d-flex">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -899,19 +919,18 @@
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-regular fa-star-half-stroke"></i>
                               </div>
-                              <span class="book-price">$12.99</span>
-                              <span class="book-discount-price"><del>$14.55</del></span>
+                              <span class="book-price">$14.99</span>
                             </div>
                           </a>
                         </div>
                         <div class="col-lg-2 col-4">
-                          <a href="#" class="text-decoration-none">
+                          <a href="book_show.html" class="text-decoration-none">
                             <div class="book-cover">
-                              <img src="assets/img/book/the_healing_of_trauma.jpg" alt="" />
+                              <img src="assets/img/book/The_Power_of_Habit.jpg" alt="" />
                               <h5 class="book-title pt-2 m-0">
-                                The Law of Power
+                                The Power of Habit
                               </h5>
-                              <span class="artist-name">ដោយ៖ Robert Greene</span>
+                              <p class="artist-name m-0">ដោយ៖ Charles Duhigg</p>
                               <div class="star-rate d-flex">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -919,8 +938,123 @@
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-regular fa-star-half-stroke"></i>
                               </div>
-                              <span class="book-price">$12.99</span>
-                              <span class="book-discount-price"><del>$14.55</del></span>
+                              <span class="book-price">$11.86</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-lg-2 col-4">
+                          <a href="book_show.html" class="text-decoration-none">
+                            <div class="book-cover">
+                              <img src="assets/img/book/Make_Your_Bed.jpg" alt="" />
+                              <h5 class="book-title pt-2 m-0">Make Your Bed</h5>
+                              <p class="artist-name m-0">
+                                ដោយ៖ Admiral William H. McRaven
+                              </p>
+                              <div class="star-rate d-flex">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star-half-stroke"></i>
+                              </div>
+                              <span class="book-price">$11.00</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-lg-2 col-4">
+                          <a href="book_show.html" class="text-decoration-none">
+                            <div class="book-cover">
+                              <img src="assets/img/book/The_5Am_Club.jpg" alt="" />
+                              <h5 class="book-title pt-2 m-0">The 5Am Club</h5>
+                              <p class="artist-name m-0">ដោយ៖ Robin Sharma</p>
+                              <div class="star-rate d-flex">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star-half-stroke"></i>
+                              </div>
+                              <span class="book-price">$4.99</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-lg-2 col-4">
+                          <a href="book_show.html" class="text-decoration-none">
+                            <div class="book-cover">
+                              <img src="assets/img/book/The_7_Habits_Of_Highly_Effective_People.jpg" alt="" />
+                              <h5 class="book-title pt-2 m-0">
+                                The 7 Habits Of Highly Effective People
+                              </h5>
+                              <p class="artist-name m-0">
+                                ដោយ៖ Stephen R. Covey
+                              </p>
+                              <div class="star-rate d-flex">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star-half-stroke"></i>
+                              </div>
+                              <span class="book-price">$22.94</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-lg-2 col-4">
+                          <a href="book_show.html" class="text-decoration-none">
+                            <div class="book-cover">
+                              <img src="assets/img/book/Thinking_Fast_and_Slow.jpg" alt="" />
+                              <h5 class="book-title pt-2 m-0">
+                                Thinking, Fast and Slow
+                              </h5>
+                              <p class="artist-name m-0">
+                                ដោយ៖ Daniel Kahneman
+                              </p>
+                              <div class="star-rate d-flex">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star-half-stroke"></i>
+                              </div>
+                              <span class="book-price">$15.84</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-lg-2 col-4">
+                          <a href="book_show.html" class="text-decoration-none">
+                            <div class="book-cover">
+                              <img src="assets/img/book/Thinking_in_Bets.jpg" alt="" />
+                              <h5 class="book-title pt-2 m-0">
+                                Thinking in Bets
+                              </h5>
+                              <p class="artist-name m-0">ដោយ៖ Annie Duke</p>
+                              <div class="star-rate d-flex">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star-half-stroke"></i>
+                              </div>
+                              <span class="book-price">$15.99</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-lg-2 col-4">
+                          <a href="book_show.html" class="text-decoration-none">
+                            <div class="book-cover">
+                              <img src="assets/img/book/The_Undoing_Project.jpg" alt="" />
+                              <h5 class="book-title pt-2 m-0">
+                                The Undoing Project
+                              </h5>
+                              <p class="artist-name m-0">ដោយ៖ Michael Lewis</p>
+                              <div class="star-rate d-flex">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star-half-stroke"></i>
+                              </div>
+                              <span class="book-price">$13.70</span>
                             </div>
                           </a>
                         </div>
@@ -928,7 +1062,7 @@
                     </div>
                   </div>
                 </section>
-                <section class="popular-article p-2 m-2 me-0 ms-0">
+                <section class="popular-article p-2 m-2 me-0 ms-0" data-aos="fade-up">
                   <div class="col-12">
                     <div class="d-flex justify-content-between align-content-center mb-2">
                       <h3 class="pop-article-title">អត្ថបទពេញនិយម</h3>
@@ -941,23 +1075,22 @@
                       <div class="card card-article d-flex flex-row">
                         <div class="row">
                           <div class="col-lg-4 col-12 image-article">
-                            <img src="assets/img/article/mediation-girl-image.jpg" alt="" />
+                            <img src="assets/img/article/social_media_make_use_lonely.jpg" alt="" />
                           </div>
                           <div class="col-lg-8 ps-lg-0 col-12 mt-lg-0 mt-2 article-info d-flex flex-column">
                             <h4 class="article-title">
-                              ១៦ សាមញ្ញដើម្បីបំបាតភាពតានតាំង
+                              សង្គមបណ្ដាញកំពុងធ្វើឲ្យយើងឯការឬទេ?
                             </h4>
                             <p class="article-discript">
-                              ការចូលរួមក្នុងសកម្មភាពដែលគាំទ្រការថែទាំខ្លួនឯងអាចជួយកាត់បន្ថយភាពតានតឹង
-                              និងការថប់បារម្ភ។
-                              ទាំងនេះ​អាច​រួម​បញ្ចូល​ទាំង​ការ​ហាត់​ប្រាណ
-                              និង​ការ​អនុវត្ត​សតិអារម្មណ៍​​...
+                              ពេលដែល Richard Deming ដែលជាកវី និងអ្នកវិភាគដែលទទួលបានរង្វាន់
+                              និងនាយកនៃការសរសេរ​ភាពច្នៃប្រឌិតនៅសាកលវិទ្យាល័យ Yale
+                              បានអង្គុយសរសេរព្រំប្រទាលសៀវភៅអំពីភាពឯងគាត់ដឹងថាប្រភេទរឿងរបស់គាត់ដែលមានជាច្រើនផ្សេងទៀតនឹងនាំមុខក្នុងការស្វែងរកបទពិសោធន៍មនុស្សដ៏ស្មុគស្មាញនិងទូទៅនេះ។
                             </p>
                             <div class="d-flex flex-row justify-content-between align-items-center">
                               <div class="art-artist-pf d-flex flex-row align-items-center">
                                 <img src="assets/img/article/girl-profile.jpg" alt="" />
                                 <div>
-                                  <p class="art-artist-name p-0 m-0">
+                                  <p class="art-artist-name p-0 m-0 d-flex">
                                     ដោយ៖
                                     <a href="#" class="text-decoration-none">Jullia Luna</a>
                                   </p>
@@ -984,25 +1117,27 @@
                       <div class="card card-article d-flex flex-row">
                         <div class="row">
                           <div class="col-lg-4 col-12 image-article">
-                            <img src="assets/img/article/mediation-girl-image.jpg" alt="" />
+                            <img src="assets/img/article/laughing-person-image.jpg" alt="" />
                           </div>
                           <div class="col-lg-8 ps-lg-0 col-12 mt-lg-0 mt-2 article-info d-flex flex-column">
                             <h4 class="article-title">
-                              ១៦ សាមញ្ញដើម្បីបំបាតភាពតានតាំង
+                              ហេតុអ្វីបានជាការសើចគឺជាឱសថដ៏ល្អបែបនេះ
                             </h4>
                             <p class="article-discript">
-                              ការចូលរួមក្នុងសកម្មភាពដែលគាំទ្រការថែទាំខ្លួនឯងអាចជួយកាត់បន្ថយភាពតានតឹង
-                              និងការថប់បារម្ភ។
-                              ទាំងនេះ​អាច​រួម​បញ្ចូល​ទាំង​ការ​ហាត់​ប្រាណ
-                              និង​ការ​អនុវត្ត​សតិអារម្មណ៍​​...
+                              ការពិនិត្យឡើងវិញជាប្រព័ន្ធនាពេលថ្មីៗនេះ
+                              ពិនិត្យមើលយ៉ាងប្រុងប្រយ័ត្នបន្ថែមទៀតលើយន្តការនៃការលេង
+                              និងថាតើការសើចអាចរំខានដល់ការឆ្លើយតបភាពតានតឹងរបស់មនុស្សដែរឬទេ។
+                              អត្ថបទដែលបានបោះពុម្ពកាលពីឆ្នាំមុននៅក្នុងទិនានុប្បវត្តិ Plos One
+                              រួមបញ្ចូលគ្នានូវលទ្ធផលពីការសិក្សាប្រាំបីដាច់ដោយឡែកដើម្បីឆ្លើយសំណួរ:
+                              តើការសើចដោយឯកឯងកាត់បន្ថយកម្រិត cortisol ទេ?
                             </p>
                             <div class="d-flex flex-row justify-content-between align-items-center">
                               <div class="art-artist-pf d-flex flex-row align-items-center">
-                                <img src="assets/img/article/girl-profile.jpg" alt="" />
+                                <img src="assets/img/profile_image/pf_woman_2.jpg" alt="" />
                                 <div>
-                                  <p class="art-artist-name p-0 m-0">
+                                  <p class="art-artist-name p-0 m-0 d-flex">
                                     ដោយ៖
-                                    <a href="#" class="text-decoration-none">Jullia Luna</a>
+                                    <a href="#" class="text-decoration-none ps-2">Lara Quinn</a>
                                   </p>
                                   <p class="article-date p-0 m-0">
                                     ២៤ តុលា ២០២៤
@@ -1027,25 +1162,25 @@
                       <div class="card card-article d-flex flex-row">
                         <div class="row">
                           <div class="col-lg-4 col-12 image-article">
-                            <img src="assets/img/article/mediation-girl-image.jpg" alt="" />
+                            <img src="assets/img/article/loneline_and_depression.jpg" alt="" />
                           </div>
                           <div class="col-lg-8 ps-lg-0 col-12 mt-lg-0 mt-2 article-info d-flex flex-column">
                             <h4 class="article-title">
-                              ១៦ សាមញ្ញដើម្បីបំបាតភាពតានតាំង
+                              ភាពខុសគ្នារវាង Loneliness និង Depression
                             </h4>
                             <p class="article-discript">
-                              ការចូលរួមក្នុងសកម្មភាពដែលគាំទ្រការថែទាំខ្លួនឯងអាចជួយកាត់បន្ថយភាពតានតឹង
-                              និងការថប់បារម្ភ។
-                              ទាំងនេះ​អាច​រួម​បញ្ចូល​ទាំង​ការ​ហាត់​ប្រាណ
-                              និង​ការ​អនុវត្ត​សតិអារម្មណ៍​​...
+                              មានហេតុផលជាញឹកញាប់ដែលមនុស្សអាចចេញសម្គាល់ដើម្បីពន្យល់អំពីអារម្មណ៍ភាពឯង។
+                              នៅក្នុងពេលណាមួយក្នុងជីវិតរបស់យើង
+                              មនុស្សរៀងរាល់គ្នាដឹងពីការបាត់បង់—ទោះជាបាត់បង់នៃអ្នកស្រឡាញ់ ការងារ សុខភាពរបស់ខ្លួន
+                              ឬកCommunity ដែលអ្នកបានចាកចេញពីវា។
                             </p>
                             <div class="d-flex flex-row justify-content-between align-items-center">
                               <div class="art-artist-pf d-flex flex-row align-items-center">
-                                <img src="assets/img/article/girl-profile.jpg" alt="" />
+                                <img src="assets/img/profile_image/pf_man_2.jpg" alt="" />
                                 <div>
-                                  <p class="art-artist-name p-0 m-0">
+                                  <p class="art-artist-name p-0 m-0 d-flex">
                                     ដោយ៖
-                                    <a href="#" class="text-decoration-none">Jullia Luna</a>
+                                    <a href="#" class="text-decoration-none ps-2">Jake Reed</a>
                                   </p>
                                   <p class="article-date p-0 m-0">
                                     ២៤ តុលា ២០២៤
@@ -1070,28 +1205,27 @@
                       <div class="card card-article d-flex flex-row">
                         <div class="row">
                           <div class="col-lg-4 col-12 image-article">
-                            <img src="assets/img/article/mediation-girl-image.jpg" alt="" />
+                            <img src="assets/img/article/social_media_make_use_lonely.jpg" alt="" />
                           </div>
                           <div class="col-lg-8 ps-lg-0 col-12 mt-lg-0 mt-2 article-info d-flex flex-column">
                             <h4 class="article-title">
-                              ១៦ សាមញ្ញដើម្បីបំបាតភាពតានតាំង
+                              សង្គមបណ្ដាញកំពុងធ្វើឲ្យយើងឯការឬទេ?
                             </h4>
                             <p class="article-discript">
-                              ការចូលរួមក្នុងសកម្មភាពដែលគាំទ្រការថែទាំខ្លួនឯងអាចជួយកាត់បន្ថយភាពតានតឹង
-                              និងការថប់បារម្ភ។
-                              ទាំងនេះ​អាច​រួម​បញ្ចូល​ទាំង​ការ​ហាត់​ប្រាណ
-                              និង​ការ​អនុវត្ត​សតិអារម្មណ៍​​...
+                              ពេលដែល Richard Deming ដែលជាកវី និងអ្នកវិភាគដែលទទួលបានរង្វាន់
+                              និងនាយកនៃការសរសេរ​ភាពច្នៃប្រឌិតនៅសាកលវិទ្យាល័យ Yale
+                              បានអង្គុយសរសេរព្រំប្រទាលសៀវភៅអំពីភាពឯងគាត់ដឹងថាប្រភេទរឿងរបស់គាត់ដែលមានជាច្រើនផ្សេងទៀតនឹងនាំមុខក្នុងការស្វែងរកបទពិសោធន៍មនុស្សដ៏ស្មុគស្មាញនិងទូទៅនេះ។
                             </p>
                             <div class="d-flex flex-row justify-content-between align-items-center">
                               <div class="art-artist-pf d-flex flex-row align-items-center">
-                                <img src="assets/img/article/girl-profile.jpg" alt="" />
+                                <img src="assets/img/profile_image/pf_man_3.jpg" alt="" />
                                 <div>
-                                  <p class="art-artist-name p-0 m-0">
+                                  <p class="art-artist-name p-0 m-0 d-flex">
                                     ដោយ៖
-                                    <a href="#" class="text-decoration-none">Jullia Luna</a>
+                                    <a href="#" class="text-decoration-none ps-2">Max Turner</a>
                                   </p>
                                   <p class="article-date p-0 m-0">
-                                    ២៤ តុលា ២០២៤
+                                    ២២ តុលា ២០២៤
                                   </p>
                                 </div>
                               </div>
@@ -1111,7 +1245,7 @@
                     </div>
                   </div>
                 </section>
-                <section class="social-event p-2 m-2 me-0 ms-0">
+                <section class="social-event p-2 m-2 me-0 ms-0" data-aos="fade-up">
                   <div class="col-12">
                     <div class="d-flex justify-content-between align-content-center mb-2">
                       <h3 class="social-even-title">សកម្មភាពសង្គមថ្មីៗ</h3>
@@ -1128,7 +1262,8 @@
                             class="fa-solid fa-calendar-days"></i> ផុតកំណត់៖
                           ០១ កញ្ញា ២០២៤</span>
                         <h4 class="event-title pt-3 m-0 text-cut">
-                          ឱកាសក្លាយជាអ្នកស្ម័គ្រចិត្តបានត្រឡប់មកវិញហើយសំរាប់កម្មវិធី Cambodia Robotics Olympiad 2024!
+                          ឱកាសក្លាយជាអ្នកស្ម័គ្រចិត្តបានត្រឡប់មកវិញហើយសំរាប់កម្មវិធី
+                          Cambodia Robotics Olympiad 2024!
                         </h4>
                         <div class="event-discript">
                           <p>
@@ -1136,12 +1271,8 @@
                             Robotics Olympiad 2024
                             របស់យើងចាប់ផ្តើមទទួលពាក្យចួលរួមប្រលងប្រកួតហើយ
                             ដូច្នេះពួកយើងត្រូវការជំនួយពីអ្នកស្ម័គ្រចិត្តទាំងអស់គ្នា។
-                          </p>
-                          <p>
                             លើសពីនេះ ប្រសិនបើអ្នកជានិស្សិត ឬសិស្ស
                             ហើយចាប់អារម្មណ៍ជាមួយរ៉ូបូត គឺកាន់តែល្អ។
-                          </p>
-                          <p>
                             ចង់ចូលរួមដើម្បីទទួលបានបទពិសោធន៍នេះជាមួយពួកយើងអត់?
                           </p>
                         </div>
@@ -1156,27 +1287,25 @@
                     <div class="col-lg-4 col-12">
                       <div class="card card-event">
                         <div class="event-image">
-                          <img src="assets/img/events/event-image-01.jpg" alt="" />
+                          <img src="assets/img/events/event-02.jpg" alt="" />
                         </div>
                         <span class="badge rounded-pill text-bg-danger mt-3 fw-normal"><i
                             class="fa-solid fa-calendar-days"></i> ផុតកំណត់៖
-                          ០១ កញ្ញា ២០២៤</span>
+                          ០២ កញ្ញា ២០២៤</span>
                         <h4 class="event-title pt-3 m-0 text-cut">
-                          ឱកាសក្លាយជាអ្នកស្ម័គ្រចិត្តបានត្រឡប់មកវិញហើយសំរាប់កម្មវិធី Cambodia Robotics Olympiad 2024!
+                          ឱកាសសម្រាប់យុវជនចង់ចូលរួមការងារសង្គមដើម្បីទទួលបាននូវបទពិសោធន៍ អភិវឌ្ឍន៍សមត្ថភាព
+                          និងពង្រីកចំណេះក្នុងវិស័យបរិស្ថានបានមកដល់ហើយ!
                         </h4>
                         <div class="event-discript">
                           <p>
-                            ដូចដែលអ្នកទាំងអស់គ្នាបានដឹងថាកម្មវិធី Cambodia
-                            Robotics Olympiad 2024
-                            របស់យើងចាប់ផ្តើមទទួលពាក្យចួលរួមប្រលងប្រកួតហើយ
-                            ដូច្នេះពួកយើងត្រូវការជំនួយពីអ្នកស្ម័គ្រចិត្តទាំងអស់គ្នា។
-                          </p>
-                          <p>
-                            លើសពីនេះ ប្រសិនបើអ្នកជានិស្សិត ឬសិស្ស
-                            ហើយចាប់អារម្មណ៍ជាមួយរ៉ូបូត គឺកាន់តែល្អ។
-                          </p>
-                          <p>
-                            ចង់ចូលរួមដើម្បីទទួលបានបទពិសោធន៍នេះជាមួយពួកយើងអត់?
+                            ចូលរួមជាមួយយើងសម្រាប់ឱកាសដ៏រំភើបមួយដើម្បីបង្កើតការផ្លាស់ប្តូរ!
+                            ព្រឹត្តិការណ៍នេះត្រូវបានរៀបចំឡើងសម្រាប់យុវជនដែលមានបំណងចង់ចូលទៅក្នុងការងារសង្គម
+                            ការអភិវឌ្ឍន៍សមត្ថភាព និងជំនាញបរិស្ថាន។ អ្នកចូលរួមនឹងចូលរួមក្នុងសិក្ខាសាលាដោយដៃ
+                            រៀនពីអ្នកជំនាញ និងអភិវឌ្ឍជំនាញសំខាន់ៗ ដើម្បីដោះស្រាយបញ្ហាប្រឈមបរិស្ថាន។ តាមរយៈគម្រោងសហការ
+                            និងវគ្គអន្តរកម្ម អ្នកនឹងទទួលបានបទពិសោធន៍ដ៏មានតម្លៃ
+                            ខណៈពេលដែលរួមចំណែកដល់ការផ្លាស់ប្តូរដ៏មានអត្ថន័យនៅក្នុងសហគមន៍របស់អ្នក។
+                            កុំខកខានឱកាសរបស់អ្នកក្នុងការក្លាយជាផ្នែកមួយនៃបទពិសោធន៍ផ្លាស់ប្តូរ
+                            និងជួយបង្កើតអនាគតប្រកបដោយនិរន្តរភាព!
                           </p>
                         </div>
                         <div class="d-flex w-100 justify-content-center">
@@ -1190,27 +1319,23 @@
                     <div class="col-lg-4 col-12">
                       <div class="card card-event">
                         <div class="event-image">
-                          <img src="assets/img/events/event-image-01.jpg" alt="" />
+                          <img src="assets/img/events/event-03.jpg" alt="" />
                         </div>
                         <span class="badge rounded-pill text-bg-danger mt-3 fw-normal"><i
                             class="fa-solid fa-calendar-days"></i> ផុតកំណត់៖
-                          ០១ កញ្ញា ២០២៤</span>
+                          ១៥ កញ្ញា ២០២៤</span>
                         <h4 class="event-title pt-3 m-0 text-cut">
-                          ឱកាសក្លាយជាអ្នកស្ម័គ្រចិត្តបានត្រឡប់មកវិញហើយសំរាប់កម្មវិធី Cambodia Robotics Olympiad 2024!
+                          ដោះសោសក្តានុពលរបស់អ្នក៖ សិក្ខាសាលាអភិវឌ្ឍន៍ខ្លួនឯង
                         </h4>
                         <div class="event-discript">
                           <p>
-                            ដូចដែលអ្នកទាំងអស់គ្នាបានដឹងថាកម្មវិធី Cambodia
-                            Robotics Olympiad 2024
-                            របស់យើងចាប់ផ្តើមទទួលពាក្យចួលរួមប្រលងប្រកួតហើយ
-                            ដូច្នេះពួកយើងត្រូវការជំនួយពីអ្នកស្ម័គ្រចិត្តទាំងអស់គ្នា។
-                          </p>
-                          <p>
-                            លើសពីនេះ ប្រសិនបើអ្នកជានិស្សិត ឬសិស្ស
-                            ហើយចាប់អារម្មណ៍ជាមួយរ៉ូបូត គឺកាន់តែល្អ។
-                          </p>
-                          <p>
-                            ចង់ចូលរួមដើម្បីទទួលបានបទពិសោធន៍នេះជាមួយពួកយើងអត់?
+                            តើ​អ្នក​ត្រៀម​ខ្លួន​រួច​រាល់​ហើយ​ឬ​នៅ​ក្នុង​ការ​យក​កំណើន​ផ្ទាល់​ខ្លួន​របស់​អ្នក​ទៅ​កម្រិត​បន្ទាប់?
+                            ចូលរួមជាមួយពួកយើងសម្រាប់សិក្ខាសាលាដោះសោសក្តានុពលរបស់អ្នក
+                            ដែលត្រូវបានរចនាឡើងដើម្បីជួយអ្នកក្នុងការកសាងទំនុកចិត្ត បង្កើនជំនាញរបស់អ្នក
+                            និងសម្រេចបាននូវគោលដៅរបស់អ្នក។
+                            វគ្គអន្តរកម្មនេះនឹងគ្របដណ្តប់លើយុទ្ធសាស្រ្តសម្រាប់ការកំណត់គោលដៅប្រកបដោយប្រសិទ្ធភាព
+                            ជំនះឧបសគ្គ និងការគ្រប់គ្រងពេលវេលា។ ចូលរួមជាមួយគ្រូបង្វឹកដែលមានបទពិសោធន៍
+                            និងចូលរួមក្នុងលំហាត់ជាក់ស្តែង ដែលនឹងផ្តល់ឱ្យអ្នកនូវឧបករណ៍ដែលអ្នកត្រូវការដើម្បីទទួលបានជោគជ័យ។
                           </p>
                         </div>
                         <div class="d-flex w-100 justify-content-center">
@@ -1223,134 +1348,143 @@
                     </div>
                   </div>
                 </section>
-                <section class="video-selfdev p-2 m-2 me-0 ms-0">
+                <section class="video-selfdev p-2 m-2 me-0 ms-0" data-aos="fade-up">
                   <div class="col-12">
                     <div class="d-flex justify-content-between align-content-center mb-2">
-                      <h3 class="video-selfdev-title">វីឌីអូអភិវឌ្ឍខ្លួនពេញនិយម</h3>
+                      <h3 class="video-selfdev-title">
+                        វីឌីអូអភិវឌ្ឍខ្លួនពេញនិយម
+                      </h3>
                       <a href="event.html" class="text-decoration-none align-self-center selfdev-see-more">មើលបន្ថែម</a>
                     </div>
                   </div>
                   <div class="row g-3">
-                    <div class="col-lg-3 col-md-6 col-12">
+                    <a type="button" class="col-lg-3 col-md-6 col-12 text-decoration-none">
                       <div class="card card-selfdev">
                         <div class="self-dev-image">
-                          <img src="assets/img/video-sefdev/thumnail-selfdev-video-01.jpg" alt="">
+                          <img src="assets/img/video-sefdev/thumnail-selfdev-video-01.jpg" alt="" />
                           <span class="badge rounded-pill text-bg-dark opacity-75">5:16 វិនាទី</span>
                         </div>
                         <div class="video-discript">
-                          <h5>វិធីបង្កើនតេស្តូស្តេរ៉ូនតាមធម្មជាតិ - វិធី ៧ យ៉ាង</h5>
-                          <p class="m-0">ស្វែងយល់ពីវិធីធម្មជាតិចំនួន 7 ដើម្បីបង្កើនអ័រម៉ូនតេស្តូស្តេរ៉ូន ពីការលើកទម្ងន់
-                            និងការគេងឱ្យបានល្អ ដល់ការផ្លាស់ប្តូររបបអាហារ និងការកាត់បន្ថយភាពតានតឹង។
-                            បង្កើនសុខភាពអរម៉ូនរបស់អ្នកថ្ងៃនេះ!</p>
+                          <h5>
+                            វិធីបង្កើនតេស្តូស្តេរ៉ូនតាមធម្មជាតិ - វិធី ៧ យ៉ាង
+                          </h5>
+                          <p class="m-0">
+                            ស្វែងយល់ពីវិធីធម្មជាតិចំនួន 7
+                            ដើម្បីបង្កើនអ័រម៉ូនតេស្តូស្តេរ៉ូន ពីការលើកទម្ងន់
+                            និងការគេងឱ្យបានល្អ ដល់ការផ្លាស់ប្តូររបបអាហារ
+                            និងការកាត់បន្ថយភាពតានតឹង។
+                            បង្កើនសុខភាពអរម៉ូនរបស់អ្នកថ្ងៃនេះ!
+                          </p>
                         </div>
                         <div class="video-info d-flex justify-content-between align-items-center">
                           <div class="pf-video d-flex align-items-center">
                             <div class="pf-vdo-image rounded-circle">
                               <img src="assets/img/video-sefdev/improvement_pill_profile.jpg"
-                                class="wh-100 rounded-circle object-fit-cover" alt="">
+                                class="wh-100 rounded-circle object-fit-cover" alt="" />
                             </div>
                             <div class="ps-2">
                               <p>Improvement Pill</p>
-                              <span>១.៣ លាន អ្នកតាមដាន</span>
+                              <span>1.3M អ្នកតាមដាន</span>
                             </div>
                           </div>
-                          <a href="#" type="button"
-                            class="btn-video-play rounded-circle all-center text-decoration-none">
-                            <i class="fa-solid fa-play"></i>
-                          </a>
                         </div>
                       </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-12">
+                    </a>
+                    <a type="button" class="col-lg-3 col-md-6 col-12 text-decoration-none">
                       <div class="card card-selfdev">
                         <div class="self-dev-image">
-                          <img src="assets/img/video-sefdev/thumnail-selfdev-video-01.jpg" alt="">
+                          <img src="assets/img/video-sefdev/start_level_up.jpg" alt="" />
+                          <span class="badge rounded-pill text-bg-dark opacity-75">16:26 វិនាទី</span>
+                        </div>
+                        <div class="video-discript">
+                          <h5>
+                            វិធីកែលម្អខ្លួនអ្នកឥឡូវនេះ (ហើយហេតុអ្វី)
+                          </h5>
+                          <p class="m-0">
+                            វីដេអូនេះសង្កត់ធ្ងន់លើសារៈសំខាន់នៃការធ្វើសកម្មភាពឥឡូវនេះ
+                            ជាជាងការពន្យារពេលលើគោលដៅកែលម្អខ្លួនឯង។
+                            អ្នកមើលត្រូវបានលើកទឹកចិត្តឱ្យចាប់ផ្តើមធ្វើការផ្លាស់ប្តូរភ្លាមៗ
+                            ដើម្បីឃើញលទ្ធផលនៅក្នុងជីវិតរបស់ពួកគេ។
+                          </p>
+                        </div>
+                        <div class="video-info d-flex justify-content-between align-items-center">
+                          <div class="pf-video d-flex align-items-center">
+                            <div class="pf-vdo-image">
+                              <img src="assets/img/video-sefdev/ham_za.jpg"
+                                class="wh-100 rounded-circle object-fit-cover" alt="" />
+                            </div>
+                            <div class="ps-2">
+                              <p>
+                                Hamza Ahmed
+                              </p>
+                              <span>2.31M អ្នកតាមដាន</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <a type="button" class="col-lg-3 col-md-6 col-12 text-decoration-none">
+                      <div class="card card-selfdev">
+                        <div class="self-dev-image">
+                          <img src="assets/img/video-sefdev/dont_wast_other_year.jpg" alt="" />
                           <span class="badge rounded-pill text-bg-dark opacity-75">5:16 វិនាទី</span>
                         </div>
                         <div class="video-discript">
-                          <h5>វិធីបង្កើនតេស្តូស្តេរ៉ូនតាមធម្មជាតិ - វិធី ៧ យ៉ាង</h5>
-                          <p class="m-0">ស្វែងយល់ពីវិធីធម្មជាតិចំនួន 7 ដើម្បីបង្កើនអ័រម៉ូនតេស្តូស្តេរ៉ូន ពីការលើកទម្ងន់
-                            និងការគេងឱ្យបានល្អ ដល់ការផ្លាស់ប្តូររបបអាហារ និងការកាត់បន្ថយភាពតានតឹង។
-                            បង្កើនសុខភាពអរម៉ូនរបស់អ្នកថ្ងៃនេះ!</p>
+                          <h5>
+                            Jordan Peterson: ផ្លាស់ប្ដូខ្លួនអ្នកមុនកុំឲ្យយឺតពេល
+                          </h5>
+                          <p class="m-0">
+                            កំណត់គោលដៅជាក់លាក់ជាក់លាក់; បង្កើតផែនការសកម្មភាពលម្អិត; រក្សាការលើកទឹកចិត្ត;
+                            តាមដានវឌ្ឍនភាពរបស់អ្នក; ត្រៀមខ្លួនដើម្បីជំនះឧបសគ្គ; ស្វែងរកមនុស្សគាំទ្រ; រក្សាភាពបត់បែន;
+                            អបអរសាទរព្រឹត្តិការណ៍សំខាន់ៗ; រៀនពីការបរាជ័យ; និងរក្សាផ្នត់គំនិតវិជ្ជមាន។
+                            គន្លឹះទាំងនេះមានគោលបំណងជួយអ្នកឱ្យសម្រេចគោលដៅរបស់អ្នកប្រកបដោយប្រសិទ្ធភាព។
+                          </p>
+                        </div>
+                        <div class="video-info d-flex justify-content-between align-items-center">
+                          <div class="pf-video d-flex align-items-center">
+                            <div class="pf-vdo-image rounded-circle">
+                              <img src="assets/img/video-sefdev/motivate-channel-01.jpg"
+                                class="wh-100 rounded-circle object-fit-cover" alt="" />
+                            </div>
+                            <div class="ps-2">
+                              <p>Motivation2Study</p>
+                              <span>4.43M អ្នកតាមដាន</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <a type="button" class="col-lg-3 col-md-6 col-12 text-decoration-none">
+                      <div class="card card-selfdev">
+                        <div class="self-dev-image">
+                          <img src="assets/img/video-sefdev/build_control_now.jpg" alt="" />
+                          <span class="badge rounded-pill text-bg-dark opacity-75">5:16 វិនាទី</span>
+                        </div>
+                        <div class="video-discript">
+                          <h5>
+                            ការធ្វើជាម្ចាស់នៃការ កំណត់គោលដៅជាមួយនឹងលក្ខណៈវិនិច្ឆ័យឆ្លាតវៃ
+                          </h5>
+                          <p class="m-0">
+                            វីដេអូគាត់ណែនាំអំពីលក្ខណៈវិនិច្ឆ័យ SMART សម្រាប់ការកំណត់គោលដៅប្រកបដោយប្រសិទ្ធភាព
+                            ដែលតំណាងឱ្យជាក់លាក់ វាស់វែងបាន សម្រេចបាន ពាក់ព័ន្ធ និងពេលវេលាកំណត់។
+                            វាសង្កត់ធ្ងន់លើសារៈសំខាន់នៃការកំណត់គោលដៅឱ្យបានច្បាស់លាស់ និងលម្អិត (ជាក់លាក់)
+                            ធានាថាវឌ្ឍនភាពអាចត្រូវបានតាមដាន និងវាស់វែងបានជោគជ័យ (អាចវាស់វែងបាន)។
+                          </p>
                         </div>
                         <div class="video-info d-flex justify-content-between align-items-center">
                           <div class="pf-video d-flex align-items-center">
                             <div class="pf-vdo-image rounded-circle">
                               <img src="assets/img/video-sefdev/improvement_pill_profile.jpg"
-                                class="wh-100 rounded-circle object-fit-cover" alt="">
+                                class="wh-100 rounded-circle object-fit-cover" alt="" />
                             </div>
                             <div class="ps-2">
                               <p>Improvement Pill</p>
-                              <span>១.៣ លាន អ្នកតាមដាន</span>
+                              <span>1.3M អ្នកតាមដាន</span>
                             </div>
                           </div>
-                          <a href="#" type="button"
-                            class="btn-video-play rounded-circle all-center text-decoration-none">
-                            <i class="fa-solid fa-play"></i>
-                          </a>
                         </div>
                       </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-12">
-                      <div class="card card-selfdev">
-                        <div class="self-dev-image">
-                          <img src="assets/img/video-sefdev/thumnail-selfdev-video-01.jpg" alt="">
-                          <span class="badge rounded-pill text-bg-dark opacity-75">5:16 វិនាទី</span>
-                        </div>
-                        <div class="video-discript">
-                          <h5>វិធីបង្កើនតេស្តូស្តេរ៉ូនតាមធម្មជាតិ - វិធី ៧ យ៉ាង</h5>
-                          <p class="m-0">ស្វែងយល់ពីវិធីធម្មជាតិចំនួន 7 ដើម្បីបង្កើនអ័រម៉ូនតេស្តូស្តេរ៉ូន ពីការលើកទម្ងន់
-                            និងការគេងឱ្យបានល្អ ដល់ការផ្លាស់ប្តូររបបអាហារ និងការកាត់បន្ថយភាពតានតឹង។
-                            បង្កើនសុខភាពអរម៉ូនរបស់អ្នកថ្ងៃនេះ!</p>
-                        </div>
-                        <div class="video-info d-flex justify-content-between align-items-center">
-                          <div class="pf-video d-flex align-items-center">
-                            <div class="pf-vdo-image rounded-circle">
-                              <img src="assets/img/video-sefdev/improvement_pill_profile.jpg"
-                                class="wh-100 rounded-circle object-fit-cover" alt="">
-                            </div>
-                            <div class="ps-2">
-                              <p>Improvement Pill</p>
-                              <span>១.៣ លាន អ្នកតាមដាន</span>
-                            </div>
-                          </div>
-                          <a href="#" type="button"
-                            class="btn-video-play rounded-circle all-center text-decoration-none">
-                            <i class="fa-solid fa-play"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-12">
-                      <div class="card card-selfdev">
-                        <div class="self-dev-image">
-                          <img src="assets/img/video-sefdev/thumnail-selfdev-video-01.jpg" alt="">
-                          <span class="badge rounded-pill text-bg-dark opacity-75">5:16 វិនាទី</span>
-                        </div>
-                        <div class="video-discript">
-                          <h5>វិធីបង្កើនតេស្តូស្តេរ៉ូនតាមធម្មជាតិ - វិធី ៧ យ៉ាង</h5>
-                          <p class="m-0">ស្វែងយល់ពីវិធីធម្មជាតិចំនួន 7 ដើម្បីបង្កើនអ័រម៉ូនតេស្តូស្តេរ៉ូន ពីការលើកទម្ងន់
-                            និងការគេងឱ្យបានល្អ ដល់ការផ្លាស់ប្តូររបបអាហារ និងការកាត់បន្ថយភាពតានតឹង។
-                            បង្កើនសុខភាពអរម៉ូនរបស់អ្នកថ្ងៃនេះ!</p>
-                        </div>
-                        <div class="video-info d-flex justify-content-between align-items-center">
-                          <div class="pf-video d-flex align-items-center">
-                            <div class="pf-vdo-image rounded-circle">
-                              <img src="assets/img/video-sefdev/improvement_pill_profile.jpg"
-                                class="wh-100 rounded-circle object-fit-cover" alt="">
-                            </div>
-                            <div class="ps-2">
-                              <p>Improvement Pill</p>
-                              <span>១.៣ លាន អ្នកតាមដាន</span>
-                            </div>
-                          </div>
-                          <a href="#" type="button"
-                            class="btn-video-play rounded-circle all-center text-decoration-none">
-                            <i class="fa-solid fa-play"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
+                    </a>
                   </div>
                 </section>
               </div>
@@ -1522,14 +1656,25 @@
     <!-- Initialize Swiper -->
     <script>
       var swiper = new Swiper(".mySwiper", {
-        pagination: {
-          el: ".swiper-pagination",
-        },
+        spaceBetween: 30,
+        loop: true,
+        centeredSlides: true,
         autoplay: {
           delay: 2500,
           disableOnInteraction: false,
         },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
       });
+    </script>
+    <script>
+      AOS.init();
     </script>
   </body>
 
