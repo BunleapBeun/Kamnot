@@ -2977,6 +2977,28 @@ nav {
   font-size: 25px;
   color: var(--ddd-color);
 }
+/* ===============Mood Tracking : Thavy ================== */
+.mood-tracking .section-profile .title-pf h2{
+  color: var(--main-text);
+  font-weight: 400;
+}
+.mood-tracking .section-profile .title-pf span{
+  color: var(--main-text);
+  font-weight: bold;
+}
+.mood-tracking .section-profile .title-pf .sticker-git-pf,
+.mood-tracking .section-profile .date-daily .calendar-pf{
+  width: 50px;
+  height: 50px;
+  margin-top: -10px;
+}
+.mood-tracking .section-profile .date-daily span{
+  font-size: 20px;
+  color: var(--main-text);
+  text-align: center;
+  position: relative;
+  top: 10px;
+}
 
 .reading-book .book-cover img,
 .popular-book .book-cover img {
@@ -3037,6 +3059,514 @@ nav {
   font-size: 15px;
   color: var(--ddd-color);
   padding-left: 10px;
+}
+.cover-slide-detail .carousel-inner .carousel-item img{
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.cover-slide-detail .carousel-inner .carousel-item .carousel-caption h1{
+  color:var(--link-text);
+  text-shadow: 2px 2px var(--main-color);
+}
+.cover-slide-detail .carousel-inner .carousel-item .carousel-caption p{
+  color: var(--main-text);
+  text-shadow: 3px 1px 0px var(--main-color);
+  font-size: 19px;
+}
+
+.daily-of-mood .circle-happy .inside-circle{
+  width: 68px;
+  height: 68px;
+  border-radius: 100%;
+  background-color:var(--ddd-color) ;
+}
+.circle-happy .inside-circle .em-blush{
+  font-size: 25px;
+}
+.circle-feeling .line-p{
+  width: 50%;
+  height: 3px;
+  background-color: #000;
+  position: absolute;
+  z-index: 2;
+}
+.feeling-day h2,
+.solution-feeling h2,
+.add-feeling h2{
+  color: var(--main-text);
+  text-shadow: 2px 2px 7px #1a2e4d;
+}
+.feeling-day .card-months-feeling{
+  background:var(--bg-grandient);
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+.feeling-day .card-months-feeling .fa-sort-down{
+  font-size: 20px;
+  text-align: center;
+  padding-top: -50px;
+  color: var(--main-color);
+}
+.feeling-day .card-months-feeling h5{
+  color: var(--main-color);
+}
+.feeling-day .card{
+  border: none;
+  background-color: transparent;
+}
+.feeling-day h4{
+  background-image: linear-gradient(90deg, #488495, #3C4D78);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 30px;
+  text-align: center;
+}
+.feeling-day .card-header{
+  background-color: var(--ddd-color);
+}
+.feeling-day p{
+  font-size: 20px;
+}
+.ms span {
+  text-decoration: underline 3px #0073aa;
+  text-underline-offset: 8px;
+  animation: meteor-shower-anim linear 1400ms infinite forwards
+}
+     
+.ms span:nth-of-type(1) {animation-delay: 0ms}
+.ms span:nth-of-type(2) {animation-delay: 100ms}
+.ms span:nth-of-type(3) {animation-delay: 200ms}
+.ms span:nth-of-type(4) {animation-delay: 300ms}
+.ms span:nth-of-type(5) {animation-delay: 400ms}
+.ms span:nth-of-type(6) {animation-delay: 500ms}
+.ms span:nth-of-type(7) {animation-delay: 600ms}
+.ms span:nth-of-type(8) {animation-delay: 700ms}
+.ms span:nth-of-type(9) {animation-delay: 800ms}
+.ms span:nth-of-type(10) {animation-delay: 900ms}
+.ms span:nth-of-type(11) {animation-delay: 1000ms}
+.ms span:nth-of-type(12) {animation-delay: 1100ms}
+.ms span:nth-of-type(13) {animation-delay: 1200ms}
+     
+@keyframes meteor-shower-anim {
+  0% { text-decoration-color: DarkOrange }
+  10% { text-decoration-color: LightYellow }
+  70% { text-decoration-color: #0073aa }
+}
+#calendar {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    width: 420px;
+    margin: 0 auto;
+    height: 570px;
+    overflow: hidden;
+    background-color: #00ffd5;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+.add-feeling .header {
+    height: 50px;
+    width: 420px;
+    background: var(--bg-grandient);
+    text-align: center;
+    position:relative;
+    z-index: 100;
+  }
+  
+.add-feeling  .header h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    line-height: 50px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    color: var(--main-color);
+  }
+  
+.add-feeling  .left, .right {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    top: 50%;
+    margin-top: -7.5px;
+    cursor: pointer;
+  }
+  
+.add-feeling  .left {
+    border-width: 7.5px 10px 7.5px 0;
+    border-color: transparent rgba(160, 159, 160, 1) transparent transparent;
+    left: 20px;
+  }
+  
+.add-feeling  .right {
+    border-width: 7.5px 0 7.5px 10px;
+    border-color: transparent transparent transparent rgba(160, 159, 160, 1);
+    right: 20px;
+  }
+  
+.add-feeling  .month {
+    /*overflow: hidden;*/
+    opacity: 0;
+  }
+  
+.add-feeling  .month.new {
+    -webkit-animation: fadeIn 1s ease-out;
+    opacity: 1;
+  }
+  
+.add-feeling  .month.in.next {
+    -webkit-animation: moveFromTopFadeMonth .4s ease-out;
+    -moz-animation: moveFromTopFadeMonth .4s ease-out;
+    animation: moveFromTopFadeMonth .4s ease-out;
+    opacity: 1;
+  }
+  
+.add-feeling  .month.out.next {
+    -webkit-animation: moveToTopFadeMonth .4s ease-in;
+    -moz-animation: moveToTopFadeMonth .4s ease-in;
+    animation: moveToTopFadeMonth .4s ease-in;
+    opacity: 1;
+  }
+  
+.add-feeling  .month.in.prev {
+    -webkit-animation: moveFromBottomFadeMonth .4s ease-out;
+    -moz-animation: moveFromBottomFadeMonth .4s ease-out;
+    animation: moveFromBottomFadeMonth .4s ease-out;
+    opacity: 1;
+  }
+  
+.add-feeling  .month.out.prev {
+    -webkit-animation: moveToBottomFadeMonth .4s ease-in;
+    -moz-animation: moveToBottomFadeMonth .4s ease-in;
+    animation: moveToBottomFadeMonth .4s ease-in;
+    opacity: 1;
+  }
+  
+.add-feeling  .week {
+   background: #4A4A4A;
+  }
+  
+.add-feeling  .day {
+    display: inline-block;
+    width: 60px;
+    padding: 10px;
+    text-align: center;
+    vertical-align: top;
+    cursor: pointer;
+    background: var(--bg-grandient);
+    position: relative;
+    z-index: 100;
+  }
+  
+.add-feeling  .day.other {
+   color: var(--main-color);
+  }
+  
+.add-feeling  .day.today {
+    color: rgba(156, 202, 235, 1);
+  }
+  
+.add-feeling  .day-name {
+    font-size: 9px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    color: rgba(255, 255, 255, .5);
+    letter-spacing: .7px;
+  }
+  
+.add-feeling  .day-number {
+    font-size: 24px;
+    letter-spacing: 1.5px;
+  }
+  
+  
+.add-feeling  .day .day-events {
+    list-style: none;
+    margin-top: 3px;
+    text-align: center;
+    height: 12px;
+    line-height: 6px;
+    overflow: hidden;
+  }
+  
+.add-feeling  .day .day-events span {
+    vertical-align: top;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    width: 5px;
+    height: 5px;
+    line-height: 5px;
+    margin: 0 1px;
+  }
+  
+.add-feeling  .blue { background: rgba(156, 202, 235, 1); }
+.add-feeling  .orange { background: rgba(247, 167, 0, 1); }
+.add-feeling  .green { background: rgba(153, 198, 109, 1); }
+.add-feeling  .yellow { background: rgba(249, 233, 0, 1); }
+  
+.add-feeling  .details {
+    position: relative;
+    width: 420px;
+    height: 75px;
+    background: rgba(164, 164, 164, 1);
+    margin-top: 5px;
+    border-radius: 4px;
+  }
+  
+.add-feeling  .details.in {
+    -webkit-animation: moveFromTopFade .5s ease both;
+    -moz-animation: moveFromTopFade .5s ease both;
+    animation: moveFromTopFade .5s ease both;
+  }
+  
+.add-feeling  .details.out {
+    -webkit-animation: moveToTopFade .5s ease both;
+    -moz-animation: moveToTopFade .5s ease both;
+    animation: moveToTopFade .5s ease both;
+  }
+  
+ .add-feeling .arrow {
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    margin-left: -2px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 5px 5px 5px;
+    border-color: transparent transparent rgba(164, 164, 164, 1) transparent;
+    transition: all 0.7s ease;
+}
+  
+.add-feeling  .events {
+    height: 75px;
+    padding: 7px 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  
+.add-feeling  .events.in {
+    -webkit-animation: fadeIn .3s ease both;
+    -moz-animation: fadeIn .3s ease both;
+    animation: fadeIn .3s ease both;
+  }
+  
+.add-feeling  .events.in {
+    -webkit-animation-delay: .3s;
+    -moz-animation-delay: .3s;
+    animation-delay: .3s;
+  }
+  
+.add-feeling  .details.out .events {
+    -webkit-animation: fadeOutShrink .4s ease both;
+    -moz-animation: fadeOutShink .4s ease both;
+    animation: fadeOutShink .4s ease both;
+  }
+  
+.add-feeling  .events.out {
+    -webkit-animation: fadeOut .3s ease both;
+    -moz-animation: fadeOut .3s ease both;
+    animation: fadeOut .3s ease both;
+  }
+  
+.add-feeling  .event {
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: .5px;
+    padding: 2px 16px;
+    vertical-align: top;
+  }
+  
+.add-feeling  .event.empty {
+    color: #eee;
+  }
+  
+.add-feeling  .event-category {
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    margin: 6px 0 0;
+    vertical-align: top;
+}
+  
+.add-feeling  .event span {
+    display: inline-block;
+    padding: 0 0 0 7px;
+  }
+  
+.add-feeling  .legend {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background: rgba(60, 60, 60, 1);
+    line-height: 30px;
+}
+.add-feeling .entry {
+    position: relative;
+    padding: 0 0 0 25px;
+    font-size: 13px;
+    display: inline-block;
+    line-height: 30px;
+    background: transparent;
+}
+  
+.add-feeling  .entry:after {
+    position: absolute;
+    content: '';
+    height: 5px;
+    width: 5px;
+    top: 12px;
+    left: 14px;
+  }
+  
+.add-feeling  .entry.blue:after { background: rgba(156, 202, 235, 1); }
+.add-feeling  .entry.orange:after { background: rgba(247, 167, 0, 1); }
+.add-feeling  .entry.green:after { background: rgba(153, 198, 109, 1); }
+.add-feeling  .entry.yellow:after { background: rgba(249, 233, 0, 1); }
+  
+  /* Animations are cool!  */
+  @-webkit-keyframes moveFromTopFade {
+    from { opacity: .3; height:0px; margin-top:0px; -webkit-transform: translateY(-100%); }
+  }
+  @-moz-keyframes moveFromTopFade {
+    from { height:0px; margin-top:0px; -moz-transform: translateY(-100%); }
+  }
+  @keyframes moveFromTopFade {
+    from { height:0px; margin-top:0px; transform: translateY(-100%); }
+  }
+  
+  @-webkit-keyframes moveToTopFade {
+    to { opacity: .3; height:0px; margin-top:0px; opacity: 0.3; -webkit-transform: translateY(-100%); }
+  }
+  @-moz-keyframes moveToTopFade {
+    to { height:0px; -moz-transform: translateY(-100%); }
+  }
+  @keyframes moveToTopFade {
+    to { height:0px; transform: translateY(-100%); }
+  }
+  
+  @-webkit-keyframes moveToTopFadeMonth {
+    to { opacity: 0; -webkit-transform: translateY(-30%) scale(.95); }
+  }
+  @-moz-keyframes moveToTopFadeMonth {
+    to { opacity: 0; -moz-transform: translateY(-30%); }
+  }
+  @keyframes moveToTopFadeMonth {
+    to { opacity: 0; -moz-transform: translateY(-30%); }
+  }
+  
+  @-webkit-keyframes moveFromTopFadeMonth {
+    from { opacity: 0; -webkit-transform: translateY(30%) scale(.95); }
+  }
+  @-moz-keyframes moveFromTopFadeMonth {
+    from { opacity: 0; -moz-transform: translateY(30%); }
+  }
+  @keyframes moveFromTopFadeMonth {
+    from { opacity: 0; -moz-transform: translateY(30%); }
+  }
+  
+  @-webkit-keyframes moveToBottomFadeMonth {
+    to { opacity: 0; -webkit-transform: translateY(30%) scale(.95); }
+  }
+  @-moz-keyframes moveToBottomFadeMonth {
+    to { opacity: 0; -webkit-transform: translateY(30%); }
+  }
+  @keyframes moveToBottomFadeMonth {
+    to { opacity: 0; -webkit-transform: translateY(30%); }
+  }
+  
+  @-webkit-keyframes moveFromBottomFadeMonth {
+    from { opacity: 0; -webkit-transform: translateY(-30%) scale(.95); }
+  }
+  @-moz-keyframes moveFromBottomFadeMonth {
+    from { opacity: 0; -webkit-transform: translateY(-30%); }
+  }
+  @keyframes moveFromBottomFadeMonth {
+    from { opacity: 0; -webkit-transform: translateY(-30%); }
+  }
+  
+  @-webkit-keyframes fadeIn  {
+    from { opacity: 0; }
+  }
+  @-moz-keyframes fadeIn  {
+    from { opacity: 0; }
+  }
+  @keyframes fadeIn  {
+    from { opacity: 0; }
+  }
+  
+  @-webkit-keyframes fadeOut  {
+    to { opacity: 0; }
+  }
+  @-moz-keyframes fadeOut  {
+    to { opacity: 0; }
+  }
+  @keyframes fadeOut  {
+    to { opacity: 0; }
+  }
+  
+  @-webkit-keyframes fadeOutShink  {
+    to { opacity: 0; padding: 0px; height: 0px; }
+  }
+  @-moz-keyframes fadeOutShink  {
+    to { opacity: 0; padding: 0px; height: 0px; }
+  }
+  @keyframes fadeOutShink  {
+    to { opacity: 0; padding: 0px; height: 0px; }
+  }
+.solution-feeling h3{
+  color: var(--main-text);
+}
+.solution-feeling p{
+  font-size: 20px;
+  padding-inline: 20px;
+  color: var(--main-text);
+  text-align: center;
+  word-spacing: 15px;
+}
+.solution-feeling .Treatment{
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  background: var(--bg-grandient);
+  color: var(--main-color);
+  padding: 5px 20px;
+  border-radius: 10px;
+}
+.solution-feeling .Treatment:hover{
+  box-shadow: 2px 5px 10px 0px var(--gray-color);
+}
+#pie-chart {
+  width: 500px;
+  height: 250px;
+  position: relative;
+}
+#pie-chart::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 115px;
+  left: 315px;
+  top: 0;
+}
+#pie-chart::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 260px;
+  left: 70px;
+  width: 170px;
+  height: 2px;
+  background: rgba(0,0,0,0.1);
+  border-radius: 50%;
+  box-shadow: 0 0 3px 4px rgba(0,0,0,0.1);
 }
 
 @media (max-width: 576px) {
@@ -3294,7 +3824,6 @@ nav {
   font-weight: normal;
   font-size: 18px;
 }
-
 .card-latest-article {
   position: relative;
   border: none !important;
@@ -3314,6 +3843,7 @@ nav {
   border-radius: 10px;
   object-fit: cover;
 }
+
 .latest-content {
   position: absolute;
   bottom: -86px;
@@ -3592,72 +4122,84 @@ nav {
   justify-content: center;
   align-items: center;
 }
-
-.card-forgot-password {
-  max-width: 1200px;
-  box-shadow: 0px 0px 6px 0px var(--gray-color);
-  position: absolute;
-  z-index: 19 !important;
+.card-forgot-password{
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
-
-.card-forgot-password .text-forgot-pw {
-  background-image: linear-gradient(90deg, #488495, #3c4d78);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  font-family: "Kantumruy Pro", sans-serif;
+.card-forgot-password .text-forgot-pw{
   font-weight: 500;
   text-align: center;
 }
-
-.card-forgot-password .text-noted-forgot-pw {
-  font-family: "Kantumruy Pro", sans-serif;
-  font-size: 15px !important;
-  color: var(--gray-color);
-}
-
-.card-forgot-password .icon-back {
+.card-forgot-password .icon-back{
   color: var(--main-color);
   padding: 10px;
   border-radius: 100%;
   width: 30px;
   height: 30px;
-  cursor: pointer !important;
+  cursor: pointer!important;
+  background: var(--bg-grandient);
+  margin-top: -10px;
+  box-shadow: 0px 0px 2px 0px var(--ddd-color);
+}
+.card-forgot-password .ribbon {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+}
+.card-forgot-password .ribbon {
+  --r: .4em;
+
+  position: absolute;
+  top: 0px;
+  inset-inline: calc(-1*var(--r));
+  text-align: center;
+  line-height: 1.8; 
+  padding: 0 .5em calc(2*var(--r));
+  border-radius: var(--r);
+  --_g:100%/var(--r) calc(2*var(--r)) no-repeat;
+  background: 
+    radial-gradient(100% 50% at right,#0005 98%,#0000 101%) 0    var(--_g),
+    radial-gradient(100% 50% at left ,#0005 98%,#0000 101%) 100% var(--_g),
+    conic-gradient(from 90deg at var(--r) calc(100% - 2*var(--r)),#0000 25%,#4d7c89 0)
+     0 0/calc(100% - var(--r)) 100%;
 }
 
 .card-forgot-password .icon-back .fa-arrow-left {
   cursor: pointer;
 }
 
-.card-forgot-password .text-noted-forgot-pw {
-  font-size: 20px !important;
+.card-forgot-password .text-noted-forgot-pw{
+  font-size: 17px;
   text-align: center;
-  color: var(--main-text) !important;
-  font-weight: normal !important;
-  letter-spacing: 0.5px;
+  color: var(--main-text)!important;
+  font-weight: normal!important;
+}
+.card-forgot-password .input-fg{
+  padding-left: 30px;
 }
 
 .card-forgot-password .fa-envelope {
   color: var(--sub-title);
-  padding-top: 13px;
+  padding-top: 10px;
+  padding-left: 10px;
 }
 
 .centered {
   display: flex;
   align-items: center;
   justify-content: center;
+} 
+.card-forgot-password .email-icon-forgot{
+  padding-left: 0px;
 }
 
-.forgot-password .card-forgot-password .email-icon-forgot {
-  padding-left: 10px;
-}
-
-.forgot-password .card-forgot-password .input-fg {
+ .card-forgot-password .input-fg{
   padding-left: 30px;
   box-shadow: 0px 0px 0px 1px var(--gray-color);
+  color: var(--main-text);
+  font-weight: 500;
 }
 
-.forgot-password .card-forgot-password .form-control:focus {
+.card-forgot-password .form-control:focus{
   color: var(--main-text);
   background-color: var(--bg-grandient);
   outline: 0;
@@ -3665,7 +4207,7 @@ nav {
 }
 
 .glow-on-hover {
-  width: 150px;
+  width: 100px;
   height: 40px;
   border: none;
   outline: none;
@@ -3675,6 +4217,7 @@ nav {
   position: relative;
   z-index: 0;
   border-radius: 10px;
+  margin-top: 20px;
 }
 
 .glow-on-hover:before {
@@ -3740,18 +4283,24 @@ nav {
   }
 }
 
-.forgot-password .card-forgot-password .btn-forgot:hover {
-  background: var(--link-text) !important;
+.card-forgot-password .btn-forgot:hover{
+  background: var(--link-text)!important;
 }
-
-.forgot-password .card-forgot-password .back-to {
-  font-family: "Kantumruy Pro", sans-serif;
+.card-forgot-password .back-to{
+  color: var(--sub-title);
+  font-size: 20px;
 }
-
-.forgot-password .card-forgot-password .back-to a {
+.card-forgot-password .back-to a{
   color: var(--link-text);
 }
-
+.card-forgot-password .back-to a:hover{
+  background-image: linear-gradient(90deg, #488495, #3C4D78);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+  transition: 0.6s;
+}
 @property --bg-angle {
   inherits: false;
   initial-value: 0deg;
@@ -3761,6 +4310,27 @@ nav {
 @keyframes spin {
   to {
     --bg-angle: 360deg;
+  }
+}
+
+@media (min-width:430px) and (max-width:932px) {
+  .card-forgot-password .icon-back{
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+  }
+  .card-forgot-password .back-to{
+    font-size: 18px;
+  }
+}
+@media (min-width:360px) and (max-width:740px) {
+  .card-forgot-password .icon-back{
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+  }
+  .card-forgot-password .back-to{
+    font-size: 18px;
   }
 }
 
@@ -4360,6 +4930,10 @@ nav {
 
 /* ! end of video self dev */
 
+/* ========= Pin-Password ================= */
+.pin-password{
+  height: 100vh;
+  
 /* ! begin of exercise */
 
 .exercise-banner .swiper {
@@ -4377,6 +4951,110 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+  
+.pin-password .card-pin-pw{
+  box-shadow: 0px 0px 3px 1px var(--gray-color);
+}
+.card-pin-pw  img{
+  width: 40%;
+  height: 40%;
+
+}
+.card-pin-pw .ribbon {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+}
+.card-pin-pw .ribbon {
+  --r: .4em;
+  position: absolute;
+  top: -5px;
+  inset-inline: calc(-1*var(--r));
+  text-align: center;
+  line-height: 1.8; 
+  padding: 0 .5em calc(2*var(--r));
+  border-radius: var(--r);
+  --_g:100%/var(--r) calc(2*var(--r)) no-repeat;
+  background: 
+    radial-gradient(100% 50% at right,#0005 98%,#0000 101%) 0    var(--_g),
+    radial-gradient(100% 50% at left ,#0005 98%,#0000 101%) 100% var(--_g),
+    conic-gradient(from 90deg at var(--r) calc(100% - 2*var(--r)),#0000 25%,#5A8BC2 0)
+     0 0/calc(100% - var(--r)) 100%;
+}
+.card-pin-pw .text-send-email{
+  font-size: 18px;
+  color: var(--main-text);
+
+}
+#otp-input {
+  display: flex;
+  column-gap: 8px;
+  font-size: 25px;
+  font-weight: bold;
+}
+#otp-input input {
+  text-align: center;
+  padding: 10px 8px 10px 8px;
+  border: 1px solid #adadad;
+  border-radius: 4px;
+  outline: none;
+  height: 64px;
+  width: 50px;
+}
+#otp-input input:focus {
+  border: 1px solid #497e76;
+}
+#otp-input input:focus::placeholder {
+  color: transparent;
+}
+#otp-input input::-webkit-outer-spin-button,
+#otp-input input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#otp-input input[type="number"] {
+  -moz-appearance: textfield; 
+}
+.main-content-container .send-again{
+  color: red;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 10px;
+  text-decoration: none;
+}
+.main-content-container .send-again:hover{
+  color: #0073aa;
+}
+.main-content-container .send-again:active{
+  color: var(--bg-grandient);
+}
+.btn-submit{
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 5px 20px;
+  background: var(--bg-grandient);
+  border: none;
+  color: var(--main-color);
+  opacity: 0.7;
+}
+.btn-submit a{
+  color: var(--main-color);
+}
+.btn-submit:hover{
+  background: var(--bg-grandient);
+  opacity: 1;
+}
+@media (min-width:360px) and (max-width:740px) {
+  #otp-input input {
+    text-align: center;
+    padding: 10px 8px 10px 8px;
+    border: 1px solid #adadad;
+    border-radius: 4px;
+    outline: none;
+    height: 64px;
+    width: 45px;
+  }
 }
 
 .exercise-banner .swiper-slide img {
