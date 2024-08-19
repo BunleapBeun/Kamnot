@@ -5034,6 +5034,10 @@ nav {
   overflow: hidden;
 }
 
+.video-selfdev .card-selfdev .video-info {
+  border-top: 1px solid var(--ddd-color);
+}
+
 .video-selfdev .card-selfdev .video-info .pf-video .pf-vdo-image {
   width: 40px;
   height: 40px;
