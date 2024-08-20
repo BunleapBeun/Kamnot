@@ -727,15 +727,32 @@ nav {
 .journaling-reshow .bar-journal-reshow {
   width: 100%;
   height: 50px;
-  background-color: red;
   border-radius: 10px 10px 0 0;
   background: var(--bg-grandient);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
 }
 
 .journaling-reshow .bar-journal-reshow h3 {
   font-size: 25px;
   color: #fff;
   margin: 0;
+}
+
+.plus-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  background-color: #fff;
+  text-decoration: none;
+}
+
+.plus-btn i {
+  font-size: 20px;
+  color: #000;
+  font-weight: 1000;
 }
 
 .journaling-reshow .journal-reshow-content {
@@ -745,6 +762,8 @@ nav {
   border: 1px solid var(--ddd-color);
   border-bottom: 0;
 }
+
+
 
 .todo-reshow {
   width: 100%;
@@ -874,9 +893,11 @@ nav {
   background-color: var(--card-color) !important;
 }
 
-.reading-book .modal-reading-content {
+/* .reading-book .modal-reading-content {
   height: 700px;
-}
+  width: 100vh !important;
+} */
+
 
 .reading-book .modal-reading-body {
   padding: 0;
@@ -3192,6 +3213,7 @@ nav {
   height: 50px;
   background: var(--bg-grandient);
   border-radius: 10px 10px 0 0;
+  padding: 10px;
 }
 
 .todo-reshow .bar-reshow-todo h3 {
@@ -5944,10 +5966,36 @@ nav {
 
 .exer-course {
   width: 100%;
-  height: 300px;
+  height: auto;
   /* background-color: red; */
   border-radius: 30px;
   background: linear-gradient(50deg, #F2994A 0%, #F2C94C 100%);
+}
+
+.exer-course .course-content {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px 0 0 30px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+.exer-course .course-content h2 {
+  font-size: 50px;
+  color: #fff;
+  margin: 0;
+}
+.exer-course .exer-course-image {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.exer-course .exer-course-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 
 /* ! end of exercise */
