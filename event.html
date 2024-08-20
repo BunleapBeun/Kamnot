@@ -1,137 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kamnot</title>
     <link rel="stylesheet" href="assets/css/bootstrap.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.css" />
     <link rel="stylesheet" href="assets/plugins/aos/css/aos.css" />
   </head>
+
   <body>
     <!-- ! begin of header -->
     <header class="position-fixed top-0 w-100">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand" href="index.html"
-            ><img src="assets/img/navbar/Kn-logo.png" alt=""
-          /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            aria-expanded="false"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasWithBothOptions"
-            aria-controls="offcanvasWithBothOptions"
-          >
+          <a class="navbar-brand" href="index.html"><img src="assets/img/navbar/Kn-logo.png" alt="" /></a>
+          <button class="navbar-toggler" type="button" aria-expanded="false" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
             <span class="nav-toggler-icon all-center"><i class="fa-solid fa-bars"></i></span>
           </button>
           <!-- ! begin of offcanvas -->
-          <div
-            class="offcanvas offcanvas-start d-lg-none"
-            data-bs-scroll="true"
-            tabindex="-1"
-            id="offcanvasWithBothOptions"
-            aria-labelledby="offcanvasWithBothOptionsLabel"
-          >
+          <div class="offcanvas offcanvas-start d-lg-none" data-bs-scroll="true" tabindex="-1"
+            id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
             <div class="offcanvas-header">
               <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
-                <a class="navbar-brand" href="index.html"
-                  ><img src="assets/img/navbar/Kn-logo.png" alt=""
-                /></a>
+                <a class="navbar-brand" href="index.html"><img src="assets/img/navbar/Kn-logo.png" alt="" /></a>
               </h5>
-              <button
-                type="button"
-                class="x-close all-center"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ><i class="fa-solid fa-xmark"></i></button>
+              <button type="button" class="x-close all-center" data-bs-dismiss="offcanvas" aria-label="Close"><i
+                  class="fa-solid fa-xmark"></i></button>
             </div>
             <div class="offcanvas-body">
               <div class="canvas-header d-flex justify-content-between">
-                <a
-                  href="profile_info.html"
-                  class="convas-pf rounded-circle overflow-hidden text-decoration-none"
-                >
+                <a href="profile_info.html" class="convas-pf rounded-circle overflow-hidden text-decoration-none">
                   <img src="assets/img/navbar/profile-img.png" alt="" />
                 </a>
                 <div class="d-flex align-items-center">
-                  <a
-                    href="cart.html"
-                    class="btn-add-cart all-center text-decoration-none"
-                    ><i class="fa-solid fa-cart-shopping"></i>
-                    <div class="cart-status all-center"><span>2 </span></div></a
-                  >
-                  <button
-                    type="button"
-                    data-theme-toggle
-                    id="theme-toggle-1"
-                    class="dark-light-mode all-center rounded-circle ms-3"
-                  ></button>
+                  <a href="cart.html" class="btn-add-cart all-center text-decoration-none"><i
+                      class="fa-solid fa-cart-shopping"></i>
+                    <div class="cart-status all-center"><span>2 </span></div>
+                  </a>
+                  <button type="button" data-theme-toggle id="theme-toggle-1"
+                    class="dark-light-mode all-center rounded-circle ms-3"></button>
                 </div>
               </div>
 
               <!-- ! begin navbar offcanvas -->
               <ul class="nav-convas">
                 <li class="convas-item">
-                  <a class="convas-link convas-bar-bg" href="index.html"
-                    ><i class="fa fa-house"></i> ទំព័រដើម</a
-                  >
+                  <a class="convas-link convas-bar-bg" href="index.html"><i class="fa fa-house"></i> ទំព័រដើម</a>
                 </li>
                 <li class="convas-item">
                   <input type="checkbox" id="showDropHabit" />
-                  <label
-                    for="showDropHabit"
-                    class="sub-convas-dropdown d-flex align-items-center justify-content-between"
-                    ><div>
+                  <label for="showDropHabit"
+                    class="sub-convas-dropdown d-flex align-items-center justify-content-between">
+                    <div>
                       <i class="fa-solid fa-calendar-check"></i>
                       ទម្លាប់ប្រចាំថ្ងៃ
                     </div>
-                    <i class="fa-solid fa-caret-down"></i
-                  ></label>
+                    <i class="fa-solid fa-caret-down"></i>
+                  </label>
                   <ul class="drop-menu">
                     <li class="convas-item">
-                      <a class="convas-link bbt-pf" href="journaling.html"
-                        >កំណត់ត្រាប្រចាំថ្ងៃ</a
-                      >
+                      <a class="convas-link bbt-pf" href="journaling.html">កំណត់ត្រាប្រចាំថ្ងៃ</a>
                     </li>
                     <li class="convas-item">
-                      <a class="convas-link bbt-pf" href="money_spending.html"
-                        >តាមដានការចំណាយ</a
-                      >
+                      <a class="convas-link bbt-pf" href="money_spending.html">តាមដានការចំណាយ</a>
                     </li>
                     <li class="convas-item">
-                      <a class="convas-link bbt-pf" href="mood_tracking.html"
-                        >តាមដានផ្លូវចិត្ត</a
-                      >
+                      <a class="convas-link bbt-pf" href="mood_tracking.html">តាមដានផ្លូវចិត្ត</a>
                     </li>
                     <li class="convas-item">
-                      <a class="convas-link" href="exercise.html"
-                        >លំហាត់ប្រាណ</a
-                      >
+                      <a class="convas-link" href="exercise.html">លំហាត់ប្រាណ</a>
                     </li>
                   </ul>
                 </li>
                 <li class="convas-item mt-10">
                   <input type="checkbox" id="showDropMentalhealth" />
-                  <label
-                    for="showDropMentalhealth"
-                    class="sub-convas-dropdown d-flex align-items-center justify-content-between"
-                    ><div>
+                  <label for="showDropMentalhealth"
+                    class="sub-convas-dropdown d-flex align-items-center justify-content-between">
+                    <div>
                       <i class="fa-solid fa-brain"></i> ស្ថានភាពផ្លូវចិត្ត
                     </div>
-                    <i class="fa-solid fa-caret-down"></i
-                  ></label>
+                    <i class="fa-solid fa-caret-down"></i>
+                  </label>
                   <ul class="drop-menu">
                     <li class="convas-item">
-                      <a class="convas-link bbt-pf" href="therapist.html"
-                        >អ្នកជំនាញផ្លូវចិត្ត</a
-                      >
+                      <a class="convas-link bbt-pf" href="therapist.html">អ្នកជំនាញផ្លូវចិត្ត</a>
                     </li>
                     <li class="convas-item">
                       <a class="convas-link" href="mediation.html">សមាធិ</a>
@@ -140,57 +97,45 @@
                 </li>
                 <li class="convas-item mt-10">
                   <input type="checkbox" id="showDropEdu" />
-                  <label
-                    for="showDropEdu"
-                    class="sub-convas-dropdown d-flex align-items-center justify-content-between"
-                    ><div>
+                  <label for="showDropEdu"
+                    class="sub-convas-dropdown d-flex align-items-center justify-content-between">
+                    <div>
                       <i class="fa-solid fa-book-open-reader"></i> ចំណេះដឹង
                     </div>
-                    <i class="fa-solid fa-caret-down"></i
-                  ></label>
+                    <i class="fa-solid fa-caret-down"></i>
+                  </label>
                   <ul class="drop-menu">
                     <li class="convas-item">
-                      <a class="convas-link bbt-pf" href="book_store.html"
-                        >សៀវភៅ</a
-                      >
+                      <a class="convas-link bbt-pf" href="book_store.html">សៀវភៅ</a>
                     </li>
                     <li class="convas-item">
-                      <a class="convas-link bbt-pf" href="event.html"
-                        >ព្រឹត្តិការណ៍</a
-                      >
+                      <a class="convas-link bbt-pf" href="event.html">ព្រឹត្តិការណ៍</a>
                     </li>
                     <li class="convas-item">
-                      <a class="convas-link" href="video_recommendation.html"
-                        >វីឌីអូអភិវឌ្ឍខ្លួន</a
-                      >
+                      <a class="convas-link" href="video_recommendation.html">វីឌីអូអភិវឌ្ឍខ្លួន</a>
                     </li>
                   </ul>
                 </li>
                 <li class="convas-item">
-                  <a class="convas-link convas-bar-bg mb-0" href="article.html"
-                    ><i class="fa-solid fa-newspaper"></i> អត្ថបទ</a
-                  >
+                  <a class="convas-link convas-bar-bg mb-0" href="article.html"><i class="fa-solid fa-newspaper"></i>
+                    អត្ថបទ</a>
                 </li>
                 <li class="convas-item">
-                  <a class="convas-link convas-bar-bg mb-0" href="article.html"
-                    ><i class="fa-solid fa-money-check-dollar"></i> តម្លៃ</a
-                  >
+                  <a class="convas-link convas-bar-bg mb-0" href="article.html"><i
+                      class="fa-solid fa-money-check-dollar"></i> តម្លៃ</a>
                 </li>
                 <li class="convas-item mt-10">
                   <input type="checkbox" id="showDropMoreInfo" />
-                  <label
-                    for="showDropMoreInfo"
-                    class="sub-convas-dropdown d-flex align-items-center justify-content-between"
-                    ><div>
+                  <label for="showDropMoreInfo"
+                    class="sub-convas-dropdown d-flex align-items-center justify-content-between">
+                    <div>
                       <i class="fa-solid fa-circle-info"></i> ព័ត៌មានបន្ថែម
                     </div>
-                    <i class="fa-solid fa-caret-down"></i
-                  ></label>
+                    <i class="fa-solid fa-caret-down"></i>
+                  </label>
                   <ul class="drop-menu">
                     <li class="convas-item">
-                      <a class="convas-link bbt-pf" href="about_us.html"
-                        >អំពីយើង</a
-                      >
+                      <a class="convas-link bbt-pf" href="about_us.html">អំពីយើង</a>
                     </li>
                     <li class="convas-item">
                       <a class="convas-link" href="contact_us.html">ទាក់ទង</a>
@@ -202,17 +147,11 @@
             </div>
           </div>
           <!-- ! end of offcanvas -->
-          <div
-            class="collapse navbar-collapse d-flex justify-content-end d-lg-block d-none"
-            id="navbarSupportedContent"
-          >
+          <div class="collapse navbar-collapse d-flex justify-content-end d-lg-block d-none"
+            id="navbarSupportedContent">
             <form class="search-bar d-flex" role="search">
-              <input
-                class="search-nav form-control me-3 position-relative"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
+              <input class="search-nav form-control me-3 position-relative" type="search" placeholder="Search"
+                aria-label="Search" />
               <i class="fa-solid fa-magnifying-glass position-absolute"></i>
             </form>
             <div class="profile d-flex flex-row align-items-center">
@@ -220,9 +159,7 @@
                 <i class="fa-solid fa-caret-down"></i>
               </div>
               <div class="pf-status d-flex flex-column align-items-end">
-                <a href="profile_info.html" class="pf-name text-decoration-none"
-                  >Wade Warren</a
-                >
+                <a href="profile_info.html" class="pf-name text-decoration-none">Wade Warren</a>
               </div>
               <div class="pf-image rounded-circle ms-2">
                 <img src="assets/img/navbar/profile-img.png" alt="" />
@@ -234,11 +171,7 @@
                   <li class="pf-item bbt-pf">
                     <a href="profile_info.html" class="pf-link d-flex">
                       <div class="dropdown-pf">
-                        <img
-                          src="assets/img/navbar/profile-img.png"
-                          class="rounded-circle"
-                          alt=""
-                        />
+                        <img src="assets/img/navbar/profile-img.png" class="rounded-circle" alt="" />
                       </div>
                       <p class="m-0">Wade Warren</p>
                     </a>
@@ -254,14 +187,9 @@
                 </ul>
               </div>
             </div>
-            <div
-              class="notification rounded-circle all-center position-relative ms-3"
-            >
+            <div class="notification rounded-circle all-center position-relative ms-3">
               <i class="fa-solid fa-bell"></i>
-              <span
-                class="notification-count bg-danger all-center text-white position-absolute"
-                >9</span
-              >
+              <span class="notification-count bg-danger all-center text-white position-absolute">9</span>
               <div class="noti-controll">
                 <div class="box-rotate"></div>
                 <div class="noti-content">
@@ -361,22 +289,13 @@
                       </a>
                     </li>
                   </ul>
-                  <a
-                    type="button"
-                    href="notification.html"
-                    role="button"
-                    class="bar-noti text-decoration-none w-100"
-                    >មើលទាំងអស់</a
-                  >
+                  <a type="button" href="notification.html" role="button"
+                    class="bar-noti text-decoration-none w-100">មើលទាំងអស់</a>
                 </div>
               </div>
             </div>
-            <button
-              type="button"
-              data-theme-toggle
-              id="theme-toggle-2"
-              class="dark-light-mode all-center rounded-circle ms-3"
-            ></button>
+            <button type="button" data-theme-toggle id="theme-toggle-2"
+              class="dark-light-mode all-center rounded-circle ms-3"></button>
           </div>
         </div>
       </nav>
@@ -548,13 +467,275 @@
           <div class="col-lg-11 col-12">
             <div class="pt-112 px-4 px-md-0">
               <!-- ? write your content here -->
-              <div class="box"></div>
-              <div class="box mt-3"></div>
-              <div class="box mt-3"></div>
-              <div class="box mt-3"></div>
-              <div class="box mt-3"></div>
-              <div class="box mt-3"></div>
-              <!-- ? end of write your content here -->
+              <section class="social-event me-0 ms-0">
+                <div class="col-12">
+                </div>
+                <div class="row g-3">
+                  <div class="col-lg-4 col-12">
+                    <div class="card card-event">
+                      <div class="event-image">
+                        <img src="assets/img/events/event-image-01.jpg" alt="" />
+                      </div>
+                      <span class="badge rounded-pill text-bg-danger mt-3 fw-normal"><i
+                          class="fa-solid fa-calendar-days"></i> ផុតកំណត់៖
+                        ០១ កញ្ញា ២០២៤</span>
+                      <h4 class="event-title pt-3 m-0 text-cut">
+                        ឱកាសក្លាយជាអ្នកស្ម័គ្រចិត្តបានត្រឡប់មកវិញហើយសំរាប់កម្មវិធី
+                        Cambodia Robotics Olympiad 2024!
+                      </h4>
+                      <div class="event-discript">
+                        <p>
+                          ដូចដែលអ្នកទាំងអស់គ្នាបានដឹងថាកម្មវិធី Cambodia
+                          Robotics Olympiad 2024
+                          របស់យើងចាប់ផ្តើមទទួលពាក្យចួលរួមប្រលងប្រកួតហើយ
+                          ដូច្នេះពួកយើងត្រូវការជំនួយពីអ្នកស្ម័គ្រចិត្តទាំងអស់គ្នា។
+                          លើសពីនេះ ប្រសិនបើអ្នកជានិស្សិត ឬសិស្ស
+                          ហើយចាប់អារម្មណ៍ជាមួយរ៉ូបូត គឺកាន់តែល្អ។
+                          ចង់ចូលរួមដើម្បីទទួលបានបទពិសោធន៍នេះជាមួយពួកយើងអត់?
+                        </p>
+                      </div>
+                      <div class="d-flex w-100 justify-content-center">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_zuB-fX3b1KXqjbNml63ih3MZ1UDCdXE9txlmmPdgAPyQ0Q/viewform"
+                          type="button" target="_blank" class="btn-event">
+                          ចុះឈ្មោះ
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-12">
+                    <div class="card card-event">
+                      <div class="event-image">
+                        <img src="assets/img/events/event-02.jpg" alt="" />
+                      </div>
+                      <span class="badge rounded-pill text-bg-danger mt-3 fw-normal"><i
+                          class="fa-solid fa-calendar-days"></i> ផុតកំណត់៖
+                        ០២ កញ្ញា ២០២៤</span>
+                      <h4 class="event-title pt-3 m-0 text-cut">
+                        ឱកាសសម្រាប់យុវជនចង់ចូលរួមការងារសង្គមដើម្បីទទួលបាននូវបទពិសោធន៍ អភិវឌ្ឍន៍សមត្ថភាព
+                        និងពង្រីកចំណេះក្នុងវិស័យបរិស្ថានបានមកដល់ហើយ!
+                      </h4>
+                      <div class="event-discript">
+                        <p>
+                          ចូលរួមជាមួយយើងសម្រាប់ឱកាសដ៏រំភើបមួយដើម្បីបង្កើតការផ្លាស់ប្តូរ!
+                          ព្រឹត្តិការណ៍នេះត្រូវបានរៀបចំឡើងសម្រាប់យុវជនដែលមានបំណងចង់ចូលទៅក្នុងការងារសង្គម
+                          ការអភិវឌ្ឍន៍សមត្ថភាព និងជំនាញបរិស្ថាន។ អ្នកចូលរួមនឹងចូលរួមក្នុងសិក្ខាសាលាដោយដៃ
+                          រៀនពីអ្នកជំនាញ និងអភិវឌ្ឍជំនាញសំខាន់ៗ ដើម្បីដោះស្រាយបញ្ហាប្រឈមបរិស្ថាន។ តាមរយៈគម្រោងសហការ
+                          និងវគ្គអន្តរកម្ម អ្នកនឹងទទួលបានបទពិសោធន៍ដ៏មានតម្លៃ
+                          ខណៈពេលដែលរួមចំណែកដល់ការផ្លាស់ប្តូរដ៏មានអត្ថន័យនៅក្នុងសហគមន៍របស់អ្នក។
+                          កុំខកខានឱកាសរបស់អ្នកក្នុងការក្លាយជាផ្នែកមួយនៃបទពិសោធន៍ផ្លាស់ប្តូរ
+                          និងជួយបង្កើតអនាគតប្រកបដោយនិរន្តរភាព!
+                        </p>
+                      </div>
+                      <div class="d-flex w-100 justify-content-center">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_zuB-fX3b1KXqjbNml63ih3MZ1UDCdXE9txlmmPdgAPyQ0Q/viewform"
+                          type="button" target="_blank" class="btn-event">
+                          ចុះឈ្មោះ
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-12">
+                    <div class="card card-event">
+                      <div class="event-image">
+                        <img src="assets/img/events/event-03.jpg" alt="" />
+                      </div>
+                      <span class="badge rounded-pill text-bg-danger mt-3 fw-normal"><i
+                          class="fa-solid fa-calendar-days"></i> ផុតកំណត់៖
+                        ១៥ កញ្ញា ២០២៤</span>
+                      <h4 class="event-title pt-3 m-0 text-cut">
+                        ដោះសោសក្តានុពលរបស់អ្នក៖ សិក្ខាសាលាអភិវឌ្ឍន៍ខ្លួនឯង
+                      </h4>
+                      <div class="event-discript">
+                        <p>
+                          តើ​អ្នក​ត្រៀម​ខ្លួន​រួច​រាល់​ហើយ​ឬ​នៅ​ក្នុង​ការ​យក​កំណើន​ផ្ទាល់​ខ្លួន​របស់​អ្នក​ទៅ​កម្រិត​បន្ទាប់?
+                          ចូលរួមជាមួយពួកយើងសម្រាប់សិក្ខាសាលាដោះសោសក្តានុពលរបស់អ្នក
+                          ដែលត្រូវបានរចនាឡើងដើម្បីជួយអ្នកក្នុងការកសាងទំនុកចិត្ត បង្កើនជំនាញរបស់អ្នក
+                          និងសម្រេចបាននូវគោលដៅរបស់អ្នក។
+                          វគ្គអន្តរកម្មនេះនឹងគ្របដណ្តប់លើយុទ្ធសាស្រ្តសម្រាប់ការកំណត់គោលដៅប្រកបដោយប្រសិទ្ធភាព
+                          ជំនះឧបសគ្គ និងការគ្រប់គ្រងពេលវេលា។ ចូលរួមជាមួយគ្រូបង្វឹកដែលមានបទពិសោធន៍
+                          និងចូលរួមក្នុងលំហាត់ជាក់ស្តែង ដែលនឹងផ្តល់ឱ្យអ្នកនូវឧបករណ៍ដែលអ្នកត្រូវការដើម្បីទទួលបានជោគជ័យ។
+                        </p>
+                      </div>
+                      <div class="d-flex w-100 justify-content-center">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_zuB-fX3b1KXqjbNml63ih3MZ1UDCdXE9txlmmPdgAPyQ0Q/viewform"
+                          type="button" target="_blank" class="btn-event">
+                          ចុះឈ្មោះ
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-12">
+                    <div class="card card-event">
+                      <div class="event-image">
+                        <img src="assets/img/events/event-04.jpg" alt="" />
+                      </div>
+                      <span class="badge rounded-pill text-bg-danger mt-3 fw-normal"><i
+                          class="fa-solid fa-calendar-days"></i> ផុតកំណត់៖ ១០ តុលា 2024</span>
+                      <h4 class="event-title pt-3 m-0 text-cut">
+                        លើកកំពស់ចិត្តរបស់អ្នក៖ សិក្ខាសាលាជំនាញផ្លូវចិត្ត
+                      </h4>
+                      <div class="event-discript">
+                        <p>
+                          ត្រៀម​ខ្លួន​រួច​ជា​ស្រេច​ដើម្បី​ដោះស្រាយ​ជាមួយ​នឹង​ភាព​ធន់​នឹង​ផ្លូវ​អារម្មណ៍
+                          និង​ការ​បង្កើត​ថ្មី? ស្រាវជ្រាវគ្រប់វិស័យដែលផ្តល់ថាមពលដល់ឧបករណ៍ និងបច្ចេកទេសនៃវិស័យ និងវិស័យ។
+                          មានឥទ្ធិពលលើថាមពលនៃចិត្តរបស់អ្នក និងដោះសោសោជីវិតបន្ថែម និងធន់។
+                        </p>
+                      </div>
+                      <div class="d-flex w-100 justify-content-center">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_zuB-fX3b1KXqjbNml63ih3MZ1UDCdXE9txlmmPdgAPyQ0Q/viewform"
+                          type="button" target="_blank" class="btn-event">
+                          ចុះឈ្មោះ
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-12">
+                    <div class="card card-event">
+                      <div class="event-image">
+                        <img src="assets/img/events/event-05.jpg" alt="" />
+                      </div>
+                      <span class="badge rounded-pill text-bg-danger mt-3 fw-normal"><i
+                          class="fa-solid fa-calendar-days"></i> ផុតកំណត់៖
+                        ០៥ វិច្ឆិកា ២០២៤</span>
+                      <h4 class="event-title pt-3 m-0 text-cut">
+                        ក្លាយជាខ្លួនឯងល្អបំផុតរបស់អ្នក៖ សិក្ខាសាលាកែលម្អខ្លួនឯង
+                      </h4>
+                      <div class="event-discript">
+                        <p>
+                          ត្រៀមខ្លួនដើម្បីឈានជំហានបន្ទាប់ក្នុងដំណើររីកចម្រើនផ្ទាល់ខ្លួនរបស់អ្នកហើយឬនៅ?
+                          ចូលរួមជាមួយពួកយើងសម្រាប់សិក្ខាសាលាផ្លាស់ប្តូរដែលឧទ្ទិសដល់ការជួយអ្នកឱ្យក្លាយជាកំណែដ៏ល្អបំផុតសម្រាប់ខ្លួនអ្នក។
+                          បទពិសោធន៍ដ៏អស្ចារ្យនេះនឹងណែនាំអ្នកតាមរយៈលំហាត់ឆ្លុះបញ្ចាំងដោយខ្លួនឯង យុទ្ធសាស្ត្រកំណត់គោលដៅ
+                          និងបច្ចេកទេសដើម្បីបង្កើតទម្លាប់វិជ្ជមាន។ រៀនពីរបៀបយកឈ្នះលើជំនឿដែលកំណត់ដោយខ្លួនឯង
+                          និងដោះសោសក្តានុពលពិតរបស់អ្នក ដោយមានការគាំទ្រពីគ្រូបង្វឹកអភិវឌ្ឍន៍ផ្ទាល់ខ្លួនដែលមានបទពិសោធន៍។
+                          ចាប់ផ្តើមដំណើររបស់អ្នកឆ្ពោះទៅកាន់ជីវិតដែលកាន់តែបំពេញ និងជោគជ័យនៅថ្ងៃនេះ។
+                        </p>
+                      </div>
+                      <div class="d-flex w-100 justify-content-center">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_zuB-fX3b1KXqjbNml63ih3MZ1UDCdXE9txlmmPdgAPyQ0Q/viewform"
+                          type="button" target="_blank" class="btn-event">
+                          ចុះឈ្មោះ
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-12">
+                    <div class="card card-event">
+                      <div class="event-image">
+                        <img src="assets/img/events/event-06.jpg" alt="" />
+                      </div>
+                      <span class="badge rounded-pill text-bg-danger mt-3 fw-normal"><i
+                          class="fa-solid fa-calendar-days"></i> ផុតកំណត់៖
+                        ១២ កញ្ញា ២០២៤</span>
+                      <h4 class="event-title pt-3 m-0 text-cut">
+                        ការកើនឡើង និងរីកចម្រើន៖ សិក្ខាសាលាស្តីពីកាអភិវឌ្ឍន៍ខ្លួន
+                      </h4>
+                      <div class="event-discript">
+                        <p>
+                          ត្រៀមខ្លួនហើយឬនៅ ដើម្បីលើកកំពស់ជីវិតរបស់អ្នក និងរីកចម្រើនដូចដែលមិនធ្លាប់មានពីមុនមក?
+                          ចូលរួមជាមួយពួកយើងសម្រាប់សិក្ខាសាលាបំផុសគំនិតដែលផ្តោតលើការលូតលាស់ផ្ទាល់ខ្លួន
+                          និងការគ្រប់គ្រងខ្លួនឯង។ ស្វែងយល់ពីរបៀបកំណត់អត្តសញ្ញាណ និងជម្នះឧបសគ្គដែលរារាំងអ្នក
+                          និងរៀនបច្ចេកទេសដើម្បីបង្កើនទំនុកចិត្តរបស់អ្នក អភិវឌ្ឍជំនាញថ្មីៗ និងបង្កើតជីវិតដែលបំពេញ។
+                          វគ្គអន្តរកម្មនេះ ដឹកនាំដោយគ្រូបង្វឹកអភិវឌ្ឍន៍ផ្ទាល់ខ្លួនតាមរដូវកាល
+                          នឹងផ្តល់ឱ្យអ្នកនូវផ្នត់គំនិត និងឧបករណ៍ដែលត្រូវការ ដើម្បីសម្រេចបាននូវភាពប្រសើរឡើងជាបន្តបន្ទាប់
+                          និងជោគជ័យយូរអង្វែង។
+                        </p>
+                      </div>
+                      <div class="d-flex w-100 justify-content-center">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_zuB-fX3b1KXqjbNml63ih3MZ1UDCdXE9txlmmPdgAPyQ0Q/viewform"
+                          type="button" target="_blank" class="btn-event">
+                          ចុះឈ្មោះ
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-12">
+                    <div class="card card-event">
+                      <div class="event-image">
+                        <img src="assets/img/events/event-07.jpg" alt="" />
+                      </div>
+                      <span class="badge rounded-pill text-bg-danger mt-3 fw-normal"><i
+                          class="fa-solid fa-calendar-days"></i> ផុតកំណត់៖
+                        30 វិច្ឆិកា 2024</span>
+                      <h4 class="event-title pt-3 m-0 text-cut">
+                        ផ្លូវទៅកាន់គោលបំណង៖ សិក្ខាសាលាភាពច្បាស់លាស់ និងចក្ខុវិស័យ
+                      </h4>
+                      <div class="event-discript">
+                        <p>
+                          តើ​អ្នក​ត្រៀម​ខ្លួន​ហើយ​ឬ​នៅ​ក្នុង​ការ​ស្វែង​យល់​ពី​គោល​បំណង​ពិត​របស់​អ្នក
+                          ហើយ​រស់​នៅ​ស្រប​តាម​ចំណង់​ចំណូល​ចិត្ត​របស់​អ្នក?
+                          ចូលរួមជាមួយពួកយើងសម្រាប់សិក្ខាសាលាផ្លាស់ប្តូរដែលនឹងណែនាំអ្នកតាមរយៈដំណើរការនៃការស្វែងរកភាពច្បាស់លាស់
+                          កំណត់ចក្ខុវិស័យច្បាស់លាស់ និងធ្វើសកម្មភាពប្រកបដោយគោលបំណងឆ្ពោះទៅរកគោលដៅរបស់អ្នក។
+                          សិក្ខាសាលានេះត្រូវបានរៀបចំឡើងដើម្បីជួយអ្នកតម្រឹមសកម្មភាពប្រចាំថ្ងៃរបស់អ្នកជាមួយនឹងតម្លៃ
+                          និងសេចក្តីប្រាថ្នាដ៏ស៊ីជម្រៅរបស់អ្នក ដោយធានាថាអ្នកកំពុងស្ថិតនៅលើផ្លូវឆ្ពោះទៅកាន់ជីវិតដែលបំពេញ
+                          និងប្រកបដោយអត្ថន័យ។ ដឹកនាំដោយគ្រូបង្វឹកដែលមានគោលបំណង
+                          អ្នកនឹងរៀនពីយុទ្ធសាស្ត្រជាក់ស្តែងដើម្បីកំណត់គោលបំណងរបស់អ្នក
+                          និងបង្កើតផែនទីបង្ហាញផ្លូវដើម្បីសម្រេចបាន។
+                        </p>
+                      </div>
+                      <div class="d-flex w-100 justify-content-center">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_zuB-fX3b1KXqjbNml63ih3MZ1UDCdXE9txlmmPdgAPyQ0Q/viewform"
+                          type="button" target="_blank" class="btn-event">
+                          ចុះឈ្មោះ
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-12">
+                    <div class="card card-event">
+                      <div class="event-image">
+                        <img src="assets/img/events/event-08.jpg" alt="" />
+                      </div>
+                      <span class="badge rounded-pill text-bg-danger mt-3 fw-normal"><i
+                          class="fa-solid fa-calendar-days"></i> ផុតកំណត់៖
+                        ០២ វិច្ឆិកា ២០២៤</span>
+                      <h4 class="event-title pt-3 m-0 text-cut">
+                        ជីវិតរបស់អ្នក៖ សិក្ខាសាលាកំណើន និងការអភិវឌ្ឍន៍ឆ្នាំ 2024
+                      </h4>
+                      <div class="event-discript">
+                        <p>
+                          តើ​អ្នក​ត្រៀម​ខ្លួន​ជា​ស្រេច​ក្នុង​ការ​ទទួល​ខុស​ត្រូវ​សម្រាប់​ការ​អភិវឌ្ឍ​ផ្ទាល់ខ្លួន
+                          និង​វិជ្ជាជីវៈ​របស់​អ្នក​ហើយ​ឬ​នៅ? ចូលរួមជាមួយយើងសម្រាប់សិក្ខាសាលាស្តីពីការរីកលូតលាស់
+                          និងការអភិវឌ្ឍន៍ឆ្នាំ 2024 ដែលអ្នកនឹងទទួលបាននូវការយល់ដឹងដ៏មានតម្លៃ
+                          និងឧបករណ៍ជាក់ស្តែងដើម្បីជួយអ្នកឱ្យទទួលបានជោគជ័យ និងរីកចម្រើន។
+                        </p>
+                      </div>
+                      <div class="d-flex w-100 justify-content-center">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_zuB-fX3b1KXqjbNml63ih3MZ1UDCdXE9txlmmPdgAPyQ0Q/viewform"
+                          type="button" target="_blank" class="btn-event">
+                          ចុះឈ្មោះ
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-12">
+                    <div class="card card-event">
+                      <div class="event-image">
+                        <img src="assets/img/events/event-09.jpg" alt="" />
+                      </div>
+                      <span class="badge rounded-pill text-bg-danger mt-3 fw-normal"><i
+                          class="fa-solid fa-calendar-days"></i> ផុតកំណត់៖
+                        ០៨ កញ្ញា ២០២៤</span>
+                      <h4 class="event-title pt-3 m-0 text-cut">
+                        Mindset Mastery៖ ដោះសោជីវិតល្អបំផុតរបស់អ្នកឆ្នាំ 2024
+                      </h4>
+                      <div class="event-discript">
+                        <p>
+                          តើ​អ្នក​ត្រៀម​ខ្លួន​ហើយ​ឬ​នៅ​ក្នុង​ការ​ផ្លាស់​ប្តូរ​ផ្នត់​គំនិត​របស់​អ្នក
+                          និង​លើក​កម្ពស់​ជីវិត​របស់​អ្នក? ចូលរួមជាមួយពួកយើងសម្រាប់ Mindset Mastery៖ Unlock Your Best
+                          Life 2024 ដែលជាព្រឹត្តិការណ៍បំផុសគំនិតដែលត្រូវបានរចនាឡើងដើម្បីជួយអ្នកបណ្តុះផ្នត់គំនិតរីកចម្រើន
+                          និងសម្រេចបាននូវកម្រិតខ្ពស់នៃភាពជោគជ័យផ្ទាល់ខ្លួន។
+                        </p>
+                      </div>
+                      <div class="d-flex w-100 justify-content-center">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_zuB-fX3b1KXqjbNml63ih3MZ1UDCdXE9txlmmPdgAPyQ0Q/viewform"
+                          type="button" target="_blank" class="btn-event">
+                          ចុះឈ្មោះ
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
             </div>
           </div>
           <!-- ! end of main content -->
@@ -568,12 +749,9 @@
       <div class="container py-3">
         <div class="row px-4 px-lg-0">
           <div class="col-lg-3 col-12">
-            <div
-              class="footer-logo w-100 d-lg-block d-flex justify-content-center"
-            >
-              <a href="index.html" class="text-decoration-none"
-                ><img src="assets/img/navbar/Kn-logo.png" alt="Kn-logo"
-              /></a>
+            <div class="footer-logo w-100 d-lg-block d-flex justify-content-center">
+              <a href="index.html" class="text-decoration-none"><img src="assets/img/navbar/Kn-logo.png"
+                  alt="Kn-logo" /></a>
             </div>
             <div class="comp-discript">
               <p>
@@ -585,29 +763,19 @@
             </div>
             <ul class="comp-social-media d-flex pb-3 pb-lg-0">
               <li class="comp-item">
-                <a href="#" class="social-media-icon"
-                  ><i class="fab fa-facebook-f"></i
-                ></a>
+                <a href="#" class="social-media-icon"><i class="fab fa-facebook-f"></i></a>
               </li>
               <li class="comp-item">
-                <a href="#" class="social-media-icon"
-                  ><i class="fab fa-twitter"></i
-                ></a>
+                <a href="#" class="social-media-icon"><i class="fab fa-twitter"></i></a>
               </li>
               <li class="comp-item">
-                <a href="#" class="social-media-icon"
-                  ><i class="fab fa-instagram"></i
-                ></a>
+                <a href="#" class="social-media-icon"><i class="fab fa-instagram"></i></a>
               </li>
               <li class="comp-item">
-                <a href="#" class="social-media-icon"
-                  ><i class="fab fa-youtube"></i
-                ></a>
+                <a href="#" class="social-media-icon"><i class="fab fa-youtube"></i></a>
               </li>
               <li class="comp-item">
-                <a href="#" class="social-media-icon"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
+                <a href="#" class="social-media-icon"><i class="fab fa-linkedin-in"></i></a>
               </li>
             </ul>
           </div>
@@ -617,27 +785,19 @@
               <div class="col-6 p-0">
                 <ul class="footer-list">
                   <li class="footer-item">
-                    <a class="footer-link" href="journaling.html"
-                      >កំណត់ត្រាប្រចាំថ្ងៃ</a
-                    >
+                    <a class="footer-link" href="journaling.html">កំណត់ត្រាប្រចាំថ្ងៃ</a>
                   </li>
                   <li class="footer-item">
-                    <a class="footer-link" href="money_spending.html"
-                      >តាមដានការចំណាយ</a
-                    >
+                    <a class="footer-link" href="money_spending.html">តាមដានការចំណាយ</a>
                   </li>
                   <li class="footer-item">
-                    <a class="footer-link" href="mood_tracking.html"
-                      >តាមដានផ្លូវចិត្ត</a
-                    >
+                    <a class="footer-link" href="mood_tracking.html">តាមដានផ្លូវចិត្ត</a>
                   </li>
                   <li class="footer-item">
                     <a class="footer-link" href="exercise.html">លំហាត់ប្រាណ</a>
                   </li>
                   <li class="footer-item">
-                    <a class="footer-link" href="therapist.html"
-                      >អ្នកជំនាញផ្លូវចិត្ត</a
-                    >
+                    <a class="footer-link" href="therapist.html">អ្នកជំនាញផ្លូវចិត្ត</a>
                   </li>
                   <li class="footer-item">
                     <a class="footer-link" href="mediation.html">សមាធិ</a>
@@ -659,9 +819,7 @@
                     <a class="footer-link" href="article.html">អត្ថបទ</a>
                   </li>
                   <li class="footer-item">
-                    <a class="footer-link" href="video_recommendation.html"
-                      >វីឌីអូអភិវឌ្ឍខ្លួន</a
-                    >
+                    <a class="footer-link" href="video_recommendation.html">វីឌីអូអភិវឌ្ឍខ្លួន</a>
                   </li>
                   <li class="footer-item">
                     <a class="footer-link" href="about_us.html">អំពីយើង</a>
@@ -708,13 +866,8 @@
             <div class="col-12">
               <div class="mb-3">
                 <div class="input-group mb-3">
-                  <input
-                    type="text"
-                    class="footer-input"
-                    placeholder="user@gmail.com"
-                    aria-label="user@gmail.com"
-                    aria-describedby="button-addon2"
-                  />
+                  <input type="text" class="footer-input" placeholder="user@gmail.com" aria-label="user@gmail.com"
+                    aria-describedby="button-addon2" />
                   <button class="btn-footer" type="button" id="button-addon2">
                     <i class="fa-solid fa-paper-plane"></i>
                   </button>
@@ -747,4 +900,5 @@
     <script src="assets/plugins/aos/js/aos.js"></script>
     <script src="assets/js/dark-mode.js"></script>
   </body>
+
 </html>
