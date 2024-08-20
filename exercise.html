@@ -1,137 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kamnot</title>
     <link rel="stylesheet" href="assets/css/bootstrap.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.css" />
     <link rel="stylesheet" href="assets/plugins/aos/css/aos.css" />
+    <link rel="stylesheet" href="assets/plugins/swiper js/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/plugins/plyr/css/plyr.css">
   </head>
+
   <body>
     <!-- ! begin of header -->
     <header class="position-fixed top-0 w-100">
-      <nav class="navbar navbar-expand-lg">
+      <nav class="navbar navbar-expand-lg nav-py30">
         <div class="container">
-          <a class="navbar-brand" href="index.html"
-            ><img src="assets/img/navbar/Kn-logo.png" alt=""
-          /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            aria-expanded="false"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasWithBothOptions"
-            aria-controls="offcanvasWithBothOptions"
-          >
+          <a class="navbar-brand" href="index.html"><img src="assets/img/navbar/Kn-logo.png" alt="" /></a>
+          <button class="navbar-toggler" type="button" aria-expanded="false" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
             <span class="nav-toggler-icon all-center"><i class="fa-solid fa-bars"></i></span>
           </button>
           <!-- ! begin of offcanvas -->
-          <div
-            class="offcanvas offcanvas-start d-lg-none"
-            data-bs-scroll="true"
-            tabindex="-1"
-            id="offcanvasWithBothOptions"
-            aria-labelledby="offcanvasWithBothOptionsLabel"
-          >
+          <div class="offcanvas offcanvas-start d-lg-none" data-bs-scroll="true" tabindex="-1"
+            id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
             <div class="offcanvas-header">
               <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
-                <a class="navbar-brand" href="index.html"
-                  ><img src="assets/img/navbar/Kn-logo.png" alt=""
-                /></a>
+                <a class="navbar-brand" href="index.html"><img src="assets/img/navbar/Kn-logo.png" alt="" /></a>
               </h5>
-              <button
-                type="button"
-                class="x-close all-center"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ><i class="fa-solid fa-xmark"></i></button>
+              <button type="button" class="x-close all-center" data-bs-dismiss="offcanvas" aria-label="Close"><i
+                  class="fa-solid fa-xmark"></i></button>
             </div>
             <div class="offcanvas-body">
               <div class="canvas-header d-flex justify-content-between">
-                <a
-                  href="profile_info.html"
-                  class="convas-pf rounded-circle overflow-hidden text-decoration-none"
-                >
+                <a href="profile_info.html" class="convas-pf rounded-circle overflow-hidden text-decoration-none">
                   <img src="assets/img/navbar/profile-img.png" alt="" />
                 </a>
                 <div class="d-flex align-items-center">
-                  <a
-                    href="cart.html"
-                    class="btn-add-cart all-center text-decoration-none"
-                    ><i class="fa-solid fa-cart-shopping"></i>
-                    <div class="cart-status all-center"><span>2 </span></div></a
-                  >
-                  <button
-                    type="button"
-                    data-theme-toggle
-                    id="theme-toggle-1"
-                    class="dark-light-mode all-center rounded-circle ms-3"
-                  ></button>
+                  <a href="cart.html" class="btn-add-cart all-center text-decoration-none"><i
+                      class="fa-solid fa-cart-shopping"></i>
+                    <div class="cart-status all-center"><span>2 </span></div>
+                  </a>
+                  <button type="button" data-theme-toggle id="theme-toggle-1"
+                    class="dark-light-mode all-center rounded-circle ms-3"></button>
                 </div>
               </div>
 
               <!-- ! begin navbar offcanvas -->
               <ul class="nav-convas">
                 <li class="convas-item">
-                  <a class="convas-link convas-bar-bg" href="index.html"
-                    ><i class="fa fa-house"></i> ទំព័រដើម</a
-                  >
+                  <a class="convas-link convas-bar-bg" href="index.html"><i class="fa fa-house"></i> ទំព័រដើម</a>
                 </li>
                 <li class="convas-item">
                   <input type="checkbox" id="showDropHabit" />
-                  <label
-                    for="showDropHabit"
-                    class="sub-convas-dropdown d-flex align-items-center justify-content-between"
-                    ><div>
+                  <label for="showDropHabit"
+                    class="sub-convas-dropdown d-flex align-items-center justify-content-between">
+                    <div>
                       <i class="fa-solid fa-calendar-check"></i>
                       ទម្លាប់ប្រចាំថ្ងៃ
                     </div>
-                    <i class="fa-solid fa-caret-down"></i
-                  ></label>
+                    <i class="fa-solid fa-caret-down"></i>
+                  </label>
                   <ul class="drop-menu">
                     <li class="convas-item">
-                      <a class="convas-link bbt-pf" href="journaling.html"
-                        >កំណត់ត្រាប្រចាំថ្ងៃ</a
-                      >
+                      <a class="convas-link bbt-pf" href="journaling.html">កំណត់ត្រាប្រចាំថ្ងៃ</a>
                     </li>
                     <li class="convas-item">
-                      <a class="convas-link bbt-pf" href="money_spending.html"
-                        >តាមដានការចំណាយ</a
-                      >
+                      <a class="convas-link bbt-pf" href="money_spending.html">តាមដានការចំណាយ</a>
                     </li>
                     <li class="convas-item">
-                      <a class="convas-link bbt-pf" href="mood_tracking.html"
-                        >តាមដានផ្លូវចិត្ត</a
-                      >
+                      <a class="convas-link bbt-pf" href="mood_tracking.html">តាមដានផ្លូវចិត្ត</a>
                     </li>
                     <li class="convas-item">
-                      <a class="convas-link" href="exercise.html"
-                        >លំហាត់ប្រាណ</a
-                      >
+                      <a class="convas-link" href="exercise.html">លំហាត់ប្រាណ</a>
                     </li>
                   </ul>
                 </li>
                 <li class="convas-item mt-10">
                   <input type="checkbox" id="showDropMentalhealth" />
-                  <label
-                    for="showDropMentalhealth"
-                    class="sub-convas-dropdown d-flex align-items-center justify-content-between"
-                    ><div>
+                  <label for="showDropMentalhealth"
+                    class="sub-convas-dropdown d-flex align-items-center justify-content-between">
+                    <div>
                       <i class="fa-solid fa-brain"></i> ស្ថានភាពផ្លូវចិត្ត
                     </div>
-                    <i class="fa-solid fa-caret-down"></i
-                  ></label>
+                    <i class="fa-solid fa-caret-down"></i>
+                  </label>
                   <ul class="drop-menu">
                     <li class="convas-item">
-                      <a class="convas-link bbt-pf" href="therapist.html"
-                        >អ្នកជំនាញផ្លូវចិត្ត</a
-                      >
+                      <a class="convas-link bbt-pf" href="therapist.html">អ្នកជំនាញផ្លូវចិត្ត</a>
                     </li>
                     <li class="convas-item">
                       <a class="convas-link" href="mediation.html">សមាធិ</a>
@@ -140,57 +99,45 @@
                 </li>
                 <li class="convas-item mt-10">
                   <input type="checkbox" id="showDropEdu" />
-                  <label
-                    for="showDropEdu"
-                    class="sub-convas-dropdown d-flex align-items-center justify-content-between"
-                    ><div>
+                  <label for="showDropEdu"
+                    class="sub-convas-dropdown d-flex align-items-center justify-content-between">
+                    <div>
                       <i class="fa-solid fa-book-open-reader"></i> ចំណេះដឹង
                     </div>
-                    <i class="fa-solid fa-caret-down"></i
-                  ></label>
+                    <i class="fa-solid fa-caret-down"></i>
+                  </label>
                   <ul class="drop-menu">
                     <li class="convas-item">
-                      <a class="convas-link bbt-pf" href="book_store.html"
-                        >សៀវភៅ</a
-                      >
+                      <a class="convas-link bbt-pf" href="book_store.html">សៀវភៅ</a>
                     </li>
                     <li class="convas-item">
-                      <a class="convas-link bbt-pf" href="event.html"
-                        >ព្រឹត្តិការណ៍</a
-                      >
+                      <a class="convas-link bbt-pf" href="event.html">ព្រឹត្តិការណ៍</a>
                     </li>
                     <li class="convas-item">
-                      <a class="convas-link" href="video_recommendation.html"
-                        >វីឌីអូអភិវឌ្ឍខ្លួន</a
-                      >
+                      <a class="convas-link" href="video_recommendation.html">វីឌីអូអភិវឌ្ឍខ្លួន</a>
                     </li>
                   </ul>
                 </li>
                 <li class="convas-item">
-                  <a class="convas-link convas-bar-bg mb-0" href="article.html"
-                    ><i class="fa-solid fa-newspaper"></i> អត្ថបទ</a
-                  >
+                  <a class="convas-link convas-bar-bg mb-0" href="article.html"><i class="fa-solid fa-newspaper"></i>
+                    អត្ថបទ</a>
                 </li>
                 <li class="convas-item">
-                  <a class="convas-link convas-bar-bg mb-0" href="article.html"
-                    ><i class="fa-solid fa-money-check-dollar"></i> តម្លៃ</a
-                  >
+                  <a class="convas-link convas-bar-bg mb-0" href="article.html"><i
+                      class="fa-solid fa-money-check-dollar"></i> តម្លៃ</a>
                 </li>
                 <li class="convas-item mt-10">
                   <input type="checkbox" id="showDropMoreInfo" />
-                  <label
-                    for="showDropMoreInfo"
-                    class="sub-convas-dropdown d-flex align-items-center justify-content-between"
-                    ><div>
+                  <label for="showDropMoreInfo"
+                    class="sub-convas-dropdown d-flex align-items-center justify-content-between">
+                    <div>
                       <i class="fa-solid fa-circle-info"></i> ព័ត៌មានបន្ថែម
                     </div>
-                    <i class="fa-solid fa-caret-down"></i
-                  ></label>
+                    <i class="fa-solid fa-caret-down"></i>
+                  </label>
                   <ul class="drop-menu">
                     <li class="convas-item">
-                      <a class="convas-link bbt-pf" href="about_us.html"
-                        >អំពីយើង</a
-                      >
+                      <a class="convas-link bbt-pf" href="about_us.html">អំពីយើង</a>
                     </li>
                     <li class="convas-item">
                       <a class="convas-link" href="contact_us.html">ទាក់ទង</a>
@@ -202,17 +149,11 @@
             </div>
           </div>
           <!-- ! end of offcanvas -->
-          <div
-            class="collapse navbar-collapse d-flex justify-content-end d-lg-block d-none"
-            id="navbarSupportedContent"
-          >
+          <div class="collapse navbar-collapse d-flex justify-content-end d-lg-block d-none"
+            id="navbarSupportedContent">
             <form class="search-bar d-flex" role="search">
-              <input
-                class="search-nav form-control me-3 position-relative"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
+              <input class="search-nav form-control me-3 position-relative" type="search" placeholder="Search"
+                aria-label="Search" />
               <i class="fa-solid fa-magnifying-glass position-absolute"></i>
             </form>
             <div class="profile d-flex flex-row align-items-center">
@@ -220,9 +161,7 @@
                 <i class="fa-solid fa-caret-down"></i>
               </div>
               <div class="pf-status d-flex flex-column align-items-end">
-                <a href="profile_info.html" class="pf-name text-decoration-none"
-                  >Wade Warren</a
-                >
+                <a href="profile_info.html" class="pf-name text-decoration-none">Wade Warren</a>
               </div>
               <div class="pf-image rounded-circle ms-2">
                 <img src="assets/img/navbar/profile-img.png" alt="" />
@@ -234,11 +173,7 @@
                   <li class="pf-item bbt-pf">
                     <a href="profile_info.html" class="pf-link d-flex">
                       <div class="dropdown-pf">
-                        <img
-                          src="assets/img/navbar/profile-img.png"
-                          class="rounded-circle"
-                          alt=""
-                        />
+                        <img src="assets/img/navbar/profile-img.png" class="rounded-circle" alt="" />
                       </div>
                       <p class="m-0">Wade Warren</p>
                     </a>
@@ -254,14 +189,9 @@
                 </ul>
               </div>
             </div>
-            <div
-              class="notification rounded-circle all-center position-relative ms-3"
-            >
+            <div class="notification rounded-circle all-center position-relative ms-3">
               <i class="fa-solid fa-bell"></i>
-              <span
-                class="notification-count bg-danger all-center text-white position-absolute"
-                >9</span
-              >
+              <span class="notification-count bg-danger all-center text-white position-absolute">9</span>
               <div class="noti-controll">
                 <div class="box-rotate"></div>
                 <div class="noti-content">
@@ -361,22 +291,13 @@
                       </a>
                     </li>
                   </ul>
-                  <a
-                    type="button"
-                    href="notification.html"
-                    role="button"
-                    class="bar-noti text-decoration-none w-100"
-                    >មើលទាំងអស់</a
-                  >
+                  <a type="button" href="notification.html" role="button"
+                    class="bar-noti text-decoration-none w-100">មើលទាំងអស់</a>
                 </div>
               </div>
             </div>
-            <button
-              type="button"
-              data-theme-toggle
-              id="theme-toggle-2"
-              class="dark-light-mode all-center rounded-circle ms-3"
-            ></button>
+            <button type="button" data-theme-toggle id="theme-toggle-2"
+              class="dark-light-mode all-center rounded-circle ms-3"></button>
           </div>
         </div>
       </nav>
@@ -391,13 +312,8 @@
             <div class="side-menu">
               <ul class="menu">
                 <li class="menu-item all-center">
-                  <a
-                    role="button"
-                    type="button"
-                    href="index.html"
-                    class="menu-btn active text-decoration-none all-center"
-                    ><i class="fa fa-house"></i
-                  ></a>
+                  <a role="button" type="button" href="index.html"
+                    class="menu-btn active text-decoration-none all-center"><i class="fa fa-house"></i></a>
                   <ul class="nav-menu">
                     <li class="menu-item">
                       <div class="menu-content">
@@ -423,24 +339,16 @@
                         </div>
                         <ul class="content-list">
                           <li class="content-item">
-                            <a href="journaling.html" class="content-link"
-                              >កំណត់ត្រាប្រចាំថ្ងៃ</a
-                            >
+                            <a href="journaling.html" class="content-link">កំណត់ត្រាប្រចាំថ្ងៃ</a>
                           </li>
                           <li class="content-item">
-                            <a href="journaling.html" class="content-link"
-                              >តាមដានការចំណាយ</a
-                            >
+                            <a href="journaling.html" class="content-link">តាមដានការចំណាយ</a>
                           </li>
                           <li class="content-item">
-                            <a href="journaling.html" class="content-link"
-                              >តាមដានផ្លូវចិត្ត</a
-                            >
+                            <a href="journaling.html" class="content-link">តាមដានផ្លូវចិត្ត</a>
                           </li>
                           <li class="content-item">
-                            <a href="journaling.html" class="content-link"
-                              >លំហាត់ប្រាណ</a
-                            >
+                            <a href="journaling.html" class="content-link">លំហាត់ប្រាណ</a>
                           </li>
                         </ul>
                       </div>
@@ -461,14 +369,10 @@
                         </div>
                         <ul class="content-list">
                           <li class="content-item">
-                            <a href="therapist.html" class="content-link"
-                              >អ្នកជំនាញផ្លូវចិត្ត</a
-                            >
+                            <a href="therapist.html" class="content-link">អ្នកជំនាញផ្លូវចិត្ត</a>
                           </li>
                           <li class="content-item">
-                            <a href="mediation.html" class="content-link"
-                              >សមាធិ</a
-                            >
+                            <a href="mediation.html" class="content-link">សមាធិ</a>
                           </li>
                         </ul>
                       </div>
@@ -489,19 +393,13 @@
                         </div>
                         <ul class="content-list">
                           <li class="content-item">
-                            <a href="therapist.html" class="content-link"
-                              >សៀវភៅ</a
-                            >
+                            <a href="therapist.html" class="content-link">សៀវភៅ</a>
                           </li>
                           <li class="content-item">
-                            <a href="mediation.html" class="content-link"
-                              >ព្រឹត្តិការណ៍</a
-                            >
+                            <a href="mediation.html" class="content-link">ព្រឹត្តិការណ៍</a>
                           </li>
                           <li class="content-item">
-                            <a href="mediation.html" class="content-link"
-                              >វីឌីអូអភិវឌ្ឍខ្លួន</a
-                            >
+                            <a href="mediation.html" class="content-link">វីឌីអូអភិវឌ្ឍខ្លួន</a>
                           </li>
                         </ul>
                       </div>
@@ -510,12 +408,8 @@
                   </ul>
                 </li>
                 <li class="menu-item all-center">
-                  <a
-                    href="pricing.html"
-                    type="button"
-                    class="menu-btn all-center text-decoration-none"
-                    ><i class="fa-solid fa-money-check-dollar"></i
-                  ></a>
+                  <a href="pricing.html" type="button" class="menu-btn all-center text-decoration-none"><i
+                      class="fa-solid fa-money-check-dollar"></i></a>
                   <ul class="nav-menu">
                     <li class="menu-item">
                       <div class="menu-content">
@@ -529,13 +423,8 @@
                   </ul>
                 </li>
                 <li class="menu-item all-center">
-                  <a
-                    role="button"
-                    href="article.html"
-                    type="button"
-                    class="menu-btn all-center text-decoration-none"
-                    ><i class="fa-solid fa-newspaper"></i
-                  ></a>
+                  <a role="button" href="article.html" type="button" class="menu-btn all-center text-decoration-none"><i
+                      class="fa-solid fa-newspaper"></i></a>
                   <ul class="nav-menu">
                     <li class="menu-item">
                       <div class="menu-content">
@@ -561,14 +450,10 @@
                         </div>
                         <ul class="content-list">
                           <li class="content-item">
-                            <a href="about_us.html" class="content-link"
-                              >អំពីយើង</a
-                            >
+                            <a href="about_us.html" class="content-link">អំពីយើង</a>
                           </li>
                           <li class="content-item">
-                            <a href="contact_us.html" class="content-link"
-                              >ទាក់ទង</a
-                            >
+                            <a href="contact_us.html" class="content-link">ទាក់ទង</a>
                           </li>
                         </ul>
                       </div>
@@ -584,12 +469,176 @@
           <div class="col-lg-11 col-12">
             <div class="pt-112 px-4 px-md-0">
               <!-- ? write your content here -->
-              <div class="box"></div>
-              <div class="box mt-3"></div>
-              <div class="box mt-3"></div>
-              <div class="box mt-3"></div>
-              <div class="box mt-3"></div>
-              <div class="box mt-3"></div>
+              <section class="exercise-banner">
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                  </div>
+                </div>
+              </section>
+              <section class="exer-vdo-watching mt-3">
+                <h3 class="main-text mb-3">វីដេអូកំពុងមើល</h3>
+                <div class="row g-3">
+                  <div class="col-7">
+                    <div class="exer-preview" id="player">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/Sou12pLJFCc?si=kyx8qcKIrTYRa_Ua" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                  <div class="col-5">
+                    <div class="exer-control">
+                      <ul class="exer-list">
+                        <li class="erxer-item border-top-0 d-flex">
+                          <div class="exer-thum">
+                            <img src="assets/img/article/mediation-girl-image.jpg" alt="">
+                          </div>
+                          <div class="list-vdo-detail d-flex flex-column">
+                            <h6>Warmup for 2-3 Minutes</h6>
+                          <p>
+                            High Knees, Push-Ups, Plank, Dumbbell Chest Press, Lat Pull Down, Squats
+                          </p>
+                          </div>
+                        </li>
+                        <li class="erxer-item d-flex">
+                          <div class="exer-thum">
+                            <img src="assets/img/article/mediation-girl-image.jpg" alt="">
+                          </div>
+                          <div class="list-vdo-detail d-flex flex-column">
+                            <h6>Warmup for 2-3 Minutes</h6>
+                          <p>
+                            High Knees, Push-Ups, Plank, Dumbbell Chest Press, Lat Pull Down, Squats
+                          </p>
+                          </div>
+                        </li>
+                        <li class="erxer-item d-flex">
+                          <div class="exer-thum">
+                            <img src="assets/img/article/mediation-girl-image.jpg" alt="">
+                          </div>
+                          <div class="list-vdo-detail d-flex flex-column">
+                            <h6>Warmup for 2-3 Minutes</h6>
+                          <p>
+                            High Knees, Push-Ups, Plank, Dumbbell Chest Press, Lat Pull Down, Squats
+                          </p>
+                          </div>
+                        </li>
+                        <li class="erxer-item d-flex">
+                          <div class="exer-thum">
+                            <img src="assets/img/article/mediation-girl-image.jpg" alt="">
+                          </div>
+                          <div class="list-vdo-detail d-flex flex-column">
+                            <h6>Warmup for 2-3 Minutes</h6>
+                          <p>
+                            High Knees, Push-Ups, Plank, Dumbbell Chest Press, Lat Pull Down, Squats
+                          </p>
+                          </div>
+                        </li>
+                        <li class="erxer-item d-flex">
+                          <div class="exer-thum">
+                            <img src="assets/img/article/mediation-girl-image.jpg" alt="">
+                          </div>
+                          <div class="list-vdo-detail d-flex flex-column">
+                            <h6>Warmup for 2-3 Minutes</h6>
+                          <p>
+                            High Knees, Push-Ups, Plank, Dumbbell Chest Press, Lat Pull Down, Squats
+                          </p>
+                          </div>
+                        </li>
+                        <li class="erxer-item d-flex">
+                          <div class="exer-thum">
+                            <img src="assets/img/article/mediation-girl-image.jpg" alt="">
+                          </div>
+                          <div class="list-vdo-detail d-flex flex-column">
+                            <h6>Warmup for 2-3 Minutes</h6>
+                          <p>
+                            High Knees, Push-Ups, Plank, Dumbbell Chest Press, Lat Pull Down, Squats
+                          </p>
+                          </div>
+                        </li>
+                        <li class="erxer-item d-flex">
+                          <div class="exer-thum">
+                            <img src="assets/img/article/mediation-girl-image.jpg" alt="">
+                          </div>
+                          <div class="list-vdo-detail d-flex flex-column">
+                            <h6>Warmup for 2-3 Minutes</h6>
+                          <p>
+                            High Knees, Push-Ups, Plank, Dumbbell Chest Press, Lat Pull Down, Squats
+                          </p>
+                          </div>
+                        </li>
+                        <li class="erxer-item d-flex">
+                          <div class="exer-thum">
+                            <img src="assets/img/article/mediation-girl-image.jpg" alt="">
+                          </div>
+                          <div class="list-vdo-detail d-flex flex-column">
+                            <h6>Warmup for 2-3 Minutes</h6>
+                          <p>
+                            High Knees, Push-Ups, Plank, Dumbbell Chest Press, Lat Pull Down, Squats
+                          </p>
+                          </div>
+                        </li>
+                        <li class="erxer-item d-flex">
+                          <div class="exer-thum">
+                            <img src="assets/img/article/mediation-girl-image.jpg" alt="">
+                          </div>
+                          <div class="list-vdo-detail d-flex flex-column">
+                            <h6>Warmup for 2-3 Minutes</h6>
+                          <p>
+                            High Knees, Push-Ups, Plank, Dumbbell Chest Press, Lat Pull Down, Squats
+                          </p>
+                          </div>
+                        </li>
+                        <li class="erxer-item d-flex">
+                          <div class="exer-thum">
+                            <img src="assets/img/article/mediation-girl-image.jpg" alt="">
+                          </div>
+                          <div class="list-vdo-detail d-flex flex-column">
+                            <h6>Warmup for 2-3 Minutes</h6>
+                          <p>
+                            High Knees, Push-Ups, Plank, Dumbbell Chest Press, Lat Pull Down, Squats
+                          </p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="exer-category popular-book">
+                <ul class="nav nav-pills tab-bg-book justify-content-center mb-3" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all-tab-pane"
+                      type="button" role="tab" aria-controls="all-tab-pane" aria-selected="true">
+                      ទាំងអស់់
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="cardio-tab" data-bs-toggle="tab" data-bs-target="#cardio-tab-pane"
+                      type="button" role="tab" aria-controls="cardio-tab-pane" aria-selected="false">
+                      Cardio
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="muscle-tab" data-bs-toggle="tab" data-bs-target="#muscle-tab-pane"
+                      type="button" role="tab" aria-controls="muscle-tab-pane" aria-selected="false">
+                      Muscle Building
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="flexi-tab" data-bs-toggle="tab" data-bs-target="#flexi-tab-pane"
+                      type="button" role="tab" aria-controls="flexi-tab-pane" aria-selected="false">
+                      Flexibility and Stretching
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="hiit-tab" data-bs-toggle="tab" data-bs-target="#hiit-tab-pane"
+                      type="button" role="tab" aria-controls="hiit-tab-pane" aria-selected="false">
+                      HIIT
+                    </button>
+                  </li>
+                </ul>
+              </section>
               <!-- ? end of write your content here -->
             </div>
           </div>
@@ -597,6 +646,7 @@
         </div>
       </div>
     </main>
+    
 
     <!-- ! begin of footer -->
     <footer class="footer">
@@ -604,12 +654,9 @@
       <div class="container py-3">
         <div class="row px-4 px-lg-0">
           <div class="col-lg-3 col-12">
-            <div
-              class="footer-logo w-100 d-lg-block d-flex justify-content-center"
-            >
-              <a href="index.html" class="text-decoration-none"
-                ><img src="assets/img/navbar/Kn-logo.png" alt="Kn-logo"
-              /></a>
+            <div class="footer-logo w-100 d-lg-block d-flex justify-content-center">
+              <a href="index.html" class="text-decoration-none"><img src="assets/img/navbar/Kn-logo.png"
+                  alt="Kn-logo" /></a>
             </div>
             <div class="comp-discript">
               <p>
@@ -621,29 +668,19 @@
             </div>
             <ul class="comp-social-media d-flex pb-3 pb-lg-0">
               <li class="comp-item">
-                <a href="#" class="social-media-icon"
-                  ><i class="fab fa-facebook-f"></i
-                ></a>
+                <a href="#" class="social-media-icon"><i class="fab fa-facebook-f"></i></a>
               </li>
               <li class="comp-item">
-                <a href="#" class="social-media-icon"
-                  ><i class="fab fa-twitter"></i
-                ></a>
+                <a href="#" class="social-media-icon"><i class="fab fa-twitter"></i></a>
               </li>
               <li class="comp-item">
-                <a href="#" class="social-media-icon"
-                  ><i class="fab fa-instagram"></i
-                ></a>
+                <a href="#" class="social-media-icon"><i class="fab fa-instagram"></i></a>
               </li>
               <li class="comp-item">
-                <a href="#" class="social-media-icon"
-                  ><i class="fab fa-youtube"></i
-                ></a>
+                <a href="#" class="social-media-icon"><i class="fab fa-youtube"></i></a>
               </li>
               <li class="comp-item">
-                <a href="#" class="social-media-icon"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
+                <a href="#" class="social-media-icon"><i class="fab fa-linkedin-in"></i></a>
               </li>
             </ul>
           </div>
@@ -653,27 +690,19 @@
               <div class="col-6 p-0">
                 <ul class="footer-list">
                   <li class="footer-item">
-                    <a class="footer-link" href="journaling.html"
-                      >កំណត់ត្រាប្រចាំថ្ងៃ</a
-                    >
+                    <a class="footer-link" href="journaling.html">កំណត់ត្រាប្រចាំថ្ងៃ</a>
                   </li>
                   <li class="footer-item">
-                    <a class="footer-link" href="money_spending.html"
-                      >តាមដានការចំណាយ</a
-                    >
+                    <a class="footer-link" href="money_spending.html">តាមដានការចំណាយ</a>
                   </li>
                   <li class="footer-item">
-                    <a class="footer-link" href="mood_tracking.html"
-                      >តាមដានផ្លូវចិត្ត</a
-                    >
+                    <a class="footer-link" href="mood_tracking.html">តាមដានផ្លូវចិត្ត</a>
                   </li>
                   <li class="footer-item">
                     <a class="footer-link" href="exercise.html">លំហាត់ប្រាណ</a>
                   </li>
                   <li class="footer-item">
-                    <a class="footer-link" href="therapist.html"
-                      >អ្នកជំនាញផ្លូវចិត្ត</a
-                    >
+                    <a class="footer-link" href="therapist.html">អ្នកជំនាញផ្លូវចិត្ត</a>
                   </li>
                   <li class="footer-item">
                     <a class="footer-link" href="mediation.html">សមាធិ</a>
@@ -695,9 +724,7 @@
                     <a class="footer-link" href="article.html">អត្ថបទ</a>
                   </li>
                   <li class="footer-item">
-                    <a class="footer-link" href="video_recommendation.html"
-                      >វីឌីអូអភិវឌ្ឍខ្លួន</a
-                    >
+                    <a class="footer-link" href="video_recommendation.html">វីឌីអូអភិវឌ្ឍខ្លួន</a>
                   </li>
                   <li class="footer-item">
                     <a class="footer-link" href="about_us.html">អំពីយើង</a>
@@ -744,13 +771,8 @@
             <div class="col-12">
               <div class="mb-3">
                 <div class="input-group mb-3">
-                  <input
-                    type="text"
-                    class="footer-input"
-                    placeholder="user@gmail.com"
-                    aria-label="user@gmail.com"
-                    aria-describedby="button-addon2"
-                  />
+                  <input type="text" class="footer-input" placeholder="user@gmail.com" aria-label="user@gmail.com"
+                    aria-describedby="button-addon2" />
                   <button class="btn-footer" type="button" id="button-addon2">
                     <i class="fa-solid fa-paper-plane"></i>
                   </button>
@@ -782,5 +804,22 @@
     <script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/plugins/aos/js/aos.js"></script>
     <script src="assets/js/dark-mode.js"></script>
+    <script src="assets/plugins/swiper js/js/swiper-bundle.min.js"></script>
+    <script src="assets/plugins/plyr/js/plyr.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        loop: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+      });
+    </script>
+    <script>
+      const player = new Plyr('#player');
+    </script>
   </body>
+
 </html>

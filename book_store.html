@@ -1,63 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kamnot</title>
     <link rel="stylesheet" href="assets/css/bootstrap.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.css" />
     <link rel="stylesheet" href="assets/plugins/aos/css/aos.css" />
-    <link rel="stylesheet" href="assets/plugins/swiper js/css/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="assets/plugins/swiper js/css/swiper-bundle.min.css"
+    />
   </head>
 
   <body>
     <!-- ! begin of header -->
     <header class="position-fixed top-0 w-100">
-      <nav class="navbar navbar-expand-lg">
+      <nav class="navbar navbar-expand-lg nav-py30">
         <div class="container">
-          <a class="navbar-brand" href="index.html"><img src="assets/img/navbar/Kn-logo.png" alt="" /></a>
-          <button class="navbar-toggler" type="button" aria-expanded="false" data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
-            <span class="nav-toggler-icon all-center"><i class="fa-solid fa-bars"></i></span>
+          <a class="navbar-brand" href="index.html"
+            ><img src="assets/img/navbar/Kn-logo.png" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            aria-expanded="false"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasWithBothOptions"
+            aria-controls="offcanvasWithBothOptions"
+          >
+            <span class="nav-toggler-icon all-center"
+              ><i class="fa-solid fa-bars"></i
+            ></span>
           </button>
           <!-- ! begin of offcanvas -->
-          <div class="offcanvas offcanvas-start d-lg-none" data-bs-scroll="true" tabindex="-1"
-            id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+          <div
+            class="offcanvas offcanvas-start d-lg-none"
+            data-bs-scroll="true"
+            tabindex="-1"
+            id="offcanvasWithBothOptions"
+            aria-labelledby="offcanvasWithBothOptionsLabel"
+          >
             <div class="offcanvas-header">
               <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
-                <a class="navbar-brand" href="index.html"><img src="assets/img/navbar/Kn-logo.png" alt="" /></a>
+                <a class="navbar-brand" href="index.html"
+                  ><img src="assets/img/navbar/Kn-logo.png" alt=""
+                /></a>
               </h5>
-              <button type="button" class="x-close all-center" data-bs-dismiss="offcanvas" aria-label="Close">
+              <button
+                type="button"
+                class="x-close all-center"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              >
                 <i class="fa-solid fa-xmark"></i>
               </button>
             </div>
             <div class="offcanvas-body">
               <div class="canvas-header d-flex justify-content-between">
-                <a href="profile_info.html" class="convas-pf rounded-circle overflow-hidden text-decoration-none">
+                <a
+                  href="profile_info.html"
+                  class="convas-pf rounded-circle overflow-hidden text-decoration-none"
+                >
                   <img src="assets/img/navbar/profile-img.png" alt="" />
                 </a>
                 <div class="d-flex align-items-center">
-                  <a href="cart.html" class="btn-add-cart all-center text-decoration-none"><i
-                      class="fa-solid fa-cart-shopping"></i>
-                    <div class="cart-status all-center"><span>2 </span></div>
+                  <a
+                    class="btn-add-cart all-center text-decoration-none me-3"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    ><i class="fa-solid fa-cart-shopping"></i>
+                    <div class="cart-status all-center"><span>2</span></div>
                   </a>
-                  <button type="button" data-theme-toggle id="theme-toggle-1"
-                    class="dark-light-mode all-center rounded-circle ms-3"></button>
+                  <button
+                    type="button"
+                    data-theme-toggle
+                    id="theme-toggle-1"
+                    class="dark-light-mode all-center rounded-circle ms-3"
+                  ></button>
                 </div>
               </div>
 
               <!-- ! begin navbar offcanvas -->
               <ul class="nav-convas">
                 <li class="convas-item">
-                  <a class="convas-link convas-bar-bg" href="index.html"><i class="fa fa-house"></i> ទំព័រដើម</a>
+                  <a class="convas-link convas-bar-bg" href="index.html"
+                    ><i class="fa fa-house"></i> ទំព័រដើម</a
+                  >
                 </li>
                 <li class="convas-item">
                   <input type="checkbox" id="showDropHabit" />
-                  <label for="showDropHabit"
-                    class="sub-convas-dropdown d-flex align-items-center justify-content-between">
+                  <label
+                    for="showDropHabit"
+                    class="sub-convas-dropdown d-flex align-items-center justify-content-between"
+                  >
                     <div>
                       <i class="fa-solid fa-calendar-check"></i>
                       ទម្លាប់ប្រចាំថ្ងៃ
@@ -66,23 +107,33 @@
                   </label>
                   <ul class="drop-menu">
                     <li class="convas-item">
-                      <a class="convas-link bbt-pf" href="journaling.html">កំណត់ត្រាប្រចាំថ្ងៃ</a>
+                      <a class="convas-link bbt-pf" href="journaling.html"
+                        >កំណត់ត្រាប្រចាំថ្ងៃ</a
+                      >
                     </li>
                     <li class="convas-item">
-                      <a class="convas-link bbt-pf" href="money_spending.html">តាមដានការចំណាយ</a>
+                      <a class="convas-link bbt-pf" href="money_spending.html"
+                        >តាមដានការចំណាយ</a
+                      >
                     </li>
                     <li class="convas-item">
-                      <a class="convas-link bbt-pf" href="mood_tracking.html">តាមដានផ្លូវចិត្ត</a>
+                      <a class="convas-link bbt-pf" href="mood_tracking.html"
+                        >តាមដានផ្លូវចិត្ត</a
+                      >
                     </li>
                     <li class="convas-item">
-                      <a class="convas-link" href="exercise.html">លំហាត់ប្រាណ</a>
+                      <a class="convas-link" href="exercise.html"
+                        >លំហាត់ប្រាណ</a
+                      >
                     </li>
                   </ul>
                 </li>
                 <li class="convas-item mt-10">
                   <input type="checkbox" id="showDropMentalhealth" />
-                  <label for="showDropMentalhealth"
-                    class="sub-convas-dropdown d-flex align-items-center justify-content-between">
+                  <label
+                    for="showDropMentalhealth"
+                    class="sub-convas-dropdown d-flex align-items-center justify-content-between"
+                  >
                     <div>
                       <i class="fa-solid fa-brain"></i> ស្ថានភាពផ្លូវចិត្ត
                     </div>
@@ -90,7 +141,9 @@
                   </label>
                   <ul class="drop-menu">
                     <li class="convas-item">
-                      <a class="convas-link bbt-pf" href="therapist.html">អ្នកជំនាញផ្លូវចិត្ត</a>
+                      <a class="convas-link bbt-pf" href="therapist.html"
+                        >អ្នកជំនាញផ្លូវចិត្ត</a
+                      >
                     </li>
                     <li class="convas-item">
                       <a class="convas-link" href="mediation.html">សមាធិ</a>
@@ -99,8 +152,10 @@
                 </li>
                 <li class="convas-item mt-10">
                   <input type="checkbox" id="showDropEdu" />
-                  <label for="showDropEdu"
-                    class="sub-convas-dropdown d-flex align-items-center justify-content-between">
+                  <label
+                    for="showDropEdu"
+                    class="sub-convas-dropdown d-flex align-items-center justify-content-between"
+                  >
                     <div>
                       <i class="fa-solid fa-book-open-reader"></i> ចំណេះដឹង
                     </div>
@@ -108,28 +163,38 @@
                   </label>
                   <ul class="drop-menu">
                     <li class="convas-item">
-                      <a class="convas-link bbt-pf" href="book_store.html">សៀវភៅ</a>
+                      <a class="convas-link bbt-pf" href="book_store.html"
+                        >សៀវភៅ</a
+                      >
                     </li>
                     <li class="convas-item">
-                      <a class="convas-link bbt-pf" href="event.html">ព្រឹត្តិការណ៍</a>
+                      <a class="convas-link bbt-pf" href="event.html"
+                        >ព្រឹត្តិការណ៍</a
+                      >
                     </li>
                     <li class="convas-item">
-                      <a class="convas-link" href="video_recommendation.html">វីឌីអូអភិវឌ្ឍខ្លួន</a>
+                      <a class="convas-link" href="video_recommendation.html"
+                        >វីឌីអូអភិវឌ្ឍខ្លួន</a
+                      >
                     </li>
                   </ul>
                 </li>
                 <li class="convas-item">
-                  <a class="convas-link convas-bar-bg mb-0" href="article.html"><i class="fa-solid fa-newspaper"></i>
-                    អត្ថបទ</a>
+                  <a class="convas-link convas-bar-bg mb-0" href="article.html"
+                    ><i class="fa-solid fa-newspaper"></i> អត្ថបទ</a
+                  >
                 </li>
                 <li class="convas-item">
-                  <a class="convas-link convas-bar-bg mb-0" href="article.html"><i
-                      class="fa-solid fa-money-check-dollar"></i> តម្លៃ</a>
+                  <a class="convas-link convas-bar-bg mb-0" href="article.html"
+                    ><i class="fa-solid fa-money-check-dollar"></i> តម្លៃ</a
+                  >
                 </li>
                 <li class="convas-item mt-10">
                   <input type="checkbox" id="showDropMoreInfo" />
-                  <label for="showDropMoreInfo"
-                    class="sub-convas-dropdown d-flex align-items-center justify-content-between">
+                  <label
+                    for="showDropMoreInfo"
+                    class="sub-convas-dropdown d-flex align-items-center justify-content-between"
+                  >
                     <div>
                       <i class="fa-solid fa-circle-info"></i> ព័ត៌មានបន្ថែម
                     </div>
@@ -137,7 +202,9 @@
                   </label>
                   <ul class="drop-menu">
                     <li class="convas-item">
-                      <a class="convas-link bbt-pf" href="about_us.html">អំពីយើង</a>
+                      <a class="convas-link bbt-pf" href="about_us.html"
+                        >អំពីយើង</a
+                      >
                     </li>
                     <li class="convas-item">
                       <a class="convas-link" href="contact_us.html">ទាក់ទង</a>
@@ -149,15 +216,24 @@
             </div>
           </div>
           <!-- ! end of offcanvas -->
-          <div class="collapse navbar-collapse d-flex justify-content-end d-lg-block d-none"
-            id="navbarSupportedContent">
-            <a href="cart.html" class="btn-add-cart all-center text-decoration-none me-3"><i
-                class="fa-solid fa-cart-shopping"></i>
-              <div class="cart-status all-center"><span>2 </span></div>
+          <div
+            class="collapse navbar-collapse d-flex justify-content-end d-lg-block d-none"
+            id="navbarSupportedContent"
+          >
+            <a
+              class="btn-add-cart all-center text-decoration-none me-3"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              ><i class="fa-solid fa-cart-shopping"></i>
+              <div class="cart-status all-center"><span>2</span></div>
             </a>
             <form class="search-bar d-flex" role="search">
-              <input class="search-nav form-control me-3 position-relative" type="search" placeholder="Search"
-                aria-label="Search" />
+              <input
+                class="search-nav form-control me-3 position-relative"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
               <i class="fa-solid fa-magnifying-glass position-absolute"></i>
             </form>
             <div class="profile d-flex flex-row align-items-center">
@@ -165,7 +241,9 @@
                 <i class="fa-solid fa-caret-down"></i>
               </div>
               <div class="pf-status d-flex flex-column align-items-end">
-                <a href="profile_info.html" class="pf-name text-decoration-none">Wade Warren</a>
+                <a href="profile_info.html" class="pf-name text-decoration-none"
+                  >Wade Warren</a
+                >
               </div>
               <div class="pf-image rounded-circle ms-2">
                 <img src="assets/img/navbar/profile-img.png" alt="" />
@@ -177,7 +255,11 @@
                   <li class="pf-item bbt-pf">
                     <a href="profile_info.html" class="pf-link d-flex">
                       <div class="dropdown-pf">
-                        <img src="assets/img/navbar/profile-img.png" class="rounded-circle" alt="" />
+                        <img
+                          src="assets/img/navbar/profile-img.png"
+                          class="rounded-circle"
+                          alt=""
+                        />
                       </div>
                       <p class="m-0">Wade Warren</p>
                     </a>
@@ -193,9 +275,14 @@
                 </ul>
               </div>
             </div>
-            <div class="notification rounded-circle all-center position-relative ms-3">
+            <div
+              class="notification rounded-circle all-center position-relative ms-3"
+            >
               <i class="fa-solid fa-bell"></i>
-              <span class="notification-count bg-danger all-center text-white position-absolute">9</span>
+              <span
+                class="notification-count bg-danger all-center text-white position-absolute"
+                >9</span
+              >
               <div class="noti-controll">
                 <div class="box-rotate"></div>
                 <div class="noti-content">
@@ -295,17 +382,181 @@
                       </a>
                     </li>
                   </ul>
-                  <a type="button" href="notification.html" role="button"
-                    class="bar-noti text-decoration-none w-100">មើលទាំងអស់</a>
+                  <a
+                    type="button"
+                    href="notification.html"
+                    role="button"
+                    class="bar-noti text-decoration-none w-100"
+                    >មើលទាំងអស់</a
+                  >
                 </div>
               </div>
             </div>
-            <button type="button" data-theme-toggle id="theme-toggle-2"
-              class="dark-light-mode all-center rounded-circle ms-3"></button>
+            <button
+              type="button"
+              data-theme-toggle
+              id="theme-toggle-2"
+              class="dark-light-mode all-center rounded-circle ms-3"
+            ></button>
           </div>
         </div>
       </nav>
     </header>
+    <!-- Modal -->
+    <div
+      class="modal cart-modal-size overflow-hidden fade shown"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog cart-dialog">
+        <div class="modal-content cart-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-2" id="exampleModalLabel">
+              ការទូទាត់ប្រាក់
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body cart-modal-body m-0">
+            <div class="row">
+              <ul class="cart-book-list">
+                <li class="book-item d-flex pt-0">
+                  <div class="col-2">
+                    <div class="cart-book-image d-flex">
+                      <img
+                        src="assets/img/book/the_healing_of_trauma.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="col-4 p-0">
+                    <div class="cart-book-detail d-flex flex-column ps-3">
+                      <h5 class="m-0">The Law of Power</h5>
+                      <p class="m-0">ដោយ៖ Robert Greene</p>
+                      <span class="book-price">$14.55</span>
+                      <div class="d-flex flex-row align-items-center mt-3">
+                        <a
+                          type="button"
+                          class="btn-add-qty text-decoration-none all-center"
+                          ><i class="fa-solid fa-plus"></i
+                        ></a>
+                        <div class="qty-count mx-3"><span>1</span></div>
+                        <a
+                          type="button"
+                          class="btn-add-qty text-decoration-none all-center"
+                          ><i class="fa-solid fa-minus"></i
+                        ></a>
+                      </div>
+                      <p class="cart-total-book pt-2 m-0">
+                        លុយសរុប៖ <span class="book-price">$14.55</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="col-6 d-flex align-items-center justify-content-end"
+                  >
+                    <a type="button" class="btn btn-danger">យកចេញ</a>
+                  </div>
+                </li>
+                <li class="book-item d-flex">
+                  <div class="col-2">
+                    <div class="cart-book-image d-flex">
+                      <img
+                        src="assets/img/book/the_healing_of_trauma.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="col-4 p-0">
+                    <div class="cart-book-detail d-flex flex-column ps-3">
+                      <h5 class="m-0">The Law of Power</h5>
+                      <p class="m-0">ដោយ៖ Robert Greene</p>
+                      <span class="book-price">$14.55</span>
+                      <div class="d-flex flex-row align-items-center mt-3">
+                        <a
+                          type="button"
+                          class="btn-add-qty text-decoration-none all-center"
+                          ><i class="fa-solid fa-plus"></i
+                        ></a>
+                        <div class="qty-count mx-3"><span>1</span></div>
+                        <a
+                          type="button"
+                          class="btn-add-qty text-decoration-none all-center"
+                          ><i class="fa-solid fa-minus"></i
+                        ></a>
+                      </div>
+                      <p class="cart-total-book pt-2 m-0">
+                        លុយសរុប៖ <span class="book-price">$14.55</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="col-6 d-flex align-items-center justify-content-end"
+                  >
+                    <a type="button" class="btn btn-danger">យកចេញ</a>
+                  </div>
+                </li>
+                <li class="book-item d-flex">
+                  <div class="col-2">
+                    <div class="cart-book-image d-flex">
+                      <img
+                        src="assets/img/book/the_healing_of_trauma.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="col-4 p-0">
+                    <div class="cart-book-detail d-flex flex-column ps-3">
+                      <h5 class="m-0">The Law of Power</h5>
+                      <p class="m-0">ដោយ៖ Robert Greene</p>
+                      <span class="book-price">$14.55</span>
+                      <div class="d-flex flex-row align-items-center mt-3">
+                        <a
+                          type="button"
+                          class="btn-add-qty text-decoration-none all-center"
+                          ><i class="fa-solid fa-plus"></i
+                        ></a>
+                        <div class="qty-count mx-3"><span>1</span></div>
+                        <a
+                          type="button"
+                          class="btn-add-qty text-decoration-none all-center"
+                          ><i class="fa-solid fa-minus"></i
+                        ></a>
+                      </div>
+                      <p class="cart-total-book pt-2 m-0">
+                        លុយសរុប៖ <span class="book-price">$14.55</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="col-6 d-flex align-items-center justify-content-end"
+                  >
+                    <a type="button" class="btn btn-danger">យកចេញ</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="modal-footer cart-modal-footer d-flex justify-content-between"
+          >
+            <div>
+              <p class="m-0 book-total">ចំនួនសៀវភៅសរុប៖ 3 ក្បាល</p>
+              <p class="m-0 sum-price">
+                តម្លៃបូកសរុប៖ <span class="text-danger">$85.40</span>
+              </p>
+            </div>
+            <a type="button" href="#" class="btn btn-success">ទូទាត់ប្រាក់</a>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- ! end of header -->
 
     <main>
@@ -316,8 +567,13 @@
             <div class="side-menu">
               <ul class="menu">
                 <li class="menu-item all-center">
-                  <a role="button" type="button" href="index.html"
-                    class="menu-btn active text-decoration-none all-center"><i class="fa fa-house"></i></a>
+                  <a
+                    role="button"
+                    type="button"
+                    href="index.html"
+                    class="menu-btn active text-decoration-none all-center"
+                    ><i class="fa fa-house"></i
+                  ></a>
                   <ul class="nav-menu">
                     <li class="menu-item">
                       <div class="menu-content">
@@ -343,16 +599,24 @@
                         </div>
                         <ul class="content-list">
                           <li class="content-item">
-                            <a href="journaling.html" class="content-link">កំណត់ត្រាប្រចាំថ្ងៃ</a>
+                            <a href="journaling.html" class="content-link"
+                              >កំណត់ត្រាប្រចាំថ្ងៃ</a
+                            >
                           </li>
                           <li class="content-item">
-                            <a href="journaling.html" class="content-link">តាមដានការចំណាយ</a>
+                            <a href="journaling.html" class="content-link"
+                              >តាមដានការចំណាយ</a
+                            >
                           </li>
                           <li class="content-item">
-                            <a href="journaling.html" class="content-link">តាមដានផ្លូវចិត្ត</a>
+                            <a href="journaling.html" class="content-link"
+                              >តាមដានផ្លូវចិត្ត</a
+                            >
                           </li>
                           <li class="content-item">
-                            <a href="journaling.html" class="content-link">លំហាត់ប្រាណ</a>
+                            <a href="journaling.html" class="content-link"
+                              >លំហាត់ប្រាណ</a
+                            >
                           </li>
                         </ul>
                       </div>
@@ -373,10 +637,14 @@
                         </div>
                         <ul class="content-list">
                           <li class="content-item">
-                            <a href="therapist.html" class="content-link">អ្នកជំនាញផ្លូវចិត្ត</a>
+                            <a href="therapist.html" class="content-link"
+                              >អ្នកជំនាញផ្លូវចិត្ត</a
+                            >
                           </li>
                           <li class="content-item">
-                            <a href="mediation.html" class="content-link">សមាធិ</a>
+                            <a href="mediation.html" class="content-link"
+                              >សមាធិ</a
+                            >
                           </li>
                         </ul>
                       </div>
@@ -397,13 +665,19 @@
                         </div>
                         <ul class="content-list">
                           <li class="content-item">
-                            <a href="therapist.html" class="content-link">សៀវភៅ</a>
+                            <a href="therapist.html" class="content-link"
+                              >សៀវភៅ</a
+                            >
                           </li>
                           <li class="content-item">
-                            <a href="mediation.html" class="content-link">ព្រឹត្តិការណ៍</a>
+                            <a href="mediation.html" class="content-link"
+                              >ព្រឹត្តិការណ៍</a
+                            >
                           </li>
                           <li class="content-item">
-                            <a href="mediation.html" class="content-link">វីឌីអូអភិវឌ្ឍខ្លួន</a>
+                            <a href="mediation.html" class="content-link"
+                              >វីឌីអូអភិវឌ្ឍខ្លួន</a
+                            >
                           </li>
                         </ul>
                       </div>
@@ -412,8 +686,12 @@
                   </ul>
                 </li>
                 <li class="menu-item all-center">
-                  <a href="pricing.html" type="button" class="menu-btn all-center text-decoration-none"><i
-                      class="fa-solid fa-money-check-dollar"></i></a>
+                  <a
+                    href="pricing.html"
+                    type="button"
+                    class="menu-btn all-center text-decoration-none"
+                    ><i class="fa-solid fa-money-check-dollar"></i
+                  ></a>
                   <ul class="nav-menu">
                     <li class="menu-item">
                       <div class="menu-content">
@@ -427,8 +705,13 @@
                   </ul>
                 </li>
                 <li class="menu-item all-center">
-                  <a role="button" href="article.html" type="button" class="menu-btn all-center text-decoration-none"><i
-                      class="fa-solid fa-newspaper"></i></a>
+                  <a
+                    role="button"
+                    href="article.html"
+                    type="button"
+                    class="menu-btn all-center text-decoration-none"
+                    ><i class="fa-solid fa-newspaper"></i
+                  ></a>
                   <ul class="nav-menu">
                     <li class="menu-item">
                       <div class="menu-content">
@@ -454,10 +737,14 @@
                         </div>
                         <ul class="content-list">
                           <li class="content-item">
-                            <a href="about_us.html" class="content-link">អំពីយើង</a>
+                            <a href="about_us.html" class="content-link"
+                              >អំពីយើង</a
+                            >
                           </li>
                           <li class="content-item">
-                            <a href="contact_us.html" class="content-link">ទាក់ទង</a>
+                            <a href="contact_us.html" class="content-link"
+                              >ទាក់ទង</a
+                            >
                           </li>
                         </ul>
                       </div>
@@ -479,13 +766,22 @@
                     <div class="swiper mySwiper">
                       <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                          <img src="assets/img/book/banner-picture/banner-sample-book.jpg" alt="" />
+                          <img
+                            src="assets/img/book/banner-picture/banner-sample-book.jpg"
+                            alt=""
+                          />
                         </div>
                         <div class="swiper-slide">
-                          <img src="assets/img/book/banner-picture/banner-sample-book.jpg" alt="" />
+                          <img
+                            src="assets/img/book/banner-picture/banner-sample-book.jpg"
+                            alt=""
+                          />
                         </div>
                         <div class="swiper-slide">
-                          <img src="assets/img/book/banner-picture/banner-sample-book.jpg" alt="" />
+                          <img
+                            src="assets/img/book/banner-picture/banner-sample-book.jpg"
+                            alt=""
+                          />
                         </div>
                       </div>
                       <div class="swiper-pagination"></div>
@@ -495,47 +791,2606 @@
               </section>
               <section class="popular-book py-3">
                 <div class="col-12">
-                  <ul class="nav nav-pills tab-bg-book justify-content-center mb-3" id="myTab" role="tablist">
+                  <ul
+                    class="nav nav-pills tab-bg-book justify-content-center mb-3"
+                    id="myTab"
+                    role="tablist"
+                  >
                     <li class="nav-item" role="presentation">
-                      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
-                        type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">ទាំងអស់់</button>
+                      <button
+                        class="nav-link active"
+                        id="all-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#all-tab-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="all-tab-pane"
+                        aria-selected="true"
+                      >
+                        ទាំងអស់់
+                      </button>
                     </li>
                     <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
-                        type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">ការអភិវឌ្ឍខ្លួន</button>
+                      <button
+                        class="nav-link"
+                        id="motivation-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#motivation-tab-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="motivation-tab-pane"
+                        aria-selected="false"
+                      >
+                        ការលើកទឹកចិត្ត
+                      </button>
                     </li>
                     <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
-                        type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">លុយកាក់</button>
+                      <button
+                        class="nav-link"
+                        id="psycho-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#psycho-tab-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="psycho-tab-pane"
+                        aria-selected="false"
+                      >
+                        ចិត្តវិទ្យា
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="leader-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#leader-tab-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="leader-tab-pane"
+                        aria-selected="false"
+                      >
+                        ភាពជាអ្នកដឹកនាំ
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="finan-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#finan-tab-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="finan-tab-pane"
+                        aria-selected="false"
+                      >
+                        ហិរញ្ញវត្ថុ
+                      </button>
                     </li>
                   </ul>
                   <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
-                      tabindex="0">
-                      <h2>ទាំងអស់់</h2>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Donec malesuada arcu nec
-                        diam viverra, ac posuere lacus malesuada. Sed viverra, nunc non faucibus semper, nunc velit
-                        ullamcorper nunc, non vestibulum ligula erat eu velit. Nulla facilisi. Donec malesuada arcu nec diam
-                        viverra, ac posuere lacus malesuada. Sed viverra, nunc non faucibus semper, nunc velit ullamcorper
-                        nunc, non vestibulum ligula erat eu velit.</p>
+                    <div
+                      class="tab-pane fade show active"
+                      id="all-tab-pane"
+                      role="tabpanel"
+                      aria-labelledby="all-tab"
+                      tabindex="0"
+                    >
+                      <section class="reading-book p-2 m-2 me-0 ms-0">
+                        <div class="row">
+                          <div class="col-12">
+                            <div
+                              class="d-flex justify-content-between align-content-center mb-2"
+                            >
+                              <h3 class="book-reading-title">សៀវភៅកំពុងអាន</h3>
+                              <a
+                                href="book_store.html"
+                                class="text-decoration-none align-self-center book-see-more"
+                                >មើលបន្ថែម</a
+                              >
+                            </div>
+                            <div class="row g-3">
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  type="button"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#reading-book-modal"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/The_Psychology_of_Money.jpg"
+                                      alt=""
+                                    />
+                                  </div>
+                                </a>
+                                <a
+                                  type="button"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#reading-book-modal"
+                                  class="conti-read mt-2 text-decoration-none text-center"
+                                  >អានបន្ថែម</a
+                                >
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  type="button"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#reading-book-modal"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/The_33_Strategies_of_War.jpg"
+                                      alt=""
+                                    />
+                                  </div>
+                                </a>
+                                <a
+                                  type="button"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#reading-book-modal"
+                                  class="conti-read mt-2 text-decoration-none text-center"
+                                  >អានបន្ថែម</a
+                                >
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  type="button"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#reading-book-modal"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/The_5Am_Club.jpg"
+                                      alt=""
+                                    />
+                                  </div>
+                                </a>
+                                <a
+                                  type="button"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#reading-book-modal"
+                                  class="conti-read mt-2 text-decoration-none text-center"
+                                  >អានបន្ថែម</a
+                                >
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  type="button"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#reading-book-modal"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/Think_and_Grow_Rich.jpg"
+                                      alt=""
+                                    />
+                                  </div>
+                                </a>
+                                <a
+                                  type="button"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#reading-book-modal"
+                                  class="conti-read mt-2 text-decoration-none text-center"
+                                  >អានបន្ថែម</a
+                                >
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  type="button"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#reading-book-modal"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/The_Undoing_Project.jpg"
+                                      alt=""
+                                    />
+                                  </div>
+                                </a>
+                                <a
+                                  type="button"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#reading-book-modal"
+                                  class="conti-read mt-2 text-decoration-none text-center"
+                                  >អានបន្ថែម</a
+                                >
+                              </div>
+                              <!-- Modal -->
+                              <div
+                                class="modal fade"
+                                id="reading-book-modal"
+                                tabindex="-1"
+                                aria-labelledby="reading-book-modalLabel"
+                                aria-hidden="true"
+                              >
+                                <div class="modal-dialog">
+                                  <div
+                                    class="modal-content modal-reading-content"
+                                  >
+                                    <div class="modal-header">
+                                      <h1
+                                        class="modal-title fs-5"
+                                        id="eading-book-modalLabel"
+                                      >
+                                        The Physical of Money
+                                      </h1>
+                                      <button
+                                        type="button"
+                                        class="btn-close"
+                                        data-bs-dismiss="modal"
+                                        aria-label="Close"
+                                      ></button>
+                                    </div>
+                                    <div class="modal-body modal-reading-body">
+                                      <iframe
+                                        src="assets/pdf/The_Psychology_of_Money.pdf"
+                                        frameborder="0"
+                                      ></iframe>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button
+                                        type="button"
+                                        class="btn btn-danger"
+                                        data-bs-dismiss="modal"
+                                      >
+                                        បិទ
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_store.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="add-book-cover all-center">
+                                    <div class="add-plus all-center">
+                                      <i class="fa-solid fa-plus"></i>
+                                    </div>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                      <section class="popular-book p-2 m-2 me-0 ms-0 border-0">
+                        <div class="row">
+                          <div class="col-12">
+                            <div
+                              class="d-flex justify-content-between align-content-center mb-2"
+                            >
+                              <h3 class="book-reading-title">សៀវភៅពេញនិយម</h3>
+                            </div>
+                            <div class="row g-3">
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/The_48_Laws_of_Power.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      The Law of Power
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Robert Greene
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i
+                                        class="fa-regular fa-star-half-stroke"
+                                      ></i>
+                                    </div>
+                                    <span class="book-price">$14.55</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/Atomic_Habits.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      Atomic Habits
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ James Clear
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="book-price">$13.79</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/Think_and_Grow_Rich.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      Think and Grow Rich
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Napoleon Hill
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="book-price">$8.59</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/Rich_Dad_Poor_Dad.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      Rich Dad Poor Dad
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Robert T. Kiyosaki
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i
+                                        class="fa-regular fa-star-half-stroke"
+                                      ></i>
+                                    </div>
+                                    <span class="book-price">$7.34</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/The_33_Strategies_of_War.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      The 33 Strategies of War
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Robert Greene
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i
+                                        class="fa-regular fa-star-half-stroke"
+                                      ></i>
+                                    </div>
+                                    <span class="book-price">$14.99</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/The_Power_of_Habit.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      The Power of Habit
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Charles Duhigg
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i
+                                        class="fa-regular fa-star-half-stroke"
+                                      ></i>
+                                    </div>
+                                    <span class="book-price">$11.86</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/Make_Your_Bed.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      Make Your Bed
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Admiral William H. McRaven
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i
+                                        class="fa-regular fa-star-half-stroke"
+                                      ></i>
+                                    </div>
+                                    <span class="book-price">$11.00</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/The_5Am_Club.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      The 5Am Club
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Robin Sharma
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i
+                                        class="fa-regular fa-star-half-stroke"
+                                      ></i>
+                                    </div>
+                                    <span class="book-price">$4.99</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/The_7_Habits_Of_Highly_Effective_People.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      The 7 Habits Of Highly Effective People
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Stephen R. Covey
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i
+                                        class="fa-regular fa-star-half-stroke"
+                                      ></i>
+                                    </div>
+                                    <span class="book-price">$22.94</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/Thinking_Fast_and_Slow.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      Thinking, Fast and Slow
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Daniel Kahneman
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i
+                                        class="fa-regular fa-star-half-stroke"
+                                      ></i>
+                                    </div>
+                                    <span class="book-price">$15.84</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/Thinking_in_Bets.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      Thinking in Bets
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Annie Duke
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i
+                                        class="fa-regular fa-star-half-stroke"
+                                      ></i>
+                                    </div>
+                                    <span class="book-price">$15.99</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/The_Undoing_Project.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      The Undoing Project
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Michael Lewis
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i
+                                        class="fa-regular fa-star-half-stroke"
+                                      ></i>
+                                    </div>
+                                    <span class="book-price">$13.70</span>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                      <section class="discount-book p-2 m-2 me-0 ms-0 border-0">
+                        <div class="row">
+                          <div class="col-12">
+                            <div
+                              class="d-flex justify-content-between align-content-center mb-2"
+                            >
+                              <h3 class="book-reading-title">
+                                សៀវភៅកំពុងបញ្ចុះតម្លៃ
+                              </h3>
+                            </div>
+                            <div class="row g-3">
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/The_48_Laws_of_Power.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      The Law of Power
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Robert Greene
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i
+                                        class="fa-regular fa-star-half-stroke"
+                                      ></i>
+                                    </div>
+                                    <span class="book-price">$14.55</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/Atomic_Habits.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      Atomic Habits
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ James Clear
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="book-price">$13.79</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/Think_and_Grow_Rich.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      Think and Grow Rich
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Napoleon Hill
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="book-price">$8.59</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/Rich_Dad_Poor_Dad.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      Rich Dad Poor Dad
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Robert T. Kiyosaki
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i
+                                        class="fa-regular fa-star-half-stroke"
+                                      ></i>
+                                    </div>
+                                    <span class="book-price">$7.34</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/The_33_Strategies_of_War.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      The 33 Strategies of War
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Robert Greene
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i
+                                        class="fa-regular fa-star-half-stroke"
+                                      ></i>
+                                    </div>
+                                    <span class="book-price">$14.99</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/The_Power_of_Habit.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      The Power of Habit
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Charles Duhigg
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i
+                                        class="fa-regular fa-star-half-stroke"
+                                      ></i>
+                                    </div>
+                                    <span class="book-price">$11.86</span>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                      <section class="new-book p-2 m-2 me-0 ms-0 border-0">
+                        <div class="row">
+                          <div class="col-12">
+                            <div
+                              class="d-flex justify-content-between align-content-center mb-2"
+                            >
+                              <h3 class="book-reading-title">សៀវភៅចេញថ្មីៗ</h3>
+                            </div>
+                            <div class="row g-3">
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/The_48_Laws_of_Power.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      The Law of Power
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Robert Greene
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i
+                                        class="fa-regular fa-star-half-stroke"
+                                      ></i>
+                                    </div>
+                                    <span class="book-price">$14.55</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/Atomic_Habits.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      Atomic Habits
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ James Clear
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="book-price">$13.79</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/Think_and_Grow_Rich.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      Think and Grow Rich
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Napoleon Hill
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="book-price">$8.59</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/Rich_Dad_Poor_Dad.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      Rich Dad Poor Dad
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Robert T. Kiyosaki
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i
+                                        class="fa-regular fa-star-half-stroke"
+                                      ></i>
+                                    </div>
+                                    <span class="book-price">$7.34</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/The_33_Strategies_of_War.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      The 33 Strategies of War
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Robert Greene
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i
+                                        class="fa-regular fa-star-half-stroke"
+                                      ></i>
+                                    </div>
+                                    <span class="book-price">$14.99</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/The_Power_of_Habit.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      The Power of Habit
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Charles Duhigg
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i
+                                        class="fa-regular fa-star-half-stroke"
+                                      ></i>
+                                    </div>
+                                    <span class="book-price">$11.86</span>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                      <section
+                        class="profile-author p-2 m-2 me-0 ms-0 border-0"
+                      >
+                        <div
+                          class="d-flex justify-content-between align-content-center mb-3"
+                        >
+                          <h3 class="book-reading-title">អ្នកនិពន្ធ</h3>
+                        </div>
+                        <!-- Swiper -->
+                        <div class="swiper mySwiper">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <div class="pf-author">
+                                <img
+                                  src="assets/img/book/author/Michael_Lewis.jpg"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="pf-author">
+                                <img
+                                  src="assets/img/book/author/Michael_Lewis.jpg"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="pf-author">
+                                <img
+                                  src="assets/img/book/author/Michael_Lewis.jpg"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="pf-author">
+                                <img
+                                  src="assets/img/book/author/Michael_Lewis.jpg"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="pf-author">
+                                <img
+                                  src="assets/img/book/author/Michael_Lewis.jpg"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="pf-author">
+                                <img
+                                  src="assets/img/book/author/Michael_Lewis.jpg"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="pf-author">
+                                <img
+                                  src="assets/img/book/author/Michael_Lewis.jpg"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="pf-author">
+                                <img
+                                  src="assets/img/book/author/Michael_Lewis.jpg"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="pf-author">
+                                <img
+                                  src="assets/img/book/author/Michael_Lewis.jpg"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="pf-author">
+                                <img
+                                  src="assets/img/book/author/Michael_Lewis.jpg"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="pf-author">
+                                <img
+                                  src="assets/img/book/author/Michael_Lewis.jpg"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="pf-author">
+                                <img
+                                  src="assets/img/book/author/Michael_Lewis.jpg"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="pf-author">
+                                <img
+                                  src="assets/img/book/author/Michael_Lewis.jpg"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="pf-author">
+                                <img
+                                  src="assets/img/book/author/Michael_Lewis.jpg"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="pf-author">
+                                <img
+                                  src="assets/img/book/author/Michael_Lewis.jpg"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="pf-author">
+                                <img
+                                  src="assets/img/book/author/Michael_Lewis.jpg"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="pf-author">
+                                <img
+                                  src="assets/img/book/author/Michael_Lewis.jpg"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="pf-author">
+                                <img
+                                  src="assets/img/book/author/Michael_Lewis.jpg"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="pf-author">
+                                <img
+                                  src="assets/img/book/author/Michael_Lewis.jpg"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="pf-author">
+                                <img
+                                  src="assets/img/book/author/Michael_Lewis.jpg"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="pf-author">
+                                <img
+                                  src="assets/img/book/author/Michael_Lewis.jpg"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="pf-author">
+                                <img
+                                  src="assets/img/book/author/Michael_Lewis.jpg"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-button-next"></div>
+                          <div class="swiper-button-prev"></div>
+                        </div>
+                      </section>
                     </div>
-                    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
-                      tabindex="0">
-                      <h2>ការអភិវឌ្ឍខ្លួន</h2>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Donec malesuada arcu nec
-                        diam viverra, ac posuere lacus malesuada. Sed viverra, nunc non faucibus semper, nunc velit
-                        ullamcorper nunc, non vestibulum ligula erat eu velit. Nulla facilisi. Donec malesuada arcu nec diam
-                        viverra, ac posuere lacus malesuada. Sed viverra, nunc non faucibus semper, nunc velit ullamcorper
-                        nunc, non vestibulum ligula erat eu velit.</p>
+                    <div
+                      class="tab-pane fade"
+                      id="motivation-tab-pane"
+                      role="tabpanel"
+                      aria-labelledby="psycho-tab"
+                      tabindex="0"
+                    >
+                      <section class="popular-book p-2 m-2 me-0 ms-0 border-0">
+                        <div class="row">
+                          <div class="col-12">
+                            <div
+                              class="d-flex justify-content-between align-content-center mb-2"
+                            >
+                              <h3 class="book-reading-title">សៀវភៅពេញនិយម</h3>
+                            </div>
+                            <div class="row g-3">
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/The_48_Laws_of_Power.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      The Law of Power
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Robert Greene
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i
+                                        class="fa-regular fa-star-half-stroke"
+                                      ></i>
+                                    </div>
+                                    <span class="book-price">$14.55</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/Atomic_Habits.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      Atomic Habits
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ James Clear
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="book-price">$13.79</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/Think_and_Grow_Rich.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      Think and Grow Rich
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Napoleon Hill
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="book-price">$8.59</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/Rich_Dad_Poor_Dad.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      Rich Dad Poor Dad
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Robert T. Kiyosaki
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i
+                                        class="fa-regular fa-star-half-stroke"
+                                      ></i>
+                                    </div>
+                                    <span class="book-price">$7.34</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/The_33_Strategies_of_War.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      The 33 Strategies of War
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Robert Greene
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i
+                                        class="fa-regular fa-star-half-stroke"
+                                      ></i>
+                                    </div>
+                                    <span class="book-price">$14.99</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/The_Power_of_Habit.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      The Power of Habit
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Charles Duhigg
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i
+                                        class="fa-regular fa-star-half-stroke"
+                                      ></i>
+                                    </div>
+                                    <span class="book-price">$11.86</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/Make_Your_Bed.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      Make Your Bed
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Admiral William H. McRaven
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i
+                                        class="fa-regular fa-star-half-stroke"
+                                      ></i>
+                                    </div>
+                                    <span class="book-price">$11.00</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/The_5Am_Club.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      The 5Am Club
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Robin Sharma
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i
+                                        class="fa-regular fa-star-half-stroke"
+                                      ></i>
+                                    </div>
+                                    <span class="book-price">$4.99</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/The_7_Habits_Of_Highly_Effective_People.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      The 7 Habits Of Highly Effective People
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Stephen R. Covey
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i
+                                        class="fa-regular fa-star-half-stroke"
+                                      ></i>
+                                    </div>
+                                    <span class="book-price">$22.94</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/Thinking_Fast_and_Slow.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      Thinking, Fast and Slow
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Daniel Kahneman
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i
+                                        class="fa-regular fa-star-half-stroke"
+                                      ></i>
+                                    </div>
+                                    <span class="book-price">$15.84</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/Thinking_in_Bets.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      Thinking in Bets
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Annie Duke
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i
+                                        class="fa-regular fa-star-half-stroke"
+                                      ></i>
+                                    </div>
+                                    <span class="book-price">$15.99</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/The_Undoing_Project.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      The Undoing Project
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Michael Lewis
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i
+                                        class="fa-regular fa-star-half-stroke"
+                                      ></i>
+                                    </div>
+                                    <span class="book-price">$13.70</span>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
                     </div>
-                    <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
-                      tabindex="0">
-                      <h2>លុយកាក់</h2>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Donec malesuada arcu nec
-                        diam viverra, ac posuere lacus malesuada. Sed viverra, nunc non faucibus semper, nunc velit
-                        ullamcorper nunc, non vestibulum ligula erat eu velit. Nulla facilisi. Donec malesuada arcu nec diam
-                        viverra, ac posuere lacus malesuada. Sed viverra, nunc non faucibus semper, nunc velit ullamcorper
-                        nunc, non vestibulum ligula erat eu velit.</p>
+                    <div
+                      class="tab-pane fade"
+                      id="psycho-tab-pane"
+                      role="tabpanel"
+                      aria-labelledby="psycho-tab"
+                      tabindex="0"
+                    >
+                      <section class="popular-book p-2 m-2 me-0 ms-0 border-0">
+                        <div class="row">
+                          <div class="col-12">
+                            <div
+                              class="d-flex justify-content-between align-content-center mb-2"
+                            >
+                              <h3 class="book-reading-title">សៀវភៅពេញនិយម</h3>
+                            </div>
+                            <div class="row g-3">
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/The_48_Laws_of_Power.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      The Law of Power
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Robert Greene
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i
+                                        class="fa-regular fa-star-half-stroke"
+                                      ></i>
+                                    </div>
+                                    <span class="book-price">$14.55</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/Atomic_Habits.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      Atomic Habits
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ James Clear
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="book-price">$13.79</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/Think_and_Grow_Rich.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      Think and Grow Rich
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Napoleon Hill
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="book-price">$8.59</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/Rich_Dad_Poor_Dad.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      Rich Dad Poor Dad
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Robert T. Kiyosaki
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i
+                                        class="fa-regular fa-star-half-stroke"
+                                      ></i>
+                                    </div>
+                                    <span class="book-price">$7.34</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/The_33_Strategies_of_War.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      The 33 Strategies of War
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Robert Greene
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i
+                                        class="fa-regular fa-star-half-stroke"
+                                      ></i>
+                                    </div>
+                                    <span class="book-price">$14.99</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/The_Power_of_Habit.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      The Power of Habit
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Charles Duhigg
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i
+                                        class="fa-regular fa-star-half-stroke"
+                                      ></i>
+                                    </div>
+                                    <span class="book-price">$11.86</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/Make_Your_Bed.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      Make Your Bed
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Admiral William H. McRaven
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i
+                                        class="fa-regular fa-star-half-stroke"
+                                      ></i>
+                                    </div>
+                                    <span class="book-price">$11.00</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/The_5Am_Club.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      The 5Am Club
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Robin Sharma
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i
+                                        class="fa-regular fa-star-half-stroke"
+                                      ></i>
+                                    </div>
+                                    <span class="book-price">$4.99</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/The_7_Habits_Of_Highly_Effective_People.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      The 7 Habits Of Highly Effective People
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Stephen R. Covey
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i
+                                        class="fa-regular fa-star-half-stroke"
+                                      ></i>
+                                    </div>
+                                    <span class="book-price">$22.94</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/Thinking_Fast_and_Slow.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      Thinking, Fast and Slow
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Daniel Kahneman
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i
+                                        class="fa-regular fa-star-half-stroke"
+                                      ></i>
+                                    </div>
+                                    <span class="book-price">$15.84</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/Thinking_in_Bets.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      Thinking in Bets
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Annie Duke
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i
+                                        class="fa-regular fa-star-half-stroke"
+                                      ></i>
+                                    </div>
+                                    <span class="book-price">$15.99</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/The_Undoing_Project.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      The Undoing Project
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Michael Lewis
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i
+                                        class="fa-regular fa-star-half-stroke"
+                                      ></i>
+                                    </div>
+                                    <span class="book-price">$13.70</span>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="leader-tab-pane"
+                      role="tabpanel"
+                      aria-labelledby="leader-tab"
+                      tabindex="0"
+                    >
+                      <section class="popular-book p-2 m-2 me-0 ms-0 border-0">
+                        <div class="row">
+                          <div class="col-12">
+                            <div
+                              class="d-flex justify-content-between align-content-center mb-2"
+                            >
+                              <h3 class="book-reading-title">សៀវភៅពេញនិយម</h3>
+                            </div>
+                            <div class="row g-3">
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/The_48_Laws_of_Power.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      The Law of Power
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Robert Greene
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i
+                                        class="fa-regular fa-star-half-stroke"
+                                      ></i>
+                                    </div>
+                                    <span class="book-price">$14.55</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/Atomic_Habits.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      Atomic Habits
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ James Clear
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="book-price">$13.79</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/Think_and_Grow_Rich.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      Think and Grow Rich
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Napoleon Hill
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="book-price">$8.59</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/Rich_Dad_Poor_Dad.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      Rich Dad Poor Dad
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Robert T. Kiyosaki
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i
+                                        class="fa-regular fa-star-half-stroke"
+                                      ></i>
+                                    </div>
+                                    <span class="book-price">$7.34</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/The_33_Strategies_of_War.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      The 33 Strategies of War
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Robert Greene
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i
+                                        class="fa-regular fa-star-half-stroke"
+                                      ></i>
+                                    </div>
+                                    <span class="book-price">$14.99</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/The_Power_of_Habit.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      The Power of Habit
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Charles Duhigg
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i
+                                        class="fa-regular fa-star-half-stroke"
+                                      ></i>
+                                    </div>
+                                    <span class="book-price">$11.86</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/Make_Your_Bed.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      Make Your Bed
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Admiral William H. McRaven
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i
+                                        class="fa-regular fa-star-half-stroke"
+                                      ></i>
+                                    </div>
+                                    <span class="book-price">$11.00</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/The_5Am_Club.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      The 5Am Club
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Robin Sharma
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i
+                                        class="fa-regular fa-star-half-stroke"
+                                      ></i>
+                                    </div>
+                                    <span class="book-price">$4.99</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/The_7_Habits_Of_Highly_Effective_People.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      The 7 Habits Of Highly Effective People
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Stephen R. Covey
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i
+                                        class="fa-regular fa-star-half-stroke"
+                                      ></i>
+                                    </div>
+                                    <span class="book-price">$22.94</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/Thinking_Fast_and_Slow.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      Thinking, Fast and Slow
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Daniel Kahneman
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i
+                                        class="fa-regular fa-star-half-stroke"
+                                      ></i>
+                                    </div>
+                                    <span class="book-price">$15.84</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/Thinking_in_Bets.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      Thinking in Bets
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Annie Duke
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i
+                                        class="fa-regular fa-star-half-stroke"
+                                      ></i>
+                                    </div>
+                                    <span class="book-price">$15.99</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/The_Undoing_Project.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      The Undoing Project
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Michael Lewis
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i
+                                        class="fa-regular fa-star-half-stroke"
+                                      ></i>
+                                    </div>
+                                    <span class="book-price">$13.70</span>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="finan-tab-pane"
+                      role="tabpanel"
+                      aria-labelledby="finan-tab"
+                      tabindex="0"
+                    >
+                      <section class="popular-book p-2 m-2 me-0 ms-0 border-0">
+                        <div class="row">
+                          <div class="col-12">
+                            <div
+                              class="d-flex justify-content-between align-content-center mb-2"
+                            >
+                              <h3 class="book-reading-title">សៀវភៅពេញនិយម</h3>
+                            </div>
+                            <div class="row g-3">
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/The_48_Laws_of_Power.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      The Law of Power
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Robert Greene
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i
+                                        class="fa-regular fa-star-half-stroke"
+                                      ></i>
+                                    </div>
+                                    <span class="book-price">$14.55</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/Atomic_Habits.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      Atomic Habits
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ James Clear
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="book-price">$13.79</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/Think_and_Grow_Rich.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      Think and Grow Rich
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Napoleon Hill
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="book-price">$8.59</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/Rich_Dad_Poor_Dad.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      Rich Dad Poor Dad
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Robert T. Kiyosaki
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i
+                                        class="fa-regular fa-star-half-stroke"
+                                      ></i>
+                                    </div>
+                                    <span class="book-price">$7.34</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/The_33_Strategies_of_War.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      The 33 Strategies of War
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Robert Greene
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i
+                                        class="fa-regular fa-star-half-stroke"
+                                      ></i>
+                                    </div>
+                                    <span class="book-price">$14.99</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/The_Power_of_Habit.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      The Power of Habit
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Charles Duhigg
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i
+                                        class="fa-regular fa-star-half-stroke"
+                                      ></i>
+                                    </div>
+                                    <span class="book-price">$11.86</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/Make_Your_Bed.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      Make Your Bed
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Admiral William H. McRaven
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i
+                                        class="fa-regular fa-star-half-stroke"
+                                      ></i>
+                                    </div>
+                                    <span class="book-price">$11.00</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/The_5Am_Club.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      The 5Am Club
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Robin Sharma
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i
+                                        class="fa-regular fa-star-half-stroke"
+                                      ></i>
+                                    </div>
+                                    <span class="book-price">$4.99</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/The_7_Habits_Of_Highly_Effective_People.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      The 7 Habits Of Highly Effective People
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Stephen R. Covey
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i
+                                        class="fa-regular fa-star-half-stroke"
+                                      ></i>
+                                    </div>
+                                    <span class="book-price">$22.94</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/Thinking_Fast_and_Slow.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      Thinking, Fast and Slow
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Daniel Kahneman
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i
+                                        class="fa-regular fa-star-half-stroke"
+                                      ></i>
+                                    </div>
+                                    <span class="book-price">$15.84</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/Thinking_in_Bets.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      Thinking in Bets
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Annie Duke
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i
+                                        class="fa-regular fa-star-half-stroke"
+                                      ></i>
+                                    </div>
+                                    <span class="book-price">$15.99</span>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-2 col-4">
+                                <a
+                                  href="book_show.html"
+                                  class="text-decoration-none"
+                                >
+                                  <div class="book-cover">
+                                    <img
+                                      src="assets/img/book/The_Undoing_Project.jpg"
+                                      alt=""
+                                    />
+                                    <h5 class="book-title pt-2 m-0">
+                                      The Undoing Project
+                                    </h5>
+                                    <p class="artist-name m-0">
+                                      ដោយ៖ Michael Lewis
+                                    </p>
+                                    <div class="star-rate d-flex">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i
+                                        class="fa-regular fa-star-half-stroke"
+                                      ></i>
+                                    </div>
+                                    <span class="book-price">$13.70</span>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
                     </div>
                   </div>
                 </div>
@@ -554,9 +3409,12 @@
       <div class="container py-3">
         <div class="row px-4 px-lg-0">
           <div class="col-lg-3 col-12">
-            <div class="footer-logo w-100 d-lg-block d-flex justify-content-center">
-              <a href="index.html" class="text-decoration-none"><img src="assets/img/navbar/Kn-logo.png"
-                  alt="Kn-logo" /></a>
+            <div
+              class="footer-logo w-100 d-lg-block d-flex justify-content-center"
+            >
+              <a href="index.html" class="text-decoration-none"
+                ><img src="assets/img/navbar/Kn-logo.png" alt="Kn-logo"
+              /></a>
             </div>
             <div class="comp-discript">
               <p>
@@ -568,19 +3426,29 @@
             </div>
             <ul class="comp-social-media d-flex pb-3 pb-lg-0">
               <li class="comp-item">
-                <a href="#" class="social-media-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-media-icon"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
               </li>
               <li class="comp-item">
-                <a href="#" class="social-media-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-media-icon"
+                  ><i class="fab fa-twitter"></i
+                ></a>
               </li>
               <li class="comp-item">
-                <a href="#" class="social-media-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-media-icon"
+                  ><i class="fab fa-instagram"></i
+                ></a>
               </li>
               <li class="comp-item">
-                <a href="#" class="social-media-icon"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="social-media-icon"
+                  ><i class="fab fa-youtube"></i
+                ></a>
               </li>
               <li class="comp-item">
-                <a href="#" class="social-media-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-media-icon"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
               </li>
             </ul>
           </div>
@@ -590,19 +3458,27 @@
               <div class="col-6 p-0">
                 <ul class="footer-list">
                   <li class="footer-item">
-                    <a class="footer-link" href="journaling.html">កំណត់ត្រាប្រចាំថ្ងៃ</a>
+                    <a class="footer-link" href="journaling.html"
+                      >កំណត់ត្រាប្រចាំថ្ងៃ</a
+                    >
                   </li>
                   <li class="footer-item">
-                    <a class="footer-link" href="money_spending.html">តាមដានការចំណាយ</a>
+                    <a class="footer-link" href="money_spending.html"
+                      >តាមដានការចំណាយ</a
+                    >
                   </li>
                   <li class="footer-item">
-                    <a class="footer-link" href="mood_tracking.html">តាមដានផ្លូវចិត្ត</a>
+                    <a class="footer-link" href="mood_tracking.html"
+                      >តាមដានផ្លូវចិត្ត</a
+                    >
                   </li>
                   <li class="footer-item">
                     <a class="footer-link" href="exercise.html">លំហាត់ប្រាណ</a>
                   </li>
                   <li class="footer-item">
-                    <a class="footer-link" href="therapist.html">អ្នកជំនាញផ្លូវចិត្ត</a>
+                    <a class="footer-link" href="therapist.html"
+                      >អ្នកជំនាញផ្លូវចិត្ត</a
+                    >
                   </li>
                   <li class="footer-item">
                     <a class="footer-link" href="mediation.html">សមាធិ</a>
@@ -624,7 +3500,9 @@
                     <a class="footer-link" href="article.html">អត្ថបទ</a>
                   </li>
                   <li class="footer-item">
-                    <a class="footer-link" href="video_recommendation.html">វីឌីអូអភិវឌ្ឍខ្លួន</a>
+                    <a class="footer-link" href="video_recommendation.html"
+                      >វីឌីអូអភិវឌ្ឍខ្លួន</a
+                    >
                   </li>
                   <li class="footer-item">
                     <a class="footer-link" href="about_us.html">អំពីយើង</a>
@@ -671,8 +3549,13 @@
             <div class="col-12">
               <div class="mb-3">
                 <div class="input-group mb-3">
-                  <input type="text" class="footer-input" placeholder="user@gmail.com" aria-label="user@gmail.com"
-                    aria-describedby="button-addon2" />
+                  <input
+                    type="text"
+                    class="footer-input"
+                    placeholder="user@gmail.com"
+                    aria-label="user@gmail.com"
+                    aria-describedby="button-addon2"
+                  />
                   <button class="btn-footer" type="button" id="button-addon2">
                     <i class="fa-solid fa-paper-plane"></i>
                   </button>
@@ -708,17 +3591,20 @@
     <!-- Initialize Swiper -->
     <script>
       var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
         loop: true,
-        effect: "fade",
-        pagination: {
-          el: ".swiper-pagination",
-        },
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
+      });
+    </script>
+    <script>
+      const myModal = document.getElementById("myModal");
+      const myInput = document.getElementById("myInput");
+
+      myModal.addEventListener("shown.bs.modal", () => {
+        myInput.focus();
       });
     </script>
   </body>
-
 </html>
