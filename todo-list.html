@@ -1,139 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kamnot</title>
     <link rel="stylesheet" href="assets/css/bootstrap.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.snow.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.css" />
     <link rel="stylesheet" href="assets/plugins/aos/css/aos.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   </head>
+
   <body>
     <!-- ! begin of header -->
     <header class="position-fixed top-0 w-100">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand" href="index.html"
-            ><img src="assets/img/navbar/Kn-logo.png" alt=""
-          /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            aria-expanded="false"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasWithBothOptions"
-            aria-controls="offcanvasWithBothOptions"
-          >
+          <a class="navbar-brand" href="index.html"><img src="assets/img/navbar/Kn-logo.png" alt="" /></a>
+          <button class="navbar-toggler" type="button" aria-expanded="false" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
             <span class="nav-toggler-icon all-center"><i class="fa-solid fa-bars"></i></span>
           </button>
           <!-- ! begin of offcanvas -->
-          <div
-            class="offcanvas offcanvas-start d-lg-none"
-            data-bs-scroll="true"
-            tabindex="-1"
-            id="offcanvasWithBothOptions"
-            aria-labelledby="offcanvasWithBothOptionsLabel"
-          >
+          <div class="offcanvas offcanvas-start d-lg-none" data-bs-scroll="true" tabindex="-1"
+            id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
             <div class="offcanvas-header">
               <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
-                <a class="navbar-brand" href="index.html"
-                  ><img src="assets/img/navbar/Kn-logo.png" alt=""
-                /></a>
+                <a class="navbar-brand" href="index.html"><img src="assets/img/navbar/Kn-logo.png" alt="" /></a>
               </h5>
-              <button
-                type="button"
-                class="x-close all-center"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ><i class="fa-solid fa-xmark"></i></button>
+              <button type="button" class="x-close all-center" data-bs-dismiss="offcanvas" aria-label="Close"><i
+                  class="fa-solid fa-xmark"></i></button>
             </div>
             <div class="offcanvas-body">
               <div class="canvas-header d-flex justify-content-between">
-                <a
-                  href="profile_info.html"
-                  class="convas-pf rounded-circle overflow-hidden text-decoration-none"
-                >
+                <a href="profile_info.html" class="convas-pf rounded-circle overflow-hidden text-decoration-none">
                   <img src="assets/img/navbar/profile-img.png" alt="" />
                 </a>
                 <div class="d-flex align-items-center">
-                  <a
-                    href="cart.html"
-                    class="btn-add-cart all-center text-decoration-none"
-                    ><i class="fa-solid fa-cart-shopping"></i>
-                    <div class="cart-status all-center"><span>2 </span></div></a
-                  >
-                  <button
-                    type="button"
-                    data-theme-toggle
-                    id="theme-toggle-1"
-                    class="dark-light-mode all-center rounded-circle ms-3"
-                  ></button>
+                  <a href="cart.html" class="btn-add-cart all-center text-decoration-none"><i
+                      class="fa-solid fa-cart-shopping"></i>
+                    <div class="cart-status all-center"><span>2 </span></div>
+                  </a>
+                  <button type="button" data-theme-toggle id="theme-toggle-1"
+                    class="dark-light-mode all-center rounded-circle ms-3"></button>
                 </div>
               </div>
 
               <!-- ! begin navbar offcanvas -->
               <ul class="nav-convas">
                 <li class="convas-item">
-                  <a class="convas-link convas-bar-bg" href="index.html"
-                    ><i class="fa fa-house"></i> ទំព័រដើម</a
-                  >
+                  <a class="convas-link convas-bar-bg" href="index.html"><i class="fa fa-house"></i> ទំព័រដើម</a>
                 </li>
                 <li class="convas-item">
                   <input type="checkbox" id="showDropHabit" />
-                  <label
-                    for="showDropHabit"
-                    class="sub-convas-dropdown d-flex align-items-center justify-content-between"
-                    ><div>
+                  <label for="showDropHabit"
+                    class="sub-convas-dropdown d-flex align-items-center justify-content-between">
+                    <div>
                       <i class="fa-solid fa-calendar-check"></i>
                       ទម្លាប់ប្រចាំថ្ងៃ
                     </div>
-                    <i class="fa-solid fa-caret-down"></i
-                  ></label>
+                    <i class="fa-solid fa-caret-down"></i>
+                  </label>
                   <ul class="drop-menu">
                     <li class="convas-item">
-                      <a class="convas-link bbt-pf" href="journaling.html"
-                        >កំណត់ត្រាប្រចាំថ្ងៃ</a
-                      >
+                      <a class="convas-link bbt-pf" href="journaling.html">កំណត់ត្រាប្រចាំថ្ងៃ</a>
                     </li>
                     <li class="convas-item">
-                      <a class="convas-link bbt-pf" href="money_spending.html"
-                        >តាមដានការចំណាយ</a
-                      >
+                      <a class="convas-link bbt-pf" href="money_spending.html">តាមដានការចំណាយ</a>
                     </li>
                     <li class="convas-item">
-                      <a class="convas-link bbt-pf" href="mood_tracking.html"
-                        >តាមដានផ្លូវចិត្ត</a
-                      >
+                      <a class="convas-link bbt-pf" href="mood_tracking.html">តាមដានផ្លូវចិត្ត</a>
                     </li>
                     <li class="convas-item">
-                      <a class="convas-link" href="exercise.html"
-                        >លំហាត់ប្រាណ</a
-                      >
+                      <a class="convas-link" href="exercise.html">លំហាត់ប្រាណ</a>
                     </li>
                   </ul>
                 </li>
                 <li class="convas-item mt-10">
                   <input type="checkbox" id="showDropMentalhealth" />
-                  <label
-                    for="showDropMentalhealth"
-                    class="sub-convas-dropdown d-flex align-items-center justify-content-between"
-                    ><div>
+                  <label for="showDropMentalhealth"
+                    class="sub-convas-dropdown d-flex align-items-center justify-content-between">
+                    <div>
                       <i class="fa-solid fa-brain"></i> ស្ថានភាពផ្លូវចិត្ត
                     </div>
-                    <i class="fa-solid fa-caret-down"></i
-                  ></label>
+                    <i class="fa-solid fa-caret-down"></i>
+                  </label>
                   <ul class="drop-menu">
                     <li class="convas-item">
-                      <a class="convas-link bbt-pf" href="therapist.html"
-                        >អ្នកជំនាញផ្លូវចិត្ត</a
-                      >
+                      <a class="convas-link bbt-pf" href="therapist.html">អ្នកជំនាញផ្លូវចិត្ត</a>
                     </li>
                     <li class="convas-item">
                       <a class="convas-link" href="mediation.html">សមាធិ</a>
@@ -142,57 +99,45 @@
                 </li>
                 <li class="convas-item mt-10">
                   <input type="checkbox" id="showDropEdu" />
-                  <label
-                    for="showDropEdu"
-                    class="sub-convas-dropdown d-flex align-items-center justify-content-between"
-                    ><div>
+                  <label for="showDropEdu"
+                    class="sub-convas-dropdown d-flex align-items-center justify-content-between">
+                    <div>
                       <i class="fa-solid fa-book-open-reader"></i> ចំណេះដឹង
                     </div>
-                    <i class="fa-solid fa-caret-down"></i
-                  ></label>
+                    <i class="fa-solid fa-caret-down"></i>
+                  </label>
                   <ul class="drop-menu">
                     <li class="convas-item">
-                      <a class="convas-link bbt-pf" href="book_store.html"
-                        >សៀវភៅ</a
-                      >
+                      <a class="convas-link bbt-pf" href="book_store.html">សៀវភៅ</a>
                     </li>
                     <li class="convas-item">
-                      <a class="convas-link bbt-pf" href="event.html"
-                        >ព្រឹត្តិការណ៍</a
-                      >
+                      <a class="convas-link bbt-pf" href="event.html">ព្រឹត្តិការណ៍</a>
                     </li>
                     <li class="convas-item">
-                      <a class="convas-link" href="video_recommendation.html"
-                        >វីឌីអូអភិវឌ្ឍខ្លួន</a
-                      >
+                      <a class="convas-link" href="video_recommendation.html">វីឌីអូអភិវឌ្ឍខ្លួន</a>
                     </li>
                   </ul>
                 </li>
                 <li class="convas-item">
-                  <a class="convas-link convas-bar-bg mb-0" href="article.html"
-                    ><i class="fa-solid fa-newspaper"></i> អត្ថបទ</a
-                  >
+                  <a class="convas-link convas-bar-bg mb-0" href="article.html"><i class="fa-solid fa-newspaper"></i>
+                    អត្ថបទ</a>
                 </li>
                 <li class="convas-item">
-                  <a class="convas-link convas-bar-bg mb-0" href="article.html"
-                    ><i class="fa-solid fa-money-check-dollar"></i> តម្លៃ</a
-                  >
+                  <a class="convas-link convas-bar-bg mb-0" href="article.html"><i
+                      class="fa-solid fa-money-check-dollar"></i> តម្លៃ</a>
                 </li>
                 <li class="convas-item mt-10">
                   <input type="checkbox" id="showDropMoreInfo" />
-                  <label
-                    for="showDropMoreInfo"
-                    class="sub-convas-dropdown d-flex align-items-center justify-content-between"
-                    ><div>
+                  <label for="showDropMoreInfo"
+                    class="sub-convas-dropdown d-flex align-items-center justify-content-between">
+                    <div>
                       <i class="fa-solid fa-circle-info"></i> ព័ត៌មានបន្ថែម
                     </div>
-                    <i class="fa-solid fa-caret-down"></i
-                  ></label>
+                    <i class="fa-solid fa-caret-down"></i>
+                  </label>
                   <ul class="drop-menu">
                     <li class="convas-item">
-                      <a class="convas-link bbt-pf" href="about_us.html"
-                        >អំពីយើង</a
-                      >
+                      <a class="convas-link bbt-pf" href="about_us.html">អំពីយើង</a>
                     </li>
                     <li class="convas-item">
                       <a class="convas-link" href="contact_us.html">ទាក់ទង</a>
@@ -204,17 +149,11 @@
             </div>
           </div>
           <!-- ! end of offcanvas -->
-          <div
-            class="collapse navbar-collapse d-flex justify-content-end d-lg-block d-none"
-            id="navbarSupportedContent"
-          >
+          <div class="collapse navbar-collapse d-flex justify-content-end d-lg-block d-none"
+            id="navbarSupportedContent">
             <form class="search-bar d-flex" role="search">
-              <input
-                class="search-nav form-control me-3 position-relative"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
+              <input class="search-nav form-control me-3 position-relative" type="search" placeholder="Search"
+                aria-label="Search" />
               <i class="fa-solid fa-magnifying-glass position-absolute"></i>
             </form>
             <div class="profile d-flex flex-row align-items-center">
@@ -222,9 +161,7 @@
                 <i class="fa-solid fa-caret-down"></i>
               </div>
               <div class="pf-status d-flex flex-column align-items-end">
-                <a href="profile_info.html" class="pf-name text-decoration-none"
-                  >Wade Warren</a
-                >
+                <a href="profile_info.html" class="pf-name text-decoration-none">Wade Warren</a>
               </div>
               <div class="pf-image rounded-circle ms-2">
                 <img src="assets/img/navbar/profile-img.png" alt="" />
@@ -236,11 +173,7 @@
                   <li class="pf-item bbt-pf">
                     <a href="profile_info.html" class="pf-link d-flex">
                       <div class="dropdown-pf">
-                        <img
-                          src="assets/img/navbar/profile-img.png"
-                          class="rounded-circle"
-                          alt=""
-                        />
+                        <img src="assets/img/navbar/profile-img.png" class="rounded-circle" alt="" />
                       </div>
                       <p class="m-0">Wade Warren</p>
                     </a>
@@ -256,14 +189,9 @@
                 </ul>
               </div>
             </div>
-            <div
-              class="notification rounded-circle all-center position-relative ms-3"
-            >
+            <div class="notification rounded-circle all-center position-relative ms-3">
               <i class="fa-solid fa-bell"></i>
-              <span
-                class="notification-count bg-danger all-center text-white position-absolute"
-                >9</span
-              >
+              <span class="notification-count bg-danger all-center text-white position-absolute">9</span>
               <div class="noti-controll">
                 <div class="box-rotate"></div>
                 <div class="noti-content">
@@ -363,22 +291,13 @@
                       </a>
                     </li>
                   </ul>
-                  <a
-                    type="button"
-                    href="notification.html"
-                    role="button"
-                    class="bar-noti text-decoration-none w-100"
-                    >មើលទាំងអស់</a
-                  >
+                  <a type="button" href="notification.html" role="button"
+                    class="bar-noti text-decoration-none w-100">មើលទាំងអស់</a>
                 </div>
               </div>
             </div>
-            <button
-              type="button"
-              data-theme-toggle
-              id="theme-toggle-2"
-              class="dark-light-mode all-center rounded-circle ms-3"
-            ></button>
+            <button type="button" data-theme-toggle id="theme-toggle-2"
+              class="dark-light-mode all-center rounded-circle ms-3"></button>
           </div>
         </div>
       </nav>
@@ -393,13 +312,8 @@
             <div class="side-menu">
               <ul class="menu">
                 <li class="menu-item all-center">
-                  <a
-                    role="button"
-                    type="button"
-                    href="index.html"
-                    class="menu-btn text-decoration-none all-center"
-                    ><i class="fa fa-house"></i
-                  ></a>
+                  <a role="button" type="button" href="index.html"
+                    class="menu-btn active text-decoration-none all-center"><i class="fa fa-house"></i></a>
                   <ul class="nav-menu">
                     <li class="menu-item">
                       <div class="menu-content">
@@ -413,7 +327,7 @@
                   </ul>
                 </li>
                 <li class="menu-item all-center">
-                  <button type="button" class="menu-btn active ">
+                  <button type="button" class="menu-btn">
                     <i class="fa-solid fa-calendar-check"></i>
                   </button>
                   <ul class="nav-menu">
@@ -425,24 +339,16 @@
                         </div>
                         <ul class="content-list">
                           <li class="content-item">
-                            <a href="journaling.html" class="content-link"
-                              >កំណត់ត្រាប្រចាំថ្ងៃ</a
-                            >
+                            <a href="journaling.html" class="content-link">កំណត់ត្រាប្រចាំថ្ងៃ</a>
                           </li>
                           <li class="content-item">
-                            <a href="journaling.html" class="content-link"
-                              >តាមដានការចំណាយ</a
-                            >
+                            <a href="money_spending.html" class="content-link">តាមដានការចំណាយ</a>
                           </li>
                           <li class="content-item">
-                            <a href="journaling.html" class="content-link"
-                              >តាមដានផ្លូវចិត្ត</a
-                            >
+                            <a href="mood_tracking.html" class="content-link">តាមដានផ្លូវចិត្ត</a>
                           </li>
                           <li class="content-item">
-                            <a href="journaling.html" class="content-link"
-                              >លំហាត់ប្រាណ</a
-                            >
+                            <a href="exercise.html" class="content-link">លំហាត់ប្រាណ</a>
                           </li>
                         </ul>
                       </div>
@@ -463,14 +369,10 @@
                         </div>
                         <ul class="content-list">
                           <li class="content-item">
-                            <a href="therapist.html" class="content-link"
-                              >អ្នកជំនាញផ្លូវចិត្ត</a
-                            >
+                            <a href="therapist.html" class="content-link">អ្នកជំនាញផ្លូវចិត្ត</a>
                           </li>
                           <li class="content-item">
-                            <a href="mediation.html" class="content-link"
-                              >សមាធិ</a
-                            >
+                            <a href="mediation.html" class="content-link">សមាធិ</a>
                           </li>
                         </ul>
                       </div>
@@ -491,19 +393,13 @@
                         </div>
                         <ul class="content-list">
                           <li class="content-item">
-                            <a href="therapist.html" class="content-link"
-                              >សៀវភៅ</a
-                            >
+                            <a href="book_store.html" class="content-link">សៀវភៅ</a>
                           </li>
                           <li class="content-item">
-                            <a href="mediation.html" class="content-link"
-                              >ព្រឹត្តិការណ៍</a
-                            >
+                            <a href="event.html" class="content-link">ព្រឹត្តិការណ៍</a>
                           </li>
                           <li class="content-item">
-                            <a href="mediation.html" class="content-link"
-                              >វីឌីអូអភិវឌ្ឍខ្លួន</a
-                            >
+                            <a href="video_recommendation.html" class="content-link">វីឌីអូអភិវឌ្ឍខ្លួន</a>
                           </li>
                         </ul>
                       </div>
@@ -512,12 +408,8 @@
                   </ul>
                 </li>
                 <li class="menu-item all-center">
-                  <a
-                    href="pricing.html"
-                    type="button"
-                    class="menu-btn all-center text-decoration-none"
-                    ><i class="fa-solid fa-money-check-dollar"></i
-                  ></a>
+                  <a href="pricing.html" type="button" class="menu-btn all-center text-decoration-none"><i
+                      class="fa-solid fa-money-check-dollar"></i></a>
                   <ul class="nav-menu">
                     <li class="menu-item">
                       <div class="menu-content">
@@ -531,13 +423,8 @@
                   </ul>
                 </li>
                 <li class="menu-item all-center">
-                  <a
-                    role="button"
-                    href="article.html"
-                    type="button"
-                    class="menu-btn all-center text-decoration-none"
-                    ><i class="fa-solid fa-newspaper"></i
-                  ></a>
+                  <a role="button" href="article.html" type="button" class="menu-btn all-center text-decoration-none"><i
+                      class="fa-solid fa-newspaper"></i></a>
                   <ul class="nav-menu">
                     <li class="menu-item">
                       <div class="menu-content">
@@ -563,14 +450,10 @@
                         </div>
                         <ul class="content-list">
                           <li class="content-item">
-                            <a href="about_us.html" class="content-link"
-                              >អំពីយើង</a
-                            >
+                            <a href="about_us.html" class="content-link">អំពីយើង</a>
                           </li>
                           <li class="content-item">
-                            <a href="contact_us.html" class="content-link"
-                              >ទាក់ទង</a
-                            >
+                            <a href="contact_us.html" class="content-link">ទាក់ទង</a>
                           </li>
                         </ul>
                       </div>
@@ -585,7 +468,7 @@
           <!-- ! begin of main content -->
           <div class="col-lg-11 col-12">
             <div class="pt-112 px-4 px-md-0">
-              <!-- ? write your content here -->  
+              <!-- ? write your content here -->
               <div class="journal-header" style="height: 70px;">
                 <h1 class="mb-0" id="welcome-text"> សួស្ដី Warren ! </h1>
               </div>
@@ -593,7 +476,8 @@
                 <div class="row justify-content-between">
                   <div class="col-2 d-flex justify-content-end px-0">
                     <button type="button" class="btn btn-journaling w-100 p-2">
-                      <a href="journaling.html" class="nav-link fs-4 w-100 d-flex justify-content-center align-items-center">កំណត់ត្រា</a>
+                      <a href="journaling.html"
+                        class="nav-link fs-4 w-100 d-flex justify-content-center align-items-center">កំណត់ត្រា</a>
                     </button>
                   </div>
                   <div class="col-8 d-flex align-items-center px-0">
@@ -601,236 +485,262 @@
                   </div>
                   <div class="col-2 d-flex justify-content-start px-0">
                     <button type="button" class="btn btn-todo w-100 p-2 active">
-                      <a href="todo-list.html" class="nav-link fs-4 w-100 d-flex justify-content-center align-items-center">បញ្ជីសកម្មភាព</a>
+                      <a href="todo-list.html"
+                        class="nav-link fs-4 w-100 d-flex justify-content-center align-items-center">បញ្ជីសកម្មភាព</a>
                     </button>
                   </div>
                 </div>
               </div>
               <div class="journal-nav-sm mt-4 d-sm-block d-md-none w-100">
                 <button type="button" class="btn btn-journaling p-2 d-block mx-auto">
-                  <a href="journaling.html" class="nav-link fs-4 w-100 d-flex justify-content-center align-items-center">កំណត់ត្រា</a>
+                  <a href="journaling.html"
+                    class="nav-link fs-4 w-100 d-flex justify-content-center align-items-center">កំណត់ត្រា</a>
                 </button>
                 <button type="button" class="btn btn-todo p-2 my-3 mx-auto active">
-                  <a href="todo-list.html" class="nav-link text-white fs-4 w-100 d-flex justify-content-center align-items-center">បញ្ជីសកម្មភាពដែលត្រូវធ្វើ</a>
+                  <a href="todo-list.html"
+                    class="nav-link text-white fs-4 w-100 d-flex justify-content-center align-items-center">បញ្ជីសកម្មភាពដែលត្រូវធ្វើ</a>
                 </button>
               </div>
               <section class="overview pt-5">
                 <h3 class="pb-3">ស្ងានភាពការងារបច្ចុប្បន្ន</h3>
                 <div class="row pb-5">
-                    <div class="col-sm-6 col-lg-3">
-                        <button class="btn btn-work bg-primary-subtle" type="button" data-bs-toggle="modal" data-bs-target="#todolistModal">
-                            <div class="btn-body h-100 d-flex align-items-center">
-                                <div class="btn-overview-icon">
-                                    <img src="assets/img/Journaling-Todolist/process.png" width="50px" alt="process-icon">
-                                </div>
-                                <div class="ps-2 card-overview-content">
-                                    <p class="fs-5 pt-3 fw-semibold landing-title-color mb-0">ការងារដែលកំពុងធ្វើ</p>
-                                    <p> 3 ការងារ </p>
-                                </div>
-                            </div>
-                        </button>
-                        
-                        <!-- Modal -->
-                        <div class="modal fade" id="todolistModal" tabindex="-1" aria-labelledby="todolistModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-scrollable modal-lg modal-dialog-centered">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <div class="header-wrapper">
-                                            <h1 class="modal-title fs-4 text-center" id="exampleModalLabel">ស្ថានភាពការងារ</h1>
-                                        </div>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                      <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
-                                        <li class="nav-item" role="presentation">
-                                          <button class="nav-link active" id="pills-continue-tab" data-bs-toggle="pill" data-bs-target="#pills-continue" type="button" role="tab" aria-controls="pills-continue" aria-selected="true">ការងារដែលកំពុងធ្វើ</button>
-                                        </li>
-                                        <li class="nav-item" role="presentation">
-                                          <button class="nav-link" id="pills-pause-tab" data-bs-toggle="pill" data-bs-target="#pills-pause" type="button" role="tab" aria-controls="pills-pause" aria-selected="false">ការងារដែលបានផ្អាក</button>
-                                        </li>
-                                        <li class="nav-item" role="presentation">
-                                          <button class="nav-link" id="pills-done-tab" data-bs-toggle="pill" data-bs-target="#pills-done" type="button" role="tab" aria-controls="pills-done" aria-selected="false">ការងារដែលបានធ្វើរួច</button>
-                                        </li>
-                                        <li class="nav-item" role="presentation">
-                                          <button class="nav-link" id="pills-stop-tab" data-bs-toggle="pill" data-bs-target="#pills-stop" type="button" role="tab" aria-controls="pills-stop" aria-selected="false">ការងារដែលបានឈប់ធ្វើ</button>
-                                        </li>
-                                      </ul>
-                                      <div class="tab-content py-5" id="pills-tabContent">
-                                        <div class="tab-pane fade show active" id="pills-continue" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
-                                          <div class="card bg-primary-subtle mb-4 p-3">
-                                            <div class="work-title d-flex justify-content-between">
-                                              <p class="text-dark-emphasis fw-bolder fs-5 mb-0">Creating Website for Webo</p>
-                                              <div class="work-logo">
-                                                <img src="assets/img/Journaling-Todolist/process.png" width="30px" alt="process-icon">
-                                              </div>
-                                            </div>
-                                            <p>Digital product</p>
-                                            <div class="tick-icon">
-                                              <span><i class="fa-regular fa-circle-check"></i></span>
-                                              <span>3 ការងារ</span>
-                                            </div>
-                                          </div>
-                                          <div class="card bg-primary-subtle mb-4 p-3">
-                                            <div class="work-title d-flex justify-content-between">
-                                              <p class="text-dark-emphasis fw-bolder fs-5 mb-0">Creating Website for Webo</p>
-                                              <div class="work-logo">
-                                                <img src="assets/img/Journaling-Todolist/process.png" width="30px" alt="process-icon">
-                                              </div>
-                                            </div>
-                                            <p>Digital product</p>
-                                            <div class="tick-icon">
-                                              <span><i class="fa-regular fa-circle-check"></i></span>
-                                              <span>3 ការងារ</span>
-                                            </div>
-                                          </div>
-                                          <div class="card bg-primary-subtle mb-4 p-3">
-                                            <div class="work-title d-flex justify-content-between">
-                                              <p class="text-dark-emphasis fw-bolder fs-5 mb-0">Creating Website for Webo</p>
-                                              <div class="work-logo">
-                                                <img src="assets/img/Journaling-Todolist/process.png" width="30px" alt="process-icon">
-                                              </div>
-                                            </div>
-                                            <p>Digital product</p>
-                                            <div class="tick-icon">
-                                              <span><i class="fa-regular fa-circle-check"></i></span>
-                                              <span>3 ការងារ</span>
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="tab-pane fade" id="pills-pause" role="tabpanel" aria-labelledby="pills-pause-tab" tabindex="0">
-                                          <div class="card bg-warning-subtle mb-4 p-3">
-                                            <div class="work-title d-flex justify-content-between">
-                                              <p class="text-dark-emphasis fw-bolder fs-5 mb-0">Creating Website for Webo</p>
-                                              <div class="work-logo">
-                                                <img src="assets/img/Journaling-Todolist/back-in-time.png" width="30px" alt="process-icon">
-                                              </div>
-                                            </div>
-                                            <p>Digital product</p>
-                                            <div class="tick-icon">
-                                              <span><i class="fa-regular fa-circle-check"></i></span>
-                                              <span>3 ការងារ</span>
-                                            </div>
-                                          </div>
-                                          
-                                        </div>
-                                        <div class="tab-pane fade" id="pills-done" role="tabpanel" aria-labelledby="pills-done-tab" tabindex="0">
-                                          <div class="card bg-success-subtle mb-4 p-3">
-                                            <div class="work-title d-flex justify-content-between">
-                                              <p class="text-dark-emphasis fw-bolder fs-5 mb-0">Creating Website for Webo</p>
-                                              <div class="work-logo">
-                                                <img src="assets/img/Journaling-Todolist/done.png" width="30px" alt="process-icon">
-                                              </div>
-                                            </div>
-                                            <p>Digital product</p>
-                                            <div class="tick-icon">
-                                              <span><i class="fa-regular fa-circle-check"></i></span>
-                                              <span>3 ការងារ</span>
-                                            </div>
-                                          </div>
-                                          <div class="card bg-success-subtle mb-4 p-3">
-                                            <div class="work-title d-flex justify-content-between">
-                                              <p class="text-dark-emphasis fw-bolder fs-5 mb-0">Creating Website for Webo</p>
-                                              <div class="work-logo">
-                                                <img src="assets/img/Journaling-Todolist/done.png" width="30px" alt="process-icon">
-                                              </div>
-                                            </div>
-                                            <p>Digital product</p>
-                                            <div class="tick-icon">
-                                              <span><i class="fa-regular fa-circle-check"></i></span>
-                                              <span>3 ការងារ</span>
-                                            </div>
-                                          </div>
-                                          <div class="card bg-success-subtle mb-4 p-3">
-                                            <div class="work-title d-flex justify-content-between">
-                                              <p class="text-dark-emphasis fw-bolder fs-5 mb-0">Creating Website for Webo</p>
-                                              <div class="work-logo">
-                                                <img src="assets/img/Journaling-Todolist/done.png" width="30px" alt="process-icon">
-                                              </div>
-                                            </div>
-                                            <p>Digital product</p>
-                                            <div class="tick-icon">
-                                              <span><i class="fa-regular fa-circle-check"></i></span>
-                                              <span>3 ការងារ</span>
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="tab-pane fade" id="pills-stop" role="tabpanel" aria-labelledby="pills-stop-tab" tabindex="0">
-                                          <div class="card bg-danger-subtle mb-4 p-3">
-                                            <div class="work-title d-flex justify-content-between">
-                                              <p class="text-dark-emphasis fw-bolder fs-5 mb-0">Creating Website for Webo</p>
-                                              <div class="work-logo">
-                                                <img src="assets/img/Journaling-Todolist/close.png" width="30px" alt="process-icon">
-                                              </div>
-                                            </div>
-                                            <p>Digital product</p>
-                                            <div class="tick-icon">
-                                              <span><i class="fa-regular fa-circle-check"></i></span>
-                                              <span>3 ការងារ</span>
-                                            </div>
-                                          </div>
-                                          <div class="card bg-danger-subtle mb-4 p-3">
-                                            <div class="work-title d-flex justify-content-between">
-                                              <p class="text-dark-emphasis fw-bolder fs-5 mb-0">Creating Website for Webo</p>
-                                              <div class="work-logo">
-                                                <img src="assets/img/Journaling-Todolist/close.png" width="30px" alt="process-icon">
-                                              </div>
-                                            </div>
-                                            <p>Digital product</p>
-                                            <div class="tick-icon">
-                                              <span><i class="fa-regular fa-circle-check"></i></span>
-                                              <span>3 ការងារ</span>
-                                            </div>
-                                          </div>
-                                          
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">បិទ</button>
-                                    </div>
-                                </div>
-                            </div>
+                  <div class="col-sm-6 col-lg-3">
+                    <button class="btn btn-work bg-primary-subtle" type="button" data-bs-toggle="modal"
+                      data-bs-target="#todolistModal">
+                      <div class="btn-body h-100 d-flex align-items-center">
+                        <div class="btn-overview-icon">
+                          <img src="assets/img/Journaling-Todolist/process.png" width="50px" alt="process-icon">
                         </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-3">
-                        <button class="btn btn-work bg-warning-subtle" type="button">
-                            <div class="btn-body h-100 d-flex align-items-center">
-                                <div class="btn-overview-icon">
-                                    <img src="assets/img/Journaling-Todolist/back-in-time.png" width="50px" alt="icon">
-                                </div>
-                                <div class="ps-3 card-overview-content">
-                                    <p class="fs-5 pt-3 fw-semibold landing-title-color mb-0">ការងារដែលបានផ្អាក</p>
-                                    <p> 1 ការងារ </p>
-                                </div>
+                        <div class="ps-2 card-overview-content">
+                          <p class="fs-5 pt-3 fw-semibold landing-title-color mb-0">ការងារដែលកំពុងធ្វើ</p>
+                          <p> 3 ការងារ </p>
+                        </div>
+                      </div>
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="todolistModal" tabindex="-1" aria-labelledby="todolistModalLabel"
+                      aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-scrollable modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <div class="header-wrapper">
+                              <h1 class="modal-title fs-4 text-center" id="exampleModalLabel">ស្ថានភាពការងារ</h1>
                             </div>
-                        </button>
-                    </div>
-                    <div class="col-sm-6 pt-3 pt-lg-0 col-lg-3">
-                        <button class="btn btn-work bg-success-subtle">
-                            <div class="btn-body h-100 d-flex align-items-center">
-                                <div class="btn-overview-icon">
-                                    <img src="assets/img/Journaling-Todolist/done.png" width="50px" alt="icon">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+                              <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-continue-tab" data-bs-toggle="pill"
+                                  data-bs-target="#pills-continue" type="button" role="tab"
+                                  aria-controls="pills-continue" aria-selected="true">ការងារដែលកំពុងធ្វើ</button>
+                              </li>
+                              <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-pause-tab" data-bs-toggle="pill"
+                                  data-bs-target="#pills-pause" type="button" role="tab" aria-controls="pills-pause"
+                                  aria-selected="false">ការងារដែលបានផ្អាក</button>
+                              </li>
+                              <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-done-tab" data-bs-toggle="pill"
+                                  data-bs-target="#pills-done" type="button" role="tab" aria-controls="pills-done"
+                                  aria-selected="false">ការងារដែលបានធ្វើរួច</button>
+                              </li>
+                              <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-stop-tab" data-bs-toggle="pill"
+                                  data-bs-target="#pills-stop" type="button" role="tab" aria-controls="pills-stop"
+                                  aria-selected="false">ការងារដែលបានឈប់ធ្វើ</button>
+                              </li>
+                            </ul>
+                            <div class="tab-content py-5" id="pills-tabContent">
+                              <div class="tab-pane fade show active" id="pills-continue" role="tabpanel"
+                                aria-labelledby="pills-home-tab" tabindex="0">
+                                <div class="card bg-primary-subtle mb-4 p-3">
+                                  <div class="work-title d-flex justify-content-between">
+                                    <p class="text-dark-emphasis fw-bolder fs-5 mb-0">Creating Website for Webo</p>
+                                    <div class="work-logo">
+                                      <img src="assets/img/Journaling-Todolist/process.png" width="30px"
+                                        alt="process-icon">
+                                    </div>
+                                  </div>
+                                  <p>Digital product</p>
+                                  <div class="tick-icon">
+                                    <span><i class="fa-regular fa-circle-check"></i></span>
+                                    <span>3 ការងារ</span>
+                                  </div>
                                 </div>
-                                <div class="ps-3 card-overview-content">
-                                    <p class="fs-5 pt-3 fw-semibold landing-title-color mb-0">ការងារដែលបានធ្វើរួច</p>
-                                    <p> 4 ការងារ </p>
+                                <div class="card bg-primary-subtle mb-4 p-3">
+                                  <div class="work-title d-flex justify-content-between">
+                                    <p class="text-dark-emphasis fw-bolder fs-5 mb-0">Creating Website for Webo</p>
+                                    <div class="work-logo">
+                                      <img src="assets/img/Journaling-Todolist/process.png" width="30px"
+                                        alt="process-icon">
+                                    </div>
+                                  </div>
+                                  <p>Digital product</p>
+                                  <div class="tick-icon">
+                                    <span><i class="fa-regular fa-circle-check"></i></span>
+                                    <span>3 ការងារ</span>
+                                  </div>
                                 </div>
+                                <div class="card bg-primary-subtle mb-4 p-3">
+                                  <div class="work-title d-flex justify-content-between">
+                                    <p class="text-dark-emphasis fw-bolder fs-5 mb-0">Creating Website for Webo</p>
+                                    <div class="work-logo">
+                                      <img src="assets/img/Journaling-Todolist/process.png" width="30px"
+                                        alt="process-icon">
+                                    </div>
+                                  </div>
+                                  <p>Digital product</p>
+                                  <div class="tick-icon">
+                                    <span><i class="fa-regular fa-circle-check"></i></span>
+                                    <span>3 ការងារ</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="tab-pane fade" id="pills-pause" role="tabpanel"
+                                aria-labelledby="pills-pause-tab" tabindex="0">
+                                <div class="card bg-warning-subtle mb-4 p-3">
+                                  <div class="work-title d-flex justify-content-between">
+                                    <p class="text-dark-emphasis fw-bolder fs-5 mb-0">Creating Website for Webo</p>
+                                    <div class="work-logo">
+                                      <img src="assets/img/Journaling-Todolist/back-in-time.png" width="30px"
+                                        alt="process-icon">
+                                    </div>
+                                  </div>
+                                  <p>Digital product</p>
+                                  <div class="tick-icon">
+                                    <span><i class="fa-regular fa-circle-check"></i></span>
+                                    <span>3 ការងារ</span>
+                                  </div>
+                                </div>
+
+                              </div>
+                              <div class="tab-pane fade" id="pills-done" role="tabpanel"
+                                aria-labelledby="pills-done-tab" tabindex="0">
+                                <div class="card bg-success-subtle mb-4 p-3">
+                                  <div class="work-title d-flex justify-content-between">
+                                    <p class="text-dark-emphasis fw-bolder fs-5 mb-0">Creating Website for Webo</p>
+                                    <div class="work-logo">
+                                      <img src="assets/img/Journaling-Todolist/done.png" width="30px"
+                                        alt="process-icon">
+                                    </div>
+                                  </div>
+                                  <p>Digital product</p>
+                                  <div class="tick-icon">
+                                    <span><i class="fa-regular fa-circle-check"></i></span>
+                                    <span>3 ការងារ</span>
+                                  </div>
+                                </div>
+                                <div class="card bg-success-subtle mb-4 p-3">
+                                  <div class="work-title d-flex justify-content-between">
+                                    <p class="text-dark-emphasis fw-bolder fs-5 mb-0">Creating Website for Webo</p>
+                                    <div class="work-logo">
+                                      <img src="assets/img/Journaling-Todolist/done.png" width="30px"
+                                        alt="process-icon">
+                                    </div>
+                                  </div>
+                                  <p>Digital product</p>
+                                  <div class="tick-icon">
+                                    <span><i class="fa-regular fa-circle-check"></i></span>
+                                    <span>3 ការងារ</span>
+                                  </div>
+                                </div>
+                                <div class="card bg-success-subtle mb-4 p-3">
+                                  <div class="work-title d-flex justify-content-between">
+                                    <p class="text-dark-emphasis fw-bolder fs-5 mb-0">Creating Website for Webo</p>
+                                    <div class="work-logo">
+                                      <img src="assets/img/Journaling-Todolist/done.png" width="30px"
+                                        alt="process-icon">
+                                    </div>
+                                  </div>
+                                  <p>Digital product</p>
+                                  <div class="tick-icon">
+                                    <span><i class="fa-regular fa-circle-check"></i></span>
+                                    <span>3 ការងារ</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="tab-pane fade" id="pills-stop" role="tabpanel"
+                                aria-labelledby="pills-stop-tab" tabindex="0">
+                                <div class="card bg-danger-subtle mb-4 p-3">
+                                  <div class="work-title d-flex justify-content-between">
+                                    <p class="text-dark-emphasis fw-bolder fs-5 mb-0">Creating Website for Webo</p>
+                                    <div class="work-logo">
+                                      <img src="assets/img/Journaling-Todolist/close.png" width="30px"
+                                        alt="process-icon">
+                                    </div>
+                                  </div>
+                                  <p>Digital product</p>
+                                  <div class="tick-icon">
+                                    <span><i class="fa-regular fa-circle-check"></i></span>
+                                    <span>3 ការងារ</span>
+                                  </div>
+                                </div>
+                                <div class="card bg-danger-subtle mb-4 p-3">
+                                  <div class="work-title d-flex justify-content-between">
+                                    <p class="text-dark-emphasis fw-bolder fs-5 mb-0">Creating Website for Webo</p>
+                                    <div class="work-logo">
+                                      <img src="assets/img/Journaling-Todolist/close.png" width="30px"
+                                        alt="process-icon">
+                                    </div>
+                                  </div>
+                                  <p>Digital product</p>
+                                  <div class="tick-icon">
+                                    <span><i class="fa-regular fa-circle-check"></i></span>
+                                    <span>3 ការងារ</span>
+                                  </div>
+                                </div>
+
+                              </div>
                             </div>
-                        </button>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">បិទ</button>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="col-sm-6 pt-3 pt-lg-0 col-lg-3">
-                        <button class="btn btn-work bg-danger-subtle">
-                            <div class="btn-body h-100 d-flex align-items-center">
-                                <div class="btn-overview-icon">
-                                    <img src="assets/img/Journaling-Todolist/close.png" width="50px" alt="icon">
-                                </div>
-                                <div class="ps-3 card-overview-content">
-                                    <p class="fs-5 pt-3 fw-semibold landing-title-color mb-0">ការងារដែលបានឈប់ធ្វើ</p>
-                                    <p> 2 ការងារ </p>
-                                </div>
-                            </div>
-                        </button>
-                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-3">
+                    <button class="btn btn-work bg-warning-subtle" type="button">
+                      <div class="btn-body h-100 d-flex align-items-center">
+                        <div class="btn-overview-icon">
+                          <img src="assets/img/Journaling-Todolist/back-in-time.png" width="50px" alt="icon">
+                        </div>
+                        <div class="ps-3 card-overview-content">
+                          <p class="fs-5 pt-3 fw-semibold landing-title-color mb-0">ការងារដែលបានផ្អាក</p>
+                          <p> 1 ការងារ </p>
+                        </div>
+                      </div>
+                    </button>
+                  </div>
+                  <div class="col-sm-6 pt-3 pt-lg-0 col-lg-3">
+                    <button class="btn btn-work bg-success-subtle">
+                      <div class="btn-body h-100 d-flex align-items-center">
+                        <div class="btn-overview-icon">
+                          <img src="assets/img/Journaling-Todolist/done.png" width="50px" alt="icon">
+                        </div>
+                        <div class="ps-3 card-overview-content">
+                          <p class="fs-5 pt-3 fw-semibold landing-title-color mb-0">ការងារដែលបានធ្វើរួច</p>
+                          <p> 4 ការងារ </p>
+                        </div>
+                      </div>
+                    </button>
+                  </div>
+                  <div class="col-sm-6 pt-3 pt-lg-0 col-lg-3">
+                    <button class="btn btn-work bg-danger-subtle">
+                      <div class="btn-body h-100 d-flex align-items-center">
+                        <div class="btn-overview-icon">
+                          <img src="assets/img/Journaling-Todolist/close.png" width="50px" alt="icon">
+                        </div>
+                        <div class="ps-3 card-overview-content">
+                          <p class="fs-5 pt-3 fw-semibold landing-title-color mb-0">ការងារដែលបានឈប់ធ្វើ</p>
+                          <p> 2 ការងារ </p>
+                        </div>
+                      </div>
+                    </button>
+                  </div>
                 </div>
                 <hr>
                 <div class="display d-flex justify-content-between">
@@ -851,7 +761,8 @@
                   </div>
                 </div>
                 <div class="organize-work my-5 px-5 py-5">
-                  <div class="work-wrapper d-flex p-3" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapse1" aria-expanded="false" aria-controls="multiCollapse1">
+                  <div class="work-wrapper d-flex p-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#multiCollapse1" aria-expanded="false" aria-controls="multiCollapse1">
                     <span class="pt-1"><i class="fa-solid fa-play"></i></span>
                     <p class="ms-4 fs-5 px-3 mb-0">សរសេរ Website</p>
                   </div>
@@ -869,10 +780,11 @@
                           <label class="form-check-label ps-2" for="Check2">
                             Design Figma Home Page
                           </label>
-                        </div> 
+                        </div>
                         <div class="add-new-activity py-2">
                           <div class="card card-body py-3">
-                            <input class="form-control" id="" type="text" placeholder="បន្ថែមសកម្មភាពថ្មី" aria-label="">
+                            <input class="form-control" id="" type="text" placeholder="បន្ថែមសកម្មភាពថ្មី"
+                              aria-label="">
                             <div class="card-btn-footer pt-3 w-100 d-flex justify-content-between">
                               <button type="button" class="btn btn-do-add px-lg-4 py-0"> បន្ថែម </button>
                               <div class="right-btn d-none d-lg-block">
@@ -886,7 +798,8 @@
                     </div>
                   </div>
 
-                  <div class="work-wrapper d-flex p-3" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapse2" aria-expanded="false" aria-controls="multiCollapse2">
+                  <div class="work-wrapper d-flex p-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#multiCollapse2" aria-expanded="false" aria-controls="multiCollapse2">
                     <span class="pt-1"><i class="fa-solid fa-play"></i></span>
                     <p class="ms-4 fs-5 px-3 mb-0">សរសេរ Website</p>
                   </div>
@@ -904,10 +817,11 @@
                           <label class="form-check-label ps-2" for="Check2">
                             Design Figma Home Page
                           </label>
-                        </div> 
+                        </div>
                         <div class="add-new-activity py-2">
                           <div class="card card-body py-3">
-                            <input class="form-control" id="" type="text" placeholder="បន្ថែមសកម្មភាពថ្មី" aria-label="">
+                            <input class="form-control" id="" type="text" placeholder="បន្ថែមសកម្មភាពថ្មី"
+                              aria-label="">
                             <div class="card-btn-footer pt-3 w-100 d-flex justify-content-between">
                               <button type="button" class="btn btn-do-add px-lg-4 py-0"> បន្ថែម </button>
                               <div class="right-btn d-none d-lg-block">
@@ -921,7 +835,8 @@
                     </div>
                   </div>
 
-                  <div class="work-wrapper d-flex p-3" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapse3" aria-expanded="false" aria-controls="multiCollapse2">
+                  <div class="work-wrapper d-flex p-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#multiCollapse3" aria-expanded="false" aria-controls="multiCollapse2">
                     <span class="pt-1"><i class="fa-solid fa-play"></i></span>
                     <p class="ms-4 fs-5 px-3 mb-0">សរសេរ Website</p>
                   </div>
@@ -939,10 +854,11 @@
                           <label class="form-check-label ps-2" for="Check2">
                             Design Figma Home Page
                           </label>
-                        </div> 
+                        </div>
                         <div class="add-new-activity py-2">
                           <div class="card card-body py-3">
-                            <input class="form-control" id="" type="text" placeholder="បន្ថែមសកម្មភាពថ្មី" aria-label="">
+                            <input class="form-control" id="" type="text" placeholder="បន្ថែមសកម្មភាពថ្មី"
+                              aria-label="">
                             <div class="card-btn-footer pt-3 w-100 d-flex justify-content-between">
                               <button type="button" class="btn btn-do-add px-lg-4 py-0"> បន្ថែម </button>
                               <div class="right-btn d-none d-lg-block">
@@ -955,7 +871,7 @@
                       </div>
                     </div>
                   </div>
-                  
+
                 </div>
 
                 <div class="display d-flex justify-content-between">
@@ -979,20 +895,29 @@
                 <div class="organize-work my-5 px-5 py-5">
                   <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab2" role="tablist">
                     <li class="nav-item" role="presentation">
-                      <button class="nav-link active" id="pills-continue-tab2" data-bs-toggle="pill" data-bs-target="#pills-continue2" type="button" role="tab" aria-controls="pills-continue2" aria-selected="true">ការងារដែលកំពុងធ្វើ</button>
+                      <button class="nav-link active" id="pills-continue-tab2" data-bs-toggle="pill"
+                        data-bs-target="#pills-continue2" type="button" role="tab" aria-controls="pills-continue2"
+                        aria-selected="true">ការងារដែលកំពុងធ្វើ</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="pills-pause-tab2" data-bs-toggle="pill" data-bs-target="#pills-pause2" type="button" role="tab" aria-controls="pills-pause2" aria-selected="false">ការងារដែលបានផ្អាក</button>
+                      <button class="nav-link" id="pills-pause-tab2" data-bs-toggle="pill"
+                        data-bs-target="#pills-pause2" type="button" role="tab" aria-controls="pills-pause2"
+                        aria-selected="false">ការងារដែលបានផ្អាក</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="pills-done-tab2" data-bs-toggle="pill" data-bs-target="#pills-done2" type="button" role="tab" aria-controls="pills-done2" aria-selected="false">ការងារដែលបានធ្វើរួច</button>
+                      <button class="nav-link" id="pills-done-tab2" data-bs-toggle="pill" data-bs-target="#pills-done2"
+                        type="button" role="tab" aria-controls="pills-done2"
+                        aria-selected="false">ការងារដែលបានធ្វើរួច</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="pills-stop-tab2" data-bs-toggle="pill" data-bs-target="#pills-stop2" type="button" role="tab" aria-controls="pills-stop2" aria-selected="false">ការងារដែលបានឈប់ធ្វើ</button>
+                      <button class="nav-link" id="pills-stop-tab2" data-bs-toggle="pill" data-bs-target="#pills-stop2"
+                        type="button" role="tab" aria-controls="pills-stop2"
+                        aria-selected="false">ការងារដែលបានឈប់ធ្វើ</button>
                     </li>
                   </ul>
                   <div class="tab-content py-5" id="pills-tabContent2">
-                    <div class="tab-pane fade show active" id="pills-continue2" role="tabpanel" aria-labelledby="pills-continue-tab" tabindex="0">
+                    <div class="tab-pane fade show active" id="pills-continue2" role="tabpanel"
+                      aria-labelledby="pills-continue-tab" tabindex="0">
                       <div class="card bg-primary-subtle mb-4 p-3">
                         <div class="work-title d-flex justify-content-between">
                           <p class="text-dark-emphasis fw-bolder fs-5 mb-0">Creating Website for Webo</p>
@@ -1035,7 +960,8 @@
                         </div>
                       </div>
                     </div>
-                    <div class="tab-pane fade" id="pills-pause2" role="tabpanel" aria-labelledby="pills-pause-tab2" tabindex="0">
+                    <div class="tab-pane fade" id="pills-pause2" role="tabpanel" aria-labelledby="pills-pause-tab2"
+                      tabindex="0">
                       <div class="card bg-warning-subtle mb-4 p-3">
                         <div class="work-title d-flex justify-content-between">
                           <p class="text-dark-emphasis fw-bolder fs-5 mb-0">Creating Website for Webo</p>
@@ -1049,9 +975,10 @@
                           <span>3 ការងារ</span>
                         </div>
                       </div>
-                      
+
                     </div>
-                    <div class="tab-pane fade" id="pills-done2" role="tabpanel" aria-labelledby="pills-done-tab2" tabindex="0">
+                    <div class="tab-pane fade" id="pills-done2" role="tabpanel" aria-labelledby="pills-done-tab2"
+                      tabindex="0">
                       <div class="card bg-success-subtle mb-4 p-3">
                         <div class="work-title d-flex justify-content-between">
                           <p class="text-dark-emphasis fw-bolder fs-5 mb-0">Creating Website for Webo</p>
@@ -1092,7 +1019,8 @@
                         </div>
                       </div>
                     </div>
-                    <div class="tab-pane fade" id="pills-stop2" role="tabpanel" aria-labelledby="pills-stop-tab2" tabindex="0">
+                    <div class="tab-pane fade" id="pills-stop2" role="tabpanel" aria-labelledby="pills-stop-tab2"
+                      tabindex="0">
                       <div class="card bg-danger-subtle mb-4 p-3">
                         <div class="work-title d-flex justify-content-between">
                           <p class="text-dark-emphasis fw-bolder fs-5 mb-0">Creating Website for Webo</p>
@@ -1119,14 +1047,14 @@
                           <span>3 ការងារ</span>
                         </div>
                       </div>
-                      
+
                     </div>
                   </div>
-                  
+
                 </div>
 
               </section>
-              
+
               <!-- ? end of write your content here -->
             </div>
           </div>
@@ -1141,12 +1069,9 @@
       <div class="container py-3">
         <div class="row px-4 px-lg-0">
           <div class="col-lg-3 col-12">
-            <div
-              class="footer-logo w-100 d-lg-block d-flex justify-content-center"
-            >
-              <a href="index.html" class="text-decoration-none"
-                ><img src="assets/img/navbar/Kn-logo.png" alt="Kn-logo"
-              /></a>
+            <div class="footer-logo w-100 d-lg-block d-flex justify-content-center">
+              <a href="index.html" class="text-decoration-none"><img src="assets/img/navbar/Kn-logo.png"
+                  alt="Kn-logo" /></a>
             </div>
             <div class="comp-discript">
               <p>
@@ -1158,29 +1083,19 @@
             </div>
             <ul class="comp-social-media d-flex pb-3 pb-lg-0">
               <li class="comp-item">
-                <a href="#" class="social-media-icon"
-                  ><i class="fab fa-facebook-f"></i
-                ></a>
+                <a href="#" class="social-media-icon"><i class="fab fa-facebook-f"></i></a>
               </li>
               <li class="comp-item">
-                <a href="#" class="social-media-icon"
-                  ><i class="fab fa-twitter"></i
-                ></a>
+                <a href="#" class="social-media-icon"><i class="fab fa-twitter"></i></a>
               </li>
               <li class="comp-item">
-                <a href="#" class="social-media-icon"
-                  ><i class="fab fa-instagram"></i
-                ></a>
+                <a href="#" class="social-media-icon"><i class="fab fa-instagram"></i></a>
               </li>
               <li class="comp-item">
-                <a href="#" class="social-media-icon"
-                  ><i class="fab fa-youtube"></i
-                ></a>
+                <a href="#" class="social-media-icon"><i class="fab fa-youtube"></i></a>
               </li>
               <li class="comp-item">
-                <a href="#" class="social-media-icon"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
+                <a href="#" class="social-media-icon"><i class="fab fa-linkedin-in"></i></a>
               </li>
             </ul>
           </div>
@@ -1190,27 +1105,19 @@
               <div class="col-6 p-0">
                 <ul class="footer-list">
                   <li class="footer-item">
-                    <a class="footer-link" href="journaling.html"
-                      >កំណត់ត្រាប្រចាំថ្ងៃ</a
-                    >
+                    <a class="footer-link" href="journaling.html">កំណត់ត្រាប្រចាំថ្ងៃ</a>
                   </li>
                   <li class="footer-item">
-                    <a class="footer-link" href="money_spending.html"
-                      >តាមដានការចំណាយ</a
-                    >
+                    <a class="footer-link" href="money_spending.html">តាមដានការចំណាយ</a>
                   </li>
                   <li class="footer-item">
-                    <a class="footer-link" href="mood_tracking.html"
-                      >តាមដានផ្លូវចិត្ត</a
-                    >
+                    <a class="footer-link" href="mood_tracking.html">តាមដានផ្លូវចិត្ត</a>
                   </li>
                   <li class="footer-item">
                     <a class="footer-link" href="exercise.html">លំហាត់ប្រាណ</a>
                   </li>
                   <li class="footer-item">
-                    <a class="footer-link" href="therapist.html"
-                      >អ្នកជំនាញផ្លូវចិត្ត</a
-                    >
+                    <a class="footer-link" href="therapist.html">អ្នកជំនាញផ្លូវចិត្ត</a>
                   </li>
                   <li class="footer-item">
                     <a class="footer-link" href="mediation.html">សមាធិ</a>
@@ -1232,9 +1139,7 @@
                     <a class="footer-link" href="article.html">អត្ថបទ</a>
                   </li>
                   <li class="footer-item">
-                    <a class="footer-link" href="video_recommendation.html"
-                      >វីឌីអូអភិវឌ្ឍខ្លួន</a
-                    >
+                    <a class="footer-link" href="video_recommendation.html">វីឌីអូអភិវឌ្ឍខ្លួន</a>
                   </li>
                   <li class="footer-item">
                     <a class="footer-link" href="about_us.html">អំពីយើង</a>
@@ -1281,13 +1186,8 @@
             <div class="col-12">
               <div class="mb-3">
                 <div class="input-group mb-3">
-                  <input
-                    type="text"
-                    class="footer-input"
-                    placeholder="user@gmail.com"
-                    aria-label="user@gmail.com"
-                    aria-describedby="button-addon2"
-                  />
+                  <input type="text" class="footer-input" placeholder="user@gmail.com" aria-label="user@gmail.com"
+                    aria-describedby="button-addon2" />
                   <button class="btn-footer" type="button" id="button-addon2">
                     <i class="fa-solid fa-paper-plane"></i>
                   </button>
@@ -1321,63 +1221,59 @@
     <script src="assets/js/dark-mode.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.js"></script>
     <script>
-        var currentText = 0;
-        var headerText = ["សួស្ដី Warren !", "Have a good day, Warren ^^"];
-        var divText = document.getElementById("welcome-text");
-        var cycleComplete = false; 
-  
-        document.onload = setTimeout(function(){changeHeaderText();}, 500);
-  
-        function changeHeaderText()
-        {    
-          if (cycleComplete) {
+      var currentText = 0;
+      var headerText = ["សួស្ដី Warren !", "Have a good day, Warren ^^"];
+      var divText = document.getElementById("welcome-text");
+      var cycleComplete = false;
+
+      document.onload = setTimeout(function () { changeHeaderText(); }, 500);
+
+      function changeHeaderText() {
+        if (cycleComplete) {
+          divText.innerHTML = headerText[0];
+          return;
+        }
+        if (currentText === headerText.length - 1) {
+          cycleComplete = true;
+          currentText = 0;
+        } else {
+          currentText += 1;
+        }
+        deleteHeaderText();
+      }
+
+      function deleteHeaderText() {
+        if (divText.innerHTML.length === 0) {
+          if (cycleComplete && currentText === 0) {
             divText.innerHTML = headerText[0];
             return;
           }
-          if (currentText === headerText.length - 1){
-            cycleComplete = true;
-            currentText = 0;
-          } else {
-            currentText += 1;
-          }    
-          deleteHeaderText();
+          setTimeout(function () { typeHeaderText(); }, 100);
         }
-  
-        function deleteHeaderText()
-        {    
-          if (divText.innerHTML.length === 0){
-            if (cycleComplete && currentText === 0){
-              divText.innerHTML = headerText[0];
-              return;
-            }
-            setTimeout(function(){typeHeaderText();}, 100);
-          } 
-          else
-          {
-              divText.innerHTML = divText.innerHTML.substring(0, divText.innerHTML.length - 1);
-              setTimeout(function(){deleteHeaderText();}, 100);
+        else {
+          divText.innerHTML = divText.innerHTML.substring(0, divText.innerHTML.length - 1);
+          setTimeout(function () { deleteHeaderText(); }, 100);
+        }
+      }
+      function typeHeaderText() {
+        if (divText.innerHTML.length === headerText[currentText].length) {
+          if (cycleComplete && currentText === headerText.length - 1) {
+            divText.innerHTML = headerText[0];
+            return;
           }
+          setTimeout(function () { changeHeaderText(); }, 2000);
         }
-        function typeHeaderText()
-        {
-          if (divText.innerHTML.length === headerText[currentText].length) {
-              if (cycleComplete && currentText === headerText.length - 1){
-                divText.innerHTML = headerText[0];
-                return;
-              } 
-              setTimeout(function(){changeHeaderText();}, 2000);
-          } 
-          else
-          {
-            divText.innerHTML = headerText[currentText].substring(0, divText.innerHTML.length + 1);
-            setTimeout(function(){typeHeaderText();}, 100);
-          } 
+        else {
+          divText.innerHTML = headerText[currentText].substring(0, divText.innerHTML.length + 1);
+          setTimeout(function () { typeHeaderText(); }, 100);
         }
-  
-      </script>
+      }
 
-    
-    
-    
+    </script>
+
+
+
+
   </body>
+
 </html>

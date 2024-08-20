@@ -1,137 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kamnot</title>
     <link rel="stylesheet" href="assets/css/bootstrap.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.css" />
     <link rel="stylesheet" href="assets/plugins/aos/css/aos.css" />
   </head>
+
   <body>
     <!-- ! begin of header -->
     <header class="position-fixed top-0 w-100">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand" href="index.html"
-            ><img src="assets/img/navbar/Kn-logo.png" alt=""
-          /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            aria-expanded="false"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasWithBothOptions"
-            aria-controls="offcanvasWithBothOptions"
-          >
+          <a class="navbar-brand" href="index.html"><img src="assets/img/navbar/Kn-logo.png" alt="" /></a>
+          <button class="navbar-toggler" type="button" aria-expanded="false" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
             <span class="nav-toggler-icon all-center"><i class="fa-solid fa-bars"></i></span>
           </button>
           <!-- ! begin of offcanvas -->
-          <div
-            class="offcanvas offcanvas-start d-lg-none"
-            data-bs-scroll="true"
-            tabindex="-1"
-            id="offcanvasWithBothOptions"
-            aria-labelledby="offcanvasWithBothOptionsLabel"
-          >
+          <div class="offcanvas offcanvas-start d-lg-none" data-bs-scroll="true" tabindex="-1"
+            id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
             <div class="offcanvas-header">
               <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
-                <a class="navbar-brand" href="index.html"
-                  ><img src="assets/img/navbar/Kn-logo.png" alt=""
-                /></a>
+                <a class="navbar-brand" href="index.html"><img src="assets/img/navbar/Kn-logo.png" alt="" /></a>
               </h5>
-              <button
-                type="button"
-                class="x-close all-center"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ><i class="fa-solid fa-xmark"></i></button>
+              <button type="button" class="x-close all-center" data-bs-dismiss="offcanvas" aria-label="Close"><i
+                  class="fa-solid fa-xmark"></i></button>
             </div>
             <div class="offcanvas-body">
               <div class="canvas-header d-flex justify-content-between">
-                <a
-                  href="profile_info.html"
-                  class="convas-pf rounded-circle overflow-hidden text-decoration-none"
-                >
+                <a href="profile_info.html" class="convas-pf rounded-circle overflow-hidden text-decoration-none">
                   <img src="assets/img/navbar/profile-img.png" alt="" />
                 </a>
                 <div class="d-flex align-items-center">
-                  <a
-                    href="cart.html"
-                    class="btn-add-cart all-center text-decoration-none"
-                    ><i class="fa-solid fa-cart-shopping"></i>
-                    <div class="cart-status all-center"><span>2 </span></div></a
-                  >
-                  <button
-                    type="button"
-                    data-theme-toggle
-                    id="theme-toggle-1"
-                    class="dark-light-mode all-center rounded-circle ms-3"
-                  ></button>
+                  <a href="cart.html" class="btn-add-cart all-center text-decoration-none"><i
+                      class="fa-solid fa-cart-shopping"></i>
+                    <div class="cart-status all-center"><span>2 </span></div>
+                  </a>
+                  <button type="button" data-theme-toggle id="theme-toggle-1"
+                    class="dark-light-mode all-center rounded-circle ms-3"></button>
                 </div>
               </div>
 
               <!-- ! begin navbar offcanvas -->
               <ul class="nav-convas">
                 <li class="convas-item">
-                  <a class="convas-link convas-bar-bg" href="index.html"
-                    ><i class="fa fa-house"></i> ទំព័រដើម</a
-                  >
+                  <a class="convas-link convas-bar-bg" href="index.html"><i class="fa fa-house"></i> ទំព័រដើម</a>
                 </li>
                 <li class="convas-item">
                   <input type="checkbox" id="showDropHabit" />
-                  <label
-                    for="showDropHabit"
-                    class="sub-convas-dropdown d-flex align-items-center justify-content-between"
-                    ><div>
+                  <label for="showDropHabit"
+                    class="sub-convas-dropdown d-flex align-items-center justify-content-between">
+                    <div>
                       <i class="fa-solid fa-calendar-check"></i>
                       ទម្លាប់ប្រចាំថ្ងៃ
                     </div>
-                    <i class="fa-solid fa-caret-down"></i
-                  ></label>
+                    <i class="fa-solid fa-caret-down"></i>
+                  </label>
                   <ul class="drop-menu">
                     <li class="convas-item">
-                      <a class="convas-link bbt-pf" href="journaling.html"
-                        >កំណត់ត្រាប្រចាំថ្ងៃ</a
-                      >
+                      <a class="convas-link bbt-pf" href="journaling.html">កំណត់ត្រាប្រចាំថ្ងៃ</a>
                     </li>
                     <li class="convas-item">
-                      <a class="convas-link bbt-pf" href="money_spending.html"
-                        >តាមដានការចំណាយ</a
-                      >
+                      <a class="convas-link bbt-pf" href="money_spending.html">តាមដានការចំណាយ</a>
                     </li>
                     <li class="convas-item">
-                      <a class="convas-link bbt-pf" href="mood_tracking.html"
-                        >តាមដានផ្លូវចិត្ត</a
-                      >
+                      <a class="convas-link bbt-pf" href="mood_tracking.html">តាមដានផ្លូវចិត្ត</a>
                     </li>
                     <li class="convas-item">
-                      <a class="convas-link" href="exercise.html"
-                        >លំហាត់ប្រាណ</a
-                      >
+                      <a class="convas-link" href="exercise.html">លំហាត់ប្រាណ</a>
                     </li>
                   </ul>
                 </li>
                 <li class="convas-item mt-10">
                   <input type="checkbox" id="showDropMentalhealth" />
-                  <label
-                    for="showDropMentalhealth"
-                    class="sub-convas-dropdown d-flex align-items-center justify-content-between"
-                    ><div>
+                  <label for="showDropMentalhealth"
+                    class="sub-convas-dropdown d-flex align-items-center justify-content-between">
+                    <div>
                       <i class="fa-solid fa-brain"></i> ស្ថានភាពផ្លូវចិត្ត
                     </div>
-                    <i class="fa-solid fa-caret-down"></i
-                  ></label>
+                    <i class="fa-solid fa-caret-down"></i>
+                  </label>
                   <ul class="drop-menu">
                     <li class="convas-item">
-                      <a class="convas-link bbt-pf" href="therapist.html"
-                        >អ្នកជំនាញផ្លូវចិត្ត</a
-                      >
+                      <a class="convas-link bbt-pf" href="therapist.html">អ្នកជំនាញផ្លូវចិត្ត</a>
                     </li>
                     <li class="convas-item">
                       <a class="convas-link" href="mediation.html">សមាធិ</a>
@@ -140,57 +97,45 @@
                 </li>
                 <li class="convas-item mt-10">
                   <input type="checkbox" id="showDropEdu" />
-                  <label
-                    for="showDropEdu"
-                    class="sub-convas-dropdown d-flex align-items-center justify-content-between"
-                    ><div>
+                  <label for="showDropEdu"
+                    class="sub-convas-dropdown d-flex align-items-center justify-content-between">
+                    <div>
                       <i class="fa-solid fa-book-open-reader"></i> ចំណេះដឹង
                     </div>
-                    <i class="fa-solid fa-caret-down"></i
-                  ></label>
+                    <i class="fa-solid fa-caret-down"></i>
+                  </label>
                   <ul class="drop-menu">
                     <li class="convas-item">
-                      <a class="convas-link bbt-pf" href="book_store.html"
-                        >សៀវភៅ</a
-                      >
+                      <a class="convas-link bbt-pf" href="book_store.html">សៀវភៅ</a>
                     </li>
                     <li class="convas-item">
-                      <a class="convas-link bbt-pf" href="event.html"
-                        >ព្រឹត្តិការណ៍</a
-                      >
+                      <a class="convas-link bbt-pf" href="event.html">ព្រឹត្តិការណ៍</a>
                     </li>
                     <li class="convas-item">
-                      <a class="convas-link" href="video_recommendation.html"
-                        >វីឌីអូអភិវឌ្ឍខ្លួន</a
-                      >
+                      <a class="convas-link" href="video_recommendation.html">វីឌីអូអភិវឌ្ឍខ្លួន</a>
                     </li>
                   </ul>
                 </li>
                 <li class="convas-item">
-                  <a class="convas-link convas-bar-bg mb-0" href="article.html"
-                    ><i class="fa-solid fa-newspaper"></i> អត្ថបទ</a
-                  >
+                  <a class="convas-link convas-bar-bg mb-0" href="article.html"><i class="fa-solid fa-newspaper"></i>
+                    អត្ថបទ</a>
                 </li>
                 <li class="convas-item">
-                  <a class="convas-link convas-bar-bg mb-0" href="article.html"
-                    ><i class="fa-solid fa-money-check-dollar"></i> តម្លៃ</a
-                  >
+                  <a class="convas-link convas-bar-bg mb-0" href="article.html"><i
+                      class="fa-solid fa-money-check-dollar"></i> តម្លៃ</a>
                 </li>
                 <li class="convas-item mt-10">
                   <input type="checkbox" id="showDropMoreInfo" />
-                  <label
-                    for="showDropMoreInfo"
-                    class="sub-convas-dropdown d-flex align-items-center justify-content-between"
-                    ><div>
+                  <label for="showDropMoreInfo"
+                    class="sub-convas-dropdown d-flex align-items-center justify-content-between">
+                    <div>
                       <i class="fa-solid fa-circle-info"></i> ព័ត៌មានបន្ថែម
                     </div>
-                    <i class="fa-solid fa-caret-down"></i
-                  ></label>
+                    <i class="fa-solid fa-caret-down"></i>
+                  </label>
                   <ul class="drop-menu">
                     <li class="convas-item">
-                      <a class="convas-link bbt-pf" href="about_us.html"
-                        >អំពីយើង</a
-                      >
+                      <a class="convas-link bbt-pf" href="about_us.html">អំពីយើង</a>
                     </li>
                     <li class="convas-item">
                       <a class="convas-link" href="contact_us.html">ទាក់ទង</a>
@@ -202,17 +147,11 @@
             </div>
           </div>
           <!-- ! end of offcanvas -->
-          <div
-            class="collapse navbar-collapse d-flex justify-content-end d-lg-block d-none"
-            id="navbarSupportedContent"
-          >
+          <div class="collapse navbar-collapse d-flex justify-content-end d-lg-block d-none"
+            id="navbarSupportedContent">
             <form class="search-bar d-flex" role="search">
-              <input
-                class="search-nav form-control me-3 position-relative"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
+              <input class="search-nav form-control me-3 position-relative" type="search" placeholder="Search"
+                aria-label="Search" />
               <i class="fa-solid fa-magnifying-glass position-absolute"></i>
             </form>
             <div class="profile d-flex flex-row align-items-center">
@@ -220,9 +159,7 @@
                 <i class="fa-solid fa-caret-down"></i>
               </div>
               <div class="pf-status d-flex flex-column align-items-end">
-                <a href="profile_info.html" class="pf-name text-decoration-none"
-                  >Wade Warren</a
-                >
+                <a href="profile_info.html" class="pf-name text-decoration-none">Wade Warren</a>
               </div>
               <div class="pf-image rounded-circle ms-2">
                 <img src="assets/img/navbar/profile-img.png" alt="" />
@@ -234,11 +171,7 @@
                   <li class="pf-item bbt-pf">
                     <a href="profile_info.html" class="pf-link d-flex">
                       <div class="dropdown-pf">
-                        <img
-                          src="assets/img/navbar/profile-img.png"
-                          class="rounded-circle"
-                          alt=""
-                        />
+                        <img src="assets/img/navbar/profile-img.png" class="rounded-circle" alt="" />
                       </div>
                       <p class="m-0">Wade Warren</p>
                     </a>
@@ -254,14 +187,9 @@
                 </ul>
               </div>
             </div>
-            <div
-              class="notification rounded-circle all-center position-relative ms-3"
-            >
+            <div class="notification rounded-circle all-center position-relative ms-3">
               <i class="fa-solid fa-bell"></i>
-              <span
-                class="notification-count bg-danger all-center text-white position-absolute"
-                >9</span
-              >
+              <span class="notification-count bg-danger all-center text-white position-absolute">9</span>
               <div class="noti-controll">
                 <div class="box-rotate"></div>
                 <div class="noti-content">
@@ -361,22 +289,13 @@
                       </a>
                     </li>
                   </ul>
-                  <a
-                    type="button"
-                    href="notification.html"
-                    role="button"
-                    class="bar-noti text-decoration-none w-100"
-                    >មើលទាំងអស់</a
-                  >
+                  <a type="button" href="notification.html" role="button"
+                    class="bar-noti text-decoration-none w-100">មើលទាំងអស់</a>
                 </div>
               </div>
             </div>
-            <button
-              type="button"
-              data-theme-toggle
-              id="theme-toggle-2"
-              class="dark-light-mode all-center rounded-circle ms-3"
-            ></button>
+            <button type="button" data-theme-toggle id="theme-toggle-2"
+              class="dark-light-mode all-center rounded-circle ms-3"></button>
           </div>
         </div>
       </nav>
@@ -391,13 +310,8 @@
             <div class="side-menu">
               <ul class="menu">
                 <li class="menu-item all-center">
-                  <a
-                    role="button"
-                    type="button"
-                    href="index.html"
-                    class="menu-btn text-decoration-none all-center"
-                    ><i class="fa fa-house"></i
-                  ></a>
+                  <a role="button" type="button" href="index.html"
+                    class="menu-btn active text-decoration-none all-center"><i class="fa fa-house"></i></a>
                   <ul class="nav-menu">
                     <li class="menu-item">
                       <div class="menu-content">
@@ -423,24 +337,16 @@
                         </div>
                         <ul class="content-list">
                           <li class="content-item">
-                            <a href="journaling.html" class="content-link"
-                              >កំណត់ត្រាប្រចាំថ្ងៃ</a
-                            >
+                            <a href="journaling.html" class="content-link">កំណត់ត្រាប្រចាំថ្ងៃ</a>
                           </li>
                           <li class="content-item">
-                            <a href="journaling.html" class="content-link"
-                              >តាមដានការចំណាយ</a
-                            >
+                            <a href="money_spending.html" class="content-link">តាមដានការចំណាយ</a>
                           </li>
                           <li class="content-item">
-                            <a href="journaling.html" class="content-link"
-                              >តាមដានផ្លូវចិត្ត</a
-                            >
+                            <a href="mood_tracking.html" class="content-link">តាមដានផ្លូវចិត្ត</a>
                           </li>
                           <li class="content-item">
-                            <a href="journaling.html" class="content-link"
-                              >លំហាត់ប្រាណ</a
-                            >
+                            <a href="exercise.html" class="content-link">លំហាត់ប្រាណ</a>
                           </li>
                         </ul>
                       </div>
@@ -449,7 +355,7 @@
                   </ul>
                 </li>
                 <li class="menu-item all-center">
-                  <button type="button" class="menu-btn all-center active">
+                  <button type="button" class="menu-btn all-center">
                     <i class="fa-solid fa-brain"></i>
                   </button>
                   <ul class="nav-menu">
@@ -461,14 +367,10 @@
                         </div>
                         <ul class="content-list">
                           <li class="content-item">
-                            <a href="therapist.html" class="content-link"
-                              >អ្នកជំនាញផ្លូវចិត្ត</a
-                            >
+                            <a href="therapist.html" class="content-link">អ្នកជំនាញផ្លូវចិត្ត</a>
                           </li>
                           <li class="content-item">
-                            <a href="mediation.html" class="content-link"
-                              >សមាធិ</a
-                            >
+                            <a href="mediation.html" class="content-link">សមាធិ</a>
                           </li>
                         </ul>
                       </div>
@@ -489,19 +391,13 @@
                         </div>
                         <ul class="content-list">
                           <li class="content-item">
-                            <a href="therapist.html" class="content-link"
-                              >សៀវភៅ</a
-                            >
+                            <a href="book_store.html" class="content-link">សៀវភៅ</a>
                           </li>
                           <li class="content-item">
-                            <a href="mediation.html" class="content-link"
-                              >ព្រឹត្តិការណ៍</a
-                            >
+                            <a href="event.html" class="content-link">ព្រឹត្តិការណ៍</a>
                           </li>
                           <li class="content-item">
-                            <a href="mediation.html" class="content-link"
-                              >វីឌីអូអភិវឌ្ឍខ្លួន</a
-                            >
+                            <a href="video_recommendation.html" class="content-link">វីឌីអូអភិវឌ្ឍខ្លួន</a>
                           </li>
                         </ul>
                       </div>
@@ -510,12 +406,8 @@
                   </ul>
                 </li>
                 <li class="menu-item all-center">
-                  <a
-                    href="pricing.html"
-                    type="button"
-                    class="menu-btn all-center text-decoration-none"
-                    ><i class="fa-solid fa-money-check-dollar"></i
-                  ></a>
+                  <a href="pricing.html" type="button" class="menu-btn all-center text-decoration-none"><i
+                      class="fa-solid fa-money-check-dollar"></i></a>
                   <ul class="nav-menu">
                     <li class="menu-item">
                       <div class="menu-content">
@@ -529,13 +421,8 @@
                   </ul>
                 </li>
                 <li class="menu-item all-center">
-                  <a
-                    role="button"
-                    href="article.html"
-                    type="button"
-                    class="menu-btn all-center text-decoration-none"
-                    ><i class="fa-solid fa-newspaper"></i
-                  ></a>
+                  <a role="button" href="article.html" type="button" class="menu-btn all-center text-decoration-none"><i
+                      class="fa-solid fa-newspaper"></i></a>
                   <ul class="nav-menu">
                     <li class="menu-item">
                       <div class="menu-content">
@@ -561,14 +448,10 @@
                         </div>
                         <ul class="content-list">
                           <li class="content-item">
-                            <a href="about_us.html" class="content-link"
-                              >អំពីយើង</a
-                            >
+                            <a href="about_us.html" class="content-link">អំពីយើង</a>
                           </li>
                           <li class="content-item">
-                            <a href="contact_us.html" class="content-link"
-                              >ទាក់ទង</a
-                            >
+                            <a href="contact_us.html" class="content-link">ទាក់ទង</a>
                           </li>
                         </ul>
                       </div>
@@ -588,13 +471,16 @@
                 <div class="row">
                   <div class=" col-12 col-lg-5">
                     <div class="therapist-banner-title w-100 p-5">
-                      <h2>លើកកម្ពស់ការយល់ដឹងពីផ្លូវចិត្តរបស់អ្នកតាមរយៈអ្នកជំនាញផ្លូវចិត្តរបស់ <br> <mark class="mt-5">Kamnot - កំណត់</mark></h2>
-                      <p class="fs-6 fs-lg-5 pt-1 pt-lg-5">ពិភាក្សា និងដោះដូរ និងទទួលបានយោបល់ល្អៗទាក់ទងនឹងបញ្ហាដែលអ្នកកំពុងជួបប្រទះ</p>
+                      <h2>លើកកម្ពស់ការយល់ដឹងពីផ្លូវចិត្តរបស់អ្នកតាមរយៈអ្នកជំនាញផ្លូវចិត្តរបស់ <br> <mark
+                          class="mt-5">Kamnot - កំណត់</mark></h2>
+                      <p class="fs-6 fs-lg-5 pt-1 pt-lg-5">ពិភាក្សា និងដោះដូរ
+                        និងទទួលបានយោបល់ល្អៗទាក់ទងនឹងបញ្ហាដែលអ្នកកំពុងជួបប្រទះ</p>
                     </div>
                   </div>
                   <div class="col-12 col-lg-7">
                     <div class="therapist-poster position-relative overflow-hidden w-100 h-100">
-                      <div class="poster-img position-relative d-flex justify-content-center align-items-lg-end h-100 w-100">
+                      <div
+                        class="poster-img position-relative d-flex justify-content-center align-items-lg-end h-100 w-100">
                         <img src="assets/img/therapist-page/woman on chair 1.webp" alt="">
                       </div>
                       <div class="poster-icon position-absolute">
@@ -625,23 +511,28 @@
                     <div class="card">
                       <div class="card-img">
                         <img src="assets/img/therapist-page/therapist-1.jpg" class="card-img-top" alt="therapist-pic">
-                       
+
                       </div>
-                      
+
                       <div class="card-wrapper rounded-3 bg-white">
                         <div class="card-body">
                           <div class="card-title mb-0 d-flex justify-content-between">
                             <h5 class="fs-4 landing-title-color mb-0">Dr.Astiya</h5>
-                            <div class="experience d-flex px-4 justify-content-center align-items-center bg-primary-subtle">
+                            <div
+                              class="experience d-flex px-4 justify-content-center align-items-center bg-primary-subtle">
                               <p class="mb-0 fw-bold landing-title-color">5 ឆ្នាំ</p>
                             </div>
                           </div>
                           <p>Relationship Therapist</p>
-                          <p class="card-body-text pt-2">វេជ្ជបណ្ឌិត Astiya គឺជាអ្នកព្យាបាលផ្នែកទំនាក់ទំនងគូស្នេហ៍ដែលមានជំនាញ និងមានឯកទេសក្នុងការដោះស្រាយជម្លោះ និងការពង្រឹងទំនាក់ទំនងផ្លូវចិត្តរវាងដៃគូ។</p>
-                          
+                          <p class="card-body-text pt-2">វេជ្ជបណ្ឌិត Astiya
+                            គឺជាអ្នកព្យាបាលផ្នែកទំនាក់ទំនងគូស្នេហ៍ដែលមានជំនាញ និងមានឯកទេសក្នុងការដោះស្រាយជម្លោះ
+                            និងការពង្រឹងទំនាក់ទំនងផ្លូវចិត្តរវាងដៃគូ។</p>
+
                         </div>
-                        <div class="card-footer d-flex justify-content-between align-items-center pt-0 bg-transparent border-0">
-                          <button type="button" class="btn therapist-contact" data-bs-toggle="modal" data-bs-target="#exampleModal">ទំនាក់ទំនង</button>
+                        <div
+                          class="card-footer d-flex justify-content-between align-items-center pt-0 bg-transparent border-0">
+                          <button type="button" class="btn therapist-contact" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">ទំនាក់ទំនង</button>
                           <div class="rating">
                             <span class="pe-2">ចូលចិត្ត</span>
                             <span class="text-warning"><i class="fa-solid fa-star"></i></span>
@@ -652,10 +543,11 @@
                           </div>
                         </div>
                       </div>
-                      
-                      
+
+
                     </div>
-                    <div class="vip badge position-absolute bg-warning-subtle rounded-pill p-2" style="right: -10px; top: -15px;">
+                    <div class="vip badge position-absolute bg-warning-subtle rounded-pill p-2"
+                      style="right: -10px; top: -15px;">
                       <span class="text-black fs-6 px-2">VIP</span>
                       <span class="text-warning pe-2"><i class="fa-brands fa-web-awesome"></i></span>
                     </div>
@@ -664,23 +556,28 @@
                     <div class="card">
                       <div class="card-img">
                         <img src="assets/img/therapist-page/therapist-2.jpg" class="card-img-top" alt="therapist-pic">
-                       
+
                       </div>
-                      
+
                       <div class="card-wrapper rounded-3 bg-white">
                         <div class="card-body">
                           <div class="card-title mb-0 d-flex justify-content-between">
                             <h5 class="fs-4 landing-title-color mb-0">Dr.Marisa</h5>
-                            <div class="experience d-flex px-4 justify-content-center align-items-center bg-primary-subtle">
+                            <div
+                              class="experience d-flex px-4 justify-content-center align-items-center bg-primary-subtle">
                               <p class="mb-0 fw-bold landing-title-color">5 ឆ្នាំ</p>
                             </div>
                           </div>
                           <p>Depression Therapist</p>
-                          <p class="card-body-text pt-2">Marisa គឺជាអ្នកព្យាបាលជំងឺធ្លាក់ទឹកចិត្តដែលមានបទពិសោធន៍ ក្នុងការជួយបុគ្គលទាំងឡាយឱ្យជម្នះឧបសគ្គនិងស្វែងរកក្តីសង្ឃឹម តាមរយៈការព្យាបាលប្រកបដោយប្រសិទ្ធភាព។</p>
-                          
+                          <p class="card-body-text pt-2">Marisa គឺជាអ្នកព្យាបាលជំងឺធ្លាក់ទឹកចិត្តដែលមានបទពិសោធន៍
+                            ក្នុងការជួយបុគ្គលទាំងឡាយឱ្យជម្នះឧបសគ្គនិងស្វែងរកក្តីសង្ឃឹម
+                            តាមរយៈការព្យាបាលប្រកបដោយប្រសិទ្ធភាព។</p>
+
                         </div>
-                        <div class="card-footer d-flex justify-content-between align-items-center pt-0 bg-transparent border-0">
-                          <button type="button" class="btn therapist-contact" data-bs-toggle="modal" data-bs-target="#exampleModal">ទំនាក់ទំនង</button>
+                        <div
+                          class="card-footer d-flex justify-content-between align-items-center pt-0 bg-transparent border-0">
+                          <button type="button" class="btn therapist-contact" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">ទំនាក់ទំនង</button>
                           <div class="rating">
                             <span class="pe-2">ចូលចិត្ត</span>
                             <span class="text-warning"><i class="fa-solid fa-star"></i></span>
@@ -691,10 +588,11 @@
                           </div>
                         </div>
                       </div>
-                      
-                      
+
+
                     </div>
-                    <div class="vip badge position-absolute bg-warning-subtle rounded-pill p-2" style="right: -10px; top: -15px;">
+                    <div class="vip badge position-absolute bg-warning-subtle rounded-pill p-2"
+                      style="right: -10px; top: -15px;">
                       <span class="text-black fs-6 px-2">VIP</span>
                       <span class="text-warning pe-2"><i class="fa-brands fa-web-awesome"></i></span>
                     </div>
@@ -703,23 +601,28 @@
                     <div class="card">
                       <div class="card-img">
                         <img src="assets/img/therapist-page/therapist-3.jpg" class="card-img-top" alt="therapist-pic">
-                       
+
                       </div>
-                      
+
                       <div class="card-wrapper rounded-3 bg-white">
                         <div class="card-body">
                           <div class="card-title mb-0 d-flex justify-content-between">
                             <h5 class="fs-4 landing-title-color mb-0">Dr.Monali</h5>
-                            <div class="experience d-flex px-4 justify-content-center align-items-center bg-primary-subtle">
+                            <div
+                              class="experience d-flex px-4 justify-content-center align-items-center bg-primary-subtle">
                               <p class="mb-0 fw-bold landing-title-color">5 ឆ្នាំ</p>
                             </div>
                           </div>
                           <p>Relationship Therapist</p>
-                          <p class="card-body-text pt-2">វេជ្ជបណ្ឌិត Monali គឺជាអ្នកព្យាបាលផ្នែកទំនាក់ទំនងគូស្នេហ៍ដែលមានជំនាញ និងមានឯកទេសក្នុងការដោះស្រាយជម្លោះ និងការពង្រឹងទំនាក់ទំនងផ្លូវចិត្តរវាងដៃគូ។</p>
-                          
+                          <p class="card-body-text pt-2">វេជ្ជបណ្ឌិត Monali
+                            គឺជាអ្នកព្យាបាលផ្នែកទំនាក់ទំនងគូស្នេហ៍ដែលមានជំនាញ និងមានឯកទេសក្នុងការដោះស្រាយជម្លោះ
+                            និងការពង្រឹងទំនាក់ទំនងផ្លូវចិត្តរវាងដៃគូ។</p>
+
                         </div>
-                        <div class="card-footer d-flex justify-content-between align-items-center pt-0 bg-transparent border-0">
-                          <button type="button" class="btn therapist-contact" data-bs-toggle="modal" data-bs-target="#exampleModal">ទំនាក់ទំនង</button>
+                        <div
+                          class="card-footer d-flex justify-content-between align-items-center pt-0 bg-transparent border-0">
+                          <button type="button" class="btn therapist-contact" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">ទំនាក់ទំនង</button>
                           <div class="rating">
                             <span class="pe-2">ចូលចិត្ត</span>
                             <span class="text-warning"><i class="fa-solid fa-star"></i></span>
@@ -730,10 +633,11 @@
                           </div>
                         </div>
                       </div>
-                      
-                      
+
+
                     </div>
-                    <div class="vip badge position-absolute bg-warning-subtle rounded-pill p-2" style="right: -10px; top: -15px;">
+                    <div class="vip badge position-absolute bg-warning-subtle rounded-pill p-2"
+                      style="right: -10px; top: -15px;">
                       <span class="text-black fs-6 px-2">VIP</span>
                       <span class="text-warning pe-2"><i class="fa-brands fa-web-awesome"></i></span>
                     </div>
@@ -742,23 +646,27 @@
                     <div class="card">
                       <div class="card-img">
                         <img src="assets/img/therapist-page/therapist-4.jpg" class="card-img-top" alt="therapist-pic">
-                       
+
                       </div>
-                      
+
                       <div class="card-wrapper rounded-3 bg-white">
                         <div class="card-body">
                           <div class="card-title mb-0 d-flex justify-content-between">
                             <h5 class="fs-4 landing-title-color mb-0">Dr.Christian</h5>
-                            <div class="experience d-flex px-4 justify-content-center align-items-center bg-primary-subtle">
+                            <div
+                              class="experience d-flex px-4 justify-content-center align-items-center bg-primary-subtle">
                               <p class="mb-0 fw-bold landing-title-color">3 ឆ្នាំ</p>
                             </div>
                           </div>
                           <p>General Therapist</p>
-                          <p class="card-body-text pt-2">Christian គឺជាអ្នកព្យាបាលទូទៅដែលយកចិត្តទុកដាក់ជាមួយនឹងបទពិសោធន៍ 3 ឆ្នាំ ដោយជួយអតិថិជនក្នុងការស្វែងរកបញ្ហាសុខភាពផ្លូវចិត្តផ្សេងៗ និងលើកកម្ពស់សុខុមាលភាព។</p>
-                          
+                          <p class="card-body-text pt-2">Christian គឺជាអ្នកព្យាបាលទូទៅដែលយកចិត្តទុកដាក់ជាមួយនឹងបទពិសោធន៍
+                            3 ឆ្នាំ ដោយជួយអតិថិជនក្នុងការស្វែងរកបញ្ហាសុខភាពផ្លូវចិត្តផ្សេងៗ និងលើកកម្ពស់សុខុមាលភាព។</p>
+
                         </div>
-                        <div class="card-footer d-flex justify-content-between align-items-center pt-0 bg-transparent border-0">
-                          <button type="button" class="btn therapist-contact" data-bs-toggle="modal" data-bs-target="#exampleModal">ទំនាក់ទំនង</button>
+                        <div
+                          class="card-footer d-flex justify-content-between align-items-center pt-0 bg-transparent border-0">
+                          <button type="button" class="btn therapist-contact" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">ទំនាក់ទំនង</button>
                           <div class="rating">
                             <span class="pe-2">ចូលចិត្ត</span>
                             <span class="text-warning"><i class="fa-solid fa-star"></i></span>
@@ -769,31 +677,36 @@
                           </div>
                         </div>
                       </div>
-                      
-                      
+
+
                     </div>
                   </div>
                   <div class="col-sm-12 col-md-6 col-lg-4 position-relative">
                     <div class="card">
                       <div class="card-img">
                         <img src="assets/img/therapist-page/therapist-5.jpg" class="card-img-top" alt="therapist-pic">
-                       
+
                       </div>
-                      
+
                       <div class="card-wrapper rounded-3 bg-white">
                         <div class="card-body">
                           <div class="card-title mb-0 d-flex justify-content-between">
                             <h5 class="fs-4 landing-title-color mb-0">Dr.Mashio</h5>
-                            <div class="experience d-flex px-4 justify-content-center align-items-center bg-primary-subtle">
+                            <div
+                              class="experience d-flex px-4 justify-content-center align-items-center bg-primary-subtle">
                               <p class="mb-0 fw-bold landing-title-color">3 ឆ្នាំ</p>
                             </div>
                           </div>
                           <p>Relationship Therapist</p>
-                          <p class="card-body-text pt-2">វេជ្ជបណ្ឌិត Mashio គឺជាអ្នកព្យាបាលផ្នែកទំនាក់ទំនងគូស្នេហ៍ដែលមានជំនាញ និងមានឯកទេសក្នុងការដោះស្រាយជម្លោះ និងការពង្រឹងទំនាក់ទំនងផ្លូវចិត្តរវាងដៃគូ។</p>
-                          
+                          <p class="card-body-text pt-2">វេជ្ជបណ្ឌិត Mashio
+                            គឺជាអ្នកព្យាបាលផ្នែកទំនាក់ទំនងគូស្នេហ៍ដែលមានជំនាញ និងមានឯកទេសក្នុងការដោះស្រាយជម្លោះ
+                            និងការពង្រឹងទំនាក់ទំនងផ្លូវចិត្តរវាងដៃគូ។</p>
+
                         </div>
-                        <div class="card-footer d-flex justify-content-between align-items-center pt-0 bg-transparent border-0">
-                          <button type="button" class="btn therapist-contact" data-bs-toggle="modal" data-bs-target="#exampleModal">ទំនាក់ទំនង</button>
+                        <div
+                          class="card-footer d-flex justify-content-between align-items-center pt-0 bg-transparent border-0">
+                          <button type="button" class="btn therapist-contact" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">ទំនាក់ទំនង</button>
                           <div class="rating">
                             <span class="pe-2">ចូលចិត្ត</span>
                             <span class="text-warning"><i class="fa-solid fa-star"></i></span>
@@ -804,31 +717,36 @@
                           </div>
                         </div>
                       </div>
-                      
-                      
+
+
                     </div>
                   </div>
                   <div class="col-sm-12 col-md-6 col-lg-4 position-relative">
                     <div class="card">
                       <div class="card-img">
                         <img src="assets/img/therapist-page/therapist-6.jpg" class="card-img-top" alt="therapist-pic">
-                       
+
                       </div>
-                      
+
                       <div class="card-wrapper rounded-3 bg-white">
                         <div class="card-body">
                           <div class="card-title mb-0 d-flex justify-content-between">
                             <h5 class="fs-4 landing-title-color mb-0">Dr.Lima</h5>
-                            <div class="experience d-flex px-4 justify-content-center align-items-center bg-primary-subtle">
+                            <div
+                              class="experience d-flex px-4 justify-content-center align-items-center bg-primary-subtle">
                               <p class="mb-0 fw-bold landing-title-color">4 ឆ្នាំ</p>
                             </div>
                           </div>
                           <p>Relationship Therapist</p>
-                          <p class="card-body-text pt-2">វេជ្ជបណ្ឌិត Lima គឺជាអ្នកព្យាបាលផ្នែកទំនាក់ទំនងគូស្នេហ៍ដែលមានជំនាញ និងមានឯកទេសក្នុងការដោះស្រាយជម្លោះ និងការពង្រឹងទំនាក់ទំនងផ្លូវចិត្តរវាងដៃគូ។</p>
-                          
+                          <p class="card-body-text pt-2">វេជ្ជបណ្ឌិត Lima
+                            គឺជាអ្នកព្យាបាលផ្នែកទំនាក់ទំនងគូស្នេហ៍ដែលមានជំនាញ និងមានឯកទេសក្នុងការដោះស្រាយជម្លោះ
+                            និងការពង្រឹងទំនាក់ទំនងផ្លូវចិត្តរវាងដៃគូ។</p>
+
                         </div>
-                        <div class="card-footer d-flex justify-content-between align-items-center pt-0 bg-transparent border-0">
-                          <button type="button" class="btn therapist-contact" data-bs-toggle="modal" data-bs-target="#exampleModal">ទំនាក់ទំនង</button>
+                        <div
+                          class="card-footer d-flex justify-content-between align-items-center pt-0 bg-transparent border-0">
+                          <button type="button" class="btn therapist-contact" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">ទំនាក់ទំនង</button>
                           <div class="rating">
                             <span class="pe-2">ចូលចិត្ត</span>
                             <span class="text-warning"><i class="fa-solid fa-star"></i></span>
@@ -841,7 +759,8 @@
                       </div>
                     </div>
                   </div>
-                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-lg">
                       <div class="modal-content">
                         <div class="modal-header">
@@ -858,16 +777,24 @@
                             <div class="col-8">
                               <div class="therapist-modal-content">
                                 <h2>អំពី Dr.Astiya</h2>
-                                <p>វេជ្ជបណ្ឌិត Astiya គឺជា និងអ្នកព្យាបាលទំនាក់ទំនងដែលមានការតាំងចិត្តដល់ការជួយដៃគូក្នុងការស្វែងរកបញ្ហាប្រឈម និងពង្រឹងចំណងរបស់ពួកគេ។ ជាមួយនឹងការយល់ដឹងយ៉ាងស៊ីជម្រៅអំពីភាពស្មុគស្មាញនៃទំនាក់ទំនង 
-                                  វេជ្ជបណ្ឌិត Astiya ប្រើបច្ចេកទេសផ្អែកលើភស្តុតាង ដើម្បីជំរុញទំនាក់ទំនង ដោះស្រាយជម្លោះ និងលើកកម្ពស់ទំនាក់ទំនងផ្លូវចិត្ត។ មិនថាការដឹកនាំគូស្វាមីភរិយាឆ្លងកាត់គ្រាលំបាក ឬជួយពួកគេកសាងមូលដ្ឋានគ្រឹះដ៏រឹងមាំនោះទេ វិធីសាស្រ្តរបស់វេជ្ជបណ្ឌិត Astiya គឺមានការយល់ចិត្ត និងផ្តោតលើដំណោះស្រាយ ដែលបង្កើតផលប៉ះពាល់យូរអង្វែងដល់ជីវិតរបស់អ្នកដែលនាងទូន្មាន។</p>
+                                <p>វេជ្ជបណ្ឌិត Astiya គឺជា
+                                  និងអ្នកព្យាបាលទំនាក់ទំនងដែលមានការតាំងចិត្តដល់ការជួយដៃគូក្នុងការស្វែងរកបញ្ហាប្រឈម
+                                  និងពង្រឹងចំណងរបស់ពួកគេ។ ជាមួយនឹងការយល់ដឹងយ៉ាងស៊ីជម្រៅអំពីភាពស្មុគស្មាញនៃទំនាក់ទំនង
+                                  វេជ្ជបណ្ឌិត Astiya ប្រើបច្ចេកទេសផ្អែកលើភស្តុតាង ដើម្បីជំរុញទំនាក់ទំនង ដោះស្រាយជម្លោះ
+                                  និងលើកកម្ពស់ទំនាក់ទំនងផ្លូវចិត្ត។ មិនថាការដឹកនាំគូស្វាមីភរិយាឆ្លងកាត់គ្រាលំបាក
+                                  ឬជួយពួកគេកសាងមូលដ្ឋានគ្រឹះដ៏រឹងមាំនោះទេ វិធីសាស្រ្តរបស់វេជ្ជបណ្ឌិត Astiya
+                                  គឺមានការយល់ចិត្ត និងផ្តោតលើដំណោះស្រាយ
+                                  ដែលបង្កើតផលប៉ះពាល់យូរអង្វែងដល់ជីវិតរបស់អ្នកដែលនាងទូន្មាន។</p>
                                 <div class="therapist-form">
                                   <div class="mb-3">
                                     <label for="customerName" class="form-label">ឈ្មោះរបស់អ្នក</label>
-                                    <input class="form-control" id="customerName" type="text" placeholder="Astiya" aria-label="">
+                                    <input class="form-control" id="customerName" type="text" placeholder="Astiya"
+                                      aria-label="">
                                   </div>
                                   <div class="mb-3">
                                     <label for="customerEmail" class="form-label">អ៊ីម៉ែលរបស់អ្នក</label>
-                                    <input class="form-control" id="customerEmail" type="email" placeholder="@astiya.com" aria-label="">
+                                    <input class="form-control" id="customerEmail" type="email"
+                                      placeholder="@astiya.com" aria-label="">
                                   </div>
                                 </div>
 
@@ -881,7 +808,7 @@
                       </div>
                     </div>
                   </div>
-                  
+
                 </div>
               </section>
               <section class="section-space therapist-history">
@@ -898,24 +825,26 @@
                   <p class="text-center light-black">មិនទាន់មានឯកសារ</p>
                 </div>
               </section>
-            
+
               <section class="section-space therapist-questions">
                 <div class="categories-title mb-5">
-                  <p class="mb-0 fs-5 text-center">សាកល្បងឆ្លើយសំណួររបស់យើងដើម្បីឱ្យយើងអាចយល់ដឹងពីអ្នកកាន់តែច្រើនជាងមុន</p>
+                  <p class="mb-0 fs-5 text-center">សាកល្បងឆ្លើយសំណួររបស់យើងដើម្បីឱ្យយើងអាចយល់ដឹងពីអ្នកកាន់តែច្រើនជាងមុន
+                  </p>
                 </div>
                 <div class="card">
                   <div id="carouselExampleFade" class="carousel slide carousel-fade w-100 h-100">
                     <div class="carousel-inner w-100 h-100">
                       <div class="carousel-item active">
                         <div class="questions">
-                          <h2 class="text-white text-center">តើអ្នកធ្លាប់បានសាកល្បងទទួលការប្រឹក្សាផ្លូវចិត្តពីមុនដែរឬទេ ? </h2>
+                          <h2 class="text-white text-center">តើអ្នកធ្លាប់បានសាកល្បងទទួលការប្រឹក្សាផ្លូវចិត្តពីមុនដែរឬទេ
+                            ? </h2>
                           <div class="question-form mt-5 w-100 d-flex justify-content-center">
                             <div class="form-check form-check-inline">
                               <input class="form-check-input me-3" type="checkbox" value="" id="yes">
                               <label class="form-check-label text-white fs-4" for="yes">
                                 ធ្លាប់
                               </label>
-                              
+
                             </div>
                             <div class="form-check ms-5 form-check-inline">
                               <input class="form-check-input me-3" type="checkbox" value="" id="no">
@@ -924,19 +853,20 @@
                               </label>
                             </div>
                           </div>
-                         
+
                         </div>
                       </div>
                       <div class="carousel-item">
                         <div class="questions">
-                          <h2 class="text-white text-center">តើអ្នកចង់សម្រេចបំណងអ្វីដែរពីការបើកបង្ហាញអារម្មណ៌របស់អ្នក? </h2>
+                          <h2 class="text-white text-center">តើអ្នកចង់សម្រេចបំណងអ្វីដែរពីការបើកបង្ហាញអារម្មណ៌របស់អ្នក?
+                          </h2>
                           <div class="question-form mt-5 w-100 d-flex justify-content-center">
                             <div class="form-check form-check-inline">
                               <input class="form-check-input me-3" type="checkbox" value="" id="yes1">
                               <label class="form-check-label text-white fs-4" for="yes">
                                 យល់ដឹងពីខ្លួនឯង
                               </label>
-                              
+
                             </div>
                             <div class="form-check ms-5 form-check-inline">
                               <input class="form-check-input me-3" type="checkbox" value="" id="no1">
@@ -951,7 +881,7 @@
                               </label>
                             </div>
                           </div>
-                         
+
                         </div>
                       </div>
                       <div class="carousel-item">
@@ -963,7 +893,7 @@
                               <label class="form-check-label text-white fs-4" for="yes">
                                 បាទ/ចាស៎
                               </label>
-                              
+
                             </div>
                             <div class="form-check ms-5 form-check-inline">
                               <input class="form-check-input me-3" type="checkbox" value="" id="no2">
@@ -972,7 +902,7 @@
                               </label>
                             </div>
                           </div>
-                         
+
                         </div>
                       </div>
                       <div class="carousel-item">
@@ -984,7 +914,7 @@
                               <label class="form-check-label text-white fs-4" for="yes">
                                 ការសន្ទនាតាមទូរស័ព្ទ
                               </label>
-                              
+
                             </div>
                             <div class="form-check ms-5 form-check-inline">
                               <input class="form-check-input me-3" type="checkbox" value="" id="messenge">
@@ -993,26 +923,29 @@
                               </label>
                             </div>
                           </div>
-                         
+
                         </div>
                       </div>
                       <div class="carousel-item">
                         <div class="questions" style="padding: 150px;">
-                          <h2 class="text-white text-center">សូមអរគុណ សម្រាប់ការចំណាយពេលចូលរួមឆ្លើយសំណួររបស់ <br> Kamnot - កំណត់</h2>
+                          <h2 class="text-white text-center">សូមអរគុណ សម្រាប់ការចំណាយពេលចូលរួមឆ្លើយសំណួររបស់ <br> Kamnot
+                            - កំណត់</h2>
                         </div>
                       </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                      data-bs-slide="prev">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                       <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                      data-bs-slide="next">
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
                       <span class="visually-hidden">Next</span>
                     </button>
                   </div>
                 </div>
-               
+
               </section>
               <!-- ? end of write your content here -->
             </div>
@@ -1028,12 +961,9 @@
       <div class="container py-3">
         <div class="row px-4 px-lg-0">
           <div class="col-lg-3 col-12">
-            <div
-              class="footer-logo w-100 d-lg-block d-flex justify-content-center"
-            >
-              <a href="index.html" class="text-decoration-none"
-                ><img src="assets/img/navbar/Kn-logo.png" alt="Kn-logo"
-              /></a>
+            <div class="footer-logo w-100 d-lg-block d-flex justify-content-center">
+              <a href="index.html" class="text-decoration-none"><img src="assets/img/navbar/Kn-logo.png"
+                  alt="Kn-logo" /></a>
             </div>
             <div class="comp-discript">
               <p>
@@ -1045,29 +975,19 @@
             </div>
             <ul class="comp-social-media d-flex pb-3 pb-lg-0">
               <li class="comp-item">
-                <a href="#" class="social-media-icon"
-                  ><i class="fab fa-facebook-f"></i
-                ></a>
+                <a href="#" class="social-media-icon"><i class="fab fa-facebook-f"></i></a>
               </li>
               <li class="comp-item">
-                <a href="#" class="social-media-icon"
-                  ><i class="fab fa-twitter"></i
-                ></a>
+                <a href="#" class="social-media-icon"><i class="fab fa-twitter"></i></a>
               </li>
               <li class="comp-item">
-                <a href="#" class="social-media-icon"
-                  ><i class="fab fa-instagram"></i
-                ></a>
+                <a href="#" class="social-media-icon"><i class="fab fa-instagram"></i></a>
               </li>
               <li class="comp-item">
-                <a href="#" class="social-media-icon"
-                  ><i class="fab fa-youtube"></i
-                ></a>
+                <a href="#" class="social-media-icon"><i class="fab fa-youtube"></i></a>
               </li>
               <li class="comp-item">
-                <a href="#" class="social-media-icon"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
+                <a href="#" class="social-media-icon"><i class="fab fa-linkedin-in"></i></a>
               </li>
             </ul>
           </div>
@@ -1077,27 +997,19 @@
               <div class="col-6 p-0">
                 <ul class="footer-list">
                   <li class="footer-item">
-                    <a class="footer-link" href="journaling.html"
-                      >កំណត់ត្រាប្រចាំថ្ងៃ</a
-                    >
+                    <a class="footer-link" href="journaling.html">កំណត់ត្រាប្រចាំថ្ងៃ</a>
                   </li>
                   <li class="footer-item">
-                    <a class="footer-link" href="money_spending.html"
-                      >តាមដានការចំណាយ</a
-                    >
+                    <a class="footer-link" href="money_spending.html">តាមដានការចំណាយ</a>
                   </li>
                   <li class="footer-item">
-                    <a class="footer-link" href="mood_tracking.html"
-                      >តាមដានផ្លូវចិត្ត</a
-                    >
+                    <a class="footer-link" href="mood_tracking.html">តាមដានផ្លូវចិត្ត</a>
                   </li>
                   <li class="footer-item">
                     <a class="footer-link" href="exercise.html">លំហាត់ប្រាណ</a>
                   </li>
                   <li class="footer-item">
-                    <a class="footer-link" href="therapist.html"
-                      >អ្នកជំនាញផ្លូវចិត្ត</a
-                    >
+                    <a class="footer-link" href="therapist.html">អ្នកជំនាញផ្លូវចិត្ត</a>
                   </li>
                   <li class="footer-item">
                     <a class="footer-link" href="mediation.html">សមាធិ</a>
@@ -1119,9 +1031,7 @@
                     <a class="footer-link" href="article.html">អត្ថបទ</a>
                   </li>
                   <li class="footer-item">
-                    <a class="footer-link" href="video_recommendation.html"
-                      >វីឌីអូអភិវឌ្ឍខ្លួន</a
-                    >
+                    <a class="footer-link" href="video_recommendation.html">វីឌីអូអភិវឌ្ឍខ្លួន</a>
                   </li>
                   <li class="footer-item">
                     <a class="footer-link" href="about_us.html">អំពីយើង</a>
@@ -1168,13 +1078,8 @@
             <div class="col-12">
               <div class="mb-3">
                 <div class="input-group mb-3">
-                  <input
-                    type="text"
-                    class="footer-input"
-                    placeholder="user@gmail.com"
-                    aria-label="user@gmail.com"
-                    aria-describedby="button-addon2"
-                  />
+                  <input type="text" class="footer-input" placeholder="user@gmail.com" aria-label="user@gmail.com"
+                    aria-describedby="button-addon2" />
                   <button class="btn-footer" type="button" id="button-addon2">
                     <i class="fa-solid fa-paper-plane"></i>
                   </button>
@@ -1207,4 +1112,5 @@
     <script src="assets/plugins/aos/js/aos.js"></script>
     <script src="assets/js/dark-mode.js"></script>
   </body>
+
 </html>
