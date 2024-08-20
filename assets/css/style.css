@@ -20,11 +20,15 @@ main {
 }
 
 .section-space {
-  padding: 100px 0;
+  padding: 100px 0 !important;
 }
 
 .main-text {
   color: var(--main-text);
+}
+
+.main-title{
+  color: var(--main-title);
 }
 
 .text-cut {
@@ -1324,18 +1328,32 @@ nav {
   border-bottom: 1px solid black;
 }
 
-.journal-nav-sm .btn-journaling,
-.btn-todo {
+.journal-nav-sm .btn-journaling{
   width: 100%;
   max-width: 100%;
   height: 50px;
   background: var(--bg-grandient);
-  color: var(--stick-color);
-  transition: background 0.3s ease;
+  color: var(--stick-color) !important;
+  transition: background 0.5s ease;
+}
+.journal-nav-sm .btn-todo{
+  width: 100%;
+  max-width: 100%;
+  height: 50px;
+  background: var(--bg-grandient);
+  color: var(--stick-color) !important;
+  transition: background 0.5s ease;
+}
+.journal-nav-sm .btn-journaling:hover{
+  background: linear-gradient(135deg, #3c4d78 0%, #488495 100%);
+  color: white;
 }
 
-.journal-nav-sm .btn-journaling:hover,
-.btn-todo:hover {
+.journal-nav-sm .btn-todo:hover{
+  background: linear-gradient(135deg, #3c4d78 0%, #488495 100%);
+  color: white;
+}
+.journal-nav .btn-journaling:hover{
   background: linear-gradient(135deg, #3c4d78 0%, #488495 100%);
   color: white;
 }
@@ -1346,14 +1364,20 @@ nav {
   transition: background ease-in-out 0.3s !important;
 }
 
-.journal-nav .btn-journaling {
+.journal-nav .active {
+  background: var(--bg-grandient);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.311) 0px 2px 4px 0px inset;
+  border: 1px solid #3c4d78;
+}
+.journal-nav-sm .active {
   background: var(--bg-grandient);
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.311) 0px 2px 4px 0px inset;
   border: 1px solid #3c4d78;
 }
 
-.journal-nav .btn-todo:hover {
+.journal-nav .btn-todo:hover{
   background: linear-gradient(135deg, #3c4d78 0%, #488495 100%);
 }
 
@@ -1365,8 +1389,7 @@ nav {
   transform: scale(0.95);
 }
 
-.journal-book .journal-page {
-  box-shadow: -3px 3px #000;
+.journal-book .journal-page{
   border-radius: 10px;
   transition: ease-in-out 0.3s;
 }
@@ -1383,7 +1406,7 @@ nav {
 .journal-book .ql-toolbar.ql-snow {
   font-family: "Kantumruy Pro", sans-serif !important;
   font-size: 20px !important;
-  background-color: #c9defd;
+  background-color: #a2c6fc;
   border-radius: 10px;
   border: none !important;
 }
@@ -1399,10 +1422,10 @@ nav {
 }
 
 .journal-book .journal-page .ql-editor {
-  height: 300px !important;
-  max-height: 300px;
+  height: 400px !important;
+  max-height: 400px;
   border-radius: 10px;
-  background-color: #ecf3fd;
+  background-color: #dbeaff;
 }
 
 .journal-book .journal-page .ql-container .ql-snow {
@@ -1582,6 +1605,7 @@ nav {
   height: 100%;
   max-height: 100%;
   overflow: hidden;
+  border: none !important;
 }
 
 .item-date .daily-note p {
@@ -1613,11 +1637,7 @@ nav {
   font-family: "Kantumruy Pro", sans-serif;
 }
 
-.photo-book {
-  padding: 20px 0 !important;
-}
-
-.photo-book .photo-book-title {
+.photo-book .photo-book-title{
   border: 1px solid var(--main-title);
   width: 250px;
   height: 50px;
@@ -1966,6 +1986,308 @@ nav {
 
 /*end of journaling page*/
 
+/* start of todo-list page */
+.journal-header h1{
+  color: var(--main-title);
+}
+.overview .btn-work{
+  width: 100%;
+  border-radius: 20px;
+  height: 90px;
+  max-height: 90px;
+}
+.overview h3{
+  color: var(--main-title);
+}
+.organize-work .nav .nav-item .nav-link{
+  color: black;
+  background-color: transparent;
+  font-size: 18px;
+}
+.organize-work .nav .nav-item .nav-link:hover{
+  color: #3c4d78;
+}
+.organize-work  .nav .nav-item .active{
+  color: #3c4d78;
+  font-weight: bold;
+}
+.organize-work  .tab-content .tab-pane .card{
+  cursor: pointer;
+  border-radius: 20px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  transition: all ease-in-out 0.3s;
+}
+.organize-work  .tab-content .tab-pane .card:hover{
+  box-shadow: none;
+}
+.organize-work  .tab-content .tab-pane .card .work-logo img{
+  transition: all ease-in-out 0.3s;
+}
+.organize-work  .tab-content .tab-pane .card:hover .work-logo img{
+  transform: scale(1.2);
+}
+.overview .overview-content-body .card{
+  width: 80%;
+  border-radius: 15px;
+  border-bottom: 5px solid black;
+  background-color: #ecf3fd;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+.overview .display .left-display{
+  width: 150px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ecf3fd;
+  border: 1px solid black;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.overview .display .right-display .prev, .next{
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ecf3fd;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.overview .display .right-display .btn{
+  background-color: #ecf3fd;
+  border-radius: 15px;
+  border: 1px solid black;
+}
+
+.overview .organize-work .btn-work span i{
+  color: var(--main-title);
+}
+.overview .organize-work{
+  width: 100%;
+  padding: 30px 0;
+  border: 1px solid black;
+  border-radius: 20px;
+  position: relative;
+}
+.overview .organize-work .work-wrapper{
+  border-bottom: 1px solid var(--main-title);
+}
+.overview .work-wrapper[aria-expanded="false"] span i{
+  transition: ease-in-out 0.5s;
+}
+.overview .work-wrapper[aria-expanded="true"] span i{
+  transition: ease-in-out 0.5s;
+  transform: rotate(90deg);
+}
+.overview .organize-work .collapsed .card 
+.overview .organize-work .collapsed .card{
+  background-color: transparent !important;
+}
+.overview .organize-work .work-wrapper span i{
+  color: #3c4d78;
+}
+.overview .organize-work .work-wrapper p{
+  background-color: #dfebfd;
+  border-radius: 20px;
+  color: #1a2e4d;
+  font-weight: 600;
+}
+.overview .organize-work .btn-work .line{
+  width: 100%;
+  height: 3px;
+  background-color: black;
+}
+.overview .work-collapse .form-check .form-check-input{
+  border-radius: 6px;
+  width: 18px;
+  height: 18px;
+  border-color: #264d59a9;
+}
+.overview .work-collapse .collapse .card.card-wrapper{
+  background-color: transparent !important;
+  border: none;
+}
+.overview .work-collapse .collapse .card .form-check{
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+.overview .work-collapse .form-check .form-check-input:hover{
+  border-color: #264d59;
+}
+.overview .work-collapse .form-check .form-check-input:checked{
+  outline: none;
+  background-color: var(--link-text);
+}
+.overview .work-collapse .form-check .form-check-input:focus{
+  box-shadow: none;
+}
+.overview .work-collapse .form-check .form-check-label{
+  color: var(--main-title);
+  font-weight: 500;
+}
+.overview .work-collapse .add-new-activity .card{
+  border-color: #dddddda9;
+  border-radius: 10px;
+}
+.overview .work-collapse .add-new-activity .card .form-control{
+  border: none;
+}
+.overview .work-collapse .add-new-activity .card .form-control::placeholder{
+  color: var(--gray-color);
+}
+.overview .work-collapse .add-new-activity .card .btn-do-add{
+  background-color: #dfebfd;
+  border-radius: 10px;
+  color: #3c4d78;
+  font-weight: 500;
+}
+/* end of todo-list page */
+
+/*start of therapist page*/
+.therapist-banner{
+  width: 100%;
+  min-height: 400px !important;
+  border-top: 1px solid var(--link-text);
+  border-left: 1px solid var(--link-text);
+  border-right: 1px solid var(--link-text);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.therapist-banner .therapist-poster .poster-img::before{
+  content: ' ';
+  position: absolute;
+  width: 480px;
+  height: 480px;
+  border-radius: 100%;
+  background-color: var(--main-title);
+  top: 0;
+  left: 100;
+  z-index: 1;
+}
+.therapist-banner .therapist-poster .poster-img img{
+  z-index: 10;
+  width: 400px;
+  max-width: 400px;
+}
+.therapist-banner .therapist-poster .poster-icon {
+  top: 20px;
+  left: 500px;
+  transform: rotate(20deg);
+}
+.therapist-banner .therapist-poster .poster-icon:nth-child(2) {
+  top: 310px;
+  left: 550px;
+  transform: rotate(80deg);
+}
+.therapist-banner .therapist-poster .poster-icon-2{
+  top: 10px;
+  left: 80px;
+}
+.therapist-banner .therapist-poster .poster-icon-3{
+  top: 170px;
+  left: 10px;
+}
+.therapist-banner .therapist-poster .poster-icon:nth-last-child(1){
+  top: 350px;
+  left: 70px;
+  transform: rotate(220deg);
+}
+.therapist-banner .therapist-banner-title h2{
+  line-height: 50px;
+  font-size: 35px;
+  color: var(--main-title);
+}
+.therapist-banner .therapist-banner-title mark{
+  background-color: var(--link-text);
+  color: white;
+  border-radius: 20px;
+  font-size: 30px;
+}
+.therapist-banner .therapist-banner-title p{
+  font-weight: 500;
+  color: var(--main-title);
+}
+.categories-title p{
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #dfebfd;
+}
+.therapist-categories .card{
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: transparent;
+  border-color: var(--main-text);
+}
+.therapist-categories .card-img{
+  padding: 20px;
+  width: 100%;
+  height: 400px;
+  border-bottom: none;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.therapist-categories .card-img img{
+  object-fit: cover;
+  height: inherit;
+  transition: all linear 0.3s;
+  border-radius: 20px;
+}
+.therapist-categories .card:hover .card-img-top{
+  transform: scale(1.05);
+}
+.therapist-categories .card-body{
+  height: 230px;
+  max-height: 230px;
+}
+.therapist-categories .card-body .card-title .experience{
+  border-radius: 10px;
+  height: 30px;
+}
+.therapist-categories .card-body .card-body-text{
+  color: black!important;
+  font-weight: normal!important;
+}
+.therapist-categories .card-footer .therapist-contact{
+  background-color: #3c4d78;
+  border-radius: 20px;
+  color: white;
+}
+.therapist-categories .modal .therapist-modal-content .form-control{
+  padding: 10px;
+}
+.therapist-categories .modal .modal-footer .btn-therapist{
+  background-color: var(--main-title);
+  color: white;
+}
+.therapist-history .card .therapist-date p{
+  width: 140px;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #dfebfd; 
+}
+.therapist-questions .card{
+  height: 400px;
+  border-radius: 20px​​​ !important;
+  background-color: var(--main-title);
+}
+.therapist-questions .carousel-inner .carousel-item .questions{
+  padding: 100px 0 !important;
+}
+.therapist-questions .carousel-inner .carousel-item .question-form .form-check .form-check-input{
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  
+}
+/*end of therapist page*/
+
 /* ? begin of footer */
 
 .footer {
@@ -2210,6 +2532,28 @@ nav {
     overflow: hidden;
     margin-bottom: 20px;
   }
+  .therapist-banner .therapist-poster .poster-img img{
+    z-index: 10;
+    width: 350px;
+  }
+  .therapist-banner .therapist-poster .poster-img::before{
+    width: 380px;
+    height: 380px;
+    top: 40px;
+  }
+  .therapist-banner .therapist-banner-title h2{
+    font-size: 30px !important;
+  }
+  .therapist-banner .therapist-banner-title mark{
+    font-size: 20px;
+  }
+  .carousel-item .questions .form-check .form-check-label{
+    font-size: 18px !important;
+  }
+  .therapist-questions .carousel-inner .carousel-item .question-form .form-check .form-check-input{
+    width: 20px !important;
+    height: 20px !important;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -2220,6 +2564,11 @@ nav {
     -webkit-box-orient: vertical;
     line-height: 30px;
     overflow: hidden;
+  }
+  .therapist-banner .therapist-poster .poster-img::before {
+    top: 90px !important;
+    width: 500px;
+    height: 500px;
   }
 }
 
