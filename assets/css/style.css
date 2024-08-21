@@ -140,7 +140,7 @@ main {
   --main-color: #1c1b1e;
   --stick-color: #fff;
   --gray-color: #4d4d4d;
-  --label-color: #d4e4fd;
+  --label-color: #868686;
   --hover-color: #1a2e4d;
   --bg-grandient: linear-gradient(135deg, #264d59 0%, #1a2e4d 100%);
   --link-text: #7fb3c2;
@@ -331,12 +331,7 @@ nav {
 }
 
 .profile .pf-drowpdown .pf-list .pf-item:hover .pf-link,
-.profile
-  .pf-drowpdown
-  .pf-list
-  .pf-item:hover
-  .leave-icon
-  .fa-right-from-bracket {
+.profile .pf-drowpdown .pf-list .pf-item:hover .leave-icon .fa-right-from-bracket {
   color: #fff;
 }
 
@@ -675,24 +670,11 @@ nav {
   padding: 0;
 }
 
-.side-menu
-  .menu
-  .menu-item
-  .nav-menu
-  .menu-content
-  .content-list
-  .content-item {
+.side-menu .menu .menu-item .nav-menu .menu-content .content-list .content-item {
   border-top: 1px solid var(--ddd-color);
 }
 
-.side-menu
-  .menu
-  .menu-item
-  .nav-menu
-  .menu-content
-  .content-list
-  .content-item
-  .content-link {
+.side-menu .menu .menu-item .nav-menu .menu-content .content-list .content-item .content-link {
   display: block;
   padding: 10px;
   text-decoration: none;
@@ -700,14 +682,7 @@ nav {
   font-size: 18px;
 }
 
-.side-menu
-  .menu
-  .menu-item
-  .nav-menu
-  .menu-content
-  .content-list
-  .content-item
-  .content-link:hover {
+.side-menu .menu .menu-item .nav-menu .menu-content .content-list .content-item .content-link:hover {
   background-color: var(--link-text);
   color: #fff;
 }
@@ -983,7 +958,7 @@ nav {
   line-height: 50px;
 }
 
-.landing-herobanner .landing-title > .btn-login {
+.landing-herobanner .landing-title>.btn-login {
   background-color: #47b8cf;
   border-radius: 30px;
   border: 1px solid black;
@@ -991,7 +966,7 @@ nav {
   transition: ease-in-out 0.3s;
 }
 
-.landing-herobanner .landing-title > .btn-login .nav-link {
+.landing-herobanner .landing-title>.btn-login .nav-link {
   background-color: #d4e0ff;
   border-radius: 30px;
   border: 1px solid black;
@@ -999,14 +974,14 @@ nav {
   transition: ease-in-out 0.8s;
 }
 
-.landing-herobanner .landing-title > .btn-login:hover {
+.landing-herobanner .landing-title>.btn-login:hover {
   background-color: transparent;
   padding: 0px;
   border: none;
   margin-top: 10px;
 }
 
-.landing-herobanner .landing-title > .btn-login:hover .nav-link {
+.landing-herobanner .landing-title>.btn-login:hover .nav-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1023,6 +998,7 @@ nav {
   z-index: 5;
   bottom: -200px;
 }
+
 .komnot-services {
   background: linear-gradient(#90e6ec 20%, #fff 100%);
 }
@@ -1173,14 +1149,7 @@ nav {
   -webkit-text-fill-color: transparent;
 }
 
-.testimonail
-  .swiper
-  .swiper-wrapper
-  .swiper-slide
-  .card
-  .card-body
-  .card-text
-  .no-color {
+.testimonail .swiper .swiper-wrapper .swiper-slide .card .card-body .card-text .no-color {
   background: transparent !important;
   -webkit-text-fill-color: white;
 }
@@ -1414,11 +1383,7 @@ nav {
   background-color: #ddd;
 }
 
-.journal-book
-  .calender
-  .calender-view
-  .btn-calendar:hover
-  .landing-title-color {
+.journal-book .calender .calender-view .btn-calendar:hover .landing-title-color {
   color: white !important;
 }
 
@@ -1761,14 +1726,11 @@ nav {
   transition: background 0.2s ease-in-out;
 }
 
-.photo-book
-  .modal
-  .modal-body
-  .form
-  #fileimage-input::file-selector-button:hover {
+.photo-book .modal .modal-body .form #fileimage-input::file-selector-button:hover {
   background: #0d45a5;
 }
-.photo-book .modal .modal-body form .datepicker input[type="date"]{
+
+.photo-book .modal .modal-body form .datepicker input[type="date"] {
   border: 1px solid #dee2e6;
   border-radius: 10px;
   padding: 0.375rem 0.75rem;
@@ -1904,13 +1866,7 @@ nav {
   border-radius: 20px;
 }
 
-.us-categories
-  .aboutus-nav
-  .scrollspy-aboutus
-  .about-komnot
-  .vision-info
-  .limit-line
-  p {
+.us-categories .aboutus-nav .scrollspy-aboutus .about-komnot .vision-info .limit-line p {
   color: var(--main-text);
 }
 
@@ -1997,11 +1953,12 @@ nav {
   transform: scale(1.2);
 }
 
-.overview .modal .modal-body .nav-pills .nav-item .nav-link{
+.overview .modal .modal-body .nav-pills .nav-item .nav-link {
   background-color: transparent;
   color: var(--main-title);
 }
-.overview .modal .modal-body .nav-pills .nav-item .nav-link.active{
+
+.overview .modal .modal-body .nav-pills .nav-item .nav-link.active {
   font-weight: 500;
 }
 
@@ -2048,9 +2005,10 @@ nav {
   color: var(--main-title);
 }
 
-.overview .organize-work .btn-work{
+.overview .organize-work .btn-work {
   cursor: auto;
 }
+
 .overview .organize-work {
   width: 100%;
   padding: 30px 0;
@@ -2072,14 +2030,7 @@ nav {
   transform: rotate(90deg);
 }
 
-.overview
-  .organize-work
-  .collapsed
-  .card
-  .overview
-  .organize-work
-  .collapsed
-  .card {
+.overview .organize-work .collapsed .card .overview .organize-work .collapsed .card {
   background-color: transparent !important;
 }
 
@@ -2160,7 +2111,7 @@ nav {
 /* ! end of todo-list page */
 
 /* start of money spending page */
-.money-report .card-report{
+.card-report {
   width: 90%;
   height: 180px;
   box-shadow: var(--main-shadow);
@@ -2169,30 +2120,36 @@ nav {
   cursor: pointer;
   padding: 20px;
 }
-.money-report .card-report .saving-up{
+
+.card-report .saving-up {
   padding: 1px 10px;
   border-radius: 20px;
   background-color: #DBFFE6;
   border: 1px solid black;
-  box-shadow: inset 0px 4px 4px 0px rgba(0,0,0,0.25);
+  box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
-.money-report .card-report .report-info .progress .progress-bar{
+
+.card-report .report-info .progress .progress-bar {
   border-radius: 20px;
 }
-.spending-categories .spending-cate-title{
-  width: 150px; 
+
+.spending-categories .spending-cate-title {
+  width: 150px;
   padding: 5px 0;
   border-radius: 20px;
   background-color: #dfebfd;
 }
-.spending-categories .display-categories .card-icon{
+
+.spending-categories .display-categories .card-icon {
   width: 60px;
   height: 60px;
   border-radius: 20px;
 }
-.spending-categories .display-categories .card-icon:nth-last-child(1){
+
+.spending-categories .display-categories .card-icon:nth-last-child(1) {
   cursor: pointer;
 }
+
 /* end of money spending page */
 
 /*start of therapist page*/
@@ -2351,12 +2308,7 @@ nav {
   padding: 100px 0 !important;
 }
 
-.therapist-questions
-  .carousel-inner
-  .carousel-item
-  .question-form
-  .form-check
-  .form-check-input {
+.therapist-questions .carousel-inner .carousel-item .question-form .form-check .form-check-input {
   width: 30px;
   height: 30px;
   border-radius: 10px;
@@ -2576,10 +2528,10 @@ nav {
   color: #fff;
 }
 
-#showDropHabit:checked ~ .drop-menu,
-#showDropMentalhealth:checked ~ .drop-menu,
-#showDropEdu:checked ~ .drop-menu,
-#showDropMoreInfo:checked ~ .drop-menu {
+#showDropHabit:checked~.drop-menu,
+#showDropMentalhealth:checked~.drop-menu,
+#showDropEdu:checked~.drop-menu,
+#showDropMoreInfo:checked~.drop-menu {
   max-height: 100%;
   display: block;
 }
@@ -2632,12 +2584,7 @@ nav {
     font-size: 18px !important;
   }
 
-  .therapist-questions
-    .carousel-inner
-    .carousel-item
-    .question-form
-    .form-check
-    .form-check-input {
+  .therapist-questions .carousel-inner .carousel-item .question-form .form-check .form-check-input {
     width: 20px !important;
     height: 20px !important;
   }
@@ -3014,14 +2961,7 @@ nav {
   -webkit-text-fill-color: transparent;
 }
 
-.testimonail
-  .swiper
-  .swiper-wrapper
-  .swiper-slide
-  .card
-  .card-body
-  .card-text
-  .no-color {
+.testimonail .swiper .swiper-wrapper .swiper-slide .card .card-body .card-text .no-color {
   background: transparent !important;
   -webkit-text-fill-color: white;
 }
@@ -3118,13 +3058,13 @@ nav {
   border: 1px solid var(--ddd-color);
   border-top: 0;
 }
-.journal-nav .bar-btm-journal-reshow{
+
+.journal-nav .bar-btm-journal-reshow {
   height: 70px !important;
   padding: 10px;
 }
 
-.bar-btm-journal-reshow
-.journaling-reshow .bar-journal-reshow h3 {
+.bar-btm-journal-reshow .journaling-reshow .bar-journal-reshow h3 {
   font-size: 25px;
   color: #fff;
   margin: 0;
@@ -3178,12 +3118,7 @@ nav {
   overflow: hidden;
 }
 
-.journaling-reshow
-  .journal-reshow-content
-  .bar-journal
-  .journal-edit
-  .edit-control
-  .btn-journal {
+.journal-edit .edit-control .btn-journal {
   width: 25px;
   height: 25px;
   border-radius: 25px;
@@ -3192,13 +3127,7 @@ nav {
   margin-right: 10px;
 }
 
-.journaling-reshow
-  .journal-reshow-content
-  .bar-journal
-  .journal-edit
-  .edit-control
-  .btn-journal
-  i {
+.journal-edit .edit-control .btn-journal i {
   font-size: 12px;
   color: var(--main-text);
 }
@@ -3244,7 +3173,8 @@ nav {
   border: 1px solid var(--ddd-color);
 }
 
-.todo-reshow .reshow-todo-content .list-todo .todo-item span, .form-check-label {
+.todo-reshow .reshow-todo-content .list-todo .todo-item span,
+.form-check-label {
   font-size: 18px;
   color: var(--main-text);
   font-weight: 500;
@@ -3255,21 +3185,24 @@ nav {
   overflow: hidden;
   cursor: pointer;
 }
-.todo-reshow .reshow-todo-content .list-todo .todo-item .form-check-input{
+
+.todo-reshow .reshow-todo-content .list-todo .todo-item .form-check-input {
   border-radius: 50%;
   outline-color: var(--gray-color);
   width: 20px;
   height: 20px;
 
 }
-.todo-reshow .reshow-todo-content .list-todo .todo-item .form-check-input:focus{
+
+.todo-reshow .reshow-todo-content .list-todo .todo-item .form-check-input:focus {
   box-shadow: none;
-  border: none;
+  border-color: var(--gray-color);
 }
-.todo-reshow .reshow-todo-content .list-todo .todo-item .form-check-input:checked{
+
+.todo-reshow .reshow-todo-content .list-todo .todo-item .form-check-input:checked {
   background-color: rgb(25, 135, 84);
-  outline: none;
 }
+
 .todo-reshow .reshow-todo-content .list-todo .todo-item .todotext-checked {
   color: var(--gray-color);
 }
@@ -4460,12 +4393,10 @@ nav {
   left: 0;
   z-index: 199;
   background: rgb(0, 0, 0);
-  background: linear-gradient(
-    360deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(0, 0, 0, 1) 20%,
-    rgba(0, 0, 0, 0) 100%
-  );
+  background: linear-gradient(360deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 1) 20%,
+      rgba(0, 0, 0, 0) 100%);
   width: 100%;
   height: 100%;
   padding: 150px 10px 0 10px;
@@ -5194,7 +5125,7 @@ nav {
 }
 
 .popular-book .nav-pills .nav-link.active,
-.nav-pills .show > .nav-link {
+.nav-pills .show>.nav-link {
   color: #fff !important;
   background: var(--bg-grandient) !important;
   border: 1px solid var(--ddd-color);
@@ -5483,15 +5414,11 @@ nav {
   padding: 0 0.5em calc(2 * var(--r));
   border-radius: var(--r);
   --_g: 100% / var(--r) calc(2 * var(--r)) no-repeat;
-  background: radial-gradient(100% 50% at right, #0005 98%, #0000 101%) 0
-      var(--_g),
+  background: radial-gradient(100% 50% at right, #0005 98%, #0000 101%) 0 var(--_g),
     radial-gradient(100% 50% at left, #0005 98%, #0000 101%) 100% var(--_g),
-    conic-gradient(
-        from 90deg at var(--r) calc(100% - 2 * var(--r)),
-        #0000 25%,
-        #5a8bc2 0
-      )
-      0 0 / calc(100% - var(--r)) 100%;
+    conic-gradient(from 90deg at var(--r) calc(100% - 2 * var(--r)),
+      #0000 25%,
+      #5a8bc2 0) 0 0 / calc(100% - var(--r)) 100%;
 }
 
 .card-pin-pw .text-send-email {
@@ -5668,10 +5595,8 @@ nav {
 
 .exer-vdo-watching .plyr__poster {
   background-color: #000;
-  background-color: var(
-    --plyr-video-background,
-    var(--plyr-video-background, #000)
-  );
+  background-color: var(--plyr-video-background,
+      var(--plyr-video-background, #000));
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover !important;
@@ -5730,16 +5655,15 @@ nav {
 
 /* ! end of exercise */
 /* ====== Profile ====== */
-.header-profile .information{
-  color: var(--main-text);
-}
-.header-profile .card-image .picture{
+
+.header-profile .card-image .picture {
   width: 200px;
   height: 200px;
   border-radius: 100%;
   background-color: var(--gray-color);
 }
-.header-profile .edit-picture{
+
+.header-profile .edit-picture {
   text-decoration: none;
   padding: 9px 12px;
   border-radius: 100%;
@@ -5748,43 +5672,54 @@ nav {
   right: 160px;
   color: var(--main-text);
 }
-.header-profile .picture img{
+
+.header-profile .picture img {
   width: 200px;
   height: 200px;
   border-radius: 100%;
 }
-.header-profile .card-image h4{
+
+.header-profile .card-image h4 {
   padding-top: 10px;
   font-weight: bold;
   color: var(--main-text);
 }
-.header-profile .card-image span{
+
+.header-profile .card-image span {
   color: var(--main-text);
   font-size: 18px;
 }
-.header-profile .card-image h5{
-  color: green;
-  padding: 6px 12px;
-  background-color: rgba(123, 221, 123, 0.303);
-  border-radius: 8px;
+
+.header-profile .btn-membership {
+  width: 130px;
+  margin: auto;
 }
-.header-profile .card{
-  background-color: transparent;
-  box-shadow: 0px 0px 5px 5px var(--card-color);
-  border-radius: 10px;
+
+.header-profile .card-detail-user {
+  height: 700px;
 }
+
+.header-profile .card {
+  background-color: white;
+  box-shadow: var(--main-shadow);
+  border-radius: 20px;
+}
+
 .header-profile .card-body .email-user,
-.header-profile .card-body .password-user{
-  width: 80%;
-  padding: 10px 10px;
-  border-radius: 10px;
+.header-profile .card-body .password-user {
+  width: 100%;
+  height: 60px;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
   border: 1px solid var(--gray-color);
-  margin-bottom: 10px;
-  color: var(--main-text);
+  margin-bottom: 15px;
+  color: #4e4e4e;
   font-size: 20px;
 }
 
-.header-profile .card-body .edit-profile{
+.header-profile .card-body .edit-profile {
   padding: 5px 20px;
   border-radius: 20px;
   color: white;
@@ -5794,46 +5729,42 @@ nav {
   font-size: 21px;
   opacity: 0.9;
 }
-.header-profile .card-body .edit-profile:hover{
-  background:var(--bg-grandient);
+
+.header-profile .card-body .edit-profile:hover {
+  background: var(--bg-grandient);
   opacity: 1;
 }
-.header-profile .detail-info-profile .detail-header-info h3,
-.header-profile .detail-info-profile .detail-header-info span{
-  color: var(--main-text);
-}
-.header-profile .detail-info-profile .detail-header-info span{
+
+.header-profile .detail-info-profile .detail-header-info span {
   font-size: 19px;
 }
-.header-profile .card-detail-user{
-  padding: 54px 0px;
+
+.info-user .form-label {
+  color: var(--label-color);
 }
-.info-user .edit-info{
-  color: var(--main-text)!important;
-  margin-left: 10px;
-  font-size: 12px;
-  border: 1px solid var(--gray-color);
-  padding: 5px 6px;
-  border-radius: 100%;
-}
-.info-user .edit-info:hover{
-  color: var(--link-text)!important;
-  background-color: var(--ddd-color);
+
+.info-user .edit-info {
+  color: #4e4e4e;
+  margin-left: 40px;
+  font-size: 15px;
 
 }
-.info-user span{
+
+.info-user .info {
+  color: #4e4e4e;
+  font-weight: 500;
+}
+
+.info-user h5 {
   font-size: 20px;
-  padding: 10px 0px;
   color: var(--main-text);
 }
-.info-user h5{
-  font-size: 20px;
-  color: var(--main-text);
-}
-.info-user .card{
+
+.info-user .card {
   box-shadow: none;
 }
-.info-user .add-icon-info{
+
+.info-user .add-icon-info {
   text-decoration: none;
   color: var(--link-text);
   font-size: 20px;
@@ -5842,84 +5773,101 @@ nav {
   text-align: center;
   padding: 5px 10px;
 }
-.info-user .add-icon-info:hover{
+
+.info-user .add-icon-info:hover {
   background-color: var(--link-text);
   color: white;
 }
-.user-payment{
+
+.user-payment {
   margin: 40px 0px;
 }
-.user-payment .card-payment{
-  box-shadow: 0px 0px 5px 1px var(--card-color);
+
+.user-payment .card-payment {
+  box-shadow: var(--main-shadow);
+  background-color: white;
 }
-.user-payment h2{
+
+.user-payment h2 {
   color: var(--main-text);
 }
-.user-payment .card-payment-user{
-  background-color: transparent;
+
+.user-payment .card-payment-user {
+  background-color: white;
   box-shadow: 0px 0px 5px 3px var(--card-color);
   border-radius: 20px;
-  transition: transform 0.8s; 
+  transition: transform 0.8s;
 }
-.user-payment .card-payment-user:hover{
+
+.user-payment .card-payment-user:hover {
   transform: translate(-5px, -10px);
   box-shadow: 2px 3px 5px 0px var(--link-text);
 }
+
 .user-payment .income-month p,
 .user-payment .total-payment p,
-.user-payment .total-income p{
+.user-payment .total-income p {
   font-size: 20px;
   color: var(--main-text);
 }
+
 .user-payment .total-payment .color-green,
-.user-payment .change-dollar p{
+.user-payment .change-dollar p {
   font-size: 20px;
   color: green;
 }
-.user-payment .income-month i{
+
+.user-payment .income-month i {
   font-size: 22px;
   color: var(--link-text);
   font-weight: bold;
 }
+
 .user-payment .total-income .color-gray,
-.user-payment .change-dollar-income p{
+.user-payment .change-dollar-income p {
   font-size: 20px;
   color: var(--gray-color);
 }
-.user-payment .income-month .dollar{
+
+.user-payment .income-month .dollar {
   padding: 3px 10px;
   font-size: 20px;
   color: white;
   border-radius: 10px;
   background: var(--bg-grandient);
 }
+
 /* .change-dollar-income .form-range{
   background-color: #3162a5!important;
 } */
-.user-payment .calender-heatmap{
+.user-payment .calender-heatmap {
   border-radius: 20px;
   height: 250px;
 }
-.user-payment .calender-heatmap img{
+
+.user-payment .calender-heatmap img {
   border-radius: 15px;
 }
-.user-buttom .user-discuss{
+
+.user-buttom .user-discuss {
   text-decoration: none;
   font-size: 20px;
-  background:var(--bg-grandient) ;
+  background: var(--bg-grandient);
   padding: 10px 20px;
   border-radius: 20px;
   color: white;
 }
-.user-buttom .user-discuss:hover{
+
+.user-buttom .user-discuss:hover {
   background: transparent;
   box-shadow: 0px 0px 3px 2px var(--link-text);
   color: black;
 }
-.save-info{
-  font-size: 20px!important;
+
+.save-info {
+  font-size: 20px !important;
   background: var(--bg-grandient);
   border-radius: 15px;
   padding: 8px 15px;
-  color: white!important;
+  color: white !important;
 }
