@@ -5943,3 +5943,198 @@ nav {
 }
 
 /* ! end of exercise */
+/* ====== Profile ====== */
+.header-profile .information{
+  color: var(--main-text);
+}
+.header-profile .card-image .picture{
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  background-color: var(--gray-color);
+}
+.header-profile .edit-picture{
+  text-decoration: none;
+  padding: 9px 12px;
+  border-radius: 100%;
+  background-color: var(--ddd-color);
+  position: absolute;
+  right: 160px;
+  color: var(--main-text);
+}
+.header-profile .picture img{
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
+.header-profile .card-image h4{
+  padding-top: 10px;
+  font-weight: bold;
+  color: var(--main-text);
+}
+.header-profile .card-image span{
+  color: var(--main-text);
+  font-size: 18px;
+}
+.header-profile .card-image h5{
+  color: green;
+  padding: 6px 12px;
+  background-color: rgba(123, 221, 123, 0.303);
+  border-radius: 8px;
+}
+.header-profile .card{
+  background-color: transparent;
+  box-shadow: 0px 0px 5px 5px var(--card-color);
+  border-radius: 10px;
+}
+.header-profile .card-body .email-user,
+.header-profile .card-body .password-user{
+  width: 80%;
+  padding: 10px 10px;
+  border-radius: 10px;
+  border: 1px solid var(--gray-color);
+  margin-bottom: 10px;
+  color: var(--main-text);
+  font-size: 20px;
+}
+
+.header-profile .card-body .edit-profile{
+  padding: 5px 20px;
+  border-radius: 20px;
+  color: white;
+  background: var(--bg-grandient);
+  text-decoration: none;
+  margin-top: 20px;
+  font-size: 21px;
+  opacity: 0.9;
+}
+.header-profile .card-body .edit-profile:hover{
+  background:var(--bg-grandient);
+  opacity: 1;
+}
+.header-profile .detail-info-profile .detail-header-info h3,
+.header-profile .detail-info-profile .detail-header-info span{
+  color: var(--main-text);
+}
+.header-profile .detail-info-profile .detail-header-info span{
+  font-size: 19px;
+}
+.header-profile .card-detail-user{
+  padding: 54px 0px;
+}
+.info-user .edit-info{
+  color: var(--main-text)!important;
+  margin-left: 10px;
+  font-size: 12px;
+  border: 1px solid var(--gray-color);
+  padding: 5px 6px;
+  border-radius: 100%;
+}
+.info-user .edit-info:hover{
+  color: var(--link-text)!important;
+  background-color: var(--ddd-color);
+
+}
+.info-user span{
+  font-size: 20px;
+  padding: 10px 0px;
+  color: var(--main-text);
+}
+.info-user h5{
+  font-size: 20px;
+  color: var(--main-text);
+}
+.info-user .card{
+  box-shadow: none;
+}
+.info-user .add-icon-info{
+  text-decoration: none;
+  color: var(--link-text);
+  font-size: 20px;
+  box-shadow: 0px 0px 3px 1px var(--link-text);
+  border-radius: 20px;
+  text-align: center;
+  padding: 5px 10px;
+}
+.info-user .add-icon-info:hover{
+  background-color: var(--link-text);
+  color: white;
+}
+.user-payment{
+  margin: 40px 0px;
+}
+.user-payment .card-payment{
+  box-shadow: 0px 0px 5px 1px var(--card-color);
+}
+.user-payment h2{
+  color: var(--main-text);
+}
+.user-payment .card-payment-user{
+  background-color: transparent;
+  box-shadow: 0px 0px 5px 3px var(--card-color);
+  border-radius: 20px;
+  transition: transform 0.8s; 
+}
+.user-payment .card-payment-user:hover{
+  transform: translate(-5px, -10px);
+  box-shadow: 2px 3px 5px 0px var(--link-text);
+}
+.user-payment .income-month p,
+.user-payment .total-payment p,
+.user-payment .total-income p{
+  font-size: 20px;
+  color: var(--main-text);
+}
+.user-payment .total-payment .color-green,
+.user-payment .change-dollar p{
+  font-size: 20px;
+  color: green;
+}
+.user-payment .income-month i{
+  font-size: 22px;
+  color: var(--link-text);
+  font-weight: bold;
+}
+.user-payment .total-income .color-gray,
+.user-payment .change-dollar-income p{
+  font-size: 20px;
+  color: var(--gray-color);
+}
+.user-payment .income-month .dollar{
+  padding: 3px 10px;
+  font-size: 20px;
+  color: white;
+  border-radius: 10px;
+  background: var(--bg-grandient);
+}
+/* .change-dollar-income .form-range{
+  background-color: #3162a5!important;
+} */
+.user-payment .calender-heatmap{
+  border-radius: 20px;
+  height: 250px;
+}
+.user-payment .calender-heatmap img{
+  border-radius: 15px;
+}
+.user-buttom .user-discuss{
+  text-decoration: none;
+  font-size: 20px;
+  background:var(--bg-grandient) ;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: white;
+}
+.user-buttom .user-discuss:hover{
+  background: transparent;
+  box-shadow: 0px 0px 3px 2px var(--link-text);
+  color: black;
+}
+.save-info{
+  font-size: 20px!important;
+  background: var(--bg-grandient);
+  border-radius: 15px;
+  padding: 8px 15px;
+  color: white!important;
+  
+}
