@@ -1,798 +1,1525 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kamnot</title>
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
-    <link rel="stylesheet" href="assets/css/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.css" />
     <link rel="stylesheet" href="assets/plugins/aos/css/aos.css" />
-    <link rel="stylesheet" href="assets/plugins/swiper js/css/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="assets/plugins/swiper js/css/swiper-bundle.min.css" />
   </head>
-  <body style="background-color: #fff">
+
+  <body>
     <!-- ! begin of header -->
-    <header class="landing-header">
-      <nav class="navbar navbar-expand-lg bg-transparent landing-navbar">
-        <div class="container d-flex justify-content-between">
-          <a class="navbar-brand" href="landing_page.html">
-            <img src="assets/img/navbar/Kn-logo.png" width="100px" alt="logo" />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
+    <header class="position-fixed top-0 w-100">
+      <nav class="navbar navbar-expand-lg nav-py30">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><img src="assets/img/navbar/Kn-logo.png" alt="" /></a>
+          <button class="navbar-toggler" type="button" aria-expanded="false" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+            <span class="nav-toggler-icon all-center"><i class="fa-solid fa-bars"></i></span>
           </button>
-          <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navbarSupportedContent"
-          >
-            <div class="action-button">
-              <button type="button" class="btn btn-register">
-                <a href="register.html" class="nav-link"> ចុះឈ្មោះ </a>
-              </button>
-              <button class="btn btn-login" type="button">
-                <a href="login.html" class="nav-link"> ចូលប្រើប្រាស់ </a>
+          <!-- ! begin of offcanvas -->
+          <div class="offcanvas offcanvas-start d-lg-none" data-bs-scroll="true" tabindex="-1"
+            id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                <a class="navbar-brand" href="index.html"><img src="assets/img/navbar/Kn-logo.png" alt="" /></a>
+              </h5>
+              <button type="button" class="x-close all-center" data-bs-dismiss="offcanvas" aria-label="Close">
+                <i class="fa-solid fa-xmark"></i>
               </button>
             </div>
+            <div class="offcanvas-body">
+              <div class="canvas-header d-flex justify-content-between">
+                <a href="profile_info.html" class="convas-pf rounded-circle overflow-hidden text-decoration-none">
+                  <img src="assets/img/navbar/profile-img.png" alt="" />
+                </a>
+                <div class="d-flex align-items-center">
+                  <a href="cart.html" class="btn-add-cart all-center text-decoration-none"><i
+                      class="fa-solid fa-cart-shopping"></i>
+                    <div class="cart-status all-center"><span>2 </span></div>
+                  </a>
+                  <button type="button" data-theme-toggle id="theme-toggle-1"
+                    class="dark-light-mode all-center rounded-circle ms-3"></button>
+                </div>
+              </div>
+
+              <!-- ! begin navbar offcanvas -->
+              <ul class="nav-convas">
+                <li class="convas-item">
+                  <a class="convas-link convas-bar-bg" href="index.html"><i class="fa fa-house"></i> ទំព័រដើម</a>
+                </li>
+                <li class="convas-item">
+                  <input type="checkbox" id="showDropHabit" />
+                  <label for="showDropHabit"
+                    class="sub-convas-dropdown d-flex align-items-center justify-content-between">
+                    <div>
+                      <i class="fa-solid fa-calendar-check"></i>
+                      ទម្លាប់ប្រចាំថ្ងៃ
+                    </div>
+                    <i class="fa-solid fa-caret-down"></i>
+                  </label>
+                  <ul class="drop-menu">
+                    <li class="convas-item">
+                      <a class="convas-link bbt-pf" href="journaling.html">កំណត់ត្រាប្រចាំថ្ងៃ</a>
+                    </li>
+                    <li class="convas-item">
+                      <a class="convas-link bbt-pf" href="money_spending.html">តាមដានការចំណាយ</a>
+                    </li>
+                    <li class="convas-item">
+                      <a class="convas-link bbt-pf" href="mood_tracking.html">តាមដានផ្លូវចិត្ត</a>
+                    </li>
+                    <li class="convas-item">
+                      <a class="convas-link" href="exercise.html">លំហាត់ប្រាណ</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="convas-item mt-10">
+                  <input type="checkbox" id="showDropMentalhealth" />
+                  <label for="showDropMentalhealth"
+                    class="sub-convas-dropdown d-flex align-items-center justify-content-between">
+                    <div>
+                      <i class="fa-solid fa-brain"></i> ស្ថានភាពផ្លូវចិត្ត
+                    </div>
+                    <i class="fa-solid fa-caret-down"></i>
+                  </label>
+                  <ul class="drop-menu">
+                    <li class="convas-item">
+                      <a class="convas-link bbt-pf" href="therapist.html">អ្នកជំនាញផ្លូវចិត្ត</a>
+                    </li>
+                    <li class="convas-item">
+                      <a class="convas-link" href="mediation.html">សមាធិ</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="convas-item mt-10">
+                  <input type="checkbox" id="showDropEdu" />
+                  <label for="showDropEdu"
+                    class="sub-convas-dropdown d-flex align-items-center justify-content-between">
+                    <div>
+                      <i class="fa-solid fa-book-open-reader"></i> ចំណេះដឹង
+                    </div>
+                    <i class="fa-solid fa-caret-down"></i>
+                  </label>
+                  <ul class="drop-menu">
+                    <li class="convas-item">
+                      <a class="convas-link bbt-pf" href="book_store.html">សៀវភៅ</a>
+                    </li>
+                    <li class="convas-item">
+                      <a class="convas-link bbt-pf" href="event.html">ព្រឹត្តិការណ៍</a>
+                    </li>
+                    <li class="convas-item">
+                      <a class="convas-link" href="video_recommendation.html">វីឌីអូអភិវឌ្ឍខ្លួន</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="convas-item">
+                  <a class="convas-link convas-bar-bg mb-0" href="article.html"><i class="fa-solid fa-newspaper"></i>
+                    អត្ថបទ</a>
+                </li>
+                <li class="convas-item">
+                  <a class="convas-link convas-bar-bg mb-0" href="article.html"><i
+                      class="fa-solid fa-money-check-dollar"></i> តម្លៃ</a>
+                </li>
+                <li class="convas-item mt-10">
+                  <input type="checkbox" id="showDropMoreInfo" />
+                  <label for="showDropMoreInfo"
+                    class="sub-convas-dropdown d-flex align-items-center justify-content-between">
+                    <div>
+                      <i class="fa-solid fa-circle-info"></i> ព័ត៌មានបន្ថែម
+                    </div>
+                    <i class="fa-solid fa-caret-down"></i>
+                  </label>
+                  <ul class="drop-menu">
+                    <li class="convas-item">
+                      <a class="convas-link bbt-pf" href="about_us.html">អំពីយើង</a>
+                    </li>
+                    <li class="convas-item">
+                      <a class="convas-link" href="contact_us.html">ទាក់ទង</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <!-- ! end navbar offcanvas -->
+            </div>
+          </div>
+          <!-- ! end of offcanvas -->
+          <div class="collapse navbar-collapse d-flex justify-content-end d-lg-block d-none"
+            id="navbarSupportedContent">
+            <form class="search-bar d-flex" role="search">
+              <input class="search-nav form-control me-3 position-relative" type="search" placeholder="Search"
+                aria-label="Search" />
+              <i class="fa-solid fa-magnifying-glass position-absolute"></i>
+            </form>
+            <div class="profile d-flex flex-row align-items-center">
+              <div class="pf-arrow-down rounded-circle me-2 ms-2 all-center">
+                <i class="fa-solid fa-caret-down"></i>
+              </div>
+              <div class="pf-status d-flex flex-column align-items-end">
+                <a href="profile_info.html" class="pf-name text-decoration-none">Wade Warren</a>
+              </div>
+              <div class="pf-image rounded-circle ms-2">
+                <img src="assets/img/navbar/profile-img.png" alt="" />
+              </div>
+              <div class="pf-drowpdown">
+                <div class="hide-upf"></div>
+                <div class="box-rotate"></div>
+                <ul class="pf-list">
+                  <li class="pf-item bbt-pf">
+                    <a href="profile_info.html" class="pf-link d-flex">
+                      <div class="dropdown-pf">
+                        <img src="assets/img/navbar/profile-img.png" class="rounded-circle" alt="" />
+                      </div>
+                      <p class="m-0">Wade Warren</p>
+                    </a>
+                  </li>
+                  <li class="pf-item">
+                    <a href="landing_page.html" class="pf-link d-flex">
+                      <div class="leave-icon all-center">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                      </div>
+                      <p class="m-0">ចាកចេញ</p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="notification rounded-circle all-center position-relative ms-3">
+              <i class="fa-solid fa-bell"></i>
+              <span class="notification-count bg-danger all-center text-white position-absolute">9</span>
+              <div class="noti-controll">
+                <div class="box-rotate"></div>
+                <div class="noti-content">
+                  <div class="hide-upf"></div>
+                  <div class="bar-noti d-flex justify-content-between">
+                    <div class="d-flex align-items-center">
+                      <i class="fa-solid fa-bell"></i>
+                      <p class="m-0">ដំណឹង</p>
+                    </div>
+                    <div class="noti-status all-center">
+                      <span>9</span>
+                    </div>
+                  </div>
+                  <ul class="noti-list">
+                    <li class="noti-item bbt-pf">
+                      <a href="#" class="noti-link text-decoration-none">
+                        <div class="noti-image">
+                          <img src="assets/img/navbar/profile-img.png" alt="" />
+                        </div>
+                        <div class="d-flex flex-column justify-content-between">
+                          <p class="noti-title m-0">
+                            ១៦ វិធីសាមញ្ញដើម្បីបំបាត់ភាពតានតឹង។
+                          </p>
+                          <p class="noti-author m-0">ដោយ៖ Wide Warren</p>
+                          <span class="noti-date">12:30 PM</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="noti-item bbt-pf">
+                      <a href="#" class="noti-link text-decoration-none">
+                        <div class="noti-image">
+                          <img src="assets/img/navbar/profile-img.png" alt="" />
+                        </div>
+                        <div class="d-flex flex-column justify-content-between">
+                          <p class="noti-title m-0">
+                            ១៦ វិធីសាមញ្ញដើម្បីបំបាត់ភាពតានតឹង។
+                          </p>
+                          <p class="noti-author m-0">ដោយ៖ Wide Warren</p>
+                          <span class="noti-date">12:30 PM</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="noti-item bbt-pf">
+                      <a href="#" class="noti-link text-decoration-none">
+                        <div class="noti-image">
+                          <img src="assets/img/navbar/profile-img.png" alt="" />
+                        </div>
+                        <div class="d-flex flex-column justify-content-between">
+                          <p class="noti-title m-0">
+                            ១៦ វិធីសាមញ្ញដើម្បីបំបាត់ភាពតានតឹង។
+                          </p>
+                          <p class="noti-author m-0">ដោយ៖ Wide Warren</p>
+                          <span class="noti-date">12:30 PM</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="noti-item bbt-pf">
+                      <a href="#" class="noti-link text-decoration-none">
+                        <div class="noti-image">
+                          <img src="assets/img/navbar/profile-img.png" alt="" />
+                        </div>
+                        <div class="d-flex flex-column justify-content-between">
+                          <p class="noti-title m-0">
+                            ១៦ វិធីសាមញ្ញដើម្បីបំបាត់ភាពតានតឹង។
+                          </p>
+                          <p class="noti-author m-0">ដោយ៖ Wide Warren</p>
+                          <span class="noti-date">12:30 PM</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="noti-item bbt-pf">
+                      <a href="#" class="noti-link text-decoration-none">
+                        <div class="noti-image">
+                          <img src="assets/img/navbar/profile-img.png" alt="" />
+                        </div>
+                        <div class="d-flex flex-column justify-content-between">
+                          <p class="noti-title m-0">
+                            ១៦ វិធីសាមញ្ញដើម្បីបំបាត់ភាពតានតឹង។
+                          </p>
+                          <p class="noti-author m-0">ដោយ៖ Wide Warren</p>
+                          <span class="noti-date">12:30 PM</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="noti-item">
+                      <a href="#" class="noti-link text-decoration-none">
+                        <div class="noti-image">
+                          <img src="assets/img/navbar/profile-img.png" alt="" />
+                        </div>
+                        <div class="d-flex flex-column justify-content-between">
+                          <p class="noti-title m-0">
+                            ១៦ វិធីសាមញ្ញដើម្បីបំបាត់ភាពតានតឹង។
+                          </p>
+                          <p class="noti-author m-0">ដោយ៖ Wide Warren</p>
+                          <span class="noti-date">12:30 PM</span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <a type="button" href="notification.html" role="button"
+                    class="bar-noti text-decoration-none w-100">មើលទាំងអស់</a>
+                </div>
+              </div>
+            </div>
+            <button type="button" data-theme-toggle id="theme-toggle-2"
+              class="dark-light-mode all-center rounded-circle ms-3"></button>
           </div>
         </div>
       </nav>
-      <button type="button" data-theme-toggle id="theme-toggle-2"
-              class="dark-light-mode all-center rounded-circle ms-3 d-none"></button>
     </header>
     <!-- ! end of header -->
 
-    <main style="background-color: #fff">
-      <section class="landing-herobanner position-relative section-space">
-        <div class="container">
-          <div class="landing-title">
-            <div
-              data-aos="fade-up"
-              data-aos-duration="1500"
-              data-aos-easing="linear"
-            >
-              <h1 class="text-center landing-title-color">
-                ផ្លាស់ប្ដូរទម្លាប់ប្រចាំថ្ងៃរបស់អ្នកជាមួយកំណត់ <br />
-                កំណត់ជាកន្លែងដែលអ្នកអាចរៀបចំ និង អភិវឌ្ឍន៌ទម្លាប់ឱ្យប្រសើរឡើង
-              </h1>
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-duration="1800"
-              data-aos-easing="linear"
-              data-aos-delay="10"
-            >
-              <h1 class="text-center py-4 landing-title-color fw-bold">
-                Become a better version of youself with KomNot.
-              </h1>
-            </div>
-            <div
-              class="w-100 d-flex justify-content-center"
-              data-aos="fade-up"
-              data-aos-duration="2200"
-              data-aos-easing="linear"
-            >
-              <button type="button" class="btn-login p-lg-3">
-                <a href="login.html" class="nav-link fs-4 py-2 px-5">
-                  ចូលប្រើប្រាស់
-                </a>
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-
-      <section class="komnot-services section-space">
-        <div class="container overflow-hidden">
-          <div
-            data-aos="fade-down"
-            data-aos-duration="500"
-            data-aos-easing="linear"
-          >
-            <h1 class="landing-title-color text-center">
-              មុខងារពិសេសរបស់កំណត់
-            </h1>
-            <p class="service-subtitle text-center">
-              <span class="landing-title-color fs-3">កំណត់​​</span>
-              ផ្ដល់ជូនមុខងារជំនួយជាច្រើនដែលអ្នកត្រូវការប្រចាំថ្ងៃដើម្បីបង្កើត​
-              និង បង្កើនទម្លាប់ល្អៗរបស់អ្នក
-            </p>
-          </div>
-
-          <div class="service-categories py-2">
-            <div class="row justify-content-center py-5 g-5">
-              <div class="col-md-12 col-lg-6 col-xl-4">
-                <div
-                  class="card py-3 px-2"
-                  data-aos="zoom-in"
-                  data-aos-duration="800"
-                  data-aos-easing="ease-in-out"
-                >
-                  <div class="card-title mx-auto d-flex align-items-end">
-                    <h3 class="landing-title-color">កំណត់ត្រាប្រចាំថ្ងៃ</h3>
-                    <span class="ps-4">
-                      <img
-                        src="assets/img/Landing-page/ls-P1.png"
-                        width="50px"
-                        alt=""
-                      />
-                    </span>
-                  </div>
-                  <div class="card-body">
-                    <p class="text-center">
-                      កំណត់ត្រាប្រចាំថ្ងៃធ្វើឱ្យអ្នកមានទម្លាប់ល្អ
-                      ព្រោះវាជួយអ្នកឱ្យបានឆ្លុះបញ្ចាំងពីខ្លួនឯង​
-                      តាមដានភាពអភិវឌ្ឍន៌របស់ខ្លួន
-                      និងបង្កើនភាពមានទំនួលខុសត្រូវមកលើខ្លួនឯង។
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-12 col-lg-6 col-xl-4">
-                <div
-                  class="card py-3 px-2"
-                  data-aos="zoom-in"
-                  data-aos-duration="900"
-                  data-aos-easing="ease-in-out"
-                >
-                  <div class="card-title mx-auto d-flex align-items-end">
-                    <h3 class="landing-title-color">កំណត់ត្រាការចំណាយ</h3>
-                    <span class="ps-4">
-                      <img
-                        src="assets/img/Landing-page/ls-P2.png"
-                        width="50px"
-                        alt=""
-                      />
-                    </span>
-                  </div>
-                  <div class="card-body">
-                    <p class="text-center">
-                      ការតាមដានការចំណាយលុយគឺជាទម្លាប់ដ៏ល្អមួយ
-                      ព្រោះវាជួយបង្កើនការយល់ដឹងផ្នែកហិរញ្ញវត្ថុ
-                      ជួយគ្រប់គ្រងការចំណាយ និងលើកកម្ពស់ថវិកា
-                      និងការសន្សំកាន់តែប្រសើរ។
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-12 col-lg-6 col-xl-4">
-                <div
-                  class="card py-3 px-2"
-                  data-aos="zoom-in"
-                  data-aos-duration="1000"
-                  data-aos-easing="ease-in-out"
-                >
-                  <div class="card-title mx-auto d-flex align-items-end">
-                    <h3 class="landing-title-color">កំណត់ត្រាសកម្មភាព</h3>
-                    <span class="ps-4">
-                      <img
-                        src="assets/img/Landing-page/ls-P3.png"
-                        width="50px"
-                        alt=""
-                      />
-                    </span>
-                  </div>
-                  <div class="card-body">
-                    <p class="text-center">
-                      ការប្រើប្រាស់បញ្ជីការងារត្រូវធ្វើគឺជាទម្លាប់ដ៏ល្អមួយ
-                      ព្រោះវាជួយបង្កើនផលិតភាពការងារ និងជួយកំណត់អាទិភាព
-                      និងគ្រប់គ្រងពេលវេលាប្រកបដោយប្រសិទ្ធភាព។
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-12 col-lg-6 col-xl-4">
-                <div
-                  class="card py-3 px-2"
-                  data-aos="zoom-in"
-                  data-aos-duration="1100"
-                  data-aos-easing="ease-in-out"
-                >
-                  <div class="card-title mx-auto d-flex align-items-center">
-                    <h3 class="landing-title-color text-center">ការអានសៀវភៅ</h3>
-                    <span class="ps-4">
-                      <img
-                        src="assets/img/Landing-page/ls-P4.png"
-                        width="50px"
-                        height="50px"
-                        alt=""
-                      />
-                    </span>
-                  </div>
-                  <div class="card-body">
-                    <p class="text-center">
-                      ការអានសៀវភៅឌីជីថល (PDF) គឺជាទម្លាប់ដ៏ល្អមួយ
-                      ព្រោះវាផ្តល់នូវភាពងាយស្រួល
-                      មានភាពទូលំទូលាយក្នុងការទទួលបានចំណេះដឹង
-                      និងមិនប៉ះពាល់ដល់បរិស្ថាន។
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-12 col-lg-6 col-xl-4">
-                <div
-                  class="card py-3 px-2"
-                  data-aos="zoom-in"
-                  data-aos-duration="1200"
-                  data-aos-easing="ease-in-out"
-                >
-                  <div class="card-title mx-auto d-flex align-items-end">
-                    <h3 class="landing-title-color">លំហាត់ប្រាណ</h3>
-                    <span class="ps-4">
-                      <img
-                        src="assets/img/Landing-page/ls-P5.png"
-                        width="50px"
-                        alt=""
-                      />
-                    </span>
-                  </div>
-                  <div class="card-body">
-                    <p class="text-center">
-                      លំហាត់ប្រាណប្រចាំថ្ងៃគឺជាទម្លាប់ដ៏ល្អព្រោះវាជួយពង្រឹងសុខភាពទូទៅ
-                      បង្កើនអារម្មណ៌ល្អ បង្កើនថាមពលប្រចាំថ្ងៃ
-                      និងប្រសិទ្ធភាពនៃការរស់នៅប្រចាំថ្ងៃ។
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="komnot-description section-space">
-        <div class="container">
-          <div class="row">
-            <div
-              class="col-md-12 col-lg-6"
-              data-aos="fade-left"
-              data-aos-offset="100"
-              data-aos-easing="ease-in-sine"
-            >
-              <div class="description-wrapper w-100 position-relative">
-                <div
-                  class="description-image d-sm-none d-md-flex justify-content-center"
-                >
-                  <img
-                    src="assets/img/Landing-page/landing-description.png"
-                    alt=""
-                  />
-                </div>
-                <div
-                  class="des-deco"
-                  style="width: 30px; height: 30px; top: 10px; left: 10px"
-                ></div>
-                <div
-                  class="des-deco"
-                  style="width: 50px; height: 50px; top: 70px; right: 50px"
-                ></div>
-                <div
-                  class="des-deco"
-                  style="width: 20px; height: 20px; bottom: 30px; right: 10px"
-                ></div>
-                <div class="des-deco" style="width: 70px; height: 70px"></div>
-                <div
-                  class="des-deco blur"
-                  style="width: 220px; height: 220px; top: 110px; left: 220px"
-                ></div>
-              </div>
-            </div>
-            <div
-              class="col-md-12 col-lg-6"
-              data-aos="fade-right"
-              data-aos-offset="100"
-              data-aos-easing="ease-in-sine"
-            >
-              <div class="des-detail pt-lg-4 ps-2">
-                <h1 class="text-center fw-bold landing-title-color">
-                  KomNot - កំណត់
-                </h1>
-                <p class="text-center fw-bold">
-                  សូមស្វាគមន៍មកកាន់ KomNot: Your Journey to a Better You!
-                </p>
-                <p class="text-center text-black">
-                  ស្វែងយល់ពីវិធីសាស្រ្តក្នុងដើម្បីកែលម្អខ្លួនឯងជាមួយ KomNot ។
-                  ចាប់ពីការតាមដានទម្លាប់ និងអារម្មណ៍ប្រចាំថ្ងៃ
-                  រហូតដល់ការគ្រប់គ្រងហិរញ្ញវត្ថុ កំណត់ហេតុ និងផែនការ
-                  វេទិការបស់យើងផ្តល់ឱ្យអ្នកមានសេរីភាពក្នុងការគ្រប់គ្រងជីវិតរបស់អ្នក។ចាប់ផ្ដើមសិក្សាពីសភាពផ្លូវចិត្តជាមួយនឹងវគ្គព្យាបាល
-                  និងវគ្គធ្វើសមាធិ
-                  រក្សាលំនឹងទម្លាប់នៃការធ្វើលំហាត់ប្រាណប្រចាំថ្ងៃ
-                  និងពង្រីកការយល់ដឹងរបស់អ្នកជាមួយនឹងការណែនាំពីសៀវភៅ និង YouTube
-                  ។ ចូលរួមជាមួយ KomNot
-                  ដែលដឹកនាំអ្នកឱ្យមានការលូតលាសចិត្តគំនិតតាមរយៈព្រឹត្តិការណ៍ស្ម័គ្រចិត្ត
-                  ការចូលរួមជាមួយសង្គម និងការបរិច្ចាគដ៏មានអត្ថន័យ។ <br />
-                  ចាប់ផ្តើមការផ្លាស់ប្តូររបស់អ្នកនៅថ្ងៃនេះជាមួយ KomNot - កំណត់!
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ls = landing service -->
-      <section class="ls-more section-space">
-        <div class="container pe-0">
-          <div class="row">
-            <div
-              class="col-sm-12 col-md-6"
-              data-aos="fade-up-right"
-              data-aos-duration="700"
-            >
-              <div class="more-detail py-5 px-lg-3">
-                <h1 class="text-center fw-bolder landing-title-color">
-                  លើសពីអ្វីដែលអ្នកគិតដល់
-                </h1>
-                <div class="d-sm-flex d-md-block">
-                  <p class="text-sm-start text-center pt-3 pe-2">
-                    ពួកយើងមើលឃើញពីកង្វះខាតនៃការយល់ដឹងនិងអនុវត្តទាក់ទងទៅនឹងសភាពផ្លូវចិត្ត
-                    <br />
-                    ដូចនេះ ពួកយើងមានបញ្ចូលមុខងារសំខាន់ៗបន្ថែមទៀតដើម្បីធានាបានថា
-                    <br />
-                    អ្នកនឹងទទួលអាចអភិវឌ្ឍន៌និងយល់ដឹងពីខ្លួនឯងបានច្រើនជាងអ្វីដែលអ្នករំពឹងទុក។
-                  </p>
-                  <ul class="ls-more-list my-lg-4 pt-3 pe-2">
-                    <li class="list-group-item pb-2 text-start text-md-center">
-                      ជំនួបពិភាក្សាផ្លូវចិត្តអនឡាញជាមួយនឹងអ្នកជំនាញទាំងក្នុងនិងក្រៅប្រទេស
+    <main>
+      <div class="container">
+        <div class="row g-lg-4">
+          <!-- ! begin of side bar -->
+          <div class="col-lg-1 col-sm-2 d-lg-block d-none">
+            <div class="side-menu">
+              <ul class="menu">
+                <li class="menu-item all-center">
+                  <a role="button" type="button" href="index.html"
+                    class="menu-btn active text-decoration-none all-center"><i class="fa fa-house"></i></a>
+                  <ul class="nav-menu">
+                    <li class="menu-item">
+                      <div class="menu-content">
+                        <div class="bar-title d-flex align-items-center">
+                          <i class="fa fa-house"></i>
+                          <h4>ទំព័រដើម</h4>
+                        </div>
+                      </div>
                     </li>
-                    <li
-                      class="list-group-item pb-2 ps-3 text-start text-md-center"
-                    >
-                      វិធីសាស្រ្តក្នុងការធ្វើសមាធិ
-                      ធ្វើឱ្យសភាពផ្លូវចិត្តរបស់អ្នកមានភាពស្ងប់សុខ
-                    </li>
+                    <div class="hide"></div>
                   </ul>
-                </div>
-              </div>
+                </li>
+                <li class="menu-item all-center">
+                  <button type="button" class="menu-btn">
+                    <i class="fa-solid fa-calendar-check"></i>
+                  </button>
+                  <ul class="nav-menu">
+                    <li class="menu-item">
+                      <div class="menu-content">
+                        <div class="bar-title d-flex align-items-center">
+                          <i class="fa-solid fa-calendar-check"></i>
+                          <h4>ទម្លាប់ប្រចាំថ្ងៃ</h4>
+                        </div>
+                        <ul class="content-list">
+                          <li class="content-item">
+                            <a href="journaling.html" class="content-link">កំណត់ត្រាប្រចាំថ្ងៃ</a>
+                          </li>
+                          <li class="content-item">
+                            <a href="money_spending.html" class="content-link">តាមដានការចំណាយ</a>
+                          </li>
+                          <li class="content-item">
+                            <a href="mood_tracking.html" class="content-link">តាមដានផ្លូវចិត្ត</a>
+                          </li>
+                          <li class="content-item">
+                            <a href="exercise.html" class="content-link">លំហាត់ប្រាណ</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <div class="hide"></div>
+                  </ul>
+                </li>
+                <li class="menu-item all-center">
+                  <button type="button" class="menu-btn all-center">
+                    <i class="fa-solid fa-brain"></i>
+                  </button>
+                  <ul class="nav-menu">
+                    <li class="menu-item">
+                      <div class="menu-content">
+                        <div class="bar-title d-flex align-items-center">
+                          <i class="fa-solid fa-brain"></i>
+                          <h4>ស្ថានភាពផ្លូវចិត្ត</h4>
+                        </div>
+                        <ul class="content-list">
+                          <li class="content-item">
+                            <a href="therapist.html" class="content-link">អ្នកជំនាញផ្លូវចិត្ត</a>
+                          </li>
+                          <li class="content-item">
+                            <a href="mediation.html" class="content-link">សមាធិ</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <div class="hide"></div>
+                  </ul>
+                </li>
+                <li class="menu-item all-center">
+                  <button type="button" class="menu-btn all-center">
+                    <i class="fa-solid fa-book-open-reader"></i>
+                  </button>
+                  <ul class="nav-menu">
+                    <li class="menu-item">
+                      <div class="menu-content">
+                        <div class="bar-title d-flex align-items-center">
+                          <i class="fa-solid fa-book-open-reader"></i>
+                          <h4>ចំណេះដឹង</h4>
+                        </div>
+                        <ul class="content-list">
+                          <li class="content-item">
+                            <a href="book_store.html" class="content-link">សៀវភៅ</a>
+                          </li>
+                          <li class="content-item">
+                            <a href="event.html" class="content-link">ព្រឹត្តិការណ៍</a>
+                          </li>
+                          <li class="content-item">
+                            <a href="video_recommendation.html" class="content-link">វីឌីអូអភិវឌ្ឍខ្លួន</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <div class="hide"></div>
+                  </ul>
+                </li>
+                <li class="menu-item all-center">
+                  <a href="pricing.html" type="button" class="menu-btn all-center text-decoration-none"><i
+                      class="fa-solid fa-money-check-dollar"></i></a>
+                  <ul class="nav-menu">
+                    <li class="menu-item">
+                      <div class="menu-content">
+                        <div class="bar-title d-flex align-items-center">
+                          <i class="fa-solid fa-money-check-dollar"></i>
+                          <h4>តម្លៃ</h4>
+                        </div>
+                      </div>
+                    </li>
+                    <div class="hide"></div>
+                  </ul>
+                </li>
+                <li class="menu-item all-center">
+                  <a role="button" href="article.html" type="button" class="menu-btn all-center text-decoration-none"><i
+                      class="fa-solid fa-newspaper"></i></a>
+                  <ul class="nav-menu">
+                    <li class="menu-item">
+                      <div class="menu-content">
+                        <div class="bar-title d-flex align-items-center">
+                          <i class="fa-solid fa-newspaper"></i>
+                          <h4>អត្ថបទ</h4>
+                        </div>
+                      </div>
+                    </li>
+                    <div class="hide"></div>
+                  </ul>
+                </li>
+                <li class="menu-item all-center">
+                  <button type="button" class="menu-btn mb-0 all-center">
+                    <i class="fa-solid fa-circle-info"></i>
+                  </button>
+                  <ul class="nav-menu">
+                    <li class="menu-item">
+                      <div class="menu-content">
+                        <div class="bar-title d-flex align-items-center">
+                          <i class="fa-solid fa-circle-info"></i>
+                          <h4>ព័ត៌មានបន្ថែម</h4>
+                        </div>
+                        <ul class="content-list">
+                          <li class="content-item">
+                            <a href="about_us.html" class="content-link">អំពីយើង</a>
+                          </li>
+                          <li class="content-item">
+                            <a href="contact_us.html" class="content-link">ទាក់ទង</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <div class="hide"></div>
+                  </ul>
+                </li>
+              </ul>
             </div>
-            <div
-              class="d-none d-md-block col-md-6 pe-0"
-              data-aos="fade-up-left"
-              data-aos-duration="700"
-            >
-              <div class="wrapper w-100 overflow-hidden">
-                <div class="image-wrapper">
-                  <img
-                    src="assets/img/Landing-page/ls-more.jpg"
-                    class="card-img-top"
-                    alt=""
-                  />
+          </div>
+          <!-- ! end of side bar --
+          <!-- ! begin of main content -->
+          <div class="col-lg-11 col-12">
+            <div class="pt-112 px-4 px-md-0">
+              <div class="row g-3">
+                <div class="col-lg-8 col-12 journaling-reshow">
+                  <div class="bar-journal-reshow all-center">
+                    <h3>កំណត់ហេតុប្រចាំថ្ងៃ</h3>
+                    <a href="journaling.html" type="button" class="plus-btn all-center">
+                      <i class="fa-solid fa-plus"></i>
+                    </a>
+                  </div>
+                  <div class="journal-reshow-content">
+                    <div class="bar-journal d-flex flex-row">
+                      <div class="col-lg-1 col-2 journal-date d-flex flex-column all-center">
+                        <p class="fw-bold">23</p>
+                        <p>សុក្រ</p>
+                      </div>
+                      <div class="journal-written col-lg-9 col-6">
+                        <p class="m-0">
+                          ខ្ញុំចាប់ផ្តើមជាមួយនឹងការដើរយ៉ាងលឿននៅក្នុងឧទ្យាន
+                          រីករាយជាមួយខ្យល់អាកាសដ៏ត្រជាក់នៅពេលព្រឹក
+                          និងសំឡេងសត្វបក្សីបន្លឺឡើង។ នៅកន្លែងធ្វើការ
+                          ទីបំផុតខ្ញុំបានបញ្ចប់គម្រោងមួយដែលខ្ញុំកំពុងជួបការលំបាក
+                          ដែលមានអារម្មណ៍ថាដូចជាទម្ងន់ដ៏ធំមួយបានលើកស្មារបស់ខ្ញុំ។
+                        </p>
+                      </div>
+                      <div class="col-lg-2 col-4 journal-edit">
+                        <div class="edit-control">
+                          <div class="d-flex flex-row align-items-center justify-content-end">
+                            <a href="#" type="button" class="btn-journal d-flex all-center"><i
+                                class="fa-solid fa-bookmark"></i></a>
+                            <a href="#" type="button" class="btn-journal d-flex all-center"><i
+                                class="fa-solid fa-pencil"></i></a>
+                            <a href="#" type="button" class="btn-journal d-flex all-center"><i
+                                class="fa-regular fa-trash-can"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bar-journal d-flex flex-row">
+                      <div class="col-lg-1 col-2 journal-date d-flex flex-column all-center">
+                        <p class="fw-bold">22</p>
+                        <p>ព្រ.ហ</p>
+                      </div>
+                      <div class="journal-written col-lg-9 col-6">
+                        <p class="m-0">
+                          ថ្ងៃនេះរវល់បន្តិច ប៉ុន្តែខ្ញុំធ្វើបានច្រើន។ ការងាររវល់
+                          ប៉ុន្តែខ្ញុំមានអារម្មណ៍ថាបានសម្រេច។ នៅពេលល្ងាច
+                          ខ្ញុំបានណាត់មិត្តភ័ក្តិម្នាក់ពេលអាហារពេលល្ងាច
+                          ដែលជាការសម្រាកដ៏ល្អពីទម្លាប់ធម្មតា។
+                          ខ្ញុំ​សូម​អរគុណ​ចំពោះ​ការ​គាំទ្រ​របស់​មិត្តភ័ក្តិ​របស់​ខ្ញុំ។
+                        </p>
+                      </div>
+                      <div class="col-lg-2 col-4 journal-edit">
+                        <div class="edit-control">
+                          <div class="d-flex flex-row align-items-center justify-content-end">
+                            <a href="#" type="button" class="btn-journal d-flex all-center"><i
+                                class="fa-solid fa-bookmark"></i></a>
+                            <a href="#" type="button" class="btn-journal d-flex all-center"><i
+                                class="fa-solid fa-pencil"></i></a>
+                            <a href="#" type="button" class="btn-journal d-flex all-center"><i
+                                class="fa-regular fa-trash-can"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bar-journal d-flex flex-row">
+                      <div class="col-lg-1 col-2 journal-date d-flex flex-column all-center">
+                        <p class="fw-bold">22</p>
+                        <p>ពុធ</p>
+                      </div>
+                      <div class="journal-written col-lg-9 col-6">
+                        <p class="m-0">
+                          ភ្ញាក់ពីគេង មានអារម្មណ៍ស្រស់ស្រាយ និងថាមពល
+                          បង្កើតជាសម្លេងវិជ្ជមានសម្រាប់ថ្ងៃ។
+                          ពេលព្រឹកបានដំណើរការយ៉ាងរលូន ហើយខ្ញុំមានថ្ងៃធ្វើការ។
+                          ពេល​រសៀល
+                          ខ្ញុំ​រីករាយ​នឹង​ការ​ដើរ​ដ៏​យូរ​ហើយ​ត្រាំ​ក្នុង​អាកាសធាតុ​ដ៏​ស្រស់​ស្អាត។
+                          នៅពេលល្ងាច ខ្ញុំបានចម្អិនអាហារដែលមានសុខភាពល្អ
+                          ហើយអានសៀវភៅពីរបីជំពូកមុនពេលចូលគេង។
+                          វាមានអារម្មណ៍ល្អក្នុងការចិញ្ចឹមរាងកាយ
+                          និងចិត្តរបស់ខ្ញុំ។
+                        </p>
+                      </div>
+                      <div class="col-lg-2 col-4 journal-edit">
+                        <div class="edit-control">
+                          <div class="d-flex flex-row align-items-center justify-content-end">
+                            <a href="#" type="button" class="btn-journal d-flex all-center"><i
+                                class="fa-solid fa-bookmark"></i></a>
+                            <a href="#" type="button" class="btn-journal d-flex all-center"><i
+                                class="fa-solid fa-pencil"></i></a>
+                            <a href="#" type="button" class="btn-journal d-flex all-center"><i
+                                class="fa-regular fa-trash-can"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bar-journal d-flex flex-row">
+                      <div class="col-lg-1 col-2 journal-date d-flex flex-column all-center">
+                        <p class="fw-bold">21</p>
+                        <p>អង្គា</p>
+                      </div>
+                      <div class="journal-written col-lg-9 col-6">
+                        <p class="m-0">
+                          ការចាប់ផ្តើមថ្ងៃជាមួយនឹងវគ្គយូហ្គាពិតជាជួយខ្ញុំផ្តោតអារម្មណ៍។ ការងារមានការលំបាក
+                          ប៉ុន្តែខ្ញុំនៅតែមានប្រសិទ្ធភាព។ នៅពេលល្ងាច
+                          ខ្ញុំបានចូលរួមសិក្ខាសាលានិម្មិតលើប្រធានបទដែលខ្ញុំចាប់អារម្មណ៍ ដែលមានទាំងព័ត៌មាន និងការចូលរួម។
+                          ការរៀនអ្វីដែលថ្មីតែងតែធ្វើឱ្យខ្ញុំរំភើប!
+                        </p>
+                      </div>
+                      <div class="col-lg-2 col-4 journal-edit">
+                        <div class="edit-control">
+                          <div class="d-flex flex-row align-items-center justify-content-end">
+                            <a href="#" type="button" class="btn-journal d-flex all-center"><i
+                                class="fa-solid fa-bookmark"></i></a>
+                            <a href="#" type="button" class="btn-journal d-flex all-center"><i
+                                class="fa-solid fa-pencil"></i></a>
+                            <a href="#" type="button" class="btn-journal d-flex all-center"><i
+                                class="fa-regular fa-trash-can"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bar-journal d-flex flex-row">
+                      <div class="col-lg-1 col-2 journal-date d-flex flex-column all-center">
+                        <p class="fw-bold">20</p>
+                        <p>ចន្ទ</p>
+                      </div>
+                      <div class="journal-written col-lg-9 col-6">
+                        <p class="m-0">
+                          ថ្ងៃនេះជាថង់ចម្រុះ។ ការងារមានភាពតានតឹង ហើយពេលខ្លះខ្ញុំមានអារម្មណ៍ធុញថប់។ ទោះយ៉ាងណាក៏ដោយ
+                          ខ្ញុំបានសម្រាកនៅពេលរសៀលដើម្បីធ្វើសួនច្បារ ដែលជួយឱ្យខ្ញុំសម្រាក និងបញ្ចូលថាមពលឡើងវិញ។ ក្រោយ​មក
+                          ខ្ញុំ​មាន​ការ​ហៅ​ជា​វីដេអូ​ជាមួយ​ក្រុម​គ្រួសារ​របស់​ខ្ញុំ ដែល​បាន​លើក​ទឹកចិត្ត​ខ្ញុំ។
+                          ទំនាក់ទំនងគ្រួសារមានសារៈសំខាន់ណាស់!
+                        </p>
+                      </div>
+                      <div class="col-lg-2 col-4 journal-edit">
+                        <div class="edit-control">
+                          <div class="d-flex flex-row align-items-center justify-content-end">
+                            <a href="#" type="button" class="btn-journal d-flex all-center"><i
+                                class="fa-solid fa-bookmark"></i></a>
+                            <a href="#" type="button" class="btn-journal d-flex all-center"><i
+                                class="fa-solid fa-pencil"></i></a>
+                            <a href="#" type="button" class="btn-journal d-flex all-center"><i
+                                class="fa-regular fa-trash-can"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bar-journal d-flex flex-row">
+                      <div class="col-lg-1 col-2 journal-date d-flex flex-column all-center">
+                        <p class="fw-bold">18</p>
+                        <p>សៅរ៍</p>
+                      </div>
+                      <div class="journal-written col-lg-9 col-6">
+                        <p class="m-0">
+                          ខ្ញុំចាប់ផ្តើមថ្ងៃជាមួយនឹងអាហារពេលព្រឹកដ៏ឈ្ងុយឆ្ងាញ់ និងកាហ្វេមួយពែង។ ការងារគឺស្រាលជាងមុន
+                          ដែលអនុញ្ញាតឱ្យខ្ញុំចាកចេញមុនម៉ោង។ នៅពេលល្ងាច ខ្ញុំបានជួបជុំមិត្តភ័ក្តិសម្រាប់ដើរលេងមួយយប់
+                          ដែលជាការសម្រាកដែលត្រូវការច្រើនពីទម្លាប់ធម្មតា។ សំណើច និងក្រុមហ៊ុនល្អ ​​គឺជាឱសថដ៏ល្អបំផុត។
+                        </p>
+                      </div>
+                      <div class="col-lg-2 col-4 journal-edit">
+                        <div class="edit-control">
+                          <div class="d-flex flex-row align-items-center justify-content-end">
+                            <a href="#" type="button" class="btn-journal d-flex all-center"><i
+                                class="fa-solid fa-bookmark"></i></a>
+                            <a href="#" type="button" class="btn-journal d-flex all-center"><i
+                                class="fa-solid fa-pencil"></i></a>
+                            <a href="#" type="button" class="btn-journal d-flex all-center"><i
+                                class="fa-regular fa-trash-can"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bar-journal d-flex flex-row">
+                      <div class="col-lg-1 col-2 journal-date d-flex flex-column all-center">
+                        <p class="fw-bold">17</p>
+                        <p>សុក្រ</p>
+                      </div>
+                      <div class="journal-written col-lg-9 col-6">
+                        <p class="m-0">
+                          ការ​ចូល​គេង​និង​រីករាយ​ពេល​ព្រឹក​គឺ​ជា​ការ​ព្យាបាល។ នៅពេលរសៀល
+                          ខ្ញុំបានទៅដើរលេងជាមួយដៃគូរបស់ខ្ញុំ
+                          ដែលជាវិធីដ៏ល្អមួយក្នុងការចំណាយពេលវេលាប្រកបដោយគុណភាពជាមួយគ្នា និងហាត់ប្រាណខ្លះ។
+                          ពេល​ល្ងាច​ពួក​យើង​ធ្វើ​ម្ហូប​ឆ្ងាញ់ៗ​មើល​កុន​ជាមួយ​គ្នា។ ធម្មជាតិតែងតែធ្វើឱ្យខ្ញុំស្រស់ស្រាយ។
+                        </p>
+                      </div>
+                      <div class="col-lg-2 col-4 journal-edit">
+                        <div class="edit-control">
+                          <div class="d-flex flex-row align-items-center justify-content-end">
+                            <a href="#" type="button" class="btn-journal d-flex all-center"><i
+                                class="fa-solid fa-bookmark"></i></a>
+                            <a href="#" type="button" class="btn-journal d-flex all-center"><i
+                                class="fa-solid fa-pencil"></i></a>
+                            <a href="#" type="button" class="btn-journal d-flex all-center"><i
+                                class="fa-regular fa-trash-can"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bar-btm-journal-reshow"></div>
                 </div>
+                <div class="col-lg-4 col-12 todo-reshow">
+                  <div class="bar-reshow-todo all-center d-flex align-items-center justify-content-between">
+                    <h3>កិច្ចការប្រចាំថ្ងៃ</h3>
+                    <a href="todo-list.html" type="button" class="plus-btn all-center">
+                      <i class="fa-solid fa-plus"></i>
+                    </a>
+                  </div>
+                  <div class="reshow-todo-content">
+                    <ul class="list-todo m-0">
+                      <li class="todo-item d-flex align-items-center justify-content-between">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          ធ្វើសមាធិរយៈពេល 10 នាទី។
+                        </label>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        
+                      </li>
+                      <li class="todo-item d-flex align-items-center justify-content-between">
+                        <label class="form-check-label" for="flexCheck1">
+                          ផឹកទឹកមួយកែវ
+                        </label>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheck1">
+                      </li>
+                      <li class="todo-item d-flex align-items-center justify-content-between">
+                        <label class="form-check-label" for="flexCheck2">
+                          ទិញផ្លែឈើនិងបន្លែស្រស់
+                        </label>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheck2">
+                      </li>
+                      <li class="todo-item d-flex align-items-center justify-content-between">
+                        <label class="form-check-label" for="flexCheck3">
+                          រៀបចំបទបង្ហាញសម្រាប់កិច្ចប្រជុំក្រុម
+                        </label>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheck3">
+                      </li>
+              
+                      <li class="todo-item d-flex align-items-center justify-content-between">
+                        <span class="todotext-checked">រត់ 30 នាទី។</span>
+                        <div class="check-todo bg-success bg-opacity-25 all-center">
+                          <i class="fa-solid fa-check"></i>
+                        </div>
+                      </li>
+                      <li class="todo-item d-flex align-items-center justify-content-between">
+                        <span class="todotext-checked">ទិនានុប្បវត្តិ 10 នាទីរៀងរាល់ព្រឹក</span>
+                        <div class="check-todo bg-success bg-opacity-25 all-center">
+                          <i class="fa-solid fa-check"></i>
+                        </div>
+                      </li>
+                      <li class="todo-item d-flex align-items-center justify-content-between">
+                        <span class="todotext-checked">ទៅដើរលេងនៅថ្ងៃសៅរ៍</span>
+                        <div class="check-todo bg-success bg-opacity-25 all-center">
+                          <i class="fa-solid fa-check"></i>
+                        </div>
+                      </li>
+                      <li class="todo-item d-flex align-items-center justify-content-between">
+                        <span class="todotext-checked">ស្រាវជ្រាវថ្នាក់ហាត់ប្រាណក្នុងតំបន់ដើម្បីចូលរួម</span>
+                        <div class="check-todo bg-success bg-opacity-25 all-center">
+                          <i class="fa-solid fa-check"></i>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="bar-btm-journal-reshow"></div>
+                </div>
+                <div class="col-12 p-2 m-2 me-0 ms-0">
+                  <div class="col-12 qoute-show">
+                    <div class="swiper mySwiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img src="assets/img/qoute-image/qoute-01.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="assets/img/qoute-image/qoute-02.jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                  </div>
+                </div>
+                <section class="reading-book p-2 m-2 me-0 ms-0">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="d-flex justify-content-between align-content-center mb-2">
+                        <h3 class="book-reading-title">សៀវភៅកំពុងអាន</h3>
+                        <a href="book_store.html"
+                          class="text-decoration-none align-self-center book-see-more">មើលបន្ថែម</a>
+                      </div>
+                      <div class="row g-3">
+                        <div class="col-lg-2 col-4">
+                          <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <div class="book-cover">
+                              <img src="assets/img/book/The_Psychology_of_Money.jpg" alt="" />
+                            </div>
+                          </a>
+                          <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            class="conti-read mt-2 text-decoration-none text-center">អានបន្ថែម</a>
+                        </div>
+                        <div class="col-lg-2 col-4">
+                          <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <div class="book-cover">
+                              <img src="assets/img/book/The_33_Strategies_of_War.jpg" alt="" />
+                            </div>
+                          </a>
+                          <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            class="conti-read mt-2 text-decoration-none text-center">អានបន្ថែម</a>
+                        </div>
+                        <div class="col-lg-2 col-4">
+                          <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <div class="book-cover">
+                              <img src="assets/img/book/The_5Am_Club.jpg" alt="" />
+                            </div>
+                          </a>
+                          <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            class="conti-read mt-2 text-decoration-none text-center">អានបន្ថែម</a>
+                        </div>
+                        <div class="col-lg-2 col-4">
+                          <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <div class="book-cover">
+                              <img src="assets/img/book/Think_and_Grow_Rich.jpg" alt="" />
+                            </div>
+                          </a>
+                          <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            class="conti-read mt-2 text-decoration-none text-center">អានបន្ថែម</a>
+                        </div>
+                        <div class="col-lg-2 col-4">
+                          <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <div class="book-cover">
+                              <img src="assets/img/book/The_Undoing_Project.jpg" alt="" />
+                            </div>
+                          </a>
+                          <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            class="conti-read mt-2 text-decoration-none text-center">អានបន្ថែម</a>
+                        </div>
+                        <div class="col-lg-2 col-4">
+                          <a href="book_store.html" class="text-decoration-none">
+                            <div class="add-book-cover all-center">
+                              <div class="add-plus all-center">
+                                <i class="fa-solid fa-plus"></i>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-fullscreen p-0 m-0">
+                    <div class="modal-content modal-reading-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-3" id="exampleModalLabel">
+                          The Physical of Money
+                        </h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                          aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body modal-reading-body">
+                        <iframe src="assets/pdf/The_Psychology_of_Money.pdf" frameborder="0"></iframe>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+                          បិទ
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </section>
+                <section class="popular-book p-2 m-2 me-0 ms-0 border-0">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="d-flex justify-content-between align-content-center mb-2">
+                        <h3 class="book-reading-title">សៀវភៅពេញនិយម</h3>
+                      </div>
+                      <div class="row g-3">
+                        <div class="col-lg-2 col-4">
+                          <a href="book_show.html" class="text-decoration-none">
+                            <div class="book-cover">
+                              <img src="assets/img/book/The_48_Laws_of_Power.jpg" alt="" />
+                              <h5 class="book-title pt-2 m-0">
+                                The Law of Power
+                              </h5>
+                              <p class="artist-name m-0">ដោយ៖ Robert Greene</p>
+                              <div class="star-rate d-flex">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star-half-stroke"></i>
+                              </div>
+                              <span class="book-price">$14.55</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-lg-2 col-4">
+                          <a href="book_show.html" class="text-decoration-none">
+                            <div class="book-cover">
+                              <img src="assets/img/book/Atomic_Habits.jpg" alt="" />
+                              <h5 class="book-title pt-2 m-0">Atomic Habits</h5>
+                              <p class="artist-name m-0">ដោយ៖ James Clear</p>
+                              <div class="star-rate d-flex">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                              </div>
+                              <span class="book-price">$13.79</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-lg-2 col-4">
+                          <a href="book_show.html" class="text-decoration-none">
+                            <div class="book-cover">
+                              <img src="assets/img/book/Think_and_Grow_Rich.jpg" alt="" />
+                              <h5 class="book-title pt-2 m-0">
+                                Think and Grow Rich
+                              </h5>
+                              <p class="artist-name m-0">ដោយ៖ Napoleon Hill</p>
+                              <div class="star-rate d-flex">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                              </div>
+                              <span class="book-price">$8.59</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-lg-2 col-4">
+                          <a href="book_show.html" class="text-decoration-none">
+                            <div class="book-cover">
+                              <img src="assets/img/book/Rich_Dad_Poor_Dad.jpg" alt="" />
+                              <h5 class="book-title pt-2 m-0">
+                                Rich Dad Poor Dad
+                              </h5>
+                              <p class="artist-name m-0">
+                                ដោយ៖ Robert T. Kiyosaki
+                              </p>
+                              <div class="star-rate d-flex">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star-half-stroke"></i>
+                              </div>
+                              <span class="book-price">$7.34</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-lg-2 col-4">
+                          <a href="book_show.html" class="text-decoration-none">
+                            <div class="book-cover">
+                              <img src="assets/img/book/The_33_Strategies_of_War.jpg" alt="" />
+                              <h5 class="book-title pt-2 m-0">
+                                The 33 Strategies of War
+                              </h5>
+                              <p class="artist-name m-0">ដោយ៖ Robert Greene</p>
+                              <div class="star-rate d-flex">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star-half-stroke"></i>
+                              </div>
+                              <span class="book-price">$14.99</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-lg-2 col-4">
+                          <a href="book_show.html" class="text-decoration-none">
+                            <div class="book-cover">
+                              <img src="assets/img/book/The_Power_of_Habit.jpg" alt="" />
+                              <h5 class="book-title pt-2 m-0">
+                                The Power of Habit
+                              </h5>
+                              <p class="artist-name m-0">ដោយ៖ Charles Duhigg</p>
+                              <div class="star-rate d-flex">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star-half-stroke"></i>
+                              </div>
+                              <span class="book-price">$11.86</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-lg-2 col-4">
+                          <a href="book_show.html" class="text-decoration-none">
+                            <div class="book-cover">
+                              <img src="assets/img/book/Make_Your_Bed.jpg" alt="" />
+                              <h5 class="book-title pt-2 m-0">Make Your Bed</h5>
+                              <p class="artist-name m-0">
+                                ដោយ៖ Admiral William H. McRaven
+                              </p>
+                              <div class="star-rate d-flex">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star-half-stroke"></i>
+                              </div>
+                              <span class="book-price">$11.00</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-lg-2 col-4">
+                          <a href="book_show.html" class="text-decoration-none">
+                            <div class="book-cover">
+                              <img src="assets/img/book/The_5Am_Club.jpg" alt="" />
+                              <h5 class="book-title pt-2 m-0">The 5Am Club</h5>
+                              <p class="artist-name m-0">ដោយ៖ Robin Sharma</p>
+                              <div class="star-rate d-flex">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star-half-stroke"></i>
+                              </div>
+                              <span class="book-price">$4.99</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-lg-2 col-4">
+                          <a href="book_show.html" class="text-decoration-none">
+                            <div class="book-cover">
+                              <img src="assets/img/book/The_7_Habits_Of_Highly_Effective_People.jpg" alt="" />
+                              <h5 class="book-title pt-2 m-0">
+                                The 7 Habits Of Highly Effective People
+                              </h5>
+                              <p class="artist-name m-0">
+                                ដោយ៖ Stephen R. Covey
+                              </p>
+                              <div class="star-rate d-flex">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star-half-stroke"></i>
+                              </div>
+                              <span class="book-price">$22.94</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-lg-2 col-4">
+                          <a href="book_show.html" class="text-decoration-none">
+                            <div class="book-cover">
+                              <img src="assets/img/book/Thinking_Fast_and_Slow.jpg" alt="" />
+                              <h5 class="book-title pt-2 m-0">
+                                Thinking, Fast and Slow
+                              </h5>
+                              <p class="artist-name m-0">
+                                ដោយ៖ Daniel Kahneman
+                              </p>
+                              <div class="star-rate d-flex">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star-half-stroke"></i>
+                              </div>
+                              <span class="book-price">$15.84</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-lg-2 col-4">
+                          <a href="book_show.html" class="text-decoration-none">
+                            <div class="book-cover">
+                              <img src="assets/img/book/Thinking_in_Bets.jpg" alt="" />
+                              <h5 class="book-title pt-2 m-0">
+                                Thinking in Bets
+                              </h5>
+                              <p class="artist-name m-0">ដោយ៖ Annie Duke</p>
+                              <div class="star-rate d-flex">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star-half-stroke"></i>
+                              </div>
+                              <span class="book-price">$15.99</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-lg-2 col-4">
+                          <a href="book_show.html" class="text-decoration-none">
+                            <div class="book-cover">
+                              <img src="assets/img/book/The_Undoing_Project.jpg" alt="" />
+                              <h5 class="book-title pt-2 m-0">
+                                The Undoing Project
+                              </h5>
+                              <p class="artist-name m-0">ដោយ៖ Michael Lewis</p>
+                              <div class="star-rate d-flex">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star-half-stroke"></i>
+                              </div>
+                              <span class="book-price">$13.70</span>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section class="popular-article p-2 m-2 me-0 ms-0">
+                  <div class="col-12">
+                    <div class="d-flex justify-content-between align-content-center mb-2">
+                      <h3 class="pop-article-title">អត្ថបទពេញនិយម</h3>
+                      <a href="book_store.html"
+                        class="text-decoration-none align-self-center article-see-more">មើលបន្ថែម</a>
+                    </div>
+                  </div>
+                  <div class="row g-3">
+                    <div class="col-md-6 col-12">
+                      <div class="card card-article d-flex flex-row">
+                        <div class="row">
+                          <div class="col-lg-4 col-12 image-article">
+                            <img src="assets/img/article/social_media_make_use_lonely.jpg" alt="" />
+                          </div>
+                          <div class="col-lg-8 ps-lg-0 col-12 mt-lg-0 mt-2 article-info d-flex flex-column">
+                            <h4 class="article-title">
+                              សង្គមបណ្ដាញកំពុងធ្វើឲ្យយើងឯការឬទេ?
+                            </h4>
+                            <p class="article-discript">
+                              ពេលដែល Richard Deming ដែលជាកវី និងអ្នកវិភាគដែលទទួលបានរង្វាន់
+                              និងនាយកនៃការសរសេរ​ភាពច្នៃប្រឌិតនៅសាកលវិទ្យាល័យ Yale
+                              បានអង្គុយសរសេរព្រំប្រទាលសៀវភៅអំពីភាពឯងគាត់ដឹងថាប្រភេទរឿងរបស់គាត់ដែលមានជាច្រើនផ្សេងទៀតនឹងនាំមុខក្នុងការស្វែងរកបទពិសោធន៍មនុស្សដ៏ស្មុគស្មាញនិងទូទៅនេះ។
+                            </p>
+                            <div class="d-flex flex-row justify-content-between align-items-center">
+                              <div class="art-artist-pf d-flex flex-row align-items-center">
+                                <img src="assets/img/article/girl-profile.jpg" alt="" />
+                                <div>
+                                  <p class="art-artist-name p-0 m-0 d-flex">
+                                    ដោយ៖
+                                    <a href="#" class="text-decoration-none">Jullia Luna</a>
+                                  </p>
+                                  <p class="article-date p-0 m-0">
+                                    ២៤ តុលា ២០២៤
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="d-flex">
+                                <a type="button"
+                                  class="btn-share text-decoration-none all-center me-2">
+                                  <i class="fa-solid fa-share-alt"></i>
+                                </a>
+                                <a href="article_show.html" type="button" class="btn-next text-decoration-none all-center">
+                                  <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                      <div class="card card-article d-flex flex-row">
+                        <div class="row">
+                          <div class="col-lg-4 col-12 image-article">
+                            <img src="assets/img/article/laughing-person-image.jpg" alt="" />
+                          </div>
+                          <div class="col-lg-8 ps-lg-0 col-12 mt-lg-0 mt-2 article-info d-flex flex-column">
+                            <h4 class="article-title">
+                              ហេតុអ្វីបានជាការសើចគឺជាឱសថដ៏ល្អបែបនេះ
+                            </h4>
+                            <p class="article-discript">
+                              ការពិនិត្យឡើងវិញជាប្រព័ន្ធនាពេលថ្មីៗនេះ
+                              ពិនិត្យមើលយ៉ាងប្រុងប្រយ័ត្នបន្ថែមទៀតលើយន្តការនៃការលេង
+                              និងថាតើការសើចអាចរំខានដល់ការឆ្លើយតបភាពតានតឹងរបស់មនុស្សដែរឬទេ។
+                              អត្ថបទដែលបានបោះពុម្ពកាលពីឆ្នាំមុននៅក្នុងទិនានុប្បវត្តិ Plos One
+                              រួមបញ្ចូលគ្នានូវលទ្ធផលពីការសិក្សាប្រាំបីដាច់ដោយឡែកដើម្បីឆ្លើយសំណួរ:
+                              តើការសើចដោយឯកឯងកាត់បន្ថយកម្រិត cortisol ទេ?
+                            </p>
+                            <div class="d-flex flex-row justify-content-between align-items-center">
+                              <div class="art-artist-pf d-flex flex-row align-items-center">
+                                <img src="assets/img/profile_image/pf_woman_2.jpg" alt="" />
+                                <div>
+                                  <p class="art-artist-name p-0 m-0 d-flex">
+                                    ដោយ៖
+                                    <a href="#" class="text-decoration-none ps-2">Lara Quinn</a>
+                                  </p>
+                                  <p class="article-date p-0 m-0">
+                                    ២៤ តុលា ២០២៤
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="d-flex">
+                                <a type="button"
+                                  class="btn-share text-decoration-none all-center me-2">
+                                  <i class="fa-solid fa-share-alt"></i>
+                                </a>
+                                <a href="article_show.html" type="button" class="btn-next text-decoration-none all-center">
+                                  <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                      <div class="card card-article d-flex flex-row">
+                        <div class="row">
+                          <div class="col-lg-4 col-12 image-article">
+                            <img src="assets/img/article/loneline_and_depression.jpg" alt="" />
+                          </div>
+                          <div class="col-lg-8 ps-lg-0 col-12 mt-lg-0 mt-2 article-info d-flex flex-column">
+                            <h4 class="article-title">
+                              ភាពខុសគ្នារវាង Loneliness និង Depression
+                            </h4>
+                            <p class="article-discript">
+                              មានហេតុផលជាញឹកញាប់ដែលមនុស្សអាចចេញសម្គាល់ដើម្បីពន្យល់អំពីអារម្មណ៍ភាពឯង។
+                              នៅក្នុងពេលណាមួយក្នុងជីវិតរបស់យើង
+                              មនុស្សរៀងរាល់គ្នាដឹងពីការបាត់បង់—ទោះជាបាត់បង់នៃអ្នកស្រឡាញ់ ការងារ សុខភាពរបស់ខ្លួន
+                              ឬកCommunity ដែលអ្នកបានចាកចេញពីវា។
+                            </p>
+                            <div class="d-flex flex-row justify-content-between align-items-center">
+                              <div class="art-artist-pf d-flex flex-row align-items-center">
+                                <img src="assets/img/profile_image/pf_man_2.jpg" alt="" />
+                                <div>
+                                  <p class="art-artist-name p-0 m-0 d-flex">
+                                    ដោយ៖
+                                    <a href="#" class="text-decoration-none ps-2">Jake Reed</a>
+                                  </p>
+                                  <p class="article-date p-0 m-0">
+                                    ២៤ តុលា ២០២៤
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="d-flex">
+                                <a type="button"
+                                  class="btn-share text-decoration-none all-center me-2">
+                                  <i class="fa-solid fa-share-alt"></i>
+                                </a>
+                                <a href="article_show.html" type="button" class="btn-next text-decoration-none all-center">
+                                  <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                      <div class="card card-article d-flex flex-row">
+                        <div class="row">
+                          <div class="col-lg-4 col-12 image-article">
+                            <img src="assets/img/article/better_sleep.jpg" alt="" />
+                          </div>
+                          <div class="col-lg-8 ps-lg-0 col-12 mt-lg-0 mt-2 article-info d-flex flex-column">
+                            <h4 class="article-title">
+                              អត្ថប្រយោជន៍នៃការគេងកាន់តែប្រសើរ
+                            </h4>
+                            <p class="article-discript">
+                              ការ​ជួប​បញ្ហា​ដំណេក​ជាប់​ជា​ប្រចាំ​អាច​ជា​បញ្ហា​ខ្លាំង។
+                              ការគេងមិនគ្រប់គ្រាន់រយៈពេលវែងអាចបន្ថយសុខភាពផ្លូវចិត្ត និងផ្លូវកាយ និងគុណភាពនៃជីវិត។
+                              វាមិនងាយស្រួលទេក្នុងការមានអារម្មណ៍ពេញចិត្ត និងរីករាយនឹងជីវិត
+                              ប្រសិនបើអ្នកមានថាមពលទាបរ៉ាំរ៉ៃ ហើយខួរក្បាលរបស់អ្នកមានអ័ព្ទ។
+                            </p>
+                            <div class="d-flex flex-row justify-content-between align-items-center">
+                              <div class="art-artist-pf d-flex flex-row align-items-center">
+                                <img src="assets/img/profile_image/pf_man_3.jpg" alt="" />
+                                <div>
+                                  <p class="art-artist-name p-0 m-0 d-flex">
+                                    ដោយ៖
+                                    <a href="#" class="text-decoration-none ps-2">Max Turner</a>
+                                  </p>
+                                  <p class="article-date p-0 m-0">
+                                    ២២ តុលា ២០២៤
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="d-flex">
+                                <a type="button"
+                                  class="btn-share text-decoration-none all-center me-2">
+                                  <i class="fa-solid fa-share-alt"></i>
+                                </a>
+                                <a href="article_show.html" type="button" class="btn-next text-decoration-none all-center">
+                                  <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section class="social-event p-2 m-2 me-0 ms-0">
+                  <div class="col-12">
+                    <div class="d-flex justify-content-between align-content-center mb-2">
+                      <h3 class="social-even-title">សកម្មភាពសង្គមថ្មីៗ</h3>
+                      <a href="event.html" class="text-decoration-none align-self-center event-see-more">មើលបន្ថែម</a>
+                    </div>
+                  </div>
+                  <div class="row g-3">
+                    <div class="col-lg-4 col-12">
+                      <div class="card card-event">
+                        <div class="event-image">
+                          <img src="assets/img/events/event-image-01.jpg" alt="" />
+                        </div>
+                        <span class="badge rounded-pill text-bg-danger mt-3 fw-normal"><i
+                            class="fa-solid fa-calendar-days"></i> ផុតកំណត់៖
+                          ០១ កញ្ញា ២០២៤</span>
+                        <h4 class="event-title pt-3 m-0 text-cut">
+                          ឱកាសក្លាយជាអ្នកស្ម័គ្រចិត្តបានត្រឡប់មកវិញហើយសំរាប់កម្មវិធី
+                          Cambodia Robotics Olympiad 2024!
+                        </h4>
+                        <div class="event-discript">
+                          <p>
+                            ដូចដែលអ្នកទាំងអស់គ្នាបានដឹងថាកម្មវិធី Cambodia
+                            Robotics Olympiad 2024
+                            របស់យើងចាប់ផ្តើមទទួលពាក្យចួលរួមប្រលងប្រកួតហើយ
+                            ដូច្នេះពួកយើងត្រូវការជំនួយពីអ្នកស្ម័គ្រចិត្តទាំងអស់គ្នា។
+                            លើសពីនេះ ប្រសិនបើអ្នកជានិស្សិត ឬសិស្ស
+                            ហើយចាប់អារម្មណ៍ជាមួយរ៉ូបូត គឺកាន់តែល្អ។
+                            ចង់ចូលរួមដើម្បីទទួលបានបទពិសោធន៍នេះជាមួយពួកយើងអត់?
+                          </p>
+                        </div>
+                        <div class="d-flex w-100 justify-content-center">
+                          <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_zuB-fX3b1KXqjbNml63ih3MZ1UDCdXE9txlmmPdgAPyQ0Q/viewform"
+                            type="button" target="_blank" class="btn-event">
+                            ចុះឈ្មោះ
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-12">
+                      <div class="card card-event">
+                        <div class="event-image">
+                          <img src="assets/img/events/event-02.jpg" alt="" />
+                        </div>
+                        <span class="badge rounded-pill text-bg-danger mt-3 fw-normal"><i
+                            class="fa-solid fa-calendar-days"></i> ផុតកំណត់៖
+                          ០២ កញ្ញា ២០២៤</span>
+                        <h4 class="event-title pt-3 m-0 text-cut">
+                          ឱកាសសម្រាប់យុវជនចង់ចូលរួមការងារសង្គមដើម្បីទទួលបាននូវបទពិសោធន៍ អភិវឌ្ឍន៍សមត្ថភាព
+                          និងពង្រីកចំណេះក្នុងវិស័យបរិស្ថានបានមកដល់ហើយ!
+                        </h4>
+                        <div class="event-discript">
+                          <p>
+                            ចូលរួមជាមួយយើងសម្រាប់ឱកាសដ៏រំភើបមួយដើម្បីបង្កើតការផ្លាស់ប្តូរ!
+                            ព្រឹត្តិការណ៍នេះត្រូវបានរៀបចំឡើងសម្រាប់យុវជនដែលមានបំណងចង់ចូលទៅក្នុងការងារសង្គម
+                            ការអភិវឌ្ឍន៍សមត្ថភាព និងជំនាញបរិស្ថាន។ អ្នកចូលរួមនឹងចូលរួមក្នុងសិក្ខាសាលាដោយដៃ
+                            រៀនពីអ្នកជំនាញ និងអភិវឌ្ឍជំនាញសំខាន់ៗ ដើម្បីដោះស្រាយបញ្ហាប្រឈមបរិស្ថាន។ តាមរយៈគម្រោងសហការ
+                            និងវគ្គអន្តរកម្ម អ្នកនឹងទទួលបានបទពិសោធន៍ដ៏មានតម្លៃ
+                            ខណៈពេលដែលរួមចំណែកដល់ការផ្លាស់ប្តូរដ៏មានអត្ថន័យនៅក្នុងសហគមន៍របស់អ្នក។
+                            កុំខកខានឱកាសរបស់អ្នកក្នុងការក្លាយជាផ្នែកមួយនៃបទពិសោធន៍ផ្លាស់ប្តូរ
+                            និងជួយបង្កើតអនាគតប្រកបដោយនិរន្តរភាព!
+                          </p>
+                        </div>
+                        <div class="d-flex w-100 justify-content-center">
+                          <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_zuB-fX3b1KXqjbNml63ih3MZ1UDCdXE9txlmmPdgAPyQ0Q/viewform"
+                            type="button" target="_blank" class="btn-event">
+                            ចុះឈ្មោះ
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-12">
+                      <div class="card card-event">
+                        <div class="event-image">
+                          <img src="assets/img/events/event-03.jpg" alt="" />
+                        </div>
+                        <span class="badge rounded-pill text-bg-danger mt-3 fw-normal"><i
+                            class="fa-solid fa-calendar-days"></i> ផុតកំណត់៖
+                          ១៥ កញ្ញា ២០២៤</span>
+                        <h4 class="event-title pt-3 m-0 text-cut">
+                          ដោះសោសក្តានុពលរបស់អ្នក៖ សិក្ខាសាលាអភិវឌ្ឍន៍ខ្លួនឯង
+                        </h4>
+                        <div class="event-discript">
+                          <p>
+                            តើ​អ្នក​ត្រៀម​ខ្លួន​រួច​រាល់​ហើយ​ឬ​នៅ​ក្នុង​ការ​យក​កំណើន​ផ្ទាល់​ខ្លួន​របស់​អ្នក​ទៅ​កម្រិត​បន្ទាប់?
+                            ចូលរួមជាមួយពួកយើងសម្រាប់សិក្ខាសាលាដោះសោសក្តានុពលរបស់អ្នក
+                            ដែលត្រូវបានរចនាឡើងដើម្បីជួយអ្នកក្នុងការកសាងទំនុកចិត្ត បង្កើនជំនាញរបស់អ្នក
+                            និងសម្រេចបាននូវគោលដៅរបស់អ្នក។
+                            វគ្គអន្តរកម្មនេះនឹងគ្របដណ្តប់លើយុទ្ធសាស្រ្តសម្រាប់ការកំណត់គោលដៅប្រកបដោយប្រសិទ្ធភាព
+                            ជំនះឧបសគ្គ និងការគ្រប់គ្រងពេលវេលា។ ចូលរួមជាមួយគ្រូបង្វឹកដែលមានបទពិសោធន៍
+                            និងចូលរួមក្នុងលំហាត់ជាក់ស្តែង ដែលនឹងផ្តល់ឱ្យអ្នកនូវឧបករណ៍ដែលអ្នកត្រូវការដើម្បីទទួលបានជោគជ័យ។
+                          </p>
+                        </div>
+                        <div class="d-flex w-100 justify-content-center">
+                          <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_zuB-fX3b1KXqjbNml63ih3MZ1UDCdXE9txlmmPdgAPyQ0Q/viewform"
+                            type="button" target="_blank" class="btn-event">
+                            ចុះឈ្មោះ
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section class="video-selfdev p-2 m-2 me-0 ms-0">
+                  <div class="col-12">
+                    <div class="d-flex justify-content-between align-content-center mb-2">
+                      <h3 class="video-selfdev-title">
+                        វីឌីអូអភិវឌ្ឍខ្លួនពេញនិយម
+                      </h3>
+                      <a href="event.html" class="text-decoration-none align-self-center selfdev-see-more">មើលបន្ថែម</a>
+                    </div>
+                  </div>
+                  <div class="row g-3">
+                    <a type="button" class="col-lg-3 col-md-6 col-12 text-decoration-none">
+                      <div class="card card-selfdev">
+                        <div class="self-dev-image">
+                          <img src="assets/img/video-sefdev/thumnail-selfdev-video-01.jpg" alt="" />
+                          <span class="badge rounded-pill text-bg-dark opacity-75">5:16 វិនាទី</span>
+                        </div>
+                        <div class="video-discript">
+                          <h5>
+                            វិធីបង្កើនតេស្តូស្តេរ៉ូនតាមធម្មជាតិ - វិធី ៧ យ៉ាង
+                          </h5>
+                          <p class="m-0">
+                            ស្វែងយល់ពីវិធីធម្មជាតិចំនួន 7
+                            ដើម្បីបង្កើនអ័រម៉ូនតេស្តូស្តេរ៉ូន ពីការលើកទម្ងន់
+                            និងការគេងឱ្យបានល្អ ដល់ការផ្លាស់ប្តូររបបអាហារ
+                            និងការកាត់បន្ថយភាពតានតឹង។
+                            បង្កើនសុខភាពអរម៉ូនរបស់អ្នកថ្ងៃនេះ!
+                          </p>
+                        </div>
+                        <div class="video-info d-flex justify-content-between align-items-center">
+                          <div class="pf-video d-flex align-items-center">
+                            <div class="pf-vdo-image rounded-circle">
+                              <img src="assets/img/video-sefdev/improvement_pill_profile.jpg"
+                                class="wh-100 rounded-circle object-fit-cover" alt="" />
+                            </div>
+                            <div class="ps-2">
+                              <p>Improvement Pill</p>
+                              <span>1.3M អ្នកតាមដាន</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <a type="button" class="col-lg-3 col-md-6 col-12 text-decoration-none">
+                      <div class="card card-selfdev">
+                        <div class="self-dev-image">
+                          <img src="assets/img/video-sefdev/start_level_up.jpg" alt="" />
+                          <span class="badge rounded-pill text-bg-dark opacity-75">16:26 វិនាទី</span>
+                        </div>
+                        <div class="video-discript">
+                          <h5>
+                            វិធីកែលម្អខ្លួនអ្នកឥឡូវនេះ (ហើយហេតុអ្វី)
+                          </h5>
+                          <p class="m-0">
+                            វីដេអូនេះសង្កត់ធ្ងន់លើសារៈសំខាន់នៃការធ្វើសកម្មភាពឥឡូវនេះ
+                            ជាជាងការពន្យារពេលលើគោលដៅកែលម្អខ្លួនឯង។
+                            អ្នកមើលត្រូវបានលើកទឹកចិត្តឱ្យចាប់ផ្តើមធ្វើការផ្លាស់ប្តូរភ្លាមៗ
+                            ដើម្បីឃើញលទ្ធផលនៅក្នុងជីវិតរបស់ពួកគេ។
+                          </p>
+                        </div>
+                        <div class="video-info d-flex justify-content-between align-items-center">
+                          <div class="pf-video d-flex align-items-center">
+                            <div class="pf-vdo-image">
+                              <img src="assets/img/video-sefdev/ham_za.jpg"
+                                class="wh-100 rounded-circle object-fit-cover" alt="" />
+                            </div>
+                            <div class="ps-2">
+                              <p>
+                                Hamza Ahmed
+                              </p>
+                              <span>2.31M អ្នកតាមដាន</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <a type="button" class="col-lg-3 col-md-6 col-12 text-decoration-none">
+                      <div class="card card-selfdev">
+                        <div class="self-dev-image">
+                          <img src="assets/img/video-sefdev/dont_wast_other_year.jpg" alt="" />
+                          <span class="badge rounded-pill text-bg-dark opacity-75">5:16 វិនាទី</span>
+                        </div>
+                        <div class="video-discript">
+                          <h5>
+                            Jordan Peterson: ផ្លាស់ប្ដូខ្លួនអ្នកមុនកុំឲ្យយឺតពេល
+                          </h5>
+                          <p class="m-0">
+                            កំណត់គោលដៅជាក់លាក់ជាក់លាក់; បង្កើតផែនការសកម្មភាពលម្អិត; រក្សាការលើកទឹកចិត្ត;
+                            តាមដានវឌ្ឍនភាពរបស់អ្នក; ត្រៀមខ្លួនដើម្បីជំនះឧបសគ្គ; ស្វែងរកមនុស្សគាំទ្រ; រក្សាភាពបត់បែន;
+                            អបអរសាទរព្រឹត្តិការណ៍សំខាន់ៗ; រៀនពីការបរាជ័យ; និងរក្សាផ្នត់គំនិតវិជ្ជមាន។
+                            គន្លឹះទាំងនេះមានគោលបំណងជួយអ្នកឱ្យសម្រេចគោលដៅរបស់អ្នកប្រកបដោយប្រសិទ្ធភាព។
+                          </p>
+                        </div>
+                        <div class="video-info d-flex justify-content-between align-items-center">
+                          <div class="pf-video d-flex align-items-center">
+                            <div class="pf-vdo-image rounded-circle">
+                              <img src="assets/img/video-sefdev/motivate-channel-01.jpg"
+                                class="wh-100 rounded-circle object-fit-cover" alt="" />
+                            </div>
+                            <div class="ps-2">
+                              <p>Motivation2Study</p>
+                              <span>4.43M អ្នកតាមដាន</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <a type="button" class="col-lg-3 col-md-6 col-12 text-decoration-none">
+                      <div class="card card-selfdev">
+                        <div class="self-dev-image">
+                          <img src="assets/img/video-sefdev/build_control_now.jpg" alt="" />
+                          <span class="badge rounded-pill text-bg-dark opacity-75">5:16 វិនាទី</span>
+                        </div>
+                        <div class="video-discript">
+                          <h5>
+                            ការធ្វើជាម្ចាស់នៃការ កំណត់គោលដៅជាមួយនឹងលក្ខណៈវិនិច្ឆ័យឆ្លាតវៃ
+                          </h5>
+                          <p class="m-0">
+                            វីដេអូគាត់ណែនាំអំពីលក្ខណៈវិនិច្ឆ័យ SMART សម្រាប់ការកំណត់គោលដៅប្រកបដោយប្រសិទ្ធភាព
+                            ដែលតំណាងឱ្យជាក់លាក់ វាស់វែងបាន សម្រេចបាន ពាក់ព័ន្ធ និងពេលវេលាកំណត់។
+                            វាសង្កត់ធ្ងន់លើសារៈសំខាន់នៃការកំណត់គោលដៅឱ្យបានច្បាស់លាស់ និងលម្អិត (ជាក់លាក់)
+                            ធានាថាវឌ្ឍនភាពអាចត្រូវបានតាមដាន និងវាស់វែងបានជោគជ័យ (អាចវាស់វែងបាន)។
+                          </p>
+                        </div>
+                        <div class="video-info d-flex justify-content-between align-items-center">
+                          <div class="pf-video d-flex align-items-center">
+                            <div class="pf-vdo-image rounded-circle">
+                              <img src="assets/img/video-sefdev/improvement_pill_profile.jpg"
+                                class="wh-100 rounded-circle object-fit-cover" alt="" />
+                            </div>
+                            <div class="ps-2">
+                              <p>Improvement Pill</p>
+                              <span>1.3M អ្នកតាមដាន</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </section>
               </div>
             </div>
           </div>
+          <!-- ! end of main content -->
         </div>
-      </section>
-
-      <section
-        class="testimonail section-space"
-        data-aos="fade-up"
-        data-aos-duration="2000"
-      >
-        <div class="container-fluid">
-          <h1 class="text-center landing-title-color fw-bold mb-5">
-            រង្វាយតម្លៃពីអ្នកសមាជិក កំណត់ របស់យើង
-          </h1>
-
-          <div
-            class="swiper mySwiper mt-5"
-            data-aos="fade-up"
-            data-aos-duration="3000"
-          >
-            <div class="swiper-wrapper">
-              <div class="swiper-slide user-select-none">
-                <div
-                  class="card border-0 align-items-center d-flex flex-row p-3"
-                  style="width: 600px"
-                >
-                  <div class="card-image">
-                    <img
-                      src="assets/img/Landing-page/feedback-P1.jpg"
-                      alt="feedback profile"
-                    />
-                  </div>
-
-                  <div class="card-body ps-5">
-                    <h3 class="card-title text-start text-white">
-                      Jessica Hang
-                    </h3>
-                    <div class="text-warning pb-3 text-start">
-                      <span><i class="fa-solid fa-star"></i></span>
-                      <span><i class="fa-solid fa-star"></i></span>
-                      <span><i class="fa-solid fa-star"></i></span>
-                      <span><i class="fa-solid fa-star"></i></span>
-                      <span><i class="fa-solid fa-star"></i></span>
-                    </div>
-                    <p class="card-text text-start text-white">
-                      កំណត់ បានជួយខ្ញុំក្នុងការផ្លាស់ប្ដូរខ្លួនឯងច្រើនណាស់!
-                      <br />
-                      វាជួយខ្ញុំក្នុងការតាមដានទម្លាប់ប្រចាំថ្ងៃ
-                      គ្រប់គ្រងហិរញ្ញវត្ថុ និងរក្សាភាពសកម្ម។ សៀវភៅណែនាំ
-                      និងការណែនាំរបស់ YouTube គឺអស្ចារ្យណាស់។
-                      ខ្ញុំមិននឹកស្មានថាគ្រាន់តែមាន កំណត់
-                      អាចធ្វើឱ្យខ្លួនឯងរីកចម្រើនបែបនេះសោះ <br />
-                      ខ្ញុំសូមណែនាំយ៉ាងខ្លាំងសម្រាប់អ្នកដែលធ្លាប់តែធុញទ្រាន់នឹងសកម្មភាពប្រចាំថ្ងៃរបស់ខ្លួនឯងដូចជាខ្ញុំពីមុន!
-                      ចាប់តាំងតែពីប្រើប្រាស់កំណត់ ខ្ញុំរៀបចំការងារបានយ៉ាងរៀបរយ
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide user-select-none">
-                <div
-                  class="card border-0 align-items-center d-flex flex-row p-3"
-                  style="width: 600px"
-                >
-                  <div class="card-image">
-                    <img
-                      src="assets/img/Landing-page/feedback-P2.jpg"
-                      alt="feedback profile"
-                    />
-                  </div>
-
-                  <div class="card-body ps-5">
-                    <h3 class="card-title text-start text-white">Bunleap</h3>
-                    <div class="text-warning pb-3 text-start">
-                      <span><i class="fa-solid fa-star"></i></span>
-                      <span><i class="fa-solid fa-star"></i></span>
-                      <span><i class="fa-solid fa-star"></i></span>
-                      <span><i class="fa-solid fa-star"></i></span>
-                      <span><i class="fa-solid fa-star"></i></span>
-                    </div>
-                    <p class="card-text text-start text-white">
-                      មុខងារតាមដានទម្លាប់របស់ កំណត់
-                      គឺជាការផ្លាស់ប្តូរហ្គេមសម្រាប់ខ្ញុំ!
-                      វាធ្វើឱ្យខ្ញុំទទួលខុសត្រូវ និងលើកទឹកចិត្តជារៀងរាល់ថ្ងៃ។
-                      អ្នកទាំងអស់គ្នាគួរតែសាកល្បងប្រើប្រាស់វេបសាយមួយនេះ
-                      ខ្ញុំធានាថា
-                      អ្នកទាំងអស់គ្នានឹងភ្ញាក់ផ្អើលនឹងការផ្លាស់ប្ដូរទម្លាប់របស់ខ្លួនឯង!
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide user-select-none">
-                <div
-                  class="card border-0 align-items-center d-flex flex-row p-3"
-                  style="width: 600px"
-                >
-                  <div class="card-image">
-                    <img
-                      src="assets/img/Landing-page/feedback-P3.jpg"
-                      alt="feedback profile"
-                    />
-                  </div>
-
-                  <div class="card-body ps-5">
-                    <h3 class="card-title text-start text-white">Oda</h3>
-                    <div class="text-warning pb-3 text-start">
-                      <span><i class="fa-solid fa-star"></i></span>
-                      <span><i class="fa-solid fa-star"></i></span>
-                      <span><i class="fa-solid fa-star"></i></span>
-                      <span><i class="fa-solid fa-star"></i></span>
-                      <span><i class="fa-solid fa-star"></i></span>
-                    </div>
-                    <p class="card-text text-start text-white">
-                      ផ្នែកតាមដានការចំណាយប្រាក់របស់ កំណត់ គឺអស្ចារ្យណាស់!
-                      វាបានជួយខ្ញុំឱ្យយល់ច្បាស់អំពីហិរញ្ញវត្ថុរបស់ខ្ញុំ
-                      និងគ្រប់គ្រងថវិការបស់ខ្ញុំឱ្យមានប្រសិទ្ធភាព។
-                      តាមរយៈតាមដានការចំណាយរបស់ខ្ញុំ ខ្ញុំអាចសន្សំបានកាន់តែច្រើន
-                      និងធ្វើការសម្រេចចិត្តផ្នែកហិរញ្ញវត្ថុកាន់តែឆ្លាតវៃ។
-                      ខ្ញុំសូមណែនាំវេបសាយមួយនេះ​ដល់​អ្នក​ណា​ដែល​ចង់​គ្រប់​គ្រង​ការ​ចំណាយ​របស់​ពួក​គេ!
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide user-select-none">
-                <div
-                  class="card border-0 align-items-center d-flex flex-row p-3"
-                  style="width: 600px"
-                >
-                  <div class="card-image">
-                    <img
-                      src="assets/img/Landing-page/feedback-P4.jpg"
-                      alt="feedback profile"
-                    />
-                  </div>
-
-                  <div class="card-body ps-5">
-                    <h3 class="card-title text-start text-white">Polip</h3>
-                    <div class="text-warning pb-3 text-start">
-                      <span><i class="fa-solid fa-star"></i></span>
-                      <span><i class="fa-solid fa-star"></i></span>
-                      <span><i class="fa-solid fa-star"></i></span>
-                      <span><i class="fa-solid fa-star"></i></span>
-                      <span><i class="fa-solid fa-star"></i></span>
-                    </div>
-                    <p class="card-text text-start text-white">
-                      កំណត់ត្រាប្រចាំថ្ងៃរបស់ កំណត់ គឺអស្ចារ្យណាស់!
-                      វាជួយខ្ញុំឱ្យឆ្លុះបញ្ចាំងពីគំនិតរបស់ខ្ញុំ
-                      និងការរៀបចំជារៀងរាល់ថ្ងៃ។
-                      ការសរសេរបទពិសោធន៍របស់ខ្ញុំនៅលើ​កំណត់ត្រារបស់ កំណត់
-                      គឺពិតជាងាយស្រួលនិងគួរចង់ឱ្យសរសេរជារៀងរាល់ថ្ងៃណាស់។
-                      ខ្ញុំចង់ឃើញមុខងារនេះមាននៅក្នុងកម្មវិធីទូរស័ព្ទសម្រាប់ភាពងាយស្រួល
-                      និងភាពងាយស្រួលជាងមុន។
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide user-select-none">
-                <div
-                  class="card border-0 align-items-center d-flex flex-row p-3"
-                  style="width: 600px"
-                >
-                  <div class="card-image">
-                    <img
-                      src="assets/img/Landing-page/feedback-P5.jpg"
-                      alt="feedback profile"
-                    />
-                  </div>
-
-                  <div class="card-body ps-5">
-                    <h3 class="card-title text-start text-white">Rik</h3>
-                    <div class="text-warning pb-3 text-start">
-                      <span><i class="fa-solid fa-star"></i></span>
-                      <span><i class="fa-solid fa-star"></i></span>
-                      <span><i class="fa-solid fa-star"></i></span>
-                      <span><i class="fa-solid fa-star"></i></span>
-                      <span><i class="fa-solid fa-star"></i></span>
-                    </div>
-                    <p class="card-text text-start text-white">
-                      កំណត់ បានជួយខ្ញុំក្នុងការផ្លាស់ប្ដូរខ្លួនឯងច្រើនណាស់!
-                      <br />
-                      វាជួយខ្ញុំក្នុងការតាមដានទម្លាប់ប្រចាំថ្ងៃ
-                      គ្រប់គ្រងហិរញ្ញវត្ថុ និងរក្សាភាពសកម្ម។ សៀវភៅណែនាំ
-                      និងការណែនាំរបស់ YouTube គឺអស្ចារ្យណាស់។
-                      ខ្ញុំមិននឹកស្មានថាគ្រាន់តែមាន កំណត់
-                      អាចធ្វើឱ្យខ្លួនឯងរីកចម្រើនបែបនេះសោះ <br />
-                      ខ្ញុំសូមណែនាំយ៉ាងខ្លាំងសម្រាប់អ្នកដែលធ្លាប់តែធុញទ្រាន់នឹងសកម្មភាពប្រចាំថ្ងៃរបស់ខ្លួនឯងដូចជាខ្ញុំពីមុន!
-                      ចាប់តាំងតែពីប្រើប្រាស់កំណត់ ខ្ញុំរៀបចំការងារបានយ៉ាងរៀបរយ
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide user-select-none">
-                <div
-                  class="card border-0 align-items-center d-flex flex-row p-3"
-                  style="width: 600px"
-                >
-                  <div class="card-image">
-                    <img
-                      src="assets/img/Landing-page/feedback-P6.jpg"
-                      alt="feedback profile"
-                    />
-                  </div>
-
-                  <div class="card-body ps-5">
-                    <h3 class="card-title text-start text-white">Tsuki</h3>
-                    <div class="text-warning pb-3 text-start">
-                      <span><i class="fa-solid fa-star"></i></span>
-                      <span><i class="fa-solid fa-star"></i></span>
-                      <span><i class="fa-solid fa-star"></i></span>
-                      <span><i class="fa-solid fa-star"></i></span>
-                      <span><i class="fa-solid fa-star"></i></span>
-                    </div>
-                    <p class="card-text text-start text-white">
-                      កំណត់ បានជួយខ្ញុំក្នុងការផ្លាស់ប្ដូរខ្លួនឯងច្រើនណាស់!
-                      <br />
-                      វាជួយខ្ញុំក្នុងការតាមដានទម្លាប់ប្រចាំថ្ងៃ
-                      គ្រប់គ្រងហិរញ្ញវត្ថុ និងរក្សាភាពសកម្ម។ សៀវភៅណែនាំ
-                      និងការណែនាំរបស់ YouTube គឺអស្ចារ្យណាស់។
-                      ខ្ញុំមិននឹកស្មានថាគ្រាន់តែមាន កំណត់
-                      អាចធ្វើឱ្យខ្លួនឯងរីកចម្រើនបែបនេះសោះ <br />
-                      ខ្ញុំសូមណែនាំយ៉ាងខ្លាំងសម្រាប់អ្នកដែលធ្លាប់តែធុញទ្រាន់នឹងសកម្មភាពប្រចាំថ្ងៃរបស់ខ្លួនឯងដូចជាខ្ញុំពីមុន!
-                      ចាប់តាំងតែពីប្រើប្រាស់កំណត់ ខ្ញុំរៀបចំការងារបានយ៉ាងរៀបរយ
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
-        </div>
-      </section>
-
-      <section class="faq section-space">
-        <div class="container">
-          <h1 class="landing-title-color text-center fw-bold mb-5">
-            សំណួរដែល កំណត់ ទទួលបានជាញឹកញាប់ !
-          </h1>
-          <div class="row">
-            <div class="col-sm-12 col-lg-8">
-              <div class="card border-0 pt-5">
-                <div class="accordion pt-md-1 pt-lg-3" id="accordionExample">
-                  <div class="accordion-item border-0">
-                    <h2 class="accordion-header">
-                      <button
-                        class="accordion-button"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseOne"
-                        aria-expanded="true"
-                        aria-controls="collapseOne"
-                      >
-                        <p>
-                          តើ កំណត់ គឺជាអ្វី
-                          ហើយតើវាអាចជួយខ្ញុំឱ្យប្រសើរឡើងដោយរបៀបណា?
-                        </p>
-                      </button>
-                    </h2>
-                    <div
-                      id="collapseOne"
-                      class="accordion-collapse collapse show"
-                      data-bs-parent="#accordionExample"
-                    >
-                      <div class="accordion-body ps-5">
-                        <p>
-                          កំណត់
-                          គឺជាវេបសាយមួយដែលត្រូវបានរចនាឡើងដើម្បីជួយអ្នកក្នុងការគ្រប់គ្រងទិដ្ឋភាពផ្សេងៗនៃជីវិតរបស់អ្នក
-                          ចាប់ពីការតាមដានទម្លាប់ប្រចាំថ្ងៃ និងអារម្មណ៍
-                          រហូតដល់ការគ្រប់គ្រងហិរញ្ញវត្ថុ។ ប្លុក
-                          និងផែនការប្លុករបស់យើងផ្តល់នូវការយល់ដឹង
-                          និងការណែនាំដ៏មានតម្លៃលើលំហាត់ប្រចាំថ្ងៃ ការណែនាំសៀវភៅ
-                          និងខ្លឹមសារ YouTube ដែលមានប្រយោជន៍។
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item border-0">
-                    <h2 class="accordion-header">
-                      <button
-                        class="accordion-button"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseTwo"
-                        aria-expanded="true"
-                        aria-controls="collapseTwo"
-                      >
-                        <p>
-                          តើ កំណត់ ជួយខ្ញុំតាមដានអារម្មណ៍
-                          និងសុខភាពផ្លូវចិត្តរបស់ខ្ញុំបានទេ?
-                        </p>
-                      </button>
-                    </h2>
-                    <div
-                      id="collapseTwo"
-                      class="accordion-collapse collapse"
-                      data-bs-parent="#accordionExample"
-                    >
-                      <div class="accordion-body ps-5">
-                        <p>
-                          ប្រាកដណាស់! កំណត់ ផ្តល់ feature សម្រាប់តាមដានអារម្មណ៍
-                          និងសុខភាពផ្លូវចិត្តរបស់អ្នក។
-                          វេបសាយរបស់យើងផ្តល់ជូននូវយុទ្ធសាស្ត្រសម្រាប់សុខុមាលភាពផ្លូវចិត្ត
-                          និងការកែលម្អសុខភាពផ្លូវចិត្ត
-                          រួមជាមួយនឹងការណែនាំសម្រាប់សៀវភៅ និងវីដេអូដែលពាក់ព័ន្ធ។
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item border-0">
-                    <h2 class="accordion-header">
-                      <button
-                        class="accordion-button"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseThree"
-                        aria-expanded="true"
-                        aria-controls="collapseThree"
-                      >
-                        <p>តើគម្រោងលំហាត់ប្រាណប្រភេទណាខ្លះដែលមាននៅលើ កំណត់?</p>
-                      </button>
-                    </h2>
-                    <div
-                      id="collapseThree"
-                      class="accordion-collapse collapse"
-                      data-bs-parent="#accordionExample"
-                    >
-                      <div class="accordion-body ps-5">
-                        <p>
-                          យើងផ្តល់ជូននូវផែនការលំហាត់ប្រាណជាច្រើនប្រភេទដែលស្របតាមកម្រិត
-                          និងគោលដៅនៃកាយសម្បទាខុសៗគ្នា។
-                          ចាប់ពីទម្លាប់ចាប់ផ្តើមដំបូង
-                          រហូតដល់ការហាត់ប្រាណកម្រិតខ្ពស់
-                          អ្នកអាចស្វែងរកការណែនាំលម្អិតនៅក្នុងផ្នែកលំហាត់ប្រាណ
-                          របស់យើង។
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item border-0">
-                    <h2 class="accordion-header">
-                      <button
-                        class="accordion-button"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseFour"
-                        aria-expanded="true"
-                        aria-controls="collapseTwo"
-                      >
-                        <p>តើមានកម្មវិធីទូរស័ព្ទសម្រាប់ កំណត់ ដែរទេ?</p>
-                      </button>
-                    </h2>
-                    <div
-                      id="collapseFour"
-                      class="accordion-collapse collapse"
-                      data-bs-parent="#accordionExample"
-                    >
-                      <div class="accordion-body ps-5">
-                        <p>
-                          បច្ចុប្បន្ន កំណត់ មិនទាន់មាននៅលើ Mobile app នៅឡើយទេ
-                          ទោះយ៉ាងណាក៏ដោយ យើងកំពុងធ្វើការលើកម្មវិធីទូរស័ព្ទ
-                          ដើម្បីបង្កើនបទពិសោធន៍របស់អ្នក។
-                          រង់ចាំព័ត៌មានថ្មីៗនៅក្នុងផ្នែកប្លុករបស់យើង។
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item border-0">
-                    <h2 class="accordion-header">
-                      <button
-                        class="accordion-button"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseFive"
-                        aria-expanded="true"
-                        aria-controls="collapseThree"
-                      >
-                        <p>
-                          តើខ្ញុំអាចទទួលបានដំបូន្មានផ្ទាល់ខ្លួនពី កំណត់
-                          យ៉ាងដូចម្តេច?
-                        </p>
-                      </button>
-                    </h2>
-                    <div
-                      id="collapseFive"
-                      class="accordion-collapse collapse"
-                      data-bs-parent="#accordionExample"
-                    >
-                      <div class="accordion-body ps-5">
-                        <p>
-                          សម្រាប់ដំបូន្មានផ្ទាល់ខ្លួន
-                          អ្នកអាចទាក់ទងក្រុមការងាររបស់យើង
-                          ឬចូលរួមក្នុងវេបសាយសហគមន៍របស់យើង ដែលអ្នកជំនាញ
-                          និងអ្នកប្រើប្រាស់ចែករំលែកបទពិសោធន៍ និងគន្លឹះរបស់ពួកគេ។
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-4">
-              <img
-                src="assets/img/Landing-page/landing-faq.png"
-                width="90%"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      </div>
     </main>
 
     <!-- ! begin of footer -->
-    <footer class="footer mt-0" style="background-color: #fff">
+    <footer class="footer">
       <div class="line-footer"></div>
       <div class="container py-3">
         <div class="row px-4 px-lg-0">
           <div class="col-lg-3 col-12">
-            <div
-              class="footer-logo w-100 d-lg-block d-flex justify-content-center"
-            >
-              <a href="index.html" class="text-decoration-none"
-                ><img src="assets/img/navbar/Kn-logo.png" alt="Kn-logo"
-              /></a>
+            <div class="footer-logo w-100 d-lg-block d-flex justify-content-center">
+              <a href="index.html" class="text-decoration-none"><img src="assets/img/navbar/Kn-logo.png"
+                  alt="Kn-logo" /></a>
             </div>
             <div class="comp-discript">
               <p>
@@ -804,29 +1531,19 @@
             </div>
             <ul class="comp-social-media d-flex pb-3 pb-lg-0">
               <li class="comp-item">
-                <a href="#" class="social-media-icon"
-                  ><i class="fab fa-facebook-f"></i
-                ></a>
+                <a href="#" class="social-media-icon"><i class="fab fa-facebook-f"></i></a>
               </li>
               <li class="comp-item">
-                <a href="#" class="social-media-icon"
-                  ><i class="fab fa-twitter"></i
-                ></a>
+                <a href="#" class="social-media-icon"><i class="fab fa-twitter"></i></a>
               </li>
               <li class="comp-item">
-                <a href="#" class="social-media-icon"
-                  ><i class="fab fa-instagram"></i
-                ></a>
+                <a href="#" class="social-media-icon"><i class="fab fa-instagram"></i></a>
               </li>
               <li class="comp-item">
-                <a href="#" class="social-media-icon"
-                  ><i class="fab fa-youtube"></i
-                ></a>
+                <a href="#" class="social-media-icon"><i class="fab fa-youtube"></i></a>
               </li>
               <li class="comp-item">
-                <a href="#" class="social-media-icon"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
+                <a href="#" class="social-media-icon"><i class="fab fa-linkedin-in"></i></a>
               </li>
             </ul>
           </div>
@@ -836,27 +1553,19 @@
               <div class="col-6 p-0">
                 <ul class="footer-list">
                   <li class="footer-item">
-                    <a class="footer-link" href="journaling.html"
-                      >កំណត់ត្រាប្រចាំថ្ងៃ</a
-                    >
+                    <a class="footer-link" href="journaling.html">កំណត់ត្រាប្រចាំថ្ងៃ</a>
                   </li>
                   <li class="footer-item">
-                    <a class="footer-link" href="money_spending.html"
-                      >តាមដានការចំណាយ</a
-                    >
+                    <a class="footer-link" href="money_spending.html">តាមដានការចំណាយ</a>
                   </li>
                   <li class="footer-item">
-                    <a class="footer-link" href="mood_tracking.html"
-                      >តាមដានផ្លូវចិត្ត</a
-                    >
+                    <a class="footer-link" href="mood_tracking.html">តាមដានផ្លូវចិត្ត</a>
                   </li>
                   <li class="footer-item">
                     <a class="footer-link" href="exercise.html">លំហាត់ប្រាណ</a>
                   </li>
                   <li class="footer-item">
-                    <a class="footer-link" href="therapist.html"
-                      >អ្នកជំនាញផ្លូវចិត្ត</a
-                    >
+                    <a class="footer-link" href="therapist.html">អ្នកជំនាញផ្លូវចិត្ត</a>
                   </li>
                   <li class="footer-item">
                     <a class="footer-link" href="mediation.html">សមាធិ</a>
@@ -878,9 +1587,7 @@
                     <a class="footer-link" href="article.html">អត្ថបទ</a>
                   </li>
                   <li class="footer-item">
-                    <a class="footer-link" href="video_recommendation.html"
-                      >វីឌីអូអភិវឌ្ឍខ្លួន</a
-                    >
+                    <a class="footer-link" href="video_recommendation.html">វីឌីអូអភិវឌ្ឍខ្លួន</a>
                   </li>
                   <li class="footer-item">
                     <a class="footer-link" href="about_us.html">អំពីយើង</a>
@@ -927,14 +1634,8 @@
             <div class="col-12">
               <div class="mb-3">
                 <div class="input-group mb-3">
-                  <input
-                    type="text"
-                    class="footer-input"
-                    placeholder="user@gmail.com"
-                    aria-label="user@gmail.com"
-                    aria-describedby="button-addon2"
-                    style="background-color: #ddd !important"
-                  />
+                  <input type="text" class="footer-input" placeholder="user@gmail.com" aria-label="user@gmail.com"
+                    aria-describedby="button-addon2" />
                   <button class="btn-footer" type="button" id="button-addon2">
                     <i class="fa-solid fa-paper-plane"></i>
                   </button>
@@ -966,11 +1667,14 @@
     <script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/plugins/aos/js/aos.js"></script>
     <script src="assets/js/dark-mode.js"></script>
+    <script src="assets/js/app.js"></script>
     <script src="assets/plugins/swiper js/js/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
     <script>
-      var swiper = new Swiper(".swiper", {
-        slidesPerView: 1,
-        spaceBetween: 10,
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        loop: true,
+        centeredSlides: true,
         autoplay: {
           delay: 2500,
           disableOnInteraction: false,
@@ -979,24 +1683,12 @@
           el: ".swiper-pagination",
           clickable: true,
         },
-        breakpoints: {
-          640: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          768: {
-            slidesPerView: 4,
-            spaceBetween: 40,
-          },
-          1024: {
-            slidesPerView: 2,
-            spaceBetween: 50,
-          },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
       });
     </script>
-    <script>
-      AOS.init();
-    </script>
   </body>
+
 </html>
