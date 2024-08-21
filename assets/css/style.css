@@ -331,7 +331,16 @@ nav {
 }
 
 .profile .pf-drowpdown .pf-list .pf-item:hover .pf-link,
-.profile .pf-drowpdown .pf-list .pf-item:hover .leave-icon .fa-right-from-bracket {
+.profile
+  .pf-drowpdown
+  .pf-list
+  .pf-item:hover
+  .leave-icon
+  .fa-right-from-bracket {
+  color: #fff;
+}
+
+.profile .pf-drowpdown .pf-list .pf-item:hover .pf-link p {
   color: #fff;
 }
 
@@ -670,11 +679,24 @@ nav {
   padding: 0;
 }
 
-.side-menu .menu .menu-item .nav-menu .menu-content .content-list .content-item {
+.side-menu
+  .menu
+  .menu-item
+  .nav-menu
+  .menu-content
+  .content-list
+  .content-item {
   border-top: 1px solid var(--ddd-color);
 }
 
-.side-menu .menu .menu-item .nav-menu .menu-content .content-list .content-item .content-link {
+.side-menu
+  .menu
+  .menu-item
+  .nav-menu
+  .menu-content
+  .content-list
+  .content-item
+  .content-link {
   display: block;
   padding: 10px;
   text-decoration: none;
@@ -682,7 +704,14 @@ nav {
   font-size: 18px;
 }
 
-.side-menu .menu .menu-item .nav-menu .menu-content .content-list .content-item .content-link:hover {
+.side-menu
+  .menu
+  .menu-item
+  .nav-menu
+  .menu-content
+  .content-list
+  .content-item
+  .content-link:hover {
   background-color: var(--link-text);
   color: #fff;
 }
@@ -958,7 +987,7 @@ nav {
   line-height: 50px;
 }
 
-.landing-herobanner .landing-title>.btn-login {
+.landing-herobanner .landing-title > .btn-login {
   background-color: #47b8cf;
   border-radius: 30px;
   border: 1px solid black;
@@ -966,7 +995,7 @@ nav {
   transition: ease-in-out 0.3s;
 }
 
-.landing-herobanner .landing-title>.btn-login .nav-link {
+.landing-herobanner .landing-title > .btn-login .nav-link {
   background-color: #d4e0ff;
   border-radius: 30px;
   border: 1px solid black;
@@ -974,14 +1003,14 @@ nav {
   transition: ease-in-out 0.8s;
 }
 
-.landing-herobanner .landing-title>.btn-login:hover {
+.landing-herobanner .landing-title > .btn-login:hover {
   background-color: transparent;
   padding: 0px;
   border: none;
   margin-top: 10px;
 }
 
-.landing-herobanner .landing-title>.btn-login:hover .nav-link {
+.landing-herobanner .landing-title > .btn-login:hover .nav-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1149,7 +1178,14 @@ nav {
   -webkit-text-fill-color: transparent;
 }
 
-.testimonail .swiper .swiper-wrapper .swiper-slide .card .card-body .card-text .no-color {
+.testimonail
+  .swiper
+  .swiper-wrapper
+  .swiper-slide
+  .card
+  .card-body
+  .card-text
+  .no-color {
   background: transparent !important;
   -webkit-text-fill-color: white;
 }
@@ -1383,7 +1419,11 @@ nav {
   background-color: #ddd;
 }
 
-.journal-book .calender .calender-view .btn-calendar:hover .landing-title-color {
+.journal-book
+  .calender
+  .calender-view
+  .btn-calendar:hover
+  .landing-title-color {
   color: white !important;
 }
 
@@ -1726,7 +1766,11 @@ nav {
   transition: background 0.2s ease-in-out;
 }
 
-.photo-book .modal .modal-body .form #fileimage-input::file-selector-button:hover {
+.photo-book
+  .modal
+  .modal-body
+  .form
+  #fileimage-input::file-selector-button:hover {
   background: #0d45a5;
 }
 
@@ -1866,7 +1910,13 @@ nav {
   border-radius: 20px;
 }
 
-.us-categories .aboutus-nav .scrollspy-aboutus .about-komnot .vision-info .limit-line p {
+.us-categories
+  .aboutus-nav
+  .scrollspy-aboutus
+  .about-komnot
+  .vision-info
+  .limit-line
+  p {
   color: var(--main-text);
 }
 
@@ -2030,7 +2080,14 @@ nav {
   transform: rotate(90deg);
 }
 
-.overview .organize-work .collapsed .card .overview .organize-work .collapsed .card {
+.overview
+  .organize-work
+  .collapsed
+  .card
+  .overview
+  .organize-work
+  .collapsed
+  .card {
   background-color: transparent !important;
 }
 
@@ -2124,7 +2181,7 @@ nav {
 .card-report .saving-up {
   padding: 1px 10px;
   border-radius: 20px;
-  background-color: #DBFFE6;
+  background-color: #dbffe6;
   border: 1px solid black;
   box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
@@ -2308,7 +2365,12 @@ nav {
   padding: 100px 0 !important;
 }
 
-.therapist-questions .carousel-inner .carousel-item .question-form .form-check .form-check-input {
+.therapist-questions
+  .carousel-inner
+  .carousel-item
+  .question-form
+  .form-check
+  .form-check-input {
   width: 30px;
   height: 30px;
   border-radius: 10px;
@@ -2528,10 +2590,10 @@ nav {
   color: #fff;
 }
 
-#showDropHabit:checked~.drop-menu,
-#showDropMentalhealth:checked~.drop-menu,
-#showDropEdu:checked~.drop-menu,
-#showDropMoreInfo:checked~.drop-menu {
+#showDropHabit:checked ~ .drop-menu,
+#showDropMentalhealth:checked ~ .drop-menu,
+#showDropEdu:checked ~ .drop-menu,
+#showDropMoreInfo:checked ~ .drop-menu {
   max-height: 100%;
   display: block;
 }
@@ -2584,7 +2646,12 @@ nav {
     font-size: 18px !important;
   }
 
-  .therapist-questions .carousel-inner .carousel-item .question-form .form-check .form-check-input {
+  .therapist-questions
+    .carousel-inner
+    .carousel-item
+    .question-form
+    .form-check
+    .form-check-input {
     width: 20px !important;
     height: 20px !important;
   }
@@ -2961,7 +3028,14 @@ nav {
   -webkit-text-fill-color: transparent;
 }
 
-.testimonail .swiper .swiper-wrapper .swiper-slide .card .card-body .card-text .no-color {
+.testimonail
+  .swiper
+  .swiper-wrapper
+  .swiper-slide
+  .card
+  .card-body
+  .card-text
+  .no-color {
   background: transparent !important;
   -webkit-text-fill-color: white;
 }
@@ -3191,15 +3265,22 @@ nav {
   outline-color: var(--gray-color);
   width: 20px;
   height: 20px;
-
 }
 
-.todo-reshow .reshow-todo-content .list-todo .todo-item .form-check-input:focus {
+.todo-reshow
+  .reshow-todo-content
+  .list-todo
+  .todo-item
+  .form-check-input:focus {
   box-shadow: none;
   border-color: var(--gray-color);
 }
 
-.todo-reshow .reshow-todo-content .list-todo .todo-item .form-check-input:checked {
+.todo-reshow
+  .reshow-todo-content
+  .list-todo
+  .todo-item
+  .form-check-input:checked {
   background-color: rgb(25, 135, 84);
 }
 
@@ -4393,10 +4474,12 @@ nav {
   left: 0;
   z-index: 199;
   background: rgb(0, 0, 0);
-  background: linear-gradient(360deg,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(0, 0, 0, 1) 20%,
-      rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(
+    360deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 0) 100%
+  );
   width: 100%;
   height: 100%;
   padding: 150px 10px 0 10px;
@@ -5125,7 +5208,7 @@ nav {
 }
 
 .popular-book .nav-pills .nav-link.active,
-.nav-pills .show>.nav-link {
+.nav-pills .show > .nav-link {
   color: #fff !important;
   background: var(--bg-grandient) !important;
   border: 1px solid var(--ddd-color);
@@ -5414,11 +5497,15 @@ nav {
   padding: 0 0.5em calc(2 * var(--r));
   border-radius: var(--r);
   --_g: 100% / var(--r) calc(2 * var(--r)) no-repeat;
-  background: radial-gradient(100% 50% at right, #0005 98%, #0000 101%) 0 var(--_g),
+  background: radial-gradient(100% 50% at right, #0005 98%, #0000 101%) 0
+      var(--_g),
     radial-gradient(100% 50% at left, #0005 98%, #0000 101%) 100% var(--_g),
-    conic-gradient(from 90deg at var(--r) calc(100% - 2 * var(--r)),
-      #0000 25%,
-      #5a8bc2 0) 0 0 / calc(100% - var(--r)) 100%;
+    conic-gradient(
+        from 90deg at var(--r) calc(100% - 2 * var(--r)),
+        #0000 25%,
+        #5a8bc2 0
+      )
+      0 0 / calc(100% - var(--r)) 100%;
 }
 
 .card-pin-pw .text-send-email {
@@ -5595,8 +5682,10 @@ nav {
 
 .exer-vdo-watching .plyr__poster {
   background-color: #000;
-  background-color: var(--plyr-video-background,
-      var(--plyr-video-background, #000));
+  background-color: var(
+    --plyr-video-background,
+    var(--plyr-video-background, #000)
+  );
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover !important;
@@ -5612,49 +5701,95 @@ nav {
 
 .card-exer-course {
   width: 100%;
-  height: 200px !important;
-  border-radius: 20px !important;
-  border: 0 !important;
-  overflow: hidden;
-  /* padding: 20px !important; */
-  box-shadow: var(--main-shadow);
-  background: linear-gradient(50deg, #f2994a 0%, #f2c94c 100%);
-}
-
-.card-exer-course .exer-coures-info {
-  padding: 20px;
-}
-
-.card-exer-course .exer-coures-info p,
-.card-exer-course .exer-coures-info span,
-.card-exer-course .exer-coures-info h2 {
-  font-size: 20px;
-  color: #fff;
-}
-
-.card-exer-course .exer-coures-info span {
-  font-size: 15px;
-  font-weight: 500;
-}
-
-.card-exer-course .exer-coures-info h2 {
-  font-size: 40px;
-  padding: 20px 0;
+  height: auto;
+  padding: 10px;
+  border: 1px solid var(--ddd-color);
+  background-color: var(--card-color) !important;
 }
 
 .card-exer-course .exer-course-image {
   width: 100%;
-  height: 100%;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .card-exer-course .exer-course-image img {
-  height: 250px;
-  width: 70%;
-  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.card-exer-course .exer-course-content h4 {
+  font-size: 25px;
+  color: var(--main-text);
+  margin: 10px 0;
+}
+
+.card-exer-course .exer-course-content p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  overflow: hidden;
+  font-size: 16px;
+  color: var(--main-text);
+  margin-bottom: 10px;
+}
+
+.card-exer-course:hover .exer-course-image img {
+  transform: scale(1.1);
+}
+.card-exer-course:hover {
+  box-shadow: var(--main-shadow);
+}
+
+.trainer-pf {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.trainer-pf img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.trainer-pf-info span {
+  font-size: 15px;
+  color: var(--main-text);
+}
+
+.trainer-pf-info p {
+  font-size: 17px;
+  color: var(--main-text);
+  font-weight: 500;
+}
+
+.exer-course-info {
+  border-top: 1px solid var(--ddd-color);
+  padding: 10px 0;
+  margin-top: 10px;
+}
+
+.star-rate i {
+  font-size: 13px;
+  padding: 0;
+}
+
+.exer-course-info span {
+  font-size: 20px;
+  color: red;
+  font-weight: 500;
 }
 
 /* ! end of exercise */
-/* ====== Profile ====== */
+
+/* ! ====== Profile ====== */
 
 .header-profile .card-image .picture {
   width: 200px;
@@ -5747,7 +5882,6 @@ nav {
   color: #4e4e4e;
   margin-left: 40px;
   font-size: 15px;
-
 }
 
 .info-user .info {
