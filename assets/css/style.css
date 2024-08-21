@@ -3097,10 +3097,6 @@ nav {
   line-clamp: 2;
   overflow: hidden;
 }
-
-.journaling-reshow
-  .journal-reshow-content
-  .bar-journal
   .journal-edit
   .edit-control
   .btn-journal {
@@ -3112,9 +3108,6 @@ nav {
   margin-right: 10px;
 }
 
-.journaling-reshow
-  .journal-reshow-content
-  .bar-journal
   .journal-edit
   .edit-control
   .btn-journal
@@ -3183,11 +3176,10 @@ nav {
 }
 .todo-reshow .reshow-todo-content .list-todo .todo-item .form-check-input:focus{
   box-shadow: none;
-  border: none;
+  border-color: var(--gray-color);
 }
 .todo-reshow .reshow-todo-content .list-todo .todo-item .form-check-input:checked{
   background-color: rgb(25, 135, 84);
-  outline: none;
 }
 .todo-reshow .reshow-todo-content .list-todo .todo-item .todotext-checked {
   color: var(--gray-color);
