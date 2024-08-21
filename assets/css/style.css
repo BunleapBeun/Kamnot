@@ -140,7 +140,7 @@ main {
   --main-color: #1c1b1e;
   --stick-color: #fff;
   --gray-color: #4d4d4d;
-  --label-color: #d4e4fd;
+  --label-color: #868686;
   --hover-color: #1a2e4d;
   --bg-grandient: linear-gradient(135deg, #264d59 0%, #1a2e4d 100%);
   --link-text: #7fb3c2;
@@ -727,15 +727,32 @@ nav {
 .journaling-reshow .bar-journal-reshow {
   width: 100%;
   height: 50px;
-  background-color: red;
   border-radius: 10px 10px 0 0;
   background: var(--bg-grandient);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
 }
 
 .journaling-reshow .bar-journal-reshow h3 {
   font-size: 25px;
   color: #fff;
   margin: 0;
+}
+
+.plus-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  background-color: #fff;
+  text-decoration: none;
+}
+
+.plus-btn i {
+  font-size: 20px;
+  color: #000;
+  font-weight: 1000;
 }
 
 .journaling-reshow .journal-reshow-content {
@@ -874,9 +891,10 @@ nav {
   background-color: var(--card-color) !important;
 }
 
-.reading-book .modal-reading-content {
+/* .reading-book .modal-reading-content {
   height: 700px;
-}
+  width: 100vh !important;
+} */
 
 .reading-book .modal-reading-body {
   padding: 0;
@@ -1252,6 +1270,7 @@ nav {
   color: var(--stick-color) !important;
   transition: background 0.5s ease;
 }
+
 .journal-nav-sm .btn-todo {
   width: 100%;
   max-width: 100%;
@@ -1260,6 +1279,7 @@ nav {
   color: var(--stick-color) !important;
   transition: background 0.5s ease;
 }
+
 .journal-nav-sm .btn-journaling:hover {
   background: linear-gradient(135deg, #3c4d78 0%, #488495 100%);
   color: white;
@@ -1269,6 +1289,7 @@ nav {
   background: linear-gradient(135deg, #3c4d78 0%, #488495 100%);
   color: white;
 }
+
 .journal-nav .btn-journaling:hover {
   background: linear-gradient(135deg, #3c4d78 0%, #488495 100%);
   color: white;
@@ -1286,6 +1307,7 @@ nav {
   box-shadow: rgba(0, 0, 0, 0.311) 0px 2px 4px 0px inset;
   border: 1px solid #3c4d78;
 }
+
 .journal-nav-sm .active {
   background: var(--bg-grandient);
   border-radius: 10px;
@@ -1923,30 +1945,37 @@ nav {
 /*end of journaling page*/
 
 /* start of todo-list page */
+
 .journal-header h1 {
   color: var(--main-title);
 }
+
 .overview .btn-work {
   width: 100%;
   border-radius: 20px;
   height: 90px;
   max-height: 90px;
 }
+
 .overview h3 {
   color: var(--main-title);
 }
+
 .organize-work .nav .nav-item .nav-link {
   color: black;
   background-color: transparent;
   font-size: 18px;
 }
+
 .organize-work .nav .nav-item .nav-link:hover {
   color: #3c4d78;
 }
+
 .organize-work .nav .nav-item .active {
   color: #3c4d78;
   font-weight: bold;
 }
+
 .organize-work .tab-content .tab-pane .card {
   cursor: pointer;
   border-radius: 20px;
@@ -1955,15 +1984,19 @@ nav {
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   transition: all ease-in-out 0.3s;
 }
+
 .organize-work .tab-content .tab-pane .card:hover {
   box-shadow: none;
 }
+
 .organize-work .tab-content .tab-pane .card .work-logo img {
   transition: all ease-in-out 0.3s;
 }
+
 .organize-work .tab-content .tab-pane .card:hover .work-logo img {
   transform: scale(1.2);
 }
+
 .overview .modal .modal-body .nav-pills .nav-item .nav-link{
   background-color: transparent;
   color: var(--main-title);
@@ -1971,6 +2004,7 @@ nav {
 .overview .modal .modal-body .nav-pills .nav-item .nav-link.active{
   font-weight: 500;
 }
+
 .overview .overview-content-body .card {
   width: 80%;
   border-radius: 15px;
@@ -1980,6 +2014,7 @@ nav {
   border-left: 1px solid black;
   border-right: 1px solid black;
 }
+
 .overview .display .left-display {
   width: 150px;
   height: 40px;
@@ -1990,6 +2025,7 @@ nav {
   border: 1px solid black;
   border-radius: 20px;
 }
+
 .overview .display .right-display .prev,
 .next {
   width: 30px;
@@ -2001,6 +2037,7 @@ nav {
   border-radius: 50%;
   cursor: pointer;
 }
+
 .overview .display .right-display .btn {
   background-color: #ecf3fd;
   border-radius: 15px;
@@ -2010,6 +2047,7 @@ nav {
 .overview .organize-work .btn-work span i {
   color: var(--main-title);
 }
+
 .overview .organize-work .btn-work{
   cursor: auto;
 }
@@ -2020,16 +2058,20 @@ nav {
   border-radius: 20px;
   position: relative;
 }
+
 .overview .organize-work .work-wrapper {
   border-bottom: 1px solid var(--main-title);
 }
+
 .overview .work-wrapper[aria-expanded="false"] span i {
   transition: ease-in-out 0.5s;
 }
+
 .overview .work-wrapper[aria-expanded="true"] span i {
   transition: ease-in-out 0.5s;
   transform: rotate(90deg);
 }
+
 .overview
   .organize-work
   .collapsed
@@ -2040,70 +2082,85 @@ nav {
   .card {
   background-color: transparent !important;
 }
+
 .overview .organize-work .work-wrapper span i {
   color: #3c4d78;
 }
+
 .overview .organize-work .work-wrapper p {
   background-color: #dfebfd;
   border-radius: 20px;
   color: #1a2e4d;
   font-weight: 600;
 }
+
 .overview .organize-work .btn-work .line {
   width: 100%;
   height: 3px;
   background-color: black;
 }
+
 .overview .work-collapse .form-check .form-check-input {
   border-radius: 6px;
   width: 18px;
   height: 18px;
   border-color: #264d59a9;
 }
+
 .overview .work-collapse .collapse .card.card-wrapper {
   background-color: transparent !important;
   border: none;
 }
+
 .overview .work-collapse .collapse .card .form-check {
   width: 100%;
   border-bottom: 1px solid #ddd;
   padding-bottom: 10px;
   cursor: pointer;
 }
+
 .overview .work-collapse .form-check .form-check-input:hover {
   border-color: #264d59;
 }
+
 .overview .work-collapse .form-check .form-check-input:checked {
   outline: none;
   background-color: var(--link-text);
 }
+
 .overview .work-collapse .form-check .form-check-input:focus {
   box-shadow: none;
 }
+
 .overview .work-collapse .form-check .form-check-label {
   color: var(--main-title);
   font-weight: 500;
 }
+
 .overview .work-collapse .add-new-activity .card {
   border-color: #dddddda9;
   border-radius: 10px;
 }
+
 .overview .work-collapse .add-new-activity .card .form-control {
   border: none;
 }
+
 .overview .work-collapse .add-new-activity .card .form-control::placeholder {
   color: var(--gray-color);
 }
+
 .overview .work-collapse .add-new-activity .card .btn-do-add {
   background-color: #dfebfd;
   border-radius: 10px;
   color: #3c4d78;
   font-weight: 500;
 }
+
 /* ! end of todo-list page */
 
 /* start of money spending page */
-.money-report .card-report{
+.card-report{
   width: 90%;
   height: 180px;
   box-shadow: var(--main-shadow);
@@ -2112,14 +2169,14 @@ nav {
   cursor: pointer;
   padding: 20px;
 }
-.money-report .card-report .saving-up{
+.card-report .saving-up{
   padding: 1px 10px;
   border-radius: 20px;
   background-color: #DBFFE6;
   border: 1px solid black;
   box-shadow: inset 0px 4px 4px 0px rgba(0,0,0,0.25);
 }
-.money-report .card-report .report-info .progress .progress-bar{
+.card-report .report-info .progress .progress-bar{
   border-radius: 20px;
 }
 .spending-categories .spending-cate-title{
@@ -2148,6 +2205,7 @@ nav {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
+
 .therapist-banner .therapist-poster .poster-img::before {
   content: " ";
   position: absolute;
@@ -2159,60 +2217,72 @@ nav {
   left: 100;
   z-index: 1;
 }
+
 .therapist-banner .therapist-poster .poster-img img {
   z-index: 10;
   width: 400px;
   max-width: 400px;
 }
+
 .therapist-banner .therapist-poster .poster-icon {
   top: 20px;
   left: 500px;
   transform: rotate(20deg);
 }
+
 .therapist-banner .therapist-poster .poster-icon:nth-child(2) {
   top: 310px;
   left: 550px;
   transform: rotate(80deg);
 }
+
 .therapist-banner .therapist-poster .poster-icon-2 {
   top: 10px;
   left: 80px;
 }
+
 .therapist-banner .therapist-poster .poster-icon-3 {
   top: 170px;
   left: 10px;
 }
+
 .therapist-banner .therapist-poster .poster-icon:nth-last-child(1) {
   top: 350px;
   left: 70px;
   transform: rotate(220deg);
 }
+
 .therapist-banner .therapist-banner-title h2 {
   line-height: 50px;
   font-size: 35px;
   color: var(--main-title);
 }
+
 .therapist-banner .therapist-banner-title mark {
   background-color: var(--link-text);
   color: white;
   border-radius: 20px;
   font-size: 30px;
 }
+
 .therapist-banner .therapist-banner-title p {
   font-weight: 500;
   color: var(--main-title);
 }
+
 .categories-title p {
   padding: 10px 20px;
   border-radius: 20px;
   background-color: #dfebfd;
 }
+
 .therapist-categories .card {
   border-radius: 20px;
   overflow: hidden;
   background-color: transparent;
   border-color: var(--main-text);
 }
+
 .therapist-categories .card-img {
   padding: 20px;
   width: 100%;
@@ -2221,39 +2291,48 @@ nav {
   border-radius: 20px;
   overflow: hidden;
 }
+
 .therapist-categories .card-img img {
   object-fit: cover;
   height: inherit;
   transition: all linear 0.3s;
   border-radius: 20px;
 }
+
 .therapist-categories .card:hover .card-img-top {
   transform: scale(1.05);
 }
+
 .therapist-categories .card-body {
   height: 230px;
   max-height: 230px;
 }
+
 .therapist-categories .card-body .card-title .experience {
   border-radius: 10px;
   height: 30px;
 }
+
 .therapist-categories .card-body .card-body-text {
   color: black !important;
   font-weight: normal !important;
 }
+
 .therapist-categories .card-footer .therapist-contact {
   background-color: #3c4d78;
   border-radius: 20px;
   color: white;
 }
+
 .therapist-categories .modal .therapist-modal-content .form-control {
   padding: 10px;
 }
+
 .therapist-categories .modal .modal-footer .btn-therapist {
   background-color: var(--main-title);
   color: white;
 }
+
 .therapist-history .card .therapist-date p {
   width: 140px;
   text-align: center;
@@ -2261,14 +2340,17 @@ nav {
   border-radius: 20px;
   background-color: #dfebfd;
 }
+
 .therapist-questions .card {
   height: 400px;
   border-radius: 20px​​​ !important;
   background-color: var(--main-title);
 }
+
 .therapist-questions .carousel-inner .carousel-item .questions {
   padding: 100px 0 !important;
 }
+
 .therapist-questions
   .carousel-inner
   .carousel-item
@@ -2279,6 +2361,7 @@ nav {
   height: 30px;
   border-radius: 10px;
 }
+
 /*end of therapist page*/
 
 /* ? begin of footer */
@@ -2525,24 +2608,30 @@ nav {
     overflow: hidden;
     margin-bottom: 20px;
   }
+
   .therapist-banner .therapist-poster .poster-img img {
     z-index: 10;
     width: 350px;
   }
+
   .therapist-banner .therapist-poster .poster-img::before {
     width: 380px;
     height: 380px;
     top: 40px;
   }
+
   .therapist-banner .therapist-banner-title h2 {
     font-size: 30px !important;
   }
+
   .therapist-banner .therapist-banner-title mark {
     font-size: 20px;
   }
+
   .carousel-item .questions .form-check .form-check-label {
     font-size: 18px !important;
   }
+
   .therapist-questions
     .carousel-inner
     .carousel-item
@@ -2563,6 +2652,7 @@ nav {
     line-height: 30px;
     overflow: hidden;
   }
+
   .therapist-banner .therapist-poster .poster-img::before {
     top: 90px !important;
     width: 500px;
@@ -3079,18 +3169,8 @@ nav {
   padding: 10px;
 }
 
-.journaling-reshow .journal-reshow-content .bar-journal .journal-written h5 {
-  color: var(--main-text);
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
-  line-clamp: 1;
-  overflow: hidden;
-  margin: 0;
-}
-
 .journaling-reshow .journal-reshow-content .bar-journal .journal-written p {
-  color: var(--gray-color);
+  color: var(--main-text);
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
@@ -3125,6 +3205,7 @@ nav {
   height: 50px;
   background: var(--bg-grandient);
   border-radius: 10px 10px 0 0;
+  padding: 10px;
 }
 
 .todo-reshow .bar-reshow-todo h3 {
@@ -3291,7 +3372,7 @@ nav {
   color: var(--ddd-color);
 }
 
-/* ===============Mood Tracking : Thavy ================== */
+/* ! ===============Mood Tracking : Thavy ================== */
 .mood-tracking .section-profile .title-pf h2 {
   color: var(--main-text);
   font-weight: 400;
@@ -4229,7 +4310,7 @@ nav {
 
 .card-article .article-info .article-discript {
   font-size: 14px;
-  color: var(--gray-color);
+  color: var(--main-text);
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
@@ -4263,7 +4344,7 @@ nav {
 
 .art-artist-pf .article-date {
   font-size: 12px;
-  color: var(--gray-color);
+  color: var(--main-text);
 }
 
 .card-article .btn-share,
@@ -4626,12 +4707,12 @@ nav {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-.login-form .input-form {
+.input-form {
   font-size: 18px;
   color: #000;
 }
 
-.login-form .input-form::placeholder {
+.input-form::placeholder {
   font-size: 18px;
   color: var(--gray-color);
 }
@@ -4643,7 +4724,8 @@ nav {
   padding: 20px 40px;
 }
 
-.login-form .side-input-login h1 {
+.login-form .side-input-login h1,
+.forgot-pass-text {
   background: var(--bg-grandient);
   -webkit-background-clip: text;
   background-clip: text;
@@ -4651,11 +4733,11 @@ nav {
   font-weight: 1000;
 }
 
-.login-form .side-input-login .form-input-gp {
+.form-input-gp {
   position: relative;
 }
 
-.login-form .side-input-login .form-input-gp .input-form {
+.form-input-gp .input-form {
   width: 100%;
   padding: 8px 35px;
   border-radius: 10px;
@@ -4663,7 +4745,7 @@ nav {
   border: 1px solid var(--ddd-color);
 }
 
-.login-form .side-input-login .form-input-gp .icon-inform {
+.form-input-gp .icon-inform {
   position: absolute;
   top: 12px;
   left: 10px;
@@ -4695,19 +4777,20 @@ nav {
   font-weight: 500;
 }
 
-.login-form .form-text {
+.login-form .form-text,
+.form-text-forgot {
   font-size: 18px;
   color: #000;
 }
 
-.login-form .form-text-link {
+.form-text-link {
   font-size: 18px;
   color: var(--gray-color);
   text-decoration: none;
   font-weight: 500;
 }
 
-.login-form .form-text-link:hover {
+.form-text-link:hover {
   color: var(--link-text);
 }
 
@@ -4805,380 +4888,81 @@ nav {
 
 /* ! end of login */
 
-/* ===== Forgot-password ======= */
-.main-forgot-password {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+/* ! begin of forgot password */
 
-.card-forgot-password {
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
-    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
-}
-
-.card-forgot-password .text-forgot-pw {
-  font-weight: 500;
-  text-align: center;
-}
-
-.card-forgot-password .icon-back {
-  color: var(--main-color);
-  padding: 10px;
-  border-radius: 100%;
-  width: 30px;
-  height: 30px;
-  cursor: pointer !important;
-  background: var(--bg-grandient);
-  margin-top: -10px;
-  box-shadow: 0px 0px 2px 0px var(--ddd-color);
-}
-
-.card-forgot-password .ribbon {
-  font-size: 28px;
-  font-weight: bold;
-  color: #fff;
-}
-
-.card-forgot-password .ribbon {
-  --r: 0.4em;
-
-  position: absolute;
-  top: 0px;
-  inset-inline: calc(-1 * var(--r));
-  text-align: center;
-  line-height: 1.8;
-  padding: 0 0.5em calc(2 * var(--r));
-  border-radius: var(--r);
-  --_g: 100% / var(--r) calc(2 * var(--r)) no-repeat;
-  background: radial-gradient(100% 50% at right, #0005 98%, #0000 101%) 0
-      var(--_g),
-    radial-gradient(100% 50% at left, #0005 98%, #0000 101%) 100% var(--_g),
-    conic-gradient(
-        from 90deg at var(--r) calc(100% - 2 * var(--r)),
-        #0000 25%,
-        #4d7c89 0
-      )
-      0 0 / calc(100% - var(--r)) 100%;
-}
-
-.card-forgot-password .icon-back .fa-arrow-left {
-  cursor: pointer;
-}
-
-.card-forgot-password .text-noted-forgot-pw {
-  font-size: 17px;
-  text-align: center;
-  color: var(--main-text) !important;
-  font-weight: normal !important;
-}
-
-.card-forgot-password .input-fg {
-  padding-left: 30px;
-}
-
-.card-forgot-password .fa-envelope {
-  color: var(--sub-title);
-  padding-top: 10px;
-  padding-left: 10px;
-}
-
-.centered {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.card-forgot-password .email-icon-forgot {
-  padding-left: 0px;
-}
-
-.card-forgot-password .input-fg {
-  padding-left: 30px;
-  box-shadow: 0px 0px 0px 1px var(--gray-color);
-  color: var(--main-text);
-  font-weight: 500;
-}
-
-.card-forgot-password .form-control:focus {
-  color: var(--main-text);
-  background-color: var(--bg-grandient);
-  outline: 0;
-  box-shadow: 0 0 0px 3px var(--main-color);
-}
-
-.glow-on-hover {
-  width: 100px;
-  height: 40px;
-  border: none;
-  outline: none;
-  color: #fff;
-  background: #111;
-  cursor: pointer;
+.forgot-pass-form {
+  width: 500px;
   position: relative;
-  z-index: 0;
-  border-radius: 10px;
-  margin-top: 20px;
+  height: auto;
+  border-radius: 30px;
+  background-color: #fff;
+  overflow: hidden;
+  padding: 20px 30px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-.glow-on-hover:before {
-  content: "";
-  background: linear-gradient(
-    45deg,
-    #ff0000,
-    #ff7300,
-    #fffb00,
-    #48ff00,
-    #00ffd5,
-    #002bff,
-    #7a00ff,
-    #ff00c8,
-    #ff0000
-  );
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  background-size: 400%;
-  z-index: -1;
-  filter: blur(5px);
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  animation: glowing 20s linear infinite;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  border-radius: 10px;
+.icon-block-form {
+  width: 70px;
+  height: 70px;
+  border-radius: 70px;
+  border: 1px solid var(--ddd-color);
 }
 
-.glow-on-hover:active:after {
-  background: transparent;
-}
-
-.glow-on-hover:hover:before {
-  opacity: 1;
-}
-
-.glow-on-hover:after {
-  z-index: -1;
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: var(--bg-grandient);
-  left: 0;
-  top: 0;
-  border-radius: 10px;
-  color: black;
-}
-
-@keyframes glowing {
-  0% {
-    background-position: 0 0;
-  }
-
-  50% {
-    background-position: 400% 0;
-  }
-
-  100% {
-    background-position: 0 0;
-  }
-}
-
-.card-forgot-password .btn-forgot:hover {
-  background: var(--link-text) !important;
-}
-
-.card-forgot-password .back-to {
-  color: var(--sub-title);
-  font-size: 20px;
-}
-
-.card-forgot-password .back-to a {
-  color: var(--link-text);
-}
-
-.card-forgot-password .back-to a:hover {
-  background-image: linear-gradient(90deg, #488495, #3c4d78);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  font-weight: bold;
-  transition: 0.6s;
-}
-
-@property --bg-angle {
-  inherits: false;
-  initial-value: 0deg;
-  syntax: "<angle>";
-}
-
-@keyframes spin {
-  to {
-    --bg-angle: 360deg;
-  }
-}
-
-@media (min-width: 430px) and (max-width: 932px) {
-  .card-forgot-password .icon-back {
-    width: 25px;
-    height: 25px;
-    padding: 10px;
-  }
-
-  .card-forgot-password .back-to {
-    font-size: 18px;
-  }
-}
-
-@media (min-width: 360px) and (max-width: 740px) {
-  .card-forgot-password .icon-back {
-    width: 25px;
-    height: 25px;
-    padding: 10px;
-  }
-
-  .card-forgot-password .back-to {
-    font-size: 18px;
-  }
-}
-
-/* ========= Register ============== */
-.register {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.register .d-flex {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.register .d-flex .card-register {
-  background-color: transparent;
-  box-shadow: 0px 0px 2px 1px var(--gray-color);
-  padding: 20px;
-}
-
-.register .d-flex .card-register .content-register h1 {
-  background-image: linear-gradient(90deg, #488495, #3c4d78);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  font-family: "Kantumruy Pro", sans-serif;
-  font-weight: 500;
-  font-size: 40px;
-  text-align: center;
-}
-
-.register .d-flex .card-register form {
-  margin-top: 30px;
-}
-
-.register .d-flex .card-register .name-register,
-.register .d-flex .card-register .email-register,
-.register .d-flex .card-register .label-password-register,
-.register .d-flex .card-register .label-comfirm-register {
+.icon-block-form i {
+  font-size: 30px;
   color: var(--gray-color);
 }
 
-.register .d-flex .card-register input {
-  padding-left: 25px !important;
-}
-
-.register .d-flex .card-register .group-dob-gender,
-.register .d-flex .card-register .email-register,
-.register .d-flex .card-register .password-register,
-.register .d-flex .card-register .comfirm-pw-register,
-.register .d-flex .card-register .check-info {
-  margin-top: 10px;
-}
-
-.register .d-flex .card-register .form-select {
-  font-family: "Kantumruy Pro", sans-serif;
-  color: var(--gray-color);
-}
-
-.register .d-flex .card-register .gender {
-  font-family: "Kantumruy Pro", sans-serif;
-  color: var(--gray-color);
-}
-
-.register .d-flex .card-register .font-family-gender {
-  color: var(--main-text);
-  font-family: "Kantumruy Pro", sans-serif;
-}
-
-.register .card-register .check-info {
-  display: flex;
-  flex-direction: column;
-}
-
-.register .card-register .check-info .input-check-info,
-.register .card-register .check-info .input-info {
-  display: flex;
-  justify-content: start;
-}
-
-.register .d-flex .card-register .check-info .label-checkInfo {
-  color: var(--main-text);
-  font-family: "Kantumruy Pro", sans-serif;
-  font-size: 18px;
-  padding-left: 10px;
-}
-
-.register .d-flex .card-register .check-info .form-check-info {
-  width: 16px;
-  height: 16px;
-  margin-top: 8px;
-}
-
-.card-register .password-register .icon-input-pw {
-  position: absolute;
-  left: 45%;
-  bottom: 27%;
-}
-
-.card-register .btn-register,
-.card-register .btn-login {
-  font-size: 20px;
-  border-radius: 10px;
+.btn-back {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  text-decoration: none;
   border: none;
-  padding: 7px 18px;
   background: var(--bg-grandient);
-  color: var(--main-color);
-  transition: 0.8s;
-}
-
-.register .card-register .btn-register:hover,
-.register .card-register .btn-login:hover {
-  background: var(--bg-grandient) !important;
-  color: var(--main-color);
-  opacity: 1 !important;
-  transition: 0.6s;
-}
-
-.create-account .text-center {
-  font-size: 20px;
-  color: var(--main-text);
-}
-
-.card-register .icon-back {
-  color: var(--main-color);
-  background: var(--bg-grandient);
-  padding: 10px;
-  border-radius: 100%;
-  width: 30px;
-  height: 30px;
-  cursor: pointer !important;
+  color: #fff;
   position: absolute;
-  z-index: 2;
-  top: 10px;
-  left: 10px;
+  top: 20px;
+  left: 20px;
 }
+
+.btn-back i {
+  font-size: 20px;
+  color: #fff;
+}
+
+.pin-code {
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.pin-code .pin-input {
+  border: none;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  font-size: 36px;
+  background-color: #f3f3f3;
+  margin-right: 5px;
+  border-radius: 10px;
+}
+
+.pin-code .pin-input:focus {
+  border: 1px solid var(--link-text);
+  border-radius: 10px;
+  outline: none;
+}
+
+.pin-input::-webkit-outer-spin-button,
+.pin-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  width: 0;
+  margin: 0;
+}
+
+/* ! end of forgot password */
 
 .book-herobanner .swiper-slide img {
   width: 100%;
@@ -5659,7 +5443,7 @@ nav {
   text-align: center;
   font-size: 18px;
   background: #fff;
-  height: 400px;
+  height: 435px;
   border-radius: 30px;
   display: flex;
   justify-content: center;
@@ -5823,7 +5607,11 @@ nav {
 
 .exer-control .exer-list .erxer-item .exer-thum {
   width: 25%;
-  height: 100%;
+  height: 60px;
+}
+
+.exer-control .exer-list .erxer-item .exer-thum img {
+  object-fit: cover;
 }
 
 .exer-control .exer-list .erxer-item .list-vdo-detail {
@@ -5889,4 +5677,234 @@ nav {
   z-index: 1;
 }
 
+.card-exer-course {
+  width: 100%;
+  height: 200px !important;
+  border-radius: 20px !important;
+  border: 0 !important;
+  overflow: hidden;
+  /* padding: 20px !important; */
+  box-shadow: var(--main-shadow);
+  background: linear-gradient(50deg, #f2994a 0%, #f2c94c 100%);
+}
+
+.card-exer-course .exer-coures-info {
+  padding: 20px;
+}
+
+.card-exer-course .exer-coures-info p,
+.card-exer-course .exer-coures-info span,
+.card-exer-course .exer-coures-info h2 {
+  font-size: 20px;
+  color: #fff;
+}
+
+.card-exer-course .exer-coures-info span {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.card-exer-course .exer-coures-info h2 {
+  font-size: 40px;
+  padding: 20px 0;
+}
+
+.card-exer-course .exer-course-image {
+  width: 100%;
+  height: 100%;
+}
+
+.card-exer-course .exer-course-image img {
+  height: 250px;
+  width: 70%;
+  object-fit: contain;
+}
+
 /* ! end of exercise */
+/* ====== Profile ====== */
+
+.header-profile .card-image .picture{
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  background-color: var(--gray-color);
+}
+.header-profile .edit-picture{
+  text-decoration: none;
+  padding: 9px 12px;
+  border-radius: 100%;
+  background-color: var(--ddd-color);
+  position: absolute;
+  right: 160px;
+  color: var(--main-text);
+}
+.header-profile .picture img{
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
+.header-profile .card-image h4{
+  padding-top: 10px;
+  font-weight: bold;
+  color: var(--main-text);
+}
+.header-profile .card-image span{
+  color: var(--main-text);
+  font-size: 18px;
+}
+.header-profile .btn-membership{
+  width: 130px;
+  margin: auto;
+}
+.header-profile .card-detail-user{
+  height: 700px;
+}
+.header-profile .card{
+  background-color: white;
+  box-shadow: var(--main-shadow);
+  border-radius: 20px;
+}
+.header-profile .card-body .email-user,
+.header-profile .card-body .password-user{
+  width: 100%;
+  height: 60px;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  border: 1px solid var(--gray-color);
+  margin-bottom: 15px;
+  color: #4e4e4e;
+  font-size: 20px;
+}
+
+.header-profile .card-body .edit-profile{
+  padding: 5px 20px;
+  border-radius: 20px;
+  color: white;
+  background: var(--bg-grandient);
+  text-decoration: none;
+  margin-top: 20px;
+  font-size: 21px;
+  opacity: 0.9;
+}
+.header-profile .card-body .edit-profile:hover{
+  background:var(--bg-grandient);
+  opacity: 1;
+}
+.header-profile .detail-info-profile .detail-header-info span{
+  font-size: 19px;
+}
+.info-user .form-label{
+  color: var(--label-color);
+}
+.info-user .edit-info{
+  color: #4e4e4e;
+  margin-left: 40px;
+  font-size: 15px;
+
+}
+
+.info-user .info{
+  color: #4e4e4e;
+  font-weight: 500;
+}
+.info-user h5{
+  font-size: 20px;
+  color: var(--main-text);
+}
+.info-user .card{
+  box-shadow: none;
+}
+.info-user .add-icon-info{
+  text-decoration: none;
+  color: var(--link-text);
+  font-size: 20px;
+  box-shadow: 0px 0px 3px 1px var(--link-text);
+  border-radius: 20px;
+  text-align: center;
+  padding: 5px 10px;
+}
+.info-user .add-icon-info:hover{
+  background-color: var(--link-text);
+  color: white;
+}
+.user-payment{
+  margin: 40px 0px;
+}
+.user-payment .card-payment{
+  box-shadow: var(--main-shadow);
+  background-color: white;
+}
+.user-payment h2{
+  color: var(--main-text);
+}
+.user-payment .card-payment-user{
+  background-color: white;
+  box-shadow: 0px 0px 5px 3px var(--card-color);
+  border-radius: 20px;
+  transition: transform 0.8s; 
+}
+.user-payment .card-payment-user:hover{
+  transform: translate(-5px, -10px);
+  box-shadow: 2px 3px 5px 0px var(--link-text);
+}
+.user-payment .income-month p,
+.user-payment .total-payment p,
+.user-payment .total-income p{
+  font-size: 20px;
+  color: var(--main-text);
+}
+.user-payment .total-payment .color-green,
+.user-payment .change-dollar p{
+  font-size: 20px;
+  color: green;
+}
+.user-payment .income-month i{
+  font-size: 22px;
+  color: var(--link-text);
+  font-weight: bold;
+}
+.user-payment .total-income .color-gray,
+.user-payment .change-dollar-income p{
+  font-size: 20px;
+  color: var(--gray-color);
+}
+.user-payment .income-month .dollar{
+  padding: 3px 10px;
+  font-size: 20px;
+  color: white;
+  border-radius: 10px;
+  background: var(--bg-grandient);
+}
+/* .change-dollar-income .form-range{
+  background-color: #3162a5!important;
+} */
+.user-payment .calender-heatmap{
+  border-radius: 20px;
+  height: 250px;
+}
+.user-payment .calender-heatmap img{
+  border-radius: 15px;
+}
+.user-buttom .user-discuss{
+  text-decoration: none;
+  font-size: 20px;
+  background:var(--bg-grandient) ;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: white;
+}
+.user-buttom .user-discuss:hover{
+  background: transparent;
+  box-shadow: 0px 0px 3px 2px var(--link-text);
+  color: black;
+}
+.save-info{
+  font-size: 20px!important;
+  background: var(--bg-grandient);
+  border-radius: 15px;
+  padding: 8px 15px;
+  color: white!important;
+  
+}

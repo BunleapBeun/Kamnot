@@ -468,12 +468,14 @@
           <!-- ! begin of main content -->
           <div class="col-lg-11 col-12">
             <div class="pt-112 px-4 px-md-0">
-              <!-- ? write your content here -->
               <div class="row g-3">
                 <div class="col-lg-8 col-12 journaling-reshow">
-                  <a type="button" href="journaling.html" class="bar-journal-reshow all-center text-decoration-none">
+                  <div class="bar-journal-reshow all-center">
                     <h3>កំណត់ហេតុប្រចាំថ្ងៃ</h3>
-                  </a>
+                    <a href="journaling.html" type="button" class="plus-btn all-center">
+                      <i class="fa-solid fa-plus"></i>
+                    </a>
+                  </div>
                   <div class="journal-reshow-content">
                     <div class="bar-journal d-flex flex-row">
                       <div class="col-lg-1 col-2 journal-date d-flex flex-column all-center">
@@ -667,9 +669,18 @@
                   <div class="bar-btm-journal-reshow"></div>
                 </div>
                 <div class="col-lg-4 col-12 todo-reshow">
+<<<<<<< HEAD
                   <a type="button" href="todo-list.html" class="bar-reshow-todo all-center text-decoration-none">
                     <h3>កិច្ចការដែលត្រូវធ្វើ</h3>
                   </a>
+=======
+                  <div class="bar-reshow-todo all-center d-flex align-items-center justify-content-between">
+                    <h3>កិច្ចការប្រចាំថ្ងៃ</h3>
+                    <a href="todo-list.html" type="button" class="plus-btn all-center">
+                      <i class="fa-solid fa-plus"></i>
+                    </a>
+                  </div>
+>>>>>>> 9edb94a8ca01714e5c674e5c98343f869572dd17
                   <div class="reshow-todo-content">
                     <ul class="list-todo m-0">
                       <li class="todo-item d-flex align-items-center justify-content-between">
@@ -795,29 +806,6 @@
                           <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
                             class="conti-read mt-2 text-decoration-none text-center">អានបន្ថែម</a>
                         </div>
-                        <!-- Modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                          aria-hidden="true">
-                          <div class="modal-dialog">
-                            <div class="modal-content modal-reading-content">
-                              <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">
-                                  The Physical of Money
-                                </h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                  aria-label="Close"></button>
-                              </div>
-                              <div class="modal-body modal-reading-body">
-                                <iframe src="assets/pdf/The_Psychology_of_Money.pdf" frameborder="0"></iframe>
-                              </div>
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
-                                  បិទ
-                                </button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
                         <div class="col-lg-2 col-4">
                           <a href="book_store.html" class="text-decoration-none">
                             <div class="add-book-cover all-center">
@@ -830,6 +818,29 @@
                       </div>
                     </div>
                   </div>
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-fullscreen p-0 m-0">
+                    <div class="modal-content modal-reading-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-3" id="exampleModalLabel">
+                          The Physical of Money
+                        </h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                          aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body modal-reading-body">
+                        <iframe src="assets/pdf/The_Psychology_of_Money.pdf" frameborder="0"></iframe>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+                          បិទ
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 </section>
                 <section class="popular-book p-2 m-2 me-0 ms-0 border-0">
                   <div class="row">
