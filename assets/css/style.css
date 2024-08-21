@@ -331,7 +331,12 @@ nav {
 }
 
 .profile .pf-drowpdown .pf-list .pf-item:hover .pf-link,
-.profile .pf-drowpdown .pf-list .pf-item:hover .leave-icon .fa-right-from-bracket {
+.profile
+  .pf-drowpdown
+  .pf-list
+  .pf-item:hover
+  .leave-icon
+  .fa-right-from-bracket {
   color: #fff;
 }
 
@@ -670,11 +675,24 @@ nav {
   padding: 0;
 }
 
-.side-menu .menu .menu-item .nav-menu .menu-content .content-list .content-item {
+.side-menu
+  .menu
+  .menu-item
+  .nav-menu
+  .menu-content
+  .content-list
+  .content-item {
   border-top: 1px solid var(--ddd-color);
 }
 
-.side-menu .menu .menu-item .nav-menu .menu-content .content-list .content-item .content-link {
+.side-menu
+  .menu
+  .menu-item
+  .nav-menu
+  .menu-content
+  .content-list
+  .content-item
+  .content-link {
   display: block;
   padding: 10px;
   text-decoration: none;
@@ -682,7 +700,14 @@ nav {
   font-size: 18px;
 }
 
-.side-menu .menu .menu-item .nav-menu .menu-content .content-list .content-item .content-link:hover {
+.side-menu
+  .menu
+  .menu-item
+  .nav-menu
+  .menu-content
+  .content-list
+  .content-item
+  .content-link:hover {
   background-color: var(--link-text);
   color: #fff;
 }
@@ -737,8 +762,6 @@ nav {
   border: 1px solid var(--ddd-color);
   border-bottom: 0;
 }
-
-
 
 .todo-reshow {
   width: 100%;
@@ -873,7 +896,6 @@ nav {
   width: 100vh !important;
 } */
 
-
 .reading-book .modal-reading-body {
   padding: 0;
 }
@@ -961,7 +983,7 @@ nav {
   line-height: 50px;
 }
 
-.landing-herobanner .landing-title>.btn-login {
+.landing-herobanner .landing-title > .btn-login {
   background-color: #47b8cf;
   border-radius: 30px;
   border: 1px solid black;
@@ -969,7 +991,7 @@ nav {
   transition: ease-in-out 0.3s;
 }
 
-.landing-herobanner .landing-title>.btn-login .nav-link {
+.landing-herobanner .landing-title > .btn-login .nav-link {
   background-color: #d4e0ff;
   border-radius: 30px;
   border: 1px solid black;
@@ -977,14 +999,14 @@ nav {
   transition: ease-in-out 0.8s;
 }
 
-.landing-herobanner .landing-title>.btn-login:hover {
+.landing-herobanner .landing-title > .btn-login:hover {
   background-color: transparent;
   padding: 0px;
   border: none;
   margin-top: 10px;
 }
 
-.landing-herobanner .landing-title>.btn-login:hover .nav-link {
+.landing-herobanner .landing-title > .btn-login:hover .nav-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1267,7 +1289,14 @@ nav {
   -webkit-text-fill-color: transparent;
 }
 
-.testimonail .swiper .swiper-wrapper .swiper-slide .card .card-body .card-text .no-color {
+.testimonail
+  .swiper
+  .swiper-wrapper
+  .swiper-slide
+  .card
+  .card-body
+  .card-text
+  .no-color {
   background: transparent !important;
   -webkit-text-fill-color: white;
 }
@@ -1501,7 +1530,11 @@ nav {
   background-color: #ddd;
 }
 
-.journal-book .calender .calender-view .btn-calendar:hover .landing-title-color {
+.journal-book
+  .calender
+  .calender-view
+  .btn-calendar:hover
+  .landing-title-color {
   color: white !important;
 }
 
@@ -1843,7 +1876,11 @@ nav {
   transition: background 0.2s ease-in-out;
 }
 
-.photo-book .modal .modal-body .form #fileimage-input::file-selector-button:hover {
+.photo-book
+  .modal
+  .modal-body
+  .form
+  #fileimage-input::file-selector-button:hover {
   background: #0d45a5;
 }
 
@@ -1977,7 +2014,13 @@ nav {
   border-radius: 20px;
 }
 
-.us-categories .aboutus-nav .scrollspy-aboutus .about-komnot .vision-info .limit-line p {
+.us-categories
+  .aboutus-nav
+  .scrollspy-aboutus
+  .about-komnot
+  .vision-info
+  .limit-line
+  p {
   color: var(--main-text);
 }
 
@@ -2012,6 +2055,7 @@ nav {
 /*end of journaling page*/
 
 /* start of todo-list page */
+
 .journal-header h1 {
   color: var(--main-title);
 }
@@ -2128,7 +2172,14 @@ nav {
   transform: rotate(90deg);
 }
 
-.overview .organize-work .collapsed .card .overview .organize-work .collapsed .card {
+.overview
+  .organize-work
+  .collapsed
+  .card
+  .overview
+  .organize-work
+  .collapsed
+  .card {
   background-color: transparent !important;
 }
 
@@ -2364,7 +2415,12 @@ nav {
   padding: 100px 0 !important;
 }
 
-.therapist-questions .carousel-inner .carousel-item .question-form .form-check .form-check-input {
+.therapist-questions
+  .carousel-inner
+  .carousel-item
+  .question-form
+  .form-check
+  .form-check-input {
   width: 30px;
   height: 30px;
   border-radius: 10px;
@@ -2584,10 +2640,10 @@ nav {
   color: #fff;
 }
 
-#showDropHabit:checked~.drop-menu,
-#showDropMentalhealth:checked~.drop-menu,
-#showDropEdu:checked~.drop-menu,
-#showDropMoreInfo:checked~.drop-menu {
+#showDropHabit:checked ~ .drop-menu,
+#showDropMentalhealth:checked ~ .drop-menu,
+#showDropEdu:checked ~ .drop-menu,
+#showDropMoreInfo:checked ~ .drop-menu {
   max-height: 100%;
   display: block;
 }
@@ -2640,7 +2696,12 @@ nav {
     font-size: 18px !important;
   }
 
-  .therapist-questions .carousel-inner .carousel-item .question-form .form-check .form-check-input {
+  .therapist-questions
+    .carousel-inner
+    .carousel-item
+    .question-form
+    .form-check
+    .form-check-input {
     width: 20px !important;
     height: 20px !important;
   }
@@ -3017,7 +3078,14 @@ nav {
   -webkit-text-fill-color: transparent;
 }
 
-.testimonail .swiper .swiper-wrapper .swiper-slide .card .card-body .card-text .no-color {
+.testimonail
+  .swiper
+  .swiper-wrapper
+  .swiper-slide
+  .card
+  .card-body
+  .card-text
+  .no-color {
   background: transparent !important;
   -webkit-text-fill-color: white;
 }
@@ -3169,7 +3237,12 @@ nav {
   overflow: hidden;
 }
 
-.journaling-reshow .journal-reshow-content .bar-journal .journal-edit .edit-control .btn-journal {
+.journaling-reshow
+  .journal-reshow-content
+  .bar-journal
+  .journal-edit
+  .edit-control
+  .btn-journal {
   width: 25px;
   height: 25px;
   border-radius: 25px;
@@ -3178,7 +3251,13 @@ nav {
   margin-right: 10px;
 }
 
-.journaling-reshow .journal-reshow-content .bar-journal .journal-edit .edit-control .btn-journal i {
+.journaling-reshow
+  .journal-reshow-content
+  .bar-journal
+  .journal-edit
+  .edit-control
+  .btn-journal
+  i {
   font-size: 12px;
   color: var(--main-text);
 }
@@ -4425,10 +4504,12 @@ nav {
   left: 0;
   z-index: 199;
   background: rgb(0, 0, 0);
-  background: linear-gradient(360deg,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(0, 0, 0, 1) 20%,
-      rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(
+    360deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 0) 100%
+  );
   width: 100%;
   height: 100%;
   padding: 150px 10px 0 10px;
@@ -4678,12 +4759,12 @@ nav {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-.login-form .input-form {
+.input-form {
   font-size: 18px;
   color: #000;
 }
 
-.login-form .input-form::placeholder {
+.input-form::placeholder {
   font-size: 18px;
   color: var(--gray-color);
 }
@@ -4695,7 +4776,8 @@ nav {
   padding: 20px 40px;
 }
 
-.login-form .side-input-login h1 {
+.login-form .side-input-login h1,
+.forgot-pass-text {
   background: var(--bg-grandient);
   -webkit-background-clip: text;
   background-clip: text;
@@ -4703,11 +4785,11 @@ nav {
   font-weight: 1000;
 }
 
-.login-form .side-input-login .form-input-gp {
+.form-input-gp {
   position: relative;
 }
 
-.login-form .side-input-login .form-input-gp .input-form {
+.form-input-gp .input-form {
   width: 100%;
   padding: 8px 35px;
   border-radius: 10px;
@@ -4715,7 +4797,7 @@ nav {
   border: 1px solid var(--ddd-color);
 }
 
-.login-form .side-input-login .form-input-gp .icon-inform {
+.form-input-gp .icon-inform {
   position: absolute;
   top: 12px;
   left: 10px;
@@ -4747,19 +4829,20 @@ nav {
   font-weight: 500;
 }
 
-.login-form .form-text {
+.login-form .form-text,
+.form-text-forgot {
   font-size: 18px;
   color: #000;
 }
 
-.login-form .form-text-link {
+.form-text-link {
   font-size: 18px;
   color: var(--gray-color);
   text-decoration: none;
   font-weight: 500;
 }
 
-.login-form .form-text-link:hover {
+.form-text-link:hover {
   color: var(--link-text);
 }
 
@@ -4857,374 +4940,81 @@ nav {
 
 /* ! end of login */
 
-/* ===== Forgot-password ======= */
-.main-forgot-password {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+/* ! begin of forgot password */
 
-.card-forgot-password {
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
-    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
-}
-
-.card-forgot-password .text-forgot-pw {
-  font-weight: 500;
-  text-align: center;
-}
-
-.card-forgot-password .icon-back {
-  color: var(--main-color);
-  padding: 10px;
-  border-radius: 100%;
-  width: 30px;
-  height: 30px;
-  cursor: pointer !important;
-  background: var(--bg-grandient);
-  margin-top: -10px;
-  box-shadow: 0px 0px 2px 0px var(--ddd-color);
-}
-
-.card-forgot-password .ribbon {
-  font-size: 28px;
-  font-weight: bold;
-  color: #fff;
-}
-
-.card-forgot-password .ribbon {
-  --r: 0.4em;
-
-  position: absolute;
-  top: 0px;
-  inset-inline: calc(-1 * var(--r));
-  text-align: center;
-  line-height: 1.8;
-  padding: 0 0.5em calc(2 * var(--r));
-  border-radius: var(--r);
-  --_g: 100% / var(--r) calc(2 * var(--r)) no-repeat;
-  background: radial-gradient(100% 50% at right, #0005 98%, #0000 101%) 0 var(--_g),
-    radial-gradient(100% 50% at left, #0005 98%, #0000 101%) 100% var(--_g),
-    conic-gradient(from 90deg at var(--r) calc(100% - 2 * var(--r)),
-      #0000 25%,
-      #4d7c89 0) 0 0 / calc(100% - var(--r)) 100%;
-}
-
-.card-forgot-password .icon-back .fa-arrow-left {
-  cursor: pointer;
-}
-
-.card-forgot-password .text-noted-forgot-pw {
-  font-size: 17px;
-  text-align: center;
-  color: var(--main-text) !important;
-  font-weight: normal !important;
-}
-
-.card-forgot-password .input-fg {
-  padding-left: 30px;
-}
-
-.card-forgot-password .fa-envelope {
-  color: var(--sub-title);
-  padding-top: 10px;
-  padding-left: 10px;
-}
-
-.centered {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.card-forgot-password .email-icon-forgot {
-  padding-left: 0px;
-}
-
-.card-forgot-password .input-fg {
-  padding-left: 30px;
-  box-shadow: 0px 0px 0px 1px var(--gray-color);
-  color: var(--main-text);
-  font-weight: 500;
-}
-
-.card-forgot-password .form-control:focus {
-  color: var(--main-text);
-  background-color: var(--bg-grandient);
-  outline: 0;
-  box-shadow: 0 0 0px 3px var(--main-color);
-}
-
-.glow-on-hover {
-  width: 100px;
-  height: 40px;
-  border: none;
-  outline: none;
-  color: #fff;
-  background: #111;
-  cursor: pointer;
+.forgot-pass-form {
+  width: 500px;
   position: relative;
-  z-index: 0;
-  border-radius: 10px;
-  margin-top: 20px;
+  height: auto;
+  border-radius: 30px;
+  background-color: #fff;
+  overflow: hidden;
+  padding: 20px 30px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-.glow-on-hover:before {
-  content: "";
-  background: linear-gradient(45deg,
-      #ff0000,
-      #ff7300,
-      #fffb00,
-      #48ff00,
-      #00ffd5,
-      #002bff,
-      #7a00ff,
-      #ff00c8,
-      #ff0000);
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  background-size: 400%;
-  z-index: -1;
-  filter: blur(5px);
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  animation: glowing 20s linear infinite;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  border-radius: 10px;
+.icon-block-form {
+  width: 70px;
+  height: 70px;
+  border-radius: 70px;
+  border: 1px solid var(--ddd-color);
 }
 
-.glow-on-hover:active:after {
-  background: transparent;
-}
-
-.glow-on-hover:hover:before {
-  opacity: 1;
-}
-
-.glow-on-hover:after {
-  z-index: -1;
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: var(--bg-grandient);
-  left: 0;
-  top: 0;
-  border-radius: 10px;
-  color: black;
-}
-
-@keyframes glowing {
-  0% {
-    background-position: 0 0;
-  }
-
-  50% {
-    background-position: 400% 0;
-  }
-
-  100% {
-    background-position: 0 0;
-  }
-}
-
-.card-forgot-password .btn-forgot:hover {
-  background: var(--link-text) !important;
-}
-
-.card-forgot-password .back-to {
-  color: var(--sub-title);
-  font-size: 20px;
-}
-
-.card-forgot-password .back-to a {
-  color: var(--link-text);
-}
-
-.card-forgot-password .back-to a:hover {
-  background-image: linear-gradient(90deg, #488495, #3c4d78);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  font-weight: bold;
-  transition: 0.6s;
-}
-
-@property --bg-angle {
-  inherits: false;
-  initial-value: 0deg;
-  syntax: "<angle>";
-}
-
-@keyframes spin {
-  to {
-    --bg-angle: 360deg;
-  }
-}
-
-@media (min-width: 430px) and (max-width: 932px) {
-  .card-forgot-password .icon-back {
-    width: 25px;
-    height: 25px;
-    padding: 10px;
-  }
-
-  .card-forgot-password .back-to {
-    font-size: 18px;
-  }
-}
-
-@media (min-width: 360px) and (max-width: 740px) {
-  .card-forgot-password .icon-back {
-    width: 25px;
-    height: 25px;
-    padding: 10px;
-  }
-
-  .card-forgot-password .back-to {
-    font-size: 18px;
-  }
-}
-
-/* ========= Register ============== */
-.register {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.register .d-flex {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.register .d-flex .card-register {
-  background-color: transparent;
-  box-shadow: 0px 0px 2px 1px var(--gray-color);
-  padding: 20px;
-}
-
-.register .d-flex .card-register .content-register h1 {
-  background-image: linear-gradient(90deg, #488495, #3c4d78);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  font-family: "Kantumruy Pro", sans-serif;
-  font-weight: 500;
-  font-size: 40px;
-  text-align: center;
-}
-
-.register .d-flex .card-register form {
-  margin-top: 30px;
-}
-
-.register .d-flex .card-register .name-register,
-.register .d-flex .card-register .email-register,
-.register .d-flex .card-register .label-password-register,
-.register .d-flex .card-register .label-comfirm-register {
+.icon-block-form i {
+  font-size: 30px;
   color: var(--gray-color);
 }
 
-.register .d-flex .card-register input {
-  padding-left: 25px !important;
-}
-
-.register .d-flex .card-register .group-dob-gender,
-.register .d-flex .card-register .email-register,
-.register .d-flex .card-register .password-register,
-.register .d-flex .card-register .comfirm-pw-register,
-.register .d-flex .card-register .check-info {
-  margin-top: 10px;
-}
-
-.register .d-flex .card-register .form-select {
-  font-family: "Kantumruy Pro", sans-serif;
-  color: var(--gray-color);
-}
-
-.register .d-flex .card-register .gender {
-  font-family: "Kantumruy Pro", sans-serif;
-  color: var(--gray-color);
-}
-
-.register .d-flex .card-register .font-family-gender {
-  color: var(--main-text);
-  font-family: "Kantumruy Pro", sans-serif;
-}
-
-.register .card-register .check-info {
-  display: flex;
-  flex-direction: column;
-}
-
-.register .card-register .check-info .input-check-info,
-.register .card-register .check-info .input-info {
-  display: flex;
-  justify-content: start;
-}
-
-.register .d-flex .card-register .check-info .label-checkInfo {
-  color: var(--main-text);
-  font-family: "Kantumruy Pro", sans-serif;
-  font-size: 18px;
-  padding-left: 10px;
-}
-
-.register .d-flex .card-register .check-info .form-check-info {
-  width: 16px;
-  height: 16px;
-  margin-top: 8px;
-}
-
-.card-register .password-register .icon-input-pw {
-  position: absolute;
-  left: 45%;
-  bottom: 27%;
-}
-
-.card-register .btn-register,
-.card-register .btn-login {
-  font-size: 20px;
-  border-radius: 10px;
+.btn-back {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  text-decoration: none;
   border: none;
-  padding: 7px 18px;
   background: var(--bg-grandient);
-  color: var(--main-color);
-  transition: 0.8s;
-}
-
-.register .card-register .btn-register:hover,
-.register .card-register .btn-login:hover {
-  background: var(--bg-grandient) !important;
-  color: var(--main-color);
-  opacity: 1 !important;
-  transition: 0.6s;
-}
-
-.create-account .text-center {
-  font-size: 20px;
-  color: var(--main-text);
-}
-
-.card-register .icon-back {
-  color: var(--main-color);
-  background: var(--bg-grandient);
-  padding: 10px;
-  border-radius: 100%;
-  width: 30px;
-  height: 30px;
-  cursor: pointer !important;
+  color: #fff;
   position: absolute;
-  z-index: 2;
-  top: 10px;
-  left: 10px;
+  top: 20px;
+  left: 20px;
 }
+
+.btn-back i {
+  font-size: 20px;
+  color: #fff;
+}
+
+.pin-code {
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.pin-code .pin-input {
+  border: none;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  font-size: 36px;
+  background-color: #f3f3f3;
+  margin-right: 5px;
+  border-radius: 10px;
+}
+
+.pin-code .pin-input:focus {
+  border: 1px solid var(--link-text);
+  border-radius: 10px;
+  outline: none;
+}
+
+.pin-input::-webkit-outer-spin-button,
+.pin-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  width: 0;
+  margin: 0;
+}
+
+/* ! end of forgot password */
 
 .book-herobanner .swiper-slide img {
   width: 100%;
@@ -5448,7 +5238,7 @@ nav {
 }
 
 .popular-book .nav-pills .nav-link.active,
-.nav-pills .show>.nav-link {
+.nav-pills .show > .nav-link {
   color: #fff !important;
   background: var(--bg-grandient) !important;
   border: 1px solid var(--ddd-color);
@@ -5737,11 +5527,15 @@ nav {
   padding: 0 0.5em calc(2 * var(--r));
   border-radius: var(--r);
   --_g: 100% / var(--r) calc(2 * var(--r)) no-repeat;
-  background: radial-gradient(100% 50% at right, #0005 98%, #0000 101%) 0 var(--_g),
+  background: radial-gradient(100% 50% at right, #0005 98%, #0000 101%) 0
+      var(--_g),
     radial-gradient(100% 50% at left, #0005 98%, #0000 101%) 100% var(--_g),
-    conic-gradient(from 90deg at var(--r) calc(100% - 2 * var(--r)),
-      #0000 25%,
-      #5a8bc2 0) 0 0 / calc(100% - var(--r)) 100%;
+    conic-gradient(
+        from 90deg at var(--r) calc(100% - 2 * var(--r)),
+        #0000 25%,
+        #5a8bc2 0
+      )
+      0 0 / calc(100% - var(--r)) 100%;
 }
 
 .card-pin-pw .text-send-email {
@@ -5875,7 +5669,6 @@ nav {
 .exer-control .exer-list .erxer-item .list-vdo-detail {
   padding-left: 10px;
   width: 85%;
-
 }
 
 .exer-control .exer-list .erxer-item h6 {
@@ -5919,8 +5712,10 @@ nav {
 
 .exer-vdo-watching .plyr__poster {
   background-color: #000;
-  background-color: var(--plyr-video-background,
-      var(--plyr-video-background, #000));
+  background-color: var(
+    --plyr-video-background,
+    var(--plyr-video-background, #000)
+  );
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover !important;
@@ -5942,7 +5737,7 @@ nav {
   overflow: hidden;
   /* padding: 20px !important; */
   box-shadow: var(--main-shadow);
-  background: linear-gradient(50deg, #F2994A 0%, #F2C94C 100%);
+  background: linear-gradient(50deg, #f2994a 0%, #f2c94c 100%);
 }
 
 .card-exer-course .exer-coures-info {
@@ -5976,6 +5771,5 @@ nav {
   width: 70%;
   object-fit: contain;
 }
-
 
 /* ! end of exercise */
