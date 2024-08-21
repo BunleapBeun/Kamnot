@@ -1593,6 +1593,7 @@ nav {
 .history-box .date-history .list-group .list-group-item {
   border: none;
   background-color: var(--main-color);
+  cursor: pointer;
 }
 
 .history-box .date-history .list-group .list-group-item .item-date {
@@ -1861,6 +1862,11 @@ nav {
   #fileimage-input::file-selector-button:hover {
   background: #0d45a5;
 }
+.photo-book .modal .modal-body form .datepicker input[type="date"]{
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  padding: 0.375rem 0.75rem;
+}
 
 .photo-book .modal .modal-footer .btn {
   color: var(--stick-color) !important;
@@ -2074,6 +2080,13 @@ nav {
 .organize-work .tab-content .tab-pane .card:hover .work-logo img {
   transform: scale(1.2);
 }
+.overview .modal .modal-body .nav-pills .nav-item .nav-link{
+  background-color: transparent;
+  color: var(--main-title);
+}
+.overview .modal .modal-body .nav-pills .nav-item .nav-link.active{
+  font-weight: 500;
+}
 .overview .overview-content-body .card {
   width: 80%;
   border-radius: 15px;
@@ -2092,7 +2105,6 @@ nav {
   background-color: #ecf3fd;
   border: 1px solid black;
   border-radius: 20px;
-  cursor: pointer;
 }
 .overview .display .right-display .prev,
 .next {
@@ -2113,6 +2125,9 @@ nav {
 
 .overview .organize-work .btn-work span i {
   color: var(--main-title);
+}
+.overview .organize-work .btn-work{
+  cursor: auto;
 }
 .overview .organize-work {
   width: 100%;
@@ -2201,7 +2216,43 @@ nav {
   color: #3c4d78;
   font-weight: 500;
 }
-/* end of todo-list page */
+/* ! end of todo-list page */
+
+/* start of money spending page */
+.money-report .card-report{
+  width: 90%;
+  height: 180px;
+  box-shadow: var(--main-shadow);
+  border-radius: 15px;
+  background-color: white;
+  cursor: pointer;
+  padding: 20px;
+}
+.money-report .card-report .saving-up{
+  padding: 1px 10px;
+  border-radius: 20px;
+  background-color: #DBFFE6;
+  border: 1px solid black;
+  box-shadow: inset 0px 4px 4px 0px rgba(0,0,0,0.25);
+}
+.money-report .card-report .report-info .progress .progress-bar{
+  border-radius: 20px;
+}
+.spending-categories .spending-cate-title{
+  width: 150px; 
+  padding: 5px 0;
+  border-radius: 20px;
+  background-color: #dfebfd;
+}
+.spending-categories .display-categories .card-icon{
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+}
+.spending-categories .display-categories .card-icon:nth-last-child(1){
+  cursor: pointer;
+}
+/* end of money spending page */
 
 /*start of therapist page*/
 .therapist-banner {
@@ -3093,7 +3144,12 @@ nav {
   border: 1px solid var(--ddd-color);
   border-top: 0;
 }
+.journal-nav .bar-btm-journal-reshow{
+  height: 70px !important;
+  padding: 10px;
+}
 
+.bar-btm-journal-reshow
 .journaling-reshow .bar-journal-reshow h3 {
   font-size: 25px;
   color: #fff;
@@ -3223,7 +3279,7 @@ nav {
   border: 1px solid var(--ddd-color);
 }
 
-.todo-reshow .reshow-todo-content .list-todo .todo-item span {
+.todo-reshow .reshow-todo-content .list-todo .todo-item span, .form-check-label {
   font-size: 18px;
   color: var(--main-text);
   font-weight: 500;
@@ -3232,8 +3288,23 @@ nav {
   -webkit-line-clamp: 1;
   line-clamp: 1;
   overflow: hidden;
+  cursor: pointer;
 }
+.todo-reshow .reshow-todo-content .list-todo .todo-item .form-check-input{
+  border-radius: 50%;
+  outline-color: var(--gray-color);
+  width: 20px;
+  height: 20px;
 
+}
+.todo-reshow .reshow-todo-content .list-todo .todo-item .form-check-input:focus{
+  box-shadow: none;
+  border: none;
+}
+.todo-reshow .reshow-todo-content .list-todo .todo-item .form-check-input:checked{
+  background-color: rgb(25, 135, 84);
+  outline: none;
+}
 .todo-reshow .reshow-todo-content .list-todo .todo-item .todotext-checked {
   color: var(--gray-color);
 }
