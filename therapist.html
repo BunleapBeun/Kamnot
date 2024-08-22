@@ -473,7 +473,7 @@
                     <div class="therapist-banner-title w-100 p-5">
                       <h2>លើកកម្ពស់ការយល់ដឹងពីផ្លូវចិត្តរបស់អ្នកតាមរយៈអ្នកជំនាញផ្លូវចិត្តរបស់ <br> <mark
                           class="mt-5">Kamnot - កំណត់</mark></h2>
-                      <p class="fs-6 fs-lg-5 pt-1 pt-lg-5">ពិភាក្សា និងដោះដូរ
+                      <p class="fs-4 fs-lg-5 pt-1 pt-lg-5">ពិភាក្សា និងដោះដូរ
                         និងទទួលបានយោបល់ល្អៗទាក់ទងនឹងបញ្ហាដែលអ្នកកំពុងជួបប្រទះ</p>
                     </div>
                   </div>
@@ -509,7 +509,7 @@
                 <div class="row pt-5 g-5">
                   <div class="col-sm-12 col-md-6 col-lg-4 position-relative">
                     <div class="card">
-                      <div class="card-img">
+                      <div class="card-img" data-bs-toggle="modal" data-bs-target="#therapistDesModal">
                         <img src="assets/img/therapist-page/therapist-1.jpg" class="card-img-top" alt="therapist-pic">
 
                       </div>
@@ -517,7 +517,7 @@
                       <div class="card-wrapper rounded-3 bg-white">
                         <div class="card-body">
                           <div class="card-title mb-0 d-flex justify-content-between">
-                            <h5 class="fs-4 landing-title-color mb-0">Dr.Astiya</h5>
+                            <h5 class="fs-4 landing-title-color mb-0" data-bs-toggle="modal" data-bs-target="#therapistDesModal">Dr.Astiya</h5>
                             <div
                               class="experience d-flex px-4 justify-content-center align-items-center bg-primary-subtle">
                               <p class="mb-0 fw-bold landing-title-color">5 ឆ្នាំ</p>
@@ -759,12 +759,14 @@
                       </div>
                     </div>
                   </div>
-                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                  
+                  <!-- modal therapist cotact -->
+                  <div class="modal fade" id="therapistDesModal" tabindex="-1" aria-labelledby="therapistDesModal"
                     aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-lg">
                       <div class="modal-content">
                         <div class="modal-header">
-                          <h1 class="modal-title fs-3 landing-title-color" id="therapist">Dr.Astiya</h1>
+                          <h1 class="modal-title fs-3 landing-title-color" id="therapistDesModalLabel">Dr.Astiya</h1>
                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
@@ -777,7 +779,7 @@
                             <div class="col-8">
                               <div class="therapist-modal-content">
                                 <h2>អំពី Dr.Astiya</h2>
-                                <p>វេជ្ជបណ្ឌិត Astiya គឺជា
+                                <p class="fs-5">វេជ្ជបណ្ឌិត Astiya គឺជា
                                   និងអ្នកព្យាបាលទំនាក់ទំនងដែលមានការតាំងចិត្តដល់ការជួយដៃគូក្នុងការស្វែងរកបញ្ហាប្រឈម
                                   និងពង្រឹងចំណងរបស់ពួកគេ។ ជាមួយនឹងការយល់ដឹងយ៉ាងស៊ីជម្រៅអំពីភាពស្មុគស្មាញនៃទំនាក់ទំនង
                                   វេជ្ជបណ្ឌិត Astiya ប្រើបច្ចេកទេសផ្អែកលើភស្តុតាង ដើម្បីជំរុញទំនាក់ទំនង ដោះស្រាយជម្លោះ
@@ -785,26 +787,44 @@
                                   ឬជួយពួកគេកសាងមូលដ្ឋានគ្រឹះដ៏រឹងមាំនោះទេ វិធីសាស្រ្តរបស់វេជ្ជបណ្ឌិត Astiya
                                   គឺមានការយល់ចិត្ត និងផ្តោតលើដំណោះស្រាយ
                                   ដែលបង្កើតផលប៉ះពាល់យូរអង្វែងដល់ជីវិតរបស់អ្នកដែលនាងទូន្មាន។</p>
-                                <div class="therapist-form">
-                                  <div class="mb-3">
-                                    <label for="customerName" class="form-label">ឈ្មោះរបស់អ្នក</label>
-                                    <input class="form-control" id="customerName" type="text" placeholder="Astiya"
-                                      aria-label="">
-                                  </div>
-                                  <div class="mb-3">
-                                    <label for="customerEmail" class="form-label">អ៊ីម៉ែលរបស់អ្នក</label>
-                                    <input class="form-control" id="customerEmail" type="email"
-                                      placeholder="@astiya.com" aria-label="">
-                                  </div>
-                                </div>
+                                
 
                               </div>
                             </div>
                           </div>
                         </div>
                         <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">បិទ</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- modal therapist description -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">ទំនាក់ទំនង</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="therapist-form">
+                            <div class="mb-3">
+                              <label for="customerName" class="form-label">ឈ្មោះរបស់អ្នក</label>
+                              <input class="form-control" id="customerName" type="text" placeholder="Astiya"
+                                aria-label="">
+                            </div>
+                            <div class="mb-3">
+                              <label for="customerEmail" class="form-label">អ៊ីម៉ែលរបស់អ្នក</label>
+                              <input class="form-control" id="customerEmail" type="email"
+                                placeholder="@astiya.com" aria-label="">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
                           <button type="submit" class="btn btn-therapist">ដាក់បញ្ចូន</button>
                         </div>
+                        
                       </div>
                     </div>
                   </div>
