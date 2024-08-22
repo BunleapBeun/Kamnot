@@ -331,12 +331,7 @@ nav {
 }
 
 .profile .pf-drowpdown .pf-list .pf-item:hover .pf-link,
-.profile
-  .pf-drowpdown
-  .pf-list
-  .pf-item:hover
-  .leave-icon
-  .fa-right-from-bracket {
+.profile .pf-drowpdown .pf-list .pf-item:hover .leave-icon .fa-right-from-bracket {
   color: #fff;
 }
 
@@ -679,24 +674,11 @@ nav {
   padding: 0;
 }
 
-.side-menu
-  .menu
-  .menu-item
-  .nav-menu
-  .menu-content
-  .content-list
-  .content-item {
+.side-menu .menu .menu-item .nav-menu .menu-content .content-list .content-item {
   border-top: 1px solid var(--ddd-color);
 }
 
-.side-menu
-  .menu
-  .menu-item
-  .nav-menu
-  .menu-content
-  .content-list
-  .content-item
-  .content-link {
+.side-menu .menu .menu-item .nav-menu .menu-content .content-list .content-item .content-link {
   display: block;
   padding: 10px;
   text-decoration: none;
@@ -704,14 +686,7 @@ nav {
   font-size: 18px;
 }
 
-.side-menu
-  .menu
-  .menu-item
-  .nav-menu
-  .menu-content
-  .content-list
-  .content-item
-  .content-link:hover {
+.side-menu .menu .menu-item .nav-menu .menu-content .content-list .content-item .content-link:hover {
   background-color: var(--link-text);
   color: #fff;
 }
@@ -987,7 +962,7 @@ nav {
   line-height: 50px;
 }
 
-.landing-herobanner .landing-title > .btn-login {
+.landing-herobanner .landing-title>.btn-login {
   background-color: #47b8cf;
   border-radius: 30px;
   border: 1px solid black;
@@ -995,7 +970,7 @@ nav {
   transition: ease-in-out 0.3s;
 }
 
-.landing-herobanner .landing-title > .btn-login .nav-link {
+.landing-herobanner .landing-title>.btn-login .nav-link {
   background-color: #d4e0ff;
   border-radius: 30px;
   border: 1px solid black;
@@ -1003,14 +978,14 @@ nav {
   transition: ease-in-out 0.8s;
 }
 
-.landing-herobanner .landing-title > .btn-login:hover {
+.landing-herobanner .landing-title>.btn-login:hover {
   background-color: transparent;
   padding: 0px;
   border: none;
   margin-top: 10px;
 }
 
-.landing-herobanner .landing-title > .btn-login:hover .nav-link {
+.landing-herobanner .landing-title>.btn-login:hover .nav-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1178,14 +1153,7 @@ nav {
   -webkit-text-fill-color: transparent;
 }
 
-.testimonail
-  .swiper
-  .swiper-wrapper
-  .swiper-slide
-  .card
-  .card-body
-  .card-text
-  .no-color {
+.testimonail .swiper .swiper-wrapper .swiper-slide .card .card-body .card-text .no-color {
   background: transparent !important;
   -webkit-text-fill-color: white;
 }
@@ -1419,11 +1387,7 @@ nav {
   background-color: #ddd;
 }
 
-.journal-book
-  .calender
-  .calender-view
-  .btn-calendar:hover
-  .landing-title-color {
+.journal-book .calender .calender-view .btn-calendar:hover .landing-title-color {
   color: white !important;
 }
 
@@ -1766,11 +1730,7 @@ nav {
   transition: background 0.2s ease-in-out;
 }
 
-.photo-book
-  .modal
-  .modal-body
-  .form
-  #fileimage-input::file-selector-button:hover {
+.photo-book .modal .modal-body .form #fileimage-input::file-selector-button:hover {
   background: #0d45a5;
 }
 
@@ -1910,13 +1870,7 @@ nav {
   border-radius: 20px;
 }
 
-.us-categories
-  .aboutus-nav
-  .scrollspy-aboutus
-  .about-komnot
-  .vision-info
-  .limit-line
-  p {
+.us-categories .aboutus-nav .scrollspy-aboutus .about-komnot .vision-info .limit-line p {
   color: var(--main-text);
 }
 
@@ -2080,14 +2034,7 @@ nav {
   transform: rotate(90deg);
 }
 
-.overview
-  .organize-work
-  .collapsed
-  .card
-  .overview
-  .organize-work
-  .collapsed
-  .card {
+.overview .organize-work .collapsed .card .overview .organize-work .collapsed .card {
   background-color: transparent !important;
 }
 
@@ -2365,12 +2312,7 @@ nav {
   padding: 100px 0 !important;
 }
 
-.therapist-questions
-  .carousel-inner
-  .carousel-item
-  .question-form
-  .form-check
-  .form-check-input {
+.therapist-questions .carousel-inner .carousel-item .question-form .form-check .form-check-input {
   width: 30px;
   height: 30px;
   border-radius: 10px;
@@ -2590,10 +2532,10 @@ nav {
   color: #fff;
 }
 
-#showDropHabit:checked ~ .drop-menu,
-#showDropMentalhealth:checked ~ .drop-menu,
-#showDropEdu:checked ~ .drop-menu,
-#showDropMoreInfo:checked ~ .drop-menu {
+#showDropHabit:checked~.drop-menu,
+#showDropMentalhealth:checked~.drop-menu,
+#showDropEdu:checked~.drop-menu,
+#showDropMoreInfo:checked~.drop-menu {
   max-height: 100%;
   display: block;
 }
@@ -2646,12 +2588,7 @@ nav {
     font-size: 18px !important;
   }
 
-  .therapist-questions
-    .carousel-inner
-    .carousel-item
-    .question-form
-    .form-check
-    .form-check-input {
+  .therapist-questions .carousel-inner .carousel-item .question-form .form-check .form-check-input {
     width: 20px !important;
     height: 20px !important;
   }
@@ -3028,14 +2965,7 @@ nav {
   -webkit-text-fill-color: transparent;
 }
 
-.testimonail
-  .swiper
-  .swiper-wrapper
-  .swiper-slide
-  .card
-  .card-body
-  .card-text
-  .no-color {
+.testimonail .swiper .swiper-wrapper .swiper-slide .card .card-body .card-text .no-color {
   background: transparent !important;
   -webkit-text-fill-color: white;
 }
@@ -3267,20 +3197,12 @@ nav {
   height: 20px;
 }
 
-.todo-reshow
-  .reshow-todo-content
-  .list-todo
-  .todo-item
-  .form-check-input:focus {
+.todo-reshow .reshow-todo-content .list-todo .todo-item .form-check-input:focus {
   box-shadow: none;
   border-color: var(--gray-color);
 }
 
-.todo-reshow
-  .reshow-todo-content
-  .list-todo
-  .todo-item
-  .form-check-input:checked {
+.todo-reshow .reshow-todo-content .list-todo .todo-item .form-check-input:checked {
   background-color: rgb(25, 135, 84);
 }
 
@@ -3745,12 +3667,10 @@ nav {
   left: 0;
   z-index: 199;
   background: rgb(0, 0, 0);
-  background: linear-gradient(
-    360deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(0, 0, 0, 1) 20%,
-    rgba(0, 0, 0, 0) 100%
-  );
+  background: linear-gradient(360deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 1) 20%,
+      rgba(0, 0, 0, 0) 100%);
   width: 100%;
   height: 100%;
   padding: 150px 10px 0 10px;
@@ -3946,7 +3866,85 @@ nav {
 
 /* ! begin of mood tracking */
 
-.mood-tracking
+.mood-tracking .bar-month {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.body-day {
+  padding: 10px;
+}
+
+.happy {
+  background-color: blue;
+  color: #fff !important;
+}
+
+.sad {
+  background-color: red;
+  color: #fff !important;
+}
+
+.angary {
+  background-color: orange;
+  color: #fff !important;
+}
+
+.fear {
+  background-color: purple;
+  color: #fff !important;
+}
+
+.surprise {
+  background-color: green;
+  color: #fff !important;
+}
+
+.mood-tracking .bar-month h2 {
+  font-size: 35px;
+  font-weight: 500;
+  margin: 0;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.mood-tracking table {
+  width: 100%;
+  background-color: var(--card-color);
+  border-radius: 10px;
+}
+
+.mood-tracking table caption {
+  padding: 0;
+}
+
+.mood-tracking table thead tr {
+  text-align: center;
+}
+
+.mood-tracking table thead tr .head-calendar {
+  background: var(--link-text);
+  color: #fff;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.mood-tracking table tbody tr {
+  text-align: center;
+} 
+
+.mood-tracking table tbody tr .btn-calendar {
+  text-decoration: none;
+  color: var(--main-text);
+  font-size: 18px;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  border: 1px solid var(--ddd-color);
+  align-content: center;
+}
+
+
 
 /* ! end of mood tracking */
 
@@ -3983,11 +3981,11 @@ nav {
   object-fit: cover;
 }
 
-.discount-book  .book-cover {
+.discount-book .book-cover {
   position: relative;
 }
 
-.discount-book  .book-cover .dis-status {
+.discount-book .book-cover .dis-status {
   width: 30px;
   height: 30px;
   border-radius: 30px;
@@ -3997,7 +3995,7 @@ nav {
   right: 0;
 }
 
-.discount-book  .book-cover .dis-status p {
+.discount-book .book-cover .dis-status p {
   font-size: 12px;
   margin: 0;
   color: #fff;
@@ -4512,7 +4510,7 @@ nav {
 }
 
 .popular-book .nav-pills .nav-link.active,
-.nav-pills .show > .nav-link {
+.nav-pills .show>.nav-link {
   color: #fff !important;
   background: var(--bg-grandient) !important;
   border: 1px solid var(--ddd-color);
@@ -4801,15 +4799,11 @@ nav {
   padding: 0 0.5em calc(2 * var(--r));
   border-radius: var(--r);
   --_g: 100% / var(--r) calc(2 * var(--r)) no-repeat;
-  background: radial-gradient(100% 50% at right, #0005 98%, #0000 101%) 0
-      var(--_g),
+  background: radial-gradient(100% 50% at right, #0005 98%, #0000 101%) 0 var(--_g),
     radial-gradient(100% 50% at left, #0005 98%, #0000 101%) 100% var(--_g),
-    conic-gradient(
-        from 90deg at var(--r) calc(100% - 2 * var(--r)),
-        #0000 25%,
-        #5a8bc2 0
-      )
-      0 0 / calc(100% - var(--r)) 100%;
+    conic-gradient(from 90deg at var(--r) calc(100% - 2 * var(--r)),
+      #0000 25%,
+      #5a8bc2 0) 0 0 / calc(100% - var(--r)) 100%;
 }
 
 .card-pin-pw .text-send-email {
@@ -4986,10 +4980,8 @@ nav {
 
 .exer-vdo-watching .plyr__poster {
   background-color: #000;
-  background-color: var(
-    --plyr-video-background,
-    var(--plyr-video-background, #000)
-  );
+  background-color: var(--plyr-video-background,
+      var(--plyr-video-background, #000));
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover !important;
@@ -5046,6 +5038,7 @@ nav {
 .card-exer-course:hover .exer-course-image img {
   transform: scale(1.1);
 }
+
 .card-exer-course:hover {
   box-shadow: var(--main-shadow);
 }

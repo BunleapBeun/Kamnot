@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.css" />
     <link rel="stylesheet" href="assets/plugins/aos/css/aos.css" />
-    <link rel="stylesheet" href="assets/plugins/plyr/css/plyr.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
   </head>
 
   <body>
@@ -30,8 +30,9 @@
               <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
                 <a class="navbar-brand" href="index.html"><img src="assets/img/navbar/Kn-logo.png" alt="" /></a>
               </h5>
-              <button type="button" class="x-close all-center" data-bs-dismiss="offcanvas" aria-label="Close"><i
-                  class="fa-solid fa-xmark"></i></button>
+              <button type="button" class="x-close all-center" data-bs-dismiss="offcanvas" aria-label="Close">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
             </div>
             <div class="offcanvas-body">
               <div class="canvas-header d-flex justify-content-between">
@@ -51,8 +52,7 @@
               <!-- ! begin navbar offcanvas -->
               <ul class="nav-convas">
                 <li class="convas-item">
-                  <a class="convas-link convas-bar-bg" href="index.html"><i class="fa fa-house"></i>
-                    ទំព័រដើម</a>
+                  <a class="convas-link convas-bar-bg" href="index.html"><i class="fa fa-house"></i> ទំព័រដើម</a>
                 </li>
                 <li class="convas-item">
                   <input type="checkbox" id="showDropHabit" />
@@ -467,20 +467,123 @@
           <!-- ! end of side bar -->
           <!-- ! begin of main content -->
           <div class="col-lg-11 col-12">
-            <div class="pt-112 px-4 px-md-0">
-              <h1>Mood tracking</h1>
-              <h1>Mood tracking</h1>
-              <h1>Mood tracking</h1>
-              <h1>Mood tracking</h1>
-              <h1>Mood tracking</h1>
-              <h1>Mood tracking</h1>
-              <h1>Mood tracking</h1>
-              <h1>Mood tracking</h1>
-              <h1>Mood tracking</h1>
-              <h1>Mood tracking</h1>
-              <h1>Mood tracking</h1>
-              <h1>Mood tracking</h1>
-            </div>
+            <section class="mood-tracking">
+              <div class="pt-112 px-4 px-md-0">
+                <h3 class="section-title">តើថ្ងៃនេះអ្នកមានអារម្មណ៍បែបណាដែរ?</h3>
+                <div class="bar-month">
+                  <h2 class="main-text">មករា ២០២៤</h2>
+                </div>
+                <table align="center" cellspacing="21" cellpadding="21">
+                  <caption align="top"></caption>
+                  <thead>
+                    <tr>
+                      <th class="head-calendar">អាទិត្យ</th>
+                      <th class="head-calendar">ចន្ទ</th>
+                      <th class="head-calendar">អង្គា</th>
+                      <th class="head-calendar">ពុធ</th>
+                      <th class="head-calendar">ព្រ.ហ</th>
+                      <th class="head-calendar">សុក្រ</th>
+                      <th class="head-calendar">សៅរ៍</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="body-day"></td>
+                      <td class="body-day"></td>
+                      <td class="body-day"></td>
+                      <td class="body-day"></td>
+                      <td class="body-day"></td>
+                      <td class="body-day"><a class="btn-calendar happy" type="button">1</a></td>
+                      <td class="body-day"><a class="btn-calendar sad" type="button">2</a></td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                      <td class="body-day"><a class="btn-calendar fear" type="button">3</a></td>
+                      <td class="body-day"><a class="btn-calendar surprise" type="button">4</a></td>
+                      <td class="body-day"><a class="btn-calendar angary" type="button">5</a></td>
+                      <td class="body-day"><a class="btn-calendar happy" type="button">6</a></td>
+                      <td class="body-day"><a class="btn-calendar surprise" type="button">7</a></td>
+                      <td class="body-day"><a class="btn-calendar surprise" type="button">8</a></td>
+                      <td class="body-day"><a class="btn-calendar angary" type="button">9</a></td>
+                    </tr>
+                    <tr>
+                      <td class="body-day"><a class="btn-calendar" type="button" data-bs-toggle="modal" data-bs-target="#mood-input">10</a>
+                      </td>
+                      <!-- Modal -->
+                      <div class="modal fade" id="mood-input" tabindex="-1" aria-labelledby="mood-inputLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="mood-inputLabel">Modal title</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              ...
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <td class="body-day"><a class="btn-calendar" type="button">11</a></td>
+                      <td class="body-day"><a class="btn-calendar" type="button">12</a></td>
+                      <td class="body-day"><a class="btn-calendar" type="button">13</a></td>
+                      <td class="body-day"><a class="btn-calendar" type="button">14</a></td>
+                      <td class="body-day"><a class="btn-calendar" type="button">15</a></td>
+                      <td class="body-day"><a class="btn-calendar" type="button">16</a></td>
+                    </tr>
+                    <tr>
+                      <td class="body-day"><a class="btn-calendar" type="button">17</a></td>
+                      <td class="body-day"><a class="btn-calendar" type="button">18</a></td>
+                      <td class="body-day"><a class="btn-calendar" type="button">19</a></td>
+                      <td class="body-day"><a class="btn-calendar" type="button">20</a></td>
+                      <td class="body-day"><a class="btn-calendar" type="button">21</a></td>
+                      <td class="body-day"><a class="btn-calendar" type="button">22</a></td>
+                      <td class="body-day"><a class="btn-calendar" type="button">23</a></td>
+                    </tr>
+                    <tr>
+                      <td class="body-day"><a class="btn-calendar" type="button">24</a></td>
+                      <td class="body-day"><a class="btn-calendar" type="button">25</a></td>
+                      <td class="body-day"><a class="btn-calendar" type="button">26</a></td>
+                      <td class="body-day"><a class="btn-calendar" type="button">27</a></td>
+                      <td class="body-day"><a class="btn-calendar" type="button">28</a></td>
+                      <td class="body-day"><a class="btn-calendar" type="button">29</a></td>
+                      <td class="body-day"><a class="btn-calendar" type="button">30</a></td>
+                    </tr>
+                    <tr>
+                      <td class="body-day"><a class="btn-calendar" type="button">31</a></td>
+                      <td class="body-day"><a class="btn-calendar" type="button">1</a></td>
+                      <td class="body-day"><a class="btn-calendar" type="button">2</a></td>
+                      <td class="body-day"><a class="btn-calendar" type="button">3</a></td>
+                      <td class="body-day"><a class="btn-calendar" type="button">4</a></td>
+                      <td class="body-day"><a class="btn-calendar" type="button">5</a></td>
+                      <td class="body-day"><a class="btn-calendar" type="button">6</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+
+              </div>
+            </section>
+            <section class="mood-statistic mt-4">
+              <div class="row">
+                <div class="col-6">
+                  <h3 class="main-text m-0">ស្ថានភាពអារម្មណ៍ប្រចាំសប្ដាហ៍</h3>
+                  <div class="card mt-2">
+                    <canvas id="pieGraph" style="width:100%;max-width:600px"></canvas>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <h3 class="main-text m-0">ស្ថានភាពអារម្មណ៍ប្រចាំឆ្នាំ</h3>
+                  <div class="card mt-2">
+                    <canvas id="lineGraph" style="width:100%;max-width:600px"></canvas>
+                  </div>
+                </div>
+              </div>
+            </section>
           </div>
           <!-- ! end of main content -->
         </div>
@@ -643,10 +746,8 @@
     <script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/plugins/aos/js/aos.js"></script>
     <script src="assets/js/dark-mode.js"></script>
-    <script src="assets/plugins/plyr/js/plyr.js"></script>
-    <script>
-      const player = new Plyr('#player');
-    </script>
+    <script src="assets/js/line-graph.js"></script>
+    <script src="assets/js/pie-graph.js"></script>
   </body>
 
 </html>
