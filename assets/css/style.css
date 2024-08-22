@@ -3983,6 +3983,27 @@ nav {
   object-fit: cover;
 }
 
+.discount-book  .book-cover {
+  position: relative;
+}
+
+.discount-book  .book-cover .dis-status {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.discount-book  .book-cover .dis-status p {
+  font-size: 12px;
+  margin: 0;
+  color: #fff;
+  font-weight: 1000;
+}
+
 /* ! begin of login */
 
 .control-form {
