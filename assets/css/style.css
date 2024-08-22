@@ -5333,3 +5333,271 @@ nav {
   padding: 8px 15px;
   color: white !important;
 }
+/* ===== pricing ==================== */
+
+.content-pricing {
+  height: 300px;
+  background:var(--bg-grandient);
+  border-radius: 8px;
+  position: relative;
+  opacity: 0.7;
+}
+.pricing-header{
+  width: 97%;
+  height: 250px;
+  border-radius: 10px;
+  border: 2px solid #0073aa;
+  box-shadow: 2px 3px 4px 1px #ddd;
+  position: absolute;
+  top: -10px;
+  left: 20px;
+}
+.pricing-header .pricing-pay{
+  font-size: 90px;
+  color: white;
+  /* padding-left: 130px; */
+  padding-top: 80px;
+  text-shadow: 3px 7px 3px black;
+}
+.pricing-header .img-price{
+  width: 40%;
+  height: 70%;
+  margin-left:700px;
+  margin-top: -155px;
+}
+.member-ship .line-member{
+  width: 300px;
+  height: 2px;
+  background:var(--bg-grandient) ;
+  box-shadow: 2px 3px 5px 1px var(--link-text);
+}
+.member-ship .color-text{
+  color: var(--main-text);
+  font-size: 22px;
+}
+
+.basic-pay .ribbon {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+.basic-pay .ribbon {
+  --f: .5em; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 1.8;
+  padding-inline: 1lh;
+  padding-bottom: var(--f);
+  border-image: conic-gradient(#0008 0 0) 51%/var(--f);
+  clip-path: polygon(
+    100% calc(100% - var(--f)),100% 100%,calc(100% - var(--f)) calc(100% - var(--f)),var(--f) calc(100% - var(--f)), 0 100%,0 calc(100% - var(--f)),999px calc(100% - var(--f) - 999px),calc(100% - 999px) calc(100% - var(--f) - 999px));
+  transform: translate(calc((cos(45deg) - 1)*100%), -100%) rotate(-45deg);
+  transform-origin: 100% 100%;
+  background-color: #F07818; /* the main color  */
+}
+.basic-pay{
+  box-shadow: 0px 0px 10px 4px var(--ddd-color);
+  background-color: transparent!important;
+  transition: transform 0.5s;
+}
+.basic-pay:hover{
+  transform: translateY(15px);
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;}
+.member-ship .mt-20{
+  margin-top: 100px;
+}
+.member-ship .mt-10{
+  margin-top: -50px;
+}
+.basic-pay .img-basic-pay{
+  height: 150px;
+  background: var(--bg-grandient);
+  border-bottom-left-radius:100%;
+  border-bottom-right-radius: 100%;
+  box-shadow: 2px 3px 10px 0px var(--link-text);
+}
+.basic-pay .basic-give{
+  font-size: 20px;
+  color: var(--link-text);
+  padding-left: 30px;
+}
+.basic-pay .buy-now{
+  width: 50%;
+  font-size: 25px;
+  position: absolute;
+  bottom: -20px;
+  left: 25%;
+  border-radius: 10px;
+  border: none;
+  background: var(--bg-grandient);
+  color: white;
+  padding: 6px 19px;
+  opacity: 0.8;
+}
+.basic-pay .buy-now:hover{
+  background: var(--bg-grandient);
+  box-shadow: 2px 3px 5px 0px var(--link-text);
+  opacity: 1;
+}
+.img-basic-pay .five-dollar{
+  font-size: 100px;
+  color: orange;
+  text-shadow: 2px 3px 3px white;
+}
+.img-basic-pay .gold{
+  color: gold;
+}
+.img-basic-pay .cornflowerblue{
+  color: cornflowerblue;
+}
+.basic-pay .ribbon-gold {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+.basic-pay .ribbon-gold {
+  --f: .5em; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 1.8;
+  padding-inline: 1lh;
+  padding-bottom: var(--f);
+  border-image: conic-gradient(#0008 0 0) 51%/var(--f);
+  clip-path: polygon(
+    100% calc(100% - var(--f)),100% 100%,calc(100% - var(--f)) calc(100% - var(--f)),var(--f) calc(100% - var(--f)), 0 100%,0 calc(100% - var(--f)),999px calc(100% - var(--f) - 999px),calc(100% - 999px) calc(100% - var(--f) - 999px));
+  transform: translate(calc((cos(45deg) - 1)*100%), -100%) rotate(-45deg);
+  transform-origin: 100% 100%;
+  background-color: gold; /* the main color  */
+}
+.basic-pay .ribbon-standard {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+.basic-pay .ribbon-standard {
+  --f: .5em; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 1.8;
+  padding-inline: 1lh;
+  padding-bottom: var(--f);
+  border-image: conic-gradient(#0008 0 0) 51%/var(--f);
+  clip-path: polygon(
+    100% calc(100% - var(--f)),100% 100%,calc(100% - var(--f)) calc(100% - var(--f)),var(--f) calc(100% - var(--f)), 0 100%,0 calc(100% - var(--f)),999px calc(100% - var(--f) - 999px),calc(100% - 999px) calc(100% - var(--f) - 999px));
+  transform: translate(calc((cos(45deg) - 1)*100%), -100%) rotate(-45deg);
+  transform-origin: 100% 100%;
+  background-color: cornflowerblue; /* the main color  */
+}
+@media (max-width:992px) {
+  .member-ship .line-member{
+    width: 200px;
+    height: 2px;
+  }
+  .member-ship .color-text{
+    color: var(--main-text);
+    font-size: 18px;
+    padding-top: 10px;
+  }
+  .member .font-20{
+    font-size: 20px;
+  }
+  .member-ship .mt-10{
+    margin-top:0px;
+  }
+  .row-pricing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+}
+@media (max-width:600px) {
+  .member-ship .line-member{
+    width: 150px;
+    height: 2px;
+  }
+  .member-ship .color-text{
+    color: var(--main-text);
+    font-size: 18px;
+    padding-top: 10px;
+  }
+  .member .font-20{
+    font-size: 22px;
+  }
+  .member-ship .mt-10{
+    margin-top: 0px;
+  }
+}
+@media (min-width:992px) and (max-width:1200px) {
+  .member-ship .color-text{
+    color: var(--main-text);
+    font-size: 18px;
+    padding-top: 10px;
+  }
+  .member .font-20{
+    font-size: 22px;
+  }
+  .member-ship .mt-10{
+    margin-top:0px;
+  }
+  .row-pricing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+}
+@media (min-width:430px) and (max-width:932px) {
+  .pricing-header .pricing-pay{
+    font-size: 80px;
+    color: white;
+    text-shadow: 3px 7px 3px black;
+  }
+  .member-ship .line-member{
+    width: 100px;
+    height: 2px;
+  }
+  .member-ship .color-text{
+    color: var(--main-text);
+    font-size: 15px;
+    padding-top: 10px;
+  }
+  .member .font-20{
+    font-size: 20px;
+  }
+}
+@media (min-width:360px) and (max-width:740px) {
+  .pricing-header .pricing-pay{
+    font-size: 60px;
+    color: white;
+    text-shadow: 3px 7px 3px black;
+  }
+  .member-ship .line-member{
+    width: 70px;
+    height: 2px;
+  }
+  .member-ship .color-text{
+    color: var(--main-text);
+    font-size: 15px;
+    padding-top: 10px;
+  }
+  .member .font-20{
+    font-size: 15px;
+  }
+  .basic-pay .buy-now{
+    width: 50%;
+    font-size: 20px;
+    position: absolute;
+    bottom: -20px;
+    left: 25%;
+    border-radius: 10px;
+    border: none;
+    background: var(--bg-grandient);
+    color: white;
+    padding: 6px 19px;
+    opacity: 0.8;
+  }
+}
