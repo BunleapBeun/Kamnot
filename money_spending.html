@@ -552,7 +552,7 @@
                 <h3 class="main-title">30 កក្កដា 2024</h3>
                 <div class="row px-5 py-5">
                   <div class="col-4">
-                    <div class="card-report d-flex flex-column justify-content-between" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <div class="card-report mx-auto d-flex flex-column justify-content-between">
                       <div class="report-info d-flex justify-content-between align-items-center w-100">
                         <p class="mb-0">ប្រាក់ចំណូលប្រចាំខែ <strong>កក្កដា</strong> </p>
                         <img src="assets/img/money-tracking/increase.png" alt="increase-icon">
@@ -562,17 +562,58 @@
                         <span class="text-success fs-5">+ $62.50</span>
                       </div>
                       <div class="report-info d-flex justify-content-between align-items-center w-100">
-                        <p class="mb-0">ចំណូលប្រចាំខែ <strong>វិច្ឆិកា</strong> </p>
+                        <p class="mb-0">ចំណូលប្រចាំខែ <strong>មិថុនា</strong> </p>
                         <span class="text-dark-emphasis fs-5">+ $ 50,00</span>
                       </div>
                     </div>
-                    
+                    <div class="btn-card-report pt-3 w-100 d-flex justify-content-center">
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-report" data-bs-toggle="modal" data-bs-target="#incomeModal">
+                        បញ្ចូលទិន្នន័យ
+                      </button>
+                      <!-- Modal -->
+                      <div class="modal fade" id="incomeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content">
+                            <div class="modal-header border-bottom-0 bg-white">
+                              <h1 class="modal-title fs-4 modal-header-color" id="incomeModalLabel">បញ្ចូលទិន្នន័យ</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <form action="">
+                                <div class="mb-3">
+                                  <label for="amount" class="form-label fs-5">ចំនួនទឹកប្រាក់ ($)</label>
+                                  <input class="form-control py-2 fs-5" id="amount" type="text" placeholder="$ 62.50" aria-label="">
+                                </div>
+                                <div class="mb-3">
+                                  <label for="date" class="form-label d-block fs-5">កាលបរិច្ឆេទ</label>
+                                  <input type="date" class="fs-5 form-control" value="" />
+                                </div>
+                                <div class="mb-3">
+                                  <label for="description" class="form-label fs-5">កំណត់សម្គាល់</label>
+                                  <textarea class="form-control" id="description" rows="3" aria-label=""></textarea>
+                                </div>
+                                <div class="mb-3">
+                                  <label for="total" class="form-label fs-5">ទឹកប្រាក់ចំណូលសរុបប្រចាំខែ</label>
+                                  <input class="form-control" disabled id="total" type="text" placeholder=" $ 62.50 " aria-label="">
+                                </div>
+                              </form>
+                            </div>
+                            <div class="modal-footer bg-white">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">បិទ</button>
+                              <button type="button" class="btn btn-savechange text-white">រក្សាទុកការកែសម្រួល</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div class="col-4">
-                    <div class="card-report d-flex flex-column justify-content-between " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <div class="card-report mx-auto d-flex flex-column justify-content-between ">
                       <div class="report-info d-flex justify-content-between align-items-center w-100">
                         <p class="mb-0">ប្រាក់សន្សំគោលដៅ​</p>
                         <span class="saving-up">$1,000</span>
+                        
                       </div>
                       <div class="report-info d-flex justify-content-between align-items-center w-100">
                         <p class="mb-0">ប្រាក់សន្សំប្រចាំថ្ងៃ </p>
@@ -589,9 +630,119 @@
                         
                       </div>
                     </div>
+                    <div class="btn-card-report pt-3 w-100 d-flex justify-content-between">
+                      <!-- Button trigger modal -->
+                      
+                      <button type="button" class="btn btn-report" data-bs-toggle="modal" data-bs-target="#savingModal">
+                        បញ្ចូលទិន្នន័យ
+                      </button>
+                      <button type="button" class="btn btn-report" data-bs-toggle="modal" data-bs-target="#addGoalModal">
+                        បន្ថែមគោលដៅ
+                      </button>
+                      <!-- Modal -->
+                      <div class="modal fade" id="savingModal" tabindex="-1" aria-labelledby="savingModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content">
+                            <div class="modal-header border-bottom-0 bg-white">
+                              <h1 class="modal-title fs-4 modal-header-color" id="savingModalLabel">បញ្ចូលទិន្នន័យ</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <form action="">
+                                <div class="mb-3">
+                                  <label for="date" class="form-label d-block fs-5">ជ្រើសរើសគោលដៅប្រាក់សន្សំ</label>
+                                  <div class="d-flex">
+                                    <button type="button" class="btn saving-up px-4 py-1 me-3">$ 1,000</button>
+                                  </div>
+                                </div>
+                                <div class="mb-3">
+                                  <label for="amount" class="form-label fs-5">ចំនួនទឹកប្រាក់ ($)</label>
+                                  <input class="form-control py-2 fs-5" id="amount1" type="text" placeholder="$ 50.00" aria-label="">
+                                </div>
+                                <div class="mb-3">
+                                  <label for="date" class="form-label d-block fs-5">កាលបរិច្ឆេទ</label>
+                                  <input type="date" class="fs-5 form-control" value="" />
+                                </div>
+                                <div class="mb-3">
+                                  <label for="description" class="form-label fs-5">កំណត់សម្គាល់</label>
+                                  <textarea class="form-control" id="description1" rows="3" aria-label=""></textarea>
+                                </div>
+                                <div class="mb-3">
+                                  <label for="total" class="form-label fs-5">ទឹកប្រាក់ចំណាយសរុបប្រចាំខែ</label>
+                                  <input class="form-control" disabled id="total1" type="text" placeholder=" $ 30.50 " aria-label="">
+                                </div>
+                                
+                              </form>
+                            </div>
+                            <div class="modal-footer bg-white">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">បិទ</button>
+                              <button type="button" class="btn btn-savechange text-white" data-bs-dismiss="modal">រក្សាទុកការកែសម្រួល</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="modal fade" id="addGoalModal" tabindex="-1" aria-labelledby="addGoalModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content">
+                            <div class="modal-header border-bottom-0 bg-white">
+                              <h1 class="modal-title fs-4 modal-header-color" id="addGoalModalLabel">គោលដៅសន្សំប្រាក់</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <form action="">
+                                <div class="mb-3">
+                                  <label for="amountGoal" class="form-label fs-5">ចំនួនទឹកប្រាក់គោលដៅ ($)</label>
+                                  <input class="form-control py-2 fs-5" id="amountGoal" type="text" placeholder="$ 1000.00" aria-label="">
+                                </div>
+                                <div class="mb-3">
+                                  <label for="date" class="form-label d-block fs-5">គម្រោងសន្សំ</label>
+                                  <div class="d-flex">
+                                    <button type="button" class="btn btn-secondary me-3 rounded-3">គិតជាថ្ងៃ</button>
+                                    <button type="button" class="btn saving-up me-3 rounded-3">គិតជាខែ</button>
+                                    <button type="button" class="btn btn-secondary rounded-3">គិតជាឆ្នាំ</button>
+                                  </div>
+                                </div>
+                                <div class="mb-3">
+                                  <label for="amountPer" class="form-label fs-5">ចំនួនប្រាក់សន្សំជាប្រចាំ</label>
+                                  <input class="form-control py-2 fs-5" id="amountPer" type="text" placeholder="$ 50.00" aria-label="">
+                                </div>
+                                <div class="mb-3">
+                                  <label for="timeSet" class="form-label fs-5">រយៈពេលចំណាយ <strong>(គិតជាខែ)</strong></label>
+                                  <input class="form-control timeSet" disabled id="timeSet" type="text" placeholder="12" aria-label="">
+                                </div>
+                                <div class="d-flex">
+                                  <div class="form-check form-check-inline pt-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="automatic1">
+                                    <label class="form-check-label ps-2" for="automatic1">
+                                      ដាក់ជាស្វ័យប្រតិបត្តិការណ៌
+                                    </label>
+                                    
+                                  </div>
+                                  <div class="form-check form-check-inline pt-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="favorite">
+                                    <label class="form-check-label ps-2" for="favorite">
+                                      គោលដៅគោល
+                                    </label>
+                                  </div>
+                                </div>
+                                
+                              </form>
+                            </div>
+                            <div class="modal-footer bg-white">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">បិទ</button>
+                              <button type="button" class="btn btn-savechange text-white" data-bs-dismiss="modal">រក្សាទុកការកែសម្រួល</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    
                   </div>
                   <div class="col-4">
-                    <div class="card-report d-flex flex-column justify-content-between " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <div class="card-report mx-auto d-flex flex-column justify-content-between " data-bs-toggle="modal" data-bs-target="#exampleModal">
                       <div class="report-info d-flex justify-content-between align-items-center w-100">
                         <p class="mb-0">ប្រាក់ចំណាយប្រចាំខែ <strong>កក្កដា</strong> </p>
                         <img src="assets/img/money-tracking/image 29.png" alt="decrease-icon">
@@ -601,45 +752,484 @@
                         <span class="text-danger fs-5">- $30.50</span>
                       </div>
                       <div class="report-info d-flex justify-content-between align-items-center w-100">
-                        <p class="mb-0">ចំណាយប្រចាំខែ <strong>វិច្ឆិកា</strong> </p>
+                        <p class="mb-0">ចំណាយប្រចាំខែ <strong>មិថុនា</strong> </p>
                         <span class="text-dark-emphasis fs-5">- $ 80,00</span>
                       </div>
                     </div>
-                    
+                    <div class="btn-card-report pt-3 w-100 d-flex justify-content-center">
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-report" data-bs-toggle="modal" data-bs-target="#expenseModal">
+                        បញ្ចូលទិន្នន័យ
+                      </button>
+                      <!-- Modal -->
+                      <div class="modal fade" id="expenseModal" tabindex="-1" aria-labelledby="expenseModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content">
+                            <div class="modal-header border-bottom-0 bg-white">
+                              <h1 class="modal-title fs-4 modal-header-color" id="expenseModalLabel">បញ្ចូលទិន្នន័យ</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <form action="">
+                                <div class="mb-3">
+                                  <label for="icon" class="form-label fs-5">ជ្រើសរើសរូបតំណាង</label>
+                                  <div class="display-categories d-flex w-100 pb-3">
+
+                                    <div class="card-icon me-2 bg-primary-subtle d-flex justify-content-center align-items-center" tabindex="0">
+                                      <span class="fs-4 text-primary-emphasis"><i class="fa-solid fa-house"></i></span>
+                                    </div>                  
+                                    <div class="card-icon me-2 bg-success-subtle d-flex justify-content-center align-items-center" tabindex="0">
+                                      <span class="fs-4 text-success-emphasis"><i class="fa-solid fa-basket-shopping"></i></span>
+                                    </div>
+                                    <div class="card-icon me-2 bg-warning-subtle d-flex justify-content-center align-items-center" tabindex="0">
+                                      <span class="fs-4 text-warning-emphasis"><i class="fa-solid fa-shirt"></i></span>
+                                    </div>
+                                    <div class="card-icon me-2 bg-danger-subtle d-flex justify-content-center align-items-center" tabindex="0">
+                                      <span class="fs-4 text-danger-emphasis"><i class="fa-solid fa-pills"></i></span>
+                                    </div>
+                                    <div class="card-icon me-2 bg-info-subtle d-flex justify-content-center align-items-center" tabindex="0">
+                                      <span class="fs-4 text-info-emphasis"><i class="fa-solid fa-burger"></i></span>
+                                    </div>
+                                    <div class="card-icon me-2 bg-dark-subtle d-flex justify-content-center align-items-center" tabindex="0">
+                                      <span class="fs-4 text-dark-emphasis"><i class="fa-solid fa-gas-pump"></i></span>
+                                    </div>
+                                    <div class="card-icon me-2 bg-primary-subtle d-flex justify-content-center align-items-center" tabindex="0">
+                                      <span class="fs-4 text-primary-emphasis"><i class="fa-solid fa-droplet"></i></span>
+                                    </div>
+                                   
+                                  </div>
+                                  <input class="form-control fs-5" id="icon" type="text" placeholder="ប្រភេទ" aria-label="">
+                                </div>
+                                <div class="mb-3">
+                                  <label for="amount" class="form-label fs-5">ចំនួនទឹកប្រាក់ ($)</label>
+                                  <input class="form-control py-2 fs-5" id="amount2" type="text" placeholder="$ 30.50" aria-label="">
+                                </div>
+                                <div class="mb-3">
+                                  <label for="date" class="form-label d-block fs-5">កាលបរិច្ឆេទ</label>
+                                  <input type="date" class="fs-5 form-control" value="" />
+                                </div>
+                                <div class="mb-3">
+                                  <label for="description" class="form-label fs-5">កំណត់សម្គាល់</label>
+                                  <textarea class="form-control" id="description2" rows="3" aria-label=""></textarea>
+                                </div>
+                                <div class="mb-3">
+                                  <label for="total" class="form-label fs-5">ទឹកប្រាក់ចំណាយសរុបប្រចាំខែ</label>
+                                  <input class="form-control" disabled id="total2" type="text" placeholder=" $ 30.50 " aria-label="">
+                                </div>
+                              </form>
+                            </div>
+                            <div class="modal-footer bg-white">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">បិទ</button>
+                              <button type="button" class="btn btn-savechange text-white">រក្សាទុកការកែសម្រួល</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <hr>
+                <hr class="light-black">
               </section>
-              <section class="spending-categories" style="padding: 80px 0;">
-                <div class="spending-cate-title d-flex justify-content-center">
-                  <p class="mb-0 fs-5 fw-bold">ការចំណាយ</p>
+              <section class="spending-history">
+                <div class="spending-history-title w-100 d-flex justify-content-center">
+                  <p class="mb-0 fs-4">ប្រតិបត្តិការណ៌</p>
                 </div>
-                <div class="display-categories d-flex px-3 py-4">
-                  <div class="card-icon me-4 bg-primary-subtle d-flex justify-content-center align-items-center">
-                    <span class="fs-4 text-primary-emphasis"><i class="fa-solid fa-house"></i></span>
-                  </div>
-                  <div class="card-icon me-4 bg-success-subtle d-flex justify-content-center align-items-center">
-                    <span class="fs-4 text-success-emphasis"><i class="fa-solid fa-basket-shopping"></i></span>
-                  </div>
-                  <div class="card-icon me-4 bg-warning-subtle d-flex justify-content-center align-items-center">
-                    <span class="fs-4 text-warning-emphasis"><i class="fa-solid fa-shirt"></i></span>
-                  </div>
-                  <div class="card-icon me-4 bg-danger-subtle d-flex justify-content-center align-items-center">
-                    <span class="fs-4 text-danger-emphasis"><i class="fa-solid fa-pills"></i></span>
-                  </div>
-                  <div class="card-icon me-4 bg-info-subtle d-flex justify-content-center align-items-center">
-                    <span class="fs-4 text-info-emphasis"><i class="fa-solid fa-burger"></i></span>
-                  </div>
-                  <div class="card-icon me-4 bg-dark-subtle d-flex justify-content-center align-items-center">
-                    <span class="fs-4 text-dark-emphasis"><i class="fa-solid fa-gas-pump"></i></span>
-                  </div>
-                  <div class="card-icon me-4 bg-primary-subtle d-flex justify-content-center align-items-center">
-                    <span class="fs-4 text-primary-emphasis"><i class="fa-solid fa-droplet"></i></span>
-                  </div>
-                  <div class="card-icon me-4 bg-body-secondary d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <span class="fs-4 text-body-emphasis"><i class="fa-solid fa-plus"></i></span>
-                  </div>
+                <div class="spending-his-nav py-5 w-100 d-flex justify-content-center">
+                  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link mx-5 active fs-5" id="pills-income-tab" data-bs-toggle="pill" data-bs-target="#pills-income" type="button" role="tab" aria-controls="pills-income" aria-selected="true">ចំណូល</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link mx-5 fs-5" id="pills-saving-tab" data-bs-toggle="pill" data-bs-target="#pills-saving" type="button" role="tab" aria-controls="pills-saving" aria-selected="false">ប្រាក់សន្សំ</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link mx-5 fs-5" id="pills-spending-tab" data-bs-toggle="pill" data-bs-target="#pills-spending" type="button" role="tab" aria-controls="pills-spending" aria-selected="false">ចំណាយ</button>
+                    </li>
+                    
+                  </ul>
+
                 </div>
+                <div class="tab-content w-100 px-5" id="pills-tabContent">
+                  <div class="tab-pane fade show active" id="pills-income" role="tabpanel" aria-labelledby="pills-income-tab" tabindex="0">
+                    <div class="tab-pane-history">
+                      <p class="fs-5 landing-title-color fw-bolder">ខែ កក្កដា</p>
+                      <div class="card ">
+                        <div class="row px-4 h-100">
+                          <div class="col-1 d-flex h-100 align-items-center">
+                            <div class="income-icon mt-3 mx-auto bg-success-subtle d-flex justify-content-center align-items-center">
+                              <span class="text-success-emphasis fs-4"><i class="fa-solid fa-money-bill-trend-up"></i></span>
+                            </div>
+                          </div>
+                          <div class="col-11 ps-2 h-100">
+                            <div class="d-flex justify-content-between">
+                              <div class="main-info">
+                                <p class="pt-2 fs-5 mb-0">កំណត់សម្គាល់: <span class="ps-5 fw-bolder">ប្រាក់ខែ</span></p>
+                                <p class="fs-5">កាលបរិចេ្ឆទ: <span class="ps-5">01 កក្កដា 2024</span></p>
+                                
+                              </div>
+                              <div class="money-info">
+                                <h3 class="text-success pt-4">$ 62.50</h3>
+                              </div>
+                            </div>
+                           
+                          </div>
+                         
+                          
+                        </div>
+                        
+                        
+                      </div>
+
+                      <p class="fs-5 pt-5 landing-title-color fw-bolder">ខែ មិថុនា</p>
+                      <div class="card">
+                        <div class="row px-4 h-100">
+                          <div class="col-1 d-flex h-100 align-items-center">
+                            <div class="income-icon mt-3 mx-auto bg-success-subtle d-flex justify-content-center align-items-center">
+                              <span class="text-success-emphasis fs-4"><i class="fa-solid fa-money-bill-trend-up"></i></span>
+                            </div>
+                          </div>
+                          <div class="col-11 ps-2 h-100">
+                            <div class="d-flex justify-content-between">
+                              <div class="main-info">
+                                <p class="pt-2 fs-5 mb-0">កំណត់សម្គាល់: <span class="ps-5 fw-bolder">ប្រាក់ខែ</span></p>
+                                <p class="fs-5">កាលបរិចេ្ឆទ: <span class="ps-5">01 មិថុនា 2024</span></p>
+                                
+                              </div>
+                              <div class="money-info">
+                                <h3 class="text-success pt-4">$ 50.00</h3>
+                              </div>
+                            </div>
+                           
+                          </div>
+                         
+                          
+                        </div>
+                        
+                        
+                      </div>
+                      <p class="fs-5 pt-5 landing-title-color fw-bolder">ខែ ឧសភា</p>
+                      <div class="card">
+                        <div class="row px-4 h-100">
+                          <div class="col-1 d-flex h-100 align-items-center">
+                            <div class="income-icon mt-3 mx-auto bg-success-subtle d-flex justify-content-center align-items-center">
+                              <span class="text-success-emphasis fs-4"><i class="fa-solid fa-money-bill-trend-up"></i></span>
+                            </div>
+                          </div>
+                          <div class="col-11 ps-2 h-100">
+                            <div class="d-flex justify-content-between">
+                              <div class="main-info">
+                                <p class="pt-2 fs-5 mb-0">កំណត់សម្គាល់: <span class="ps-5 fw-bolder">ប្រាក់ខែ</span></p>
+                                <p class="fs-5">កាលបរិចេ្ឆទ: <span class="ps-5">20 ឧសភា 2024</span></p>
+                                
+                              </div>
+                              <div class="money-info">
+                                <h3 class="text-success pt-4">$ 62.50</h3>
+                              </div>
+                            </div>
+                           
+                          </div>
+                         
+                          
+                        </div>
+                        
+                        
+                      </div>
+                      <div class="card">
+                        <div class="row px-4 h-100">
+                          <div class="col-1 d-flex h-100 align-items-center">
+                            <div class="income-icon mt-3 mx-auto bg-success-subtle d-flex justify-content-center align-items-center">
+                              <span class="text-success-emphasis fs-4"><i class="fa-solid fa-money-bill-trend-up"></i></span>
+                            </div>
+                          </div>
+                          <div class="col-11 ps-2 h-100">
+                            <div class="d-flex justify-content-between">
+                              <div class="main-info">
+                                <p class="pt-2 fs-5 mb-0">កំណត់សម្គាល់: <span class="ps-5 fw-bolder">ប្រាក់អាហារូបករណ៌</span></p>
+                                <p class="fs-5">កាលបរិចេ្ឆទ: <span class="ps-5">01 ឧសភា  2024</span></p>
+                                
+                              </div>
+                              <div class="money-info">
+                                <h3 class="text-success pt-4">$ 20.00</h3>
+                              </div>
+                            </div>
+                           
+                          </div>
+                         
+                          
+                        </div>
+                        
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="pills-saving" role="tabpanel" aria-labelledby="pills-saving-tab" tabindex="0">
+                    <div class="tab-pane-history">
+                      <p class="fs-5 landing-title-color fw-bolder">គោលដៅសន្សំប្រាក់ទាំងអស់</p>
+                      <div class="d-flex">
+                        <button type="button" class="btn saving-up px-4 py-1 me-3">$ 1,000</button>
+                      </div>
+                      <p class="fs-5 pt-5 landing-title-color fw-bolder">ខែ កក្កដា</p>
+                      <div class="card">
+                        <div class="row px-4 h-100">
+                          <div class="col-1 d-flex h-100 align-items-center">
+                            <div class="income-icon mt-3 mx-auto bg-success-subtle d-flex justify-content-center align-items-center">
+                              <span class="text-success-emphasis fs-4"><i class="fa-solid fa-piggy-bank"></i></span>
+                            </div>
+                          </div>
+                          <div class="col-11 ps-2 h-100">
+                            <div class="d-flex justify-content-between">
+                              <div class="main-info">
+                                <p class="pt-2 fs-5 mb-0">កំណត់សម្គាល់: <span class="ps-5 fw-bolder">ខែទី​ 5</span></p>
+                                <p class="fs-5">កាលបរិចេ្ឆទ: <span class="ps-5">01 កក្កដា 2024</span></p>
+                                
+                              </div>
+                              <div class="money-info">
+                                <h3 class="text-success pt-4">$ 50.00</h3>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                     
+                      <p class="fs-5 pt-5 landing-title-color fw-bolder">ខែ មិថុនា</p>
+                      <div class="card">
+                        <div class="row px-4 h-100">
+                          <div class="col-1 d-flex h-100 align-items-center">
+                            <div class="income-icon mt-3 mx-auto bg-success-subtle d-flex justify-content-center align-items-center">
+                              <span class="text-success-emphasis fs-4"><i class="fa-solid fa-piggy-bank"></i></span>
+                            </div>
+                          </div>
+                          <div class="col-11 ps-2 h-100">
+                            <div class="d-flex justify-content-between">
+                              <div class="main-info">
+                                <p class="pt-2 fs-5 mb-0">កំណត់សម្គាល់: <span class="ps-5 fw-bolder">ខែទី​ 4</span></p>
+                                <p class="fs-5">កាលបរិចេ្ឆទ: <span class="ps-5">01 មិថុនា 2024</span></p>
+                                
+                              </div>
+                              <div class="money-info">
+                                <h3 class="text-success pt-4">$ 50.00</h3>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="fs-5 pt-5 landing-title-color fw-bolder">ខែ ឧសភា</p>
+                      <div class="card">
+                        <div class="row px-4 h-100">
+                          <div class="col-1 d-flex h-100 align-items-center">
+                            <div class="income-icon mt-3 mx-auto bg-success-subtle d-flex justify-content-center align-items-center">
+                              <span class="text-success-emphasis fs-4"><i class="fa-solid fa-piggy-bank"></i></span>
+                            </div>
+                          </div>
+                          <div class="col-11 ps-2 h-100">
+                            <div class="d-flex justify-content-between">
+                              <div class="main-info">
+                                <p class="pt-2 fs-5 mb-0">កំណត់សម្គាល់: <span class="ps-5 fw-bolder">ខែទី​ 3</span></p>
+                                <p class="fs-5">កាលបរិចេ្ឆទ: <span class="ps-5">01 ឧសភា 2024</span></p>
+                                
+                              </div>
+                              <div class="money-info">
+                                <h3 class="text-success pt-4">$ 50.00</h3>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="fs-5 pt-5 landing-title-color fw-bolder">ខែ មេសា</p>
+                      <div class="card">
+                        <div class="row px-4 h-100">
+                          <div class="col-1 d-flex h-100 align-items-center">
+                            <div class="income-icon mt-3 mx-auto bg-success-subtle d-flex justify-content-center align-items-center">
+                              <span class="text-success-emphasis fs-4"><i class="fa-solid fa-piggy-bank"></i></span>
+                            </div>
+                          </div>
+                          <div class="col-11 ps-2 h-100">
+                            <div class="d-flex justify-content-between">
+                              <div class="main-info">
+                                <p class="pt-2 fs-5 mb-0">កំណត់សម្គាល់: <span class="ps-5 fw-bolder">ខែទី​ 2</span></p>
+                                <p class="fs-5">កាលបរិចេ្ឆទ: <span class="ps-5">01 មេសា 2024</span></p>
+                                
+                              </div>
+                              <div class="money-info">
+                                <h3 class="text-success pt-4">$ 50.00</h3>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="fs-5 pt-5 landing-title-color fw-bolder">ខែ មិនា</p>
+                      <div class="card">
+                        <div class="row px-4 h-100">
+                          <div class="col-1 d-flex h-100 align-items-center">
+                            <div class="income-icon mt-3 mx-auto bg-success-subtle d-flex justify-content-center align-items-center">
+                              <span class="text-success-emphasis fs-4"><i class="fa-solid fa-piggy-bank"></i></span>
+                            </div>
+                          </div>
+                          <div class="col-11 ps-2 h-100">
+                            <div class="d-flex justify-content-between">
+                              <div class="main-info">
+                                <p class="pt-2 fs-5 mb-0">កំណត់សម្គាល់: <span class="ps-5 fw-bolder">ខែទី​ 1</span></p>
+                                <p class="fs-5">កាលបរិចេ្ឆទ: <span class="ps-5">01 មិនា 2024</span></p>
+                                
+                              </div>
+                              <div class="money-info">
+                                <h3 class="text-success pt-4">$ 50.00</h3>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="pills-spending" role="tabpanel" aria-labelledby="pills-spending-tab" tabindex="0">
+                    <div class="tab-pane-history">
+                      <p class="fs-5 landing-title-color fw-bolder">ខែ កក្កដា</p>
+                     
+                      <div class="card ">
+                        <div class="row px-4 h-100">
+                          
+                          <div class="col-1 d-flex h-100 align-items-center">
+                            <div class="card-icon mt-3 me-2 bg-danger-subtle d-flex justify-content-center align-items-center" tabindex="0">
+                              <span class="fs-4 text-danger-emphasis"><i class="fa-solid fa-pills"></i></span>
+                            </div>
+                          </div>
+                          <div class="col-11 ps-2 h-100">
+                            <div class="d-flex justify-content-between">
+                              <div class="main-info">
+                                <p class="pt-2 fs-5 mb-0">កំណត់សម្គាល់: <span class="ps-5 fw-bolder">ថ្លៃសម្រាកព្យាបាលនៅពេទ្យ</span></p>
+                                <p class="fs-5">កាលបរិចេ្ឆទ: <span class="ps-5">10 កក្កដា 2024</span></p>
+                                
+                              </div>
+                              <div class="money-info">
+                                <h3 class="text-danger pt-4">$ 18.00</h3>
+                              </div>
+                            </div>
+                           
+                          </div>
+                         
+                          
+                        </div>
+                        
+                        
+                      </div>
+                      <div class="card ">
+                        <div class="row px-4 h-100">
+                          
+                          <div class="col-1 d-flex h-100 align-items-center">
+                            <div class="card-icon me-2 mt-3 bg-primary-subtle d-flex justify-content-center align-items-center" tabindex="0">
+                              <span class="fs-4 text-primary-emphasis"><i class="fa-solid fa-droplet"></i></span>
+                            </div>
+                          </div>
+                          <div class="col-11 ps-2 h-100">
+                            <div class="d-flex justify-content-between">
+                              <div class="main-info">
+                                <p class="pt-2 fs-5 mb-0">កំណត់សម្គាល់: <span class="ps-5 fw-bolder">បង់ថ្លៃទឹក</span></p>
+                                <p class="fs-5">កាលបរិចេ្ឆទ: <span class="ps-5">10 កក្កដា 2024</span></p>
+                                
+                              </div>
+                              <div class="money-info">
+                                <h3 class="text-danger pt-4">$ 5.50</h3>
+                              </div>
+                            </div>
+                           
+                          </div>
+                         
+                          
+                        </div>
+                        
+                        
+                      </div>
+                      <div class="card ">
+                        <div class="row px-4 h-100">
+                          <div class="col-1 d-flex h-100 align-items-center">
+                            <div class="card-icon me-2 mt-3 bg-warning-subtle d-flex justify-content-center align-items-center" tabindex="0">
+                              <span class="fs-4 text-warning-emphasis"><i class="fa-solid fa-shirt"></i></span>
+                            </div> 
+                          </div>
+                          <div class="col-11 ps-2 h-100">
+                            <div class="d-flex justify-content-between">
+                              <div class="main-info">
+                                <p class="pt-2 fs-5 mb-0">កំណត់សម្គាល់: <span class="ps-5 fw-bolder">ទិញអាវរៀន</span></p>
+                                <p class="fs-5">កាលបរិចេ្ឆទ: <span class="ps-5">03 កក្កដា 2024</span></p>
+                                
+                              </div>
+                              <div class="money-info">
+                                <h3 class="text-danger pt-4">$ 7.00</h3>
+                              </div>
+                            </div>
+                           
+                          </div>
+                         
+                          
+                        </div>
+                        
+                        
+                      </div>
+
+                      <p class="fs-5 pt-5 landing-title-color fw-bolder">ខែ មិថុនា</p>
+                      
+                      
+                      <div class="card ">
+                        <div class="row px-4 h-100">
+                          <div class="col-1 d-flex h-100 align-items-center">
+                            <div class="card-icon mt-3 me-2 bg-dark-subtle d-flex justify-content-center align-items-center" tabindex="0">
+                              <span class="fs-4 text-dark-emphasis"><i class="fa-solid fa-gas-pump"></i></span>
+                            </div> 
+                          </div>
+                          <div class="col-11 ps-2 h-100">
+                            <div class="d-flex justify-content-between">
+                              <div class="main-info">
+                                <p class="pt-2 fs-5 mb-0">កំណត់សម្គាល់: <span class="ps-5 fw-bolder">សាំង</span></p>
+                                <p class="fs-5">កាលបរិចេ្ឆទ: <span class="ps-5">30 មិថុនា 2024</span></p>
+                                
+                              </div>
+                              <div class="money-info">
+                                <h3 class="text-danger pt-4">$ 30.00</h3>
+                              </div>
+                            </div>
+                           
+                          </div>
+                         
+                          
+                        </div>
+                        
+                        
+                      </div>
+                      <div class="card ">
+                        <div class="row px-4 h-100">
+                          <div class="col-1 d-flex h-100 align-items-center">
+                            <div class="card-icon me-2 mt-3 bg-primary-subtle d-flex justify-content-center align-items-center" tabindex="0">
+                              <span class="fs-4 text-primary-emphasis"><i class="fa-solid fa-house"></i></span>
+                            </div>  
+                          </div>
+                          <div class="col-11 ps-2 h-100">
+                            <div class="d-flex justify-content-between">
+                              <div class="main-info">
+                                <p class="pt-2 fs-5 mb-0">កំណត់សម្គាល់: <span class="ps-5 fw-bolder">ថ្លៃជួលផ្ទះ</span></p>
+                                <p class="fs-5">កាលបរិចេ្ឆទ: <span class="ps-5">10 កក្កដា 2024</span></p>
+                                
+                              </div>
+                              <div class="money-info">
+                                <h3 class="text-danger pt-4">$ 50.00</h3>
+                              </div>
+                            </div>
+                           
+                          </div>
+                         
+                          
+                        </div>
+                        
+                        
+                      </div>
+                      
+                      
+                    </div>
+                  </div>
+                  
+                </div>
+                
               </section>
 
               <!-- ? end of write your content here -->

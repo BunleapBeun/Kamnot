@@ -474,64 +474,6 @@
               </div>
 
               <section class="overview pt-5">
-                <h3 class="pb-3">ស្ងានភាពការងារបច្ចុប្បន្ន</h3>
-                <div class="row pb-5">
-                  <div class="col-sm-6 col-lg-3">
-                    <button class="btn btn-work bg-primary-subtle" type="button">
-                      <div class="btn-body h-100 d-flex align-items-center">
-                        <div class="btn-overview-icon">
-                          <img src="assets/img/Journaling-Todolist/process.png" width="50px" alt="process-icon">
-                        </div>
-                        <div class="ps-2 card-overview-content">
-                          <p class="fs-5 pt-3 fw-semibold landing-title-color mb-0">ការងារដែលកំពុងធ្វើ</p>
-                          <p> 3 ការងារ </p>
-                        </div>
-                      </div>
-                    </button>
-
-        
-                  </div>
-                  <div class="col-sm-6 col-lg-3">
-                    <button class="btn btn-work bg-warning-subtle" type="button">
-                      <div class="btn-body h-100 d-flex align-items-center">
-                        <div class="btn-overview-icon">
-                          <img src="assets/img/Journaling-Todolist/back-in-time.png" width="50px" alt="icon">
-                        </div>
-                        <div class="ps-3 card-overview-content">
-                          <p class="fs-5 pt-3 fw-semibold landing-title-color mb-0">ការងារដែលបានផ្អាក</p>
-                          <p> 1 ការងារ </p>
-                        </div>
-                      </div>
-                    </button>
-                  </div>
-                  <div class="col-sm-6 pt-3 pt-lg-0 col-lg-3">
-                    <button class="btn btn-work bg-success-subtle">
-                      <div class="btn-body h-100 d-flex align-items-center">
-                        <div class="btn-overview-icon">
-                          <img src="assets/img/Journaling-Todolist/done.png" width="50px" alt="icon">
-                        </div>
-                        <div class="ps-3 card-overview-content">
-                          <p class="fs-5 pt-3 fw-semibold landing-title-color mb-0">ការងារដែលបានធ្វើរួច</p>
-                          <p> 4 ការងារ </p>
-                        </div>
-                      </div>
-                    </button>
-                  </div>
-                  <div class="col-sm-6 pt-3 pt-lg-0 col-lg-3">
-                    <button class="btn btn-work bg-danger-subtle">
-                      <div class="btn-body h-100 d-flex align-items-center">
-                        <div class="btn-overview-icon">
-                          <img src="assets/img/Journaling-Todolist/close.png" width="50px" alt="icon">
-                        </div>
-                        <div class="ps-3 card-overview-content">
-                          <p class="fs-5 pt-3 fw-semibold landing-title-color mb-0">ការងារដែលបានឈប់ធ្វើ</p>
-                          <p> 2 ការងារ </p>
-                        </div>
-                      </div>
-                    </button>
-                  </div>
-                </div>
-                <hr>
                 <div class="display d-flex justify-content-between">
                   <div class="left-display">
                     <p class="mb-0">រៀបចំការងារ</p>
@@ -544,303 +486,395 @@
                       <span><i class="fa-solid fa-angle-right"></i></span>
                     </div>
                     <button type="button" class="btn ">
-                      <span>សប្ដាហ៌នេះ</span>
+                      <span>30 / 08 /</span>
                       <span>2024</span>
                     </button>
                   </div>
                 </div>
-                <div class="organize-work my-5 px-5 py-5">
-                  <div class="work-wrapper d-flex p-3" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#multiCollapse1" aria-expanded="false" aria-controls="multiCollapse1">
-                    <span class="pt-1"><i class="fa-solid fa-play"></i></span>
-                    <p class="ms-4 fs-5 px-3 mb-0">សរសេរ Website</p>
-                  </div>
-                  <div class="work-collapse px-5">
-                    <div class="collapse multi-collapse show" id="multiCollapse1">
-                      <div class="card card-body card-wrapper">
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="Check1">
-                          <label class="form-check-label ps-2" for="Check1">
-                            Design Figma Landing Page
-                          </label>
-                        </div>
-                        <div class="form-check pt-2">
-                          <input class="form-check-input" type="checkbox" value="" id="Check2">
-                          <label class="form-check-label ps-2" for="Check2">
-                            Design Figma Home Page
-                          </label>
-                        </div>
-                        <div class="add-new-activity py-2">
-                          <div class="card card-body py-3">
-                            <input class="form-control" id="" type="text" placeholder="បន្ថែមសកម្មភាពថ្មី"
-                              aria-label="">
-                            <div class="card-btn-footer pt-3 w-100 d-flex justify-content-between">
-                              <button type="button" class="btn btn-do-add px-lg-4 py-0"> បន្ថែម </button>
-                              <div class="right-btn d-none d-lg-block">
-                                <button type="button" class="btn btn-secondary">ចាប់ផ្ដើម 13 កក្កដា</button>
-                                <button type="button" class="btn btn-secondary">បញ្ចប់ 18 កក្កដា</button>
+                <hr>
+                <div class="organize-work py-5">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="daily-work p-4">
+                        <div class="daily-work-title d-flex justify-content-between">
+                          <h3 class="landing-title-color">កិច្ចការសម្រាប់ថ្ងៃនេះ</h3>
+                          <div class="add-work"> 
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-add-work" data-bs-toggle="modal" data-bs-target="#todolistModal">
+                              <span><i class="fa-solid fa-plus"></i></span>
+                            </button>
+      
+                            <!-- Modal -->
+                            <div class="modal fade" id="todolistModal" tabindex="-1" aria-labelledby="todolistModalLabel" aria-hidden="true">
+                              <div class="modal-dialog modal-lg modal-fullscreen-md-down modal-dialog-centered">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h1 class="modal-title fs-4 landing-title-color" id="exampleModalLabel">បន្ថែមការងារថ្មី</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body px-5">
+                                    <div class="work-schedule d-flex">
+                                      <button type="button" class="btn btn-work-schedule active text-white"> សម្រាប់ថ្ងៃនេះ </button>
+                                      <button type="button" class="btn bg-warning-subtle btn-work-schedule text-white"> 
+                                        <a href="pricing.html" class="nav-link">
+                                          <span class="text-black">សម្រាប់សប្ដាហ៌នេះ</span>
+                                          <span class="text-warning"><i class="fa-solid fa-crown"></i></span>
+                                        </a>
+                                        
+                                      </button>
+                                      <button type="button" class="btn bg-warning-subtle btn-work-schedule text-white"> 
+                                        <a href="pricing.html" class="nav-link">
+                                          <span class="text-black">សម្រាប់ខែនេះ</span>
+                                          <span class="text-warning"><i class="fa-solid fa-crown"></i></span>
+                                        </a>
+                                      </button>
+                                    </div>
+                                    <div class="work-form pt-5">
+                                      <div class="mb-5">
+                                        <label for="disabledTextInput" class="form-label fs-5">កាលបរិចេ្ឆទ</label>
+                                        <div class="position-relative">
+                                          <input class="form-control" id="disabledTextInput" disabled type="text" placeholder="30/08/2024" aria-label="">
+                                          <div class="form-icon position-absolute" style="top: 0; right: 0;">
+                                            <span class="fs-5 text-dark-emphasis"><i class="fa-regular fa-calendar"></i></span>
+                                            
+                                          </div>
+                                        </div>
+                                        
+                                      </div>
+                                      <div class="mb-5">
+                                        <label for="workHour" class="form-label fs-5">ម៉ោង (អាចមិនកំណត់បាន)</label>
+                                        <div class="d-flex mb-2">
+                                          <button type="button" class="btn me-2 btn-hour active bg-body-secondary">7:00 AM</button>
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">8:00 AM</button>
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">9:00 AM</button>
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">10:00 AM</button>
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">11:00 AM</button>
+                                          
+                                        </div>
+                                        <div class="d-flex mb-2">
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">12:00 PM</button>
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">1:00 PM</button>
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">2:00 PM</button>
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">3:00 PM</button>
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">4:00 PM</button>
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">5:00 PM</button>
+                                          
+                                        </div>
+                                        <div class="d-flex mb-2">
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">6:00 PM</button>
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">7:00 PM</button>
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">8:00 PM</button>
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">9:00 PM</button>
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">10:00 PM</button>
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">11:00 PM</button>
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">00:00 PM</button>
+                                        </div>
+                                      </div>
+                                      <div class="mb-5">
+                                        <label for="workType" class="form-label fs-5">ប្រភេទការងារ</label>
+                                        <div class="position-relative">
+                                          <input class="form-control" id="workType" type="text" placeholder="" aria-label="">
+                                          <div class="form-icon position-absolute" style="top: 0; right: 0;">
+                                            <span class="fs-5 text-dark-emphasis"><i class="fa-regular fa-file-lines"></i></span>
+                                            
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="mb-4 mt-5">
+                                        <label for="" class="form-label fs-5 d-block pb-2">រំលឹក</label>
+                                        <div class="row">
+                                          <div class="col-6">
+                                            <div class="form-check form-check-inline">
+                                              <input class="form-check-input" type="checkbox" value="" id="7am">
+                                              <label class="form-check-label" for="7am">
+                                                រំលឹកថ្ងៃនេះនៅម៉ោង 7:00 AM
+                                              </label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                              <input class="form-check-input" type="checkbox" value="" id="8am">
+                                              <label class="form-check-label" for="8am">
+                                                រំលឹកថ្ងៃនេះនៅម៉ោង 8:00 AM
+                                              </label>
+                                            </div>
+                                            <div class="form-check form-check-inline me-3">
+                                              <input class="form-check-input" type="checkbox" value="" id="12pm">
+                                              <label class="form-check-label" for="12pm">
+                                                រំលឹកថ្ងៃនេះនៅម៉ោង 12:00 PM
+                                              </label>
+                                            </div>
+                                          </div>
+                                          <div class="col-6">
+                                            <div class="form-check form-check-inline me-3">
+                                              <input class="form-check-input" type="checkbox" value="" id="2pm">
+                                              <label class="form-check-label" for="12am">
+                                                រំលឹកថ្ងៃនេះនៅម៉ោង 2:00 PM
+                                              </label>
+                                            </div>
+                                            <div class="form-check form-check-inline me-3">
+                                              <input class="form-check-input" type="checkbox" value="" id="4pm">
+                                              <label class="form-check-label" for="4pm">
+                                                រំលឹកថ្ងៃនេះនៅម៉ោង 4:00 PM
+                                              </label>
+                                            </div>
+                                            <div class="form-check form-check-inline me-3">
+                                              <input class="form-check-input vip-input" type="checkbox" value="" id="vip">
+                                              <label class="form-check-label" for="vip">
+                                                <a href="pricing.html" class="nav-link">
+                                                  <span>រៀបចំដោយខ្លួនឯង</span>
+                                                  <span class="text-warning"><i class="fa-solid fa-crown"></i></span>
+                                                </a>
+                                               
+                                              </label> 
+                                              
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                        
+                                        
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">បិទ</button>
+                                    <button type="button" class="btn btn-savechange text-white" data-bs-dismiss="modal">បន្ថែម</button>
+                                  </div>
+                                </div>
                               </div>
                             </div>
-                          </div>
+                          </div>                   
                         </div>
-                      </div>
+                        <div class="daily-list py-4">
+                          <div class="list-wrapper mb-4">
+                            <ul class="list-todo m-0">
+                              <li class="todo-item d-flex align-items-center justify-content-between">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  <span class="d-block">ធ្វើសមាធិរយៈពេល 10 នាទី</span>
+                                  <span class="ps-1 text-dark-emphasis">ម៉ោង 1:00 PM</span>
+                                </label>
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                
+                              </li>
+                              <li class="todo-item d-flex align-items-center justify-content-between">
+                                <label class="form-check-label" for="flexCheck1">
+                                  <span class="d-block">ផឹកទឹកឱ្យបាន ២៤ លីត្រ</span>
+                                  <span class="ps-1 text-dark-emphasis">ម៉ោង មិនកំណត់</span>
+                                </label>
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheck1">
+                              </li>
+                              <li class="todo-item d-flex align-items-center justify-content-between">
+                                <label class="form-check-label" for="flexCheck2">
+                                  <span class="d-block">ទិញផ្លែឈើនិងបន្លែស្រស់</span>
+                                  <span class="ps-1 text-dark-emphasis">ម៉ោង 8:00 AM</span>
+                                </label>
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheck2">
+                              </li>
+                              <li class="todo-item d-flex align-items-center justify-content-between">
+                                <label class="form-check-label" for="flexCheck3">
+                                  <span class="d-block">រៀបចំបទបង្ហាញសម្រាប់កិច្ចប្រជុំក្រុម</span>
+                                  <span class="ps-1 text-dark-emphasis">ម៉ោង 11:00 AM</span>
+                                </label>
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheck3">
+                              </li>
+                      
+                              <li class="todo-item d-flex align-items-center justify-content-between">
+                                <label class="form-check-label" for="flexCheck3">
+                                  <span class="d-block todotext-checked">រត់ 30 នាទី</span>
+                                  <span class="ps-1 todotext-checked">ម៉ោង 7:00 AM</span>
+                                </label>
+                                <input class="form-check-input bg-opacity-25" checked type="checkbox" value="" id="flexCheck4">
+                                
+                              </li>
+                              <li class="todo-item d-flex align-items-center justify-content-between">
+                                <label class="form-check-label" for="flexCheck3">
+                                  <span class="d-block todotext-checked">អានសៀវភៅ</span>
+                                  <span class="ps-1 todotext-checked">ម៉ោង 8:00 AM</span>
+                                </label>
+                                <input class="form-check-input bg-opacity-25" checked type="checkbox" value="" id="flexCheck5">
+                                
+                              </li>
+                              <li class="todo-item d-flex align-items-center justify-content-between">
+                                <label class="form-check-label" for="flexCheck3">
+                                  <span class="d-block todotext-checked">សរសេរកំណត់ត្រា</span>
+                                  <span class="ps-1 todotext-checked">ម៉ោង 9:00 AM</span>
+                                </label>
+                                <input class="form-check-input bg-opacity-25" checked type="checkbox" value="" id="flexCheck6">
+                                
+                              </li>
+                              
+                            </ul>
+                          </div>
+                          
+                        </div>
+                       </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="daily-work p-4">
+                        <div class="daily-work-title d-flex justify-content-between">
+                          <h3 class="landing-title-color">កិច្ចការប្រចាំថ្ងៃ</h3>
+                          <div class="add-work"> 
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-add-work" data-bs-toggle="modal" data-bs-target="#todolistRoutineModal">
+                              <span><i class="fa-solid fa-plus"></i></span>
+                            </button>
+      
+                            <!-- Modal -->
+                            <div class="modal fade" id="todolistRoutineModal" tabindex="-1" aria-labelledby="todolistModalLabel" aria-hidden="true">
+                              <div class="modal-dialog modal-lg modal-fullscreen-md-down modal-dialog-centered">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h1 class="modal-title fs-4 landing-title-color" id="exampleModalLabel">បន្ថែមការងារថ្មី</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body px-5">
+                                    
+                                    <div class="work-form pt-5">
+                                      <div class="mb-5">
+                                        <label for="workType" class="form-label fs-5">ប្រភេទការងារ</label>
+                                        <div class="position-relative">
+                                          <input class="form-control" id="workType" type="text" placeholder="" aria-label="">
+                                          <div class="form-icon position-absolute" style="top: 0; right: 0;">
+                                            <span class="fs-5 text-dark-emphasis"><i class="fa-regular fa-file-lines"></i></span>
+                                            
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="mb-5">
+                                        <label for="workHour" class="form-label fs-5">ម៉ោង (អាចមិនកំណត់បាន)</label>
+                                        <div class="d-flex mb-2">
+                                          <button type="button" class="btn me-2 btn-hour active bg-body-secondary">7:00 AM</button>
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">8:00 AM</button>
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">9:00 AM</button>
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">10:00 AM</button>
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">11:00 AM</button>
+                                          
+                                        </div>
+                                        <div class="d-flex mb-2">
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">12:00 PM</button>
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">1:00 PM</button>
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">2:00 PM</button>
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">3:00 PM</button>
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">4:00 PM</button>
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">5:00 PM</button>
+                                          
+                                        </div>
+                                        <div class="d-flex mb-2">
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">6:00 PM</button>
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">7:00 PM</button>
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">8:00 PM</button>
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">9:00 PM</button>
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">10:00 PM</button>
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">11:00 PM</button>
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">00:00 PM</button>
+                                        </div>
+                                      </div>
+                                      
+                                      <div class="mb-4 mt-5">
+                                        <label for="" class="form-label fs-5 d-block pb-2">រំលឹក</label>
+                                        <div class="row">
+                                          <div class="col-6">
+                                            <div class="form-check form-check-inline">
+                                              <input class="form-check-input" type="checkbox" value="" id="7am">
+                                              <label class="form-check-label" for="7am">
+                                                រំលឹកថ្ងៃនេះនៅម៉ោង 7:00 AM
+                                              </label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                              <input class="form-check-input" type="checkbox" value="" id="8am">
+                                              <label class="form-check-label" for="8am">
+                                                រំលឹកថ្ងៃនេះនៅម៉ោង 8:00 AM
+                                              </label>
+                                            </div>
+                                            <div class="form-check form-check-inline me-3">
+                                              <input class="form-check-input" type="checkbox" value="" id="12pm">
+                                              <label class="form-check-label" for="12pm">
+                                                រំលឹកថ្ងៃនេះនៅម៉ោង 12:00 PM
+                                              </label>
+                                            </div>
+                                          </div>
+                                          <div class="col-6">
+                                            <div class="form-check form-check-inline me-3">
+                                              <input class="form-check-input" type="checkbox" value="" id="2pm">
+                                              <label class="form-check-label" for="12am">
+                                                រំលឹកថ្ងៃនេះនៅម៉ោង 2:00 PM
+                                              </label>
+                                            </div>
+                                            <div class="form-check form-check-inline me-3">
+                                              <input class="form-check-input" type="checkbox" value="" id="4pm">
+                                              <label class="form-check-label" for="4pm">
+                                                រំលឹកថ្ងៃនេះនៅម៉ោង 4:00 PM
+                                              </label>
+                                            </div>
+                                            <div class="form-check form-check-inline me-3">
+                                              <input class="form-check-input vip-input" type="checkbox" value="" id="vip">
+                                              <label class="form-check-label" for="vip">
+                                                <a href="pricing.html" class="nav-link">
+                                                  <span>រៀបចំដោយខ្លួនឯង</span>
+                                                  <span class="text-warning"><i class="fa-solid fa-crown"></i></span>
+                                                </a>
+                                               
+                                              </label> 
+                                              
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                        
+                                        
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">បិទ</button>
+                                    <button type="button" class="btn btn-savechange text-white" data-bs-dismiss="modal">បន្ថែម</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>                   
+                        </div>
+                        <div class="daily-list py-4">
+                          <div class="list-wrapper mb-4">
+                            <ul class="list-todo m-0">
+                              
+                              <li class="todo-item d-flex align-items-center justify-content-between">
+                                <label class="form-check-label" for="flexCheck1">
+                                  <span class="d-block">ផឹកទឹកឱ្យបាន ២៤ លីត្រ</span>
+                                  <span class="ps-1 text-dark-emphasis">ម៉ោង មិនកំណត់</span>
+                                </label>
+                                <span class="pe-2 main-title"><i class="fa-solid fa-bookmark"></i></span>
+                              </li>
+                              <li class="todo-item d-flex align-items-center justify-content-between">
+                                <label class="form-check-label" for="flexCheck2">
+                                  <span class="d-block">ទិញផ្លែឈើនិងបន្លែស្រស់</span>
+                                  <span class="ps-1 text-dark-emphasis">ម៉ោង 8:00 AM</span>
+                                </label>
+                                <span class="pe-2 main-title"><i class="fa-solid fa-bookmark"></i></span>
+                              </li>
+                              <li class="todo-item d-flex align-items-center justify-content-between">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  <span class="d-block">ធ្វើសមាធិរយៈពេល 10 នាទី</span>
+                                  <span class="ps-1 text-dark-emphasis">ម៉ោង 1:00 PM</span>
+                                </label>
+                                <span class="pe-2 main-title"><i class="fa-solid fa-bookmark"></i></span>
+                                
+                              </li>
+                              
+                              
+                            </ul>
+                          </div>
+                          
+                        </div>
+                       </div>
                     </div>
                   </div>
+                 
+                 
 
-                  <div class="work-wrapper d-flex p-3" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#multiCollapse2" aria-expanded="false" aria-controls="multiCollapse2">
-                    <span class="pt-1"><i class="fa-solid fa-play"></i></span>
-                    <p class="ms-4 fs-5 px-3 mb-0">សរសេរ Website</p>
-                  </div>
-                  <div class="work-collapse px-5">
-                    <div class="collapse multi-collapse show" id="multiCollapse2">
-                      <div class="card card-body card-wrapper">
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="Check3">
-                          <label class="form-check-label ps-2" for="Check1">
-                            Design Figma Landing Page
-                          </label>
-                        </div>
-                        <div class="form-check pt-2">
-                          <input class="form-check-input" type="checkbox" value="" id="Check4">
-                          <label class="form-check-label ps-2" for="Check2">
-                            Design Figma Home Page
-                          </label>
-                        </div>
-                        <div class="add-new-activity py-2">
-                          <div class="card card-body py-3">
-                            <input class="form-control" id="" type="text" placeholder="បន្ថែមសកម្មភាពថ្មី"
-                              aria-label="">
-                            <div class="card-btn-footer pt-3 w-100 d-flex justify-content-between">
-                              <button type="button" class="btn btn-do-add px-lg-4 py-0"> បន្ថែម </button>
-                              <div class="right-btn d-none d-lg-block">
-                                <button type="button" class="btn btn-secondary">ចាប់ផ្ដើម 13 កក្កដា</button>
-                                <button type="button" class="btn btn-secondary">បញ្ចប់ 18 កក្កដា</button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
 
-                  <div class="work-wrapper d-flex p-3" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#multiCollapse3" aria-expanded="false" aria-controls="multiCollapse2">
-                    <span class="pt-1"><i class="fa-solid fa-play"></i></span>
-                    <p class="ms-4 fs-5 px-3 mb-0">សរសេរ Website</p>
-                  </div>
-                  <div class="work-collapse px-5">
-                    <div class="collapse multi-collapse show" id="multiCollapse3">
-                      <div class="card card-body card-wrapper">
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="Check5">
-                          <label class="form-check-label ps-2" for="Check1">
-                            Design Figma Landing Page
-                          </label>
-                        </div>
-                        <div class="form-check pt-2">
-                          <input class="form-check-input" type="checkbox" value="" id="Check6">
-                          <label class="form-check-label ps-2" for="Check2">
-                            Design Figma Home Page
-                          </label>
-                        </div>
-                        <div class="add-new-activity py-2">
-                          <div class="card card-body py-3">
-                            <input class="form-control" id="" type="text" placeholder="បន្ថែមសកម្មភាពថ្មី"
-                              aria-label="">
-                            <div class="card-btn-footer pt-3 w-100 d-flex justify-content-between">
-                              <button type="button" class="btn btn-do-add px-lg-4 py-0"> បន្ថែម </button>
-                              <div class="right-btn d-none d-lg-block">
-                                <button type="button" class="btn btn-secondary">ចាប់ផ្ដើម 13 កក្កដា</button>
-                                <button type="button" class="btn btn-secondary">បញ្ចប់ 18 កក្កដា</button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  
 
                 </div>
 
-                <div class="display d-flex justify-content-between">
-                  <div class="left-display">
-                    <p class="mb-0">បង្ហាញការងារ</p>
-                  </div>
-                  <div class="right-display d-flex align-items-center">
-                    <div class="prev me-3">
-                      <span><i class="fa-solid fa-angle-left"></i></span>
-                    </div>
-                    <div class="next me-3">
-                      <span><i class="fa-solid fa-angle-right"></i></span>
-                    </div>
-                    <button type="button" class="btn ">
-                      <span>សប្ដាហ៌នេះ</span>
-                      <span>2024</span>
-                    </button>
-                  </div>
-                </div>
-
-                <div class="organize-work my-5 px-5 py-5">
-                  <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab2" role="tablist">
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link active" id="pills-continue-tab2" data-bs-toggle="pill"
-                        data-bs-target="#pills-continue2" type="button" role="tab" aria-controls="pills-continue2"
-                        aria-selected="true">ការងារដែលកំពុងធ្វើ</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="pills-pause-tab2" data-bs-toggle="pill"
-                        data-bs-target="#pills-pause2" type="button" role="tab" aria-controls="pills-pause2"
-                        aria-selected="false">ការងារដែលបានផ្អាក</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="pills-done-tab2" data-bs-toggle="pill" data-bs-target="#pills-done2"
-                        type="button" role="tab" aria-controls="pills-done2"
-                        aria-selected="false">ការងារដែលបានធ្វើរួច</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="pills-stop-tab2" data-bs-toggle="pill" data-bs-target="#pills-stop2"
-                        type="button" role="tab" aria-controls="pills-stop2"
-                        aria-selected="false">ការងារដែលបានឈប់ធ្វើ</button>
-                    </li>
-                  </ul>
-                  <div class="tab-content py-5" id="pills-tabContent2">
-                    <div class="tab-pane fade show active" id="pills-continue2" role="tabpanel"
-                      aria-labelledby="pills-continue-tab" tabindex="0">
-                      <div class="card bg-primary-subtle mb-4 p-3">
-                        <div class="work-title d-flex justify-content-between">
-                          <p class="text-dark-emphasis fw-bolder fs-5 mb-0">Creating Website for Webo</p>
-                          <div class="work-logo">
-                            <img src="assets/img/Journaling-Todolist/process.png" width="30px" alt="process-icon">
-                          </div>
-                        </div>
-                        <p>Digital product</p>
-                        <div class="tick-icon">
-                          <span><i class="fa-regular fa-circle-check"></i></span>
-                          <span>3 ការងារ</span>
-                        </div>
-                      </div>
-                      <div class="card bg-primary-subtle mb-4 p-3">
-                        <div class="work-title d-flex justify-content-between">
-                          <p class="text-dark-emphasis fw-bolder fs-5 mb-0">Creating Website for Webo</p>
-                          <div class="work-detail">
-                            <div class="work-logo">
-                              <img src="assets/img/Journaling-Todolist/process.png" width="30px" alt="process-icon">
-                            </div>
-                          </div>
-                        </div>
-                        <p>Digital product</p>
-                        <div class="tick-icon">
-                          <span><i class="fa-regular fa-circle-check"></i></span>
-                          <span>3 ការងារ</span>
-                        </div>
-                      </div>
-                      <div class="card bg-primary-subtle mb-4 p-3">
-                        <div class="work-title d-flex justify-content-between">
-                          <p class="text-dark-emphasis fw-bolder fs-5 mb-0">Creating Website for Webo</p>
-                          <div class="work-logo">
-                            <img src="assets/img/Journaling-Todolist/process.png" width="30px" alt="process-icon">
-                          </div>
-                        </div>
-                        <p>Digital product</p>
-                        <div class="tick-icon">
-                          <span><i class="fa-regular fa-circle-check"></i></span>
-                          <span>3 ការងារ</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="tab-pane fade" id="pills-pause2" role="tabpanel" aria-labelledby="pills-pause-tab2"
-                      tabindex="0">
-                      <div class="card bg-warning-subtle mb-4 p-3">
-                        <div class="work-title d-flex justify-content-between">
-                          <p class="text-dark-emphasis fw-bolder fs-5 mb-0">Creating Website for Webo</p>
-                          <div class="work-logo">
-                            <img src="assets/img/Journaling-Todolist/back-in-time.png" width="30px" alt="process-icon">
-                          </div>
-                        </div>
-                        <p>Digital product</p>
-                        <div class="tick-icon">
-                          <span><i class="fa-regular fa-circle-check"></i></span>
-                          <span>3 ការងារ</span>
-                        </div>
-                      </div>
-
-                    </div>
-                    <div class="tab-pane fade" id="pills-done2" role="tabpanel" aria-labelledby="pills-done-tab2"
-                      tabindex="0">
-                      <div class="card bg-success-subtle mb-4 p-3">
-                        <div class="work-title d-flex justify-content-between">
-                          <p class="text-dark-emphasis fw-bolder fs-5 mb-0">Creating Website for Webo</p>
-                          <div class="work-logo">
-                            <img src="assets/img/Journaling-Todolist/done.png" width="30px" alt="process-icon">
-                          </div>
-                        </div>
-                        <p>Digital product</p>
-                        <div class="tick-icon">
-                          <span><i class="fa-regular fa-circle-check"></i></span>
-                          <span>3 ការងារ</span>
-                        </div>
-                      </div>
-                      <div class="card bg-success-subtle mb-4 p-3">
-                        <div class="work-title d-flex justify-content-between">
-                          <p class="text-dark-emphasis fw-bolder fs-5 mb-0">Creating Website for Webo</p>
-                          <div class="work-logo">
-                            <img src="assets/img/Journaling-Todolist/done.png" width="30px" alt="process-icon">
-                          </div>
-                        </div>
-                        <p>Digital product</p>
-                        <div class="tick-icon">
-                          <span><i class="fa-regular fa-circle-check"></i></span>
-                          <span>3 ការងារ</span>
-                        </div>
-                      </div>
-                      <div class="card bg-success-subtle mb-4 p-3">
-                        <div class="work-title d-flex justify-content-between">
-                          <p class="text-dark-emphasis fw-bolder fs-5 mb-0">Creating Website for Webo</p>
-                          <div class="work-logo">
-                            <img src="assets/img/Journaling-Todolist/done.png" width="30px" alt="process-icon">
-                          </div>
-                        </div>
-                        <p>Digital product</p>
-                        <div class="tick-icon">
-                          <span><i class="fa-regular fa-circle-check"></i></span>
-                          <span>3 ការងារ</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="tab-pane fade" id="pills-stop2" role="tabpanel" aria-labelledby="pills-stop-tab2"
-                      tabindex="0">
-                      <div class="card bg-danger-subtle mb-4 p-3">
-                        <div class="work-title d-flex justify-content-between">
-                          <p class="text-dark-emphasis fw-bolder fs-5 mb-0">Creating Website for Webo</p>
-                          <div class="work-logo">
-                            <img src="assets/img/Journaling-Todolist/close.png" width="30px" alt="process-icon">
-                          </div>
-                        </div>
-                        <p>Digital product</p>
-                        <div class="tick-icon">
-                          <span><i class="fa-regular fa-circle-check"></i></span>
-                          <span>3 ការងារ</span>
-                        </div>
-                      </div>
-                      <div class="card bg-danger-subtle mb-4 p-3">
-                        <div class="work-title d-flex justify-content-between">
-                          <p class="text-dark-emphasis fw-bolder fs-5 mb-0">Creating Website for Webo</p>
-                          <div class="work-logo">
-                            <img src="assets/img/Journaling-Todolist/close.png" width="30px" alt="process-icon">
-                          </div>
-                        </div>
-                        <p>Digital product</p>
-                        <div class="tick-icon">
-                          <span><i class="fa-regular fa-circle-check"></i></span>
-                          <span>3 ការងារ</span>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div>
-
-                </div>
+                
 
               </section>
 
