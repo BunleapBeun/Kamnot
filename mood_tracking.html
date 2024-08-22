@@ -467,9 +467,10 @@
           <!-- ! end of side bar -->
           <!-- ! begin of main content -->
           <div class="col-lg-11 col-12">
-            <section class="mood-tracking">
-              <div class="pt-112 px-4 px-md-0">
-                <h3 class="section-title">តើថ្ងៃនេះអ្នកមានអារម្មណ៍បែបណាដែរ?</h3>
+            <div class="pt-112 px-4 px-md-0">
+              <section class="mood-tracking">
+                <div class="col-12">
+                  <h3 class="section-title">តើថ្ងៃនេះអ្នកមានអារម្មណ៍បែបណាដែរ?</h3>
                 <div class="bar-month">
                   <h2 class="main-text">មករា ២០២៤</h2>
                 </div>
@@ -507,7 +508,8 @@
                       <td class="body-day"><a class="btn-calendar angary" type="button">9</a></td>
                     </tr>
                     <tr>
-                      <td class="body-day"><a class="btn-calendar" type="button" data-bs-toggle="modal" data-bs-target="#mood-input">10</a>
+                      <td class="body-day"><a class="btn-calendar" type="button" data-bs-toggle="modal"
+                          data-bs-target="#mood-input">10</a>
                       </td>
                       <!-- Modal -->
                       <div class="modal fade" id="mood-input" tabindex="-1" aria-labelledby="mood-inputLabel"
@@ -565,25 +567,26 @@
                     </tr>
                   </tbody>
                 </table>
-
-              </div>
-            </section>
-            <section class="mood-statistic mt-4">
-              <div class="row">
-                <div class="col-6">
-                  <h3 class="main-text m-0">ស្ថានភាពអារម្មណ៍ប្រចាំសប្ដាហ៍</h3>
-                  <div class="card mt-2">
-                    <canvas id="pieGraph" style="width:100%;max-width:600px"></canvas>
+  
+                </div>
+              </section>
+              <section class="mood-statistic mt-4">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <h3 class="main-text m-0">ស្ថានភាពអារម្មណ៍ប្រចាំសប្ដាហ៍</h3>
+                    <div class="card mt-2">
+                      <canvas id="pieGraph" style="width:100%;max-width:600px"></canvas>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 mt-lg-0 mt-3">
+                    <h3 class="main-text">ស្ថានភាពអារម្មណ៍ប្រចាំឆ្នាំ</h3>
+                    <div class="card mt-2">
+                      <canvas id="lineGraph" style="width:100%;max-width:600px"></canvas>
+                    </div>
                   </div>
                 </div>
-                <div class="col-6">
-                  <h3 class="main-text m-0">ស្ថានភាពអារម្មណ៍ប្រចាំឆ្នាំ</h3>
-                  <div class="card mt-2">
-                    <canvas id="lineGraph" style="width:100%;max-width:600px"></canvas>
-                  </div>
-                </div>
-              </div>
-            </section>
+              </section>
+            </div>
           </div>
           <!-- ! end of main content -->
         </div>

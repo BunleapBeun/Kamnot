@@ -3875,6 +3875,37 @@ nav {
   padding: 10px;
 }
 
+@media (max-width: 768px) {
+  .body-day {
+    padding: 5px;
+  }
+  .head-calendar {
+    padding: 5px;
+  }
+  .mood-tracking table thead tr .head-calendar {
+    background: var(--link-text);
+    color: #fff;
+    font-weight: normal;
+    font-size: 15px !important;
+  }
+  
+  .mood-tracking table tbody tr {
+    text-align: center;
+  }
+
+  .mood-tracking table tbody tr .btn-calendar {
+    text-decoration: none;
+    color: var(--main-text);
+    font-size: 13px !important;
+    width: 30px !important;
+    height: 30px !important;
+    border-radius: 20px !important;
+    border: 1px solid var(--ddd-color);
+    align-content: center !important;
+  }
+  
+}
+
 .happy {
   background-color: blue;
   color: #fff !important;
@@ -3931,7 +3962,7 @@ nav {
 
 .mood-tracking table tbody tr {
   text-align: center;
-} 
+}
 
 .mood-tracking table tbody tr .btn-calendar {
   text-decoration: none;
@@ -4911,7 +4942,7 @@ nav {
   padding: 0;
   border: 10px solid var(--main-color);
   border-radius: 10px;
-  height: 600px;
+  height: auto;
   overflow: scroll;
   overflow-y: scroll;
   scrollbar-width: none;
