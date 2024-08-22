@@ -31,7 +31,7 @@ main {
   color: var(--main-title);
 }
 
-.modal-header-color{
+.modal-header-color {
   color: #3c4d78;
 }
 
@@ -137,7 +137,7 @@ main {
   --text-color-gradient: linear-gradient(135deg, #488495 0%, #3c4d78 100%);
   --main-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
     rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
-    --btn-pill-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  --btn-pill-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 [data-theme="dark"] {
@@ -1957,6 +1957,7 @@ nav {
   border-radius: 15px;
   border: 1px solid black;
 }
+
 .overview .organize-work .daily-work {
   width: 100%;
   padding: 30px 0;
@@ -1966,6 +1967,7 @@ nav {
   background-color: white;
 
 }
+
 .overview .organize-work .daily-work .btn-add-work {
   border-radius: 100%;
   width: 40px;
@@ -1976,52 +1978,63 @@ nav {
   color: white;
   background: var(--bg-grandient);
 }
-.add-work .modal-content .modal-header, .modal-footer{
+
+.add-work .modal-content .modal-header,
+.modal-footer {
   border-bottom: none !important;
   border-top: none !important;
 }
-.modal-body .btn-work-schedule.active{
+
+.modal-body .btn-work-schedule.active {
   background-color: #488495;
 }
-.modal-body .btn-work-schedule{
+
+.modal-body .btn-work-schedule {
   margin-right: 15px;
 }
-.modal-body .work-form .form-control{
+
+.modal-body .work-form .form-control {
   border-top: none;
   border-left: none;
   border-right: none;
   border-radius: 0;
 }
+
 .form-control:disabled {
   background-color: transparent !important;
   opacity: 1;
 }
-.modal-body .work-form .active{
+
+.modal-body .work-form .active {
   background-color: #488495 !important;
   color: white;
 }
-.overview .organize-work .form-check-input{
+
+.overview .organize-work .form-check-input {
   border: 1px solid #488495 !important;
 }
-.overview .organize-work .form-check-input:checked{
+
+.overview .organize-work .form-check-input:checked {
   background-color: #488495;
 }
-.modal-body .work-form .vip-input{
+
+.modal-body .work-form .vip-input {
   border: 1px solid #818181 !important;
 }
-.daily-list .list-wrapper .list-todo{
+
+.daily-list .list-wrapper .list-todo {
   height: 600px;
   overflow-y: scroll;
   scrollbar-width: none;
 }
 
- 
+
 /* end of todo list page */
 
 /* start of money spending page*/
 
 /* start of money spending page */
-.card-report{
+.card-report {
   width: 90%;
   height: 180px;
   box-shadow: var(--main-shadow);
@@ -2030,62 +2043,72 @@ nav {
   cursor: pointer;
   padding: 20px;
 }
-.saving-up{
+
+.saving-up {
   padding: 1px 10px;
   border-radius: 20px !important;
   background-color: #DBFFE6 !important;
   border: 1px solid black !important;
-  box-shadow: inset 0px 4px 4px 0px rgba(0,0,0,0.25);
+  box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
-.card-report .report-info .progress .progress-bar{
+
+.card-report .report-info .progress .progress-bar {
   border-radius: 20px;
   background-color: #dbffe6;
   border: 1px solid black;
   box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.card-icon{
+.card-icon {
   width: 50px !important;
   height: 50px !important;
   border-radius: 20px;
   transition: ease-in-out 0.3s;
 }
-.btn-card-report .modal-body .display-categories .card-icon:hover{
+
+.btn-card-report .modal-body .display-categories .card-icon:hover {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px !important;
 
 }
-.btn-card-report .modal-body .display-categories .card-icon:focus{
+
+.btn-card-report .modal-body .display-categories .card-icon:focus {
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
-.btn-card-report .btn-report{
+.btn-card-report .btn-report {
   padding: 5px 30px;
   border-radius: 20px;
   border: 1px solid var(--link-text) !important;
   transition: ease-in-out 0.3s;
   color: var(--main-title);
 }
-.btn-card-report .btn-report:hover{
+
+.btn-card-report .btn-report:hover {
   background-color: #dfebfd;
 }
-.btn-card-report .modal .modal-body .form-control{
+
+.btn-card-report .modal .modal-body .form-control {
   border-radius: 20px;
   border-color: #3c4d78;
   color: #4e4e4e;
 }
-.btn-card-report .modal .modal-body .form-control::placeholder{
+
+.btn-card-report .modal .modal-body .form-control::placeholder {
   color: #adadad;
   font-weight: normal;
 }
-.btn-card-report .modal .modal-body .form-control:disabled::placeholder{
-  color: #434343!important;
+
+.btn-card-report .modal .modal-body .form-control:disabled::placeholder {
+  color: #434343 !important;
   font-weight: bolder;
 }
-.spending-history .spending-history-title{
+
+.spending-history .spending-history-title {
   background-color: #dfebfd;
   padding: 10px 0;
 }
-.spending-his-nav .nav .nav-item .nav-link{
+
+.spending-his-nav .nav .nav-item .nav-link {
   height: 50px;
   width: 130px;
   display: flex;
@@ -2094,27 +2117,32 @@ nav {
   transition: all ease-in-out 0.4s;
   color: black;
 }
-.spending-his-nav .nav .nav-item .nav-link:hover{
+
+.spending-his-nav .nav .nav-item .nav-link:hover {
   border-radius: 10px;
   background-color: rgba(175, 222, 234, 0.765);
   color: black;
   border: none !important;
 }
-.spending-his-nav .nav .nav-item .nav-link.active{
+
+.spending-his-nav .nav .nav-item .nav-link.active {
   border-radius: 10px;
   background-color: var(--link-text);
   box-shadow: var(--btn-pill-shadow);
   color: white;
 }
-.spending-his-nav .nav .nav-item .nav-link:hover{
+
+.spending-his-nav .nav .nav-item .nav-link:hover {
   box-shadow: none !important;
   border: 1px solid var(--link-text);
 }
-.spending-history .tab-content .tab-pane .card .income-icon{
+
+.spending-history .tab-content .tab-pane .card .income-icon {
   width: 50px;
   height: 50px;
   border-radius: 100%;
 }
+
 .btn-card-report .modal .modal-body .form-check-input {
   border-radius: 50% !important;
   outline-color: var(--gray-color);
@@ -2122,11 +2150,13 @@ nav {
   height: 20px;
   border-color: var(--gray-color);
 }
+
 .btn-card-report .modal .modal-body .form-check-input:focus {
   box-shadow: none;
   border-color: var(--gray-color);
 }
-.btn-card-report .modal .modal-body  .form-check-input:checked {
+
+.btn-card-report .modal .modal-body .form-check-input:checked {
   background-color: #488495;
   border: none;
 }
@@ -2248,9 +2278,11 @@ nav {
   height: 230px;
   max-height: 230px;
 }
-.therapist-categories .card-body .card-title{
+
+.therapist-categories .card-body .card-title {
   cursor: pointer;
 }
+
 .therapist-categories .card-body .card-title .experience {
   border-radius: 10px;
   height: 30px;
@@ -3861,16 +3893,18 @@ nav {
   .body-day {
     padding: 5px;
   }
+
   .head-calendar {
     padding: 5px;
   }
+
   .mood-tracking table thead tr .head-calendar {
     background: var(--link-text);
     color: #fff;
     font-weight: normal;
     font-size: 15px !important;
   }
-  
+
   .mood-tracking table tbody tr {
     text-align: center;
   }
@@ -3885,7 +3919,7 @@ nav {
     border: 1px solid var(--ddd-color);
     align-content: center !important;
   }
-  
+
 }
 
 .happy {
@@ -4730,7 +4764,7 @@ nav {
   border-top: 1px solid var(--ddd-color);
 }
 
-.video-selfdev .card-selfdev .video-info .pf-video .pf-vdo-image {
+.pf-video .pf-vdo-image {
   width: 40px;
   height: 40px;
   border-radius: 40px;
@@ -4740,16 +4774,18 @@ nav {
   padding: 10px;
 }
 
-.video-selfdev .card-selfdev .video-info .pf-video p {
+.pf-video p {
   margin: 0;
   font-weight: 500;
   color: var(--main-text);
 }
 
-.video-selfdev .card-selfdev .video-info .pf-video span {
+.pf-video span {
   font-size: 15px;
   color: var(--gray-color);
 }
+
+
 
 .video-selfdev .card-selfdev .video-info .btn-video-play {
   width: 40px;
@@ -4989,6 +5025,31 @@ nav {
   width: 100%;
   height: 100%;
   border-radius: 10px;
+}
+
+.exer-vdo-watching .discript-video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: var(--card-color);
+  border: 1px solid var(--ddd-color);
+}
+
+.discription-vido p {
+  font-size: 20px;
+  color: var(--main-text);
+}
+
+.discript-video h3,
+.discript-video h4 {
+  color: var(--main-text);
+}
+
+.discription-vido ul li {
+  font-size: 16px;
+  color: var(--main-text);
 }
 
 .exer-vdo-watching .plyr__poster {
