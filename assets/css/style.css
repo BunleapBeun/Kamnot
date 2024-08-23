@@ -145,7 +145,7 @@ main {
   --sub-title: #b3b3b3;
   --main-color: #1c1b1e;
   --stick-color: #fff;
-  --gray-color: #4d4d4d;
+  --gray-color: #717171;
   --label-color: #868686;
   --hover-color: #1a2e4d;
   --bg-grandient: linear-gradient(135deg, #264d59 0%, #1a2e4d 100%);
@@ -515,11 +515,21 @@ nav {
   padding: 10px;
 }
 
+.notification .noti-content .noti-list .noti-item {
+  transition: 0.3s ease;
+}
+
+.notification .noti-content .noti-list .noti-item:hover {
+  background-color: var(--ddd-color);
+}
+
 .notification .noti-content .noti-list .noti-item .noti-link .noti-image img {
   height: 60px;
+  width: 60px;
   transform: scale(1.1);
   display: block;
   margin-right: 10px;
+  object-fit: cover;
 }
 
 .notification .noti-content .noti-list .noti-item .noti-link .noti-title {
