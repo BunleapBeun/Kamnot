@@ -4782,7 +4782,7 @@ nav {
 
 .pf-video span {
   font-size: 15px;
-  color: var(--gray-color);
+  color: var(--main-text);
 }
 
 
@@ -5080,6 +5080,30 @@ nav {
 
 .exer-type {
   background-color: #fff;
+}
+
+.exer-enroll-banner {
+  width: 100%;
+  height: 435px;
+  border-radius: 10px;
+}
+
+.exer-enroll-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.exer-course-detail p {
+  font-size: 20px;
+  color: var(--main-text);
+  font-weight: 500;
+}
+
+.exer-course-detail .card-exer-detail {
+  background-color: var(--card-color);
+  border-radius: 30px;
 }
 
 /* ! end of exercise */
