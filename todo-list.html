@@ -17,7 +17,7 @@
   <body>
     <!-- ! begin of header -->
     <header class="position-fixed top-0 w-100">
-      <nav class="navbar navbar-expand-lg nav-py30" >
+      <nav class="navbar navbar-expand-lg nav-py30">
         <div class="container">
           <a class="navbar-brand" href="home_page.html"><img src="assets/img/navbar/Kn-logo.png" alt="" /></a>
           <button class="navbar-toggler" type="button" aria-expanded="false" data-bs-toggle="offcanvas"
@@ -497,31 +497,36 @@
                       <div class="daily-work p-4">
                         <div class="daily-work-title d-flex justify-content-between">
                           <h3 class="landing-title-color">កិច្ចការសម្រាប់ថ្ងៃនេះ</h3>
-                          <div class="add-work"> 
+                          <div class="add-work">
                             <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-add-work" data-bs-toggle="modal" data-bs-target="#todolistModal">
+                            <button type="button" class="btn btn-add-work" data-bs-toggle="modal"
+                              data-bs-target="#todolistModal">
                               <span><i class="fa-solid fa-plus"></i></span>
                             </button>
-      
+
                             <!-- Modal -->
-                            <div class="modal fade" id="todolistModal" tabindex="-1" aria-labelledby="todolistModalLabel" aria-hidden="true">
+                            <div class="modal fade" id="todolistModal" tabindex="-1"
+                              aria-labelledby="todolistModalLabel" aria-hidden="true">
                               <div class="modal-dialog modal-lg modal-fullscreen-md-down modal-dialog-centered">
                                 <div class="modal-content">
                                   <div class="modal-header">
-                                    <h1 class="modal-title fs-4 landing-title-color" id="exampleModalLabel">បន្ថែមការងារថ្មី</h1>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    <h1 class="modal-title fs-4 landing-title-color" id="exampleModalLabel">
+                                      បន្ថែមការងារថ្មី</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                      aria-label="Close"></button>
                                   </div>
                                   <div class="modal-body px-5">
                                     <div class="work-schedule d-flex">
-                                      <button type="button" class="btn btn-work-schedule active text-white"> សម្រាប់ថ្ងៃនេះ </button>
-                                      <button type="button" class="btn bg-warning-subtle btn-work-schedule text-white"> 
+                                      <button type="button" class="btn btn-work-schedule active text-white">
+                                        សម្រាប់ថ្ងៃនេះ </button>
+                                      <button type="button" class="btn bg-warning-subtle btn-work-schedule text-white">
                                         <a href="pricing.html" class="nav-link">
                                           <span class="text-black">សម្រាប់សប្ដាហ៌នេះ</span>
                                           <span class="text-warning"><i class="fa-solid fa-crown"></i></span>
                                         </a>
-                                        
+
                                       </button>
-                                      <button type="button" class="btn bg-warning-subtle btn-work-schedule text-white"> 
+                                      <button type="button" class="btn bg-warning-subtle btn-work-schedule text-white">
                                         <a href="pricing.html" class="nav-link">
                                           <span class="text-black">សម្រាប់ខែនេះ</span>
                                           <span class="text-warning"><i class="fa-solid fa-crown"></i></span>
@@ -532,50 +537,72 @@
                                       <div class="mb-5">
                                         <label for="disabledTextInput" class="form-label fs-5">កាលបរិចេ្ឆទ</label>
                                         <div class="position-relative">
-                                          <input class="form-control" id="disabledTextInput" disabled type="text" placeholder="30/08/2024" aria-label="">
+                                          <input class="form-control" id="disabledTextInput" disabled type="text"
+                                            placeholder="30/08/2024" aria-label="">
                                           <div class="form-icon position-absolute" style="top: 0; right: 0;">
-                                            <span class="fs-5 text-dark-emphasis"><i class="fa-regular fa-calendar"></i></span>
-                                            
+                                            <span class="fs-5 text-dark-emphasis"><i
+                                                class="fa-regular fa-calendar"></i></span>
+
                                           </div>
                                         </div>
-                                        
+
                                       </div>
                                       <div class="mb-5">
                                         <label for="workHour" class="form-label fs-5">ម៉ោង (អាចមិនកំណត់បាន)</label>
                                         <div class="d-flex mb-2">
-                                          <button type="button" class="btn me-2 btn-hour active bg-body-secondary">7:00 AM</button>
-                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">8:00 AM</button>
-                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">9:00 AM</button>
-                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">10:00 AM</button>
-                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">11:00 AM</button>
-                                          
+                                          <button type="button" class="btn me-2 btn-hour active bg-body-secondary">7:00
+                                            AM</button>
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">8:00
+                                            AM</button>
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">9:00
+                                            AM</button>
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">10:00
+                                            AM</button>
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">11:00
+                                            AM</button>
+
                                         </div>
                                         <div class="d-flex mb-2">
-                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">12:00 PM</button>
-                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">1:00 PM</button>
-                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">2:00 PM</button>
-                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">3:00 PM</button>
-                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">4:00 PM</button>
-                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">5:00 PM</button>
-                                          
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">12:00
+                                            PM</button>
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">1:00
+                                            PM</button>
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">2:00
+                                            PM</button>
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">3:00
+                                            PM</button>
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">4:00
+                                            PM</button>
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">5:00
+                                            PM</button>
+
                                         </div>
                                         <div class="d-flex mb-2">
-                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">6:00 PM</button>
-                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">7:00 PM</button>
-                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">8:00 PM</button>
-                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">9:00 PM</button>
-                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">10:00 PM</button>
-                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">11:00 PM</button>
-                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">00:00 PM</button>
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">6:00
+                                            PM</button>
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">7:00
+                                            PM</button>
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">8:00
+                                            PM</button>
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">9:00
+                                            PM</button>
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">10:00
+                                            PM</button>
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">11:00
+                                            PM</button>
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">00:00
+                                            PM</button>
                                         </div>
                                       </div>
                                       <div class="mb-5">
                                         <label for="workType" class="form-label fs-5">ប្រភេទការងារ</label>
                                         <div class="position-relative">
-                                          <input class="form-control" id="workType" type="text" placeholder="" aria-label="">
+                                          <input class="form-control" id="workType" type="text" placeholder=""
+                                            aria-label="">
                                           <div class="form-icon position-absolute" style="top: 0; right: 0;">
-                                            <span class="fs-5 text-dark-emphasis"><i class="fa-regular fa-file-lines"></i></span>
-                                            
+                                            <span class="fs-5 text-dark-emphasis"><i
+                                                class="fa-regular fa-file-lines"></i></span>
+
                                           </div>
                                         </div>
                                       </div>
@@ -616,31 +643,33 @@
                                               </label>
                                             </div>
                                             <div class="form-check form-check-inline me-3">
-                                              <input class="form-check-input vip-input" type="checkbox" value="" id="vip">
+                                              <input class="form-check-input vip-input" type="checkbox" value=""
+                                                id="vip">
                                               <label class="form-check-label" for="vip">
                                                 <a href="pricing.html" class="nav-link">
                                                   <span>រៀបចំដោយខ្លួនឯង</span>
                                                   <span class="text-warning"><i class="fa-solid fa-crown"></i></span>
                                                 </a>
-                                               
-                                              </label> 
-                                              
+
+                                              </label>
+
                                             </div>
                                           </div>
                                         </div>
                                       </div>
                                     </div>
                                   </div>
-                                        
-                                        
+
+
                                   <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">បិទ</button>
-                                    <button type="button" class="btn btn-savechange text-white" data-bs-dismiss="modal">បន្ថែម</button>
+                                    <button type="button" class="btn btn-savechange text-white"
+                                      data-bs-dismiss="modal">បន្ថែម</button>
                                   </div>
                                 </div>
                               </div>
                             </div>
-                          </div>                   
+                          </div>
                         </div>
                         <div class="daily-list py-4">
                           <div class="list-wrapper mb-4">
@@ -651,7 +680,7 @@
                                   <span class="ps-1 text-dark-emphasis">ម៉ោង 1:00 PM</span>
                                 </label>
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                
+
                               </li>
                               <li class="todo-item d-flex align-items-center justify-content-between">
                                 <label class="form-check-label" for="flexCheck1">
@@ -674,99 +703,126 @@
                                 </label>
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheck3">
                               </li>
-                      
+
                               <li class="todo-item d-flex align-items-center justify-content-between">
                                 <label class="form-check-label" for="flexCheck3">
                                   <span class="d-block todotext-checked">រត់ 30 នាទី</span>
                                   <span class="ps-1 todotext-checked">ម៉ោង 7:00 AM</span>
                                 </label>
-                                <input class="form-check-input bg-opacity-25" checked type="checkbox" value="" id="flexCheck4">
-                                
+                                <input class="form-check-input bg-opacity-25" checked type="checkbox" value=""
+                                  id="flexCheck4">
+
                               </li>
                               <li class="todo-item d-flex align-items-center justify-content-between">
                                 <label class="form-check-label" for="flexCheck3">
                                   <span class="d-block todotext-checked">អានសៀវភៅ</span>
                                   <span class="ps-1 todotext-checked">ម៉ោង 8:00 AM</span>
                                 </label>
-                                <input class="form-check-input bg-opacity-25" checked type="checkbox" value="" id="flexCheck5">
-                                
+                                <input class="form-check-input bg-opacity-25" checked type="checkbox" value=""
+                                  id="flexCheck5">
+
                               </li>
                               <li class="todo-item d-flex align-items-center justify-content-between">
                                 <label class="form-check-label" for="flexCheck3">
                                   <span class="d-block todotext-checked">សរសេរកំណត់ត្រា</span>
                                   <span class="ps-1 todotext-checked">ម៉ោង 9:00 AM</span>
                                 </label>
-                                <input class="form-check-input bg-opacity-25" checked type="checkbox" value="" id="flexCheck6">
-                                
+                                <input class="form-check-input bg-opacity-25" checked type="checkbox" value=""
+                                  id="flexCheck6">
+
                               </li>
-                              
+
                             </ul>
                           </div>
-                          
+
                         </div>
-                       </div>
+                      </div>
                     </div>
                     <div class="col-6">
                       <div class="daily-work p-4">
                         <div class="daily-work-title d-flex justify-content-between">
                           <h3 class="landing-title-color">កិច្ចការប្រចាំថ្ងៃ</h3>
-                          <div class="add-work"> 
+                          <div class="add-work">
                             <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-add-work" data-bs-toggle="modal" data-bs-target="#todolistRoutineModal">
+                            <button type="button" class="btn btn-add-work" data-bs-toggle="modal"
+                              data-bs-target="#todolistRoutineModal">
                               <span><i class="fa-solid fa-plus"></i></span>
                             </button>
-      
+
                             <!-- Modal -->
-                            <div class="modal fade" id="todolistRoutineModal" tabindex="-1" aria-labelledby="todolistModalLabel" aria-hidden="true">
+                            <div class="modal fade" id="todolistRoutineModal" tabindex="-1"
+                              aria-labelledby="todolistModalLabel" aria-hidden="true">
                               <div class="modal-dialog modal-lg modal-fullscreen-md-down modal-dialog-centered">
                                 <div class="modal-content">
                                   <div class="modal-header">
-                                    <h1 class="modal-title fs-4 landing-title-color" id="exampleModalLabel">បន្ថែមការងារថ្មី</h1>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    <h1 class="modal-title fs-4 landing-title-color" id="exampleModalLabel">
+                                      បន្ថែមការងារថ្មី</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                      aria-label="Close"></button>
                                   </div>
                                   <div class="modal-body px-5">
-                                    
+
                                     <div class="work-form pt-5">
                                       <div class="mb-5">
                                         <label for="workType" class="form-label fs-5">ប្រភេទការងារ</label>
                                         <div class="position-relative">
-                                          <input class="form-control" id="workType" type="text" placeholder="" aria-label="">
+                                          <input class="form-control" id="workType" type="text" placeholder=""
+                                            aria-label="">
                                           <div class="form-icon position-absolute" style="top: 0; right: 0;">
-                                            <span class="fs-5 text-dark-emphasis"><i class="fa-regular fa-file-lines"></i></span>
-                                            
+                                            <span class="fs-5 text-dark-emphasis"><i
+                                                class="fa-regular fa-file-lines"></i></span>
+
                                           </div>
                                         </div>
                                       </div>
                                       <div class="mb-5">
                                         <label for="workHour" class="form-label fs-5">ម៉ោង (អាចមិនកំណត់បាន)</label>
                                         <div class="d-flex mb-2">
-                                          <button type="button" class="btn me-2 btn-hour active bg-body-secondary">7:00 AM</button>
-                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">8:00 AM</button>
-                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">9:00 AM</button>
-                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">10:00 AM</button>
-                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">11:00 AM</button>
-                                          
+                                          <button type="button" class="btn me-2 btn-hour active bg-body-secondary">7:00
+                                            AM</button>
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">8:00
+                                            AM</button>
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">9:00
+                                            AM</button>
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">10:00
+                                            AM</button>
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">11:00
+                                            AM</button>
+
                                         </div>
                                         <div class="d-flex mb-2">
-                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">12:00 PM</button>
-                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">1:00 PM</button>
-                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">2:00 PM</button>
-                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">3:00 PM</button>
-                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">4:00 PM</button>
-                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">5:00 PM</button>
-                                          
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">12:00
+                                            PM</button>
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">1:00
+                                            PM</button>
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">2:00
+                                            PM</button>
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">3:00
+                                            PM</button>
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">4:00
+                                            PM</button>
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">5:00
+                                            PM</button>
+
                                         </div>
                                         <div class="d-flex mb-2">
-                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">6:00 PM</button>
-                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">7:00 PM</button>
-                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">8:00 PM</button>
-                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">9:00 PM</button>
-                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">10:00 PM</button>
-                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">11:00 PM</button>
-                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">00:00 PM</button>
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">6:00
+                                            PM</button>
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">7:00
+                                            PM</button>
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">8:00
+                                            PM</button>
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">9:00
+                                            PM</button>
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">10:00
+                                            PM</button>
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">11:00
+                                            PM</button>
+                                          <button type="button" class="btn me-2 btn-hour bg-body-secondary">00:00
+                                            PM</button>
                                         </div>
                                       </div>
-                                      
+
                                       <div class="mb-4 mt-5">
                                         <label for="" class="form-label fs-5 d-block pb-2">រំលឹក</label>
                                         <div class="row">
@@ -804,36 +860,38 @@
                                               </label>
                                             </div>
                                             <div class="form-check form-check-inline me-3">
-                                              <input class="form-check-input vip-input" type="checkbox" value="" id="vip">
+                                              <input class="form-check-input vip-input" type="checkbox" value=""
+                                                id="vip">
                                               <label class="form-check-label" for="vip">
                                                 <a href="pricing.html" class="nav-link">
                                                   <span>រៀបចំដោយខ្លួនឯង</span>
                                                   <span class="text-warning"><i class="fa-solid fa-crown"></i></span>
                                                 </a>
-                                               
-                                              </label> 
-                                              
+
+                                              </label>
+
                                             </div>
                                           </div>
                                         </div>
                                       </div>
                                     </div>
                                   </div>
-                                        
-                                        
+
+
                                   <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">បិទ</button>
-                                    <button type="button" class="btn btn-savechange text-white" data-bs-dismiss="modal">បន្ថែម</button>
+                                    <button type="button" class="btn btn-savechange text-white"
+                                      data-bs-dismiss="modal">បន្ថែម</button>
                                   </div>
                                 </div>
                               </div>
                             </div>
-                          </div>                   
+                          </div>
                         </div>
                         <div class="daily-list py-4">
                           <div class="list-wrapper mb-4">
                             <ul class="list-todo m-0">
-                              
+
                               <li class="todo-item d-flex align-items-center justify-content-between">
                                 <label class="form-check-label" for="flexCheck1">
                                   <span class="d-block">ផឹកទឹកឱ្យបាន ២៤ លីត្រ</span>
@@ -854,26 +912,26 @@
                                   <span class="ps-1 text-dark-emphasis">ម៉ោង 1:00 PM</span>
                                 </label>
                                 <span class="pe-2 main-title"><i class="fa-solid fa-bookmark"></i></span>
-                                
+
                               </li>
-                              
-                              
+
+
                             </ul>
                           </div>
-                          
+
                         </div>
-                       </div>
+                      </div>
                     </div>
                   </div>
-                 
-                 
 
 
-                  
+
+
+
 
                 </div>
 
-                
+
 
               </section>
 

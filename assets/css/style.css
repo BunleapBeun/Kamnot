@@ -734,6 +734,18 @@ nav {
   color: #fff;
 }
 
+.side-menu
+  .menu
+  .menu-item
+  .nav-menu
+  .menu-content
+  .content-list
+  .content-item
+  .content-link.active-nav{
+    background-color: var(--link-text);
+    color: #fff;
+  }
+
 /* ! end of header */
 
 .box {
