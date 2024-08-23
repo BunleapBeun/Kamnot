@@ -4724,6 +4724,60 @@ nav {
   padding-top: 14px;
 }
 
+.pay-list {
+  padding: 0;
+}
+
+.pay-list .payment-item {
+  border-radius: 10px;
+  border: 1px solid var(--ddd-color);
+}
+
+.pay-list .payment-item p {
+  font-size: 18px;
+  color: var(--main-text) ;
+}
+
+.image-abapayway {
+  width: 300px;
+  height: auto;
+  border: 1px solid var(--ddd-color);
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.image-abapayway:hover {
+  background-color: var(--ddd-color);
+}
+
+.image-abapayway img {
+  width: 100%;
+  height: 100%;
+}
+
+.payment-type {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border-radius: 10px;
+}
+
+.tab-pay {
+  background-color: transparent !important;
+  border: 1px solid var(--ddd-color) !important;
+  border-radius: 10px !important;
+}
+
+.tab-pay:hover {
+  background-color: var(--ddd-color) !important;
+}
+
+.tab-pay img {
+  width: 100px;
+}
+
+
 /* ! end of book store */
 
 /* !​ begin of event */
