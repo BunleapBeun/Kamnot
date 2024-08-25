@@ -4013,6 +4013,18 @@ nav {
   align-content: center;
 }
 
+.card-mood canvas {
+  background-color: var(--card-color);
+}
+
+.card-mood {
+  border: 1px solid var(--ddd-color) !important;
+  border-radius: 10px !important;
+  overflow: hidden !important;
+  padding: 10px;
+  background-color: var(--card-color) !important;
+}
+
 /* ! end of mood tracking */
 
 /* ! begin of book store */

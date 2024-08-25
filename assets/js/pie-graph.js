@@ -1,24 +1,19 @@
 // ! pie graph
 
-const xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
-const yValues = [55, 49, 44, 24, 15];
-const barColors = ["#b91d47", "#00aba9", "#2b5797", "#e8c3b9", "#1e7145"];
-
-new Chart("pieGraph", {
-    type: "pie",
-    data: {
-        labels: xValues,
-        datasets: [
-            {
-                backgroundColor: barColors,
-                data: yValues,
-            },
-        ],
-    },
-    options: {
-        title: {
-            display: true,
-            text: "World Wide Wine Production 2018",
-        },
-    },
+var ctx = document.getElementById("pieChart").getContext('2d');
+var myChart = new Chart(ctx, {
+  type: 'pie',
+  data: {
+    labels: ["កើតទុក", "រំភើប", "ខឹង", "ភ័យខ្លាច", "រីករាយ"],
+    datasets: [{
+      backgroundColor: [
+        "#ff2d00",
+        "#2ecc71",
+        "#f39c12",
+        "#9b59b6",
+        "#3498db",
+      ],
+      data: [12, 19, 3, 17, 28]
+    }]
+  }
 });
