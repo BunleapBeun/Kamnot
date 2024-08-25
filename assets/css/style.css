@@ -3900,6 +3900,9 @@ nav {
 .mood-tracking .bar-month {
   width: 100%;
   margin: 20px 0;
+  background-color: var(--card-color);
+  border: 1px solid var(--ddd-color);
+  border-radius: 10px;
 }
 
 .body-day {
@@ -3975,6 +3978,9 @@ nav {
   width: 100%;
   background-color: var(--card-color);
   border-radius: 10px;
+  border: 1px solid var(--ddd-color);
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .mood-tracking table caption {
@@ -4172,6 +4178,7 @@ nav {
   font-size: 18px;
   font-weight: 500;
   transition: 0.3s ease;
+  cursor: pointer;
 }
 
 .btn-form:hover {
