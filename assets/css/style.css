@@ -4808,6 +4808,18 @@ nav {
   width: 100px;
 }
 
+.image-qr {
+  width: 300px;
+  height: 350px;
+  border-radius: 10px;
+  border: 1px solid var(--ddd-color);
+}
+
+.image-qr img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
 
 /* ! end of book store */
 
