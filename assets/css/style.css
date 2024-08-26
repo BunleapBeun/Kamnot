@@ -14,7 +14,9 @@ main {
 }
 
 /* ! begin of globle selector */
-
+.modal-content{
+  border: 2px solid #3c4d78 !important;
+}
 .light-black {
   color: var(--main-text) !important;
 }
@@ -884,7 +886,7 @@ nav {
   margin-top: 0;
   margin-bottom: 0;
 }
-
+/* 
 .modal-header {
   background-color: var(--card-color);
 }
@@ -895,7 +897,7 @@ nav {
 
 .modal-footer {
   background-color: var(--card-color) !important;
-}
+} */
 
 /* .reading-book .modal-reading-content {
   height: 700px;
@@ -1041,7 +1043,6 @@ nav {
 
 .komnot-services .service-categories .card {
   border: 1px solid #818181;
-  cursor: pointer;
   border-radius: 20px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
@@ -1424,11 +1425,6 @@ nav {
 
 .journal-book .calender .calender-view .btn-calendar:hover .narrow-down {
   background-color: white;
-}
-
-.journal-book .modal .modal-content .modal-body {
-  height: 600px !important;
-  max-height: 600px;
 }
 
 .modal-footer .btn-savechange {
@@ -1945,7 +1941,7 @@ nav {
 }
 
 .overview h3 {
-  color: var(--main-title);
+  color: #3c4d78;
 }
 
 .overview .display .left-display {
@@ -2006,8 +2002,10 @@ nav {
 .modal-body .btn-work-schedule.active {
   background-color: #488495;
 }
-
-.modal-body .btn-work-schedule {
+.modal-body .btn-work-schedule .nav-link{
+  width: 100% !important;
+}
+.modal-body .btn-work-schedule{
   margin-right: 15px;
 }
 
@@ -2022,13 +2020,15 @@ nav {
   background-color: transparent !important;
   opacity: 1;
 }
-
-.modal-body .work-form .active {
+.modal-body .work-form .active{
   background-color: #488495 !important;
   color: white;
 }
-
-.overview .organize-work .form-check-input {
+.modal-body .work-form .btn-hour:focus{
+  background-color: #488495 !important;
+  color: white;
+}
+.overview .organize-work .form-check-input{
   border: 1px solid #488495 !important;
 }
 
@@ -2045,7 +2045,14 @@ nav {
   overflow-y: scroll;
   scrollbar-width: none;
 }
+.daily-list .list-wrapper .list-todo .todo-item span{
+  color: var(--gray-color);
+}
+.list-todo .todo-item .unchecked span{
+  color: #3c4d78 !important;
+}
 
+ 
 /* end of todo list page */
 
 /* start of money spending page*/
@@ -2319,9 +2326,11 @@ nav {
 .therapist-categories .modal .therapist-modal-content .form-control {
   padding: 10px;
 }
-
+.therapist-categories .modal .therapist-modal-content .fw-bold{
+  color: #3c4d78;
+}
 .therapist-categories .modal .modal-footer .btn-therapist {
-  background-color: var(--main-title);
+  background-color: #3c4d78;
   color: white;
 }
 
@@ -2336,7 +2345,7 @@ nav {
 .therapist-questions .card {
   height: 400px;
   border-radius: 20px​​​ !important;
-  background-color: var(--main-title);
+  background-color: #3c4d78;
 }
 
 .therapist-questions .carousel-inner .carousel-item .questions {
@@ -2347,6 +2356,17 @@ nav {
   width: 30px;
   height: 30px;
   border-radius: 10px;
+}
+.therapist-testimonial .therapist-cmt .cmt-box .card{
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  border: 1px solid #3c4d78;
+}
+.therapist-testimonial .therapist-cmt .cmt-profile img{
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  object-fit: cover;
+  outline: 1px solid #3c4d78;
 }
 
 /*end of therapist page*/
@@ -2943,6 +2963,16 @@ nav {
   border-bottom-left-radius: 60%;
 }
 
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-wrapper{
+  transition-timing-function: ease-in-out !important;
+}
+
 .testimonail .swiper {
   width: 100%;
   padding-bottom: 90px;
@@ -2950,15 +2980,30 @@ nav {
 }
 
 .testimonail .swiper .swiper-wrapper .swiper-slide {
-  width: 650px !important;
   text-align: center;
   display: flex;
   align-items: center;
-  margin-right: 10px !important;
+  /* margin-right: 10px !important; */
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
 }
 
 .testimonail .swiper .swiper-wrapper .swiper-slide .card {
-  width: 100%;
   cursor: pointer;
   margin-top: 15px;
   transition: all linear 0.3s;

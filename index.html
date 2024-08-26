@@ -180,12 +180,12 @@
         </div>
       </section>
 
-      <section class="komnot-description section-space">
+      <section class="komnot-description section-space overflow-hidden">
         <div class="container">
           <div class="row">
             <div class="col-md-12 col-lg-6" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
               <div class="description-wrapper w-100 position-relative">
-                <div class="description-image d-sm-none d-md-flex justify-content-center">
+                <div class="description-image d-md-flex justify-content-center">
                   <img src="assets/img/Landing-page/landing-description.png" alt="" />
                 </div>
                 <div class="des-deco" style="width: 30px; height: 30px; top: 10px; left: 10px"></div>
@@ -196,7 +196,7 @@
               </div>
             </div>
             <div class="col-md-12 col-lg-6" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">
-              <div class="des-detail pt-lg-4 ps-2">
+              <div class="des-detail pt-sm-5 pt-lg-4 ps-2">
                 <h1 class="text-center fw-bold landing-title-color">
                   KamNot - កំណត់
                 </h1>
@@ -217,7 +217,7 @@
       </section>
 
       <!-- ls = landing service -->
-      <section class="ls-more section-space">
+      <section class="ls-more section-space overflow-hidden">
         <div class="container pe-0">
           <div class="row">
             <div class="col-sm-12 col-md-6" data-aos="fade-up-right" data-aos-duration="700">
@@ -225,7 +225,7 @@
                 <h1 class="text-center fw-bolder landing-title-color">
                   លើសពីអ្វីដែលអ្នកគិតដល់
                 </h1>
-                <div class="d-sm-flex d-md-block">
+                <div class="d-md-block">
                   <p class="text-sm-start text-center pt-3 pe-2">
                     ពួកយើងមើលឃើញពីកង្វះខាតនៃការយល់ដឹងនិងអនុវត្តទាក់ទងទៅនឹងសភាពផ្លូវចិត្ត
                     <br />
@@ -720,32 +720,32 @@
     <script src="assets/js/dark-mode.js"></script>
     <script src="assets/plugins/swiper-js/js/swiper-bundle.min.js"></script>
     <script>
-      var swiper = new Swiper(".swiper", {
-        slidesPerView: 1,
-        spaceBetween: 10,
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        breakpoints: {
-          640: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          768: {
-            slidesPerView: 4,
-            spaceBetween: 40,
-          },
-          1024: {
-            slidesPerView: 2,
-            spaceBetween: 50,
-          },
-        },
-      });
+      var swiper2 = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      slidesPerView: 5,
+      //centeredSlides: true,
+      loop: true,
+      autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
+      },
+      speed:5000,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+
+    $('.swiper-slide').hover(function(){
+      swiper2.autoplay.stop();
+    }, function(){
+      swiper2.autoplay.start();
+    });
     </script>
     <script>
       AOS.init();
