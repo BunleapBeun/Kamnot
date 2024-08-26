@@ -469,7 +469,7 @@
             <div class="pt-112 px-4 px-md-0">
               <section class="mood-tracking">
                 <div class="col-12">
-                  <div class="main-title" id="app"></div>
+                  <h1 class="main-title" id="app"></h1>
                   <div class="bar-month d-flex justify-content-between">
                     <div class="btn-form all-center">
                       <i class="fa-solid fa-chevron-left"></i>
@@ -605,18 +605,22 @@
               <section class="mood-statistic mt-4">
                 <div class="row">
                   <div class="col-lg-6">
-                    <h3 class="main-text m-0">ស្ថានភាពអារម្មណ៍ប្រចាំសប្ដាហ៍</h3>
-                    <div class="card card-mood mt-2">
+                    <h3 class="main-title m-0">ស្ថានភាពអារម្មណ៍ប្រចាំសប្ដាហ៍</h3>
+                    <div class="card card-mood mt-3">
                       <canvas id="pieChart"></canvas>
                     </div>
                   </div>
-                  <div class="col-lg-6 mt-lg-0 mt-3">
-                    <h3 class="main-text">ស្ថានភាពអារម្មណ៍ប្រចាំឆ្នាំ</h3>
-                    <div class="card card-mood mt-2">
+                  <div class="col-lg-6 mt-lg-0 mt-4">
+                    <h3 class="main-title">ស្ថានភាពអារម្មណ៍ប្រចាំឆ្នាំ</h3>
+                    <div class="card card-mood mt-3">
                       <canvas id="lineGraph"></canvas>
                     </div>
                   </div>
                 </div>
+              </section>
+              <section class="mood-recom mt-4">
+                <h3 class="main-title">ការណែនាំផ្អែកតាមអារម្មណ៍របស់អ្នក</h3>
+                <p class="m-0 main-text fs-5">ដោយផ្នែកទៅតាមការតាមដានអារម្មណ៍របស់អ្នកថ្មីៗនេះ យើងសូមណែនាំអ្នកធ្វើសកម្មភាពមួយចំនួនដូចខាងក្រោមដើម្បីឲ្យអ្នកមានអារម្មប្រសើរជាងមុន៖</p>
               </section>
             </div>
           </div>
@@ -780,6 +784,7 @@
 
     <script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typewriter-effect@2.18.0/dist/core.js"></script>
     <script src="assets/plugins/aos/js/aos.js"></script>
     <script src="assets/js/dark-mode.js"></script>
     <script src="assets/js/line-graph.js"></script>
@@ -789,14 +794,12 @@
       var typewriter = new Typewriter(app, {
         loop: true
       });
-      typewriter.typeString('Web Developer')
-        .pauseFor(2500)
+      typewriter.typeString('តើថ្ងៃនេះអ្នកមានអារម្មណ៍ដូចម្ដេចដែរ?')
+        .pauseFor(1000)
         .deleteAll()
-        .typeString('Web Designer')
-        .pauseFor(2500)
+        .typeString('តើថ្ងៃនេះអ្នកមានអារម្មណ៍ដូចម្ដេចដែរ?')
+        .pauseFor(1000)
         .deleteAll()
-        .typeString('<strong>FrontEnd Developer</strong>')
-        .pauseFor(2500)
         .start();
     </script>
   </body>
