@@ -151,8 +151,7 @@
           <!-- ! end of offcanvas -->
           <div class="collapse navbar-collapse d-flex justify-content-end d-lg-block d-none"
             id="navbarSupportedContent">
-            <a class="btn-add-cart all-center text-decoration-none me-3" data-bs-toggle="modal"
-              data-bs-target="#exampleModal"><i class="fa-solid fa-cart-shopping"></i>
+            <a class="btn-add-cart all-center text-decoration-none me-3" href="cart.html"><i class="fa-solid fa-cart-shopping"></i>
               <div class="cart-status all-center"><span>2</span></div>
             </a>
             <form class="search-bar d-flex" role="search">
@@ -306,69 +305,6 @@
         </div>
       </nav>
     </header>
-    <!-- Modal -->
-    <div class="modal cart-modal-size overflow-hidden fade shown" id="exampleModal" tabindex="-1"
-      aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog cart-dialog">
-        <div class="modal-content cart-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-2" id="exampleModalLabel">
-              ការទូទាត់ប្រាក់
-            </h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body cart-modal-body m-0">
-            <div class="row">
-              <ul class="cart-book-list">
-                <li class="book-item d-flex pt-0">
-                  <div class="col-2">
-                    <div class="cart-book-image d-flex">
-                      <img src="assets/img/book/the_healing_of_trauma.jpg" alt="" />
-                    </div>
-                  </div>
-                  <div class="col-4 p-0 align-self-center">
-                    <div class="cart-book-detail d-flex flex-column ps-3">
-                      <h5 class="m-0">The Law of Power</h5>
-                      <p class="m-0">ដោយ៖ Robert Greene</p>
-                      <span class="book-price">$14.55</span>
-                    </div>
-                  </div>
-                  <div class="col-6 d-flex align-items-center justify-content-end">
-                    <a type="button" class="btn btn-danger">យកចេញ</a>
-                  </div>
-                </li>
-                <li class="book-item d-flex pt-0 mt-3">
-                  <div class="col-2">
-                    <div class="cart-book-image d-flex">
-                      <img src="assets/img/book/Atomic_Habits.jpg" alt="" />
-                    </div>
-                  </div>
-                  <div class="col-4 p-0 align-self-center">
-                    <div class="cart-book-detail d-flex flex-column ps-3">
-                      <h5 class="m-0">Atomic Habits</h5>
-                      <p class="m-0">ដោយ៖ James Clear</p>
-                      <span class="book-price">$13.79</span>
-                    </div>
-                  </div>
-                  <div class="col-6 d-flex align-items-center justify-content-end">
-                    <a type="button" class="btn btn-danger">យកចេញ</a>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="modal-footer cart-modal-footer d-flex justify-content-between">
-            <div>
-              <p class="m-0 book-total">ចំនួនសៀវភៅសរុប៖ 2 ក្បាល</p>
-              <p class="m-0 sum-price">
-                តម្លៃសរុប៖ <span class="text-danger">$28.34</span>
-              </p>
-            </div>
-            <a type="button" href="#" class="btn btn-success">ទូទាត់ប្រាក់</a>
-          </div>
-        </div>
-      </div>
-    </div>
     <!-- ! end of header -->
 
     <main>
@@ -601,7 +537,7 @@
                         ចែករំលែករឿងខ្លីៗចំនួន 19
                         ដែលស្វែងយល់ពីវិធីចម្លែកៗដែលមនុស្សគិតអំពីលុយ
                         ហើយបង្រៀនអ្នកពីរបៀបធ្វើឱ្យយល់កាន់តែច្បាស់អំពីប្រធានបទ
-                        សំខាន់បំផុតមួយនៃជីវិត។ <span class="">មើលបន្ថែម</span>
+                        សំខាន់បំផុតមួយនៃជីវិត។ <a type="button" class="read-more fw-bold text-decoration-none">មើលបន្ថែម</a>
                       </p>
                     </div>
                     <div class="row book-more-info d-flex justify-content-center gap-3">
@@ -636,7 +572,7 @@
                     <div class="card add-box p-3">
                       <span class="text-center">ការទិញសៀវភៅ</span>
                       <a type="button" class="btn-addto-cart"> ដាក់កន្ត្រក </a>
-                      <a type="button" class="btn-buy"> ទិញ </a>
+                      <a type="button" href="cart.html" class="btn-buy"> ទិញ </a>
                     </div>
                   </div>
                 </div>
