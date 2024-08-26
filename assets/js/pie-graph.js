@@ -12,7 +12,7 @@ const pieChart = new Chart(ctxPie, {
                 "#9b59b6",
                 "#3498db",
             ],
-            data: [12, 19, 3, 17, 28] // Raw data
+            data: [40, 19, 3, 17, 20] // Raw data
         }]
     },
     options: {

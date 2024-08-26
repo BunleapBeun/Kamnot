@@ -4329,7 +4329,6 @@ nav {
 .login-form .image-side-login {
   width: 100%;
   height: 100%;
-  background-color: green;
   border-radius: 0 30px 30px 0;
   position: relative;
 }
@@ -5894,3 +5893,114 @@ nav {
 }
 
 /* ! end of cart */
+
+.timeline {
+  max-width: 1200px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 6px;
+  margin-left: -3px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.control {
+  width: 50%;
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+}
+
+.control::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: -12px;
+  width: 25px;
+  height: 25px;
+  z-index: 1;
+  border-radius: 50%;
+  background-color: var(--card-color);
+  border: 5px solid var(--link-text);
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+}
+
+.left::before {
+  content: " ";
+  position: absolute;
+  top: 22px;
+  right: 30px;
+  width: 0;
+  height: 0;
+  z-index: 1;
+  border: medium solid var(--card-color);
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent var(--card-color);
+}
+
+.right::before {
+  content: " ";
+  position: absolute;
+  top: 22px;
+  left: 30px;
+  width: 0;
+  height: 0;
+  z-index: 1;
+  border: medium solid var(--card-color);
+  border-width: 10px 10px 10px 0;
+  border-color: transparent var(--card-color) transparent transparent;
+}
+
+.right::after {
+  left: -12px;
+}
+
+.content {
+  padding: 20px 30px;
+  position: relative;
+  border-radius: 6px;
+  background-color: var(--card-color);
+}
+
+@media screen and (max-width: 600px) {
+  .timeline::after {
+      left: 31px;
+  }
+
+  .control {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+  }
+
+  .control::before {
+      left: 60px;
+      border: medium solid var(--card-color);
+      border-width: 10px 10px 10px 0;
+      border-color: transparent var(--card-color) transparent transparent;
+  }
+
+  .left::after,
+  .right::after {
+      left: 14px;
+  }
+
+  .right {
+      left: 0%;
+  }
+}
