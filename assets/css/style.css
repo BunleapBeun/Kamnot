@@ -1811,7 +1811,12 @@ nav {
 }
 
 .contact-body .getintouch .info-detail {
-  color: var(--main-text);
+
+  font-size: 17px;
+}
+.contact-body .getin-text .info-detail{
+  font-size: 16px;
+  color: var(--link-text);
 }
 
 .contact-map {
