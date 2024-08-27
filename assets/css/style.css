@@ -12,7 +12,6 @@ nav {
 main {
   background-color: var(--main-color);
 }
-
 /* ! begin of globle selector */
 .modal-content {
   border: 2px solid #3c4d78 !important;
