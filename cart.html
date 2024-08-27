@@ -1,11 +1,869 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Kamnot</title>
+        <link rel="stylesheet" href="assets/css/bootstrap.css" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+        <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.css" />
+        <link rel="stylesheet" href="assets/plugins/aos/css/aos.css" />
+        <link rel="stylesheet" href="assets/plugins/flatpickr/css/flatpickr.min.css">
+    </head>
+
+    <body>
+        <!-- ! begin of header -->
+        <header class="position-fixed top-0 w-100">
+            <nav class="navbar navbar-expand-lg nav-py30">
+                <div class="container">
+                    <a class="navbar-brand" href="home_page.html"><img src="assets/img/navbar/Kn-logo.png" alt="" /></a>
+                    <button class="navbar-toggler" type="button" aria-expanded="false" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                        <span class="nav-toggler-icon all-center"><i class="fa-solid fa-bars"></i></span>
+                    </button>
+                    <!-- ! begin of offcanvas -->
+                    <div class="offcanvas offcanvas-start d-lg-none" data-bs-scroll="true" tabindex="-1"
+                        id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                                <a class="navbar-brand" href="index.html"><img src="assets/img/navbar/Kn-logo.png"
+                                        alt="" /></a>
+                            </h5>
+                            <button type="button" class="x-close all-center" data-bs-dismiss="offcanvas"
+                                aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="canvas-header d-flex justify-content-between">
+                                <a href="profile_info.html"
+                                    class="convas-pf rounded-circle overflow-hidden text-decoration-none">
+                                    <img src="assets/img/navbar/profile-img.png" alt="" />
+                                </a>
+                                <div class="d-flex align-items-center">
+                                    <a href="cart.html" class="btn-add-cart all-center text-decoration-none"><i
+                                            class="fa-solid fa-cart-shopping"></i>
+                                        <div class="cart-status all-center"><span>2 </span></div>
+                                    </a>
+                                    <button type="button" data-theme-toggle id="theme-toggle-1"
+                                        class="dark-light-mode all-center rounded-circle ms-3"></button>
+                                </div>
+                            </div>
+
+                            <!-- ! begin navbar offcanvas -->
+                            <ul class="nav-convas">
+                                <li class="convas-item">
+                                    <a class="convas-link convas-bar-bg" href="index.html"><i class="fa fa-house"></i>
+                                        ទំព័រដើម</a>
+                                </li>
+                                <li class="convas-item">
+                                    <input type="checkbox" id="showDropHabit" />
+                                    <label for="showDropHabit"
+                                        class="sub-convas-dropdown d-flex align-items-center justify-content-between">
+                                        <div>
+                                            <i class="fa-solid fa-calendar-check"></i>
+                                            ទម្លាប់ប្រចាំថ្ងៃ
+                                        </div>
+                                        <i class="fa-solid fa-caret-down"></i>
+                                    </label>
+                                    <ul class="drop-menu">
+                                        <li class="convas-item">
+                                            <a class="convas-link bbt-pf" href="journaling.html">កំណត់ត្រាប្រចាំថ្ងៃ</a>
+                                        </li>
+                                        <li class="convas-item">
+                                            <a class="convas-link bbt-pf" href="money_spending.html">តាមដានការចំណាយ</a>
+                                        </li>
+                                        <li class="convas-item">
+                                            <a class="convas-link bbt-pf" href="mood_tracking.html">តាមដានផ្លូវចិត្ត</a>
+                                        </li>
+                                        <li class="convas-item">
+                                            <a class="convas-link" href="exercise.html">លំហាត់ប្រាណ</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="convas-item mt-10">
+                                    <input type="checkbox" id="showDropMentalhealth" />
+                                    <label for="showDropMentalhealth"
+                                        class="sub-convas-dropdown d-flex align-items-center justify-content-between">
+                                        <div>
+                                            <i class="fa-solid fa-brain"></i> ស្ថានភាពផ្លូវចិត្ត
+                                        </div>
+                                        <i class="fa-solid fa-caret-down"></i>
+                                    </label>
+                                    <ul class="drop-menu">
+                                        <li class="convas-item">
+                                            <a class="convas-link bbt-pf" href="therapist.html">អ្នកជំនាញផ្លូវចិត្ត</a>
+                                        </li>
+                                        <li class="convas-item">
+                                            <a class="convas-link" href="mediation.html">សមាធិ</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="convas-item mt-10">
+                                    <input type="checkbox" id="showDropEdu" />
+                                    <label for="showDropEdu"
+                                        class="sub-convas-dropdown d-flex align-items-center justify-content-between">
+                                        <div>
+                                            <i class="fa-solid fa-book-open-reader"></i> ចំណេះដឹង
+                                        </div>
+                                        <i class="fa-solid fa-caret-down"></i>
+                                    </label>
+                                    <ul class="drop-menu">
+                                        <li class="convas-item">
+                                            <a class="convas-link bbt-pf" href="book_store.html">សៀវភៅ</a>
+                                        </li>
+                                        <li class="convas-item">
+                                            <a class="convas-link bbt-pf" href="event.html">ព្រឹត្តិការណ៍</a>
+                                        </li>
+                                        <li class="convas-item">
+                                            <a class="convas-link"
+                                                href="video_recommendation.html">វីឌីអូអភិវឌ្ឍខ្លួន</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="convas-item">
+                                    <a class="convas-link convas-bar-bg mb-0" href="article.html"><i
+                                            class="fa-solid fa-newspaper"></i>
+                                        អត្ថបទ</a>
+                                </li>
+                                <li class="convas-item">
+                                    <a class="convas-link convas-bar-bg mb-0" href="article.html"><i
+                                            class="fa-solid fa-money-check-dollar"></i> តម្លៃ</a>
+                                </li>
+                                <li class="convas-item mt-10">
+                                    <input type="checkbox" id="showDropMoreInfo" />
+                                    <label for="showDropMoreInfo"
+                                        class="sub-convas-dropdown d-flex align-items-center justify-content-between">
+                                        <div>
+                                            <i class="fa-solid fa-circle-info"></i> ព័ត៌មានបន្ថែម
+                                        </div>
+                                        <i class="fa-solid fa-caret-down"></i>
+                                    </label>
+                                    <ul class="drop-menu">
+                                        <li class="convas-item">
+                                            <a class="convas-link bbt-pf" href="about_us.html">អំពីយើង</a>
+                                        </li>
+                                        <li class="convas-item">
+                                            <a class="convas-link" href="contact_us.html">ទាក់ទង</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <!-- ! end navbar offcanvas -->
+                        </div>
+                    </div>
+                    <!-- ! end of offcanvas -->
+                    <div class="collapse navbar-collapse d-flex justify-content-end d-lg-block d-none"
+                        id="navbarSupportedContent">
+                        <form class="search-bar d-flex" role="search">
+                            <input class="search-nav form-control me-3 position-relative" type="search"
+                                placeholder="Search" aria-label="Search" />
+                            <i class="fa-solid fa-magnifying-glass position-absolute"></i>
+                        </form>
+                        <div class="profile d-flex flex-row align-items-center">
+                            <div class="pf-arrow-down rounded-circle me-2 ms-2 all-center">
+                                <i class="fa-solid fa-caret-down"></i>
+                            </div>
+                            <div class="pf-status d-flex flex-column align-items-end">
+                                <a href="profile_info.html" class="pf-name text-decoration-none">Wade Warren</a>
+                            </div>
+                            <div class="pf-image rounded-circle ms-2">
+                                <img src="assets/img/navbar/profile-img.png" alt="" />
+                            </div>
+                            <div class="pf-drowpdown">
+                                <div class="hide-upf"></div>
+                                <div class="box-rotate"></div>
+                                <ul class="pf-list">
+                                    <li class="pf-item bbt-pf">
+                                        <a href="profile_info.html" class="pf-link d-flex">
+                                            <div class="dropdown-pf">
+                                                <img src="assets/img/navbar/profile-img.png" class="rounded-circle"
+                                                    alt="" />
+                                            </div>
+                                            <p class="m-0">Wade Warren</p>
+                                        </a>
+                                    </li>
+                                    <li class="pf-item">
+                                        <a href="index.html" class="pf-link d-flex">
+                                            <div class="leave-icon all-center">
+                                                <i class="fa-solid fa-right-from-bracket"></i>
+                                            </div>
+                                            <p class="m-0">ចាកចេញ</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="notification rounded-circle all-center position-relative ms-3">
+                            <i class="fa-solid fa-bell"></i>
+                            <span class="notification-count bg-danger all-center text-white position-absolute">9</span>
+                            <div class="noti-controll">
+                                <div class="box-rotate"></div>
+                                <div class="noti-content">
+                                    <div class="hide-upf"></div>
+                                    <div class="bar-noti d-flex justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <i class="fa-solid fa-bell"></i>
+                                            <p class="m-0">ដំណឹង</p>
+                                        </div>
+                                        <div class="noti-status all-center">
+                                            <span>9</span>
+                                        </div>
+                                    </div>
+                                    <ul class="noti-list">
+                                        <li class="noti-item bbt-pf">
+                                            <a href="article_show.html" class="noti-link text-decoration-none">
+                                                <div class="noti-image">
+                                                    <img src="assets/img/article/alcohol_image.jpg" alt="" />
+                                                </div>
+                                                <div class="d-flex flex-column justify-content-between">
+                                                    <p class="noti-title m-0">
+                                                        ការពិតអំពីអត្ថប្រយោជន៍សុខភាពនៃគ្រឿងស្រវឹង
+                                                    </p>
+                                                    <p class="noti-author m-0">ដោយ៖ Jullia Luna</p>
+                                                    <span class="noti-date">២៤ តុលា ២០២៤</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="noti-item bbt-pf">
+                                            <a href="article_show.html" class="noti-link text-decoration-none">
+                                                <div class="noti-image">
+                                                    <img src="assets/img/article/social_media_make_use_lonely.jpg"
+                                                        alt="" />
+                                                </div>
+                                                <div class="d-flex flex-column justify-content-between">
+                                                    <p class="noti-title m-0">
+                                                        សង្គមបណ្ដាញកំពុងធ្វើឲ្យយើងឯការឬទេ?
+                                                    </p>
+                                                    <p class="noti-author m-0">ដោយ៖ Jullia Luna</p>
+                                                    <span class="noti-date">២៣ តុលា ២០២៤</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="noti-item bbt-pf">
+                                            <a href="#" class="noti-link text-decoration-none">
+                                                <div class="noti-image">
+                                                    <img src="assets/img/article/loneline_and_depression.jpg" alt="" />
+                                                </div>
+                                                <div class="d-flex flex-column justify-content-between">
+                                                    <p class="noti-title m-0">
+                                                        ភាពខុសគ្នារវាង Loneliness និង Depression
+                                                    </p>
+                                                    <p class="noti-author m-0">ដោយ៖ Jake Reed</p>
+                                                    <span class="noti-date">២២ តុលា ២០២៤</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="noti-item bbt-pf">
+                                            <a href="article_show.html" class="noti-link text-decoration-none">
+                                                <div class="noti-image">
+                                                    <img src="assets/img/article/laughing-person-image.jpg" alt="" />
+                                                </div>
+                                                <div class="d-flex flex-column justify-content-between">
+                                                    <p class="noti-title m-0">
+                                                        ហេតុអ្វីបានជាការសើចគឺជាឱសថដ៏ល្អបែបនេះ
+                                                    </p>
+                                                    <p class="noti-author m-0">ដោយ៖ Lara Quinn</p>
+                                                    <span class="noti-date">២១ តុលា ២០២៤</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="noti-item bbt-pf">
+                                            <a href="article_show.html" class="noti-link text-decoration-none">
+                                                <div class="noti-image">
+                                                    <img src="assets/img/article/better_sleep.jpg" alt="" />
+                                                </div>
+                                                <div class="d-flex flex-column justify-content-between">
+                                                    <p class="noti-title m-0">
+                                                        អត្ថប្រយោជន៍នៃការគេងកាន់តែប្រសើរ
+                                                    </p>
+                                                    <p class="noti-author m-0">ដោយ៖ Max Turner</p>
+                                                    <span class="noti-date">២០ តុលា ២០២៤</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="noti-item">
+                                            <a href="article_show.html" class="noti-link text-decoration-none">
+                                                <div class="noti-image">
+                                                    <img src="assets/img/article/mediation_man.jpg" alt="" />
+                                                </div>
+                                                <div class="d-flex flex-column justify-content-between">
+                                                    <p class="noti-title m-0">
+                                                        ការស្វែងរកសន្តិភាពនៅក្នុងពិភពដ៏រំខានមួយ៖
+                                                        ការស្ងប់ស្ងាត់ក្នុងចិត្ត
+                                                    </p>
+                                                    <p class="noti-author m-0">ដោយ៖ Jake Reed</p>
+                                                    <span class="noti-date">១៨ តុលា ២០២៤</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <a type="button" href="notification.html" role="button"
+                                        class="bar-noti text-decoration-none w-100">មើលទាំងអស់</a>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" data-theme-toggle id="theme-toggle-2"
+                            class="dark-light-mode all-center rounded-circle ms-3"></button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- ! end of header -->
+
+        <main>
+            <div class="container">
+                <div class="row g-lg-4">
+                    <!-- ! begin of side bar -->
+                    <div class="col-lg-1 col-sm-2 d-lg-block d-none">
+                        <div class="side-menu">
+                            <ul class="menu">
+                                <li class="menu-item all-center">
+                                    <a role="button" type="button" href="home_page.html"
+                                        class="menu-btn text-decoration-none all-center"><i class="fa fa-house"></i></a>
+                                    <ul class="nav-menu">
+                                        <li class="menu-item">
+                                            <div class="menu-content">
+                                                <div class="bar-title d-flex align-items-center">
+                                                    <i class="fa fa-house"></i>
+                                                    <h4>ទំព័រដើម</h4>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <div class="hide"></div>
+                                    </ul>
+                                </li>
+                                <li class="menu-item all-center">
+                                    <button type="button" class="menu-btn">
+                                        <i class="fa-solid fa-calendar-check"></i>
+                                    </button>
+                                    <ul class="nav-menu">
+                                        <li class="menu-item">
+                                            <div class="menu-content">
+                                                <div class="bar-title d-flex align-items-center">
+                                                    <i class="fa-solid fa-calendar-check"></i>
+                                                    <h4>ទម្លាប់ប្រចាំថ្ងៃ</h4>
+                                                </div>
+                                                <ul class="content-list">
+                                                    <li class="content-item">
+                                                        <a href="journaling.html"
+                                                            class="content-link">កំណត់ត្រាប្រចាំថ្ងៃ</a>
+                                                    </li>
+                                                    <li class="content-item">
+                                                        <a href="money_spending.html"
+                                                            class="content-link">តាមដានការចំណាយ</a>
+                                                    </li>
+                                                    <li class="content-item">
+                                                        <a href="mood_tracking.html"
+                                                            class="content-link">តាមដានផ្លូវចិត្ត</a>
+                                                    </li>
+                                                    <li class="content-item">
+                                                        <a href="exercise.html" class="content-link">លំហាត់ប្រាណ</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <div class="hide"></div>
+                                    </ul>
+                                </li>
+                                <li class="menu-item all-center">
+                                    <button type="button" class="menu-btn all-center">
+                                        <i class="fa-solid fa-brain"></i>
+                                    </button>
+                                    <ul class="nav-menu">
+                                        <li class="menu-item">
+                                            <div class="menu-content">
+                                                <div class="bar-title d-flex align-items-center">
+                                                    <i class="fa-solid fa-brain"></i>
+                                                    <h4>ស្ថានភាពផ្លូវចិត្ត</h4>
+                                                </div>
+                                                <ul class="content-list">
+                                                    <li class="content-item">
+                                                        <a href="therapist.html"
+                                                            class="content-link">អ្នកជំនាញផ្លូវចិត្ត</a>
+                                                    </li>
+                                                    <li class="content-item">
+                                                        <a href="mediation.html" class="content-link">សមាធិ</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <div class="hide"></div>
+                                    </ul>
+                                </li>
+                                <li class="menu-item all-center">
+                                    <button type="button" class="menu-btn all-center">
+                                        <i class="fa-solid fa-book-open-reader"></i>
+                                    </button>
+                                    <ul class="nav-menu">
+                                        <li class="menu-item">
+                                            <div class="menu-content">
+                                                <div class="bar-title d-flex align-items-center">
+                                                    <i class="fa-solid fa-book-open-reader"></i>
+                                                    <h4>ចំណេះដឹង</h4>
+                                                </div>
+                                                <ul class="content-list">
+                                                    <li class="content-item">
+                                                        <a href="book_store.html" class="content-link">សៀវភៅ</a>
+                                                    </li>
+                                                    <li class="content-item">
+                                                        <a href="event.html" class="content-link">ព្រឹត្តិការណ៍</a>
+                                                    </li>
+                                                    <li class="content-item">
+                                                        <a href="video_recommendation.html"
+                                                            class="content-link active-nav">វីឌីអូអភិវឌ្ឍខ្លួន</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <div class="hide"></div>
+                                    </ul>
+                                </li>
+                                <li class="menu-item all-center">
+                                    <a href="pricing.html" type="button"
+                                        class="menu-btn all-center text-decoration-none"><i
+                                            class="fa-solid fa-money-check-dollar"></i></a>
+                                    <ul class="nav-menu">
+                                        <li class="menu-item">
+                                            <div class="menu-content">
+                                                <div class="bar-title d-flex align-items-center">
+                                                    <i class="fa-solid fa-money-check-dollar"></i>
+                                                    <h4>តម្លៃ</h4>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <div class="hide"></div>
+                                    </ul>
+                                </li>
+                                <li class="menu-item all-center">
+                                    <a role="button" href="article.html" type="button"
+                                        class="menu-btn all-center text-decoration-none"><i
+                                            class="fa-solid fa-newspaper"></i></a>
+                                    <ul class="nav-menu">
+                                        <li class="menu-item">
+                                            <div class="menu-content">
+                                                <div class="bar-title d-flex align-items-center">
+                                                    <i class="fa-solid fa-newspaper"></i>
+                                                    <h4>អត្ថបទ</h4>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <div class="hide"></div>
+                                    </ul>
+                                </li>
+                                <li class="menu-item all-center">
+                                    <button type="button" class="menu-btn mb-0 all-center">
+                                        <i class="fa-solid fa-circle-info"></i>
+                                    </button>
+                                    <ul class="nav-menu">
+                                        <li class="menu-item">
+                                            <div class="menu-content">
+                                                <div class="bar-title d-flex align-items-center">
+                                                    <i class="fa-solid fa-circle-info"></i>
+                                                    <h4>ព័ត៌មានបន្ថែម</h4>
+                                                </div>
+                                                <ul class="content-list">
+                                                    <li class="content-item">
+                                                        <a href="about_us.html" class="content-link">អំពីយើង</a>
+                                                    </li>
+                                                    <li class="content-item">
+                                                        <a href="contact_us.html" class="content-link">ទាក់ទង</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <div class="hide"></div>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- ! end of side bar -->
+                    <!-- ! begin of main content -->
+                    <div class="col-lg-11 col-12">
+                        <div class="pt-112 px-4 px-md-0">
+                            <section class="payment">
+                                <div class="row g-3">
+                                    <div class="col-lg-7">
+                                        <div class="card card-payment">
+                                            <h2 class="main-text b-bottom py-2">ការទូទាត់ប្រាក់</h2>
+                                            <p class="m-0 fs-3 fw-bold text-center py-3 main-text">
+                                                ជ្រើសរើសការទូទាត់ប្រាក់</p>
+                                            <ul class="nav mb-3 w-100 d-flex p-0 payment-list justify-content-center"
+                                                id="pills-tab" role="tablist">
+                                                <li class="nav-item pay-item payment-image" role="presentation">
+                                                    <a type="button" class="active" id="visa-card-tab"
+                                                        data-bs-toggle="pill" data-bs-target="#visa-card" role="tab"
+                                                        aria-controls="visa-card" aria-selected="true">
+                                                        <img src="assets/img/payment/visa-master-card.png" alt="">
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item pay-item payment-image" role="presentation">
+                                                    <a type="button" id="aba-pay-tab" data-bs-toggle="pill"
+                                                        data-bs-target="#aba-pay" role="tab" aria-controls="aba-pay"
+                                                        aria-selected="false">
+                                                        <img src="assets/img/payment/aba-long-logo.jpg" alt="">
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <div class="tab-content" id="pills-tabContent">
+                                                <div class="tab-pane fade show active" id="visa-card" role="tabpanel"
+                                                    aria-labelledby="pills-home-tab" tabindex="0">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div class="form-input-gp">
+                                                                <label for="name-card"
+                                                                    class="fs-5 main-text mb-2">បញ្ចូលឈ្មោះក្នុងកាតរបស់អ្នក</label>
+                                                                <input type="text" name="name-card"
+                                                                    class="input-form input-bc p-2"
+                                                                    placeholder="បញ្ចូលឈ្មោះក្នុងកាតរបស់អ្នក">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div class="form-input-gp mt-3">
+                                                                <label for="name-card"
+                                                                    class="fs-5 main-text mb-2">បញ្ចូលលេខកាត</label>
+                                                                <input type="text" name="name-card"
+                                                                    class="input-form input-bc p-2"
+                                                                    placeholder="1234 5678 9012 3456">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="form-input-gp mt-3">
+                                                                <label for="name-card"
+                                                                    class="fs-5 main-text mb-2">កាលបរិច្ឆេទកំណត់</label>
+                                                                <input name="name-card" type="datetime-locaal"
+                                                                    class="input-form input-bc p-2" placeholder="MM/YY">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="form-input-gp mt-3">
+                                                                <label for="name-card"
+                                                                    class="fs-5 main-text mb-2">CVV</label>
+                                                                <input type="text" name="name-card"
+                                                                    class="input-form input-bc p-2" placeholder="CVV">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="aba-pay" role="tabpanel"
+                                                    aria-labelledby="aba-pay-tab" tabindex="0">
+                                                    <div class="row">
+                                                        <div class="col-12 d-flex justify-content-center my-3">
+                                                            <div class="qr-image">
+                                                                <img src="assets/img/payment/qr-code-payment.jpg"
+                                                                    alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div class="form-input-gp">
+                                                                <label for="name-card"
+                                                                    class="fs-5 main-text mb-2">បញ្ចូលលេខ Purchase
+                                                                    (Transaction hash)</label>
+                                                                <input type="text" class="input-form input-bc p-2"
+                                                                    placeholder="លេខកូដ Purchase#">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card card-pro-detail mt-3">
+                                            <h3>ព័ត៌មានលម្អិតនៃការបញ្ជាទិញ</h3>
+                                            <ul class="pro-detail-list">
+                                                <li class="pro-item">
+                                                    <div class="row">
+                                                        <div class="col-2">
+                                                            <div class="pro-image">
+                                                                <img src="assets/img/book/Atomic_Habits.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-8">
+                                                            <div
+                                                                class="pro-content d-flex flex-column justify-content-center h-100">
+                                                                <h5 class="main-text m-0">Atomic Habits: A Life Story
+                                                                </h5>
+                                                                <div class="pro-price">
+                                                                    <p class="artist-name m-0">
+                                                                        ដោយ៖​ James Clear
+                                                                    </p>
+                                                                    <div class="star-rate">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <!-- <i class="fa-regular fa-star-half-stroke"></i> -->
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <p
+                                                                class="p-0 fs-5 text-danger book-price d-flex flex-column justify-content-center h-100">
+                                                                $13.79</p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="pro-item mt-3">
+                                                    <div class="row">
+                                                        <div class="col-2">
+                                                            <div class="pro-image">
+                                                                <img src="assets/img/book/Rich_Dad_Poor_Dad.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-8">
+                                                            <div
+                                                                class="pro-content d-flex flex-column justify-content-center h-100">
+                                                                <h5 class="main-text m-0">Rich Dad Poor Dad</h5>
+                                                                <div class="pro-price">
+                                                                    <p class="artist-name m-0">
+                                                                        ដោយ៖ Robert T. Kiyosaki
+                                                                    </p>
+                                                                    <div class="star-rate">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <!-- <i class="fa-solid fa-star"></i> -->
+                                                                        <i class="fa-regular fa-star-half-stroke"></i>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <p
+                                                                class="p-0 fs-5 text-danger book-price d-flex flex-column justify-content-center h-100">
+                                                                $7.39</p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <div class="card card-pay-summary">
+                                            <h2 class="main-text b-bottom py-2">សង្ខេបការទូទាត់ប្រាក់</h2>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <p class="m-0 fs-5 main-text">តម្លៃដើម៖</p>
+                                                <p class="m-0 fs-5 main-text">$21.18</p>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <p class="m-0 fs-5 main-text">បញ្ចុះតម្លៃ៖</p>
+                                                <p class="m-0 fs-5 main-text">$0.00</p>
+                                            </div>
+                                            <div
+                                                class="d-flex justify-content-between align-items-center b-top mt-3 pt-3">
+                                                <p class="m-0 fs-5 main-text">តម្លៃសរុប៖</p>
+                                                <p class="m-0 fs-5 text-danger fw-bold">$21.18</p>
+                                            </div>
+                                            <div class="w-100 d-flex justify-content-center mt-3">
+                                                <a type="button" class="btn-form text-decoration-none"
+                                                    data-bs-toggle="modal" data-bs-target="#success-pop">
+                                                    ទូទាត់ប្រាក់
+                                                </a>
+                                            </div>
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="success-pop" tabindex="-1"
+                                                aria-labelledby="success-popLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered">
+                                                    <div class="modal-content">
+                                                        <div class="modal-body">
+                                                            <div class="success-animation">
+                                                                <svg class="checkmark"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    viewBox="0 0 52 52">
+                                                                    <circle class="checkmark__circle" cx="26" cy="26"
+                                                                        r="25" fill="none" />
+                                                                    <path class="checkmark__check" fill="none"
+                                                                        d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                                                                </svg>
+                                                            </div>
+                                                            <p class="m-0 fs-4 fw-bold main-text text-center mt-3">ការទូទាត់ប្រាក់ទទួលបានជោគជ័យ</p>
+                                                        </div>
+                                                        <div class="modal-footer d-flex w-100 justify-content-center">
+                                                            <a type="button" href="book_store.html" class="btn btn-success text-decoration-none">យល់ព្រម</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <!-- ! end of main content -->
+                </div>
+            </div>
+        </main>
+
+        <!-- ! begin of footer -->
+        <footer class="footer">
+            <div class="line-footer"></div>
+            <div class="container py-3">
+                <div class="row px-4 px-lg-0">
+                    <div class="col-lg-3 col-12">
+                        <div class="footer-logo w-100 d-lg-block d-flex justify-content-center">
+                            <a href="home_page.html" class="text-decoration-none"><img
+                                    src="assets/img/navbar/Kn-logo.png" alt="Kn-logo" /></a>
+                        </div>
+                        <div class="comp-discript">
+                            <p>
+                                Kamnot - កំណត់ បង្កើតឡើងក្នុងគោល
+                                ដៅដើម្បីជួយអោយអ្នកប្រើប្រាស់អាចអភិ វឌ្ឍន៍
+                                ខ្លួនបានកាន់តែប្រសើឡើងជាមួយ និងមុខងារ​ពិសេសៗ ដែលទាក់ទងនិងការ
+                                អភិវឌ្ឍខ្លួន គឺ​ ប្រមូលផ្ដុំនៅក្នុង Kamnot។
+                            </p>
+                        </div>
+                        <ul class="comp-social-media d-flex pb-3 pb-lg-0">
+                            <li class="comp-item">
+                                <a href="#" class="social-media-icon"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li class="comp-item">
+                                <a href="#" class="social-media-icon"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li class="comp-item">
+                                <a href="#" class="social-media-icon"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li class="comp-item">
+                                <a href="#" class="social-media-icon"><i class="fab fa-youtube"></i></a>
+                            </li>
+                            <li class="comp-item">
+                                <a href="#" class="social-media-icon"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-12 ps-lg-5">
+                        <h4 class="footer-title">ដំណរភ្ជាប់រហ័ស</h4>
+                        <div class="row">
+                            <div class="col-6 p-0">
+                                <ul class="footer-list">
+                                    <li class="footer-item">
+                                        <a class="footer-link" href="journaling.html">កំណត់ត្រាប្រចាំថ្ងៃ</a>
+                                    </li>
+                                    <li class="footer-item">
+                                        <a class="footer-link" href="money_spending.html">តាមដានការចំណាយ</a>
+                                    </li>
+                                    <li class="footer-item">
+                                        <a class="footer-link" href="mood_tracking.html">តាមដានផ្លូវចិត្ត</a>
+                                    </li>
+                                    <li class="footer-item">
+                                        <a class="footer-link" href="exercise.html">លំហាត់ប្រាណ</a>
+                                    </li>
+                                    <li class="footer-item">
+                                        <a class="footer-link" href="therapist.html">អ្នកជំនាញផ្លូវចិត្ត</a>
+                                    </li>
+                                    <li class="footer-item">
+                                        <a class="footer-link" href="mediation.html">សមាធិ</a>
+                                    </li>
+                                    <li class="footer-item">
+                                        <a class="footer-link" href="book_store.html">សៀវភៅ</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6 p-0 ps-4">
+                                <ul class="footer-list">
+                                    <li class="footer-item">
+                                        <a class="footer-link" href="event.html">ព្រឹត្តិការណ៍</a>
+                                    </li>
+                                    <li class="footer-item">
+                                        <a class="footer-link" href="pricing.html">តម្លៃ</a>
+                                    </li>
+                                    <li class="footer-item">
+                                        <a class="footer-link" href="article.html">អត្ថបទ</a>
+                                    </li>
+                                    <li class="footer-item">
+                                        <a class="footer-link" href="video_recommendation.html">វីឌីអូអភិវឌ្ឍខ្លួន</a>
+                                    </li>
+                                    <li class="footer-item">
+                                        <a class="footer-link" href="about_us.html">អំពីយើង</a>
+                                    </li>
+                                    <li class="footer-item">
+                                        <a class="footer-link" href="contact_us.html">ទាក់ទង</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-12 ps-lg-4 ps-3">
+                        <h4 class="footer-title">បណ្ដាញសង្គម</h4>
+                        <div class="row">
+                            <div class="col-12 p-0">
+                                <ul class="footer-list">
+                                    <li class="footer-item">
+                                        <a href="#" class="footer-link">Facebook</a>
+                                    </li>
+                                    <li class="footer-item">
+                                        <a href="#" class="footer-link">Instagram</a>
+                                    </li>
+                                    <li class="footer-item">
+                                        <a href="#" class="footer-link">Twitter</a>
+                                    </li>
+                                    <li class="footer-item">
+                                        <a href="#" class="footer-link">YouTube</a>
+                                    </li>
+                                    <li class="footer-item">
+                                        <a href="#" class="footer-link">Linkedin</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-12">
+                        <h4 class="footer-title">តាមដានការវិវត្ត</h4>
+                        <div class="col-12 p-0">
+                            <p class="sub-footer-text">
+                                បញ្ចូលអុីមែលរបស់អ្នកដើម្បីទទួលបានសារពីការអភិវឌ្ឍ មុខងារថ្មីៗ​
+                                នៃវេបសាយ។
+                            </p>
+                        </div>
+                        <div class="col-12">
+                            <div class="mb-3">
+                                <div class="input-group mb-3">
+                                    <input type="text" class="footer-input" placeholder="user@gmail.com"
+                                        aria-label="user@gmail.com" aria-describedby="button-addon2" />
+                                    <button class="btn-footer" type="button" id="button-addon2">
+                                        <i class="fa-solid fa-paper-plane"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row copyright">
+                        <div class="col-lg-6 col-12 p-0 text-lg-start text-center">
+                            <p class="copyright-info m-0">
+                                &copy; ២០២៤ រក្សាសិទ្ធគ្រប់យ៉ាងដោយ Kamnot - កំណត់
+                            </p>
+                        </div>
+                        <div class="col-lg-6 col-12 p-0 text-lg-end text-center">
+                            <p class="term-poli m-0">
+                                <a href="#">លក្ខខណ្ឌ​នៃ​សេវាកម្ម</a>
+                                &#x2022;
+                                <a href="#">គោលការណ៍​ ភាព​ឯកជន</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- ! end of footer -->
+
+        <script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/plugins/aos/js/aos.js"></script>
+        <script src="assets/js/dark-mode.js"></script>
+        <script src="assets/plugins/flatpickr/js/flatpickr.js"></script>
+        <script>
+            flatpickr("input[type=datetime-locaal]", {
+                dateFormat: "d/m/y",
+            });
+
+        </script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
+
 </html>

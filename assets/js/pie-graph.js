@@ -1,24 +1,33 @@
-// ! pie graph
-
-const xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
-const yValues = [55, 49, 44, 24, 15];
-const barColors = ["#b91d47", "#00aba9", "#2b5797", "#e8c3b9", "#1e7145"];
-
-new Chart("pieGraph", {
-    type: "pie",
+// Pie Chart
+const ctxPie = document.getElementById("pieChart").getContext('2d');
+const pieChart = new Chart(ctxPie, {
+    type: 'pie',
     data: {
-        labels: xValues,
-        datasets: [
-            {
-                backgroundColor: barColors,
-                data: yValues,
-            },
-        ],
+        labels: ["កើតទុក", "រំភើប", "ខឹង", "ភ័យខ្លាច", "រីករាយ"],
+        datasets: [{
+            backgroundColor: [
+                "#ff2d00",
+                "#2ecc71",
+                "#f39c12",
+                "#9b59b6",
+                "#3498db",
+            ],
+            data: [40, 19, 3, 17, 20] // Raw data
+        }]
     },
     options: {
-        title: {
-            display: true,
-            text: "World Wide Wine Production 2018",
-        },
-    },
+        tooltips: {
+            callbacks: {
+                label: function(tooltipItem, data) {
+                    var dataset = data.datasets[tooltipItem.datasetIndex];
+                    var total = dataset.data.reduce(function(previousValue, currentValue) {
+                        return previousValue + currentValue;
+                    }, 0);
+                    var currentValue = dataset.data[tooltipItem.index];
+                    var percentage = Math.floor(((currentValue / total) * 100) + 0.5); // Calculate percentage
+                    return data.labels[tooltipItem.index] + ': ' + percentage + '%'; // Show label with percentage
+                }
+            }
+        }
+    }
 });
