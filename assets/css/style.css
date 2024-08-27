@@ -144,6 +144,11 @@ main {
     rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
   --btn-pill-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  --mood-1: blue;
+  --mood-2: green;
+  --mood-3: purple;
+  --mood-4: red;
+  --mood-5: orange;
 }
 
 [data-theme="dark"] {
@@ -741,7 +746,14 @@ nav {
   color: #fff;
 }
 
-.side-menu .menu .menu-item .nav-menu .menu-content .content-list .content-item .content-link.active-nav {
+.side-menu
+  .menu
+  .menu-item
+  .nav-menu
+  .menu-content
+  .content-list
+  .content-item
+  .content-link.active-nav {
   background-color: var(--link-text);
   color: #fff;
 }
@@ -2384,7 +2396,8 @@ nav {
 }
 
 .therapist-testimonial .therapist-cmt .cmt-box .card {
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+    rgba(0, 0, 0, 0.05) 0px 5px 10px;
   border: 1px solid #3c4d78;
 }
 
@@ -4112,6 +4125,78 @@ nav {
   background-color: var(--card-color) !important;
 }
 
+.moods_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mood {
+  background-color: #fff;
+  border: 0;
+  border-radius: 50%;
+  color: #000;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  line-height: 20px;
+  padding: 10px;
+  margin: 0 5px;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  border: 1px solid var(--ddd-color);
+
+}
+
+.mood_1 {
+  color: var(--mood-1);
+}
+
+.mood_2 {
+  color: var(--mood-2);
+}
+
+.mood_3 {
+  color: var(--mood-3);
+}
+
+.mood_4 {
+  color: var(--mood-4);
+}
+
+.mood_5 {
+  color: var(--mood-5);
+}
+
+.mood.selected {
+  background-color: currentColor;
+}
+
+.mood.selected i {
+  color: #fff;
+}
+
+.mood:active {
+  transform: scale(0.9);
+}
+
+.mood:focus {
+  outline: 0;
+}
+
+.mood i {
+  cursor: pointer;
+}
+
+.mood-detail {
+  width: 100%;
+  border-radius: 10px;
+  outline: none !important;
+  padding: 10px;
+  border: 1px solid var(--ddd-color);
+}
 /* ! end of mood tracking */
 
 /* ! begin of book store */
@@ -5102,7 +5187,6 @@ nav {
   padding: 10px;
   background-color: var(--card-color);
   border-radius: 10px;
-
 }
 
 .card-exer:hover .image-course-exer img {
@@ -5251,43 +5335,43 @@ nav {
 /* ! end of exercise */
 
 /* ! ====== Profile ====== */
-.user-information .card{
+.user-information .card {
   z-index: 5 !important;
   background-color: white !important;
   border-radius: 20px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
-.user-information .card .user-profile img{
+.user-information .card .user-profile img {
   width: 150px;
   height: 150px;
   border-radius: 100%;
   border: 2px solid #3c4d78;
 }
-.user-information .card .user-month-info{
+.user-information .card .user-month-info {
   transform: translateY(-40px);
 }
-.user-information .nav{
+.user-information .nav {
   transform: translateY(-30px);
 }
-.user-information .nav .nav-link{
+.user-information .nav .nav-link {
   height: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #3c4d78;
 }
-.user-information .nav .nav-link.active{
+.user-information .nav .nav-link.active {
   background-color: var(--link-text);
 }
-.user-information .nav .nav-link:hover{
+.user-information .nav .nav-link:hover {
   border: 1px solid var(--link-text);
 }
-.user-information .form-control{
-  color: #4e4e4e!important;
+.user-information .form-control {
+  color: #4e4e4e !important;
   font-weight: bold;
-
 }
-.user-information .btn-profile-save{
+.user-information .btn-profile-save {
   width: 200px;
   height: 40px;
   display: flex;
@@ -5296,20 +5380,20 @@ nav {
   background-color: var(--link-text);
   color: white;
 }
-.user-information .tab-pane .nav-link:hover{
+.user-information .tab-pane .nav-link:hover {
   text-decoration: underline;
 }
-.user-information .btn-profile-save:hover{
+.user-information .btn-profile-save:hover {
   border: 1px solid var(--link-text);
   color: #264d59;
 }
-.user-information .change-pw{
+.user-information .change-pw {
   width: 280px;
 }
-.user-information .input-pw{
+.user-information .input-pw {
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
 }
-.user-information .pw-condition-list{
+.user-information .pw-condition-list {
   font-size: 18px;
 }
 /* ===== End of Profile page ==== */
@@ -5377,14 +5461,16 @@ nav {
   padding-inline: 1lh;
   padding-bottom: var(--f);
   border-image: conic-gradient(#0008 0 0) 51% / var(--f);
-  clip-path: polygon(100% calc(100% - var(--f)),
-      100% 100%,
-      calc(100% - var(--f)) calc(100% - var(--f)),
-      var(--f) calc(100% - var(--f)),
-      0 100%,
-      0 calc(100% - var(--f)),
-      999px calc(100% - var(--f) - 999px),
-      calc(100% - 999px) calc(100% - var(--f) - 999px));
+  clip-path: polygon(
+    100% calc(100% - var(--f)),
+    100% 100%,
+    calc(100% - var(--f)) calc(100% - var(--f)),
+    var(--f) calc(100% - var(--f)),
+    0 100%,
+    0 calc(100% - var(--f)),
+    999px calc(100% - var(--f) - 999px),
+    calc(100% - 999px) calc(100% - var(--f) - 999px)
+  );
   transform: translate(calc((cos(45deg) - 1) * 100%), -100%) rotate(-45deg);
   transform-origin: 100% 100%;
   background-color: #f07818;
@@ -5472,14 +5558,16 @@ nav {
   padding-inline: 1lh;
   padding-bottom: var(--f);
   border-image: conic-gradient(#0008 0 0) 51% / var(--f);
-  clip-path: polygon(100% calc(100% - var(--f)),
-      100% 100%,
-      calc(100% - var(--f)) calc(100% - var(--f)),
-      var(--f) calc(100% - var(--f)),
-      0 100%,
-      0 calc(100% - var(--f)),
-      999px calc(100% - var(--f) - 999px),
-      calc(100% - 999px) calc(100% - var(--f) - 999px));
+  clip-path: polygon(
+    100% calc(100% - var(--f)),
+    100% 100%,
+    calc(100% - var(--f)) calc(100% - var(--f)),
+    var(--f) calc(100% - var(--f)),
+    0 100%,
+    0 calc(100% - var(--f)),
+    999px calc(100% - var(--f) - 999px),
+    calc(100% - 999px) calc(100% - var(--f) - 999px)
+  );
   transform: translate(calc((cos(45deg) - 1) * 100%), -100%) rotate(-45deg);
   transform-origin: 100% 100%;
   background-color: gold;
@@ -5501,14 +5589,16 @@ nav {
   padding-inline: 1lh;
   padding-bottom: var(--f);
   border-image: conic-gradient(#0008 0 0) 51% / var(--f);
-  clip-path: polygon(100% calc(100% - var(--f)),
-      100% 100%,
-      calc(100% - var(--f)) calc(100% - var(--f)),
-      var(--f) calc(100% - var(--f)),
-      0 100%,
-      0 calc(100% - var(--f)),
-      999px calc(100% - var(--f) - 999px),
-      calc(100% - 999px) calc(100% - var(--f) - 999px));
+  clip-path: polygon(
+    100% calc(100% - var(--f)),
+    100% 100%,
+    calc(100% - var(--f)) calc(100% - var(--f)),
+    var(--f) calc(100% - var(--f)),
+    0 100%,
+    0 calc(100% - var(--f)),
+    999px calc(100% - var(--f) - 999px),
+    calc(100% - 999px) calc(100% - var(--f) - 999px)
+  );
   transform: translate(calc((cos(45deg) - 1) * 100%), -100%) rotate(-45deg);
   transform-origin: 100% 100%;
   background-color: cornflowerblue;
@@ -5784,7 +5874,8 @@ nav {
   stroke: #4bb71b;
   stroke-miterlimit: 10;
   box-shadow: inset 0px 0px 0px #4bb71b;
-  animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+  animation: fill 0.4s ease-in-out 0.4s forwards,
+    scale 0.3s ease-in-out 0.9s both;
   position: relative;
   top: 5px;
   right: 5px;
@@ -5799,7 +5890,6 @@ nav {
   stroke: #4bb71b;
   fill: #fff;
   animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
-
 }
 
 .checkmark__check {
@@ -5816,7 +5906,6 @@ nav {
 }
 
 @keyframes scale {
-
   0%,
   100% {
     transform: none;
@@ -5924,28 +6013,28 @@ nav {
 
 @media screen and (max-width: 600px) {
   .timeline::after {
-      left: 31px;
+    left: 31px;
   }
 
   .control {
-      width: 100%;
-      padding-left: 70px;
-      padding-right: 25px;
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
   }
 
   .control::before {
-      left: 60px;
-      border: medium solid var(--card-color);
-      border-width: 10px 10px 10px 0;
-      border-color: transparent var(--card-color) transparent transparent;
+    left: 60px;
+    border: medium solid var(--card-color);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent var(--card-color) transparent transparent;
   }
 
   .left::after,
   .right::after {
-      left: 14px;
+    left: 14px;
   }
 
   .right {
-      left: 0%;
+    left: 0%;
   }
 }
