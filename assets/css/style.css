@@ -1047,20 +1047,6 @@ nav {
   font-size: 25px;
 }
 
-.komnot-services .service-categories .card {
-  border: 1px solid #818181;
-  border-radius: 20px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-  transition: all linear 0.1s;
-}
-
-.komnot-services .service-categories .card:hover {
-  transform: scale(0.95);
-  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
-    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
-}
-
 .komnot-services .service-categories .card .card-body p {
   font-size: 20px;
   font-weight: 500;
@@ -2894,7 +2880,6 @@ nav {
 
 .komnot-services .service-categories .card {
   border: 1px solid #818181;
-  cursor: pointer;
   border-radius: 20px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
@@ -2902,7 +2887,6 @@ nav {
 }
 
 .komnot-services .service-categories .card:hover {
-  transform: scale(0.95);
   box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
     rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
