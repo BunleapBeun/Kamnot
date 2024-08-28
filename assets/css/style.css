@@ -17,7 +17,7 @@ main {
 .light-black {
   color: var(--main-text) !important;
 }
-.cs-pointer{
+.cs-pointer {
   cursor: pointer;
 }
 .section-space {
@@ -1225,8 +1225,10 @@ nav {
 .testimonail .swiper .swiper-wrapper .swiper-slide .card .card-body .card-text {
   font-size: 18px;
 }
-.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, 
-.swiper-pagination-custom, .swiper-pagination-fraction{
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
   bottom: -20px !important;
 }
 .testimonail .swiper .swiper-pagination .swiper-pagination-bullet {
@@ -1841,7 +1843,7 @@ nav {
 .contact-body .getintouch .info-detail {
   font-size: 19px;
 }
-.contact-body .getin-text .info-detail{
+.contact-body .getin-text .info-detail {
   font-size: 16px;
   color: var(--link-text);
 }
@@ -1948,8 +1950,9 @@ nav {
 .about-creator strong {
   color: var(--main-title);
 }
-.about-creator .grateful .sponsor-img .card{
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px, rgba(0, 0, 0, 0.2) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+.about-creator .grateful .sponsor-img .card {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px,
+    rgba(0, 0, 0, 0.2) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .about-creator .creator .card .card-body .member-detail {
@@ -1963,28 +1966,28 @@ nav {
 .about-creator .creator .member-detail p {
   color: var(--main-text);
 }
-.about-creator .creator .member-picture{
+.about-creator .creator .member-picture {
   cursor: pointer;
   transition: all ease-in-out 0.3s;
 }
-.creator .member-picture .member-media{
+.creator .member-picture .member-media {
   bottom: -40px;
   left: 130px;
   opacity: 0;
   transition: all ease-in-out 0.3s;
 }
-.creator .member-picture:hover .member-media{
+.creator .member-picture:hover .member-media {
   bottom: -20px;
   display: block;
   opacity: 1;
 }
-.creator .member-media .card{
+.creator .member-media .card {
   width: 280px;
   height: 70px;
   padding-inline: 35px;
   align-items: center;
   display: flex;
-  flex-direction: row!important;
+  flex-direction: row !important;
   justify-content: space-between;
   border-radius: 50px !important;
   background: rgba(255, 255, 255, 0.56);
@@ -1994,12 +1997,12 @@ nav {
   -webkit-backdrop-filter: blur(7.7px);
   border: 1px solid rgba(255, 255, 255, 0.31);
 }
-.creator .member-media .card .nav-link{
+.creator .member-media .card .nav-link {
   color: #3c4d78;
   font-size: 40px;
   transition: all ease-in-out 0.2s;
 }
-.creator .member-media .card .nav-link:hover{
+.creator .member-media .card .nav-link:hover {
   margin-bottom: 10px;
   text-shadow: #9bb3ef 2px 10px 25px;
 }
@@ -2740,11 +2743,12 @@ nav {
     width: 20px !important;
     height: 20px !important;
   }
-  .testimonail .swiper .swiper-wrapper .swiper-slide .card .card-body p{
-    display: -webkit-box; 
-    -webkit-box-orient: vertical; 
-    -webkit-line-clamp: 10; 
-    overflow: hidden; 
+  .testimonail .swiper .swiper-wrapper .swiper-slide .card .card-body p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 10;
+    line-clamp: 10;
+    overflow: hidden;
   }
 }
 
@@ -3215,8 +3219,6 @@ nav {
     padding-right: 0;
   }
 }
-
-
 
 /* ! end of landing page */
 
@@ -4200,7 +4202,6 @@ nav {
   width: 50px;
   text-align: center;
   border: 1px solid var(--ddd-color);
-
 }
 
 .mood_1 {
@@ -5038,7 +5039,7 @@ nav {
   height: 650px;
   overflow: scroll;
   overflow-y: scroll;
-  scrollbar-width:10px;
+  scrollbar-width: 10px;
   outline: 1px solid var(--ddd-color);
 }
 /* width */
@@ -5047,19 +5048,19 @@ nav {
 }
 /* Track */
 .exer-control .exer-list::-webkit-scrollbar-track {
-  background: var(--card-color); 
+  background: var(--card-color);
   border-radius: 10px;
 }
- 
+
 /* Handle */
 .exer-control .exer-list::-webkit-scrollbar-thumb {
-  background: var(--bg-grandient); 
+  background: var(--bg-grandient);
   border-radius: 10px;
 }
 
 /* Handle on hover */
 .exer-control .exer-list::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #555;
 }
 
 .exer-control .exer-list .erxer-item {
@@ -5468,18 +5469,18 @@ nav {
 .user-information .pw-condition-list {
   font-size: 18px;
 }
-.btn-activity-delete .dropdown-menu .dropdown-item{
+.btn-activity-delete .dropdown-menu .dropdown-item {
   width: 95% !important;
   transition: all ease-in-out 0.3s;
 }
-.btn-activity-delete .dropdown-menu .dropdown-item:hover{
+.btn-activity-delete .dropdown-menu .dropdown-item:hover {
   background-color: #ddd;
   padding-left: 20px;
   border-radius: 10px;
   margin-inline: 5px;
   font-weight: bold;
 }
-.activity-date{
+.activity-date {
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -5487,18 +5488,18 @@ nav {
   padding: 10px 0;
   background-color: #488495;
 }
-.user-information .delete-x{
+.user-information .delete-x {
   transition: all ease-in-out 0.3s;
   cursor: pointer;
 }
-.user-information .delete-x:hover{
+.user-information .delete-x:hover {
   padding-bottom: 5px;
 }
-.activity-history .activity-info a:hover{
+.activity-history .activity-info a:hover {
   color: #3c4d78;
   font-weight: 500;
 }
-.activity-history .info-delete span:hover{
+.activity-history .info-delete span:hover {
   color: rgb(195, 19, 19) !important;
 }
 /* ===== End of Profile page ==== */
@@ -6120,11 +6121,12 @@ nav {
   .testimonail .swiper .swiper-wrapper .swiper-slide .card .card-image {
     transform: translateX(40px);
   }
-  .testimonail .swiper .swiper-wrapper .swiper-slide .card .card-body p{
-    display: -webkit-box; 
-    -webkit-box-orient: vertical; 
-    -webkit-line-clamp: 7; 
-    overflow: hidden; 
+  .testimonail .swiper .swiper-wrapper .swiper-slide .card .card-body p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 7;
+    line-clamp: 7;
+    overflow: hidden;
   }
 }
 @media screen and (max-width: 600px) {
