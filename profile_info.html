@@ -562,11 +562,8 @@
                     <div class="card border-0 p-3">
                       <div class="tab-content" id="v-pills-tabContent">
                         <div class="tab-pane fade show active" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
-                          <div class="profile-header mb-4 d-flex justify-content-between">
+                          <div class="profile-header mb-4">
                             <h2 class="modal-header-color">ប្រវត្តិរូប</h2>
-                            <button type="button" class="btn btn-secondary rounded-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                              <span class="edit-profile"><i class="fa-solid fa-user-pen"></i></span>
-                            </button>
                             
                           </div>
 
@@ -575,49 +572,49 @@
                               <div class="col-sm-12 col-md-6 py-2 pe-3">
                                 <div class="mb-3">
                                   <label for="firstname" class="form-label fs-5">នាមត្រកូល</label>
-                                  <input class="form-control control-display mx-2" id="firstname" type="text"  placeholder="Wade" aria-label="">
+                                  <input class="form-control control-display mx-2" id="firstname" type="text" value="Wade" aria-label="">
                                 </div>
                               </div>
                               <div class="col-sm-12 col-md-6 py-2 pe-3">
                                 <div class="mb-3">
                                   <label for="lastname" class="form-label fs-5">នាមខ្លួន</label>
-                                  <input class="form-control control-display mx-2" id="lastname" type="text"  placeholder="Warren" aria-label="">
+                                  <input class="form-control control-display mx-2" id="lastname" type="text" value="Warren" aria-label="">
                                 </div>
                               </div>
                               <div class="col-sm-12 col-md-6 py-2 pe-3">
                                 <div class="mb-3">
                                   <label for="gender" class="form-label fs-5">ភេទ</label>
-                                  <input class="form-control control-display mx-2" id="gender" type="text"  placeholder="ប្រុស" aria-label="">
+                                  <input class="form-control control-display mx-2" id="gender" type="text" value="ប្រុស" aria-label="">
                                 </div>
                               </div>
                               <div class="col-sm-12 col-md-6 py-2 pe-3">
                                 <div class="mb-3">
                                   <label for="birthday" class="form-label fs-5">ថ្ងៃ ខែ ឆ្នាំកំណើត</label>
-                                  <input class="form-control control-display mx-2" id="birthday" type="text"  placeholder="12 / 02 / 2000" aria-label="">
+                                  <input class="form-control control-display mx-2" id="birthday" type="text" value="12 / 02 /2024" aria-label="">
                                 </div>
                               </div>
                               <div class="col-sm-12 col-md-6 py-2 pe-3">
                                 <div class="mb-3">
                                   <label for="email" class="form-label fs-5">អុីម៉ែល</label>
-                                  <input class="form-control control-display mx-2" id="email" type="email" disabled placeholder="wade.warren@gmail.com" aria-label="">
+                                  <input class="form-control control-display mx-2" id="email" type="email" disabled value="wade.warren@gmail.com" aria-label="">
                                 </div>
                               </div>
                               <div class="col-sm-12 col-md-6 py-2 pe-3">
                                 <div class="mb-3">
                                   <label for="pNumber" class="form-label fs-5">លេខទូរស័ព្ទ</label>
-                                  <input class="form-control control-display mx-2" id="pNumber" type="text"  placeholder="N/A" aria-label="">
+                                  <input class="form-control control-display mx-2" id="pNumber" type="text"  value="N/A" aria-label="">
                                 </div>
                               </div>
                               <div class="col-12 py-2 pe-3">
                                 <div class="mb-3">
                                   <label for="address" class="form-label fs-5">អាសយដ្ឋាន</label>
-                                  <input class="form-control control-display mx-2 " id="address" type="text"  placeholder="N/A" aria-label="">
+                                  <input class="form-control control-display mx-2 " id="address" type="text"  value="N/A" aria-label="">
                                 </div>
                               </div>
                               <div class="col-12 py-2 pe-3">
                                 <div class="mb-3">
                                   <label for="bio" class="form-label fs-5">ការណែនាំខ្លួន (Bio)</label>
-                                  <input class="form-control control-display mx-2" id="bio" type="text"  placeholder="- Strive for Progress, Not Perfection -" aria-label="">
+                                  <input class="form-control control-display mx-2" id="bio" type="text" value="- Strive for Progress, Not Perfection -" aria-label="">
                                 </div>
                               </div>
                             </div>
@@ -654,6 +651,10 @@
                             <div class="mb-3 mt-3 pe-3 w-100">
                               <a href="forget_password.html" class="nav-link modal-header-color text-end">ភ្លេចលេខកូដសម្ងាត់មែនទេ?</a>
                             </div>
+                            <div class="mt-5 w-100 d-flex justify-content-center">
+                              <button type="button" class="btn btn-profile-save" data-bs-toggle="modal" data-bs-target="#profileSaveModal">រក្សាទុកការកែប្រែ</button>
+
+                            </div>
                             
                           </form>
                           
@@ -668,12 +669,7 @@
                             </ul>
                             
                           </div>
-                          <div class="row pt-3">
-                            <div class="col-12 d-flex justify-content-end">
-                              <button type="button" class="btn btn-profile-save" data-bs-toggle="modal" data-bs-target="#profileSaveModal">រក្សាទុកការកែប្រែ</button>
-                              
-                            </div>
-                          </div>
+
                         </div>
                       </div>
                     </div>
