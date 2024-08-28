@@ -7,7 +7,7 @@
     <title>Kamnot</title>
     <link rel="stylesheet" href="assets/css/bootstrap.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.css" />
     <link rel="stylesheet" href="assets/plugins/aos/css/aos.css" />
   </head>
@@ -521,17 +521,55 @@
                           aria-hidden="true">
                           <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                             <div class="modal-content">
-                              <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="mood-inputLabel">Modal title</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                  aria-label="Close"></button>
-                              </div>
                               <div class="modal-body">
-                                
+                                <h3 class="text-center">អារម្មណ៍របស់អ្នកកថ្ងៃនេះ</h3>
+                                <div class="moods_container my-3 w-100 d-flex flex-row justify-content-center gap-3 b-top py-3">
+                                  <div class="d-flex flex-column">
+                                    <button class="mood mood_1" id="mood_1">
+                                      <i class="fa-solid fa-face-laugh-squint"></i>
+                                    </button>
+                                    <p class="m-0 text-center mt-1">រីករាយ</p>
+                                  </div>
+                                  <div class="d-flex flex-column">
+                                    <button class="mood mood_2" id="mood_2">
+                                      <i class="fa-solid fa-face-surprise"></i>
+                                    </button>
+                                    <p class="m-0 text-center mt-1">រំភើប</p>
+                                  </div>
+                                  <div class="d-flex flex-column">
+                                    <button class="mood mood_3" id="mood_3">
+                                      <i class="fa-solid fa-meh"></i>
+                                    </button>
+                                    <p class="m-0 text-center mt-1">ភ័យខ្លាច</p>
+                                  </div>
+                                  <div class="d-flex flex-column">
+                                    <button class="mood mood_4" id="mood_4">
+                                      <i class="fa-solid fa-face-angry"></i>
+                                    </button>
+                                    <p class="m-0 text-center mt-1">ខឹង</p>
+                                  </div>
+                                  <div class="d-flex flex-column">
+                                    <button class="mood mood_5" id="mood_5">
+                                      <i class="fa-solid fa-face-sad-tear"></i>
+                                    </button>
+                                    <p class="m-0 text-center mt-1">កើតទុក្ខ</p>
+                                  </div>
+                                </div>
+                                <h3 class="text-center">កម្រិតនៃអារម្មណ៍</h3>
+                                <div class="form-container-range b-top b-top py-3">
+                                  <div class="w-100 d-flex align-items-center justify-content-between">
+                                    <p class="m-0">0%</p>
+                                    <p class="m-0">100%</p>
+                                  </div>
+                                  <input id="ranger" class="form-range form-range-markers" type="range" min="1" max="100" step="1" value="1" />
+                                </div>
+                                <div>
+                                  <textarea name="mood-detail" id="" class="mood-detail" placeholder="សរសេរអំពីអារម្មណ៍របស់អ្នកទីនេះ"></textarea>
+                                </div>
                               </div>
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
+                              <div class="modal-footer w-100 d-flex justify-content-center">
+                                <a href="mood_tracking.html" type="button"
+                                  class="btn btn-success text-decoration-none">យល់ព្រម</a>
                               </div>
                             </div>
                           </div>
@@ -599,7 +637,6 @@
                       </tr>
                     </tbody>
                   </table>
-
                 </div>
               </section>
               <section class="mood-statistic mt-4">
