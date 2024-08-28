@@ -629,7 +629,97 @@
                           
                         </div>
                        
-                        <div class="tab-pane fade" id="v-pills-activity" role="tabpanel" aria-labelledby="v-pills-activity-tab" tabindex="0"></div>
+                        <div class="tab-pane fade" id="v-pills-activity" role="tabpanel" aria-labelledby="v-pills-activity-tab" tabindex="0">
+                          <h2 class="profile-header modal-header-color">សកម្មភាពសង្ខេបរបស់អ្នកប្រចាំខែ <span>កក្គដា</span></h2>
+                          <hr>
+                          <div class="activity-sum-header px-5 pt-2 w-100 d-flex justify-content-between align-items-center">
+                            <div class="filter-activity">
+                              <span class="fs-5 text-secondary"><i class="fa-solid fa-filter"></i></span>
+                              <span class="fs-5 text-secondary-emphasis">រៀបចំតាមសកម្មភាពថ្មីៗ</span>
+                            </div>
+                            <div class="btn-activity-delete">
+                              <button type="button" class="btn btn-outline-secondary px-4 d-flex align-items-center" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span>លុប</span>
+                                <span class="ps-2 pb-1"><i class="fa-solid fa-sort-down"></i></span>
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item">ថ្ងៃនេះ</a></li>
+                                <li><a class="dropdown-item">សប្ដាហ៌នេះ</a></li>
+                                <li><a class="dropdown-item">ខែនេះ</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="activity-date w-100 d-flex justify-content-between my-4 px-5">
+                            <p class="mb-0 text-white fs-4">ថ្ងៃនេះ</p>
+                            <p class="mb-0 text-white fs-4 delete-x"><span><i class="fa-solid fa-xmark"></i></span></p>
+                          </div>
+                          <div class="activity-history w-100 d-flex justify-content-between px-5">
+                            <div class="activity-info">
+                              <p class="fs-5 mb-3">
+                                <span class="text-secondary pe-2">
+                                  <i class="fa-solid fa-calendar-check"></i>
+                                </span>
+                                <span class="pe-2">កំណត់ត្រាប្រចាំថ្ងៃ</span>
+                                <span class="badge ps-2 text-bg-success">1 ទិន្នន័យថ្មី</span>
+                              </p>
+                              <p style="font-size: 17px;">
+                                <span>11 : 20 AM</span>
+                                <span>&#x2022;</span>
+                                <a href="journaling.html" class="text-secondary">ព័ត៌មានលម្អិត</a>
+                              </p>
+                            </div>
+                            <div class="info-delete">
+                              <span class="fs-5 text-secondary cs-pointer"><i class="fa-solid fa-xmark"></i></span>
+                            </div>
+                          </div>
+                          <div class="w-100 px-5">
+                            <hr>
+                          </div>
+                          <div class="activity-history w-100 d-flex justify-content-between px-5">
+                            <div class="activity-info">
+                              <p class="fs-5 mb-3">
+                                <span class="text-secondary pe-2">
+                                  <i class="fa-solid fa-calendar-check"></i>
+                                </span>
+                                <span class="pe-2">តាមដានការចំណាយ</span>
+                                
+                              </p>
+                              <p style="font-size: 17px;">
+                                <span>11 : 10 AM</span>
+                                <span>&#x2022;</span>
+                                <a href="money_spending.html" class="text-secondary">ព័ត៌មានលម្អិត</a>
+                              </p>
+                            </div>
+                            <div class="info-delete">
+                              <span class="fs-5 text-secondary cs-pointer"><i class="fa-solid fa-xmark"></i></span>
+                            </div>
+                          </div>
+                          <div class="w-100 px-5">
+                            <hr>
+                          </div>
+                          <div class="activity-history w-100 d-flex justify-content-between px-5">
+                            <div class="activity-info">
+                              <p class="fs-5 mb-3">
+                                <span class="text-secondary pe-2">
+                                  <i class="fa-solid fa-calendar-check"></i>
+                                </span>
+                                <span class="pe-2">តាមដានការចំណាយ</span>
+                                
+                              </p>
+                              <p style="font-size: 17px;">
+                                <span>11 : 10 AM</span>
+                                <span>&#x2022;</span>
+                                <a href="money_spending.html" class="text-secondary">ព័ត៌មានលម្អិត</a>
+                              </p>
+                            </div>
+                            <div class="info-delete">
+                              <span class="fs-5 text-secondary cs-pointer"><i class="fa-solid fa-xmark"></i></span>
+                            </div>
+                          </div>
+                          <div class="w-100 px-5">
+                            <hr>
+                          </div>
+                        </div>
                         <div class="tab-pane fade" id="v-pills-pw" role="tabpanel" aria-labelledby="v-pills-pw-tab" tabindex="0">
                           <h2 class="profile-header modal-header-color">ផ្លាស់ប្ដូរលេខកូដសម្ងាត់</h2>
                           <form >
@@ -675,18 +765,25 @@
                     </div>
                     <div class="modal fade" id="profileSaveModal" tabindex="-1" aria-labelledby="profileSaveModalLabel" aria-hidden="true">
                       <div class="modal-dialog modal-dialog-centered modal-fullscreen-md-down">
-                        <div class="modal-content ">
-                          <div class="modal-header w-100 border-bottom-0 d-flex justify-content-end">
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                          </div>
+                        <div class="modal-content">
                           <div class="modal-body">
-                            <div class="success-gif w-100 d-flex justify-content-center">
-                              <img src="assets/img/profile-info/work-list.gif" width="200px" alt="success-gif">
-                            </div>
-                            <p class="pt-3 fs-5 text-success-emphasis text-center">ព័ត៌មានរបស់អ្នកត្រូវបានរក្សាបានជោគជ័យ។</p>
+                              <div class="success-animation">
+                                  <svg class="checkmark"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      viewBox="0 0 52 52">
+                                      <circle class="checkmark__circle" cx="26" cy="26"
+                                          r="25" fill="none" />
+                                      <path class="checkmark__check" fill="none"
+                                          d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                                  </svg>
+                              </div>
+                              <p class="mb-0 fs-4 main-text text-center mt-5">ពាក្យសម្ងាត់របស់អ្នកត្រូវបានផ្លាស់ប្ដូរដោយជោគជ័យ</p>
+                              <p class="fs-4 main-text text-center">សូមធ្វើការចូលប្រើប្រាស់សារជាថ្មី !</p>
                           </div>
-
-                        </div>
+                          <div class="modal-footer d-flex w-100 justify-content-center">
+                              <a type="button" href="login.html" class="btn btn-success text-decoration-none">យល់ព្រម</a>
+                          </div>
+                      </div>
                       </div>
                     </div>
                   </div>

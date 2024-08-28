@@ -17,7 +17,9 @@ main {
 .light-black {
   color: var(--main-text) !important;
 }
-
+.cs-pointer{
+  cursor: pointer;
+}
 .section-space {
   padding: 100px 0 !important;
 }
@@ -5446,6 +5448,39 @@ nav {
 }
 .user-information .pw-condition-list {
   font-size: 18px;
+}
+.btn-activity-delete .dropdown-menu .dropdown-item{
+  width: 95% !important;
+  transition: all ease-in-out 0.3s;
+}
+.btn-activity-delete .dropdown-menu .dropdown-item:hover{
+  background-color: #ddd;
+  padding-left: 20px;
+  border-radius: 10px;
+  margin-inline: 5px;
+  font-weight: bold;
+}
+.activity-date{
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  padding: 10px 0;
+  background-color: #488495;
+}
+.user-information .delete-x{
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+.user-information .delete-x:hover{
+  padding-bottom: 5px;
+}
+.activity-history .activity-info a:hover{
+  color: #3c4d78;
+  font-weight: 500;
+}
+.activity-history .info-delete span:hover{
+  color: rgb(195, 19, 19) !important;
 }
 /* ===== End of Profile page ==== */
 
