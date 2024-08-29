@@ -590,7 +590,7 @@
                     
                   </div>
                 </div>
-                <div class="journal-page w-100 position-relative">
+                <div class="journal-page w-100 position-relative" data-aos="fade-up" data-aos-duration="1000">
                   <div id="editor">
                     <p class="text-black">Hello World!</p>
                     <p class="text-black">Some initial <strong>bold</strong> text</p>
@@ -611,11 +611,11 @@
                   <div class="history-box py-3">
                     <div class="date-history w-100 " style="padding: 0 12px;">
                       <div class="row px-3">
-                        <div class="col-sm-12 col-lg-8">
+                        <div class="col-sm-12 col-lg-8" >
                           <div data-bs-spy="scroll" data-bs-target="#simple-list-example" data-bs-offset="0" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0" id="list-item-1">
                             <div class="landing-title-color px-2 daily-list-item">
                               <p class="fs-1 fw-bold">សប្ដាហ៌នេះ</p>
-                              <ul class="list-group border-0">
+                              <ul class="list-group border-0" data-aos="fade-up" data-aos-duration="1000">
                                 <div class="history-modal">
                                   <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#historyModal">
                                     <div class="item-date w-100 d-flex"> 
@@ -834,7 +834,7 @@
                             
                             <div class="landing-title-color pt-5 px-2 ">
                               <p class="fs-1 fw-bold">ខែនេះ</p>
-                              <ul class="list-group border-0 scrollable">
+                              <ul class="list-group border-0 scrollable" data-aos="fade-up" data-aos-duration="1000">
                                 <div class="history-modal">
                                   <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#historyModal">
                                     <div class="item-date w-100 d-flex"> 
@@ -1055,7 +1055,7 @@
 
                             <div class="landing-title-color py-5 px-2" id="list-item-2">
                               <p class="fs-1 fw-bold">ឆ្នាំនេះ</p>
-                              <ul class="list-group border-0 scrollable">
+                              <ul class="list-group border-0 scrollable" data-aos="fade-up" data-aos-duration="1000">
                                 <div class="history-modal">
                                   <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#historyModal">
                                     <div class="item-date w-100 d-flex"> 
@@ -1279,7 +1279,8 @@
 
                           </div>
                         </div>
-                        <div class="d-none d-lg-block col-lg-4">
+                        <div class="d-none d-lg-block col-lg-4" data-aos="fade-left"
+                        data-aos-duration="500">
                           <div id="simple-list-example" class="d-flex flex-column gap-3 simple-list-scrollspy text-center">
                             <a class="p-1 py-2 active" href="#list-item-1">សប្ដាហ៌នេះ</a>
                             <a class="p-1 py-2" href="#list-item-2">ខែនេះ</a>
@@ -1293,13 +1294,13 @@
               </section>
               <section class="photo-book section-space">
                 <div class="photobook-header w-100 d-flex justify-content-between">
-                  <div class="photo-book-title d-flex">
+                  <div class="photo-book-title d-flex" data-aos="fade-left" data-aos-duration="1500">
                     <h3 class="mb-0">អនុស្សាវរីយ៌</h3>
                     <div class="icon-photo ps-3">
                       <img src="assets/img/Journaling-Todolist/icon-photo.png" width="30px" alt="photo-book">
                     </div>
                   </div>
-                  <div class="add-photo d-none d-lg-block">
+                  <div class="add-photo d-none d-lg-block" data-aos="fade-right" data-aos-duration="1500">
                     <button type="button" class="btn btn-add mx-auto" data-bs-toggle="modal" data-bs-target="#addPhotoModal">
                       <p class="mb-0"> អនុស្សាវរីយ៌ថ្មី </p>
                       <span><i class="fa-solid fa-camera-retro"></i></span>
@@ -1355,7 +1356,7 @@
                   </div>
                 </div>
                 <div class="row justify-content-between py-5" >
-                  <div class="col-sm-12 col-lg-6 col-xl-4">
+                  <div class="col-sm-12 col-lg-6 col-xl-4" data-aos="fade-up" data-aos-duration="1000">
                     <div class="photo-book-body">
                        <!-- Swiper -->
 
@@ -1394,7 +1395,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-12 col-lg-6 col-xl-4">
+                  <div class="col-sm-12 col-lg-6 col-xl-4" data-aos="fade-up" data-aos-duration="1800">
                     <div class="photo-book-body">
                       <!-- Swiper -->
 
@@ -1431,7 +1432,7 @@
                      </div>
                    </div>
                   </div>
-                  <div class="col-sm-12 col-lg-6 col-xl-4">
+                  <div class="col-sm-12 col-lg-6 col-xl-4" data-aos="fade-up" data-aos-duration="2600">
                     <div class="photo-book-body">
                       <!-- Swiper -->
 
@@ -1468,7 +1469,7 @@
                      </div>
                    </div>
                   </div>
-                  <div class="col-sm-12 col-lg-6 col-xl-4">
+                  <div class="col-sm-12 col-lg-6 col-xl-4" data-aos="fade-up" data-aos-duration="3000">
                     <div class="photo-book-body">
                       <!-- Swiper -->
 
@@ -1758,7 +1759,9 @@
     <script src="assets/plugins/swiper-js/js/swiper-bundle.min.js"></script>
 
     <script src="assets/plugins/quill-snow/quill.js"></script>
-
+    <script>
+      AOS.init();
+    </script>
 
     <script>
       var swiper = new Swiper(".mySwiper", {
