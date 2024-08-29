@@ -1,137 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kamnot</title>
     <link rel="stylesheet" href="assets/css/bootstrap.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.css" />
     <link rel="stylesheet" href="assets/plugins/aos/css/aos.css" />
   </head>
+
   <body>
     <!-- ! begin of header -->
     <header class="position-fixed top-0 w-100">
       <nav class="navbar navbar-expand-lg nav-py30">
         <div class="container">
-          <a class="navbar-brand" href="home_page.html"
-            ><img src="assets/img/navbar/Kn-logo.png" alt=""
-          /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            aria-expanded="false"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasWithBothOptions"
-            aria-controls="offcanvasWithBothOptions"
-          >
+          <a class="navbar-brand" href="home_page.html"><img src="assets/img/navbar/Kn-logo.png" alt="" /></a>
+          <button class="navbar-toggler" type="button" aria-expanded="false" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
             <span class="nav-toggler-icon all-center"><i class="fa-solid fa-bars"></i></span>
           </button>
           <!-- ! begin of offcanvas -->
-          <div
-            class="offcanvas offcanvas-start d-lg-none"
-            data-bs-scroll="true"
-            tabindex="-1"
-            id="offcanvasWithBothOptions"
-            aria-labelledby="offcanvasWithBothOptionsLabel"
-          >
+          <div class="offcanvas offcanvas-start d-lg-none" data-bs-scroll="true" tabindex="-1"
+            id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
             <div class="offcanvas-header">
               <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
-                <a class="navbar-brand" href="index.html"
-                  ><img src="assets/img/navbar/Kn-logo.png" alt=""
-                /></a>
+                <a class="navbar-brand" href="index.html"><img src="assets/img/navbar/Kn-logo.png" alt="" /></a>
               </h5>
-              <button
-                type="button"
-                class="x-close all-center"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ><i class="fa-solid fa-xmark"></i></button>
+              <button type="button" class="x-close all-center" data-bs-dismiss="offcanvas" aria-label="Close"><i
+                  class="fa-solid fa-xmark"></i></button>
             </div>
             <div class="offcanvas-body">
               <div class="canvas-header d-flex justify-content-between">
-                <a
-                  href="profile_info.html"
-                  class="convas-pf rounded-circle overflow-hidden text-decoration-none"
-                >
+                <a href="profile_info.html" class="convas-pf rounded-circle overflow-hidden text-decoration-none">
                   <img src="assets/img/navbar/profile-img.png" alt="" />
                 </a>
                 <div class="d-flex align-items-center">
-                  <a
-                    href="cart.html"
-                    class="btn-add-cart all-center text-decoration-none"
-                    ><i class="fa-solid fa-cart-shopping"></i>
-                    <div class="cart-status all-center"><span>2 </span></div></a
-                  >
-                  <button
-                    type="button"
-                    data-theme-toggle
-                    id="theme-toggle-1"
-                    class="dark-light-mode all-center rounded-circle ms-3"
-                  ></button>
+                  <a href="cart.html" class="btn-add-cart all-center text-decoration-none"><i
+                      class="fa-solid fa-cart-shopping"></i>
+                    <div class="cart-status all-center"><span>2 </span></div>
+                  </a>
+                  <button type="button" data-theme-toggle id="theme-toggle-1"
+                    class="dark-light-mode all-center rounded-circle ms-3"></button>
                 </div>
               </div>
 
               <!-- ! begin navbar offcanvas -->
               <ul class="nav-convas">
                 <li class="convas-item">
-                  <a class="convas-link convas-bar-bg" href="index.html"
-                    ><i class="fa fa-house"></i> ទំព័រដើម</a
-                  >
+                  <a class="convas-link convas-bar-bg" href="index.html"><i class="fa fa-house"></i> ទំព័រដើម</a>
                 </li>
                 <li class="convas-item">
                   <input type="checkbox" id="showDropHabit" />
-                  <label
-                    for="showDropHabit"
-                    class="sub-convas-dropdown d-flex align-items-center justify-content-between"
-                    ><div>
+                  <label for="showDropHabit"
+                    class="sub-convas-dropdown d-flex align-items-center justify-content-between">
+                    <div>
                       <i class="fa-solid fa-calendar-check"></i>
                       ទម្លាប់ប្រចាំថ្ងៃ
                     </div>
-                    <i class="fa-solid fa-caret-down"></i
-                  ></label>
+                    <i class="fa-solid fa-caret-down"></i>
+                  </label>
                   <ul class="drop-menu">
                     <li class="convas-item">
-                      <a class="convas-link bbt-pf" href="journaling.html"
-                        >កំណត់ត្រាប្រចាំថ្ងៃ</a
-                      >
+                      <a class="convas-link bbt-pf" href="journaling.html">កំណត់ត្រាប្រចាំថ្ងៃ</a>
                     </li>
                     <li class="convas-item">
-                      <a class="convas-link bbt-pf" href="money_spending.html"
-                        >តាមដានការចំណាយ</a
-                      >
+                      <a class="convas-link bbt-pf" href="money_spending.html">តាមដានការចំណាយ</a>
                     </li>
                     <li class="convas-item">
-                      <a class="convas-link bbt-pf" href="mood_tracking.html"
-                        >តាមដានផ្លូវចិត្ត</a
-                      >
+                      <a class="convas-link bbt-pf" href="mood_tracking.html">តាមដានផ្លូវចិត្ត</a>
                     </li>
                     <li class="convas-item">
-                      <a class="convas-link" href="exercise.html"
-                        >លំហាត់ប្រាណ</a
-                      >
+                      <a class="convas-link" href="exercise.html">លំហាត់ប្រាណ</a>
                     </li>
                   </ul>
                 </li>
                 <li class="convas-item mt-10">
                   <input type="checkbox" id="showDropMentalhealth" />
-                  <label
-                    for="showDropMentalhealth"
-                    class="sub-convas-dropdown d-flex align-items-center justify-content-between"
-                    ><div>
+                  <label for="showDropMentalhealth"
+                    class="sub-convas-dropdown d-flex align-items-center justify-content-between">
+                    <div>
                       <i class="fa-solid fa-brain"></i> ស្ថានភាពផ្លូវចិត្ត
                     </div>
-                    <i class="fa-solid fa-caret-down"></i
-                  ></label>
+                    <i class="fa-solid fa-caret-down"></i>
+                  </label>
                   <ul class="drop-menu">
                     <li class="convas-item">
-                      <a class="convas-link bbt-pf" href="therapist.html"
-                        >អ្នកជំនាញផ្លូវចិត្ត</a
-                      >
+                      <a class="convas-link bbt-pf" href="therapist.html">អ្នកជំនាញផ្លូវចិត្ត</a>
                     </li>
                     <li class="convas-item">
                       <a class="convas-link" href="mediation.html">សមាធិ</a>
@@ -140,57 +97,45 @@
                 </li>
                 <li class="convas-item mt-10">
                   <input type="checkbox" id="showDropEdu" />
-                  <label
-                    for="showDropEdu"
-                    class="sub-convas-dropdown d-flex align-items-center justify-content-between"
-                    ><div>
+                  <label for="showDropEdu"
+                    class="sub-convas-dropdown d-flex align-items-center justify-content-between">
+                    <div>
                       <i class="fa-solid fa-book-open-reader"></i> ចំណេះដឹង
                     </div>
-                    <i class="fa-solid fa-caret-down"></i
-                  ></label>
+                    <i class="fa-solid fa-caret-down"></i>
+                  </label>
                   <ul class="drop-menu">
                     <li class="convas-item">
-                      <a class="convas-link bbt-pf" href="book_store.html"
-                        >សៀវភៅ</a
-                      >
+                      <a class="convas-link bbt-pf" href="book_store.html">សៀវភៅ</a>
                     </li>
                     <li class="convas-item">
-                      <a class="convas-link bbt-pf" href="event.html"
-                        >ព្រឹត្តិការណ៍</a
-                      >
+                      <a class="convas-link bbt-pf" href="event.html">ព្រឹត្តិការណ៍</a>
                     </li>
                     <li class="convas-item">
-                      <a class="convas-link" href="video_recommendation.html"
-                        >វីឌីអូអភិវឌ្ឍខ្លួន</a
-                      >
+                      <a class="convas-link" href="video_recommendation.html">វីឌីអូអភិវឌ្ឍខ្លួន</a>
                     </li>
                   </ul>
                 </li>
                 <li class="convas-item">
-                  <a class="convas-link convas-bar-bg mb-0" href="article.html"
-                    ><i class="fa-solid fa-newspaper"></i> អត្ថបទ</a
-                  >
+                  <a class="convas-link convas-bar-bg mb-0" href="article.html"><i class="fa-solid fa-newspaper"></i>
+                    អត្ថបទ</a>
                 </li>
                 <li class="convas-item">
-                  <a class="convas-link convas-bar-bg mb-0" href="article.html"
-                    ><i class="fa-solid fa-money-check-dollar"></i> តម្លៃ</a
-                  >
+                  <a class="convas-link convas-bar-bg mb-0" href="article.html"><i
+                      class="fa-solid fa-money-check-dollar"></i> តម្លៃ</a>
                 </li>
                 <li class="convas-item mt-10">
                   <input type="checkbox" id="showDropMoreInfo" />
-                  <label
-                    for="showDropMoreInfo"
-                    class="sub-convas-dropdown d-flex align-items-center justify-content-between"
-                    ><div>
+                  <label for="showDropMoreInfo"
+                    class="sub-convas-dropdown d-flex align-items-center justify-content-between">
+                    <div>
                       <i class="fa-solid fa-circle-info"></i> ព័ត៌មានបន្ថែម
                     </div>
-                    <i class="fa-solid fa-caret-down"></i
-                  ></label>
+                    <i class="fa-solid fa-caret-down"></i>
+                  </label>
                   <ul class="drop-menu">
                     <li class="convas-item">
-                      <a class="convas-link bbt-pf" href="about_us.html"
-                        >អំពីយើង</a
-                      >
+                      <a class="convas-link bbt-pf" href="about_us.html">អំពីយើង</a>
                     </li>
                     <li class="convas-item">
                       <a class="convas-link" href="contact_us.html">ទាក់ទង</a>
@@ -202,17 +147,11 @@
             </div>
           </div>
           <!-- ! end of offcanvas -->
-          <div
-            class="collapse navbar-collapse d-flex justify-content-end d-lg-block d-none"
-            id="navbarSupportedContent"
-          >
+          <div class="collapse navbar-collapse d-flex justify-content-end d-lg-block d-none"
+            id="navbarSupportedContent">
             <form class="search-bar d-flex" role="search">
-              <input
-                class="search-nav form-control me-3 position-relative"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
+              <input class="search-nav form-control me-3 position-relative" type="search" placeholder="Search"
+                aria-label="Search" />
               <i class="fa-solid fa-magnifying-glass position-absolute"></i>
             </form>
             <div class="profile d-flex flex-row align-items-center">
@@ -220,9 +159,7 @@
                 <i class="fa-solid fa-caret-down"></i>
               </div>
               <div class="pf-status d-flex flex-column align-items-end">
-                <a href="profile_info.html" class="pf-name text-decoration-none"
-                  >Wade Warren</a
-                >
+                <a href="profile_info.html" class="pf-name text-decoration-none">Wade Warren</a>
               </div>
               <div class="pf-image rounded-circle ms-2">
                 <img src="assets/img/navbar/profile-img.png" alt="" />
@@ -234,11 +171,7 @@
                   <li class="pf-item bbt-pf">
                     <a href="profile_info.html" class="pf-link d-flex">
                       <div class="dropdown-pf">
-                        <img
-                          src="assets/img/navbar/profile-img.png"
-                          class="rounded-circle"
-                          alt=""
-                        />
+                        <img src="assets/img/navbar/profile-img.png" class="rounded-circle" alt="" />
                       </div>
                       <p class="m-0">Wade Warren</p>
                     </a>
@@ -254,14 +187,9 @@
                 </ul>
               </div>
             </div>
-            <div
-              class="notification rounded-circle all-center position-relative ms-3"
-            >
+            <div class="notification rounded-circle all-center position-relative ms-3">
               <i class="fa-solid fa-bell"></i>
-              <span
-                class="notification-count bg-danger all-center text-white position-absolute"
-                >9</span
-              >
+              <span class="notification-count bg-danger all-center text-white position-absolute">9</span>
               <div class="noti-controll">
                 <div class="box-rotate"></div>
                 <div class="noti-content">
@@ -361,22 +289,13 @@
                       </a>
                     </li>
                   </ul>
-                  <a
-                    type="button"
-                    href="notification.html"
-                    role="button"
-                    class="bar-noti text-decoration-none w-100"
-                    >មើលទាំងអស់</a
-                  >
+                  <a type="button" href="notification.html" role="button"
+                    class="bar-noti text-decoration-none w-100">មើលទាំងអស់</a>
                 </div>
               </div>
             </div>
-            <button
-              type="button"
-              data-theme-toggle
-              id="theme-toggle-2"
-              class="dark-light-mode all-center rounded-circle ms-3"
-            ></button>
+            <button type="button" data-theme-toggle id="theme-toggle-2"
+              class="dark-light-mode all-center rounded-circle ms-3"></button>
           </div>
         </div>
       </nav>
@@ -571,18 +490,21 @@
                         បញ្ចូលទិន្នន័យ
                       </button>
                       <!-- Modal -->
-                      <div class="modal fade" id="incomeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal fade" id="incomeModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered">
                           <div class="modal-content">
                             <div class="modal-header border-bottom-0 bg-white">
                               <h1 class="modal-title fs-4 modal-header-color" id="incomeModalLabel">បញ្ចូលទិន្នន័យ</h1>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
                               <form action="">
                                 <div class="mb-3">
                                   <label for="amount" class="form-label fs-5">ចំនួនទឹកប្រាក់ ($)</label>
-                                  <input class="form-control py-2 fs-5" id="amount" type="text" placeholder="$ 62.50" aria-label="">
+                                  <input class="form-control py-2 fs-5" id="amount" type="text" placeholder="$ 62.50"
+                                    aria-label="">
                                 </div>
                                 <div class="mb-3">
                                   <label for="date" class="form-label d-block fs-5">កាលបរិច្ឆេទ</label>
@@ -594,7 +516,8 @@
                                 </div>
                                 <div class="mb-3">
                                   <label for="total" class="form-label fs-5">ទឹកប្រាក់ចំណូលសរុបប្រចាំខែ</label>
-                                  <input class="form-control" disabled id="total" type="text" placeholder=" $ 62.50 " aria-label="">
+                                  <input class="form-control" disabled id="total" type="text" placeholder=" $ 62.50 "
+                                    aria-label="">
                                 </div>
                               </form>
                             </div>
@@ -607,9 +530,10 @@
                       </div>
                     </div>
                   </div>
-                  
+
                   <div class="col-sm-12 col-md-6 col-lg-4 mb-3">
-                    <div class="card-report mx-auto d-flex flex-column justify-content-between " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <div class="card-report mx-auto d-flex flex-column justify-content-between " data-bs-toggle="modal"
+                      data-bs-target="#exampleModal">
                       <div class="report-info d-flex justify-content-between align-items-center w-100">
                         <p class="mb-0">ប្រាក់ចំណាយប្រចាំខែ <strong>កក្កដា</strong> </p>
                         <img src="assets/img/money-tracking/image 29.png" alt="decrease-icon">
@@ -625,16 +549,19 @@
                     </div>
                     <div class="btn-card-report pt-3 w-100 d-flex justify-content-center">
                       <!-- Button trigger modal -->
-                      <button type="button" class="btn btn-report" data-bs-toggle="modal" data-bs-target="#expenseModal">
+                      <button type="button" class="btn btn-report" data-bs-toggle="modal"
+                        data-bs-target="#expenseModal">
                         បញ្ចូលទិន្នន័យ
                       </button>
                       <!-- Modal -->
-                      <div class="modal fade" id="expenseModal" tabindex="-1" aria-labelledby="expenseModalLabel" aria-hidden="true">
+                      <div class="modal fade" id="expenseModal" tabindex="-1" aria-labelledby="expenseModalLabel"
+                        aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered">
                           <div class="modal-content">
                             <div class="modal-header border-bottom-0 bg-white">
                               <h1 class="modal-title fs-4 modal-header-color" id="expenseModalLabel">បញ្ចូលទិន្នន័យ</h1>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
                               <form action="">
@@ -642,34 +569,52 @@
                                   <label for="icon" class="form-label fs-5">ជ្រើសរើសរូបតំណាង</label>
                                   <div class="display-categories d-flex w-100 pb-3">
 
-                                    <div class="card-icon me-2 bg-primary-subtle d-flex justify-content-center align-items-center" tabindex="0">
+                                    <div
+                                      class="card-icon me-2 bg-primary-subtle d-flex justify-content-center align-items-center"
+                                      tabindex="0">
                                       <span class="fs-4 text-primary-emphasis"><i class="fa-solid fa-house"></i></span>
-                                    </div>                  
-                                    <div class="card-icon me-2 bg-success-subtle d-flex justify-content-center align-items-center" tabindex="0">
-                                      <span class="fs-4 text-success-emphasis"><i class="fa-solid fa-basket-shopping"></i></span>
                                     </div>
-                                    <div class="card-icon me-2 bg-warning-subtle d-flex justify-content-center align-items-center" tabindex="0">
+                                    <div
+                                      class="card-icon me-2 bg-success-subtle d-flex justify-content-center align-items-center"
+                                      tabindex="0">
+                                      <span class="fs-4 text-success-emphasis"><i
+                                          class="fa-solid fa-basket-shopping"></i></span>
+                                    </div>
+                                    <div
+                                      class="card-icon me-2 bg-warning-subtle d-flex justify-content-center align-items-center"
+                                      tabindex="0">
                                       <span class="fs-4 text-warning-emphasis"><i class="fa-solid fa-shirt"></i></span>
                                     </div>
-                                    <div class="card-icon me-2 bg-danger-subtle d-flex justify-content-center align-items-center" tabindex="0">
+                                    <div
+                                      class="card-icon me-2 bg-danger-subtle d-flex justify-content-center align-items-center"
+                                      tabindex="0">
                                       <span class="fs-4 text-danger-emphasis"><i class="fa-solid fa-pills"></i></span>
                                     </div>
-                                    <div class="card-icon me-2 bg-info-subtle d-flex justify-content-center align-items-center" tabindex="0">
+                                    <div
+                                      class="card-icon me-2 bg-info-subtle d-flex justify-content-center align-items-center"
+                                      tabindex="0">
                                       <span class="fs-4 text-info-emphasis"><i class="fa-solid fa-burger"></i></span>
                                     </div>
-                                    <div class="card-icon me-2 bg-dark-subtle d-flex justify-content-center align-items-center" tabindex="0">
+                                    <div
+                                      class="card-icon me-2 bg-dark-subtle d-flex justify-content-center align-items-center"
+                                      tabindex="0">
                                       <span class="fs-4 text-dark-emphasis"><i class="fa-solid fa-gas-pump"></i></span>
                                     </div>
-                                    <div class="card-icon me-2 bg-primary-subtle d-flex justify-content-center align-items-center" tabindex="0">
-                                      <span class="fs-4 text-primary-emphasis"><i class="fa-solid fa-droplet"></i></span>
+                                    <div
+                                      class="card-icon me-2 bg-primary-subtle d-flex justify-content-center align-items-center"
+                                      tabindex="0">
+                                      <span class="fs-4 text-primary-emphasis"><i
+                                          class="fa-solid fa-droplet"></i></span>
                                     </div>
-                                   
+
                                   </div>
-                                  <input class="form-control fs-5" id="icon" type="text" placeholder="ប្រភេទ" aria-label="">
+                                  <input class="form-control fs-5" id="icon" type="text" placeholder="ប្រភេទ"
+                                    aria-label="">
                                 </div>
                                 <div class="mb-3">
                                   <label for="amount" class="form-label fs-5">ចំនួនទឹកប្រាក់ ($)</label>
-                                  <input class="form-control py-2 fs-5" id="amount2" type="text" placeholder="$ 30.50" aria-label="">
+                                  <input class="form-control py-2 fs-5" id="amount2" type="text" placeholder="$ 30.50"
+                                    aria-label="">
                                 </div>
                                 <div class="mb-3">
                                   <label for="date" class="form-label d-block fs-5">កាលបរិច្ឆេទ</label>
@@ -681,7 +626,8 @@
                                 </div>
                                 <div class="mb-3">
                                   <label for="total" class="form-label fs-5">ទឹកប្រាក់ចំណាយសរុបប្រចាំខែ</label>
-                                  <input class="form-control" disabled id="total2" type="text" placeholder=" $ 30.50 " aria-label="">
+                                  <input class="form-control" disabled id="total2" type="text" placeholder=" $ 30.50 "
+                                    aria-label="">
                                 </div>
                               </form>
                             </div>
@@ -699,7 +645,7 @@
                       <div class="report-info d-flex justify-content-between align-items-center w-100">
                         <p class="mb-0">ប្រាក់សន្សំគោលដៅ​</p>
                         <span class="saving-up">$1,000</span>
-                        
+
                       </div>
                       <div class="report-info d-flex justify-content-between align-items-center w-100">
                         <p class="mb-0">ប្រាក់សន្សំប្រចាំថ្ងៃ </p>
@@ -710,27 +656,32 @@
                         <span class="text-dark-emphasis fs-5">12 ខែ</span>
                       </div>
                       <div class="report-info w-100">
-                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25"
+                          aria-valuemin="0" aria-valuemax="100">
                           <div class="progress-bar bg-success" style="width: 40%"> $250 </div>
                         </div>
-                        
+
                       </div>
                     </div>
                     <div class="btn-card-report pt-3 w-100 d-flex justify-content-between">
                       <!-- Button trigger modal -->
-                      <button type="button" class="btn btn-report mx-lg-0" data-bs-toggle="modal" data-bs-target="#savingModal">
+                      <button type="button" class="btn btn-report mx-lg-0" data-bs-toggle="modal"
+                        data-bs-target="#savingModal">
                         បញ្ចូលទិន្នន័យ
                       </button>
-                      <button type="button" class="btn mt-lg-0 btn-report" data-bs-toggle="modal" data-bs-target="#addGoalModal">
+                      <button type="button" class="btn mt-lg-0 btn-report" data-bs-toggle="modal"
+                        data-bs-target="#addGoalModal">
                         បន្ថែមគោលដៅ
                       </button>
                       <!-- Modal -->
-                      <div class="modal fade" id="savingModal" tabindex="-1" aria-labelledby="savingModalLabel" aria-hidden="true">
+                      <div class="modal fade" id="savingModal" tabindex="-1" aria-labelledby="savingModalLabel"
+                        aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered">
                           <div class="modal-content">
                             <div class="modal-header border-bottom-0 bg-white">
                               <h1 class="modal-title fs-4 modal-header-color" id="savingModalLabel">បញ្ចូលទិន្នន័យ</h1>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
                               <form action="">
@@ -742,7 +693,8 @@
                                 </div>
                                 <div class="mb-3">
                                   <label for="amount" class="form-label fs-5">ចំនួនទឹកប្រាក់ ($)</label>
-                                  <input class="form-control py-2 fs-5" id="amount1" type="text" placeholder="$ 50.00" aria-label="">
+                                  <input class="form-control py-2 fs-5" id="amount1" type="text" placeholder="$ 50.00"
+                                    aria-label="">
                                 </div>
                                 <div class="mb-3">
                                   <label for="date" class="form-label d-block fs-5">កាលបរិច្ឆេទ</label>
@@ -754,31 +706,37 @@
                                 </div>
                                 <div class="mb-3">
                                   <label for="total" class="form-label fs-5">ទឹកប្រាក់ចំណាយសរុបប្រចាំខែ</label>
-                                  <input class="form-control" disabled id="total1" type="text" placeholder=" $ 30.50 " aria-label="">
+                                  <input class="form-control" disabled id="total1" type="text" placeholder=" $ 30.50 "
+                                    aria-label="">
                                 </div>
-                                
+
                               </form>
                             </div>
                             <div class="modal-footer bg-white">
                               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">បិទ</button>
-                              <button type="button" class="btn btn-savechange text-white" data-bs-dismiss="modal">រក្សាទុកការកែសម្រួល</button>
+                              <button type="button" class="btn btn-savechange text-white"
+                                data-bs-dismiss="modal">រក្សាទុកការកែសម្រួល</button>
                             </div>
                           </div>
                         </div>
                       </div>
 
-                      <div class="modal fade" id="addGoalModal" tabindex="-1" aria-labelledby="addGoalModalLabel" aria-hidden="true">
+                      <div class="modal fade" id="addGoalModal" tabindex="-1" aria-labelledby="addGoalModalLabel"
+                        aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered">
                           <div class="modal-content">
                             <div class="modal-header border-bottom-0 bg-white">
-                              <h1 class="modal-title fs-4 modal-header-color" id="addGoalModalLabel">គោលដៅសន្សំប្រាក់</h1>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              <h1 class="modal-title fs-4 modal-header-color" id="addGoalModalLabel">គោលដៅសន្សំប្រាក់
+                              </h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
                               <form action="">
                                 <div class="mb-3">
                                   <label for="amountGoal" class="form-label fs-5">ចំនួនទឹកប្រាក់គោលដៅ ($)</label>
-                                  <input class="form-control py-2 fs-5" id="amountGoal" type="text" placeholder="$ 1000.00" aria-label="">
+                                  <input class="form-control py-2 fs-5" id="amountGoal" type="text"
+                                    placeholder="$ 1000.00" aria-label="">
                                 </div>
                                 <div class="mb-3">
                                   <label for="date" class="form-label d-block fs-5">គម្រោងសន្សំ</label>
@@ -790,11 +748,14 @@
                                 </div>
                                 <div class="mb-3">
                                   <label for="amountPer" class="form-label fs-5">ចំនួនប្រាក់សន្សំជាប្រចាំ</label>
-                                  <input class="form-control py-2 fs-5" id="amountPer" type="text" placeholder="$ 50.00" aria-label="">
+                                  <input class="form-control py-2 fs-5" id="amountPer" type="text" placeholder="$ 50.00"
+                                    aria-label="">
                                 </div>
                                 <div class="mb-3">
-                                  <label for="timeSet" class="form-label fs-5">រយៈពេលចំណាយ <strong>(គិតជាខែ)</strong></label>
-                                  <input class="form-control timeSet" disabled id="timeSet" type="text" placeholder="12" aria-label="">
+                                  <label for="timeSet" class="form-label fs-5">រយៈពេលចំណាយ
+                                    <strong>(គិតជាខែ)</strong></label>
+                                  <input class="form-control timeSet" disabled id="timeSet" type="text" placeholder="12"
+                                    aria-label="">
                                 </div>
                                 <div class="d-flex">
                                   <div class="form-check form-check-inline pt-3">
@@ -802,7 +763,7 @@
                                     <label class="form-check-label ps-2" for="automatic1">
                                       ដាក់ជាស្វ័យប្រតិបត្តិការណ៌
                                     </label>
-                                    
+
                                   </div>
                                   <div class="form-check form-check-inline pt-3">
                                     <input class="form-check-input" type="checkbox" value="" id="favorite">
@@ -811,12 +772,13 @@
                                     </label>
                                   </div>
                                 </div>
-                                
+
                               </form>
                             </div>
                             <div class="modal-footer bg-white">
                               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">បិទ</button>
-                              <button type="button" class="btn btn-savechange text-white" data-bs-dismiss="modal">រក្សាទុកការកែសម្រួល</button>
+                              <button type="button" class="btn btn-savechange text-white"
+                                data-bs-dismiss="modal">រក្សាទុកការកែសម្រួល</button>
                             </div>
                           </div>
                         </div>
@@ -824,7 +786,7 @@
                     </div>
 
 
-                    
+
                   </div>
                 </div>
                 <hr class="light-black">
@@ -836,56 +798,67 @@
                 <div class="spending-his-nav py-5 w-100 d-flex justify-content-center">
                   <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                     <li class="nav-item" role="presentation">
-                      <button class="nav-link mx-sm-2 mx-lg-5 active fs-5" id="pills-income-tab" data-bs-toggle="pill" data-bs-target="#pills-income" type="button" role="tab" aria-controls="pills-income" aria-selected="true">ចំណូល</button>
+                      <button class="nav-link mx-sm-2 mx-lg-5 active fs-5" id="pills-income-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-income" type="button" role="tab" aria-controls="pills-income"
+                        aria-selected="true">ចំណូល</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                      <button class="nav-link mx-sm-2 mx-lg-5 fs-5" id="pills-saving-tab" data-bs-toggle="pill" data-bs-target="#pills-saving" type="button" role="tab" aria-controls="pills-saving" aria-selected="false">ប្រាក់សន្សំ</button>
+                      <button class="nav-link mx-sm-2 mx-lg-5 fs-5" id="pills-saving-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-saving" type="button" role="tab" aria-controls="pills-saving"
+                        aria-selected="false">ប្រាក់សន្សំ</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                      <button class="nav-link mx-sm-2 mx-lg-5 fs-5" id="pills-spending-tab" data-bs-toggle="pill" data-bs-target="#pills-spending" type="button" role="tab" aria-controls="pills-spending" aria-selected="false">ចំណាយ</button>
+                      <button class="nav-link mx-sm-2 mx-lg-5 fs-5" id="pills-spending-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-spending" type="button" role="tab" aria-controls="pills-spending"
+                        aria-selected="false">ចំណាយ</button>
                     </li>
-                    
+
                   </ul>
 
                 </div>
                 <div class="tab-content w-100 px-5" id="pills-tabContent">
-                  <div class="tab-pane fade show active" id="pills-income" role="tabpanel" aria-labelledby="pills-income-tab" tabindex="0">
+                  <div class="tab-pane fade show active" id="pills-income" role="tabpanel"
+                    aria-labelledby="pills-income-tab" tabindex="0">
                     <div class="tab-pane-history">
                       <p class="fs-5 landing-title-color fw-bolder">ខែ កក្កដា</p>
                       <div class="card ">
                         <div class="row px-4 h-100">
                           <div class="col-12 col-lg-1 d-md-flex justify-content-center h-100 align-items-center">
-                            <div class="income-icon mt-3 mx-auto bg-success-subtle d-flex justify-content-center align-items-center">
-                              <span class="text-success-emphasis fs-4"><i class="fa-solid fa-money-bill-trend-up"></i></span>
+                            <div
+                              class="income-icon mt-3 mx-auto bg-success-subtle d-flex justify-content-center align-items-center">
+                              <span class="text-success-emphasis fs-4"><i
+                                  class="fa-solid fa-money-bill-trend-up"></i></span>
                             </div>
                           </div>
-                          
+
                           <div class="col-12 col-lg-11 ps-2 h-100">
                             <div class="d-flex justify-content-between">
                               <div class="main-info">
                                 <p class="pt-2 fs-5 mb-0">កំណត់សម្គាល់: <span class="ps-5 fw-bolder">ប្រាក់ខែ</span></p>
                                 <p class="fs-5">កាលបរិចេ្ឆទ: <span class="ps-5">01 កក្កដា 2024</span></p>
-                                
+
                               </div>
                               <div class="money-info">
                                 <h3 class="text-success pt-4">$ 62.50</h3>
                               </div>
                             </div>
-                           
+
                           </div>
-                         
-                          
+
+
                         </div>
-                        
-                        
+
+
                       </div>
 
                       <p class="fs-5 pt-5 landing-title-color fw-bolder">ខែ មិថុនា</p>
                       <div class="card">
                         <div class="row px-4 h-100">
                           <div class="col-12 col-lg-1 d-md-flex justify-content-center h-100 align-items-center">
-                            <div class="income-icon mt-3 mx-auto bg-success-subtle d-flex justify-content-center align-items-center">
-                              <span class="text-success-emphasis fs-4"><i class="fa-solid fa-money-bill-trend-up"></i></span>
+                            <div
+                              class="income-icon mt-3 mx-auto bg-success-subtle d-flex justify-content-center align-items-center">
+                              <span class="text-success-emphasis fs-4"><i
+                                  class="fa-solid fa-money-bill-trend-up"></i></span>
                             </div>
                           </div>
                           <div class="col-12 col-lg-11 ps-2 h-100">
@@ -893,26 +866,28 @@
                               <div class="main-info">
                                 <p class="pt-2 fs-5 mb-0">កំណត់សម្គាល់: <span class="ps-5 fw-bolder">ប្រាក់ខែ</span></p>
                                 <p class="fs-5">កាលបរិចេ្ឆទ: <span class="ps-5">01 មិថុនា 2024</span></p>
-                                
+
                               </div>
                               <div class="money-info">
                                 <h3 class="text-success pt-4">$ 50.00</h3>
                               </div>
                             </div>
-                           
+
                           </div>
-                         
-                          
+
+
                         </div>
-                        
-                        
+
+
                       </div>
                       <p class="fs-5 pt-5 landing-title-color fw-bolder">ខែ ឧសភា</p>
                       <div class="card">
                         <div class="row px-4 h-100">
                           <div class="col-12 col-lg-1 d-md-flex justify-content-center h-100 align-items-center">
-                            <div class="income-icon mt-3 mx-auto bg-success-subtle d-flex justify-content-center align-items-center">
-                              <span class="text-success-emphasis fs-4"><i class="fa-solid fa-money-bill-trend-up"></i></span>
+                            <div
+                              class="income-icon mt-3 mx-auto bg-success-subtle d-flex justify-content-center align-items-center">
+                              <span class="text-success-emphasis fs-4"><i
+                                  class="fa-solid fa-money-bill-trend-up"></i></span>
                             </div>
                           </div>
                           <div class="col-12 col-lg-11 ps-2 h-100">
@@ -920,49 +895,53 @@
                               <div class="main-info">
                                 <p class="pt-2 fs-5 mb-0">កំណត់សម្គាល់: <span class="ps-5 fw-bolder">ប្រាក់ខែ</span></p>
                                 <p class="fs-5">កាលបរិចេ្ឆទ: <span class="ps-5">20 ឧសភា 2024</span></p>
-                                
+
                               </div>
                               <div class="money-info">
                                 <h3 class="text-success pt-4">$ 62.50</h3>
                               </div>
                             </div>
-                           
+
                           </div>
-                         
-                          
+
+
                         </div>
-                        
-                        
+
+
                       </div>
                       <div class="card">
                         <div class="row px-4 h-100">
                           <div class="col-12 col-lg-1 d-md-flex justify-content-center h-100 align-items-center">
-                            <div class="income-icon mt-3 mx-auto bg-success-subtle d-flex justify-content-center align-items-center">
-                              <span class="text-success-emphasis fs-4"><i class="fa-solid fa-money-bill-trend-up"></i></span>
+                            <div
+                              class="income-icon mt-3 mx-auto bg-success-subtle d-flex justify-content-center align-items-center">
+                              <span class="text-success-emphasis fs-4"><i
+                                  class="fa-solid fa-money-bill-trend-up"></i></span>
                             </div>
                           </div>
                           <div class="col-12 col-lg-11 ps-2 h-100">
                             <div class="d-flex justify-content-between">
                               <div class="main-info">
-                                <p class="pt-2 fs-5 mb-0">កំណត់សម្គាល់: <span class="ps-5 fw-bolder">អាហារូបករណ៌</span></p>
-                                <p class="fs-5">កាលបរិចេ្ឆទ: <span class="ps-5">01 ឧសភា  2024</span></p>
-                                
+                                <p class="pt-2 fs-5 mb-0">កំណត់សម្គាល់: <span class="ps-5 fw-bolder">អាហារូបករណ៌</span>
+                                </p>
+                                <p class="fs-5">កាលបរិចេ្ឆទ: <span class="ps-5">01 ឧសភា 2024</span></p>
+
                               </div>
                               <div class="money-info">
                                 <h3 class="text-success pt-4">$ 20.00</h3>
                               </div>
                             </div>
-                           
+
                           </div>
-                         
-                          
+
+
                         </div>
-                        
-                        
+
+
                       </div>
                     </div>
                   </div>
-                  <div class="tab-pane fade" id="pills-saving" role="tabpanel" aria-labelledby="pills-saving-tab" tabindex="0">
+                  <div class="tab-pane fade" id="pills-saving" role="tabpanel" aria-labelledby="pills-saving-tab"
+                    tabindex="0">
                     <div class="tab-pane-history">
                       <p class="fs-5 landing-title-color fw-bolder">គោលដៅសន្សំប្រាក់ទាំងអស់</p>
                       <div class="d-flex">
@@ -972,7 +951,8 @@
                       <div class="card">
                         <div class="row px-4 h-100">
                           <div class="col-12 col-lg-1 d-md-flex justify-content-center h-100 align-items-center">
-                            <div class="income-icon mt-3 mx-auto bg-success-subtle d-flex justify-content-center align-items-center">
+                            <div
+                              class="income-icon mt-3 mx-auto bg-success-subtle d-flex justify-content-center align-items-center">
                               <span class="text-success-emphasis fs-4"><i class="fa-solid fa-piggy-bank"></i></span>
                             </div>
                           </div>
@@ -981,7 +961,7 @@
                               <div class="main-info">
                                 <p class="pt-2 fs-5 mb-0">កំណត់សម្គាល់: <span class="ps-5 fw-bolder">ខែទី​ 5</span></p>
                                 <p class="fs-5">កាលបរិចេ្ឆទ: <span class="ps-5">01 កក្កដា 2024</span></p>
-                                
+
                               </div>
                               <div class="money-info">
                                 <h3 class="text-success pt-4">$ 50.00</h3>
@@ -990,12 +970,13 @@
                           </div>
                         </div>
                       </div>
-                     
+
                       <p class="fs-5 pt-5 landing-title-color fw-bolder">ខែ មិថុនា</p>
                       <div class="card">
                         <div class="row px-4 h-100">
                           <div class="col-12 col-lg-1 d-md-flex justify-content-center h-100 align-items-center">
-                            <div class="income-icon mt-3 mx-auto bg-success-subtle d-flex justify-content-center align-items-center">
+                            <div
+                              class="income-icon mt-3 mx-auto bg-success-subtle d-flex justify-content-center align-items-center">
                               <span class="text-success-emphasis fs-4"><i class="fa-solid fa-piggy-bank"></i></span>
                             </div>
                           </div>
@@ -1004,7 +985,7 @@
                               <div class="main-info">
                                 <p class="pt-2 fs-5 mb-0">កំណត់សម្គាល់: <span class="ps-5 fw-bolder">ខែទី​ 4</span></p>
                                 <p class="fs-5">កាលបរិចេ្ឆទ: <span class="ps-5">01 មិថុនា 2024</span></p>
-                                
+
                               </div>
                               <div class="money-info">
                                 <h3 class="text-success pt-4">$ 50.00</h3>
@@ -1017,7 +998,8 @@
                       <div class="card">
                         <div class="row px-4 h-100">
                           <div class="col-12 col-lg-1 d-md-flex justify-content-center h-100 align-items-center">
-                            <div class="income-icon mt-3 mx-auto bg-success-subtle d-flex justify-content-center align-items-center">
+                            <div
+                              class="income-icon mt-3 mx-auto bg-success-subtle d-flex justify-content-center align-items-center">
                               <span class="text-success-emphasis fs-4"><i class="fa-solid fa-piggy-bank"></i></span>
                             </div>
                           </div>
@@ -1026,7 +1008,7 @@
                               <div class="main-info">
                                 <p class="pt-2 fs-5 mb-0">កំណត់សម្គាល់: <span class="ps-5 fw-bolder">ខែទី​ 3</span></p>
                                 <p class="fs-5">កាលបរិចេ្ឆទ: <span class="ps-5">01 ឧសភា 2024</span></p>
-                                
+
                               </div>
                               <div class="money-info">
                                 <h3 class="text-success pt-4">$ 50.00</h3>
@@ -1039,7 +1021,8 @@
                       <div class="card">
                         <div class="row px-4 h-100">
                           <div class="col-12 col-lg-1 d-md-flex justify-content-center h-100 align-items-center">
-                            <div class="income-icon mt-3 mx-auto bg-success-subtle d-flex justify-content-center align-items-center">
+                            <div
+                              class="income-icon mt-3 mx-auto bg-success-subtle d-flex justify-content-center align-items-center">
                               <span class="text-success-emphasis fs-4"><i class="fa-solid fa-piggy-bank"></i></span>
                             </div>
                           </div>
@@ -1048,7 +1031,7 @@
                               <div class="main-info">
                                 <p class="pt-2 fs-5 mb-0">កំណត់សម្គាល់: <span class="ps-5 fw-bolder">ខែទី​ 2</span></p>
                                 <p class="fs-5">កាលបរិចេ្ឆទ: <span class="ps-5">01 មេសា 2024</span></p>
-                                
+
                               </div>
                               <div class="money-info">
                                 <h3 class="text-success pt-4">$ 50.00</h3>
@@ -1061,7 +1044,8 @@
                       <div class="card">
                         <div class="row px-4 h-100">
                           <div class="col-12 col-lg-1 d-md-flex justify-content-center h-100 align-items-center">
-                            <div class="income-icon mt-3 mx-auto bg-success-subtle d-flex justify-content-center align-items-center">
+                            <div
+                              class="income-icon mt-3 mx-auto bg-success-subtle d-flex justify-content-center align-items-center">
                               <span class="text-success-emphasis fs-4"><i class="fa-solid fa-piggy-bank"></i></span>
                             </div>
                           </div>
@@ -1070,7 +1054,7 @@
                               <div class="main-info">
                                 <p class="pt-2 fs-5 mb-0">កំណត់សម្គាល់: <span class="ps-5 fw-bolder">ខែទី​ 1</span></p>
                                 <p class="fs-5">កាលបរិចេ្ឆទ: <span class="ps-5">01 មិនា 2024</span></p>
-                                
+
                               </div>
                               <div class="money-info">
                                 <h3 class="text-success pt-4">$ 50.00</h3>
@@ -1079,157 +1063,172 @@
                           </div>
                         </div>
                       </div>
-                      
-                      
+
+
                     </div>
                   </div>
-                  <div class="tab-pane fade" id="pills-spending" role="tabpanel" aria-labelledby="pills-spending-tab" tabindex="0">
+                  <div class="tab-pane fade" id="pills-spending" role="tabpanel" aria-labelledby="pills-spending-tab"
+                    tabindex="0">
                     <div class="tab-pane-history">
                       <p class="fs-5 landing-title-color fw-bolder">ខែ កក្កដា</p>
-                     
+
                       <div class="card ">
                         <div class="row px-4 h-100">
-                          
+
                           <div class="col-12 col-lg-1 d-md-flex justify-content-center h-100 align-items-center">
-                            <div class="card-icon mt-3 me-2 bg-danger-subtle d-flex justify-content-center align-items-center" tabindex="0">
+                            <div
+                              class="card-icon mt-3 me-2 bg-danger-subtle d-flex justify-content-center align-items-center"
+                              tabindex="0">
                               <span class="fs-4 text-danger-emphasis"><i class="fa-solid fa-pills"></i></span>
                             </div>
                           </div>
                           <div class="col-12 col-lg-11 ps-2 h-100">
                             <div class="d-flex justify-content-between">
                               <div class="main-info">
-                                <p class="pt-2 fs-5 mb-0">កំណត់សម្គាល់: <span class="ps-5 fw-bolder">ថ្លៃសម្រាកព្យាបាលនៅពេទ្យ</span></p>
+                                <p class="pt-2 fs-5 mb-0">កំណត់សម្គាល់: <span
+                                    class="ps-5 fw-bolder">ថ្លៃសម្រាកព្យាបាលនៅពេទ្យ</span></p>
                                 <p class="fs-5">កាលបរិចេ្ឆទ: <span class="ps-5">10 កក្កដា 2024</span></p>
-                                
+
                               </div>
                               <div class="money-info">
                                 <h3 class="text-danger pt-4">$ 18.00</h3>
                               </div>
                             </div>
-                           
+
                           </div>
-                         
-                          
+
+
                         </div>
-                        
-                        
+
+
                       </div>
                       <div class="card ">
                         <div class="row px-4 h-100">
-                          
+
                           <div class="col-12 col-lg-1 d-md-flex justify-content-center h-100 align-items-center">
-                            <div class="card-icon me-2 mt-3 bg-primary-subtle d-flex justify-content-center align-items-center" tabindex="0">
+                            <div
+                              class="card-icon me-2 mt-3 bg-primary-subtle d-flex justify-content-center align-items-center"
+                              tabindex="0">
                               <span class="fs-4 text-primary-emphasis"><i class="fa-solid fa-droplet"></i></span>
                             </div>
                           </div>
                           <div class="col-12 col-lg-11 ps-2 h-100">
                             <div class="d-flex justify-content-between">
                               <div class="main-info">
-                                <p class="pt-2 fs-5 mb-0">កំណត់សម្គាល់: <span class="ps-5 fw-bolder">បង់ថ្លៃទឹក</span></p>
+                                <p class="pt-2 fs-5 mb-0">កំណត់សម្គាល់: <span class="ps-5 fw-bolder">បង់ថ្លៃទឹក</span>
+                                </p>
                                 <p class="fs-5">កាលបរិចេ្ឆទ: <span class="ps-5">10 កក្កដា 2024</span></p>
-                                
+
                               </div>
                               <div class="money-info">
                                 <h3 class="text-danger pt-4">$ 5.50</h3>
                               </div>
                             </div>
-                           
+
                           </div>
-                         
-                          
+
+
                         </div>
-                        
-                        
+
+
                       </div>
                       <div class="card ">
                         <div class="row px-4 h-100">
                           <div class="col-12 col-lg-1 d-md-flex justify-content-center h-100 align-items-center">
-                            <div class="card-icon me-2 mt-3 bg-warning-subtle d-flex justify-content-center align-items-center" tabindex="0">
+                            <div
+                              class="card-icon me-2 mt-3 bg-warning-subtle d-flex justify-content-center align-items-center"
+                              tabindex="0">
                               <span class="fs-4 text-warning-emphasis"><i class="fa-solid fa-shirt"></i></span>
-                            </div> 
+                            </div>
                           </div>
                           <div class="col-12 col-lg-11 ps-2 h-100">
                             <div class="d-flex justify-content-between">
                               <div class="main-info">
-                                <p class="pt-2 fs-5 mb-0">កំណត់សម្គាល់: <span class="ps-5 fw-bolder">ទិញអាវរៀន</span></p>
+                                <p class="pt-2 fs-5 mb-0">កំណត់សម្គាល់: <span class="ps-5 fw-bolder">ទិញអាវរៀន</span>
+                                </p>
                                 <p class="fs-5">កាលបរិចេ្ឆទ: <span class="ps-5">03 កក្កដា 2024</span></p>
-                                
+
                               </div>
                               <div class="money-info">
                                 <h3 class="text-danger pt-4">$ 7.00</h3>
                               </div>
                             </div>
-                           
+
                           </div>
-                         
-                          
+
+
                         </div>
-                        
-                        
+
+
                       </div>
 
                       <p class="fs-5 pt-5 landing-title-color fw-bolder">ខែ មិថុនា</p>
-                      
-                      
+
+
                       <div class="card ">
                         <div class="row px-4 h-100">
                           <div class="col-12 col-lg-1 d-md-flex justify-content-center h-100 align-items-center">
-                            <div class="card-icon mt-3 me-2 bg-dark-subtle d-flex justify-content-center align-items-center" tabindex="0">
+                            <div
+                              class="card-icon mt-3 me-2 bg-dark-subtle d-flex justify-content-center align-items-center"
+                              tabindex="0">
                               <span class="fs-4 text-dark-emphasis"><i class="fa-solid fa-gas-pump"></i></span>
-                            </div> 
+                            </div>
                           </div>
                           <div class="col-12 col-lg-11 ps-2 h-100">
                             <div class="d-flex justify-content-between">
                               <div class="main-info">
                                 <p class="pt-2 fs-5 mb-0">កំណត់សម្គាល់: <span class="ps-5 fw-bolder">សាំង</span></p>
                                 <p class="fs-5">កាលបរិចេ្ឆទ: <span class="ps-5">30 មិថុនា 2024</span></p>
-                                
+
                               </div>
                               <div class="money-info">
                                 <h3 class="text-danger pt-4">$ 30.00</h3>
                               </div>
                             </div>
-                           
+
                           </div>
-                         
-                          
+
+
                         </div>
-                        
-                        
+
+
                       </div>
                       <div class="card ">
                         <div class="row px-4 h-100">
                           <div class="col-12 col-lg-1 d-md-flex justify-content-center h-100 align-items-center">
-                            <div class="card-icon me-2 mt-3 bg-primary-subtle d-flex justify-content-center align-items-center" tabindex="0">
+                            <div
+                              class="card-icon me-2 mt-3 bg-primary-subtle d-flex justify-content-center align-items-center"
+                              tabindex="0">
                               <span class="fs-4 text-primary-emphasis"><i class="fa-solid fa-house"></i></span>
-                            </div>  
+                            </div>
                           </div>
                           <div class="col-12 col-lg-11 ps-2 h-100">
                             <div class="d-flex justify-content-between">
                               <div class="main-info">
-                                <p class="pt-2 fs-5 mb-0">កំណត់សម្គាល់: <span class="ps-5 fw-bolder">ថ្លៃជួលផ្ទះ</span></p>
+                                <p class="pt-2 fs-5 mb-0">កំណត់សម្គាល់: <span class="ps-5 fw-bolder">ថ្លៃជួលផ្ទះ</span>
+                                </p>
                                 <p class="fs-5">កាលបរិចេ្ឆទ: <span class="ps-5">10 កក្កដា 2024</span></p>
-                                
+
                               </div>
                               <div class="money-info">
                                 <h3 class="text-danger pt-4">$ 50.00</h3>
                               </div>
                             </div>
-                           
+
                           </div>
-                         
-                          
+
+
                         </div>
-                        
-                        
+
+
                       </div>
-                      
-                      
+
+
                     </div>
                   </div>
-                  
+
                 </div>
-                
+
               </section>
 
               <!-- ? end of write your content here -->
@@ -1246,12 +1245,9 @@
       <div class="container py-3">
         <div class="row px-4 px-lg-0">
           <div class="col-lg-3 col-12">
-            <div
-              class="footer-logo w-100 d-lg-block d-flex justify-content-center"
-            >
-              <a href="home_page.html" class="text-decoration-none"
-                ><img src="assets/img/navbar/Kn-logo.png" alt="Kn-logo"
-              /></a>
+            <div class="footer-logo w-100 d-lg-block d-flex justify-content-center">
+              <a href="home_page.html" class="text-decoration-none"><img src="assets/img/navbar/Kn-logo.png"
+                  alt="Kn-logo" /></a>
             </div>
             <div class="comp-discript">
               <p>
@@ -1263,29 +1259,19 @@
             </div>
             <ul class="comp-social-media d-flex pb-3 pb-lg-0">
               <li class="comp-item">
-                <a href="#" class="social-media-icon"
-                  ><i class="fab fa-facebook-f"></i
-                ></a>
+                <a href="#" class="social-media-icon"><i class="fab fa-facebook-f"></i></a>
               </li>
               <li class="comp-item">
-                <a href="#" class="social-media-icon"
-                  ><i class="fab fa-twitter"></i
-                ></a>
+                <a href="#" class="social-media-icon"><i class="fab fa-twitter"></i></a>
               </li>
               <li class="comp-item">
-                <a href="#" class="social-media-icon"
-                  ><i class="fab fa-instagram"></i
-                ></a>
+                <a href="#" class="social-media-icon"><i class="fab fa-instagram"></i></a>
               </li>
               <li class="comp-item">
-                <a href="#" class="social-media-icon"
-                  ><i class="fab fa-youtube"></i
-                ></a>
+                <a href="#" class="social-media-icon"><i class="fab fa-youtube"></i></a>
               </li>
               <li class="comp-item">
-                <a href="#" class="social-media-icon"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
+                <a href="#" class="social-media-icon"><i class="fab fa-linkedin-in"></i></a>
               </li>
             </ul>
           </div>
@@ -1295,27 +1281,19 @@
               <div class="col-6 p-0">
                 <ul class="footer-list">
                   <li class="footer-item">
-                    <a class="footer-link" href="journaling.html"
-                      >កំណត់ត្រាប្រចាំថ្ងៃ</a
-                    >
+                    <a class="footer-link" href="journaling.html">កំណត់ត្រាប្រចាំថ្ងៃ</a>
                   </li>
                   <li class="footer-item">
-                    <a class="footer-link" href="money_spending.html"
-                      >តាមដានការចំណាយ</a
-                    >
+                    <a class="footer-link" href="money_spending.html">តាមដានការចំណាយ</a>
                   </li>
                   <li class="footer-item">
-                    <a class="footer-link" href="mood_tracking.html"
-                      >តាមដានផ្លូវចិត្ត</a
-                    >
+                    <a class="footer-link" href="mood_tracking.html">តាមដានផ្លូវចិត្ត</a>
                   </li>
                   <li class="footer-item">
                     <a class="footer-link" href="exercise.html">លំហាត់ប្រាណ</a>
                   </li>
                   <li class="footer-item">
-                    <a class="footer-link" href="therapist.html"
-                      >អ្នកជំនាញផ្លូវចិត្ត</a
-                    >
+                    <a class="footer-link" href="therapist.html">អ្នកជំនាញផ្លូវចិត្ត</a>
                   </li>
                   <li class="footer-item">
                     <a class="footer-link" href="mediation.html">សមាធិ</a>
@@ -1337,9 +1315,7 @@
                     <a class="footer-link" href="article.html">អត្ថបទ</a>
                   </li>
                   <li class="footer-item">
-                    <a class="footer-link" href="video_recommendation.html"
-                      >វីឌីអូអភិវឌ្ឍខ្លួន</a
-                    >
+                    <a class="footer-link" href="video_recommendation.html">វីឌីអូអភិវឌ្ឍខ្លួន</a>
                   </li>
                   <li class="footer-item">
                     <a class="footer-link" href="about_us.html">អំពីយើង</a>
@@ -1386,13 +1362,8 @@
             <div class="col-12">
               <div class="mb-3">
                 <div class="input-group mb-3">
-                  <input
-                    type="text"
-                    class="footer-input"
-                    placeholder="user@gmail.com"
-                    aria-label="user@gmail.com"
-                    aria-describedby="button-addon2"
-                  />
+                  <input type="text" class="footer-input" placeholder="user@gmail.com" aria-label="user@gmail.com"
+                    aria-describedby="button-addon2" />
                   <button class="btn-footer" type="button" id="button-addon2">
                     <i class="fa-solid fa-paper-plane"></i>
                   </button>
@@ -1425,4 +1396,5 @@
     <script src="assets/plugins/aos/js/aos.js"></script>
     <script src="assets/js/dark-mode.js"></script>
   </body>
+
 </html>
