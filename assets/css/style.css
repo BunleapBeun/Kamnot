@@ -4898,8 +4898,16 @@ nav {
   padding: 10px;
 }
 
-.video-selfdev .card-selfdev .video-discript p,
 .video-selfdev .card-selfdev .video-discript h5 {
+  color: var(--main-text);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  overflow: hidden;
+}
+
+.video-selfdev .card-selfdev .video-discript p {
   color: var(--main-text);
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -4982,7 +4990,7 @@ nav {
   padding: 0;
   border: 10px solid var(--main-color);
   border-radius: 10px;
-  height: 700px;
+  height: 690px;
   overflow: scroll;
   overflow-y: scroll;
   scrollbar-width: 10px;
