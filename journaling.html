@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,190 +10,134 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-medium-zoom.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-thumbnail.css">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <link rel="stylesheet" href="assets/plugins/quill-snow/quill.snow.css">
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.css" />
     <link rel="stylesheet" href="assets/plugins/aos/css/aos.css" />
     <link rel="stylesheet" href="assets/plugins/swiper-js/css/swiper-bundle.min.css">
   </head>
+
   <body>
     <!-- ! begin of header -->
     <header class="position-fixed top-0 w-100">
       <nav class="navbar navbar-expand-lg nav-py30">
         <div class="container">
-          <a class="navbar-brand" href="home_page.html"
-            ><img src="assets/img/navbar/Kn-logo.png" alt=""
-          /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            aria-expanded="false"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasWithBothOptions"
-            aria-controls="offcanvasWithBothOptions"
-          >
+          <a class="navbar-brand" href="home_page.html"><img src="assets/img/navbar/Kn-logo.png" alt="" /></a>
+          <button class="navbar-toggler" type="button" aria-expanded="false" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
             <span class="nav-toggler-icon all-center"><i class="fa-solid fa-bars"></i></span>
           </button>
           <!-- ! begin of offcanvas -->
-          <div
-            class="offcanvas offcanvas-start d-lg-none"
-            data-bs-scroll="true"
-            tabindex="-1"
-            id="offcanvasWithBothOptions"
-            aria-labelledby="offcanvasWithBothOptionsLabel"
-          >
+          <div class="offcanvas offcanvas-start d-lg-none" data-bs-scroll="true" tabindex="-1"
+            id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
             <div class="offcanvas-header">
               <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
-                <a class="navbar-brand" href="index.html"
-                  ><img src="assets/img/navbar/Kn-logo.png" alt=""
-                /></a>
+                <a class="navbar-brand" href="index.html"><img src="assets/img/navbar/Kn-logo.png" alt="" /></a>
               </h5>
-              <button
-                type="button"
-                class="x-close all-center"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ><i class="fa-solid fa-xmark"></i></button>
+              <button type="button" class="x-close all-center" data-bs-dismiss="offcanvas" aria-label="Close"><i
+                  class="fa-solid fa-xmark"></i></button>
             </div>
             <div class="offcanvas-body">
               <div class="canvas-header d-flex justify-content-between">
-                <a
-                  href="profile_info.html"
-                  class="convas-pf rounded-circle overflow-hidden text-decoration-none"
-                >
+                <a href="profile_info.html" class="convas-pf rounded-circle overflow-hidden text-decoration-none">
                   <img src="assets/img/navbar/profile-img.png" alt="" />
                 </a>
                 <div class="d-flex align-items-center">
-                  <a
-                    href="cart.html"
-                    class="btn-add-cart all-center text-decoration-none"
-                    ><i class="fa-solid fa-cart-shopping"></i>
-                    <div class="cart-status all-center"><span>2 </span></div></a
-                  >
-                  <button
-                    type="button"
-                    data-theme-toggle
-                    id="theme-toggle-1"
-                    class="dark-light-mode all-center rounded-circle ms-3"
-                  ></button>
+                  <a href="cart.html" class="btn-add-cart all-center text-decoration-none"><i
+                      class="fa-solid fa-cart-shopping"></i>
+                    <div class="cart-status all-center"><span>2 </span></div>
+                  </a>
+                  <button type="button" data-theme-toggle id="theme-toggle-1"
+                    class="dark-light-mode all-center rounded-circle ms-3"></button>
                 </div>
               </div>
 
               <!-- ! begin navbar offcanvas -->
               <ul class="nav-convas">
                 <li class="convas-item">
-                  <a class="convas-link convas-bar-bg" href="index.html"
-                    ><i class="fa fa-house"></i> ទំព័រដើម</a
-                  >
+                  <a class="convas-link convas-bar-bg" href="index.html"><i class="fa fa-house"></i> ទំព័រដើម</a>
                 </li>
                 <li class="convas-item">
                   <input type="checkbox" id="showDropHabit" />
-                  <label
-                    for="showDropHabit"
-                    class="sub-convas-dropdown d-flex align-items-center justify-content-between"
-                    ><div>
+                  <label for="showDropHabit"
+                    class="sub-convas-dropdown d-flex align-items-center justify-content-between">
+                    <div>
                       <i class="fa-solid fa-calendar-check"></i>
                       ទម្លាប់ប្រចាំថ្ងៃ
                     </div>
-                    <i class="fa-solid fa-caret-down"></i
-                  ></label>
+                    <i class="fa-solid fa-caret-down"></i>
+                  </label>
                   <ul class="drop-menu">
                     <li class="convas-item">
-                      <a class="convas-link bbt-pf" href="journaling.html"
-                        >កំណត់ត្រាប្រចាំថ្ងៃ</a
-                      >
+                      <a class="convas-link bbt-pf" href="journaling.html">កំណត់ត្រាប្រចាំថ្ងៃ</a>
                     </li>
                     <li class="convas-item">
-                      <a class="convas-link bbt-pf" href="money_spending.html"
-                        >តាមដានការចំណាយ</a
-                      >
+                      <a class="convas-link bbt-pf" href="money_spending.html">តាមដានការចំណាយ</a>
                     </li>
                     <li class="convas-item">
-                      <a class="convas-link bbt-pf" href="mood_tracking.html"
-                        >តាមដានផ្លូវចិត្ត</a
-                      >
+                      <a class="convas-link bbt-pf" href="mood_tracking.html">តាមដានផ្លូវចិត្ត</a>
                     </li>
                     <li class="convas-item">
-                      <a class="convas-link" href="exercise.html"
-                        >លំហាត់ប្រាណ</a
-                      >
+                      <a class="convas-link" href="exercise.html">លំហាត់ប្រាណ</a>
                     </li>
                   </ul>
                 </li>
                 <li class="convas-item mt-10">
                   <input type="checkbox" id="showDropMentalhealth" />
-                  <label
-                    for="showDropMentalhealth"
-                    class="sub-convas-dropdown d-flex align-items-center justify-content-between"
-                    ><div>
+                  <label for="showDropMentalhealth"
+                    class="sub-convas-dropdown d-flex align-items-center justify-content-between">
+                    <div>
                       <i class="fa-solid fa-brain"></i> ស្ថានភាពផ្លូវចិត្ត
                     </div>
-                    <i class="fa-solid fa-caret-down"></i
-                  ></label>
+                    <i class="fa-solid fa-caret-down"></i>
+                  </label>
                   <ul class="drop-menu">
                     <li class="convas-item">
-                      <a class="convas-link bbt-pf" href="therapist.html"
-                        >អ្នកជំនាញផ្លូវចិត្ត</a
-                      >
+                      <a class="convas-link bbt-pf" href="therapist.html">អ្នកជំនាញផ្លូវចិត្ត</a>
                     </li>
                   </ul>
                 </li>
                 <li class="convas-item mt-10">
                   <input type="checkbox" id="showDropEdu" />
-                  <label
-                    for="showDropEdu"
-                    class="sub-convas-dropdown d-flex align-items-center justify-content-between"
-                    ><div>
+                  <label for="showDropEdu"
+                    class="sub-convas-dropdown d-flex align-items-center justify-content-between">
+                    <div>
                       <i class="fa-solid fa-book-open-reader"></i> ចំណេះដឹង
                     </div>
-                    <i class="fa-solid fa-caret-down"></i
-                  ></label>
+                    <i class="fa-solid fa-caret-down"></i>
+                  </label>
                   <ul class="drop-menu">
                     <li class="convas-item">
-                      <a class="convas-link bbt-pf" href="book_store.html"
-                        >សៀវភៅ</a
-                      >
+                      <a class="convas-link bbt-pf" href="book_store.html">សៀវភៅ</a>
                     </li>
                     <li class="convas-item">
-                      <a class="convas-link bbt-pf" href="event.html"
-                        >ព្រឹត្តិការណ៍</a
-                      >
+                      <a class="convas-link bbt-pf" href="event.html">ព្រឹត្តិការណ៍</a>
                     </li>
                     <li class="convas-item">
-                      <a class="convas-link" href="video_recommendation.html"
-                        >វីឌីអូអភិវឌ្ឍខ្លួន</a
-                      >
+                      <a class="convas-link" href="video_recommendation.html">វីឌីអូអភិវឌ្ឍខ្លួន</a>
                     </li>
                   </ul>
                 </li>
                 <li class="convas-item">
-                  <a class="convas-link convas-bar-bg mb-0" href="article.html"
-                    ><i class="fa-solid fa-newspaper"></i> អត្ថបទ</a
-                  >
+                  <a class="convas-link convas-bar-bg mb-0" href="article.html"><i class="fa-solid fa-newspaper"></i>
+                    អត្ថបទ</a>
                 </li>
                 <li class="convas-item">
-                  <a class="convas-link convas-bar-bg mb-0" href="article.html"
-                    ><i class="fa-solid fa-money-check-dollar"></i> តម្លៃ</a
-                  >
+                  <a class="convas-link convas-bar-bg mb-0" href="article.html"><i
+                      class="fa-solid fa-money-check-dollar"></i> តម្លៃ</a>
                 </li>
                 <li class="convas-item mt-10">
                   <input type="checkbox" id="showDropMoreInfo" />
-                  <label
-                    for="showDropMoreInfo"
-                    class="sub-convas-dropdown d-flex align-items-center justify-content-between"
-                    ><div>
+                  <label for="showDropMoreInfo"
+                    class="sub-convas-dropdown d-flex align-items-center justify-content-between">
+                    <div>
                       <i class="fa-solid fa-circle-info"></i> ព័ត៌មានបន្ថែម
                     </div>
-                    <i class="fa-solid fa-caret-down"></i
-                  ></label>
+                    <i class="fa-solid fa-caret-down"></i>
+                  </label>
                   <ul class="drop-menu">
                     <li class="convas-item">
-                      <a class="convas-link bbt-pf" href="about_us.html"
-                        >អំពីយើង</a
-                      >
+                      <a class="convas-link bbt-pf" href="about_us.html">អំពីយើង</a>
                     </li>
                     <li class="convas-item">
                       <a class="convas-link" href="contact_us.html">ទាក់ទង</a>
@@ -200,26 +145,19 @@
                   </ul>
                 </li>
                 <li class="convas-item">
-                  <a class="convas-link convas-bar-bg mb-0" href="index.html"
-                    ><i class="fa-solid fa-right-from-bracket"></i> ចាកចេញ</a
-                  >
+                  <a class="convas-link convas-bar-bg mb-0" href="index.html"><i
+                      class="fa-solid fa-right-from-bracket"></i> ចាកចេញ</a>
                 </li>
               </ul>
               <!-- ! end navbar offcanvas -->
             </div>
           </div>
           <!-- ! end of offcanvas -->
-          <div
-            class="collapse navbar-collapse d-flex justify-content-end d-lg-block d-none"
-            id="navbarSupportedContent"
-          >
+          <div class="collapse navbar-collapse d-flex justify-content-end d-lg-block d-none"
+            id="navbarSupportedContent">
             <form class="search-bar d-flex" role="search">
-              <input
-                class="search-nav form-control me-3 position-relative"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
+              <input class="search-nav form-control me-3 position-relative" type="search" placeholder="Search"
+                aria-label="Search" />
               <i class="fa-solid fa-magnifying-glass position-absolute"></i>
             </form>
             <div class="profile d-flex flex-row align-items-center">
@@ -227,9 +165,7 @@
                 <i class="fa-solid fa-caret-down"></i>
               </div>
               <div class="pf-status d-flex flex-column align-items-end">
-                <a href="profile_info.html" class="pf-name text-decoration-none"
-                  >Wade Warren</a
-                >
+                <a href="profile_info.html" class="pf-name text-decoration-none">Wade Warren</a>
               </div>
               <div class="pf-image rounded-circle ms-2">
                 <img src="assets/img/navbar/profile-img.png" alt="" />
@@ -241,11 +177,7 @@
                   <li class="pf-item bbt-pf">
                     <a href="profile_info.html" class="pf-link d-flex">
                       <div class="dropdown-pf">
-                        <img
-                          src="assets/img/navbar/profile-img.png"
-                          class="rounded-circle"
-                          alt=""
-                        />
+                        <img src="assets/img/navbar/profile-img.png" class="rounded-circle" alt="" />
                       </div>
                       <p class="m-0">Wade Warren</p>
                     </a>
@@ -261,14 +193,9 @@
                 </ul>
               </div>
             </div>
-            <div
-              class="notification rounded-circle all-center position-relative ms-3"
-            >
+            <div class="notification rounded-circle all-center position-relative ms-3">
               <i class="fa-solid fa-bell"></i>
-              <span
-                class="notification-count bg-danger all-center text-white position-absolute"
-                >9</span
-              >
+              <span class="notification-count bg-danger all-center text-white position-absolute">9</span>
               <div class="noti-controll">
                 <div class="box-rotate"></div>
                 <div class="noti-content">
@@ -368,22 +295,13 @@
                       </a>
                     </li>
                   </ul>
-                  <a
-                    type="button"
-                    href="notification.html"
-                    role="button"
-                    class="bar-noti text-decoration-none w-100"
-                    >មើលទាំងអស់</a
-                  >
+                  <a type="button" href="notification.html" role="button"
+                    class="bar-noti text-decoration-none w-100">មើលទាំងអស់</a>
                 </div>
               </div>
             </div>
-            <button
-              type="button"
-              data-theme-toggle
-              id="theme-toggle-2"
-              class="dark-light-mode all-center rounded-circle ms-3"
-            ></button>
+            <button type="button" data-theme-toggle id="theme-toggle-2"
+              class="dark-light-mode all-center rounded-circle ms-3"></button>
           </div>
         </div>
       </nav>
@@ -559,7 +477,8 @@
                 <div class="row justify-content-between">
                   <div class="col-2 d-flex justify-content-end px-0">
                     <button type="button" class="btn btn-journaling w-100 active p-2">
-                      <a href="journaling.html" class="nav-link fs-4 w-100 d-flex justify-content-center align-items-center">កំណត់ត្រា</a>
+                      <a href="journaling.html"
+                        class="nav-link fs-4 w-100 d-flex justify-content-center align-items-center">កំណត់ត្រា</a>
                     </button>
                   </div>
                   <div class="col-8 d-flex align-items-center px-0">
@@ -567,17 +486,20 @@
                   </div>
                   <div class="col-2 d-flex justify-content-start px-0">
                     <button type="button" class="btn btn-todo w-100 p-2">
-                      <a href="todo-list.html" class="nav-link fs-4 w-100 d-flex justify-content-center align-items-center">បញ្ជីសកម្មភាព</a>
+                      <a href="todo-list.html"
+                        class="nav-link fs-4 w-100 d-flex justify-content-center align-items-center">បញ្ជីសកម្មភាព</a>
                     </button>
                   </div>
                 </div>
               </div>
               <div class="journal-nav-sm mt-4 d-sm-block d-md-none w-100">
                 <button type="button" class="btn btn-journaling p-2 d-block mx-auto active">
-                  <a href="journaling.html" class="nav-link fs-4 w-100 d-flex justify-content-center align-items-center">កំណត់ត្រា</a>
+                  <a href="journaling.html"
+                    class="nav-link fs-4 w-100 d-flex justify-content-center align-items-center">កំណត់ត្រា</a>
                 </button>
                 <button type="button" class="btn btn-todo p-2 my-3 mx-auto">
-                  <a href="todo-list.html" class="nav-link text-white fs-4 w-100 d-flex justify-content-center align-items-center">បញ្ជីសកម្មភាពដែលត្រូវធ្វើ</a>
+                  <a href="todo-list.html"
+                    class="nav-link text-white fs-4 w-100 d-flex justify-content-center align-items-center">បញ្ជីសកម្មភាពដែលត្រូវធ្វើ</a>
                 </button>
               </div>
               <section class="journal-book pt-5">
@@ -587,15 +509,15 @@
                       <p class="fs-1 fw-bold landing-title-color">2024</p>
                       <p class="landing-title-color fs-4 ps-5 fw-bold">កក្កដា</p>
                     </div>
-                    
+
                   </div>
                 </div>
                 <div class="journal-page w-100 position-relative" data-aos="fade-up" data-aos-duration="1000">
                   <div id="editor">
                     <p class="text-black">Hello World!</p>
                     <p class="text-black">Some initial <strong>bold</strong> text</p>
-                    
-                    <p><br /></p> 
+
+                    <p><br /></p>
                   </div>
                   <div class="position-absolute" style="bottom: 10px; right: 10px;">
                     <button type="button" class="btn btn-outline-success rounded-4">រក្សាទុក</button>
@@ -603,7 +525,7 @@
                 </div>
                 <div class="journal-history w-100 pt-5">
                   <div class="jh-title d-flex align-items-center">
-                    <div class="jh-box px-2 py-3 " >
+                    <div class="jh-box px-2 py-3 ">
                       <p class="text-white text-center fs-5 mb-0">កំណត់ត្រា​របស់ Warren</p>
                     </div>
                     <div class="deco-line w-100 ms-3"></div>
@@ -611,21 +533,24 @@
                   <div class="history-box py-3">
                     <div class="date-history w-100 " style="padding: 0 12px;">
                       <div class="row px-3">
-                        <div class="col-sm-12 col-lg-8" >
-                          <div data-bs-spy="scroll" data-bs-target="#simple-list-example" data-bs-offset="0" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0" id="list-item-1">
+                        <div class="col-sm-12 col-lg-8">
+                          <div data-bs-spy="scroll" data-bs-target="#simple-list-example" data-bs-offset="0"
+                            data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0" id="list-item-1">
                             <div class="landing-title-color px-2 daily-list-item">
                               <p class="fs-1 fw-bold">សប្ដាហ៌នេះ</p>
                               <ul class="list-group border-0">
                                 <div class="history-modal">
                                   <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#historyModal">
-                                    <div class="item-date w-100 d-flex"> 
+                                    <div class="item-date w-100 d-flex">
                                       <div class="daily-date">
                                         <h2 class="mb-0 fs-2 text-center text">23</h2>
                                         <p class="mb-0 text-center landing-title-color fw-bold">សុក្រ</p>
                                       </div>
                                       <div class="daily-note w-100 ps-3 pt-2">
                                         <p>ថ្ងៃនេះខ្ញុំ Productive មែនទែន</p>
-                                        <p>ខ្ញុំចាប់ផ្តើមជាមួយនឹងការដើរយ៉ាងលឿននៅក្នុងឧទ្យាន រីករាយជាមួយខ្យល់អាកាសដ៏ត្រជាក់នៅពេលព្រឹក និងសំឡេងសត្វបក្សីបន្លឺឡើង។ នៅកន្លែងធ្វើការទីបំផុតខ្ញុំបាន..</p>
+                                        <p>ខ្ញុំចាប់ផ្តើមជាមួយនឹងការដើរយ៉ាងលឿននៅក្នុងឧទ្យាន
+                                          រីករាយជាមួយខ្យល់អាកាសដ៏ត្រជាក់នៅពេលព្រឹក និងសំឡេងសត្វបក្សីបន្លឺឡើង។
+                                          នៅកន្លែងធ្វើការទីបំផុតខ្ញុំបាន..</p>
                                       </div>
                                       <div class="col-lg-2 col-4 journal-edit">
                                         <div class="edit-control">
@@ -641,62 +566,79 @@
                                       </div>
                                     </div>
                                   </li>
-                                  <div class="modal fade" id="historyModal" tabindex="-1" aria-labelledby="historyModalLabel" aria-hidden="true">
+                                  <div class="modal fade" id="historyModal" tabindex="-1"
+                                    aria-labelledby="historyModalLabel" aria-hidden="true">
                                     <div class="modal-dialog modal-fullscreen">
                                       <div class="modal-content">
                                         <div class="modal-header">
-                                          <h1 class="modal-title text-black fs-2" id="historyModalLabel">កំណត់ត្រាប្រចាំថ្ងៃ</h1>
-                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                          <h1 class="modal-title text-black fs-2" id="historyModalLabel">
+                                            កំណត់ត្រាប្រចាំថ្ងៃ</h1>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
                                           <div id="editorHistory" class="editHistory">
                                             <p>ថ្ងៃច័ន្ទ ទី​ ២០ ឆ្នាំ ២០២៤ ...</p>
                                             <p class="text-black">ថ្ងៃនេះខ្ញុំមានអារម្មណ៌មិនល្អនោះទេ ;((</p>
                                             <p><br /></p>
-                                            <p>មានរឿងមួយចំនួនកើតឡើងដែលធ្វើឱ្យខ្ញុំមានអារម្មណ៌ធុញថប់ ជាពិសេសគឺការងារគរដូចភ្នំសុមេរុចឹង...</p>
+                                            <p>មានរឿងមួយចំនួនកើតឡើងដែលធ្វើឱ្យខ្ញុំមានអារម្មណ៌ធុញថប់
+                                              ជាពិសេសគឺការងារគរដូចភ្នំសុមេរុចឹង...</p>
                                             <p>
-                                              Today was tough. From the moment I woke up, the sheer amount of work I had to do felt overwhelming. My to-do list kept growing, and no matter how hard I tried, I couldn't keep up. By midday, 
-                                              I was exhausted and frustrated, struggling to stay motivated. 
-                                              It’s one of those days where everything feels heavy, and I just need to remind myself that it's okay not to be perfect. I’ll tackle it all tomorrow, but for now, I need to rest.
+                                              Today was tough. From the moment I woke up, the sheer amount of work I had
+                                              to do felt overwhelming. My to-do list kept growing, and no matter how
+                                              hard I tried, I couldn't keep up. By midday,
+                                              I was exhausted and frustrated, struggling to stay motivated.
+                                              It’s one of those days where everything feels heavy, and I just need to
+                                              remind myself that it's okay not to be perfect. I’ll tackle it all
+                                              tomorrow, but for now, I need to rest.
                                             </p>
                                           </div>
                                         </div>
                                         <div class="modal-footer">
-                                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">បិទ</button>
-                                          <button type="button" class="btn btn-danger"  data-bs-toggle="modal" data-bs-target="#deleteModal">លុបចោល</button>
+                                          <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">បិទ</button>
+                                          <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                                            data-bs-target="#deleteModal">លុបចោល</button>
                                           <button type="button" class="btn btn-savechange">រក្សាទុកការកែប្រែ</button>
                                         </div>
                                       </div>
                                     </div>
                                   </div>
-                                  <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+                                  <div class="modal fade" id="deleteModal" tabindex="-1"
+                                    aria-labelledby="deleteModalLabel" aria-hidden="true">
                                     <div class="modal-dialog modal-md modal-dialog-centered">
                                       <div class="modal-content">
                                         <div class="modal-body">
                                           <div class="warning-img w-100 d-flex justify-content-center">
                                             <img src="assets/img/contact-us/warning.png" width="70px" alt="">
                                           </div>
-                                          <p class="fs-4 pt-5 text-black text-center">តើអ្នកពិតជាចង់លុប កំណត់ត្រានេះពិតមែនទេ?</p>
+                                          <p class="fs-4 pt-5 text-black text-center">តើអ្នកពិតជាចង់លុប
+                                            កំណត់ត្រានេះពិតមែនទេ?</p>
                                         </div>
                                         <div class="modal-footer">
-                                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">បិទ</button>
-                                          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">លុប</button>
+                                          <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">បិទ</button>
+                                          <button type="button" class="btn btn-danger"
+                                            data-bs-dismiss="modal">លុប</button>
                                         </div>
                                       </div>
                                     </div>
                                   </div>
                                 </div>
-                                
+
                                 <div class="history-modal">
                                   <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#historyModal">
-                                    <div class="item-date w-100 d-flex"> 
+                                    <div class="item-date w-100 d-flex">
                                       <div class="daily-date">
                                         <h2 class="mb-0 fs-2 text-center text">22</h2>
                                         <p class="mb-0 text-center landing-title-color fw-bold">ព្រ.ហ</p>
                                       </div>
                                       <div class="daily-note w-100 ps-3 pt-2">
                                         <p>Today I am so exhausted</p>
-                                        <p>ថ្ងៃនេះរវល់បន្តិច ប៉ុន្តែខ្ញុំធ្វើបានច្រើន។ ការងាររវល់ ប៉ុន្តែខ្ញុំមានអារម្មណ៍ថាបានសម្រេច។ នៅពេលល្ងាច ខ្ញុំបានណាត់មិត្តភ័ក្តិម្នាក់ពេលអាហារពេលល្ងាច ដែលជាការសម្រាកដ៏ល្អពីទម្លាប់ធម្មតា។ ខ្ញុំ...</p>
+                                        <p>ថ្ងៃនេះរវល់បន្តិច ប៉ុន្តែខ្ញុំធ្វើបានច្រើន។ ការងាររវល់
+                                          ប៉ុន្តែខ្ញុំមានអារម្មណ៍ថាបានសម្រេច។ នៅពេលល្ងាច
+                                          ខ្ញុំបានណាត់មិត្តភ័ក្តិម្នាក់ពេលអាហារពេលល្ងាច
+                                          ដែលជាការសម្រាកដ៏ល្អពីទម្លាប់ធម្មតា។ ខ្ញុំ...</p>
                                       </div>
                                       <div class="col-lg-2 col-4 journal-edit">
                                         <div class="edit-control">
@@ -712,60 +654,76 @@
                                       </div>
                                     </div>
                                   </li>
-                                  <div class="modal fade" id="historyModal1" tabindex="-1" aria-labelledby="historyModalLabel1" aria-hidden="true">
+                                  <div class="modal fade" id="historyModal1" tabindex="-1"
+                                    aria-labelledby="historyModalLabel1" aria-hidden="true">
                                     <div class="modal-dialog modal-fullscreen">
                                       <div class="modal-content">
                                         <div class="modal-header">
-                                          <h1 class="modal-title text-black fs-2" id="historyModalLabel1">កំណត់ត្រាប្រចាំថ្ងៃ</h1>
-                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                          <h1 class="modal-title text-black fs-2" id="historyModalLabel1">
+                                            កំណត់ត្រាប្រចាំថ្ងៃ</h1>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
                                           <div id="editorHistory1" class="editHistory">
                                             <p>ថ្ងៃច័ន្ទ ទី​ ២០ ឆ្នាំ ២០២៤ ...</p>
                                             <p class="text-black">ថ្ងៃនេះខ្ញុំមានអារម្មណ៌មិនល្អនោះទេ ;((</p>
                                             <p><br /></p>
-                                            <p>មានរឿងមួយចំនួនកើតឡើងដែលធ្វើឱ្យខ្ញុំមានអារម្មណ៌ធុញថប់ ជាពិសេសគឺការងារគរដូចភ្នំសុមេរុចឹង...</p>
+                                            <p>មានរឿងមួយចំនួនកើតឡើងដែលធ្វើឱ្យខ្ញុំមានអារម្មណ៌ធុញថប់
+                                              ជាពិសេសគឺការងារគរដូចភ្នំសុមេរុចឹង...</p>
                                             <p>
-                                              Today was tough. From the moment I woke up, the sheer amount of work I had to do felt overwhelming. My to-do list kept growing, and no matter how hard I tried, I couldn't keep up. By midday, 
-                                              I was exhausted and frustrated, struggling to stay motivated. 
-                                              It’s one of those days where everything feels heavy, and I just need to remind myself that it's okay not to be perfect. I’ll tackle it all tomorrow, but for now, I need to rest.
+                                              Today was tough. From the moment I woke up, the sheer amount of work I had
+                                              to do felt overwhelming. My to-do list kept growing, and no matter how
+                                              hard I tried, I couldn't keep up. By midday,
+                                              I was exhausted and frustrated, struggling to stay motivated.
+                                              It’s one of those days where everything feels heavy, and I just need to
+                                              remind myself that it's okay not to be perfect. I’ll tackle it all
+                                              tomorrow, but for now, I need to rest.
                                             </p>
                                           </div>
                                         </div>
                                         <div class="modal-footer">
-                                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">បិទ</button>
-                                          <button type="button" class="btn btn-danger"  data-bs-toggle="modal" data-bs-target="#deleteModal">លុបចោល</button>
+                                          <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">បិទ</button>
+                                          <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                                            data-bs-target="#deleteModal">លុបចោល</button>
                                           <button type="button" class="btn btn-savechange">រក្សាទុកការកែប្រែ</button>
                                         </div>
                                       </div>
                                     </div>
                                   </div>
-                                  <div class="modal fade" id="deleteModal1" tabindex="-1" aria-labelledby="deleteModalLabel1" aria-hidden="true">
+                                  <div class="modal fade" id="deleteModal1" tabindex="-1"
+                                    aria-labelledby="deleteModalLabel1" aria-hidden="true">
                                     <div class="modal-dialog modal-md modal-dialog-centered">
                                       <div class="modal-content">
                                         <div class="modal-body">
                                           <div class="warning-img w-100 d-flex justify-content-center">
                                             <img src="assets/img/contact-us/warning.png" width="70px" alt="">
                                           </div>
-                                          <p class="fs-4 pt-5 text-black text-center">តើអ្នកពិតជាចង់លុប កំណត់ត្រានេះពិតមែនទេ?</p>
+                                          <p class="fs-4 pt-5 text-black text-center">តើអ្នកពិតជាចង់លុប
+                                            កំណត់ត្រានេះពិតមែនទេ?</p>
                                         </div>
                                         <div class="modal-footer">
-                                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">បិទ</button>
-                                          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">លុប</button>
+                                          <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">បិទ</button>
+                                          <button type="button" class="btn btn-danger"
+                                            data-bs-dismiss="modal">លុប</button>
                                         </div>
                                       </div>
                                     </div>
                                   </div>
                                 </div>
-                                <li class="list-group-item" >
-                                  <div class="item-date w-100 d-flex"> 
+                                <li class="list-group-item">
+                                  <div class="item-date w-100 d-flex">
                                     <div class="daily-date">
                                       <h2 class="mb-0 fs-2 text-center">19</h2>
                                       <p class="mb-0 text-center fw-bold">អង្គារ</p>
                                     </div>
                                     <div class="daily-note w-100 ps-3 pt-2">
                                       <p>Fresh start of the day</p>
-                                      <p>ការចាប់ផ្តើមថ្ងៃជាមួយនឹងវគ្គយូហ្គាពិតជាជួយខ្ញុំផ្តោតអារម្មណ៍។ ការងារមានការលំបាក ប៉ុន្តែខ្ញុំនៅតែមានប្រសិទ្ធភាព។ នៅពេលល្ងាច ខ្ញុំបានចូលរួមសិក្ខាសាលានិម្មិតលើប្រធានបទដែលខ្ញុំចាប់...</p>
+                                      <p>ការចាប់ផ្តើមថ្ងៃជាមួយនឹងវគ្គយូហ្គាពិតជាជួយខ្ញុំផ្តោតអារម្មណ៍។ ការងារមានការលំបាក
+                                        ប៉ុន្តែខ្ញុំនៅតែមានប្រសិទ្ធភាព។ នៅពេលល្ងាច
+                                        ខ្ញុំបានចូលរួមសិក្ខាសាលានិម្មិតលើប្រធានបទដែលខ្ញុំចាប់...</p>
                                     </div>
                                     <div class="col-lg-2 col-4 journal-edit">
                                       <div class="edit-control">
@@ -782,14 +740,15 @@
                                   </div>
                                 </li>
                                 <li class="list-group-item">
-                                  <div class="item-date w-100 d-flex"> 
+                                  <div class="item-date w-100 d-flex">
                                     <div class="daily-date">
                                       <h2 class="mb-0 fs-2 text-center text">20</h2>
                                       <p class="mb-0 text-center landing-title-color fw-bold">ចន្ទ</p>
                                     </div>
                                     <div class="daily-note w-100 ps-3 pt-2">
                                       <p>ថ្ងៃនេះខ្ញុំអារម្មណ៌មិនសូវល្អនោះទេ</p>
-                                      <p>មានរឿងមួយចំនួនកើតឡើងដែលធ្វើឱ្យខ្ញុំមានអារម្មណ៌ធុញថប់ ជាពិសេសគឺការងារគរដូចភ្នំសុមេរុចឹង...</p>
+                                      <p>មានរឿងមួយចំនួនកើតឡើងដែលធ្វើឱ្យខ្ញុំមានអារម្មណ៌ធុញថប់
+                                        ជាពិសេសគឺការងារគរដូចភ្នំសុមេរុចឹង...</p>
                                     </div>
                                     <div class="col-lg-2 col-4 journal-edit">
                                       <div class="edit-control">
@@ -806,14 +765,15 @@
                                   </div>
                                 </li>
                                 <li class="list-group-item">
-                                  <div class="item-date w-100 d-flex"> 
+                                  <div class="item-date w-100 d-flex">
                                     <div class="daily-date">
                                       <h2 class="mb-0 fs-2 text-center text">20</h2>
                                       <p class="mb-0 text-center landing-title-color fw-bold">ចន្ទ</p>
                                     </div>
                                     <div class="daily-note w-100 ps-3 pt-2">
                                       <p>ថ្ងៃនេះខ្ញុំអារម្មណ៌មិនសូវល្អនោះទេ</p>
-                                      <p>មានរឿងមួយចំនួនកើតឡើងដែលធ្វើឱ្យខ្ញុំមានអារម្មណ៌ធុញថប់ ជាពិសេសគឺការងារគរដូចភ្នំសុមេរុចឹង...</p>
+                                      <p>មានរឿងមួយចំនួនកើតឡើងដែលធ្វើឱ្យខ្ញុំមានអារម្មណ៌ធុញថប់
+                                        ជាពិសេសគឺការងារគរដូចភ្នំសុមេរុចឹង...</p>
                                     </div>
                                     <div class="col-lg-2 col-4 journal-edit">
                                       <div class="edit-control">
@@ -831,20 +791,22 @@
                                 </li>
                               </ul>
                             </div>
-                            
+
                             <div class="landing-title-color pt-5 px-2 ">
                               <p class="fs-1 fw-bold">ខែនេះ</p>
                               <ul class="list-group border-0 scrollable">
                                 <div class="history-modal">
                                   <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#historyModal">
-                                    <div class="item-date w-100 d-flex"> 
+                                    <div class="item-date w-100 d-flex">
                                       <div class="daily-date">
                                         <h2 class="mb-0 fs-2 text-center text">23</h2>
                                         <p class="mb-0 text-center landing-title-color fw-bold">ចន្ទ</p>
                                       </div>
                                       <div class="daily-note w-100 ps-3 pt-2">
-                                        <p>ខ្ញុំចាប់ផ្តើមជាមួយនឹងការដើរយ៉ាងលឿននៅក្នុងឧទ្យាន រីករាយជាមួយខ្យល់អាកាសដ៏ត្រជាក់នៅពេលព្រឹក និងសំឡេងសត្វបក្សីបន្លឺឡើង។ នៅកន្លែងធ្វើការ ទីបំផុតខ្ញុំបានបញ្ចប់គម្រោងមួយ</p>
-                                        
+                                        <p>ខ្ញុំចាប់ផ្តើមជាមួយនឹងការដើរយ៉ាងលឿននៅក្នុងឧទ្យាន
+                                          រីករាយជាមួយខ្យល់អាកាសដ៏ត្រជាក់នៅពេលព្រឹក និងសំឡេងសត្វបក្សីបន្លឺឡើង។
+                                          នៅកន្លែងធ្វើការ ទីបំផុតខ្ញុំបានបញ្ចប់គម្រោងមួយ</p>
+
                                       </div>
                                       <div class="col-lg-2 col-4 journal-edit">
                                         <div class="edit-control">
@@ -860,61 +822,76 @@
                                       </div>
                                     </div>
                                   </li>
-                                  <div class="modal fade" id="historyModal2" tabindex="-1" aria-labelledby="historyModalLabel2" aria-hidden="true">
+                                  <div class="modal fade" id="historyModal2" tabindex="-1"
+                                    aria-labelledby="historyModalLabel2" aria-hidden="true">
                                     <div class="modal-dialog modal-fullscreen">
                                       <div class="modal-content">
                                         <div class="modal-header">
-                                          <h1 class="modal-title text-black fs-2" id="historyModalLabel2">កំណត់ត្រាប្រចាំថ្ងៃ</h1>
-                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                          <h1 class="modal-title text-black fs-2" id="historyModalLabel2">
+                                            កំណត់ត្រាប្រចាំថ្ងៃ</h1>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
                                           <div id="editorHistory2" class="editHistory">
                                             <p>ថ្ងៃច័ន្ទ ទី​ ២០ ឆ្នាំ ២០២៤ ...</p>
                                             <p class="text-black">ថ្ងៃនេះខ្ញុំមានអារម្មណ៌មិនល្អនោះទេ ;((</p>
                                             <p><br /></p>
-                                            <p>មានរឿងមួយចំនួនកើតឡើងដែលធ្វើឱ្យខ្ញុំមានអារម្មណ៌ធុញថប់ ជាពិសេសគឺការងារគរដូចភ្នំសុមេរុចឹង...</p>
+                                            <p>មានរឿងមួយចំនួនកើតឡើងដែលធ្វើឱ្យខ្ញុំមានអារម្មណ៌ធុញថប់
+                                              ជាពិសេសគឺការងារគរដូចភ្នំសុមេរុចឹង...</p>
                                             <p>
-                                              Today was tough. From the moment I woke up, the sheer amount of work I had to do felt overwhelming. My to-do list kept growing, and no matter how hard I tried, I couldn't keep up. By midday, 
-                                              I was exhausted and frustrated, struggling to stay motivated. 
-                                              It’s one of those days where everything feels heavy, and I just need to remind myself that it's okay not to be perfect. I’ll tackle it all tomorrow, but for now, I need to rest.
+                                              Today was tough. From the moment I woke up, the sheer amount of work I had
+                                              to do felt overwhelming. My to-do list kept growing, and no matter how
+                                              hard I tried, I couldn't keep up. By midday,
+                                              I was exhausted and frustrated, struggling to stay motivated.
+                                              It’s one of those days where everything feels heavy, and I just need to
+                                              remind myself that it's okay not to be perfect. I’ll tackle it all
+                                              tomorrow, but for now, I need to rest.
                                             </p>
                                           </div>
                                         </div>
                                         <div class="modal-footer">
-                                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">បិទ</button>
-                                          <button type="button" class="btn btn-danger"  data-bs-toggle="modal" data-bs-target="#deleteModal1">លុបចោល</button>
+                                          <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">បិទ</button>
+                                          <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                                            data-bs-target="#deleteModal1">លុបចោល</button>
                                           <button type="button" class="btn btn-savechange">រក្សាទុកការកែប្រែ</button>
                                         </div>
                                       </div>
                                     </div>
                                   </div>
-                                  <div class="modal fade" id="deleteModal2" tabindex="-1" aria-labelledby="deleteModalLabel2" aria-hidden="true">
+                                  <div class="modal fade" id="deleteModal2" tabindex="-1"
+                                    aria-labelledby="deleteModalLabel2" aria-hidden="true">
                                     <div class="modal-dialog modal-dialog-centered">
                                       <div class="modal-content">
                                         <div class="modal-body">
                                           <div class="warning-img w-100 d-flex justify-content-center">
                                             <img src="assets/img/contact-us/warning.png" width="70px" alt="">
                                           </div>
-                                          <p class="fs-4 pt-5 text-black text-center">តើអ្នកពិតជាចង់លុប កំណត់ត្រានេះពិតមែនទេ?</p>
+                                          <p class="fs-4 pt-5 text-black text-center">តើអ្នកពិតជាចង់លុប
+                                            កំណត់ត្រានេះពិតមែនទេ?</p>
                                         </div>
                                         <div class="modal-footer">
-                                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">បិទ</button>
-                                          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">លុប</button>
+                                          <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">បិទ</button>
+                                          <button type="button" class="btn btn-danger"
+                                            data-bs-dismiss="modal">លុប</button>
                                         </div>
                                       </div>
                                     </div>
                                   </div>
                                 </div>
-                                
+
                                 <li class="list-group-item">
-                                  <div class="item-date w-100 d-flex"> 
+                                  <div class="item-date w-100 d-flex">
                                     <div class="daily-date">
                                       <h2 class="mb-0 fs-2 text-center text">20</h2>
                                       <p class="mb-0 text-center landing-title-color fw-bold">ចន្ទ</p>
                                     </div>
                                     <div class="daily-note w-100 ps-3 pt-2">
                                       <p>ថ្ងៃនេះខ្ញុំអារម្មណ៌មិនសូវល្អនោះទេ</p>
-                                      <p>មានរឿងមួយចំនួនកើតឡើងដែលធ្វើឱ្យខ្ញុំមានអារម្មណ៌ធុញថប់ ជាពិសេសគឺការងារគរដូចភ្នំសុមេរុចឹង...</p>
+                                      <p>មានរឿងមួយចំនួនកើតឡើងដែលធ្វើឱ្យខ្ញុំមានអារម្មណ៌ធុញថប់
+                                        ជាពិសេសគឺការងារគរដូចភ្នំសុមេរុចឹង...</p>
                                     </div>
                                     <div class="col-lg-2 col-4 journal-edit">
                                       <div class="edit-control">
@@ -931,14 +908,15 @@
                                   </div>
                                 </li>
                                 <li class="list-group-item">
-                                  <div class="item-date w-100 d-flex"> 
+                                  <div class="item-date w-100 d-flex">
                                     <div class="daily-date">
                                       <h2 class="mb-0 fs-2 text-center">20</h2>
                                       <p class="mb-0 text-center fw-bold">ចន្ទ</p>
                                     </div>
                                     <div class="daily-note w-100 ps-3 pt-2">
                                       <p>ថ្ងៃនេះខ្ញុំអារម្មណ៌មិនសូវល្អនោះទេ</p>
-                                      <p>មានរឿងមួយចំនួនកើតឡើងដែលធ្វើឱ្យខ្ញុំមានអារម្មណ៌ធុញថប់ ជាពិសេសគឺការងារគរដូចភ្នំសុមេរុចឹង...</p>
+                                      <p>មានរឿងមួយចំនួនកើតឡើងដែលធ្វើឱ្យខ្ញុំមានអារម្មណ៌ធុញថប់
+                                        ជាពិសេសគឺការងារគរដូចភ្នំសុមេរុចឹង...</p>
                                     </div>
                                     <div class="col-lg-2 col-4 journal-edit">
                                       <div class="edit-control">
@@ -955,14 +933,15 @@
                                   </div>
                                 </li>
                                 <li class="list-group-item">
-                                  <div class="item-date w-100 d-flex"> 
+                                  <div class="item-date w-100 d-flex">
                                     <div class="daily-date">
                                       <h2 class="mb-0 fs-2 text-center text">20</h2>
                                       <p class="mb-0 text-center landing-title-color fw-bold">ចន្ទ</p>
                                     </div>
                                     <div class="daily-note w-100 ps-3 pt-2">
                                       <p>ថ្ងៃនេះខ្ញុំអារម្មណ៌មិនសូវល្អនោះទេ</p>
-                                      <p>មានរឿងមួយចំនួនកើតឡើងដែលធ្វើឱ្យខ្ញុំមានអារម្មណ៌ធុញថប់ ជាពិសេសគឺការងារគរដូចភ្នំសុមេរុចឹង...</p>
+                                      <p>មានរឿងមួយចំនួនកើតឡើងដែលធ្វើឱ្យខ្ញុំមានអារម្មណ៌ធុញថប់
+                                        ជាពិសេសគឺការងារគរដូចភ្នំសុមេរុចឹង...</p>
                                     </div>
                                     <div class="col-lg-2 col-4 journal-edit">
                                       <div class="edit-control">
@@ -979,14 +958,15 @@
                                   </div>
                                 </li>
                                 <li class="list-group-item">
-                                  <div class="item-date w-100 d-flex"> 
+                                  <div class="item-date w-100 d-flex">
                                     <div class="daily-date">
                                       <h2 class="mb-0 fs-2 text-center text">20</h2>
                                       <p class="mb-0 text-center landing-title-color fw-bold">ចន្ទ</p>
                                     </div>
                                     <div class="daily-note w-100 ps-3 pt-2">
                                       <p>ថ្ងៃនេះខ្ញុំអារម្មណ៌មិនសូវល្អនោះទេ</p>
-                                      <p>មានរឿងមួយចំនួនកើតឡើងដែលធ្វើឱ្យខ្ញុំមានអារម្មណ៌ធុញថប់ ជាពិសេសគឺការងារគរដូចភ្នំសុមេរុចឹង...</p>
+                                      <p>មានរឿងមួយចំនួនកើតឡើងដែលធ្វើឱ្យខ្ញុំមានអារម្មណ៌ធុញថប់
+                                        ជាពិសេសគឺការងារគរដូចភ្នំសុមេរុចឹង...</p>
                                     </div>
                                     <div class="col-lg-2 col-4 journal-edit">
                                       <div class="edit-control">
@@ -1003,14 +983,15 @@
                                   </div>
                                 </li>
                                 <li class="list-group-item">
-                                  <div class="item-date w-100 d-flex"> 
+                                  <div class="item-date w-100 d-flex">
                                     <div class="daily-date">
                                       <h2 class="mb-0 fs-2 text-center text">20</h2>
                                       <p class="mb-0 text-center landing-title-color fw-bold">ចន្ទ</p>
                                     </div>
                                     <div class="daily-note w-100 ps-3 pt-2">
                                       <p>ថ្ងៃនេះខ្ញុំអារម្មណ៌មិនសូវល្អនោះទេ</p>
-                                      <p>មានរឿងមួយចំនួនកើតឡើងដែលធ្វើឱ្យខ្ញុំមានអារម្មណ៌ធុញថប់ ជាពិសេសគឺការងារគរដូចភ្នំសុមេរុចឹង...</p>
+                                      <p>មានរឿងមួយចំនួនកើតឡើងដែលធ្វើឱ្យខ្ញុំមានអារម្មណ៌ធុញថប់
+                                        ជាពិសេសគឺការងារគរដូចភ្នំសុមេរុចឹង...</p>
                                     </div>
                                     <div class="col-lg-2 col-4 journal-edit">
                                       <div class="edit-control">
@@ -1027,14 +1008,15 @@
                                   </div>
                                 </li>
                                 <li class="list-group-item">
-                                  <div class="item-date w-100 d-flex"> 
+                                  <div class="item-date w-100 d-flex">
                                     <div class="daily-date">
                                       <h2 class="mb-0 fs-2 text-center text">20</h2>
                                       <p class="mb-0 text-center landing-title-color fw-bold">ចន្ទ</p>
                                     </div>
                                     <div class="daily-note w-100 ps-3 pt-2">
                                       <p>ថ្ងៃនេះខ្ញុំអារម្មណ៌មិនសូវល្អនោះទេ</p>
-                                      <p>មានរឿងមួយចំនួនកើតឡើងដែលធ្វើឱ្យខ្ញុំមានអារម្មណ៌ធុញថប់ ជាពិសេសគឺការងារគរដូចភ្នំសុមេរុចឹង...</p>
+                                      <p>មានរឿងមួយចំនួនកើតឡើងដែលធ្វើឱ្យខ្ញុំមានអារម្មណ៌ធុញថប់
+                                        ជាពិសេសគឺការងារគរដូចភ្នំសុមេរុចឹង...</p>
                                     </div>
                                     <div class="col-lg-2 col-4 journal-edit">
                                       <div class="edit-control">
@@ -1058,14 +1040,15 @@
                               <ul class="list-group border-0 scrollable">
                                 <div class="history-modal">
                                   <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#historyModal">
-                                    <div class="item-date w-100 d-flex"> 
+                                    <div class="item-date w-100 d-flex">
                                       <div class="daily-date">
                                         <h2 class="mb-0 fs-2 text-center text">20</h2>
                                         <p class="mb-0 text-center landing-title-color fw-bold">ចន្ទ</p>
                                       </div>
                                       <div class="daily-note w-100 ps-3 pt-2">
                                         <p>ថ្ងៃនេះខ្ញុំអារម្មណ៌មិនសូវល្អនោះទេ</p>
-                                        <p>មានរឿងមួយចំនួនកើតឡើងដែលធ្វើឱ្យខ្ញុំមានអារម្មណ៌ធុញថប់ ជាពិសេសគឺការងារគរដូចភ្នំសុមេរុចឹង...</p>
+                                        <p>មានរឿងមួយចំនួនកើតឡើងដែលធ្វើឱ្យខ្ញុំមានអារម្មណ៌ធុញថប់
+                                          ជាពិសេសគឺការងារគរដូចភ្នំសុមេរុចឹង...</p>
                                       </div>
                                       <div class="col-lg-2 col-4 journal-edit">
                                         <div class="edit-control">
@@ -1081,61 +1064,76 @@
                                       </div>
                                     </div>
                                   </li>
-                                  <div class="modal fade" id="historyModal3" tabindex="-1" aria-labelledby="historyModalLabel3" aria-hidden="true">
+                                  <div class="modal fade" id="historyModal3" tabindex="-1"
+                                    aria-labelledby="historyModalLabel3" aria-hidden="true">
                                     <div class="modal-dialog modal-fullscreen">
                                       <div class="modal-content">
                                         <div class="modal-header">
-                                          <h1 class="modal-title text-black fs-2" id="historyModalLabel3">កំណត់ត្រាប្រចាំថ្ងៃ</h1>
-                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                          <h1 class="modal-title text-black fs-2" id="historyModalLabel3">
+                                            កំណត់ត្រាប្រចាំថ្ងៃ</h1>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
                                           <div id="editorHistory3" class="editHistory">
                                             <p>ថ្ងៃច័ន្ទ ទី​ ២០ ឆ្នាំ ២០២៤ ...</p>
                                             <p class="text-black">ថ្ងៃនេះខ្ញុំមានអារម្មណ៌មិនល្អនោះទេ ;((</p>
                                             <p><br /></p>
-                                            <p>មានរឿងមួយចំនួនកើតឡើងដែលធ្វើឱ្យខ្ញុំមានអារម្មណ៌ធុញថប់ ជាពិសេសគឺការងារគរដូចភ្នំសុមេរុចឹង...</p>
+                                            <p>មានរឿងមួយចំនួនកើតឡើងដែលធ្វើឱ្យខ្ញុំមានអារម្មណ៌ធុញថប់
+                                              ជាពិសេសគឺការងារគរដូចភ្នំសុមេរុចឹង...</p>
                                             <p>
-                                              Today was tough. From the moment I woke up, the sheer amount of work I had to do felt overwhelming. My to-do list kept growing, and no matter how hard I tried, I couldn't keep up. By midday, 
-                                              I was exhausted and frustrated, struggling to stay motivated. 
-                                              It’s one of those days where everything feels heavy, and I just need to remind myself that it's okay not to be perfect. I’ll tackle it all tomorrow, but for now, I need to rest.
+                                              Today was tough. From the moment I woke up, the sheer amount of work I had
+                                              to do felt overwhelming. My to-do list kept growing, and no matter how
+                                              hard I tried, I couldn't keep up. By midday,
+                                              I was exhausted and frustrated, struggling to stay motivated.
+                                              It’s one of those days where everything feels heavy, and I just need to
+                                              remind myself that it's okay not to be perfect. I’ll tackle it all
+                                              tomorrow, but for now, I need to rest.
                                             </p>
                                           </div>
                                         </div>
                                         <div class="modal-footer">
-                                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">បិទ</button>
-                                          <button type="button" class="btn btn-danger"  data-bs-toggle="modal" data-bs-target="#deleteModal">លុបចោល</button>
+                                          <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">បិទ</button>
+                                          <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                                            data-bs-target="#deleteModal">លុបចោល</button>
                                           <button type="button" class="btn btn-savechange">រក្សាទុកការកែប្រែ</button>
                                         </div>
                                       </div>
                                     </div>
                                   </div>
-                                  <div class="modal fade" id="deleteModal3" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+                                  <div class="modal fade" id="deleteModal3" tabindex="-1"
+                                    aria-labelledby="deleteModalLabel" aria-hidden="true">
                                     <div class="modal-dialog modal-md modal-dialog-centered">
                                       <div class="modal-content">
                                         <div class="modal-body">
                                           <div class="warning-img w-100 d-flex justify-content-center">
                                             <img src="assets/img/contact-us/warning.png" width="70px" alt="">
                                           </div>
-                                          <p class="fs-4 pt-5 text-black text-center">តើអ្នកពិតជាចង់លុប កំណត់ត្រានេះពិតមែនទេ?</p>
+                                          <p class="fs-4 pt-5 text-black text-center">តើអ្នកពិតជាចង់លុប
+                                            កំណត់ត្រានេះពិតមែនទេ?</p>
                                         </div>
                                         <div class="modal-footer">
-                                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">បិទ</button>
-                                          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">លុប</button>
+                                          <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">បិទ</button>
+                                          <button type="button" class="btn btn-danger"
+                                            data-bs-dismiss="modal">លុប</button>
                                         </div>
                                       </div>
                                     </div>
                                   </div>
                                 </div>
-                                
+
                                 <li class="list-group-item">
-                                  <div class="item-date w-100 d-flex"> 
+                                  <div class="item-date w-100 d-flex">
                                     <div class="daily-date">
                                       <h2 class="mb-0 fs-2 text-center text">20</h2>
                                       <p class="mb-0 text-center landing-title-color fw-bold">ចន្ទ</p>
                                     </div>
                                     <div class="daily-note w-100 ps-3 pt-2">
                                       <p>ថ្ងៃនេះខ្ញុំអារម្មណ៌មិនសូវល្អនោះទេ</p>
-                                      <p>មានរឿងមួយចំនួនកើតឡើងដែលធ្វើឱ្យខ្ញុំមានអារម្មណ៌ធុញថប់ ជាពិសេសគឺការងារគរដូចភ្នំសុមេរុចឹង...</p>
+                                      <p>មានរឿងមួយចំនួនកើតឡើងដែលធ្វើឱ្យខ្ញុំមានអារម្មណ៌ធុញថប់
+                                        ជាពិសេសគឺការងារគរដូចភ្នំសុមេរុចឹង...</p>
                                     </div>
                                     <div class="col-lg-2 col-4 journal-edit">
                                       <div class="edit-control">
@@ -1150,17 +1148,18 @@
                                       </div>
                                     </div>
                                   </div>
-                                  
+
                                 </li>
                                 <li class="list-group-item">
-                                  <div class="item-date w-100 d-flex"> 
+                                  <div class="item-date w-100 d-flex">
                                     <div class="daily-date">
                                       <h2 class="mb-0 fs-2 text-center">20</h2>
                                       <p class="mb-0 text-center fw-bold">ចន្ទ</p>
                                     </div>
                                     <div class="daily-note w-100 ps-3 pt-2">
                                       <p>ថ្ងៃនេះខ្ញុំអារម្មណ៌មិនសូវល្អនោះទេ</p>
-                                      <p>មានរឿងមួយចំនួនកើតឡើងដែលធ្វើឱ្យខ្ញុំមានអារម្មណ៌ធុញថប់ ជាពិសេសគឺការងារគរដូចភ្នំសុមេរុចឹង...</p>
+                                      <p>មានរឿងមួយចំនួនកើតឡើងដែលធ្វើឱ្យខ្ញុំមានអារម្មណ៌ធុញថប់
+                                        ជាពិសេសគឺការងារគរដូចភ្នំសុមេរុចឹង...</p>
                                     </div>
                                     <div class="col-lg-2 col-4 journal-edit">
                                       <div class="edit-control">
@@ -1177,14 +1176,15 @@
                                   </div>
                                 </li>
                                 <li class="list-group-item">
-                                  <div class="item-date w-100 d-flex"> 
+                                  <div class="item-date w-100 d-flex">
                                     <div class="daily-date">
                                       <h2 class="mb-0 fs-2 text-center text">20</h2>
                                       <p class="mb-0 text-center landing-title-color fw-bold">ចន្ទ</p>
                                     </div>
                                     <div class="daily-note w-100 ps-3 pt-2">
                                       <p>ថ្ងៃនេះខ្ញុំអារម្មណ៌មិនសូវល្អនោះទេ</p>
-                                      <p>មានរឿងមួយចំនួនកើតឡើងដែលធ្វើឱ្យខ្ញុំមានអារម្មណ៌ធុញថប់ ជាពិសេសគឺការងារគរដូចភ្នំសុមេរុចឹង...</p>
+                                      <p>មានរឿងមួយចំនួនកើតឡើងដែលធ្វើឱ្យខ្ញុំមានអារម្មណ៌ធុញថប់
+                                        ជាពិសេសគឺការងារគរដូចភ្នំសុមេរុចឹង...</p>
                                     </div>
                                     <div class="col-lg-2 col-4 journal-edit">
                                       <div class="edit-control">
@@ -1201,14 +1201,15 @@
                                   </div>
                                 </li>
                                 <li class="list-group-item">
-                                  <div class="item-date w-100 d-flex"> 
+                                  <div class="item-date w-100 d-flex">
                                     <div class="daily-date">
                                       <h2 class="mb-0 fs-2 text-center text">20</h2>
                                       <p class="mb-0 text-center landing-title-color fw-bold">ចន្ទ</p>
                                     </div>
                                     <div class="daily-note w-100 ps-3 pt-2">
                                       <p>ថ្ងៃនេះខ្ញុំអារម្មណ៌មិនសូវល្អនោះទេ</p>
-                                      <p>មានរឿងមួយចំនួនកើតឡើងដែលធ្វើឱ្យខ្ញុំមានអារម្មណ៌ធុញថប់ ជាពិសេសគឺការងារគរដូចភ្នំសុមេរុចឹង...</p>
+                                      <p>មានរឿងមួយចំនួនកើតឡើងដែលធ្វើឱ្យខ្ញុំមានអារម្មណ៌ធុញថប់
+                                        ជាពិសេសគឺការងារគរដូចភ្នំសុមេរុចឹង...</p>
                                     </div>
                                     <div class="col-lg-2 col-4 journal-edit">
                                       <div class="edit-control">
@@ -1226,14 +1227,15 @@
                                 </li>
                                 <div class="replace-id-location" id="list-item-3"></div>
                                 <li class="list-group-item">
-                                  <div class="item-date w-100 d-flex"> 
+                                  <div class="item-date w-100 d-flex">
                                     <div class="daily-date">
                                       <h2 class="mb-0 fs-2 text-center text">20</h2>
                                       <p class="mb-0 text-center landing-title-color fw-bold">ចន្ទ</p>
                                     </div>
                                     <div class="daily-note w-100 ps-3 pt-2">
                                       <p>ថ្ងៃនេះខ្ញុំអារម្មណ៌មិនសូវល្អនោះទេ</p>
-                                      <p>មានរឿងមួយចំនួនកើតឡើងដែលធ្វើឱ្យខ្ញុំមានអារម្មណ៌ធុញថប់ ជាពិសេសគឺការងារគរដូចភ្នំសុមេរុចឹង...</p>
+                                      <p>មានរឿងមួយចំនួនកើតឡើងដែលធ្វើឱ្យខ្ញុំមានអារម្មណ៌ធុញថប់
+                                        ជាពិសេសគឺការងារគរដូចភ្នំសុមេរុចឹង...</p>
                                     </div>
                                     <div class="col-lg-2 col-4 journal-edit">
                                       <div class="edit-control">
@@ -1250,14 +1252,15 @@
                                   </div>
                                 </li>
                                 <li class="list-group-item">
-                                  <div class="item-date w-100 d-flex"> 
+                                  <div class="item-date w-100 d-flex">
                                     <div class="daily-date">
                                       <h2 class="mb-0 fs-2 text-center text">20</h2>
                                       <p class="mb-0 text-center landing-title-color fw-bold">ចន្ទ</p>
                                     </div>
                                     <div class="daily-note w-100 ps-3 pt-2">
                                       <p>ថ្ងៃនេះខ្ញុំអារម្មណ៌មិនសូវល្អនោះទេ</p>
-                                      <p>មានរឿងមួយចំនួនកើតឡើងដែលធ្វើឱ្យខ្ញុំមានអារម្មណ៌ធុញថប់ ជាពិសេសគឺការងារគរដូចភ្នំសុមេរុចឹង...</p>
+                                      <p>មានរឿងមួយចំនួនកើតឡើងដែលធ្វើឱ្យខ្ញុំមានអារម្មណ៌ធុញថប់
+                                        ជាពិសេសគឺការងារគរដូចភ្នំសុមេរុចឹង...</p>
                                     </div>
                                     <div class="col-lg-2 col-4 journal-edit">
                                       <div class="edit-control">
@@ -1273,15 +1276,15 @@
                                     </div>
                                   </div>
                                 </li>
-                                
+
                               </ul>
                             </div>
 
                           </div>
                         </div>
-                        <div class="d-none d-lg-block col-lg-4" data-aos="fade-left"
-                        data-aos-duration="500">
-                          <div id="simple-list-example" class="d-flex flex-column gap-3 simple-list-scrollspy text-center">
+                        <div class="d-none d-lg-block col-lg-4" data-aos="fade-left" data-aos-duration="500">
+                          <div id="simple-list-example"
+                            class="d-flex flex-column gap-3 simple-list-scrollspy text-center">
                             <a class="p-1 py-2 active" href="#list-item-1">សប្ដាហ៌នេះ</a>
                             <a class="p-1 py-2" href="#list-item-2">ខែនេះ</a>
                             <a class="p-1 py-2" href="#list-item-3">ឆ្នាំនេះ</a>
@@ -1306,11 +1309,13 @@
                       <span><i class="fa-solid fa-camera-retro"></i></span>
                     </button>
                     <!-- Modal -->
-                    <div class="modal fade" id="addPhotoModal" tabindex="-1" aria-labelledby="addPhotoModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="addPhotoModal" tabindex="-1" aria-labelledby="addPhotoModalLabel"
+                      aria-hidden="true">
                       <div class="modal-dialog modal-dialog-centered modal-lg">
                         <div class="modal-content">
                           <div class="modal-header">
-                            <h1 class="modal-title fs-2 landing-title-color" id="exampleModalLabel">អនុស្សាវរីយ៌ថ្មី</h1>
+                            <h1 class="modal-title fs-2 landing-title-color" id="exampleModalLabel">អនុស្សាវរីយ៌ថ្មី
+                            </h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                           </div>
                           <div class="modal-body py-5">
@@ -1334,10 +1339,10 @@
                                     <input type="date" id="date" value="30-08-2024" />
                                   </div>
                                 </div>
-                               
-        
+
+
                               </div>
-                              
+
                               <div class="mb-3 mt-4">
                                 <label for="caption" class="form-label">ចំណាប់អារម្មណ៌របស់អ្នក</label>
                                 <textarea class="form-control" id="caption" rows="3" aria-label=""></textarea>
@@ -1352,35 +1357,39 @@
                         </div>
                       </div>
                     </div>
-  
+
                   </div>
                 </div>
-                <div class="row justify-content-between py-5" >
+                <div class="row justify-content-between py-5">
                   <div class="col-sm-12 col-lg-6 col-xl-4" data-aos="fade-up" data-aos-duration="1000">
                     <div class="photo-book-body">
-                       <!-- Swiper -->
+                      <!-- Swiper -->
 
                       <div class="swiper mySwiper">
                         <div class="swiper-wrapper" id="lightgallery1">
                           <div class="swiper-slide" data-src="assets/img/Journaling-Todolist/angkor-wat.jpg">
                             <a href="assets/img/Journaling-Todolist/angkor-wat.jpg">
-                              <img src="assets/img/Journaling-Todolist/angkor-wat.jpg" alt="វិស្សមកាលរដូវក្ដៅនៅខេត្តសៀមរាប">
+                              <img src="assets/img/Journaling-Todolist/angkor-wat.jpg"
+                                alt="វិស្សមកាលរដូវក្ដៅនៅខេត្តសៀមរាប">
                             </a>
-                            
+
                           </div>
                           <div class="swiper-slide" data-src="assets/img/Journaling-Todolist/angkorwat-2.jpg">
                             <a href="assets/img/Journaling-Todolist/angkorwat-2.jpg">
-                              <img src="assets/img/Journaling-Todolist/angkorwat-2.jpg" alt="វិស្សមកាលរដូវក្ដៅនៅខេត្តសៀមរាប">
+                              <img src="assets/img/Journaling-Todolist/angkorwat-2.jpg"
+                                alt="វិស្សមកាលរដូវក្ដៅនៅខេត្តសៀមរាប">
                             </a>
                           </div>
                           <div class="swiper-slide" data-src="assets/img/Journaling-Todolist/angkorwat-3.jpg">
                             <a href="assets/img/Journaling-Todolist/angkorwat-3.jpg">
-                              <img src="assets/img/Journaling-Todolist/angkorwat-3.jpg" alt="វិស្សមកាលរដូវក្ដៅនៅខេត្តសៀមរាប">
+                              <img src="assets/img/Journaling-Todolist/angkorwat-3.jpg"
+                                alt="វិស្សមកាលរដូវក្ដៅនៅខេត្តសៀមរាប">
                             </a>
                           </div>
                           <div class="swiper-slide" data-src="assets/img/Journaling-Todolist/angkorwat-2.jpg">
                             <a href="assets/img/Journaling-Todolist/angkorwat-2.jpg">
-                              <img src="assets/img/Journaling-Todolist/angkorwat-2.jpg" alt="វិស្សមកាលរដូវក្ដៅនៅខេត្តសៀមរាប">
+                              <img src="assets/img/Journaling-Todolist/angkorwat-2.jpg"
+                                alt="វិស្សមកាលរដូវក្ដៅនៅខេត្តសៀមរាប">
 
                             </a>
                           </div>
@@ -1390,7 +1399,8 @@
                             <p class="landing-title-color">ប្រាសាទអង្គវត្ត</p>
                             <p class="landing-title-color">១២ កក្កដា ២០២៤</p>
                           </div>
-                          <p class="text-center light-black">វិស្សមកាលរដូវក្ដៅនៅខេត្តសៀមរាប។That was an incredible vocation i ever had.</p>
+                          <p class="text-center light-black">វិស្សមកាលរដូវក្ដៅនៅខេត្តសៀមរាប។That was an incredible
+                            vocation i ever had.</p>
                         </div>
                       </div>
                     </div>
@@ -1399,126 +1409,136 @@
                     <div class="photo-book-body">
                       <!-- Swiper -->
 
-                     <div class="swiper mySwiper">
-                       <div class="swiper-wrapper" id="lightgallery2">
-                         <div class="swiper-slide" data-src="assets/img/Journaling-Todolist/bali.jpg">
-                          <a href="assets/img/Journaling-Todolist/bali.jpg">
-                           <img src="assets/img/Journaling-Todolist/bali.jpg" alt="កាដូដំណើរកម្សាន្តពីខាងក្រុមហ៊ុននៅកោះបាលី">
-                          </a>
-                         </div>
-                         <div class="swiper-slide" data-src="assets/img/Journaling-Todolist/bali-2.jpg">
-                          <a href="assets/img/Journaling-Todolist/bali-2.jpg">
-                           <img src="assets/img/Journaling-Todolist/bali-2.jpg" alt="កាដូដំណើរកម្សាន្តពីខាងក្រុមហ៊ុននៅកោះបាលី">
-                          </a>
-                         </div>
-                         <div class="swiper-slide" data-src="assets/img/Journaling-Todolist/bali-3.jpg">
-                          <a href="assets/img/Journaling-Todolist/bali-3.jpg">
-                           <img src="assets/img/Journaling-Todolist/bali-3.jpg" alt="កាដូដំណើរកម្សាន្តពីខាងក្រុមហ៊ុននៅកោះបាលី">
-                          </a>
-                         </div>
-                         <div class="swiper-slide" data-src="assets/img/Journaling-Todolist/bali-4.jpg">
-                          <a href="assets/img/Journaling-Todolist/bali-4.jpg">
-                           <img src="assets/img/Journaling-Todolist/bali-4.jpg" alt="កាដូដំណើរកម្សាន្តពីខាងក្រុមហ៊ុននៅកោះបាលី">
-                          </a>
-                         </div>
-                       </div>
-                       <div class="photo-book-info pt-3">
-                         <div class="place-info w-100 d-flex justify-content-between">
-                           <p class="landing-title-color">កោះបាលី</p>
-                           <p class="landing-title-color">២១ មីនា ២០២៤</p>
-                         </div>
-                         <p class="text-center light-black">កាដូដំណើរកម្សាន្តពីខាងក្រុមហ៊ុននៅកោះបាលី​ វ៉ល់ៗតែសប្បាយម្យ៉ាង</p>
-                       </div>
-                     </div>
-                   </div>
+                      <div class="swiper mySwiper">
+                        <div class="swiper-wrapper" id="lightgallery2">
+                          <div class="swiper-slide" data-src="assets/img/Journaling-Todolist/bali.jpg">
+                            <a href="assets/img/Journaling-Todolist/bali.jpg">
+                              <img src="assets/img/Journaling-Todolist/bali.jpg"
+                                alt="កាដូដំណើរកម្សាន្តពីខាងក្រុមហ៊ុននៅកោះបាលី">
+                            </a>
+                          </div>
+                          <div class="swiper-slide" data-src="assets/img/Journaling-Todolist/bali-2.jpg">
+                            <a href="assets/img/Journaling-Todolist/bali-2.jpg">
+                              <img src="assets/img/Journaling-Todolist/bali-2.jpg"
+                                alt="កាដូដំណើរកម្សាន្តពីខាងក្រុមហ៊ុននៅកោះបាលី">
+                            </a>
+                          </div>
+                          <div class="swiper-slide" data-src="assets/img/Journaling-Todolist/bali-3.jpg">
+                            <a href="assets/img/Journaling-Todolist/bali-3.jpg">
+                              <img src="assets/img/Journaling-Todolist/bali-3.jpg"
+                                alt="កាដូដំណើរកម្សាន្តពីខាងក្រុមហ៊ុននៅកោះបាលី">
+                            </a>
+                          </div>
+                          <div class="swiper-slide" data-src="assets/img/Journaling-Todolist/bali-4.jpg">
+                            <a href="assets/img/Journaling-Todolist/bali-4.jpg">
+                              <img src="assets/img/Journaling-Todolist/bali-4.jpg"
+                                alt="កាដូដំណើរកម្សាន្តពីខាងក្រុមហ៊ុននៅកោះបាលី">
+                            </a>
+                          </div>
+                        </div>
+                        <div class="photo-book-info pt-3">
+                          <div class="place-info w-100 d-flex justify-content-between">
+                            <p class="landing-title-color">កោះបាលី</p>
+                            <p class="landing-title-color">២១ មីនា ២០២៤</p>
+                          </div>
+                          <p class="text-center light-black">កាដូដំណើរកម្សាន្តពីខាងក្រុមហ៊ុននៅកោះបាលី​
+                            វ៉ល់ៗតែសប្បាយម្យ៉ាង</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div class="col-sm-12 col-lg-6 col-xl-4" data-aos="fade-up" data-aos-duration="2600">
                     <div class="photo-book-body">
                       <!-- Swiper -->
 
-                     <div class="swiper mySwiper">
-                       <div class="swiper-wrapper" id="lightgallery3">
-                        <div class="swiper-slide" data-src="assets/img/Journaling-Todolist/tokyo-1.jpg">
-                          <a href="assets/img/Journaling-Todolist/tokyo-1.jpg">
-                           <img src="assets/img/Journaling-Todolist/tokyo-1.jpg" alt="កាដូដំណើរកម្សាន្តពីខាងក្រុមហ៊ុននៅកោះបាលី">
-                          </a>
+                      <div class="swiper mySwiper">
+                        <div class="swiper-wrapper" id="lightgallery3">
+                          <div class="swiper-slide" data-src="assets/img/Journaling-Todolist/tokyo-1.jpg">
+                            <a href="assets/img/Journaling-Todolist/tokyo-1.jpg">
+                              <img src="assets/img/Journaling-Todolist/tokyo-1.jpg"
+                                alt="កាដូដំណើរកម្សាន្តពីខាងក្រុមហ៊ុននៅកោះបាលី">
+                            </a>
+                          </div>
+                          <div class="swiper-slide" data-src="assets/img/Journaling-Todolist/tokyo-2.jpg">
+                            <a href="assets/img/Journaling-Todolist/tokyo-2.jpg">
+                              <img src="assets/img/Journaling-Todolist/tokyo-2.jpg" alt="លើកទី ១ ដើរលេងនៅជប៉ុន">
+                            </a>
+                          </div>
+                          <div class="swiper-slide" data-src="assets/img/Journaling-Todolist/bali.jpg">
+                            <a href="assets/img/Journaling-Todolist/bali.jpg">
+                              <img src="assets/img/Journaling-Todolist/bali.jpg" alt="លើកទី ១ ដើរលេងនៅជប៉ុន">
+                            </a>
+                          </div>
+                          <div class="swiper-slide" data-src="assets/img/Journaling-Todolist/bali-2.jpg">
+                            <a href="assets/img/Journaling-Todolist/bali-2.jpg">
+                              <img src="assets/img/Journaling-Todolist/bali-2.jpg" alt="លើកទី ១ ដើរលេងនៅជប៉ុន">
+                            </a>
+                          </div>
                         </div>
-                        <div class="swiper-slide" data-src="assets/img/Journaling-Todolist/tokyo-2.jpg">
-                          <a href="assets/img/Journaling-Todolist/tokyo-2.jpg">
-                           <img src="assets/img/Journaling-Todolist/tokyo-2.jpg" alt="លើកទី ១ ដើរលេងនៅជប៉ុន">
-                          </a>
-                        </div>
-                        <div class="swiper-slide" data-src="assets/img/Journaling-Todolist/bali.jpg">
-                          <a href="assets/img/Journaling-Todolist/bali.jpg">
-                           <img src="assets/img/Journaling-Todolist/bali.jpg" alt="លើកទី ១ ដើរលេងនៅជប៉ុន">
-                          </a>
-                        </div>
-                        <div class="swiper-slide" data-src="assets/img/Journaling-Todolist/bali-2.jpg">
-                          <a href="assets/img/Journaling-Todolist/bali-2.jpg">
-                           <img src="assets/img/Journaling-Todolist/bali-2.jpg" alt="លើកទី ១ ដើរលេងនៅជប៉ុន">
-                          </a>
+                        <div class="photo-book-info pt-3">
+                          <div class="place-info w-100 d-flex justify-content-between">
+                            <p class="landing-title-color">តុកត្យូ</p>
+                            <p class="landing-title-color">១២ មករា ២០២៤</p>
+                          </div>
+                          <p class="text-center light-black">លើកទី ១ ដើរលេងនៅជប៉ុន សប្បាយខ្លាំងណាស់!!</p>
                         </div>
                       </div>
-                      <div class="photo-book-info pt-3">
-                        <div class="place-info w-100 d-flex justify-content-between">
-                          <p class="landing-title-color">តុកត្យូ</p>
-                          <p class="landing-title-color">១២ មករា ២០២៤</p>
-                        </div>
-                        <p class="text-center light-black">លើកទី ១ ដើរលេងនៅជប៉ុន សប្បាយខ្លាំងណាស់!!</p>
-                      </div>
-                     </div>
-                   </div>
+                    </div>
                   </div>
                   <div class="col-sm-12 col-lg-6 col-xl-4" data-aos="fade-up" data-aos-duration="3000">
                     <div class="photo-book-body">
                       <!-- Swiper -->
 
-                     <div class="swiper mySwiper">
-                       <div class="swiper-wrapper" id="lightgallery4">
-                        <div class="swiper-slide" data-src="assets/img/Journaling-Todolist/vietnam-1.jpg">
-                          <a href="assets/img/Journaling-Todolist/vietnam-1.jpg">
-                           <img src="assets/img/Journaling-Todolist/vietnam-1.jpg" alt="ឆ្លងឆ្នាំនៅវៀតណាម ">
-                          </a>
+                      <div class="swiper mySwiper">
+                        <div class="swiper-wrapper" id="lightgallery4">
+                          <div class="swiper-slide" data-src="assets/img/Journaling-Todolist/vietnam-1.jpg">
+                            <a href="assets/img/Journaling-Todolist/vietnam-1.jpg">
+                              <img src="assets/img/Journaling-Todolist/vietnam-1.jpg" alt="ឆ្លងឆ្នាំនៅវៀតណាម ">
+                            </a>
+                          </div>
+                          <div class="swiper-slide" data-src="assets/img/Journaling-Todolist/vietnam-3.webp">
+                            <a href="assets/img/Journaling-Todolist/vietnam-3.webp">
+                              <img src="assets/img/Journaling-Todolist/vietnam-3.webp" alt="ឆ្លងឆ្នាំនៅវៀតណាម ">
+                            </a>
+                          </div>
+                          <div class="swiper-slide" data-src="assets/img/Journaling-Todolist/vietnam-4.webp">
+                            <a href="assets/img/Journaling-Todolist/vietnam-4.webp">
+                              <img src="assets/img/Journaling-Todolist/vietnam-4.webp" alt="ឆ្លងឆ្នាំនៅវៀតណាម ">
+                            </a>
+                          </div>
+                          <div class="swiper-slide" data-src="assets/img/Journaling-Todolist/vietnam-2.jpg">
+                            <a href="assets/img/Journaling-Todolist/vietnam-2.jpg">
+                              <img src="assets/img/Journaling-Todolist/vietnam-2.jpg" alt="ឆ្លងឆ្នាំនៅវៀតណាម ">
+                            </a>
+                          </div>
                         </div>
-                        <div class="swiper-slide" data-src="assets/img/Journaling-Todolist/vietnam-3.webp">
-                          <a href="assets/img/Journaling-Todolist/vietnam-3.webp">
-                           <img src="assets/img/Journaling-Todolist/vietnam-3.webp" alt="ឆ្លងឆ្នាំនៅវៀតណាម ">
-                          </a>
+                        <div class="photo-book-info pt-3">
+                          <div class="place-info w-100 d-flex justify-content-between">
+                            <p class="landing-title-color">វៀតណាម</p>
+                            <p class="landing-title-color">២៩ ធ្នូ ២០២៣</p>
+                          </div>
+                          <p class="text-center light-black">ឆ្លងឆ្នាំនៅវៀតណាម ហើយថែមទាំងបានជិះម៉ូតូកាត់ភ្លៀងស្រឹមៗ
+                            Fresh ខ្លាំង។ Vietnam was our best choice to celebrate New Years together!</p>
                         </div>
-                        <div class="swiper-slide" data-src="assets/img/Journaling-Todolist/vietnam-4.webp">
-                          <a href="assets/img/Journaling-Todolist/vietnam-4.webp">
-                           <img src="assets/img/Journaling-Todolist/vietnam-4.webp" alt="ឆ្លងឆ្នាំនៅវៀតណាម ">
-                          </a>
-                        </div>
-                        <div class="swiper-slide" data-src="assets/img/Journaling-Todolist/vietnam-2.jpg">
-                          <a href="assets/img/Journaling-Todolist/vietnam-2.jpg">
-                           <img src="assets/img/Journaling-Todolist/vietnam-2.jpg" alt="ឆ្លងឆ្នាំនៅវៀតណាម ">
-                          </a>
-                        </div>
-                       </div>
-                       <div class="photo-book-info pt-3">
-                         <div class="place-info w-100 d-flex justify-content-between">
-                           <p class="landing-title-color">វៀតណាម</p>
-                           <p class="landing-title-color">២៩ ធ្នូ ២០២៣</p>
-                         </div>
-                         <p class="text-center light-black">ឆ្លងឆ្នាំនៅវៀតណាម ហើយថែមទាំងបានជិះម៉ូតូកាត់ភ្លៀងស្រឹមៗ Fresh ខ្លាំង។ Vietnam was our best choice to celebrate New Years together!</p>
-                       </div>
-                     </div>
-                   </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
                 <div class="add-photo d-block d-lg-none">
-                  <button type="button" class="btn btn-add mx-auto" data-bs-toggle="modal" data-bs-target="#addPhotoBookModal">
+                  <button type="button" class="btn btn-add mx-auto" data-bs-toggle="modal"
+                    data-bs-target="#addPhotoBookModal">
                     <p class="mb-0"> អនុស្សាវរីយ៌ថ្មី </p>
                     <span><i class="fa-solid fa-camera-retro"></i></span>
                   </button>
                   <!-- Modal -->
-                  <div class="modal fade" id="addPhotoBookModal" tabindex="-1" aria-labelledby="addPhotoBookModalLabel" aria-hidden="true">
+                  <div class="modal fade" id="addPhotoBookModal" tabindex="-1" aria-labelledby="addPhotoBookModalLabel"
+                    aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-lg">
                       <div class="modal-content">
                         <div class="modal-header">
-                          <h1 class="modal-title fs-2 landing-title-color" id="addPhotoBookModalLabel">អនុស្សាវរីយ៌ថ្មី</h1>
+                          <h1 class="modal-title fs-2 landing-title-color" id="addPhotoBookModalLabel">អនុស្សាវរីយ៌ថ្មី
+                          </h1>
                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body py-5">
@@ -1542,9 +1562,9 @@
                                   <input type="date" id="date-none" value="30-08-2024" />
                                 </div>
                               </div>
-                            
+
                             </div>
-                            
+
                             <div class="mb-3 mt-4">
                               <label for="caption1" class="form-label">ចំណាប់អារម្មណ៌របស់អ្នក</label>
                               <textarea class="form-control" id="caption1" rows="3" aria-label=""></textarea>
@@ -1563,7 +1583,7 @@
 
                 </div>
               </section>
-            
+
               <!-- ? end of write your content here -->
             </div>
           </div>
@@ -1578,12 +1598,9 @@
       <div class="container py-3">
         <div class="row px-4 px-lg-0">
           <div class="col-lg-3 col-12">
-            <div
-              class="footer-logo w-100 d-lg-block d-flex justify-content-center"
-            >
-              <a href="home_page.html" class="text-decoration-none"
-                ><img src="assets/img/navbar/Kn-logo.png" alt="Kn-logo"
-              /></a>
+            <div class="footer-logo w-100 d-lg-block d-flex justify-content-center">
+              <a href="home_page.html" class="text-decoration-none"><img src="assets/img/navbar/Kn-logo.png"
+                  alt="Kn-logo" /></a>
             </div>
             <div class="comp-discript">
               <p>
@@ -1595,29 +1612,19 @@
             </div>
             <ul class="comp-social-media d-flex pb-3 pb-lg-0">
               <li class="comp-item">
-                <a href="#" class="social-media-icon"
-                  ><i class="fab fa-facebook-f"></i
-                ></a>
+                <a href="#" class="social-media-icon"><i class="fab fa-facebook-f"></i></a>
               </li>
               <li class="comp-item">
-                <a href="#" class="social-media-icon"
-                  ><i class="fab fa-twitter"></i
-                ></a>
+                <a href="#" class="social-media-icon"><i class="fab fa-twitter"></i></a>
               </li>
               <li class="comp-item">
-                <a href="#" class="social-media-icon"
-                  ><i class="fab fa-instagram"></i
-                ></a>
+                <a href="#" class="social-media-icon"><i class="fab fa-instagram"></i></a>
               </li>
               <li class="comp-item">
-                <a href="#" class="social-media-icon"
-                  ><i class="fab fa-youtube"></i
-                ></a>
+                <a href="#" class="social-media-icon"><i class="fab fa-youtube"></i></a>
               </li>
               <li class="comp-item">
-                <a href="#" class="social-media-icon"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
+                <a href="#" class="social-media-icon"><i class="fab fa-linkedin-in"></i></a>
               </li>
             </ul>
           </div>
@@ -1627,27 +1634,19 @@
               <div class="col-6 p-0">
                 <ul class="footer-list">
                   <li class="footer-item">
-                    <a class="footer-link" href="journaling.html"
-                      >កំណត់ត្រាប្រចាំថ្ងៃ</a
-                    >
+                    <a class="footer-link" href="journaling.html">កំណត់ត្រាប្រចាំថ្ងៃ</a>
                   </li>
                   <li class="footer-item">
-                    <a class="footer-link" href="money_spending.html"
-                      >តាមដានការចំណាយ</a
-                    >
+                    <a class="footer-link" href="money_spending.html">តាមដានការចំណាយ</a>
                   </li>
                   <li class="footer-item">
-                    <a class="footer-link" href="mood_tracking.html"
-                      >តាមដានផ្លូវចិត្ត</a
-                    >
+                    <a class="footer-link" href="mood_tracking.html">តាមដានផ្លូវចិត្ត</a>
                   </li>
                   <li class="footer-item">
                     <a class="footer-link" href="exercise.html">លំហាត់ប្រាណ</a>
                   </li>
                   <li class="footer-item">
-                    <a class="footer-link" href="therapist.html"
-                      >អ្នកជំនាញផ្លូវចិត្ត</a
-                    >
+                    <a class="footer-link" href="therapist.html">អ្នកជំនាញផ្លូវចិត្ត</a>
                   </li>
                   <li class="footer-item">
                     <a class="footer-link" href="book_store.html">សៀវភៅ</a>
@@ -1666,9 +1665,7 @@
                     <a class="footer-link" href="article.html">អត្ថបទ</a>
                   </li>
                   <li class="footer-item">
-                    <a class="footer-link" href="video_recommendation.html"
-                      >វីឌីអូអភិវឌ្ឍខ្លួន</a
-                    >
+                    <a class="footer-link" href="video_recommendation.html">វីឌីអូអភិវឌ្ឍខ្លួន</a>
                   </li>
                   <li class="footer-item">
                     <a class="footer-link" href="about_us.html">អំពីយើង</a>
@@ -1715,13 +1712,8 @@
             <div class="col-12">
               <div class="mb-3">
                 <div class="input-group mb-3">
-                  <input
-                    type="text"
-                    class="footer-input"
-                    placeholder="user@gmail.com"
-                    aria-label="user@gmail.com"
-                    aria-describedby="button-addon2"
-                  />
+                  <input type="text" class="footer-input" placeholder="user@gmail.com" aria-label="user@gmail.com"
+                    aria-describedby="button-addon2" />
                   <button class="btn-footer" type="button" id="button-addon2">
                     <i class="fa-solid fa-paper-plane"></i>
                   </button>
@@ -1755,7 +1747,8 @@
     <script src="assets/js/dark-mode.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/zoom/lg-zoom.umd.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/thumbnail/lg-thumbnail.umd.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/thumbnail/lg-thumbnail.umd.js"></script>
     <script src="assets/plugins/swiper-js/js/swiper-bundle.min.js"></script>
 
     <script src="assets/plugins/quill-snow/quill.js"></script>
@@ -1773,54 +1766,49 @@
       var currentText = 0;
       var headerText = ["សួស្ដី Warren !", "ថ្ងៃនេះមានអារម្មណ៌យ៉ាងណាដែរ?", "មានអ្វីចង់កត់ត្រានៅក្នុងកំណត់ដែរឬទេ?", "Have a good day, Warren ^^"];
       var divText = document.getElementById("welcome-text");
-      var cycleComplete = false; 
+      var cycleComplete = false;
 
-      document.onload = setTimeout(function(){changeHeaderText();}, 500);
+      document.onload = setTimeout(function () { changeHeaderText(); }, 500);
 
-      function changeHeaderText()
-      {    
+      function changeHeaderText() {
         if (cycleComplete) {
           divText.innerHTML = headerText[0];
           return;
         }
-        if (currentText === headerText.length - 1){
+        if (currentText === headerText.length - 1) {
           cycleComplete = true;
           currentText = 0;
         } else {
           currentText += 1;
-        }    
+        }
         deleteHeaderText();
       }
 
-      function deleteHeaderText()
-      {    
-        if (divText.innerHTML.length === 0){
-          if (cycleComplete && currentText === 0){
+      function deleteHeaderText() {
+        if (divText.innerHTML.length === 0) {
+          if (cycleComplete && currentText === 0) {
             divText.innerHTML = headerText[0];
             return;
           }
-          setTimeout(function(){typeHeaderText();}, 100);
-        } 
-        else
-        {
-            divText.innerHTML = divText.innerHTML.substring(0, divText.innerHTML.length - 1);
-            setTimeout(function(){deleteHeaderText();}, 100);
+          setTimeout(function () { typeHeaderText(); }, 100);
+        }
+        else {
+          divText.innerHTML = divText.innerHTML.substring(0, divText.innerHTML.length - 1);
+          setTimeout(function () { deleteHeaderText(); }, 100);
         }
       }
-      function typeHeaderText()
-      {
+      function typeHeaderText() {
         if (divText.innerHTML.length === headerText[currentText].length) {
-            if (cycleComplete && currentText === headerText.length - 1){
-              divText.innerHTML = headerText[0];
-              return;
-            } 
-            setTimeout(function(){changeHeaderText();}, 2000);
-        } 
-        else
-        {
+          if (cycleComplete && currentText === headerText.length - 1) {
+            divText.innerHTML = headerText[0];
+            return;
+          }
+          setTimeout(function () { changeHeaderText(); }, 2000);
+        }
+        else {
           divText.innerHTML = headerText[currentText].substring(0, divText.innerHTML.length + 1);
-          setTimeout(function(){typeHeaderText();}, 100);
-        } 
+          setTimeout(function () { typeHeaderText(); }, 100);
+        }
       }
 
     </script>
@@ -1841,24 +1829,25 @@
         theme: 'snow'
       });
     </script>
-    
+
     <script type="text/javascript">
       lightGallery(document.getElementById('lightgallery1'), {
-          plugins: [lgZoom, lgThumbnail],
-          speed: 500
+        plugins: [lgZoom, lgThumbnail],
+        speed: 500
       });
       lightGallery(document.getElementById('lightgallery2'), {
-          plugins: [lgZoom, lgThumbnail],
-          speed: 500
+        plugins: [lgZoom, lgThumbnail],
+        speed: 500
       });
       lightGallery(document.getElementById('lightgallery3'), {
-          plugins: [lgZoom, lgThumbnail],
-          speed: 500
+        plugins: [lgZoom, lgThumbnail],
+        speed: 500
       });
       lightGallery(document.getElementById('lightgallery4'), {
-          plugins: [lgZoom, lgThumbnail],
-          speed: 500
+        plugins: [lgZoom, lgThumbnail],
+        speed: 500
       });
     </script>
   </body>
+
 </html>
