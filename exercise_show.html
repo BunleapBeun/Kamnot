@@ -51,7 +51,7 @@
               <!-- ! begin navbar offcanvas -->
               <ul class="nav-convas">
                 <li class="convas-item">
-                  <a class="convas-link convas-bar-bg" href="index.html"><i class="fa fa-house"></i> ទំព័រដើម</a>
+                  <a class="convas-link convas-bar-bg" href="home_page.html"><i class="fa fa-house"></i> ទំព័រដើម</a>
                 </li>
                 <li class="convas-item">
                   <input type="checkbox" id="showDropHabit" />
@@ -465,12 +465,12 @@
           <!-- ! begin of main content -->
           <div class="col-lg-11 col-12">
             <div class="pt-112 px-4 px-md-0">
-              <section class="exercise-banner mb-3">
+              <section class="exercise-banner mb-3" data-aos="fade-up">
                 <div class="exer-enroll-banner">
                   <img src="assets/img/exercise/muscle-building-cover.jpg" alt="">
                 </div>
               </section>
-              <section class="exer-course-detail">
+              <section class="exer-course-detail" data-aos="fade-up">
                 <div class="row g-3">
                   <div class="col-6">
                     <div
@@ -488,7 +488,7 @@
                   </div>
                 </div>
               </section>
-              <section class="exer-vdo-watching">
+              <section class="exer-vdo-watching" data-aos="fade-up">
                 <h3 class="section-title mb-4 mt-5">វីឌីអូលំហាត់ប្រាណ</h3>
                 <div class="row g-3">
                   <div class="col-lg-7">
@@ -523,7 +523,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-5">
+                  <div class="col-lg-5" data-aos="fade-up">
                     <div class="exer-control">
                       <ul class="exer-list">
                         <li class="erxer-item border-top-0 d-flex">
@@ -842,6 +842,9 @@
     <script src="assets/plugins/plyr/js/plyr.js"></script>
     <script>
       const player = new Plyr('#player');
+    </script>
+    <script>
+      AOS.init();
     </script>
   </body>
 
