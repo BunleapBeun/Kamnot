@@ -1262,6 +1262,11 @@ nav {
   .card .main-info p{
     font-size: 16px !important;
   }
+  .card .money-info h3{
+    font-size: 20px !important;
+    padding-top: 10px !important;
+  }
+
 }
 
 /* end of landing page */
