@@ -5707,6 +5707,9 @@ nav {
   background-color: cornflowerblue;
   /* the main color  */
 }
+.plan-info ul li{
+  font-size: 20px;
+}
 
 @media (max-width: 992px) {
   .member-ship .line-member {
