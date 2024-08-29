@@ -5585,13 +5585,20 @@ nav {
   box-shadow: 2px 3px 5px 0px var(--link-text);
   opacity: 1;
 }
-
-.img-basic-pay .five-dollar {
-  font-size: 100px;
-  color: orange;
-  text-shadow: 2px 3px 3px white;
+.img-basic-pay {
+  padding-top: 40px;
 }
-
+.img-basic-pay .five-dollar {
+  font-size: 45px;
+  color: orange;
+  text-shadow: 2px 1px 3px white;
+}
+.price-month{
+  text-align: center;
+  padding: 50px 0px;
+  font-size: 40px;
+  color: var(--main-text);
+}
 .img-basic-pay .gold {
   color: gold;
 }
@@ -5600,34 +5607,6 @@ nav {
   color: cornflowerblue;
 }
 
-.basic-pay .ribbon-gold {
-  font-size: 18px;
-  font-weight: bold;
-  color: #fff;
-}
-
-.basic-pay .ribbon-gold {
-  --f: 0.5em;
-  position: absolute;
-  top: 0;
-  left: 0;
-  line-height: 1.8;
-  padding-inline: 1lh;
-  padding-bottom: var(--f);
-  border-image: conic-gradient(#0008 0 0) 51% / var(--f);
-  clip-path: polygon(100% calc(100% - var(--f)),
-      100% 100%,
-      calc(100% - var(--f)) calc(100% - var(--f)),
-      var(--f) calc(100% - var(--f)),
-      0 100%,
-      0 calc(100% - var(--f)),
-      999px calc(100% - var(--f) - 999px),
-      calc(100% - 999px) calc(100% - var(--f) - 999px));
-  transform: translate(calc((cos(45deg) - 1) * 100%), -100%) rotate(-45deg);
-  transform-origin: 100% 100%;
-  background-color: gold;
-  /* the main color  */
-}
 
 .basic-pay .ribbon-standard {
   font-size: 18px;
