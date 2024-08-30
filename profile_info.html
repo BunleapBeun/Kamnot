@@ -528,7 +528,7 @@
             <div class="pt-112 px-4 px-md-0">
               <section class="user-information">
                 <div class="row">
-                  <div class="col-sm-12 col-lg-4 mb-5" >
+                  <div class="col-sm-12 col-lg-4 mb-5" data-aos="fade-right">
                     <div class="card position-relative border-0 p-3 d-flex d-lg-block" style="height: 620px;">
                       <div class="user-profile w-100 d-flex justify-content-center">
                         <img src="assets/img/navbar/profile-img.png" alt="user-profile">
@@ -539,7 +539,6 @@
                         <div class="w-100 d-flex justify-content-center">
                           <button type="button" class="btn py-1 px-2 bg-success-subtle text-success">Standard Plan</button>
                         </div>
-
                       </div>
                       <hr class="mt-4">
                       <div class="user-month-info w-100 d-flex justify-content-center">
@@ -549,21 +548,17 @@
                         <button class="nav-link my-2 active fs-5" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="true">ប្រវត្តិរូប</button>
                         <button class="nav-link my-2 fs-5" id="v-pills-pw-tab" data-bs-toggle="pill" data-bs-target="#v-pills-pw" type="button" role="tab" aria-controls="v-pills-pw" aria-selected="false">ផ្លាស់ប្ដូរលេខកូដសម្ងាត់</button>
                         <button class="nav-link my-2 fs-5" id="v-pills-activity-tab" data-bs-toggle="pill" data-bs-target="#v-pills-activity" type="button" role="tab" aria-controls="v-pills-activity" aria-selected="false">សង្ខេបសកម្មភាព</button>
-                        
-
                       </div>
                      
                     </div>
                   </div>
-                  <div class="col-sm-12 col-lg-8">
+                  <div class="col-sm-12 col-lg-8" data-aos="fade-left">
                     <div class="card border-0 p-3">
                       <div class="tab-content" id="v-pills-tabContent">
                         <div class="tab-pane fade show active" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
                           <div class="profile-header mb-4">
                             <h2 class="modal-header-color">ប្រវត្តិរូប</h2>
-                            
                           </div>
-
                           <div class="form">
                             <div class="row">
                               <div class="col-sm-12 col-md-6 py-2 pe-3">
@@ -848,32 +843,33 @@
                         </div>
                       </div>
                     </div>
-                    <div class="modal fade" id="profileSaveModal" tabindex="-1" aria-labelledby="profileSaveModalLabel" aria-hidden="true">
-                      <div class="modal-dialog modal-dialog-centered modal-fullscreen-md-down">
-                        <div class="modal-content">
-                          <div class="modal-body">
-                              <div class="success-animation">
-                                  <svg class="checkmark"
-                                      xmlns="http://www.w3.org/2000/svg"
-                                      viewBox="0 0 52 52">
-                                      <circle class="checkmark__circle" cx="26" cy="26"
-                                          r="25" fill="none" />
-                                      <path class="checkmark__check" fill="none"
-                                          d="M14.1 27.2l7.1 7.2 16.7-16.8" />
-                                  </svg>
-                              </div>
-                              <p class="mb-0 fs-4 main-text text-center mt-5">ពាក្យសម្ងាត់របស់អ្នកត្រូវបានផ្លាស់ប្ដូរដោយជោគជ័យ</p>
-                              <p class="fs-4 main-text text-center">សូមធ្វើការចូលប្រើប្រាស់សារជាថ្មី !</p>
-                          </div>
-                          <div class="modal-footer d-flex w-100 justify-content-center">
-                              <a type="button" href="login.html" class="btn btn-success text-decoration-none">យល់ព្រម</a>
-                          </div>
-                      </div>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </section>
+              <!-- ! modal -->
+              <div class="modal fade" id="profileSaveModal" tabindex="-1" aria-labelledby="profileSaveModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-fullscreen-md-down">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="success-animation">
+                            <svg class="checkmark"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 52 52">
+                                <circle class="checkmark__circle" cx="26" cy="26"
+                                    r="25" fill="none" />
+                                <path class="checkmark__check" fill="none"
+                                    d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                            </svg>
+                        </div>
+                        <p class="mb-0 fs-4 main-text text-center mt-5">ពាក្យសម្ងាត់របស់អ្នកត្រូវបានផ្លាស់ប្ដូរដោយជោគជ័យ</p>
+                        <p class="fs-4 main-text text-center">សូមធ្វើការចូលប្រើប្រាស់សារជាថ្មី !</p>
+                    </div>
+                    <div class="modal-footer d-flex w-100 justify-content-center">
+                        <a type="button" href="login.html" class="btn btn-success text-decoration-none">យល់ព្រម</a>
+                    </div>
+                </div>
+                </div>
+              </div>  
             </div>
           </div>
           <!-- ! end of main content -->
